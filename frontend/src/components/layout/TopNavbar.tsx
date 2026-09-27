@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   Compass, Landmark, Sparkles, Map, Bot, Search, Menu, X,
-  Palette, Music, Calendar, BookOpen, Info, Navigation
+  Palette, Music, Calendar, BookOpen, Info, Navigation, Home as HomeIcon
 } from 'lucide-react';
 import { VirasatBrand, TricolourTopBar } from '../shared/TricolourBranding';
 
@@ -15,8 +15,8 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({ onOpenSearch }) => {
   const location = useLocation();
 
   const navLinks = [
-    { to: '/', label: 'Home', icon: Compass },
-    { to: '/discover', label: 'Discover', icon: Sparkles },
+    { to: '/', label: 'Home', icon: HomeIcon },
+    { to: '/discover', label: 'Discover', icon: Compass },
     { to: '/heritage', label: 'Heritage', icon: Landmark },
     { to: '/festivals', label: 'Festivals', icon: Calendar },
     { to: '/arts-crafts', label: 'Arts & Crafts', icon: Palette },
@@ -38,7 +38,7 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({ onOpenSearch }) => {
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#EFE8DF] shadow-xs">
       <TricolourTopBar />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 gap-4">
+        <div className="flex items-center justify-between h-16 gap-3">
           {/* Brand Logo */}
           <Link to="/" className="shrink-0">
             <VirasatBrand />
@@ -53,34 +53,39 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({ onOpenSearch }) => {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all ${
+                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium tracking-tight transition-all ${
                     active
-                      ? 'bg-amber-50 text-amber-900 border border-amber-200/80 shadow-xs'
+                      ? 'bg-[#FFF8EE] text-[#C85A32] border border-[#FCD34D]/80 shadow-2xs font-semibold'
                       : link.isAi
-                      ? 'text-indigo-700 bg-indigo-50/70 hover:bg-indigo-100/80 border border-indigo-200/60'
-                      : 'text-stone-700 hover:text-stone-950 hover:bg-stone-100'
+                      ? 'text-sky-800 bg-sky-50/90 hover:bg-sky-100 border border-sky-200/80 font-semibold'
+                      : 'text-stone-700 hover:text-stone-950 hover:bg-stone-50'
                   }`}
                 >
-                  <Icon className={`w-3.5 h-3.5 ${link.isAi ? 'text-indigo-600' : active ? 'text-amber-800' : 'text-stone-500'}`} />
+                  <Icon
+                    className={`w-3.5 h-3.5 ${
+                      link.isAi
+                        ? 'text-sky-600'
+                        : active
+                        ? 'text-[#C85A32]'
+                        : 'text-stone-500'
+                    }`}
+                  />
                   <span>{link.label}</span>
                 </Link>
               );
             })}
           </nav>
 
-          {/* Right Action Icons: Universal Search Trigger & Mobile Menu Button */}
+          {/* Right Search Input Box */}
           <div className="flex items-center gap-2">
-            <button
+            <div
               onClick={onOpenSearch}
-              className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-stone-100 hover:bg-stone-200/90 text-stone-700 text-xs font-medium border border-stone-200 transition-colors shadow-2xs"
-              title="Search across all Indian heritage, festivals, and crafts"
+              className="cursor-pointer flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-50 hover:bg-stone-100 text-stone-500 border border-stone-200/80 text-xs w-40 sm:w-52 transition-all shadow-2xs"
+              title="Search heritage places, monuments, crafts..."
             >
-              <Search className="w-3.5 h-3.5 text-stone-500" />
-              <span className="hidden sm:inline">Search Heritage...</span>
-              <kbd className="hidden md:inline-block px-1.5 py-0.5 text-[10px] bg-white border border-stone-300 rounded font-mono text-stone-500">
-                Ctrl+K
-              </kbd>
-            </button>
+              <Search className="w-3.5 h-3.5 text-stone-400 shrink-0" />
+              <span className="truncate">Search heritage places...</span>
+            </div>
 
             {/* Mobile menu toggle */}
             <button
@@ -105,15 +110,19 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({ onOpenSearch }) => {
                 key={link.to}
                 to={link.to}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${
+                className={`flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-medium transition-colors ${
                   active
                     ? 'bg-amber-100 text-amber-900 font-semibold'
                     : link.isAi
-                    ? 'text-indigo-700 bg-indigo-50 font-semibold'
+                    ? 'text-sky-800 bg-sky-50 font-semibold'
                     : 'text-stone-800 hover:bg-stone-100'
                 }`}
               >
-                <Icon className={`w-4 h-4 ${link.isAi ? 'text-indigo-600' : active ? 'text-amber-800' : 'text-stone-500'}`} />
+                <Icon
+                  className={`w-4 h-4 ${
+                    link.isAi ? 'text-sky-600' : active ? 'text-amber-800' : 'text-stone-500'
+                  }`}
+                />
                 <span>{link.label}</span>
               </Link>
             );
