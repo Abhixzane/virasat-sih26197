@@ -1,20 +1,38 @@
 import React, { useState } from 'react';
-import { BookOpen, Calendar, MapPin, Sparkles, Clock, Landmark, Navigation, ArrowRight, ShieldCheck } from 'lucide-react';
+import {
+  BookOpen, Calendar, MapPin, Sparkles, Clock, Landmark,
+  Navigation, ArrowRight, ShieldCheck, Printer, Check, Compass
+} from 'lucide-react';
 import { api } from '../services/api';
 import { ItineraryResponse } from '../types/cultural';
+import {
+  TricolourRibbonWave, MonumentSkyline, StatsCounterBar
+} from '../components/shared/TricolourBranding';
 
 interface ItineraryPageProps {
   onExploreRelated: (type: string, id: string) => void;
 }
 
 export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }) => {
-  const [destination, setDestination] = useState('Bihar');
+  const [destination, setDestination] = useState('Tamil Nadu');
   const [days, setDays] = useState(3);
-  const [selectedInterests, setSelectedInterests] = useState<string[]>(['Monuments', 'Crafts']);
+  const [selectedInterests, setSelectedInterests] = useState<string[]>(['Monuments', 'Crafts', 'Temple Traditions']);
   const [itinerary, setItinerary] = useState<ItineraryResponse | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const interestOptions = ['Monuments', 'Crafts', 'Festivals', 'Performing Arts', 'Spiritual Walks'];
+  const interestOptions = [
+    'Monuments',
+    'Crafts',
+    'Festivals',
+    'Performing Arts',
+    'Temple Traditions',
+    'Culinary Heritage',
+  ];
+
+  const quickDestinations = [
+    'Tamil Nadu', 'Rajasthan', 'Karnataka', 'Bihar',
+    'Uttar Pradesh', 'Kerala', 'Odisha', 'Delhi'
+  ];
 
   const toggleInterest = (interest: string) => {
     setSelectedInterests((prev) =>
@@ -41,236 +59,277 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
     }
   };
 
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
-    <div className="space-y-8 pb-16">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-amber-950 via-stone-900 to-indigo-950 text-white rounded-3xl p-8 sm:p-10 border border-stone-800 shadow-xl">
-        <div className="max-w-3xl space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold uppercase tracking-wider">
-            <BookOpen className="w-3.5 h-3.5" />
-            <span>Factual Archaeological Planning</span>
+    <div className="space-y-12 pb-16">
+      {/* 1. Header Banner */}
+      <section className="relative rounded-3xl overflow-hidden bg-[#FFFDF9] border border-stone-200/90 shadow-sm p-6 sm:p-10 lg:p-12">
+        <div className="absolute top-0 inset-x-0 h-40 overflow-hidden pointer-events-none opacity-20 text-[#D4AF37]">
+          <MonumentSkyline opacity={0.2} />
+        </div>
+
+        <div className="relative z-10 space-y-4 max-w-3xl">
+          <div className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-[#E05A2B]">
+            <Calendar className="w-3.5 h-3.5 text-[#E05A2B]" />
+            <span>AI CULTURAL ITINERARY SYNTHESIZER</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold font-serif">
-            Cultural Heritage Itinerary Generator
+
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif text-stone-900 leading-tight">
+            Plan Your Cultural Journey
           </h1>
-          <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
-            Create a day-wise cultural journey through India grounded strictly in authentic monuments and artisan guilds.
-            No fabricated travel times, artificial booking claims, or synthetic schedules.
+
+          <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-2xl">
+            Synthesize balanced day-by-day travel plans grounded in verified geographic clusters.
+            Weave together UNESCO monuments, master craft ateliers, sacred riverfront ceremonies, and classical theatre without travel fatigue.
           </p>
         </div>
-      </div>
 
-      {/* Generator Form Card */}
-      <div className="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-heritage">
-        <form onSubmit={handleGenerate} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Destination Input */}
-            <div className="space-y-2">
-              <label className="text-xs font-bold text-stone-800 uppercase tracking-wider">
-                State or Heritage Region
-              </label>
-              <div className="relative">
-                <MapPin className="w-4 h-4 text-amber-700 absolute left-3 top-3" />
-                <input
-                  type="text"
-                  value={destination}
-                  onChange={(e) => setDestination(e.target.value)}
-                  placeholder="e.g. Bihar, Rajasthan, Uttar Pradesh, Hampi..."
-                  className="w-full pl-9 pr-4 py-2.5 bg-stone-50 border border-stone-200 rounded-xl text-xs sm:text-sm text-stone-900 font-medium outline-none focus:border-amber-600"
-                  required
-                />
-              </div>
-            </div>
+        <div className="pt-6">
+          <TricolourRibbonWave />
+        </div>
+      </section>
 
-            {/* Days Slider */}
-            <div className="space-y-2">
-              <div className="flex justify-between items-center text-xs font-bold text-stone-800 uppercase tracking-wider">
-                <span>Duration</span>
-                <span className="text-amber-800 font-serif">{days} Days</span>
-              </div>
-              <input
-                type="range"
-                min="1"
-                max="7"
-                value={days}
-                onChange={(e) => setDays(parseInt(e.target.value))}
-                className="w-full h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer accent-amber-800"
-              />
-              <div className="flex justify-between text-[10px] text-stone-400">
-                <span>1 Day</span>
-                <span>4 Days</span>
-                <span>7 Days</span>
-              </div>
-            </div>
-
-            {/* Cultural Interests Chips */}
-            <div className="space-y-2">
-              <label className="text-xs font-bold text-stone-800 uppercase tracking-wider">
-                Cultural Focus
-              </label>
-              <div className="flex flex-wrap gap-1.5">
-                {interestOptions.map((interest) => (
-                  <button
-                    type="button"
-                    key={interest}
-                    onClick={() => toggleInterest(interest)}
-                    className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all ${
-                      selectedInterests.includes(interest)
-                        ? 'bg-amber-800 text-white shadow-2xs'
-                        : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
-                    }`}
-                  >
-                    {interest}
-                  </button>
-                ))}
-              </div>
+      {/* 2. Interactive Generator Form */}
+      <form onSubmit={handleGenerate} className="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-2xs space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Destination */}
+          <div className="space-y-2">
+            <label className="text-xs font-bold uppercase tracking-wider text-stone-700 flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-[#E05A2B]" />
+              <span>Target State or Cultural Destination</span>
+            </label>
+            <input
+              type="text"
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
+              placeholder="e.g. Tamil Nadu, Rajasthan, Varanasi, Hampi..."
+              required
+              className="w-full px-4 py-2.5 rounded-xl bg-stone-50 border border-stone-200 text-sm font-medium outline-none focus:border-[#E05A2B]"
+            />
+            {/* Quick chips */}
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {quickDestinations.map((d) => (
+                <button
+                  type="button"
+                  key={d}
+                  onClick={() => setDestination(d)}
+                  className={`text-[11px] px-2.5 py-0.5 rounded-md border transition-colors ${
+                    destination === d
+                      ? 'bg-amber-100 text-amber-900 border-amber-300 font-bold'
+                      : 'text-stone-600 bg-white border-stone-200 hover:bg-stone-50'
+                  }`}
+                >
+                  {d}
+                </button>
+              ))}
             </div>
           </div>
 
-          <div className="pt-4 border-t border-stone-100 flex items-center justify-between">
-            <div className="flex items-center gap-1.5 text-xs text-stone-500">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Grounded in verified database records</span>
+          {/* Number of Days */}
+          <div className="space-y-2">
+            <label className="text-xs font-bold uppercase tracking-wider text-stone-700 flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-[#E05A2B]" />
+              <span>Duration ({days} Days)</span>
+            </label>
+            <div className="flex items-center gap-2 pt-1">
+              {[1, 2, 3, 4, 5, 7].map((num) => (
+                <button
+                  type="button"
+                  key={num}
+                  onClick={() => setDays(num)}
+                  className={`w-10 h-10 rounded-xl text-xs font-bold transition-all ${
+                    days === num
+                      ? 'bg-[#E05A2B] text-white shadow-xs'
+                      : 'bg-stone-50 text-stone-700 border border-stone-200 hover:bg-stone-100'
+                  }`}
+                >
+                  {num}d
+                </button>
+              ))}
             </div>
-            <button
-              type="submit"
-              disabled={loading}
-              className="px-6 py-2.5 rounded-xl bg-amber-800 hover:bg-amber-900 disabled:bg-stone-300 text-white text-xs sm:text-sm font-bold shadow-md transition-colors flex items-center gap-2"
-            >
-              {loading ? (
-                <>
-                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                  <span>Synthesizing Itinerary...</span>
-                </>
-              ) : (
-                <>
-                  <Sparkles className="w-4 h-4 text-amber-300" />
-                  <span>Generate Grounded Itinerary</span>
-                </>
-              )}
-            </button>
-          </div>
-        </form>
-      </div>
-
-      {/* Generated Itinerary Output */}
-      {itinerary && (
-        <div className="space-y-6 animate-fadeIn">
-          {/* Overview Banner */}
-          <div className="bg-amber-50/80 border border-amber-200/90 rounded-3xl p-6 sm:p-8 space-y-3">
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-900 uppercase tracking-wider">
-              <Calendar className="w-3.5 h-3.5" />
-              <span>{itinerary.duration_days}-Day Verified Cultural Blueprint</span>
-            </div>
-            <h2 className="text-2xl font-bold font-serif text-stone-900">
-              {itinerary.itinerary_title}
-            </h2>
-            <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-3xl">
-              {itinerary.overview}
+            <p className="text-[11px] text-stone-500 pt-1">
+              AI clusters locations geographically to minimize transit time.
             </p>
           </div>
+        </div>
 
-          {/* Days Accordion / List */}
+        {/* Cultural Interests */}
+        <div className="space-y-2 pt-2 border-t border-stone-100">
+          <label className="text-xs font-bold uppercase tracking-wider text-stone-700 flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-[#E05A2B]" />
+            <span>Select Cultural Focus Areas</span>
+          </label>
+          <div className="flex flex-wrap gap-2">
+            {interestOptions.map((opt) => {
+              const selected = selectedInterests.includes(opt);
+              return (
+                <button
+                  type="button"
+                  key={opt}
+                  onClick={() => toggleInterest(opt)}
+                  className={`px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                    selected
+                      ? 'bg-[#E05A2B] text-white shadow-xs'
+                      : 'bg-stone-50 text-stone-700 border border-stone-200/80 hover:bg-stone-100'
+                  }`}
+                >
+                  {selected && <Check className="w-3 h-3 stroke-[3]" />}
+                  <span>{opt}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Generate Button */}
+        <div className="pt-2">
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full sm:w-auto px-8 py-3 rounded-full bg-[#E05A2B] hover:bg-[#D04E20] text-white text-sm font-bold flex items-center justify-center gap-2 shadow-md transition-all disabled:opacity-50"
+          >
+            {loading ? (
+              <>
+                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                <span>Synthesizing Cultural Route...</span>
+              </>
+            ) : (
+              <>
+                <Sparkles className="w-4 h-4" />
+                <span>Generate Verified Itinerary</span>
+              </>
+            )}
+          </button>
+        </div>
+      </form>
+
+      {/* 3. Generated Itinerary Results View */}
+      {itinerary && (
+        <div className="space-y-6 animate-fadeIn">
+          {/* Itinerary Title Card */}
+          <div className="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-2xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="space-y-1">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#E05A2B]">
+                {itinerary.duration_days}-Day Verified Cultural Circuit
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold font-serif text-stone-900">
+                {itinerary.itinerary_title}
+              </h2>
+              <p className="text-xs sm:text-sm text-stone-600 max-w-2xl leading-relaxed">
+                {itinerary.overview}
+              </p>
+            </div>
+
+            <button
+              onClick={handlePrint}
+              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-700 text-xs font-semibold border border-stone-200 transition-colors shrink-0"
+            >
+              <Printer className="w-4 h-4" />
+              <span>Print / Save PDF</span>
+            </button>
+          </div>
+
+          {/* Days Cards */}
           <div className="space-y-6">
             {itinerary.days.map((day) => (
               <div
                 key={day.day_number}
-                className="bg-white rounded-3xl border border-stone-200 p-6 sm:p-8 shadow-heritage space-y-6"
+                className="bg-white rounded-3xl border border-stone-200 p-6 sm:p-8 shadow-2xs space-y-6"
               >
                 {/* Day Header */}
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 pb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-xl bg-amber-800 text-white font-serif font-bold text-sm flex items-center justify-center shadow-xs">
-                      D{day.day_number}
-                    </div>
-                    <div>
-                      <div className="text-[11px] font-bold text-amber-800 uppercase tracking-wide">
-                        Day {day.day_number} Cultural Theme
-                      </div>
-                      <h3 className="text-base sm:text-lg font-bold font-serif text-stone-900">
-                        {day.theme}
-                      </h3>
-                    </div>
+                <div className="flex items-center gap-3 border-b border-stone-100 pb-4">
+                  <div className="w-10 h-10 rounded-2xl bg-[#E05A2B] text-white flex items-center justify-center font-bold text-sm font-serif shrink-0 shadow-xs">
+                    D{day.day_number}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold font-serif text-stone-900">
+                      Day {day.day_number}: {day.theme}
+                    </h3>
+                    <p className="text-xs text-stone-600 leading-relaxed mt-0.5">
+                      {day.cultural_explanation}
+                    </p>
                   </div>
                 </div>
 
-                {/* Cultural Explanation */}
-                <p className="text-xs sm:text-sm text-stone-600 leading-relaxed bg-stone-50 p-4 rounded-2xl border border-stone-200/70">
-                  {day.cultural_explanation}
-                </p>
-
-                {/* Grid of Heritage Places and Experiences */}
+                {/* Day Items: Places & Experiences */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {/* Heritage Monuments */}
-                  <div className="space-y-3">
-                    <div className="text-xs font-bold text-amber-900 uppercase tracking-wider flex items-center gap-1.5">
-                      <Landmark className="w-3.5 h-3.5 text-amber-700" />
-                      <span>Archaeological & Heritage Sites</span>
-                    </div>
-                    {day.heritage_places.map((place) => (
-                      <div
-                        key={place.id}
-                        onClick={() => onExploreRelated('heritage', place.id)}
-                        className="p-3 bg-stone-50 hover:bg-amber-50/50 rounded-xl border border-stone-200 hover:border-amber-300 cursor-pointer transition-all flex items-center gap-3"
-                      >
-                        <img
-                          src={place.image_url}
-                          alt={place.name}
-                          className="w-12 h-12 rounded-lg object-cover border border-stone-200 shrink-0"
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1548013146-72479768bada?w=100';
-                          }}
-                        />
-                        <div className="flex-1 min-w-0">
-                          <h4 className="text-xs font-bold text-stone-900 truncate">{place.name}</h4>
-                          <p className="text-[11px] text-stone-500 truncate">{place.architectural_style}</p>
+                  {/* Heritage Places on this day */}
+                  {day.heritage_places.map((place) => (
+                    <div
+                      key={place.id}
+                      onClick={() => onExploreRelated('heritage', place.id)}
+                      className="group p-4 rounded-2xl bg-amber-50/40 hover:bg-amber-50/80 border border-amber-200/60 transition-all cursor-pointer flex gap-3.5 items-start"
+                    >
+                      <img
+                        src={place.image_url}
+                        alt={place.name}
+                        className="w-20 h-20 rounded-xl object-cover shrink-0"
+                      />
+                      <div className="space-y-1">
+                        <span className="text-[10px] font-bold text-[#E05A2B] uppercase">
+                          Monuments & Architecture
+                        </span>
+                        <h4 className="text-sm font-bold text-stone-900 font-serif group-hover:text-[#E05A2B]">
+                          {place.name}
+                        </h4>
+                        <div className="text-[11px] text-stone-500 font-medium">
+                          {place.city}, {place.state}
                         </div>
-                        <ArrowRight className="w-3.5 h-3.5 text-stone-300" />
+                        <p className="text-xs text-stone-600 line-clamp-2">
+                          {place.description || place.historical_significance}
+                        </p>
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
 
-                  {/* Cultural Experiences */}
-                  <div className="space-y-3">
-                    <div className="text-xs font-bold text-blue-900 uppercase tracking-wider flex items-center gap-1.5">
-                      <Navigation className="w-3.5 h-3.5 text-blue-600" />
-                      <span>Artisan Immersions & Walks</span>
-                    </div>
-                    {day.cultural_experiences.map((exp) => (
-                      <div
-                        key={exp.id}
-                        onClick={() => onExploreRelated('experience', exp.id)}
-                        className="p-3 bg-stone-50 hover:bg-blue-50/50 rounded-xl border border-stone-200 hover:border-blue-300 cursor-pointer transition-all flex items-center gap-3"
-                      >
-                        <div className="flex-1 min-w-0">
-                          <h4 className="text-xs font-bold text-stone-900 truncate">{exp.name}</h4>
-                          <p className="text-[11px] text-stone-500 truncate">{exp.duration} • {exp.category}</p>
+                  {/* Cultural Experiences on this day */}
+                  {day.cultural_experiences.map((exp) => (
+                    <div
+                      key={exp.id}
+                      onClick={() => onExploreRelated('experience', exp.id)}
+                      className="group p-4 rounded-2xl bg-emerald-50/40 hover:bg-emerald-50/80 border border-emerald-200/60 transition-all cursor-pointer flex gap-3.5 items-start"
+                    >
+                      <img
+                        src={exp.image_url}
+                        alt={exp.name}
+                        className="w-20 h-20 rounded-xl object-cover shrink-0"
+                      />
+                      <div className="space-y-1">
+                        <span className="text-[10px] font-bold text-emerald-800 uppercase">
+                          Artisan & Ritual Immersion
+                        </span>
+                        <h4 className="text-sm font-bold text-stone-900 font-serif group-hover:text-emerald-900">
+                          {exp.name}
+                        </h4>
+                        <div className="text-[11px] text-stone-500 font-medium flex items-center gap-1">
+                          <Clock className="w-3 h-3 text-stone-400" />
+                          <span>{exp.duration}</span> • <span>{exp.city}</span>
                         </div>
-                        <ArrowRight className="w-3.5 h-3.5 text-stone-300" />
+                        <p className="text-xs text-stone-600 line-clamp-2">
+                          {exp.description}
+                        </p>
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
-
-                {/* Associated Traditions */}
-                {day.associated_traditions && day.associated_traditions.length > 0 && (
-                  <div className="pt-2 flex flex-wrap items-center gap-2 text-xs">
-                    <span className="text-stone-400 font-semibold text-[10px] uppercase">Regional Celebrations:</span>
-                    {day.associated_traditions.map((trad, tIdx) => (
-                      <span
-                        key={tIdx}
-                        className="bg-amber-100 text-amber-900 text-[11px] px-2.5 py-0.5 rounded-full font-medium"
-                      >
-                        {trad}
-                      </span>
-                    ))}
-                  </div>
-                )}
               </div>
             ))}
           </div>
         </div>
       )}
+
+      {/* 4. Stats Bar */}
+      <section>
+        <StatsCounterBar
+          item1={{ count: '100%', label: 'Geographic Route Coherence' }}
+          item2={{ count: 'Zero', label: 'Synthetic Opening Hours' }}
+          item3={{ count: '1–7', label: 'Day Scalability' }}
+          item4={{ count: 'Direct', label: 'Artisan & ASI Grounding' }}
+        />
+      </section>
     </div>
   );
 };
