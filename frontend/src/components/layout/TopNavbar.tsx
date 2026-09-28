@@ -24,7 +24,7 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({ onOpenSearch }) => {
     { to: '/heritage', label: 'Heritage', icon: Landmark },
     { to: '/festivals', label: 'Festivals', icon: Calendar },
     { to: '/arts-crafts', label: 'Arts & Crafts', icon: Palette },
-    { to: '/experiences', label: 'Experiences', icon: Sparkles },
+    { to: '/experiences', label: 'Experiences', icon: MapPin },
     { to: '/cultural-map', label: 'Cultural Map', icon: Map },
     { to: '/itinerary', label: 'Itinerary', icon: Calendar },
   ];

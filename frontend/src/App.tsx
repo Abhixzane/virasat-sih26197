@@ -58,13 +58,14 @@ const AppContent: React.FC = () => {
       {/* Top Navbar strictly conformed to Section 5.1 */}
       <TopNavbar onOpenSearch={handleOpenSearch} />
 
-      {/* Main Content Area: Full width on Home, extra-wide for Cultural Map, boxed on other internal pages */}
+      {/* Main Content Area: Full width on Home, extra-wide for Cultural Map and Discover, boxed on other internal pages */}
       <main className={`flex-1 w-full ${
         location.pathname === '/'
           ? ''
           : location.pathname.startsWith('/cultural-map') ||
             location.pathname.startsWith('/map') ||
-            location.pathname.startsWith('/arts-crafts')
+            location.pathname.startsWith('/arts-crafts') ||
+            location.pathname.startsWith('/discover')
           ? 'max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-12'
           : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12'
       }`}>
