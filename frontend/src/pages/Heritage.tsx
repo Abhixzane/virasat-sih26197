@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import {
   Landmark, MapPin, Search, Filter, Trophy, Users,
-  Bot, ArrowRight, ChevronLeft, ChevronRight, CheckSquare, Square
+  Bot, ArrowRight, ChevronLeft, ChevronRight, CheckSquare, Square, Sparkles
 } from 'lucide-react';
 import { api } from '../services/api';
 import { HeritagePlace, MapMarker } from '../types/cultural';
@@ -207,6 +207,79 @@ export const HeritagePage: React.FC<HeritagePageProps> = ({ onExploreRelated }) 
     'Rajasthan', 'Odisha', 'Tamil Nadu', 'Delhi'
   ];
 
+  // 5 Featured Spotlight Monuments for interactive Hero Showcase
+  const heroSpotlightMonuments = [
+    {
+      id: 'place-taj-mahal',
+      name: 'Taj Mahal',
+      location: 'Agra, Uttar Pradesh',
+      era: '1631–1648 CE • Mughal Dynasty',
+      style: 'Mughal Symmetrical Marble & Pietra Dura',
+      unesco: 'UNESCO Inscribed (1983)',
+      tag: 'World Heritage Wonder',
+      coords: '27.1751° N, 78.0421° E',
+      image: '/hero/monument-1.jpg',
+      quote: 'Peak jewel of Indo-Islamic architecture with white Makrana marble and Charbagh gardens.',
+    },
+    {
+      id: 'place-hampi-vittala',
+      name: 'Vittala Temple & Stone Chariot',
+      location: 'Hampi, Karnataka',
+      era: '15th–16th Century CE • Vijayanagara Empire',
+      style: 'Classical Dravidian Vijayanagara Granite',
+      unesco: 'UNESCO Inscribed (1986)',
+      tag: 'Monolithic Granite Wonder',
+      coords: '15.3350° N, 76.4600° E',
+      image: '/hero/monument-4.jpg',
+      quote: 'Iconic monolithic stone chariot and resonant musical pillars of Maha Mantapa.',
+    },
+    {
+      id: 'place-sun-temple-konark',
+      name: 'Sun Temple, Konark',
+      location: 'Konark, Odisha',
+      era: '1250 CE • Eastern Ganga Dynasty',
+      style: 'Kalinga Chariot Architecture',
+      unesco: 'UNESCO Inscribed (1984)',
+      tag: 'Astronomical Chariot Sanctum',
+      coords: '19.8876° N, 86.0945° E',
+      image: '/hero/monument-7.jpg',
+      quote: 'Colossal stone chariot with 24 intricate carved sundials engineered to track solar motion.',
+    },
+    {
+      id: 'place-meenakshi-temple',
+      name: 'Meenakshi Amman Temple',
+      location: 'Madurai, Tamil Nadu',
+      era: '6th Century CE / 16th Century Expansion',
+      style: 'Dravidian Gopuram Architecture',
+      unesco: 'Ancient Living Heritage',
+      tag: 'Sacred Gopuram Sanctuary',
+      coords: '9.9195° N, 78.1193° E',
+      image: '/hero/monument-2.jpg',
+      quote: '14 towering sculpted gopurams adorned with thousands of polychrome mythological figures.',
+    },
+    {
+      id: 'place-amber-fort',
+      name: 'Amber Fort & Palace',
+      location: 'Jaipur, Rajasthan',
+      era: '1592 CE • Kachhwaha Rajput Rule',
+      style: 'Rajput & Mughal Synthesis',
+      unesco: 'UNESCO Inscribed (2013)',
+      tag: 'Hill Forts of Rajasthan',
+      coords: '26.9855° N, 75.8513° E',
+      image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1000&auto=format&fit=crop&q=80',
+      quote: 'Majestic red sandstone and marble citadel featuring the shimmering Sheesh Mahal mirror palace.',
+    },
+  ];
+
+  const [activeSpotlightIdx, setActiveSpotlightIdx] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSpotlightIdx((prev) => (prev + 1) % heroSpotlightMonuments.length);
+    }, 5500);
+    return () => clearInterval(timer);
+  }, [heroSpotlightMonuments.length]);
+
   useEffect(() => {
     // Read search param if present
     const q = searchParams.get('search');
@@ -269,30 +342,175 @@ export const HeritagePage: React.FC<HeritagePageProps> = ({ onExploreRelated }) 
 
   return (
     <div className="space-y-12 pb-16">
-      {/* 1. Header Banner matching screenshot media_1790496105259.jpg */}
-      <section className="relative rounded-3xl overflow-hidden bg-[#FFFDF9] border border-stone-200/90 shadow-sm p-6 sm:p-10 lg:p-12">
-        <div className="absolute top-0 inset-x-0 h-40 overflow-hidden pointer-events-none opacity-20 text-[#D4AF37]">
-          <MonumentSkyline opacity={0.2} />
+      {/* 1. Creative Master Heritage Hero Banner */}
+      <section className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#FFFDF9] via-[#FAF6EE] to-[#F5ECE0] border border-amber-200/90 shadow-md p-6 sm:p-8 lg:p-10">
+        {/* Top Tricolour Saffron-White-Green hairline accent */}
+        <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-[#FF9933] via-amber-400 to-[#138808]" />
+
+        {/* Subtle Decorative Architectural Watermark */}
+        <div className="absolute top-0 right-0 w-96 h-64 overflow-hidden pointer-events-none opacity-10 text-[#D4AF37]">
+          <MonumentSkyline opacity={0.15} />
         </div>
 
-        <div className="relative z-10 space-y-4 max-w-3xl">
-          <div className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-[#E05A2B]">
-            <Landmark className="w-3.5 h-3.5 text-[#E05A2B]" />
-            <span>HERITAGE & MONUMENT COLLECTION</span>
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          {/* Left Column: Storytelling & Heritage Stats (7 cols) */}
+          <div className="lg:col-span-7 space-y-5">
+            {/* National / Official Archive Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/90 border border-amber-300/80 text-[#8B3E00] text-[11px] font-extrabold uppercase tracking-wider shadow-2xs">
+              <span className="w-2 h-2 rounded-full bg-[#E05A2B] animate-pulse" />
+              <Landmark className="w-3.5 h-3.5 text-[#E05A2B]" />
+              <span>OFFICIAL ARCHAEOLOGICAL & UNESCO WORLD HERITAGE ARCHIVE</span>
+            </div>
+
+            {/* Headline */}
+            <div className="space-y-2">
+              <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-stone-900 leading-[1.18] tracking-tight">
+                Timeless Monuments &{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E05A2B] via-[#C94A1F] to-[#138808]">
+                  Sacred Architecture of India
+                </span>
+              </h1>
+              <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-xl font-normal">
+                Journey through millennia of architectural brilliance—from monolithic rock-cut cave sanctums and soaring Dravidian granite vimanas to magnificent Rajput hill fortresses and luminous Mughal marble marvels.
+              </p>
+            </div>
+
+            {/* Live Heritage Verification Metric Badges */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
+              <div className="bg-white/85 backdrop-blur-xs p-2.5 rounded-xl border border-amber-200/70 shadow-2xs">
+                <div className="text-lg font-black text-[#E05A2B]">188+</div>
+                <div className="text-[10.5px] font-semibold text-stone-600">Verified Monuments</div>
+              </div>
+              <div className="bg-white/85 backdrop-blur-xs p-2.5 rounded-xl border border-amber-200/70 shadow-2xs">
+                <div className="text-lg font-black text-amber-700">42</div>
+                <div className="text-[10.5px] font-semibold text-stone-600">UNESCO World Heritage</div>
+              </div>
+              <div className="bg-white/85 backdrop-blur-xs p-2.5 rounded-xl border border-amber-200/70 shadow-2xs">
+                <div className="text-lg font-black text-emerald-700">36</div>
+                <div className="text-[10.5px] font-semibold text-stone-600">States & UTs Covered</div>
+              </div>
+              <div className="bg-white/85 backdrop-blur-xs p-2.5 rounded-xl border border-amber-200/70 shadow-2xs">
+                <div className="text-lg font-black text-stone-900">100%</div>
+                <div className="text-[10.5px] font-semibold text-stone-600">ASI Grounded Truth</div>
+              </div>
+            </div>
+
+            {/* Curated Era / Style Quick Exploration Chips */}
+            <div className="pt-2 flex flex-wrap items-center gap-2">
+              <span className="text-[11px] font-bold text-stone-500 uppercase tracking-wider flex items-center gap-1">
+                <Sparkles className="w-3.5 h-3.5 text-[#E05A2B]" />
+                <span>Quick Filter:</span>
+              </span>
+              {[
+                { label: 'All Monuments', query: '' },
+                { label: '🏰 Forts & Palaces', query: 'Fort' },
+                { label: '🛕 Ancient Temples', query: 'Temple' },
+                { label: '🗿 Rock-Cut Caves', query: 'Caves' },
+                { label: '⭐ UNESCO Heritage', query: 'UNESCO' },
+              ].map((chip) => (
+                <button
+                  key={chip.label}
+                  type="button"
+                  onClick={() => {
+                    setSearchQuery(chip.query);
+                    setCurrentPage(1);
+                  }}
+                  className={`text-xs px-3 py-1 rounded-full font-semibold transition-all cursor-pointer ${
+                    searchQuery === chip.query
+                      ? 'bg-stone-900 text-white shadow-xs'
+                      : 'bg-white/90 text-stone-700 border border-stone-200 hover:border-[#E05A2B] hover:text-[#E05A2B]'
+                  }`}
+                >
+                  {chip.label}
+                </button>
+              ))}
+            </div>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif text-stone-900 leading-tight">
-            Heritage Places & Historic Monuments
-          </h1>
+          {/* Right Column: Interactive Featured Monument Spotlight (5 cols) */}
+          <div className="lg:col-span-5">
+            <div className="relative bg-white rounded-2xl p-3 border border-amber-200/90 shadow-md overflow-hidden group">
+              {/* Spotlight Image Card */}
+              <div className="relative h-56 sm:h-64 rounded-xl overflow-hidden shadow-inner">
+                <img
+                  src={heroSpotlightMonuments[activeSpotlightIdx].image}
+                  alt={heroSpotlightMonuments[activeSpotlightIdx].name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/25 to-transparent" />
 
-          <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-2xl">
-            Explore world-renowned wonders across India, from monolithic rock-cut cave shrines
-            and Vijayanagara granite architecture to classical Dravidian gopurams and Mughal masterpieces.
-          </p>
-        </div>
+                {/* Badges on Image */}
+                <div className="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5">
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#E05A2B] text-white shadow-xs flex items-center gap-1">
+                    <Trophy className="w-3 h-3" />
+                    <span>{heroSpotlightMonuments[activeSpotlightIdx].tag}</span>
+                  </span>
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-black/60 backdrop-blur-xs text-amber-300 border border-amber-400/40">
+                    {heroSpotlightMonuments[activeSpotlightIdx].unesco}
+                  </span>
+                </div>
 
-        <div className="pt-6">
-          <TricolourRibbonWave />
+                {/* Bottom Overlay Info */}
+                <div className="absolute bottom-2.5 inset-x-2.5 text-white space-y-1">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-base sm:text-lg font-bold tracking-tight">
+                      {heroSpotlightMonuments[activeSpotlightIdx].name}
+                    </h3>
+                    <span className="text-[10px] text-white/80 bg-white/20 backdrop-blur-xs px-2 py-0.5 rounded-md flex items-center gap-1">
+                      <MapPin className="w-3 h-3 text-[#FF9933]" />
+                      <span>{heroSpotlightMonuments[activeSpotlightIdx].location}</span>
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-stone-200 line-clamp-1 italic">
+                    "{heroSpotlightMonuments[activeSpotlightIdx].quote}"
+                  </p>
+                </div>
+              </div>
+
+              {/* Spotlight Subtitle & Action Row */}
+              <div className="pt-3 px-1 flex items-center justify-between gap-2">
+                <div className="text-[11px] text-stone-600 space-y-0.5">
+                  <div className="font-semibold text-stone-800">
+                    {heroSpotlightMonuments[activeSpotlightIdx].era}
+                  </div>
+                  <div className="text-stone-500 text-[10.5px]">
+                    Style: <span className="font-medium text-[#E05A2B]">{heroSpotlightMonuments[activeSpotlightIdx].style}</span>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => onExploreRelated('heritage', heroSpotlightMonuments[activeSpotlightIdx].id)}
+                  className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-[#E05A2B] to-[#C94A1F] text-white text-xs font-bold hover:shadow-md transition-all flex items-center gap-1.5 cursor-pointer shrink-0"
+                >
+                  <span>Explore</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
+
+              {/* Thumbnail Selector Dots / Buttons */}
+              <div className="pt-3 border-t border-stone-100 mt-2 flex items-center justify-between">
+                <span className="text-[10px] font-semibold text-stone-400 uppercase tracking-wider">
+                  Featured Masterpieces ({activeSpotlightIdx + 1}/{heroSpotlightMonuments.length})
+                </span>
+                <div className="flex items-center gap-1.5">
+                  {heroSpotlightMonuments.map((m, idx) => (
+                    <button
+                      key={m.id}
+                      type="button"
+                      onClick={() => setActiveSpotlightIdx(idx)}
+                      className={`h-2 rounded-full transition-all cursor-pointer ${
+                        idx === activeSpotlightIdx
+                          ? 'w-6 bg-[#E05A2B]'
+                          : 'w-2 bg-stone-300 hover:bg-stone-400'
+                      }`}
+                      aria-label={`View ${m.name}`}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
