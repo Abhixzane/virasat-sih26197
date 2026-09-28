@@ -8,7 +8,7 @@ from app.api.routes import (
     health, states, heritage, festivals,
     arts_crafts, performing_arts, experiences,
     stories, search, related, map as map_route,
-    ai, itinerary, sync, statistics, sources, artisans
+    ai, itinerary, sync, statistics, sources, artisans, auth
 )
 
 @asynccontextmanager
@@ -59,6 +59,7 @@ app.include_router(map_route.router, prefix=api_prefix, tags=["Interactive Cultu
 app.include_router(ai.router, prefix=api_prefix, tags=["VIRASAT AI Cultural Guide"])
 app.include_router(itinerary.router, prefix=api_prefix, tags=["Cultural Itinerary Generator"])
 app.include_router(sync.router, prefix=api_prefix, tags=["Database Synchronization"])
+app.include_router(auth.router, prefix=api_prefix, tags=["Authentication & User Profiles"])
 
 @app.get("/")
 def root():

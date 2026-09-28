@@ -347,3 +347,40 @@ class ItineraryResponse(BaseModel):
     transit_mode: Optional[str] = None
     curator_field_protocol: List[str] = Field(default_factory=list)
 
+# -------------------------------------------------------------
+# User Authentication & Profile Schemas
+# -------------------------------------------------------------
+class UserProfile(BaseModel):
+    id: str
+    name: str
+    email: str
+    picture: Optional[str] = None
+    provider: str = "google"  # "google" or "email"
+    created_at: Optional[str] = None
+    saved_itineraries: List[str] = Field(default_factory=list)
+    saved_places: List[str] = Field(default_factory=list)
+    preferences: Dict[str, Any] = Field(default_factory=dict)
+
+class GoogleAuthRequest(BaseModel):
+    credential: Optional[str] = None  # Google JWT ID Token
+    email: Optional[str] = None
+    name: Optional[str] = None
+    picture: Optional[str] = None
+    google_id: Optional[str] = None
+
+class EmailLoginRequest(BaseModel):
+    email: str
+    password: str
+
+class EmailSignupRequest(BaseModel):
+    name: str
+    email: str
+    password: str
+
+class AuthResponse(BaseModel):
+    success: bool
+    user: UserProfile
+    token: str
+    message: str = "Authenticated successfully"
+
+

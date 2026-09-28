@@ -210,4 +210,38 @@ export const api = {
       method: 'PUT',
       body: JSON.stringify(updates),
     }),
+
+  // User Authentication & Profiles
+  googleAuth: (payload: { credential?: string; email?: string; name?: string; picture?: string; google_id?: string }) =>
+    fetchJSON<import('../types/auth').AuthResponse>('/auth/google', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    }),
+
+  emailLogin: (email: string, password: string) =>
+    fetchJSON<import('../types/auth').AuthResponse>('/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+    }),
+
+  emailSignup: (name: string, email: string, password: string) =>
+    fetchJSON<import('../types/auth').AuthResponse>('/auth/signup', {
+      method: 'POST',
+      body: JSON.stringify({ name, email, password }),
+    }),
+
+  getCurrentUser: (token?: string, email?: string) => {
+    const p = new URLSearchParams();
+    if (token) p.append('token', token);
+    if (email) p.append('email', email);
+    const qs = p.toString();
+    return fetchJSON<import('../types/auth').User>(`/auth/me${qs ? `?${qs}` : ''}`);
+  },
+
+  saveItineraryToUser: (userId: string, itineraryTitle: string) =>
+    fetchJSON<{ success: boolean; saved_itineraries: string[] }>(
+      `/auth/save-itinerary?user_id=${encodeURIComponent(userId)}&itinerary_title=${encodeURIComponent(itineraryTitle)}`,
+      { method: 'POST' }
+    ),
 };
+

@@ -1,0 +1,21 @@
+{
+  "usr_g_108234827103": {
+    "id": "usr_g_108234827103",
+    "name": "Abhi Sinha",
+    "email": "abhi.sinha@gmail.com",
+    "picture": "https://lh3.googleusercontent.com/a/default-user=s96-c",
+    "provider": "google",
+    "created_at": "2026-09-28T20:43:49.688107Z",
+    "last_login": "2026-09-28T20:43:49.688107Z",
+    "saved_itineraries": [],
+    "saved_places": [],
+    "preferences": {
+      "preferred_language": "en",
+      "cultural_interests": [
+        "Heritage Monuments",
+        "Living Crafts",
+        "Festivals"
+      ]
+    }
+  }
+}

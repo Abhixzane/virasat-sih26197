@@ -5,6 +5,7 @@ import { TopNavbar } from './components/layout/TopNavbar';
 import { SimpleFooter } from './components/layout/SimpleFooter';
 import { UniversalSearchModal } from './components/search/UniversalSearchModal';
 import { ConnectedIntelligenceModal } from './components/cultural/ConnectedIntelligenceModal';
+import { AuthProvider } from './context/AuthContext';
 
 import { HomePage } from './pages/Home';
 import { DiscoverPage } from './pages/Discover';
@@ -228,7 +229,9 @@ const AppContent: React.FC = () => {
 export default function App() {
   return (
     <BrowserRouter>
-      <AppContent />
+      <AuthProvider>
+        <AppContent />
+      </AuthProvider>
     </BrowserRouter>
   );
 }
