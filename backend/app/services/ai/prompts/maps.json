@@ -1,0 +1,49 @@
+{
+  "category_id": "maps",
+  "category_name": "Interactive Maps & Geospatial Intelligence",
+  "domain_description": "Handles geographic coordinate lookups, spatial queries, proximity radii, and interactive map triggers across India.",
+  "grounding_requirements": [
+    "Use real WGS-84 geographic coordinates (latitude and longitude).",
+    "Calculate realistic proximity distances using Haversine algorithm.",
+    "Emit interactive UIAction navigation events for /cultural-map.",
+    "Never hallucinate false coordinates or display unreachable locations."
+  ],
+  "response_styles": {
+    "one_line": "Extremely concise, punchy single sentence answer.",
+    "simple_explanation": "Clear, jargon-free overview in 2-3 sentences for general travelers.",
+    "conversational": "Warm, engaging, natural dialogue as an Indian companion.",
+    "detailed": "In-depth factual synthesis covering history, architecture, and significance.",
+    "step_by_step": "Numbered sequential walkthrough or logistical progression.",
+    "comparison": "Side-by-side contrast of options, routes, or destinations.",
+    "table": "Structured tabular representation for budgets, timings, or itineraries.",
+    "recommendation": "Curated options with personalized justification for each pick.",
+    "interactive_workflow": "Includes direct UI action buttons, map links, and follow-up prompts.",
+    "expert_analysis": "Deep archaeological, archival, and cultural research perspective."
+  },
+  "complexity_levels": {
+    "1_beginner": "Introductory overview for a first-time visitor with no prior knowledge.",
+    "2_basic": "Standard factual details with essential visiting pointers.",
+    "3_intermediate": "Connects destination to local context, culture, and nearby sights.",
+    "4_detailed": "Full historical context, architectural breakdown, and etiquette.",
+    "5_contextual": "Takes into account season, weather, local crowds, and optimal hours.",
+    "6_personalized": "Directly tailors recommendations to user budget, group, and home city.",
+    "7_multi_step": "Coordinates multiple destinations, routes, and day schedules.",
+    "8_database_grounded": "Strictly cited with official ASI/Ministry archival sources.",
+    "9_tool_assisted": "Generates UI action triggers, map routes, and database entities.",
+    "10_advanced_agent": "Autonomous multi-turn coordination: memory, routing, map, and live itinerary modifications."
+  },
+  "sample_prompts": [
+    {
+      "user": "Show Konark temple on map",
+      "lang": "en",
+      "expected": "Coordinates 19.8876 N, 86.0945 E with UIAction NAVIGATE to /cultural-map."
+    },
+    {
+      "user": "Nearby places around Taj Mahal",
+      "lang": "en",
+      "expected": "Agra Fort (2.5 km), Mehtab Bagh (1.5 km across Yamuna), and Fatehpur Sikri (38 km)."
+    }
+  ],
+  "total_combinations": 1000,
+  "formula": "10 Categories x 10 Response Styles x 10 Complexity Levels = 1000 combinations"
+}

@@ -1,0 +1,54 @@
+{
+  "category_id": "directions",
+  "category_name": "Travel Directions & City-to-City Routing",
+  "domain_description": "Estimates driving distances, highway corridors (expressways/NH), direct train connectivity, and domestic airport access between Indian cities.",
+  "grounding_requirements": [
+    "Cite realistic driving times and named highway corridors (NE-4, Yamuna Expressway, NH-19).",
+    "Identify major train categories (Vande Bharat, Shatabdi, Rajdhani, Express) without inventing live PNRs.",
+    "Include safety and logistics tips (night driving precautions, toll lanes, scenic highway halts).",
+    "Enforce disclaimer: Live schedules, fares, and seat bookings must be verified via IRCTC or official carriers."
+  ],
+  "response_styles": {
+    "one_line": "Extremely concise, punchy single sentence answer.",
+    "simple_explanation": "Clear, jargon-free overview in 2-3 sentences for general travelers.",
+    "conversational": "Warm, engaging, natural dialogue as an Indian companion.",
+    "detailed": "In-depth factual synthesis covering history, architecture, and significance.",
+    "step_by_step": "Numbered sequential walkthrough or logistical progression.",
+    "comparison": "Side-by-side contrast of options, routes, or destinations.",
+    "table": "Structured tabular representation for budgets, timings, or itineraries.",
+    "recommendation": "Curated options with personalized justification for each pick.",
+    "interactive_workflow": "Includes direct UI action buttons, map links, and follow-up prompts.",
+    "expert_analysis": "Deep archaeological, archival, and cultural research perspective."
+  },
+  "complexity_levels": {
+    "1_beginner": "Introductory overview for a first-time visitor with no prior knowledge.",
+    "2_basic": "Standard factual details with essential visiting pointers.",
+    "3_intermediate": "Connects destination to local context, culture, and nearby sights.",
+    "4_detailed": "Full historical context, architectural breakdown, and etiquette.",
+    "5_contextual": "Takes into account season, weather, local crowds, and optimal hours.",
+    "6_personalized": "Directly tailors recommendations to user budget, group, and home city.",
+    "7_multi_step": "Coordinates multiple destinations, routes, and day schedules.",
+    "8_database_grounded": "Strictly cited with official ASI/Ministry archival sources.",
+    "9_tool_assisted": "Generates UI action triggers, map routes, and database entities.",
+    "10_advanced_agent": "Autonomous multi-turn coordination: memory, routing, map, and live itinerary modifications."
+  },
+  "sample_prompts": [
+    {
+      "user": "Delhi to Jaipur route and options",
+      "lang": "en",
+      "expected": "280 km via Delhi-Mumbai Expressway NE-4, Vande Bharat Express (3h 45m), and flight options."
+    },
+    {
+      "user": "Varanasi se Ayodhya kaise jayein?",
+      "lang": "hinglish",
+      "expected": "220 km via NH-330 & Purvanchal link, Vande Bharat train (~2h 50m), or scenic highway drive."
+    },
+    {
+      "user": "Patna to Gaya travel options",
+      "lang": "en",
+      "expected": "100 km via NH-22, Jan Shatabdi / Vande Bharat (~1h 45m), or local highway drive."
+    }
+  ],
+  "total_combinations": 1000,
+  "formula": "10 Categories x 10 Response Styles x 10 Complexity Levels = 1000 combinations"
+}
