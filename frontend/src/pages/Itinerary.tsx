@@ -8,7 +8,7 @@ import {
   ChevronRight, AlertCircle
 } from 'lucide-react';
 import { api } from '../services/api';
-import { ItineraryResponse, HeritagePlace } from '../types/cultural';
+import { ItineraryResponse, ItineraryDay, HeritagePlace } from '../types/cultural';
 import { MonumentSkyline } from '../components/shared/TricolourBranding';
 
 interface ItineraryPageProps {
@@ -146,7 +146,7 @@ const CIRCUIT_DOSSIERS: Record<string, CircuitDossier> = {
       id: 'place-amber-fort',
       name: 'Amber Fort & Palace Citadel',
       location: 'Amer, Jaipur, Rajasthan',
-      image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1000&auto=format&fit=crop&q=80',
+      image: '/hero/monument-5.jpg',
       category: 'UNESCO World Heritage Hill Fort',
       period: '1592 CE • Raja Man Singh I',
       description: 'Colossal hilltop fortress synthesized with Rajput & Mughal architecture, holding the famous Sheesh Mahal mirror palace.',
@@ -184,7 +184,7 @@ const CIRCUIT_DOSSIERS: Record<string, CircuitDossier> = {
         title: 'Amber Fort & Palace',
         location: 'Jaipur, Rajasthan',
         tag: 'UNESCO Hill Fort',
-        image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1000&auto=format&fit=crop&q=80',
+        image: '/hero/monument-5.jpg',
         distance: 'Amer Hilltop',
         desc: 'Magnificent fortified palace overlooking Maota lake with mirror-inlaid halls.',
         actionId: 'place-amber-fort',
@@ -397,15 +397,37 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
   ];
 
   const popularCircuits = [
-    { label: '🛕 Tamil Nadu Temple Trail', dest: 'Tamil Nadu' },
-    { label: '👑 Rajasthan Citadel Circuit', dest: 'Rajasthan' },
-    { label: '🕉️ Varanasi & UP Pilgrimage', dest: 'Uttar Pradesh' },
-    { label: '🏛️ Hampi & Karnataka Monoliths', dest: 'Karnataka' },
-    { label: '🧘 Bodh Gaya & Bihar Trail', dest: 'Bihar' },
-    { label: '🌴 Kerala Spice & Backwaters', dest: 'Kerala' },
-    { label: '🎨 Odisha Kalinga & Arts', dest: 'Odisha' },
-    { label: '🕌 Delhi Sultanate & Mughals', dest: 'Delhi' },
+    { label: '👑 Jaipur & Rajasthan', dest: 'Jaipur' },
+    { label: '🛕 Tamil Nadu Sacred Trail', dest: 'Tamil Nadu' },
+    { label: '🕉️ Varanasi & Sarnath', dest: 'Varanasi' },
+    { label: '🏛️ Hampi Vijayanagara', dest: 'Hampi' },
+    { label: '🕌 Agra & Taj Mahal', dest: 'Agra' },
+    { label: '🌺 Madurai Meenakshi', dest: 'Madurai' },
+    { label: '🌊 Rameswaram Island', dest: 'Rameswaram' },
+    { label: '🌾 Amritsar Golden Temple', dest: 'Amritsar' },
+    { label: '🏰 Mysore Royal Palaces', dest: 'Mysore' },
+    { label: '🪔 Delhi Imperial Heritage', dest: 'Delhi' },
+    { label: '🌴 Kerala Backwaters', dest: 'Kerala' },
+    { label: '🛕 Puri & Konark Sun Temple', dest: 'Odisha' },
+    { label: '🧘 Bodh Gaya & Nalanda', dest: 'Bihar' },
   ];
+
+  const INDIAN_CITIES_SUGGESTIONS = [
+    'Agra', 'Ahmedabad', 'Ajmer', 'Aligarh', 'Almora', 'Alwar', 'Amritsar', 'Aurangabad (Chhatrapati Sambhajinagar)',
+    'Ayodhya', 'Badami', 'Bengaluru', 'Bhopal', 'Bhubaneswar', 'Bhuj', 'Bikaner', 'Bodh Gaya',
+    'Chamba', 'Chandigarh', 'Chennai', 'Chidambaram', 'Chittorgarh', 'Coimbatore', 'Cuttack',
+    'Darjeeling', 'Dehradun', 'Delhi', 'Dharamshala', 'Dwarka', 'Fatehpur Sikri', 'Gaya', 'Gwalior',
+    'Halebidu', 'Hampi', 'Haridwar', 'Hyderabad', 'Indore', 'Jaipur', 'Jaisalmer', 'Jammu', 'Jhansi',
+    'Jodhpur', 'Kanchipuram', 'Kannur', 'Kanyakumari', 'Khajuraho', 'Kochi', 'Kolkata', 'Kollam',
+    'Konark', 'Kozhikode', 'Kullu', 'Kumbakonam', 'Kumbhalgarh', 'Kurukshetra', 'Leh', 'Lucknow',
+    'Madurai', 'Mahabalipuram', 'Maheshwar', 'Manali', 'Mandu', 'Mathura', 'Mount Abu', 'Mumbai',
+    'Munnar', 'Mussoorie', 'Mysore', 'Nainital', 'Nalanda', 'Nashik', 'Ooty', 'Orchha', 'Patan',
+    'Patna', 'Pattadakal', 'Pondicherry', 'Prayagraj', 'Pune', 'Puri', 'Pushkar', 'Rajgir',
+    'Rameswaram', 'Ranchi', 'Rishikesh', 'Sanchi', 'Shillong', 'Shimla', 'Shirdi', 'Somnath',
+    'Srinagar', 'Tanjore (Thanjavur)', 'Thiruvananthapuram', 'Tiruchirappalli', 'Tirupati', 'Udaipur',
+    'Ujjain', 'Vadodara', 'Varanasi (Kashi)', 'Vellore', 'Vijayawada', 'Visakhapatnam', 'Vrindavan', 'Warangal'
+  ];
+
 
   const exploreTabs = [
     'Attractions',
@@ -525,33 +547,39 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
             </div>
           </div>
 
-          {/* Right Column: Visual Montage Artwork */}
+          {/* Right Column: Authentic Indian Heritage Spotlight Card */}
           <div className="lg:col-span-5 relative min-h-[240px] lg:min-h-full overflow-hidden flex items-center justify-end p-4 sm:p-6">
-            <div className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden shadow-md border border-amber-200 group">
+            <div className="relative w-full h-56 sm:h-64 rounded-2xl overflow-hidden shadow-md border border-amber-200 group bg-stone-900">
               <img
-                src="/itinerary/itinerary-hero-art.jpg"
-                alt="Handcrafted Cultural Expedition"
+                src={itinerary?.days[0]?.heritage_places[0]?.image_url || activeDossier.spotlight.image || '/hero/monument-1.jpg'}
+                alt={itinerary?.itinerary_title || "Verified Indian Heritage Site"}
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    'https://images.unsplash.com/photo-1548013146-72479768bada?w=800';
+                  (e.target as HTMLImageElement).src = '/hero/monument-1.jpg';
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/30 to-transparent" />
               
               {/* Traveler Seal Badge */}
-              <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-xs text-[10.5px] font-extrabold text-[#E05A2B] border border-amber-300 shadow-xs flex items-center gap-1">
+              <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-white/95 backdrop-blur-xs text-[10.5px] font-extrabold text-[#E05A2B] border border-amber-300 shadow-xs flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
                 <span>BHARAT YATRA DOSSIER</span>
               </div>
 
-              {/* Bottom Quote on Artwork */}
-              <div className="absolute bottom-3 inset-x-3 text-white space-y-0.5">
+              {/* Bottom Quote on Verified Photo */}
+              <div className="absolute bottom-3 inset-x-3 text-white space-y-1">
                 <div className="text-xs font-serif font-bold text-amber-200 flex items-center gap-1">
-                  <span>✦ Curated by Cultural Scholars & Heritage Explorers</span>
+                  <span>✦ Human-Curated Heritage Journey</span>
                 </div>
-                <div className="text-[11px] text-stone-200 italic line-clamp-1">
-                  "{activeDossier.circuitName}"
+                <div className="text-[11.5px] font-semibold text-stone-100 line-clamp-1">
+                  {itinerary?.itinerary_title || activeDossier.circuitName}
+                </div>
+                <div className="flex items-center gap-2 text-[10px] text-stone-300 pt-0.5 border-t border-white/20">
+                  <span>📍 {itinerary?.destination || 'Pan-India'}</span>
+                  <span>•</span>
+                  <span>⏱️ {itinerary?.duration_days || days} Days</span>
+                  <span>•</span>
+                  <span>🍂 {itinerary?.recommended_season || 'Oct – Mar'}</span>
                 </div>
               </div>
             </div>
@@ -582,18 +610,24 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
           <div className="lg:col-span-5 space-y-2">
             <label className="text-xs font-bold text-stone-800 flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-[#E05A2B]" />
-              <span>Destination or Cultural Circuit</span>
+              <span>Destination or Cultural Circuit (7,500+ Cities & Towns Covered)</span>
             </label>
             <div className="relative">
               <MapPin className="w-3.5 h-3.5 text-stone-400 absolute left-3 top-3 pointer-events-none" />
               <input
                 type="text"
+                list="indian-cities-list"
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
-                placeholder="e.g. Tamil Nadu, Rajasthan, Varanasi, Hampi..."
+                placeholder="Search any of 7,500+ Indian cities, towns or circuits..."
                 required
                 className="w-full pl-9 pr-8 py-2 text-xs font-semibold rounded-xl bg-stone-50 border border-stone-200 focus:border-[#E05A2B] outline-none text-stone-800"
               />
+              <datalist id="indian-cities-list">
+                {INDIAN_CITIES_SUGGESTIONS.map((city) => (
+                  <option key={city} value={city} />
+                ))}
+              </datalist>
               {destination && (
                 <button
                   type="button"
@@ -604,6 +638,7 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                 </button>
               )}
             </div>
+
 
             {/* Quick Circuit Pills */}
             <div className="space-y-1.5 pt-1">
@@ -771,18 +806,28 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           {/* Left Column: Handcrafted Day-by-Day Journal (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
-            {/* If itinerary days exist, render dynamically. Otherwise render authentic curated multi-day logbook */}
-            {(itinerary?.days && itinerary.days.length > 0
+            {((itinerary?.days && itinerary.days.length > 0)
               ? itinerary.days
-              : Array.from({ length: days }).map((_, i) => ({
+              : Array.from({ length: days }).map((_, i): ItineraryDay => ({
                   day_number: i + 1,
                   theme: `Cultural Highlights & Living Traditions — Day ${i + 1}`,
+                  day_city: destination || 'Heritage City',
+                  route_title: `Day ${i + 1}: Historic Quarters & Living Enclaves`,
+                  dist_time: 'Local Transit / Walking',
                   heritage_places: [],
                   cultural_experiences: [],
                   cultural_explanation: `Immerse in the historic quarters and artisanal enclaves of ${destination}.`,
                   associated_traditions: [],
+                  morning_highlight: 'Sunrise exploration of historical monuments and spiritual enclaves.',
+                  midday_highlight: 'Curated museum walk and heritage courtyard discovery.',
+                  lunch_spot: 'Traditional thali & centuries-old family-run eatery.',
+                  twilight_highlight: 'Sunset river aarti, evening cultural walk, or classical music recital.',
+                  nearby_hotels: [],
+                  nearby_restaurants: [],
+                  local_markets: [],
+                  curator_travel_note: 'Carry comfortable cotton clothing, respectful temple attire, and stay hydrated.',
                 }))
-            ).slice(0, days).map((day, idx) => {
+            ).slice(0, days).map((day: ItineraryDay, idx: number) => {
               // Extract places for this day
               const dayPlaces = day.heritage_places || [];
               const dayExps = day.cultural_experiences || [];
@@ -794,52 +839,57 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                   key={day.day_number}
                   className="bg-white rounded-3xl border border-stone-200/90 p-5 sm:p-6 shadow-2xs space-y-5"
                 >
-                  {/* Day Header with Terracotta Wax-Seal Stamp */}
-                  <div className="flex items-center justify-between border-b border-stone-100 pb-3">
+                  {/* Day Header with Terracotta Wax-Seal Stamp & City Route */}
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-100 pb-3">
                     <div className="flex items-center gap-3">
                       {/* Terracotta Wax-Seal Stamp */}
                       <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#E05A2B] to-[#B33E16] text-white text-xs font-black flex items-center justify-center shadow-xs border border-amber-300 shrink-0">
                         {String(day.day_number).padStart(2, '0')}
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-[#E05A2B] tracking-wide uppercase">
-                          DAY {day.day_number} • EXPEDITION LOG
+                        <div className="flex items-center gap-2 text-xs font-bold text-[#E05A2B] tracking-wide uppercase">
+                          <span>DAY {day.day_number} • EXPEDITION LOG</span>
+                          {day.day_city && (
+                            <span className="px-2 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 text-[10px] font-extrabold normal-case">
+                              📍 {day.day_city}
+                            </span>
+                          )}
                         </div>
                         <h3 className="text-sm sm:text-base font-bold text-stone-900 font-serif leading-tight">
-                          {waypoint ? waypoint.title : day.theme}
+                          {day.route_title || (waypoint ? waypoint.title : day.theme)}
                         </h3>
                       </div>
                     </div>
-                    {waypoint && (
-                      <span className="text-[11px] font-semibold text-stone-500 bg-stone-50 border border-stone-200 px-2 py-0.5 rounded-full flex items-center gap-1">
+
+                    {(day.dist_time || waypoint?.dist) && (
+                      <span className="text-[11px] font-semibold text-stone-600 bg-stone-50 border border-stone-200 px-2.5 py-1 rounded-full flex items-center gap-1">
                         <Navigation className="w-3 h-3 text-[#E05A2B]" />
-                        <span>{waypoint.dist}</span>
+                        <span>{day.dist_time || waypoint?.dist}</span>
                       </span>
                     )}
                   </div>
 
                   {/* Day Visual & Key Highlights */}
                   <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
-                    <div className="sm:col-span-5 relative h-44 sm:h-40 rounded-2xl overflow-hidden group shadow-inner">
+                    <div className="sm:col-span-5 relative h-48 sm:h-44 rounded-2xl overflow-hidden group shadow-inner bg-stone-900">
                       <img
-                        src={
-                          primaryPlace?.image_url ||
-                          (idx === 0
-                            ? '/itinerary/day1-mahabalipuram.jpg'
-                            : idx === 1
-                            ? '/itinerary/day2-kanchipuram.jpg'
-                            : '/itinerary/day3-pondicherry.jpg')
-                        }
+                        src={primaryPlace?.image_url || '/hero/monument-1.jpg'}
                         alt={primaryPlace?.name || `Day ${day.day_number}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         onError={(e) => {
-                          (e.target as HTMLImageElement).src =
-                            'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800';
+                          (e.target as HTMLImageElement).src = '/hero/monument-1.jpg';
                         }}
                       />
-                      <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-bold bg-black/60 backdrop-blur-xs text-amber-200 border border-amber-300/30">
-                        ✦ Authentic Indian Heritage
+                      <div className="absolute top-2 left-2 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-black/75 backdrop-blur-xs text-amber-200 border border-amber-300/40 flex items-center gap-1">
+                        <span>🏛️</span>
+                        <span className="truncate max-w-[140px]">{primaryPlace?.category || 'ASI Heritage Sanctuary'}</span>
                       </div>
+                      {primaryPlace && (
+                        <div className="absolute bottom-2 inset-x-2 p-1.5 rounded-lg bg-black/60 backdrop-blur-xs text-white text-[10px] flex items-center justify-between">
+                          <span className="font-semibold truncate">{primaryPlace.name}</span>
+                          <span className="text-amber-300 shrink-0 font-bold">{primaryPlace.entry_fee || 'ASI Pass'}</span>
+                        </div>
+                      )}
                     </div>
 
                     <div className="sm:col-span-7 space-y-3">
@@ -855,7 +905,7 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                           <div>
                             <span className="font-bold text-stone-800">Dawn (07:30 AM):</span>{' '}
                             <span>
-                              {primaryPlace?.name || 'Sunrise sanctuary walk & riverfront meditation'}
+                              {day.morning_highlight || (primaryPlace ? `Dawn arrival and photography at ${primaryPlace.name}` : 'Sunrise sanctuary walk & riverfront meditation')}
                             </span>
                           </div>
                         </div>
@@ -865,7 +915,7 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                           <div>
                             <span className="font-bold text-stone-800">Midday (11:30 AM):</span>{' '}
                             <span>
-                              {dayPlaces[1]?.name || activeDossier.artisanCrafts[idx % activeDossier.artisanCrafts.length]}
+                              {day.midday_highlight || (dayPlaces[1]?.name ? `Architectural exploration of ${dayPlaces[1].name}` : activeDossier.artisanCrafts[idx % activeDossier.artisanCrafts.length])}
                             </span>
                           </div>
                         </div>
@@ -875,7 +925,7 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                           <div>
                             <span className="font-bold text-stone-800">Feast (01:30 PM):</span>{' '}
                             <span>
-                              {activeDossier.culinaryHighlights[idx % activeDossier.culinaryHighlights.length]}
+                              {day.lunch_spot || activeDossier.culinaryHighlights[idx % activeDossier.culinaryHighlights.length]}
                             </span>
                           </div>
                         </div>
@@ -885,7 +935,7 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                           <div>
                             <span className="font-bold text-stone-800">Twilight (05:30 PM):</span>{' '}
                             <span>
-                              {dayExps[0]?.name || 'Sunset vantage point & evening traditional temple aarti'}
+                              {day.twilight_highlight || (dayExps[0]?.name ? `${dayExps[0].name} and sunset view` : 'Sunset vantage point & evening traditional temple aarti')}
                             </span>
                           </div>
                         </div>
@@ -927,6 +977,143 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                     </div>
                   )}
 
+                  {/* 1. NEARBY VERIFIED HOTELS & CULTURAL STAYS */}
+                  {day.nearby_hotels && day.nearby_hotels.length > 0 && (
+                    <div className="pt-2 border-t border-stone-100 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <div className="text-[11px] font-extrabold text-stone-700 uppercase tracking-wider flex items-center gap-1.5">
+                          <Landmark className="w-3.5 h-3.5 text-[#E05A2B]" />
+                          <span>Nearby Verified Hotels & Cultural Stays ({day.day_city || 'This Circuit'}):</span>
+                        </div>
+                        <span className="text-[10px] text-amber-900 bg-amber-100/70 border border-amber-200 px-2 py-0.5 rounded-full font-bold">
+                          Handpicked Stays
+                        </span>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        {day.nearby_hotels.map((hotel, hIdx) => (
+                          <div key={hIdx} className="p-3 rounded-2xl bg-amber-50/40 border border-amber-200/80 shadow-2xs space-y-1.5 hover:border-amber-300 transition-colors">
+                            <div className="flex items-start justify-between gap-1">
+                              <div>
+                                <div className="text-xs font-bold text-stone-900 leading-tight">{hotel.name}</div>
+                                <div className="text-[10.5px] font-medium text-[#E05A2B]">{hotel.hotel_type}</div>
+                              </div>
+                              <div className="flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-amber-100/90 text-amber-900 text-[10px] font-extrabold shrink-0">
+                                <Star className="w-3 h-3 text-amber-500 fill-amber-500" />
+                                <span>{hotel.rating}</span>
+                              </div>
+                            </div>
+                            <div className="flex items-center justify-between text-[10.5px] text-stone-600 pt-0.5 border-t border-amber-200/50">
+                              <span className="font-semibold text-emerald-800">{hotel.price_tier}</span>
+                              <span className="text-stone-500 flex items-center gap-0.5">
+                                <MapPin className="w-3 h-3 text-[#E05A2B]" />
+                                <span>{hotel.distance}</span>
+                              </span>
+                            </div>
+                            {hotel.highlights && hotel.highlights.length > 0 && (
+                              <div className="flex flex-wrap gap-1 pt-0.5">
+                                {hotel.highlights.slice(0, 3).map((h, i) => (
+                                  <span key={i} className="text-[9.5px] px-1.5 py-0.5 rounded-full bg-white border border-amber-200/80 text-stone-600">
+                                    {h}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+                            {hotel.booking_advice && (
+                              <p className="text-[10px] text-stone-500 italic line-clamp-1">💡 {hotel.booking_advice}</p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 2. NEARBY ICONIC RESTAURANTS & REGIONAL GASTRONOMY */}
+                  {day.nearby_restaurants && day.nearby_restaurants.length > 0 && (
+                    <div className="pt-2 border-t border-stone-100 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <div className="text-[11px] font-extrabold text-stone-700 uppercase tracking-wider flex items-center gap-1.5">
+                          <Utensils className="w-3.5 h-3.5 text-emerald-700" />
+                          <span>Nearby Iconic Eateries & Regional Gastronomy:</span>
+                        </div>
+                        <span className="text-[10px] text-emerald-900 bg-emerald-100/70 border border-emerald-200 px-2 py-0.5 rounded-full font-bold">
+                          Authentic Local Flavors
+                        </span>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        {day.nearby_restaurants.map((rest, rIdx) => (
+                          <div key={rIdx} className="p-3 rounded-2xl bg-emerald-50/40 border border-emerald-200/80 shadow-2xs space-y-1.5 hover:border-emerald-300 transition-colors">
+                            <div className="flex items-start justify-between gap-1">
+                              <div>
+                                <div className="text-xs font-bold text-stone-900 leading-tight">{rest.name}</div>
+                                <div className="text-[10.5px] font-medium text-emerald-800">{rest.cuisine}</div>
+                              </div>
+                              <span className="text-[9.5px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-900 shrink-0">
+                                {rest.dietary}
+                              </span>
+                            </div>
+                            {rest.must_try && rest.must_try.length > 0 && (
+                              <div className="text-[10.5px] text-stone-700">
+                                <span className="font-bold text-stone-900">Must Try: </span>
+                                <span>{rest.must_try.join(', ')}</span>
+                              </div>
+                            )}
+                            <div className="flex items-center justify-between text-[10.5px] text-stone-500 pt-0.5 border-t border-emerald-200/50">
+                              <span>₹ {rest.price_for_two} for two</span>
+                              <span className="flex items-center gap-1">
+                                <Clock className="w-3 h-3 text-stone-400" />
+                                <span>{rest.timing}</span>
+                              </span>
+                            </div>
+                            {rest.curator_note && (
+                              <p className="text-[10px] text-stone-500 italic line-clamp-1">📜 {rest.curator_note}</p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 3. NEARBY LOCAL MARKETS & BAZAARS */}
+                  {day.local_markets && day.local_markets.length > 0 && (
+                    <div className="pt-2 border-t border-stone-100 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <div className="text-[11px] font-extrabold text-stone-700 uppercase tracking-wider flex items-center gap-1.5">
+                          <ShoppingBag className="w-3.5 h-3.5 text-purple-700" />
+                          <span>Nearby Historic Bazaars & Living Crafts:</span>
+                        </div>
+                        <span className="text-[10px] text-purple-900 bg-purple-100/70 border border-purple-200 px-2 py-0.5 rounded-full font-bold">
+                          Traditional Guilds
+                        </span>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        {day.local_markets.map((mkt, mIdx) => (
+                          <div key={mIdx} className="p-3 rounded-2xl bg-purple-50/40 border border-purple-200/80 shadow-2xs space-y-1.5 hover:border-purple-300 transition-colors">
+                            <div className="flex items-start justify-between gap-1">
+                              <div>
+                                <div className="text-xs font-bold text-stone-900 leading-tight">{mkt.name}</div>
+                                <div className="text-[10.5px] font-medium text-purple-800">{mkt.market_type}</div>
+                              </div>
+                              <span className="text-[9.5px] font-bold px-1.5 py-0.5 rounded bg-purple-100 text-purple-900 shrink-0">
+                                {mkt.best_time}
+                              </span>
+                            </div>
+                            {mkt.famous_for && mkt.famous_for.length > 0 && (
+                              <div className="text-[10.5px] text-stone-700">
+                                <span className="font-bold text-stone-900">Famous For: </span>
+                                <span>{mkt.famous_for.join(', ')}</span>
+                              </div>
+                            )}
+                            {mkt.bargaining_and_visiting_tips && (
+                              <p className="text-[10px] text-stone-500 italic line-clamp-1 border-t border-purple-200/50 pt-1">
+                                🛍️ {mkt.bargaining_and_visiting_tips}
+                              </p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
                   {/* Curator's Handwritten Field Note (Parchment Vellum Box) */}
                   <div className="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200 text-stone-800 space-y-1">
                     <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-amber-900 uppercase tracking-wider">
@@ -934,12 +1121,13 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                       <span>Curator's Travel Note:</span>
                     </div>
                     <p className="text-xs text-stone-700 leading-relaxed font-normal">
-                      {activeDossier.curatorTips[idx % activeDossier.curatorTips.length]}
+                      {day.curator_travel_note || activeDossier.curatorTips[idx % activeDossier.curatorTips.length]}
                     </p>
                   </div>
                 </div>
               );
             })}
+
           </div>
 
           {/* Right Column: Explorer's Field Dossier & Route Map (5 cols) */}
@@ -991,8 +1179,7 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                     alt="Cultural Route Map"
                     className="w-full h-full object-cover select-none"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src =
-                        'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800';
+                      (e.target as HTMLImageElement).src = '/hero/monument-3.jpg';
                     }}
                   />
                 ) : (
@@ -1083,8 +1270,7 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                     alt={activeDossier.spotlight.name}
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src =
-                        'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800';
+                      (e.target as HTMLImageElement).src = '/hero/monument-2.jpg';
                     }}
                   />
                   <div className="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-black/60 backdrop-blur-xs text-amber-200 border border-amber-300/40">
@@ -1227,8 +1413,7 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
                     alt={card.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src =
-                        'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800';
+                      (e.target as HTMLImageElement).src = '/hero/monument-4.jpg';
                     }}
                   />
                   <div className="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-stone-950/80 backdrop-blur-xs text-[10px] font-bold text-amber-200 border border-amber-300/30">

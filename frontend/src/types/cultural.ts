@@ -269,13 +269,54 @@ export interface AIChatResponse {
   memory_updates?: Record<string, any>;
 }
 
+export interface NearbyHotel {
+  name: string;
+  hotel_type: string;
+  price_tier: string;
+  rating: number;
+  distance: string;
+  highlights: string[];
+  booking_advice?: string;
+  image_url?: string;
+}
+
+export interface NearbyRestaurant {
+  name: string;
+  cuisine: string;
+  must_try: string[];
+  price_for_two: string;
+  timing: string;
+  dietary: string;
+  curator_note?: string;
+}
+
+export interface LocalMarket {
+  name: string;
+  market_type: string;
+  famous_for: string[];
+  best_time: string;
+  location_area: string;
+  bargaining_and_visiting_tips?: string;
+}
+
 export interface ItineraryDay {
   day_number: number;
   theme: string;
+  day_city?: string;
+  route_title?: string;
+  dist_time?: string;
   heritage_places: HeritagePlace[];
   cultural_experiences: CulturalExperience[];
   cultural_explanation: string;
   associated_traditions: string[];
+  nearby_hotels?: NearbyHotel[];
+  nearby_restaurants?: NearbyRestaurant[];
+  local_markets?: LocalMarket[];
+  curator_travel_note?: string;
+  morning_highlight?: string;
+  midday_highlight?: string;
+  lunch_spot?: string;
+  twilight_highlight?: string;
 }
 
 export interface ItineraryResponse {
@@ -285,4 +326,10 @@ export interface ItineraryResponse {
   overview: string;
   days: ItineraryDay[];
   verified_map_coordinates: Coordinates[];
+  recommended_season?: string;
+  circuit_distance?: string;
+  total_travel_time?: string;
+  transit_mode?: string;
+  curator_field_protocol?: string[];
 }
+

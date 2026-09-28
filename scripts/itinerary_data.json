@@ -1,0 +1,1740 @@
+{
+  "tamil nadu": {
+    "title": "Sacred Tamil Country & Chola Dynastic Trail",
+    "subtitle": "Monolithic Shore Shrines, Granite Gopurams & Master Weaving Guilds",
+    "region": "Southern India",
+    "recommended_season": "October – March (Mild coastal breezes & pleasant winters)",
+    "circuit_distance": "520 km total circuit",
+    "total_travel_time": "10.5 hrs travel / Vande Bharat Express",
+    "transit_mode": "Chennai-Tirunelveli Vande Bharat Express & Private AC Chauffeur Cab",
+    "curator_field_protocol": [
+      "Modest attire covering shoulders and knees is strictly observed inside active temple sanctums.",
+      "Footwear must be kept at designated temple Chappal stands outside the gopurams.",
+      "Photography is permitted in outdoor prakarams and courtyards, but prohibited inside inner sanctum sanctorums.",
+      "Purchase silk handlooms directly from Co-optex or registered weaver cooperatives in Kanchipuram."
+    ],
+    "days": [
+      {
+        "day_number": 1,
+        "city": "Mahabalipuram (Mamallapuram)",
+        "route_title": "Chennai Coastal Drive → Mahabalipuram Ocean Monoliths",
+        "dist_time": "56 km • 1.5 hrs along East Coast Road (ECR)",
+        "theme": "Pallava Monolithic Sculptures & Coastal Granite Marvels",
+        "monuments": [
+          {
+            "name": "Shore Temple (UNESCO World Heritage)",
+            "city": "Mahabalipuram",
+            "state": "Tamil Nadu",
+            "category": "UNESCO World Heritage Site",
+            "period": "700–728 CE (Pallava King Rajasimha)",
+            "description": "Standing sentinel over the Bay of Bengal, this twin-towered Dravidian structural stone temple was hand-carved from local granite blocks.",
+            "timings": "06:00 AM – 06:00 PM Daily",
+            "entry_fee": "₹40 (Indians) | ₹600 (Foreigners)",
+            "visit_duration": "2 Hours (Best at Sunrise)",
+            "image_url": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1000&auto=format&fit=crop&q=80",
+            "lat": 12.6163,
+            "lng": 80.1989
+          },
+          {
+            "name": "Pancha Rathas (Five Chariots) & Arjuna's Penance",
+            "city": "Mahabalipuram",
+            "state": "Tamil Nadu",
+            "category": "Monolithic Rock-Cut Architecture",
+            "period": "7th Century CE (Pallava King Narasimhavarman I)",
+            "description": "Five monolithic rock-cut shrines carved out of single granite boulders, alongside the world's largest open-air rock relief depicting Arjuna's Penance.",
+            "timings": "06:00 AM – 06:00 PM Daily",
+            "entry_fee": "Included with Shore Temple Ticket",
+            "visit_duration": "1.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1000&auto=format&fit=crop&q=80",
+            "lat": 12.612,
+            "lng": 80.193
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Mahabalipuram Stone Sculptors Artisan Workshop",
+            "category": "Living Craft Heritage",
+            "desc": "Observe hereditary stone carvers using chisel and mallet to sculpt granite and soapstone idols following Shilpa Shastras."
+          }
+        ],
+        "festivals": [
+          "Mamallapuram Indian Dance Festival (Jan-Feb)",
+          "Pongal Harvest Festival (January)"
+        ],
+        "morning": "07:30 AM: Dawn arrival at Shore Temple to witness golden ocean sunrise over Pallava granite towers.",
+        "midday": "11:30 AM: Explore the monolithic Pancha Rathas and Arjuna's Penance bas-relief.",
+        "lunch": "01:30 PM: Fresh coastal catch and authentic Tamil meals at Moonrakers or Seashore Restaurant.",
+        "twilight": "05:30 PM: Stroll through artisan stone sculpting ateliers along Five Rathas Road and sunset by the lighthouse.",
+        "curator_note": "Early morning (before 08:30 AM) is essential to avoid tour buses and capture soft coastal morning light on the stone relief.",
+        "hotels": [
+          {
+            "name": "Radisson Blu Resort Temple Bay",
+            "hotel_type": "Oceanfront Heritage Luxury Resort",
+            "price_tier": "₹7,500 - ₹12,000 / night",
+            "rating": 4.7,
+            "distance": "500m from Shore Temple",
+            "highlights": [
+              "Sea-facing chalets",
+              "Ayurvedic wellness center",
+              "Pool overlooking Bay of Bengal"
+            ],
+            "booking_advice": "Request sea-view chalets overlooking the Bay of Bengal."
+          },
+          {
+            "name": "Grande Bay Resort & Spa Mamallapuram",
+            "hotel_type": "Boutique Coastal Retreat",
+            "price_tier": "₹4,200 - ₹6,500 / night",
+            "rating": 4.5,
+            "distance": "1.2 km from Pancha Rathas",
+            "highlights": [
+              "Spacious garden villas",
+              "Traditional South Indian breakfast buffet",
+              "Travel desk for heritage tours"
+            ],
+            "booking_advice": "Ideal for families; offers quiet courtyard gardens."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Moonrakers Restaurant",
+            "cuisine": "Fresh Coastal Seafood & Chettinad Curries",
+            "must_try": [
+              "Tiger Prawn Masala",
+              "Vanjaram Fish Fry",
+              "Steaming Basmati Rice with Crab Curry"
+            ],
+            "price_for_two": "₹800 - ₹1,200",
+            "timing": "11:30 AM – 10:30 PM",
+            "dietary": "Non-Veg & Vegetarian Options",
+            "curator_note": "A legendary beach-town institution popular among heritage travelers since the 1980s."
+          },
+          {
+            "name": "Geetha Cafe (Traditional Pure Veg)",
+            "cuisine": "Traditional Tamil Vegetarian Tiffin & Meals",
+            "must_try": [
+              "Crispy Ghee Podi Dosa",
+              "Filter Coffee in Brass Davarah",
+              "Mini Tiffin Thali"
+            ],
+            "price_for_two": "₹250 - ₹400",
+            "timing": "07:00 AM – 09:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "Fast, spotlessly clean, and serves authentic Kumbakonam degree filter coffee."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Five Rathas Stone Carver Colony",
+            "market_type": "Artisan Craft & Sculpture Guild",
+            "famous_for": [
+              "Granite Ganesha and Shiva sculptures",
+              "Soapstone miniature carvings",
+              "Seashell handicrafts"
+            ],
+            "best_time": "04:00 PM – 07:00 PM",
+            "location_area": "Five Rathas Road & Kovalam Road",
+            "bargaining_and_visiting_tips": "Ask for the artist's certificate of origin; reputable workshops ship worldwide with wooden crating."
+          }
+        ]
+      },
+      {
+        "day_number": 2,
+        "city": "Kanchipuram (The City of Thousand Temples)",
+        "route_title": "Mahabalipuram → Kanchipuram Temple & Silk Capital",
+        "dist_time": "68 km • 1.8 hrs via State Highway 58",
+        "theme": "Sacred Dravidian Gopurams & Master Mulberry Silk Weaving",
+        "monuments": [
+          {
+            "name": "Ekambareswarar Temple (Earth Stalam)",
+            "city": "Kanchipuram",
+            "state": "Tamil Nadu",
+            "category": "Pancha Bhoota Stalam (Prithvi / Earth)",
+            "period": "600 CE (Pallavas) & 1509 CE (Krishnadevaraya)",
+            "description": "One of South India's largest temple compounds covering 25 acres, featuring a soaring 59-meter Raja Gopuram built by Krishnadevaraya.",
+            "timings": "06:00 AM – 12:30 PM, 04:00 PM – 08:30 PM",
+            "entry_fee": "Free Entry | ₹20 Special Darshan",
+            "visit_duration": "2 Hours",
+            "image_url": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1000&auto=format&fit=crop&q=80",
+            "lat": 12.8475,
+            "lng": 79.6999
+          },
+          {
+            "name": "Kailasanathar Temple",
+            "city": "Kanchipuram",
+            "state": "Tamil Nadu",
+            "category": "ASI Protected Pallava Masterpiece",
+            "period": "685–705 CE (Rajasimha Pallava)",
+            "description": "The oldest surviving structural stone temple in Kanchipuram, renowned for its 58 miniature sandstone shrines and exquisite Somaskanda carvings.",
+            "timings": "06:00 AM – 12:00 PM, 04:00 PM – 07:30 PM",
+            "entry_fee": "Free Entry (ASI Protected)",
+            "visit_duration": "1.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1000&auto=format&fit=crop&q=80",
+            "lat": 12.8423,
+            "lng": 79.6896
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Pillayar Palayam Master Silk Weavers Guild",
+            "category": "GI-Tagged Handloom Immersion",
+            "desc": "Witness master weavers intertwining pure mulberry silk with genuine gold-plated silver zari on traditional pit looms."
+          }
+        ],
+        "festivals": [
+          "Kanchi Brahmotsavam (May)",
+          "Panguni Uthiram (March-April)"
+        ],
+        "morning": "07:00 AM: Sacred morning darshan at Ekambareswarar Temple beneath the ancient 3,500-year-old sacred mango tree.",
+        "midday": "11:00 AM: Architectural study of Kailasanathar Temple's sandstone friezes and Pallava inscriptions.",
+        "lunch": "01:30 PM: Authentic South Indian plantain leaf lunch at Sri Krishna Vilas or Saravana Bhavan.",
+        "twilight": "05:00 PM: Immersion into Kanchipuram Silk Weavers' Cooperative Society workshops at Pillayar Palayam.",
+        "curator_note": "Most Kanchipuram temples close their inner sanctums between 12:30 PM and 04:00 PM. Schedule weaving workshops during midday hours.",
+        "hotels": [
+          {
+            "name": "Regency Kanchipuram by GRT Hotels",
+            "hotel_type": "Heritage Business & Pilgrim Hotel",
+            "price_tier": "₹3,800 - ₹5,500 / night",
+            "rating": 4.6,
+            "distance": "1.5 km from Ekambareswarar Temple",
+            "highlights": [
+              "Multi-cuisine restaurant 'Dakshin'",
+              "Temple transfer concierge",
+              "Well-appointed deluxe rooms"
+            ],
+            "booking_advice": "Book the Executive Temple View rooms on upper floors."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Sri Krishna Vilas (Hotel Sri Rama)",
+            "cuisine": "Authentic Kanchipuram Vegetarian Gastronomy",
+            "must_try": [
+              "Kanchipuram Idli (steamed in dried mandharai leaves with ginger & pepper)",
+              "Ghee Podi Roast Dosa",
+              "Sambar Vada"
+            ],
+            "price_for_two": "₹250 - ₹450",
+            "timing": "06:30 AM – 10:00 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "The original birthplace of authentic Kanchipuram spice idli with dried ginger and cumin."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Kanchipuram Murugan Silk Handloom Cooperative Society",
+            "market_type": "Government-Certified Silk Society",
+            "famous_for": [
+              "GI-Tagged 100% Pure Mulberry Silk Sarees",
+              "Korvai Border Technique",
+              "Pure Gold Zari Bridal Weaves"
+            ],
+            "best_time": "10:30 AM – 01:30 PM, 04:30 PM – 07:30 PM",
+            "location_area": "Gandhi Road & Pillayar Palayam",
+            "bargaining_and_visiting_tips": "Avoid roadside touts who take commissions; buy exclusively from Co-optex or registered weavers' societies with Silk Mark."
+          }
+        ]
+      },
+      {
+        "day_number": 3,
+        "city": "Thanjavur (Tanjore)",
+        "route_title": "Kanchipuram → Thanjavur (Chola Imperial Capital)",
+        "dist_time": "275 km • 4.8 hrs via NH36 / Vande Bharat",
+        "theme": "The Great Living Chola Temples & Bronze Lost-Wax Guilds",
+        "monuments": [
+          {
+            "name": "Brihadisvara Temple (Peruvudaiyar Kovil - UNESCO)",
+            "city": "Thanjavur",
+            "state": "Tamil Nadu",
+            "category": "UNESCO World Heritage Site",
+            "period": "1010 CE (Raja Raja Chola I)",
+            "description": "The crowning zenith of Chola imperial architecture, featuring a monolithic 80-tonne granite kumbam atop a 66-meter Vimana that casts no midday shadow.",
+            "timings": "06:00 AM – 12:30 PM, 04:00 PM – 08:30 PM",
+            "entry_fee": "Free Entry (ASI Protected)",
+            "visit_duration": "2.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=1000&auto=format&fit=crop&q=80",
+            "lat": 10.7828,
+            "lng": 79.1318
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Swamimalai Lost-Wax Chola Bronze Casting Enclave",
+            "category": "UNESCO Intangible Cultural Heritage",
+            "desc": "Witness sthapatis using 1,000-year-old beeswax formulations and alluvial Cauvery clay to cast exquisite panchaloha bronzes."
+          }
+        ],
+        "festivals": [
+          "Chithirai Festival",
+          "Raja Raja Chola Sathaya Vizha (October-November)"
+        ],
+        "morning": "07:00 AM: Peaceful dawn circumambulation of Brihadisvara Temple courtyard admiring Chola fresco paintings.",
+        "midday": "11:30 AM: Tour the Royal Palace complex, bell tower, and ancient palm-leaf scriptures at Saraswathi Mahal Library.",
+        "lunch": "01:30 PM: Authentic Thanjavur banana leaf thali with Kaara Kuzhambu at Hotel Gnanam.",
+        "twilight": "05:00 PM: Visit traditional Tanjore gold foil painting and Swamimalai bronze sculpting ateliers.",
+        "curator_note": "Sunset illumination at the Big Temple (around 06:15 PM) turns the granite vimana into radiant molten gold.",
+        "hotels": [
+          {
+            "name": "Svatma, Thanjavur - Heritage Luxury",
+            "hotel_type": "Restored Tamil Heritage Mansion",
+            "price_tier": "₹8,500 - ₹14,000 / night",
+            "rating": 4.8,
+            "distance": "2.2 km from Brihadisvara Temple",
+            "highlights": [
+              "Classical Carnatic music soirees",
+              "Arogya Ayurvedic Spa",
+              "Organic heritage gastronomy"
+            ],
+            "booking_advice": "A true living museum stay celebrating Tamil music, bronze art, and architecture."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Sathars Restaurant",
+            "cuisine": "Traditional Chettinad & Tamil Specialties",
+            "must_try": [
+              "Chettinad Chicken Masala",
+              "Mutton Sukka",
+              "Flaky Parottas with Salna"
+            ],
+            "price_for_two": "₹500 - ₹800",
+            "timing": "11:00 AM – 10:30 PM",
+            "dietary": "Non-Veg & Veg",
+            "curator_note": "A beloved Thanjavur culinary landmark renowned for spicy South Indian gravies."
+          }
+        ],
+        "markets": [
+          {
+            "name": "South Rampart Art Plate & Painting Guild",
+            "market_type": "Artisan Craft Guild",
+            "famous_for": [
+              "GI-Tagged Thanjavur Art Plates (Brass, Copper & Silver)",
+              "Tanjore 22K Gold Foil Paintings",
+              "Dancing Thanjavur Dolls (Thalayatti Bommai)"
+            ],
+            "best_time": "10:00 AM – 01:00 PM, 04:00 PM – 07:30 PM",
+            "location_area": "South Rampart Road & Near Palace Complex",
+            "bargaining_and_visiting_tips": "Always check for genuine 22-karat gold leaf certification on Tanjore paintings."
+          }
+        ]
+      },
+      {
+        "day_number": 4,
+        "city": "Madurai",
+        "route_title": "Thanjavur → Madurai Sacred Pandyan Capital",
+        "dist_time": "190 km • 3.2 hrs via NH38",
+        "theme": "Sacred Nayaka Architecture & Chithirai Cultural Heritage",
+        "monuments": [
+          {
+            "name": "Arulmigu Meenakshi Sundareswarar Temple",
+            "city": "Madurai",
+            "state": "Tamil Nadu",
+            "category": "Ancient Living Spiritual Complex",
+            "period": "6th Century BCE foundation; 1623–1655 CE (Tirumala Nayaka)",
+            "description": "The epic spiritual heart of Tamil Nadu with 14 colossal gopurams encrusted with over 33,000 multi-hued sculptures, and the famous Hall of Thousand Pillars.",
+            "timings": "05:00 AM – 12:30 PM, 04:00 PM – 10:00 PM",
+            "entry_fee": "Free Entry | ₹50 (Hall of Thousand Pillars)",
+            "visit_duration": "3 Hours",
+            "image_url": "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=1000&auto=format&fit=crop&q=80",
+            "lat": 9.9195,
+            "lng": 78.1194
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Night Bed-Chamber Ceremony (Palli Arai Pooja)",
+            "category": "Living Ancient Ritual",
+            "desc": "Witness the nightly 09:15 PM procession with silver chariot carrying Lord Sundareswarar to Goddess Meenakshi's sanctum."
+          }
+        ],
+        "festivals": [
+          "Chithirai Celestial Wedding Festival (April-May)",
+          "Jallikattu Heritage Celebration (January)"
+        ],
+        "morning": "06:00 AM: Sacred morning darshan of Goddess Meenakshi amidst devotional nadaswaram melodies.",
+        "midday": "11:30 AM: Explore the Thousand Pillar Hall and architectural museum inside the temple complex.",
+        "lunch": "01:30 PM: World-famous fluffy idlis with four types of chutneys at Murugan Idli Shop.",
+        "twilight": "05:00 PM: Visit Thirumalai Nayakkar Mahal, followed by evening brass bazaars at Pudhu Mandapam and a glass of famous Jigarthanda.",
+        "curator_note": "Mobile phones are not permitted inside Meenakshi Temple; deposit them at the West Tower locker counter.",
+        "hotels": [
+          {
+            "name": "Heritage Madurai Resort",
+            "hotel_type": "Geoffrey Bawa Architecture Heritage Resort",
+            "price_tier": "₹6,500 - ₹11,000 / night",
+            "rating": 4.7,
+            "distance": "4 km from Meenakshi Temple",
+            "highlights": [
+              "Olympic-sized temple pool replica",
+              "Traditional Mangalore tile villas",
+              "Lush banyan groves"
+            ],
+            "booking_advice": "Designed by legendary architect Geoffrey Bawa with plunge-pool villas."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Murugan Idli Shop (West Masi Street)",
+            "cuisine": "Legendary South Indian Tiffin",
+            "must_try": [
+              "Melt-in-mouth Steaming Idlis",
+              "Ghee Onion Podi Uthappam",
+              "Four Varieties of Chutney & Milagai Podi"
+            ],
+            "price_for_two": "₹200 - ₹350",
+            "timing": "07:00 AM – 11:00 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "A Madurai gastronomic legend; the coriander and coconut chutneys are unmatched across India."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Pudhu Mandapam Heritage 16th-Century Arcade",
+            "market_type": "Pillared Temple Arcade & Tailors Bazaar",
+            "famous_for": [
+              "Instant custom tailor shops",
+              "Brass temple lamps & puja vessels",
+              "Madurai Sungudi hand-dyed cotton sarees"
+            ],
+            "best_time": "10:30 AM – 08:30 PM",
+            "location_area": "East Tower Gate of Meenakshi Temple",
+            "bargaining_and_visiting_tips": "Browse inside a 400-year-old stone hall; bargain politely for brass oil lamps (kuthu vilakku) and Sungudi tie-and-dye cottons."
+          }
+        ]
+      },
+      {
+        "day_number": 5,
+        "city": "Rameswaram & Dhanushkodi",
+        "route_title": "Madurai → Rameswaram Ocean Island & Ghost City",
+        "dist_time": "175 km • 3.5 hrs via NH87 (Pamban Bridge)",
+        "theme": "Sacred Ocean Pilgrimage & The Ram Setu Marine Frontier",
+        "monuments": [
+          {
+            "name": "Arulmigu Ramanathaswamy Temple",
+            "city": "Rameswaram",
+            "state": "Tamil Nadu",
+            "category": "Char Dham & Jyotirlinga Sacred Sanctuary",
+            "period": "12th Century CE (Pandya & Setupati Dynasties)",
+            "description": "Houses the world's longest temple pillared corridor (1,220 meters) supported by 1,212 intricately sculpted granite pillars, and 22 sacred teertham wells.",
+            "timings": "05:00 AM – 01:00 PM, 03:00 PM – 09:00 PM",
+            "entry_fee": "Free Entry | ₹25 (22 Wells Bathing Pass)",
+            "visit_duration": "3 Hours",
+            "image_url": "https://images.unsplash.com/photo-1621847468516-1ed5d0df56fe?w=1000&auto=format&fit=crop&q=80",
+            "lat": 9.2881,
+            "lng": 79.3174
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Crossing the Historic Pamban Ocean Bridge",
+            "category": "Engineering & Maritime Heritage",
+            "desc": "Cross the 2-kilometer cantilever sea bridge spanning the turquoise Palk Strait connecting mainland India to Pamban Island."
+          }
+        ],
+        "festivals": [
+          "Maha Shivaratri (Feb-March)",
+          "Thirukalyanam Festival (July-August)"
+        ],
+        "morning": "05:30 AM: Sacred ocean purification bath at Agni Theertham followed by darshan at Ramanathaswamy Temple's 1000-pillar corridor.",
+        "midday": "11:00 AM: Bathing at the 22 sacred temple wells within the sanctum complex.",
+        "lunch": "01:30 PM: Traditional South Indian vegetarian thali at Hotel Temple Tower.",
+        "twilight": "03:30 PM: Drive to Dhanushkodi tip where two oceans meet, viewing the ruins of the railway station, church, and Ram Setu viewpoints.",
+        "curator_note": "Carry dry clothes if planning to participate in the sacred 22 teertham wells ritual. Dhanushkodi winds are strong; carry eye protection.",
+        "hotels": [
+          {
+            "name": "Daiwik Hotels Rameswaram",
+            "hotel_type": "Pilgrim Heritage Specialty Hotel",
+            "price_tier": "₹3,400 - ₹5,200 / night",
+            "rating": 4.5,
+            "distance": "3 km from Ramanathaswamy Temple",
+            "highlights": [
+              "Dedicated pilgrim assistance desk",
+              "Pure veg restaurant 'Ahaan'",
+              "Ayurvedic massage center"
+            ],
+            "booking_advice": "Known for clean, comfortable pilgrim amenities and assistance with temple rituals."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Ahaan Restaurant (Daiwik Hotels)",
+            "cuisine": "Pure Vegetarian Pan-Indian & South Indian",
+            "must_try": [
+              "Temple Thali",
+              "Chettinad Paneer Masala",
+              "Curd Rice with Mango Pickle & Appalam"
+            ],
+            "price_for_two": "₹500 - ₹800",
+            "timing": "07:00 AM – 10:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "Hygienic, peaceful dining with pure satvik cooking guidelines."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Temple Car Street & Agni Theertham Beach Market",
+            "market_type": "Pilgrim Craft & Marine Bazaar",
+            "famous_for": [
+              "Natural Conch Shells (Shankha) & blown trumpets",
+              "Palm leaf baskets and wall hangings",
+              "Sacred Rudraksha malas and pearl ornaments"
+            ],
+            "best_time": "06:00 AM – 11:00 AM, 05:00 PM – 09:00 PM",
+            "location_area": "Car Street surrounding Ramanathaswamy Temple",
+            "bargaining_and_visiting_tips": "Conch shells can be customized with carved deity motifs on the spot; sound test before purchasing."
+          }
+        ]
+      }
+    ]
+  },
+  "agra": {
+    "title": "Imperial Mughal Marvels & Makrana Marble Heritage",
+    "subtitle": "Taj Mahal Sunrise, Colossal Red Sandstone Citadels & Pietra Dura Artisans",
+    "region": "Northern India",
+    "recommended_season": "October – March (Crisp mornings, pleasant winter afternoons)",
+    "circuit_distance": "35 km historic enclave circuit",
+    "total_travel_time": "Low travel fatigue / Battery e-rickshaws & chauffeur car",
+    "transit_mode": "Eco-friendly battery vehicles inside Taj Heritage Zone & private chauffeur car",
+    "curator_field_protocol": [
+      "Taj Mahal is strictly closed to visitors on Fridays.",
+      "Enter through the East Gate at sunrise (06:00 AM) to experience the Makrana marble shifting from soft blush pink to brilliant pearl white.",
+      "Only small hand purses, wallets, and mobile phones are permitted; tripods, power banks, and drones are strictly prohibited.",
+      "Purchase marble pietra dura inlay crafts directly from verified cooperative artisan guilds recognized by the Ministry of Textiles."
+    ],
+    "days": [
+      {
+        "day_number": 1,
+        "city": "Agra (Taj & Red Fort)",
+        "route_title": "Taj East Gate Sunrise → Agra Fort Royal Citadel → Mehtab Bagh",
+        "dist_time": "12 km • Short urban transit",
+        "theme": "The Jewel of Indo-Islamic Architecture & Imperial Palaces",
+        "monuments": [
+          {
+            "name": "Taj Mahal (Crown of the Palace - UNESCO)",
+            "city": "Agra",
+            "state": "Uttar Pradesh",
+            "category": "UNESCO World Heritage Wonder",
+            "period": "1631–1648 CE (Emperor Shah Jahan)",
+            "description": "The world's foremost architectural tribute to eternal love, sculpted from Makrana white marble with exquisite semi-precious stone Pietra Dura inlay and Persian formal gardens (Charbagh).",
+            "timings": "06:00 AM – 06:30 PM (Closed Fridays)",
+            "entry_fee": "₹50 (Indians) | ₹1,100 (Foreigners) + ₹200 Main Mausoleum",
+            "visit_duration": "3 Hours (Best at Sunrise)",
+            "image_url": "/hero/monument-1.jpg",
+            "lat": 27.1751,
+            "lng": 78.0421
+          },
+          {
+            "name": "Agra Fort (Lal Qila - UNESCO)",
+            "city": "Agra",
+            "state": "Uttar Pradesh",
+            "category": "UNESCO World Heritage Fort Citadel",
+            "period": "1565–1573 CE (Emperor Akbar)",
+            "description": "Colossal red sandstone fortress spanning 94 acres along the Yamuna River, containing Jahangir Mahal, Khas Mahal, Diwan-i-Khas, and the octagonal Musamman Burj where Shah Jahan spent his final years.",
+            "timings": "06:00 AM – 06:00 PM Daily",
+            "entry_fee": "₹50 (Indians) | ₹650 (Foreigners)",
+            "visit_duration": "2.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=1000&auto=format&fit=crop&q=80",
+            "lat": 27.1795,
+            "lng": 78.0211
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Mehtab Bagh (Moonlight Garden) Sunset River View",
+            "category": "Historic Sunset Viewpoint",
+            "desc": "Witness the reflection of the Taj Mahal in the calm waters of the Yamuna River at twilight from the northern pleasure gardens."
+          }
+        ],
+        "festivals": [
+          "Taj Mahotsav (February at Shilpgram)",
+          "Sharad Purnima Night Viewing"
+        ],
+        "morning": "06:00 AM: Sunrise entry through the East Gate of Taj Mahal to witness morning light over the marble dome.",
+        "midday": "11:00 AM: Guided walk through Agra Fort exploring Sheesh Mahal, Diwan-i-Aam, and Musamman Burj.",
+        "lunch": "01:30 PM: Authentic Mughlai feast at Pinch of Spice or Dasaprakash.",
+        "twilight": "05:00 PM: Sunset view of the Taj Mahal rear facade across the Yamuna from Mehtab Bagh gardens.",
+        "curator_note": "Night viewing of the Taj Mahal is permitted on five nights each month (full moon and two nights before/after, except Fridays and Ramadan). Tickets must be booked 24 hours in advance at ASI Agra office.",
+        "hotels": [
+          {
+            "name": "The Oberoi Amarvilas, Agra",
+            "hotel_type": "Ultra-Luxury Mughal Heritage Resort",
+            "price_tier": "₹35,000 - ₹65,000 / night",
+            "rating": 5.0,
+            "distance": "600m from Taj Mahal",
+            "highlights": [
+              "Every room offers uninterrupted Taj Mahal views",
+              "Private golf cart transfers to monument gate",
+              "Palatial terraced pools and fountains"
+            ],
+            "booking_advice": "Widely acclaimed as one of the world's finest luxury hotels with direct private gate access."
+          },
+          {
+            "name": "ITC Mughal, A Luxury Collection Resort",
+            "hotel_type": "Aga Khan Award-Winning Heritage Resort",
+            "price_tier": "₹7,500 - ₹13,000 / night",
+            "rating": 4.7,
+            "distance": "3 km from Taj Mahal",
+            "highlights": [
+              "35 acres of Mughal gardens",
+              "Kaya Kalp Royal Spa",
+              "Peshawri restaurant"
+            ],
+            "booking_advice": "Aga Khan Award for Architecture recipient; exquisite landscaping and traditional Mughlai dining."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Peshawri at ITC Mughal",
+            "cuisine": "North-West Frontier Gastronomy",
+            "must_try": [
+              "Dal Bukhara (simmered overnight over charcoal embers)",
+              "Murgh Malai Kabab",
+              "Sikandari Raan"
+            ],
+            "price_for_two": "₹2,500 - ₹4,000",
+            "timing": "12:30 PM – 02:45 PM, 07:00 PM – 11:30 PM",
+            "dietary": "Vegetarian & Non-Veg",
+            "curator_note": "Dine with traditional aprons in clay-tandoor rustic ambience; the Dal Bukhara is world-renowned."
+          },
+          {
+            "name": "Panchhi Petha Store (Sadar Bazaar)",
+            "cuisine": "Heritage Agra Sweet Speciality",
+            "must_try": [
+              "Angoori Petha in Kesar Syrup",
+              "Paan Petha",
+              "Dry Kesar Petha"
+            ],
+            "price_for_two": "₹150 - ₹300",
+            "timing": "09:00 AM – 10:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "Operating since 1950; authentic ash-gourd translucent sweets crafted with pure saffron."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Sadar Bazaar & Kinari Bazaar",
+            "market_type": "Historic Craft & Leather Bazaar",
+            "famous_for": [
+              "Pietra Dura Marble Table Tops & Coasters",
+              "Handmade leather mojari shoes",
+              "Zari and Zardozi embroidery textiles"
+            ],
+            "best_time": "11:00 AM – 08:30 PM",
+            "location_area": "Agra Cantonment & Kinari Bazaar Old City",
+            "bargaining_and_visiting_tips": "Verify that white marble items use genuine Makrana marble and not soft soapstone or synthetic resin. Genuine semi-precious inlay stones (lapis lazuli, malachite, jasper) are cool to touch."
+          }
+        ]
+      },
+      {
+        "day_number": 2,
+        "city": "Fatehpur Sikri & Itimad-ud-Daulah",
+        "route_title": "Agra → Fatehpur Sikri Imperial Capital → Baby Taj",
+        "dist_time": "38 km • 1 hr via NH21",
+        "theme": "Akbar's Utopian City & The Jewel-Box Precursor to the Taj",
+        "monuments": [
+          {
+            "name": "Fatehpur Sikri (UNESCO World Heritage Capital)",
+            "city": "Fatehpur Sikri",
+            "state": "Uttar Pradesh",
+            "category": "UNESCO World Heritage Imperial City",
+            "period": "1571–1585 CE (Emperor Akbar)",
+            "description": "Akbar's short-lived red sandstone capital featuring the 54-meter Buland Darwaza (Gate of Magnificence), Jama Masjid, White Marble Tomb of Sheikh Salim Chishti, and Panch Mahal.",
+            "timings": "Sunrise to Sunset Daily",
+            "entry_fee": "₹50 (Indians) | ₹610 (Foreigners)",
+            "visit_duration": "3 Hours",
+            "image_url": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=1000&auto=format&fit=crop&q=80",
+            "lat": 27.0945,
+            "lng": 77.6679
+          },
+          {
+            "name": "Tomb of Itimad-ud-Daulah (Baby Taj)",
+            "city": "Agra",
+            "state": "Uttar Pradesh",
+            "category": "ASI Protected Marble Masterpiece",
+            "period": "1622–1628 CE (Empress Nur Jahan)",
+            "description": "Often called the 'Jewel Box' or 'Baby Taj', this was the first Mughal structure built entirely of white marble with intricate floral pietra dura inlay, serving as the prototype for the Taj Mahal.",
+            "timings": "06:00 AM – 06:00 PM Daily",
+            "entry_fee": "₹30 (Indians) | ₹310 (Foreigners)",
+            "visit_duration": "1.5 Hours",
+            "image_url": "/hero/monument-1.jpg",
+            "lat": 27.1929,
+            "lng": 78.031
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Marble Inlay Pietra Dura Master Craftsman Studio",
+            "category": "GI-Tagged Handicraft Immersion",
+            "desc": "Watch hereditary descendants of the Taj Mahal's original artisans cut, shape, and embed lapis lazuli and carnelian into Makrana marble."
+          }
+        ],
+        "festivals": [
+          "Urs of Sheikh Salim Chishti",
+          "Ganga-Jamuni Cultural Utsav"
+        ],
+        "morning": "08:30 AM: Drive to Fatehpur Sikri; walk through Buland Darwaza and tie a red thread of wish-fulfillment at Salim Chishti's marble sanctum.",
+        "midday": "12:00 PM: Explore the Diwan-i-Khas central carved pillar, Jodha Bai's Palace, and Anup Talao.",
+        "lunch": "01:30 PM: Traditional lunch at a countryside garden restaurant near Sikri highway.",
+        "twilight": "04:30 PM: Visit the serene riverside garden tomb of Itimad-ud-Daulah (Baby Taj) in golden afternoon light.",
+        "curator_note": "At Fatehpur Sikri, take the official ASI green eco-bus from the outer parking lot to the monument gate (₹10 fare). Avoid unauthorized self-appointed guides outside the bus stand.",
+        "hotels": [
+          {
+            "name": "Courtyard by Marriott Agra",
+            "hotel_type": "Modern Premium Hotel",
+            "price_tier": "₹5,200 - ₹8,500 / night",
+            "rating": 4.6,
+            "distance": "Taj Nagari Phase 2, Agra",
+            "highlights": [
+              "Large outdoor pool",
+              "Multiple dining venues",
+              "Proximity to Fatehabad Road"
+            ],
+            "booking_advice": "Comfortable, spacious rooms with excellent buffet breakfast options."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Pinch of Spice (Fatehabad Road)",
+            "cuisine": "Authentic North Indian & Awadhi Specialties",
+            "must_try": [
+              "Murg Boti Masala",
+              "Paneer Lababdar",
+              "Garlic Butter Naan"
+            ],
+            "price_for_two": "₹900 - ₹1,400",
+            "timing": "12:00 PM – 11:30 PM",
+            "dietary": "Vegetarian & Non-Veg",
+            "curator_note": "Consistent quality and air-conditioned relief after outdoor monument excursions."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Shilpgram Cultural Crafts Village",
+            "market_type": "Government Artisan Complex",
+            "famous_for": [
+              "Pietra dura marble boxes & trays",
+              "Fine carpet weaving",
+              "Hand-embroidered Zari wall tapestries"
+            ],
+            "best_time": "10:30 AM – 07:30 PM",
+            "location_area": "Near East Gate of Taj Mahal",
+            "bargaining_and_visiting_tips": "Fixed price government-certified counters provide safe shipping and guaranteed authentic materials."
+          }
+        ]
+      }
+    ]
+  },
+  "hampi": {
+    "title": "Vijayanagara Imperial Ruins & Boulder Landscapes",
+    "subtitle": "Monolithic Temples, The Stone Chariot, Royal Enclosures & Tungabhadra Ghats",
+    "region": "Southern India",
+    "recommended_season": "October – February (Pleasant winter weather, clear blue skies)",
+    "circuit_distance": "30 km boulder & river heritage circuit",
+    "total_travel_time": "Low travel fatigue / Bicycles, mopeds, or private auto-rickshaws",
+    "transit_mode": "Eco-friendly battery buggies inside Vittala Complex, private auto or bicycle",
+    "curator_field_protocol": [
+      "Hampi is an extensive outdoor archaeological museum; carry plenty of drinking water, a wide-brim hat, and sunscreen.",
+      "Wear sturdy walking shoes with non-slip rubber grip for walking on smooth granite boulders.",
+      "Hire official ASI-licensed guides wearing photo identity cards at Virupaksha and Vittala complexes.",
+      "The Tungabhadra river currents are treacherous; only ride official circular coracles (Dongis) with life jackets."
+    ],
+    "days": [
+      {
+        "day_number": 1,
+        "city": "Hampi (Sacred & Royal Centers)",
+        "route_title": "Virupaksha Temple → Hemakuta Hill → Vittala Stone Chariot",
+        "dist_time": "8 km • Riverside walking and battery buggy trail",
+        "theme": "Vijayanagara Golden Age Architecture & Musical Pillars",
+        "monuments": [
+          {
+            "name": "Vittala Temple Complex & Stone Chariot (UNESCO)",
+            "city": "Hampi",
+            "state": "Karnataka",
+            "category": "UNESCO World Heritage Masterpiece",
+            "period": "15th Century CE (King Devaraya II) & 1513 CE (Krishnadevaraya)",
+            "description": "The pinnacle of Vijayanagara architectural art, holding the iconic monolithic Stone Chariot (Garuda Shrine) and the Ranga Mandapa with 56 musical pillars that emit musical notes when struck.",
+            "timings": "08:30 AM – 05:30 PM Daily",
+            "entry_fee": "₹40 (Indians) | ₹600 (Foreigners) [Covers Zenana Enclosure on same day]",
+            "visit_duration": "2.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1600100397608-f010f4438b9e?w=1000&auto=format&fit=crop&q=80",
+            "lat": 15.335,
+            "lng": 76.4795
+          },
+          {
+            "name": "Virupaksha Temple (Sacred Living Shrine)",
+            "city": "Hampi",
+            "state": "Karnataka",
+            "category": "Living Ancient Dravidian Temple",
+            "period": "7th Century CE foundation; 1510 CE (Krishnadevaraya)",
+            "description": "Continuous living worship for over 1,300 years dedicated to Lord Shiva as Virupaksha, crowned by an imposing 50-meter eastern gopuram and housing an ancient pinhole camera phenomenon.",
+            "timings": "06:00 AM – 01:00 PM, 05:00 PM – 09:00 PM",
+            "entry_fee": "₹25 Entry Pass",
+            "visit_duration": "2 Hours",
+            "image_url": "https://images.unsplash.com/photo-1600100397608-f010f4438b9e?w=1000&auto=format&fit=crop&q=80",
+            "lat": 15.3353,
+            "lng": 76.46
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Sunset Boulders at Hemakuta Hill",
+            "category": "Panoramic Heritage Sunset",
+            "desc": "Witness the dramatic Vijayanagara ruins and granite monoliths bathed in fiery amber light with views of Virupaksha gopuram."
+          }
+        ],
+        "festivals": [
+          "Hampi Utsav (November)",
+          "Purandara Dasa Aradhana (Jan-Feb)"
+        ],
+        "morning": "06:30 AM: Dawn arrival at Virupaksha Temple, witnessing morning pujas and the famous pinhole shadow inversion of the gopuram.",
+        "midday": "11:00 AM: Explore the Monolithic Sasivekalu and Kadalekalu Ganesha statues on Hemakuta Hill.",
+        "lunch": "01:30 PM: Authentic South Indian banana leaf thali at Mango Tree Restaurant.",
+        "twilight": "04:00 PM: Electric buggy ride into the Vittala Temple Complex to witness sunset over the Stone Chariot.",
+        "curator_note": "A single ticket purchased at Vittala Temple also grants same-day admission to the Zenana Enclosure (Lotus Mahal & Elephant Stables). Keep your digital or paper QR ticket handy.",
+        "hotels": [
+          {
+            "name": "Evolve Back, Kamalapura Palace - Hampi",
+            "hotel_type": "Vijayanagara Royal Palace Luxury Resort",
+            "price_tier": "₹22,000 - ₹38,000 / night",
+            "rating": 4.9,
+            "distance": "4 km from Hampi UNESCO ruins",
+            "highlights": [
+              "Palatial Vijayanagara stone arch architecture",
+              "Private Jacuzzi and pool suites",
+              "Deep historical storytelling sessions"
+            ],
+            "booking_advice": "A breathtaking palace resort recreating the splendour of 16th-century Vijayanagara kings."
+          },
+          {
+            "name": "Heritage Resort Hampi",
+            "hotel_type": "Eco-Heritage Nature Retreat",
+            "price_tier": "₹5,500 - ₹9,000 / night",
+            "rating": 4.6,
+            "distance": "6 km from Virupaksha Temple",
+            "highlights": [
+              "Lush organic mango plantations",
+              "Swimming pool surrounded by granite rocks",
+              "Ayurvedic spa"
+            ],
+            "booking_advice": "Serene cottages set amidst lush organic gardens; ideal balance of comfort and proximity."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Mango Tree Restaurant (Near Kamalapura)",
+            "cuisine": "South Indian Vegetarian & Healthy Traveler Food",
+            "must_try": [
+              "Special Karnataka Thali (Jowar Roti, Yennegai Brinjal, Sambar)",
+              "Nutty Banana Lassi",
+              "Wood-fired Thin Crust Pizza"
+            ],
+            "price_for_two": "₹450 - ₹750",
+            "timing": "07:30 AM – 10:00 PM",
+            "dietary": "Pure Vegetarian & Vegan-Friendly",
+            "curator_note": "A legendary traveler hangout operating for decades with relaxed floor-cushion seating and scenic garden views."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Hampi Old Bazaar Street & Kamalapura Crafts",
+            "market_type": "Heritage Handicraft Enclave",
+            "famous_for": [
+              "Handmade Lambani Banjara mirror-work embroidery",
+              "Stone carved miniature Nandi and Ganesha idols",
+              "Bikaneri leather backpacks and handmade journals"
+            ],
+            "best_time": "10:00 AM – 07:00 PM",
+            "location_area": "Between Virupaksha Temple and Kamalapura Road",
+            "bargaining_and_visiting_tips": "Purchase authentic Lambani embroidery directly from the Sandur Kushala Kala Kendra cooperative to ensure fair wages to tribal women artisans."
+          }
+        ]
+      },
+      {
+        "day_number": 2,
+        "city": "Hampi (Royal Centre & Zenana Enclosure)",
+        "route_title": "Lotus Mahal → Elephant Stables → Queen's Bath & Royal Enclosure",
+        "dist_time": "6 km • Royal archaeological trail",
+        "theme": "Indo-Islamic Royal Architecture & Military Fortifications",
+        "monuments": [
+          {
+            "name": "Lotus Mahal & Zenana Enclosure (UNESCO)",
+            "city": "Hampi",
+            "state": "Karnataka",
+            "category": "Indo-Islamic Secular Architecture",
+            "period": "16th Century CE (Vijayanagara Empire)",
+            "description": "A two-storey pleasure pavilion designed with lotus-bud archways and an ingenious air-cooling water circulation pipe system.",
+            "timings": "08:30 AM – 05:30 PM Daily",
+            "entry_fee": "Included in Vittala Temple Ticket",
+            "visit_duration": "1.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1600100397608-f010f4438b9e?w=1000&auto=format&fit=crop&q=80",
+            "lat": 15.32,
+            "lng": 76.471
+          },
+          {
+            "name": "Elephant Stables (Gajashala)",
+            "city": "Hampi",
+            "state": "Karnataka",
+            "category": "Imperial Military Architecture",
+            "period": "15th Century CE (King Devaraya II)",
+            "description": "A row of 11 monumental domed chambers with central drum tower built to house the royal state elephants of the Vijayanagara army.",
+            "timings": "08:30 AM – 05:30 PM Daily",
+            "entry_fee": "Included in Vittala Ticket",
+            "visit_duration": "1 Hour",
+            "image_url": "https://images.unsplash.com/photo-1600100397608-f010f4438b9e?w=1000&auto=format&fit=crop&q=80",
+            "lat": 15.321,
+            "lng": 76.4735
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Stepped Tank (Pushkarani) Archaeological Discovery",
+            "category": "Water Heritage Architecture",
+            "desc": "Admire the symmetrical chlorite stone masonry of the royal bathing tank excavated in 1985."
+          }
+        ],
+        "festivals": [
+          "Hampi Utsav",
+          "Vijaya Utsav"
+        ],
+        "morning": "08:30 AM: Morning walk through the Zenana Enclosure, photographing Lotus Mahal in crisp morning sunlight.",
+        "midday": "11:00 AM: Explore Elephant Stables, Guard's Quarters, and the Hazara Rama Temple with Ramayana friezes.",
+        "lunch": "01:30 PM: Authentic South Indian meals at Kamalapura Heritage Cafe.",
+        "twilight": "04:30 PM: Sunset from the Mahanavami Dibba stepped platform overlooking the entire royal valley.",
+        "curator_note": "The stepped tank in the Royal Enclosure has black schist stone blocks marked with mason signs indicating assembly order.",
+        "hotels": [
+          {
+            "name": "Evolve Back, Kamalapura Palace - Hampi",
+            "hotel_type": "Royal Palace Luxury Resort",
+            "price_tier": "₹22,000 - ₹38,000 / night",
+            "rating": 4.9,
+            "distance": "4 km from UNESCO ruins",
+            "highlights": [
+              "Vijayanagara palace design",
+              "Private pool suites",
+              "Storytelling sessions"
+            ],
+            "booking_advice": "Recreates the splendour of 16th-century Vijayanagara kings."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Kamalapura Heritage Mess",
+            "cuisine": "Karnataka Vegetarian Thali",
+            "must_try": [
+              "Bisi Bele Bath",
+              "Jowar Roti with Ennegayi",
+              "Mysore Pak"
+            ],
+            "price_for_two": "₹300 - ₹500",
+            "timing": "11:30 AM – 09:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "Wholesome local homestyle cooking popular with visiting archaeologists."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Sandur Kushala Kala Kendra Crafts",
+            "market_type": "Tribal Craft Cooperative",
+            "famous_for": [
+              "Lambani mirror-work textiles",
+              "Natural dyed cotton bags",
+              "Bamboo cane crafts"
+            ],
+            "best_time": "10:00 AM – 06:00 PM",
+            "location_area": "Kamalapura Museum Road",
+            "bargaining_and_visiting_tips": "Fair-trade prices supporting 400+ Lambani tribal women artisans."
+          }
+        ]
+      }
+    ]
+  },
+  "amritsar": {
+    "title": "Sacred Golden Sanctum & Brave Punjab Heritage",
+    "subtitle": "Sri Harmandir Sahib, Living Langar, Jallianwala Bagh & Wagah Border",
+    "region": "Northern India",
+    "recommended_season": "October – March (Crisp winter sunshine & mustard fields in bloom)",
+    "circuit_distance": "55 km heritage & border circuit",
+    "total_travel_time": "Low travel fatigue / Heritage pedestrian zone & highway cab",
+    "transit_mode": "Walkable heritage pedestrian street & private cab for Wagah Border",
+    "curator_field_protocol": [
+      "Heads must be covered at all times inside Sri Harmandir Sahib complex (scarves/rumals provided at entry).",
+      "Shoes and socks must be deposited at free shoe counters (Joda Ghar), and feet washed in running water pools before entering.",
+      "Photography is permitted in the outer Parikrama marble corridor, but strictly prohibited inside the Golden Sanctum and along the bridge.",
+      "Wagah Border ceremony begins at 04:30 PM (winter) / 05:30 PM (summer); reach by 03:00 PM to secure seats."
+    ],
+    "days": [
+      {
+        "day_number": 1,
+        "city": "Amritsar",
+        "route_title": "Golden Temple Parikrama → Jallianwala Bagh → Wagah Border",
+        "dist_time": "32 km • Pedestrian heritage walk & Attari border drive",
+        "theme": "Spiritual Peace, Martyrdom Memory & Patriotic Beating Retreat",
+        "monuments": [
+          {
+            "name": "Sri Harmandir Sahib (The Golden Temple)",
+            "city": "Amritsar",
+            "state": "Punjab",
+            "category": "Supreme Spiritual Sanctum of Sikhism",
+            "period": "1589 CE (Guru Arjan Dev Ji); gold plating 1830 CE (Maharaja Ranjit Singh)",
+            "description": "Gilded with over 500 kilograms of pure gold leaf atop an ambrosial nectar pool (Amrit Sarovar), welcoming all people regardless of faith, caste, or background through four open doors.",
+            "timings": "Open 24 Hours Daily (Palki Sahib ceremony 04:30 AM & 10:00 PM)",
+            "entry_fee": "Free Entry for All",
+            "visit_duration": "3 Hours",
+            "image_url": "/hero/monument-3.jpg",
+            "lat": 31.62,
+            "lng": 74.8765
+          },
+          {
+            "name": "Jallianwala Bagh National Memorial",
+            "city": "Amritsar",
+            "state": "Punjab",
+            "category": "National Freedom Struggle Memorial",
+            "period": "1919 Historic Site; Memorial dedicated 1961",
+            "description": "Sacred national memorial preserving bullet marks on brick walls and the historic Martyrs' Well from the tragic massacre of peaceful citizens on Baisakhi, 13 April 1919.",
+            "timings": "06:30 AM – 07:30 PM Daily",
+            "entry_fee": "Free Entry",
+            "visit_duration": "1 Hour",
+            "image_url": "/hero/monument-3.jpg",
+            "lat": 31.6207,
+            "lng": 74.8801
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Guru Ka Langar Community Kitchen Service (Sewa)",
+            "category": "Living Humanitarian Tradition",
+            "desc": "Participate in or share a meal at the world's largest community kitchen, feeding over 100,000 pilgrims every single day with love, equality, and dignity."
+          }
+        ],
+        "festivals": [
+          "Baisakhi (April)",
+          "Guru Nanak Jayanti (Gurpurab)",
+          "Diwali / Bandi Chhor Divas"
+        ],
+        "morning": "06:00 AM: Early morning Parikrama at the Golden Temple as Gurbani kirtan echoes over the tranquil Amrit Sarovar.",
+        "midday": "11:00 AM: Visit Jallianwala Bagh and the interactive Partition Museum at Town Hall.",
+        "lunch": "01:00 PM: Wholesome Guru Ka Langar or authentic butter-drenched Amritsari Kulchas at Kesar Da Dhaba.",
+        "twilight": "03:30 PM: Drive to the Attari-Wagah Border to witness the electrifying sunset Beating Retreat ceremony.",
+        "curator_note": "Bags and power banks are not permitted at the Wagah Border spectator gallery; leave them in your vehicle.",
+        "hotels": [
+          {
+            "name": "Taj Swarna, Amritsar",
+            "hotel_type": "5-Star Luxury Hotel",
+            "price_tier": "₹7,200 - ₹12,500 / night",
+            "rating": 4.8,
+            "distance": "Majitha Road, 5 km from Golden Temple",
+            "highlights": [
+              "Grand Jiva Spa",
+              "Outdoor swimming pool",
+              "Authentic Punjabi restaurant 'The Grand Trunk'"
+            ],
+            "booking_advice": "Finest luxury hotel in Amritsar with high-end comforts and dedicated temple transfers."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Kesar Da Dhaba (Chowk Passian)",
+            "cuisine": "Legendary Heritage Punjabi Gastronomy",
+            "must_try": [
+              "Maa Ki Dal (Slow-cooked for 12 hours with desi ghee)",
+              "Crispy Lachha Paratha",
+              "Gulab Jamun & Firni in earthen bowls"
+            ],
+            "price_for_two": "₹400 - ₹700",
+            "timing": "11:30 AM – 11:00 PM",
+            "dietary": "Pure Vegetarian (Cooked in pure desi ghee)",
+            "curator_note": "Operating continuously since 1916 (originally founded in Lahore); Lala Lajpat Rai and Indira Gandhi were frequent patrons."
+          },
+          {
+            "name": "Bhai Kulwant Singh Kulchian Wale (Heritage Street)",
+            "cuisine": "Iconic Crisp Amritsari Naan Kulcha",
+            "must_try": [
+              "Amritsari Aloo Pyaaz Chur Chur Kulcha with Chole & Tamarind Onion Chutney",
+              "Sweet Malai Lassi"
+            ],
+            "price_for_two": "₹180 - ₹300",
+            "timing": "08:00 AM – 04:00 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "Layered with multiple folds of dough and desi ghee, baked crisp in clay tandoors."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Katra Jaimal Singh & Hall Bazaar",
+            "market_type": "Traditional Textile & Phulkari Guild",
+            "famous_for": [
+              "GI-Tagged Hand-embroidered Phulkari dupattas and jackets",
+              "Handmade Amritsari Juttis with gold tilla work",
+              "Wadiyan and Punjabi spices (Papad-Wadian)"
+            ],
+            "best_time": "11:00 AM – 08:30 PM",
+            "location_area": "Hall Bazaar & Katra Jaimal Singh Market",
+            "bargaining_and_visiting_tips": "Look for dense hand-embroidery done on khaddar cotton (bagh style) rather than machine-printed imitations."
+          }
+        ]
+      }
+    ]
+  },
+  "delhi": {
+    "title": "Seven Historic Capitals of Delhi & Mughal Marvels",
+    "subtitle": "Qutub Minar, Red Fort, Humayun's Garden Tomb & Chandni Chowk",
+    "region": "Northern India",
+    "recommended_season": "October – March (Crisp winter sunshine, ideal walking weather)",
+    "circuit_distance": "40 km urban heritage circuit",
+    "total_travel_time": "Low travel fatigue / Delhi Metro Yellow/Violet lines & private cab",
+    "transit_mode": "Delhi Metro (Heritage Line) & battery e-rickshaws in Old Delhi",
+    "curator_field_protocol": [
+      "Dress respectfully with covered shoulders and knees at Jama Masjid and Nizamuddin Dargah.",
+      "Old Delhi (Chandni Chowk) is pedestrian-only between 09:00 AM and 09:00 PM; use cycle rickshaws.",
+      "Humayun's Tomb and Qutub Minar offer the best photography in late afternoon golden hour.",
+      "Book ASI monument tickets online via QR code at monument entry to skip ticket lines."
+    ],
+    "days": [
+      {
+        "day_number": 1,
+        "city": "Old Delhi (Shahjahanabad)",
+        "route_title": "Red Fort → Jama Masjid → Chandni Chowk Food & Spice Trail",
+        "dist_time": "6 km • Heritage walking and cycle rickshaw trail",
+        "theme": "Mughal Imperial Splendour & Living Heritage Bazaars",
+        "monuments": [
+          {
+            "name": "Red Fort (Lal Qila - UNESCO)",
+            "city": "Delhi",
+            "state": "Delhi",
+            "category": "UNESCO World Heritage Mughal Citadel",
+            "period": "1638–1648 CE (Emperor Shah Jahan)",
+            "description": "The formidable red sandstone seat of the Mughal Empire spanning 254 acres, containing the Diwan-i-Aam, Diwan-i-Khas, and the legendary Stream of Paradise (Nahr-i-Bihisht).",
+            "timings": "09:30 AM – 04:30 PM (Closed Mondays)",
+            "entry_fee": "₹50 (Indians) | ₹550 (Foreigners)",
+            "visit_duration": "2.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1598555230054-726487e6717a?w=1000&auto=format&fit=crop&q=80",
+            "lat": 28.6562,
+            "lng": 77.241
+          },
+          {
+            "name": "Jama Masjid (Masjid-i-Jahan-Numa)",
+            "city": "Delhi",
+            "state": "Delhi",
+            "category": "Grand Imperial Mughal Mosque",
+            "period": "1650–1656 CE (Emperor Shah Jahan)",
+            "description": "One of India's largest historical mosques built of red sandstone and white marble, capable of holding 25,000 worshippers in its central courtyard.",
+            "timings": "07:00 AM – 12:00 PM, 01:30 PM – 06:30 PM Daily",
+            "entry_fee": "Free Entry | ₹300 Camera Permit | ₹100 Minaret Climb",
+            "visit_duration": "1.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=1000&auto=format&fit=crop&q=80",
+            "lat": 28.6507,
+            "lng": 77.2334
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Khari Baoli Asia's Largest Spice Market Walk",
+            "category": "Living Sensory Heritage",
+            "desc": "Walk through 17th-century vaulted spice arcades brimming with sacks of Kashmiri saffron, cardamom pods, and dried red chillies."
+          }
+        ],
+        "festivals": [
+          "Independence Day (August 15)",
+          "Phool Walon Ki Sair (October)",
+          "Qutub Festival"
+        ],
+        "morning": "08:30 AM: Explore the monumental Red Fort Diwan-i-Khas and museums before midday crowds.",
+        "midday": "11:30 AM: Climb the southern minaret of Jama Masjid for panoramic views over Old Delhi's dense rooftops.",
+        "lunch": "01:30 PM: Authentic Mughlai feast at Karim's (Gali Kababian) or Pandit Gaya Prasad Shiv Charan Paranthe Wale.",
+        "twilight": "05:00 PM: Stroll through the aromatic spice corridors of Khari Baoli and Dariba Kalan silver jewelry market.",
+        "curator_note": "Red Fort is closed on Mondays. Fridays are crowded around Jama Masjid during afternoon prayers (12:00–02:00 PM).",
+        "hotels": [
+          {
+            "name": "Haveli Dharampura - UNESCO Awarded Heritage Stay",
+            "hotel_type": "Restored 19th-Century Mughal-Lakhori Brick Haveli",
+            "price_tier": "₹11,000 - ₹18,000 / night",
+            "rating": 4.8,
+            "distance": "In the heart of Chandni Chowk",
+            "highlights": [
+              "UNESCO Asia-Pacific Award for Cultural Heritage Conservation",
+              "Classical Kathak dance & rooftop kite flying",
+              "Fine dining restaurant 'Lakhori'"
+            ],
+            "booking_advice": "A masterpiece of restoration in the heart of Old Delhi; book well in advance."
+          },
+          {
+            "name": "The Imperial, New Delhi - Janpath",
+            "hotel_type": "Colonial Art Deco Luxury Hotel",
+            "price_tier": "₹16,000 - ₹28,000 / night",
+            "rating": 4.9,
+            "distance": "Janpath, Connaught Place (15 mins by Metro to Old Delhi)",
+            "highlights": [
+              "Largest private art collection of British India",
+              "Historic 1930s colonial grandeur",
+              "World-class wellness spa"
+            ],
+            "booking_advice": "One of Asia's most historic grand hotels, blending colonial art with modern luxury."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Karim's (Gali Kababian, Jama Masjid)",
+            "cuisine": "Royal Mughal Dastarkhwan",
+            "must_try": [
+              "Mutton Burra Kebab (Charcoal grilled)",
+              "Mutton Korma with Sheermal",
+              "Chicken Jahangiri"
+            ],
+            "price_for_two": "₹700 - ₹1,200",
+            "timing": "09:00 AM – 11:30 PM",
+            "dietary": "Non-Veg Specialty with Vegetarian Breads & Dal",
+            "curator_note": "Founded in 1913 by Haji Karimuddin, royal chef to the last Mughal Emperor Bahadur Shah Zafar."
+          },
+          {
+            "name": "Pt. Gaya Prasad Shiv Charan (Paranthe Wali Gali)",
+            "cuisine": "Heritage Fried Stuffed Paranthas",
+            "must_try": [
+              "Kaju-Pista Parantha",
+              "Rabdi Parantha",
+              "Served with sweet pumpkin sabzi & mint chutney"
+            ],
+            "price_for_two": "₹250 - ₹400",
+            "timing": "09:00 AM – 10:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "Deep-fried in pure desi ghee since 1872; iconic taste of Old Delhi's historic food lanes."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Dariba Kalan & Kinari Bazaar",
+            "market_type": "Historic Silver Jewelry & Trousseau Market",
+            "famous_for": [
+              "Handmade 92.5 pure silver jewelry and antique coins",
+              "Zardozi ribbons, borders, and bridal laces",
+              "Traditional non-alcoholic flower attars (Gulab, Ruh Motia, Khus)"
+            ],
+            "best_time": "11:00 AM – 07:30 PM (Closed Sundays)",
+            "location_area": "Off Chandni Chowk main avenue",
+            "bargaining_and_visiting_tips": "Visit Gulab Singh Johrimal (operating since 1816) for authentic steam-distilled floral perfumes in antique glass phials."
+          }
+        ]
+      },
+      {
+        "day_number": 2,
+        "city": "South Delhi (Monuments & Gardens)",
+        "route_title": "Humayun's Tomb → Qutub Minar (UNESCO) → Sunder Nursery",
+        "dist_time": "16 km • Urban heritage transit",
+        "theme": "Sultanate Minarets, Garden Tombs & Medieval Stepwells",
+        "monuments": [
+          {
+            "name": "Qutub Minar Complex (UNESCO World Heritage)",
+            "city": "Delhi",
+            "state": "Delhi",
+            "category": "UNESCO World Heritage Sultanate Landmark",
+            "period": "1192 CE (Qutb-ud-din Aibak) & 1220 CE (Iltutmish)",
+            "description": "A 72.5-meter tapering victory tower of red sandstone and marble, holding the famous 4th-century CE rust-resistant Iron Pillar of Chandragupta II and Quwwat-ul-Islam Mosque.",
+            "timings": "07:00 AM – 09:00 PM (Illuminated in evenings)",
+            "entry_fee": "₹50 (Indians) | ₹600 (Foreigners)",
+            "visit_duration": "2 Hours",
+            "image_url": "/hero/monument-4.jpg",
+            "lat": 28.5245,
+            "lng": 77.1855
+          },
+          {
+            "name": "Humayun's Tomb (UNESCO World Heritage)",
+            "city": "Delhi",
+            "state": "Delhi",
+            "category": "UNESCO World Heritage Garden Tomb",
+            "period": "1565–1572 CE (Empress Bega Begum)",
+            "description": "The first mature example of Mughal garden-tomb architecture in India, built of red sandstone and white marble set within geometric four-part paradise gardens (Charbagh).",
+            "timings": "06:00 AM – 06:00 PM Daily",
+            "entry_fee": "₹50 (Indians) | ₹600 (Foreigners)",
+            "visit_duration": "2 Hours (Best in Late Afternoon)",
+            "image_url": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?w=1000&auto=format&fit=crop&q=80",
+            "lat": 28.5933,
+            "lng": 77.2507
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Sunder Nursery Heritage Biodiversity Park Walk",
+            "category": "Mughal Garden & Ecology Walk",
+            "desc": "Stroll amidst 16th-century restored Mughal tombs, marble lotus fountains, and over 300 tree species in Delhi's premier heritage garden."
+          }
+        ],
+        "festivals": [
+          "Jahan-e-Khusrau Sufi Music Festival",
+          "Dilli Haat Crafts Mela"
+        ],
+        "morning": "08:30 AM: Visit Qutub Minar early to photograph the calligraphic fluting and ancient rustless iron pillar.",
+        "midday": "11:30 AM: Explore Mehrauli Archaeological Park, Jamali Kamali Mosque, and Rajon ki Baoli stepwell.",
+        "lunch": "01:30 PM: Contemporary South Indian feast at Carnatic Cafe (Greater Kailash) or Fabcafe by the lake.",
+        "twilight": "04:00 PM: Sunset walk through Humayun's Tomb gardens and Sunder Nursery.",
+        "curator_note": "A night ticket is available at Qutub Minar for viewing the illuminated tower until 09:00 PM.",
+        "hotels": [
+          {
+            "name": "The Lodhi, New Delhi",
+            "hotel_type": "Urban Luxury Resort with Private Plunge Pools",
+            "price_tier": "₹22,000 - ₹40,000 / night",
+            "rating": 4.9,
+            "distance": "Lodhi Road, 1.2 km from Humayun's Tomb",
+            "highlights": [
+              "Private balcony plunge pools",
+              "Overlooks Delhi Golf Club and tombs",
+              "Acclaimed Indian Accent dining"
+            ],
+            "booking_advice": "One of Delhi's most luxurious contemporary sanctuaries with views of Mughal heritage."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Carnatic Cafe (Greater Kailash 2 / Lodhi Colony)",
+            "cuisine": "Authentic Karnataka Tiffin & Dosas",
+            "must_try": [
+              "Malleshwaram 18th Cross Dosa (Thick, crisp, coated with spicy gunpowder & white butter)",
+              "Rava Idli",
+              "Mysore Pak"
+            ],
+            "price_for_two": "₹450 - ₹700",
+            "timing": "09:00 AM – 10:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "Regarded as the finest boutique dosa haven in Delhi; the ghee podi crust is unmatched."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Dilli Haat (INA Market)",
+            "market_type": "National Crafts Emporium & Food Court",
+            "famous_for": [
+              "Rotating artisan stalls from all 28 Indian States",
+              "Pashmina shawls, Madhubani paintings, tribal brass art",
+              "Authentic regional food stalls (Momos, Wazwan, Litti Chokha)"
+            ],
+            "best_time": "11:00 AM – 09:00 PM",
+            "location_area": "Opposite INA Market, Sri Aurobindo Marg",
+            "bargaining_and_visiting_tips": "Artisans rotate every 15 days; prices are regulated and artists sell directly without middlemen."
+          }
+        ]
+      }
+    ]
+  },
+  "varanasi": {
+    "title": "Sacred Kashi & Sarnath Heritage Itinerary",
+    "subtitle": "Living Ganga Ghats, Vedic Chants, Buddhist Roots & Royal Weavers",
+    "region": "Northern India",
+    "recommended_season": "October – March (Crisp mornings, gentle winter sunlight)",
+    "circuit_distance": "60 km local pilgrimage & cultural circuit",
+    "total_travel_time": "Low travel fatigue / Heritage e-rickshaws & wooden rowboats",
+    "transit_mode": "Silent wooden morning rowboats & licensed electric heritage rickshaws",
+    "curator_field_protocol": [
+      "Respect cremation rites at Manikarnika and Harishchandra Ghats; photography is strictly forbidden near burning pyres.",
+      "Wear comfortable slip-on sandals; Old Kashi alleyways (galis) are pedestrian-only.",
+      "Early morning dawn boat ride (05:30 AM) is essential to witness spiritual rituals at Assi and Dashashwamedh Ghats.",
+      "Purchase pure silk directly from master weaver societies in Madanpura and Peeli Kothi."
+    ],
+    "days": [
+      {
+        "day_number": 1,
+        "city": "Varanasi (Old Kashi)",
+        "route_title": "Assi Ghat → Kashi Vishwanath Corridor → Dashashwamedh Ghat",
+        "dist_time": "8 km • Boat and Walking Heritage Trail",
+        "theme": "Sacred Riverfronts, Ganga Aarti & Jyotirlinga Sanctum",
+        "monuments": [
+          {
+            "name": "Kashi Vishwanath Temple & Vishwanath Corridor",
+            "city": "Varanasi",
+            "state": "Uttar Pradesh",
+            "category": "Sacred Jyotirlinga & Grand River Corridor",
+            "period": "Ancient Vedic foundation; rebuilt 1780 CE (Ahilyabai Holkar); Corridor 2021",
+            "description": "The spiritual core of India dedicated to Lord Shiva as Vishveshwara, crowned by two gold-plated spires donated by Maharaja Ranjit Singh.",
+            "timings": "03:00 AM – 11:00 PM Daily (Multiple Aartis)",
+            "entry_fee": "Free General Darshan | ₹300 Sugam Darshan Pass",
+            "visit_duration": "2 Hours",
+            "image_url": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=1000&auto=format&fit=crop&q=80",
+            "lat": 25.3109,
+            "lng": 83.0107
+          },
+          {
+            "name": "Dashashwamedh & Manikarnika Ghats",
+            "city": "Varanasi",
+            "state": "Uttar Pradesh",
+            "category": "Ancient Living Riverfront Ghats",
+            "period": "Timeless Vedic Era; stone steps rebuilt by Marathas in 1740 CE",
+            "description": "Varanasi's most famous ghats where dawn rituals and evening Maha Ganga Aarti take place against centuries-old stone riverfront palaces.",
+            "timings": "Open 24 Hours; Ganga Aarti at 06:45 PM Daily",
+            "entry_fee": "Free Entry",
+            "visit_duration": "2.5 Hours",
+            "image_url": "/hero/monument-8.jpg",
+            "lat": 25.3075,
+            "lng": 83.0103
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Dawn Wooden Rowboat Ride on the Sacred Ganga",
+            "category": "Living Spiritual Immersion",
+            "desc": "Gliding from Assi to Manikarnika Ghat as sunrise bathes the terracotta stone palaces in golden illumination while temple bells resound."
+          }
+        ],
+        "festivals": [
+          "Dev Deepawali (Kartik Purnima)",
+          "Maha Shivaratri",
+          "Ganga Mahotsav"
+        ],
+        "morning": "05:30 AM: Dawn private wooden rowboat from Assi Ghat to Manikarnika Ghat witnessing Subah-e-Banaras rituals.",
+        "midday": "11:00 AM: Sugam Darshan at Kashi Vishwanath Temple and walking through the newly restored riverfront corridor.",
+        "lunch": "01:30 PM: Authentic Kachori Sabzi and warm Jalebis at historic Ram Bhandar in Thatheri Bazaar.",
+        "twilight": "06:15 PM: Secured wooden boat seat to witness the grand synchronized 7-priest Maha Ganga Aarti at Dashashwamedh Ghat.",
+        "curator_note": "Mobile phones and leather items are prohibited inside Kashi Vishwanath; leave them at your hotel or official locker booths.",
+        "hotels": [
+          {
+            "name": "BrijRama Palace Varanasi - Heritage Grand",
+            "hotel_type": "18th-Century Maratha Palace on the Ghats",
+            "price_tier": "₹16,000 - ₹28,000 / night",
+            "rating": 4.9,
+            "distance": "Directly on Darbhanga Ghat (Water access)",
+            "highlights": [
+              "Private bajra boat transfers",
+              "Classical sitar morning performances",
+              "Authentic pure veg palace cuisine"
+            ],
+            "booking_advice": "One of India's finest riverfront palace stays with private boat check-in."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Kashi Chat Bhandar (Godowlia Chowk)",
+            "cuisine": "Iconic Banarasi Street Chaat",
+            "must_try": [
+              "Tamatar Chaat (Warm spiced tomato mash with crisp namakpare)",
+              "Palak Patta Chaat",
+              "Gulab Jamun"
+            ],
+            "price_for_two": "₹150 - ₹250",
+            "timing": "03:00 PM – 10:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "The original inventor of Banarasi Tamatar Chaat; always crowded, always sensational."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Thatheri Bazaar & Vishwanath Gali",
+            "market_type": "Historic Metal Craft & Banarasi Silk Alley",
+            "famous_for": [
+              "Hand-beaten brass and copper utensils",
+              "Varanasi wooden lacquer toys",
+              "Banarasi silk dupattas and stoles"
+            ],
+            "best_time": "11:00 AM – 08:00 PM",
+            "location_area": "Between Godowlia and Vishwanath Temple",
+            "bargaining_and_visiting_tips": "Explore narrow alleys with a local guide; verify pure silk purity with the Silk Mark hologram."
+          }
+        ]
+      },
+      {
+        "day_number": 2,
+        "city": "Sarnath (Buddhist Heritage)",
+        "route_title": "Varanasi → Sarnath Buddhist Sanctuary & Ashoka Pillar",
+        "dist_time": "12 km • 30 mins north of Varanasi",
+        "theme": "The First Sermon of Lord Buddha & Mauryan National Emblem",
+        "monuments": [
+          {
+            "name": "Dhamek Stupa & Deer Park (Sarnath)",
+            "city": "Sarnath",
+            "state": "Uttar Pradesh",
+            "category": "ASI Protected Buddhist World Landmark",
+            "period": "500 CE (Gupta Period) over 249 BCE Mauryan foundation",
+            "description": "Colossal 43.6-meter cylindrical stone stupa marking the spot where Lord Buddha gave his First Sermon to the five disciples.",
+            "timings": "Sunrise to Sunset Daily",
+            "entry_fee": "₹25 (Indians) | ₹300 (Foreigners)",
+            "visit_duration": "2 Hours",
+            "image_url": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=1000&auto=format&fit=crop&q=80",
+            "lat": 25.3811,
+            "lng": 83.0243
+          },
+          {
+            "name": "Sarnath Archaeological Museum",
+            "city": "Sarnath",
+            "state": "Uttar Pradesh",
+            "category": "ASI National Museum",
+            "period": "3rd Century BCE to 12th Century CE",
+            "description": "Houses the original polished sandstone Lion Capital of Ashoka (1250 BCE)—the National Emblem of the Republic of India.",
+            "timings": "09:00 AM – 05:00 PM (Closed Fridays)",
+            "entry_fee": "₹5 (ASI Museum Pass)",
+            "visit_duration": "1.5 Hours",
+            "image_url": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=1000&auto=format&fit=crop&q=80",
+            "lat": 25.3787,
+            "lng": 83.0229
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Mulagandha Kuti Vihara Japanese Chanting & Meditation",
+            "category": "Living Buddhist Sanctuary",
+            "desc": "Listen to peaceful Pali chanting beneath frescoes painted by legendary Japanese artist Kosetsu Nosu."
+          }
+        ],
+        "festivals": [
+          "Buddha Purnima (May)",
+          "Dhamma Chakra Pravartan Day"
+        ],
+        "morning": "08:30 AM: Drive to peaceful Sarnath, circumambulating Dhamek Stupa amidst ancient monastic gardens.",
+        "midday": "11:00 AM: View the original Ashokan Lion Capital and master Gupta sculptures at Sarnath Museum.",
+        "lunch": "01:30 PM: Wholesome North Indian vegetarian dining at Cantonment Varanasi.",
+        "twilight": "05:00 PM: Immersion into Banarasi Brocade weaving master workshops in the artisan neighborhood of Sarai Mohana.",
+        "curator_note": "Sarnath Archaeological Museum is strictly closed on Fridays; plan your visit on any other weekday or weekend.",
+        "hotels": [
+          {
+            "name": "Taj Nadesar Palace, Varanasi",
+            "hotel_type": "Royal Heritage Palace (IHCL)",
+            "price_tier": "₹25,000 - ₹45,000 / night",
+            "rating": 5.0,
+            "distance": "Cantonment (6 km to Sarnath)",
+            "highlights": [
+              "Maharaja residence since 1835",
+              "Horse-drawn carriage arrivals",
+              "Private mango orchards"
+            ],
+            "booking_advice": "Ultra-exclusive heritage retreat that has hosted royalty and world leaders."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "The Palate at Cantonment",
+            "cuisine": "North Indian & Awadhi Curries",
+            "must_try": [
+              "Dal Makhani simmered overnight",
+              "Paneer Lababdar",
+              "Stuffed Amritsari Kulcha"
+            ],
+            "price_for_two": "₹800 - ₹1,300",
+            "timing": "12:00 PM – 11:00 PM",
+            "dietary": "Vegetarian & Non-Veg",
+            "curator_note": "A comfortable air-conditioned break after walking the Sarnath excavations."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Sarai Mohana Weaver Village & Peeli Kothi",
+            "market_type": "Master Weaver Colony (GI Craft)",
+            "famous_for": [
+              "Real Gold Zari Katan Silk Sarees",
+              "Jangla and Shikargah Brocade motifs",
+              "Hand-woven Tanchoi stoles"
+            ],
+            "best_time": "10:00 AM – 06:00 PM",
+            "location_area": "Sarai Mohana Village, outskirts of Varanasi",
+            "bargaining_and_visiting_tips": "Observe jacquard pit looms in action; purchase directly from the weaver households to avoid retail showroom markups."
+          }
+        ]
+      }
+    ]
+  },
+  "jaipur": {
+    "title": "Royal Rajputana Citadels & Pink City Heritage",
+    "subtitle": "Colossal Hill Fortresses, Sheesh Mahal Miracles & Royal Bazaars",
+    "region": "Western India",
+    "recommended_season": "October – March (Pleasant sunny days, crisp desert evenings)",
+    "circuit_distance": "45 km heritage precinct circuit",
+    "total_travel_time": "Low travel fatigue / Dedicated heritage cab or auto",
+    "transit_mode": "Private chauffeur air-conditioned cab & heritage e-rickshaws in Old City",
+    "curator_field_protocol": [
+      "Amber Fort is expansive with cobble inclines; wear sturdy walking shoes with rubber grip.",
+      "Hire government-certified Department of Tourism guides carrying official photo IDs.",
+      "Johari and Bapu Bazaars are pedestrian-dense; bargaining by 25-30% is customary in unpriced handicraft stalls.",
+      "Buy Jaipur Blue Pottery and Sanganer block prints directly from verified artisan cooperatives."
+    ],
+    "days": [
+      {
+        "day_number": 1,
+        "city": "Jaipur (Amer & Fortresses)",
+        "route_title": "Pink City Gates → Amber Citadel → Jaigarh Fort",
+        "dist_time": "14 km • 35 mins via Amer Road",
+        "theme": "Rajput Imperial Citadels & Mirror Palace Splendor",
+        "monuments": [
+          {
+            "name": "Amber Fort & Palace (UNESCO Hill Fort)",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "category": "UNESCO World Heritage Hill Fort",
+            "period": "1592 CE (Raja Man Singh I)",
+            "description": "Perched dramatically above Maota Lake, this yellow-sandstone fortress contains the Sheesh Mahal (Mirror Palace) where thousands of convex mirrors reflect candlelight into starry constellations.",
+            "timings": "08:00 AM – 05:30 PM & Night Tourism (06:30 – 09:15 PM)",
+            "entry_fee": "₹100 (Indians) | ₹500 (Foreigners)",
+            "visit_duration": "3 Hours",
+            "image_url": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1000&auto=format&fit=crop&q=80",
+            "lat": 26.9855,
+            "lng": 75.8513
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Evening Sunset from Nahargarh Fort Ramparts",
+            "category": "Panoramic Heritage Sunset",
+            "desc": "Witness the entire Pink City glowing in dusk twilight from the high battlements of Nahargarh Fort with cool Aravalli mountain breezes."
+          }
+        ],
+        "festivals": [
+          "Jaipur Literature Festival (January)",
+          "Teej Festival (July-August)",
+          "Gangaur Festival"
+        ],
+        "morning": "08:00 AM: Early morning climb to Amber Fort before tour groups arrive, exploring Diwan-e-Aam and Sheesh Mahal.",
+        "midday": "11:30 AM: Marvel at the geometric stair patterns of Panna Meena ka Kund and visit Anokhi Museum of Hand Printing.",
+        "lunch": "01:30 PM: Authentic Dal Baati Churma with garlic chutney at 1135 AD inside Amber Fort.",
+        "twilight": "05:00 PM: Sunset tea overlooking the panoramic city skyline from the ramparts of Nahargarh Fort.",
+        "curator_note": "Amber Fort has evening sound and light shows in Hindi and English echoing across Maota Lake at 07:30 PM.",
+        "hotels": [
+          {
+            "name": "Samode Haveli, Jaipur",
+            "hotel_type": "Restored 175-Year-Old Noble Haveli",
+            "price_tier": "₹12,000 - ₹22,000 / night",
+            "rating": 4.8,
+            "distance": "Old City, Gangapole (Near Hawa Mahal)",
+            "highlights": [
+              "Hand-painted fresco suites",
+              "Historic courtyard swimming pool",
+              "Royal Rajput dining"
+            ],
+            "booking_advice": "A jewel of authentic Marwar haveli architecture tucked inside the Old City ramparts."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Laxmi Mishthan Bhandar (LMB, Johari Bazaar)",
+            "cuisine": "Royal Rajasthani Vegetarian & Sweets",
+            "must_try": [
+              "Rajasthani Royal Thali (Dal Baati Churma, Gatte ki Sabzi, Ker Sangri)",
+              "Panner Ghevar",
+              "Crispy Pyaaz Kachori"
+            ],
+            "price_for_two": "₹700 - ₹1,200",
+            "timing": "08:00 AM – 10:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "A heritage culinary pillar operating since 1727 in the heart of the Pink City bazaar."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Johari Bazaar & Tripolia Bazaar",
+            "market_type": "Historic Royal Gem & Lac Jewelry Market",
+            "famous_for": [
+              "Kundan and Meenakari enamel jewelry",
+              "Jaipuri quilts (Razai)",
+              "Handmade lac bangles"
+            ],
+            "best_time": "11:00 AM – 08:00 PM",
+            "location_area": "Pink City Walled Enclave",
+            "bargaining_and_visiting_tips": "Walk down Maniharon ka Rasta to watch craftsmen heat and shape raw lac resin over coals into vivid bangles."
+          }
+        ]
+      }
+    ]
+  },
+  "mysore": {
+    "title": "Royal Heritage of the Wadiyars & Sandalwood City",
+    "subtitle": "Mysore Palace Illumination, Chamundi Hill & Devaraja Market",
+    "region": "Southern India",
+    "recommended_season": "September – March (Mild pleasant plateau weather; spectacular during Dasara)",
+    "circuit_distance": "35 km city heritage circuit",
+    "total_travel_time": "Low travel fatigue / Clean wide avenues",
+    "transit_mode": "Auto-rickshaws, city heritage cabs, or hop-on electric buggies",
+    "curator_field_protocol": [
+      "Mysore Palace illumination occurs on Sundays and public holidays from 07:00 PM to 07:45 PM.",
+      "Footwear must be removed before entering the palace interior galleries; free counters provided.",
+      "Visit Devaraja Market in the late afternoon when fresh flower garlands and traditional incense mounds are arranged.",
+      "Purchase Mysore Silk directly from Karnataka Silk Industries Corporation (KSIC) showrooms with pure gold zari guarantee."
+    ],
+    "days": [
+      {
+        "day_number": 1,
+        "city": "Mysore (Amba Vilas & Markets)",
+        "route_title": "Mysore Palace → Chamundi Hill → Devaraja Heritage Market",
+        "dist_time": "18 km • Heritage urban drive",
+        "theme": "Wadiyar Royal Splendour & Fragrant Sandalwood Bazaars",
+        "monuments": [
+          {
+            "name": "Mysore Palace (Amba Vilas Palace)",
+            "city": "Mysore",
+            "state": "Karnataka",
+            "category": "Indo-Saracenic Royal Palace",
+            "period": "1897–1912 CE (Lord Henry Irwin / Wadiyar Dynasty)",
+            "description": "One of India's most visited royal palaces featuring stained-glass ceilings, carved rosewood doorways, the Golden Royal Throne (Chinnada Simhasana), and illumination by 97,000 electric bulbs.",
+            "timings": "10:00 AM – 05:30 PM Daily; Sound & Light Show 07:00 PM",
+            "entry_fee": "₹100 (Indians) | ₹300 (Foreigners)",
+            "visit_duration": "2.5 Hours",
+            "image_url": "/hero/monument-5.jpg",
+            "lat": 12.3052,
+            "lng": 76.6552
+          },
+          {
+            "name": "Chamundeshwari Temple & Monolithic Nandi",
+            "city": "Mysore",
+            "state": "Karnataka",
+            "category": "Sacred Hilltop Shrine",
+            "period": "12th Century CE (Hoysalas) & 17th Century (Wadiyars)",
+            "description": "Perched atop the 1,000-meter Chamundi Hill, dedicated to Goddess Durga slaying the demon Mahishasura, featuring a colossal 5-meter monolithic Nandi bull carved in 1659 CE.",
+            "timings": "07:30 AM – 02:00 PM, 03:30 PM – 06:00 PM, 07:30 PM – 09:00 PM",
+            "entry_fee": "Free Entry | ₹100 Special Darshan",
+            "visit_duration": "1.5 Hours",
+            "image_url": "/hero/monument-5.jpg",
+            "lat": 12.2725,
+            "lng": 76.671
+          }
+        ],
+        "experiences": [
+          {
+            "name": "Devaraja Market Scent & Flower Heritage Walk",
+            "category": "Living Sensory Heritage",
+            "desc": "Walk through 130-year-old wooden rafters filled with mounds of fragrant red vermilion (Kumkum), jasmine strings, and pure Mysore sandalwood oil."
+          }
+        ],
+        "festivals": [
+          "Mysore Dasara (10-Day Grand Festival in October)",
+          "Chamundi Hill Rathotsava"
+        ],
+        "morning": "08:00 AM: Drive up Chamundi Hill for morning darshan and panoramic views over Mysore city.",
+        "midday": "11:00 AM: Guided tour through the stained-glass Kalyana Mandapa and durbar halls of Mysore Palace.",
+        "lunch": "01:30 PM: Authentic Mysore Pak and crispy butter Mysore Masala Dosa at Hotel Mylari.",
+        "twilight": "05:00 PM: Immersion into Devaraja Market; Sunday evening palace illumination at 07:00 PM.",
+        "curator_note": "Try to visit on a Sunday evening to witness all 97,000 golden bulbs illuminating Mysore Palace simultaneously against the night sky.",
+        "hotels": [
+          {
+            "name": "Lalitha Mahal Palace Hotel, Mysore",
+            "hotel_type": "1921 CE Royal Italian Renaissance Palace",
+            "price_tier": "₹7,500 - ₹14,000 / night",
+            "rating": 4.6,
+            "distance": "At the foot of Chamundi Hills",
+            "highlights": [
+              "Designed by E.W. Fritchley modeled on St. Paul's Cathedral",
+              "Spherical Italian marble staircase",
+              "Royal ballroom dining"
+            ],
+            "booking_advice": "Built originally to host the Viceroy of India; spacious royal suites with panoramic hill views."
+          }
+        ],
+        "restaurants": [
+          {
+            "name": "Original Vinayaka Mylari (Nazarbad)",
+            "cuisine": "Legendary Heritage Mysore Dosa",
+            "must_try": [
+              "Mylari Special Butter Dosa (Cloud-soft with sagu stuffing & freshly churned white butter)",
+              "Filter Coffee"
+            ],
+            "price_for_two": "₹150 - ₹250",
+            "timing": "06:30 AM – 01:30 PM, 03:00 PM – 08:30 PM",
+            "dietary": "Pure Vegetarian",
+            "curator_note": "A tiny, unpretentious hole-in-the-wall operating for over 80 years; the texture of the dosa is legendary."
+          }
+        ],
+        "markets": [
+          {
+            "name": "Devaraja Market & Sayyaji Rao Road",
+            "market_type": "130-Year-Old Historic Municipal Market",
+            "famous_for": [
+              "GI-Tagged Mysore Silk Sarees (KSIC Showroom)",
+              "Pure Mysore Sandalwood carvings & incense",
+              "Traditional wooden lacquer toys from Channapatna"
+            ],
+            "best_time": "04:00 PM – 08:30 PM",
+            "location_area": "Sayyaji Rao Road, Central Mysore",
+            "bargaining_and_visiting_tips": "Only buy Mysore Sandalwood and Silk from government KSIC outlets to guarantee genuine quality."
+          }
+        ]
+      }
+    ]
+  }
+}

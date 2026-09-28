@@ -118,18 +118,19 @@ class CulturalExperience(BaseModel):
     city: str
     category: str
     description: str
-    cultural_significance: str
-    associated_place_id: str
-    duration: str
-    latitude: float
-    longitude: float
-    image_url: str
+    cultural_significance: str = ""
+    associated_place_id: str = "place-general"
+    duration: str = "2 Hours"
+    latitude: float = 20.5937
+    longitude: float = 78.9629
+    image_url: str = "/hero/monument-1.jpg"
     image_attribution: Optional[str] = None
     license: Optional[str] = None
-    source_url: str
+    source_url: str = "https://www.incredibleindia.gov.in"
     verification_status: str = "VERIFIED"
     entry_fee: Optional[str] = None
     opening_hours: Optional[str] = None
+
 
 # -------------------------------------------------------------
 # Collection G: Cultural Stories
@@ -281,13 +282,51 @@ class AIChatResponse(BaseModel):
 # -------------------------------------------------------------
 # Cultural Itinerary Request & Response
 # -------------------------------------------------------------
+class NearbyHotel(BaseModel):
+    name: str
+    hotel_type: str = "Heritage Stay"
+    price_tier: str = "Moderate"
+    rating: float = 4.6
+    distance: str = "Near heritage precinct"
+    highlights: List[str] = Field(default_factory=list)
+    booking_advice: str = ""
+    image_url: Optional[str] = None
+
+class NearbyRestaurant(BaseModel):
+    name: str
+    cuisine: str = "Authentic Regional Cuisine"
+    must_try: List[str] = Field(default_factory=list)
+    price_for_two: str = "₹400 - ₹800"
+    timing: str = "11:00 AM - 10:30 PM"
+    dietary: str = "Pure Vegetarian / Traditional"
+    curator_note: str = ""
+
+class LocalMarket(BaseModel):
+    name: str
+    market_type: str = "Historic Bazaars & Craft Guilds"
+    famous_for: List[str] = Field(default_factory=list)
+    best_time: str = "Late Afternoon (04:00 PM - 08:00 PM)"
+    location_area: str = "Old City Heritage Precinct"
+    bargaining_and_visiting_tips: str = ""
+
 class ItineraryDay(BaseModel):
     day_number: int
     theme: str
+    day_city: Optional[str] = None
+    route_title: Optional[str] = None
+    dist_time: Optional[str] = None
     heritage_places: List[HeritagePlace]
     cultural_experiences: List[CulturalExperience]
     cultural_explanation: str
     associated_traditions: List[str] = Field(default_factory=list)
+    nearby_hotels: List[NearbyHotel] = Field(default_factory=list)
+    nearby_restaurants: List[NearbyRestaurant] = Field(default_factory=list)
+    local_markets: List[LocalMarket] = Field(default_factory=list)
+    curator_travel_note: Optional[str] = None
+    morning_highlight: Optional[str] = None
+    midday_highlight: Optional[str] = None
+    lunch_spot: Optional[str] = None
+    twilight_highlight: Optional[str] = None
 
 class ItineraryRequest(BaseModel):
     state_or_destination: str
@@ -302,3 +341,9 @@ class ItineraryResponse(BaseModel):
     overview: str
     days: List[ItineraryDay]
     verified_map_coordinates: List[Coordinates]
+    recommended_season: Optional[str] = "October – March"
+    circuit_distance: Optional[str] = None
+    total_travel_time: Optional[str] = None
+    transit_mode: Optional[str] = None
+    curator_field_protocol: List[str] = Field(default_factory=list)
+
