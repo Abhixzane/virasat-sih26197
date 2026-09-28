@@ -41,6 +41,13 @@ CANONICAL_SYNONYMS = {
 
     # Monuments & Sites
     "taj mehal": "Taj Mahal",
+    "taj mahl": "Taj Mahal",
+    "tajmahal": "Taj Mahal",
+    "taj": "Taj Mahal",
+    "agra fort": "Agra Fort",
+    "agrah fort": "Agra Fort",
+    "agrah": "Agra",
+    "fatehpur sikri": "Fatehpur Sikri",
     "qutab minar": "Qutb Minar",
     "humpi": "Hampi",
     "vijayanagara": "Hampi",

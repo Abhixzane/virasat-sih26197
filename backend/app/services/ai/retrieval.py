@@ -92,10 +92,15 @@ ENTITY_SYNONYMS = {
 
     # Agra & Taj
     "taj mehal": "Taj Mahal",
+    "taj mahl": "Taj Mahal",
     "tajmahal": "Taj Mahal",
+    "taj": "Taj Mahal",
     "ताजमहल": "Taj Mahal",
     "fatehpur": "Fatehpur Sikri",
-    "agra fort": "Agra Fort",
+    "fatehpur sikri": "Fatehpur Sikri",
+    "agra fort": "Agra",
+    "agrah fort": "Agra",
+    "agrah": "Agra",
 
     # Caves & Monuments
     "ajanta alora": "Ajanta Caves",
