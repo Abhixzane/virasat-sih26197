@@ -44,6 +44,76 @@ class CulturalRepository:
         self._initialized = True
         self.reload()
 
+    def _convert_master_festival(self, mf: Dict[str, Any]) -> Festival:
+        states = mf.get("major_states", ["India"])
+        primary_state = states[0] if states else "India"
+        fid = mf.get("id", "")
+        desc = mf.get("short_description") or mf.get("why_celebrated") or ""
+        hist = mf.get("historical_background") or mf.get("origin_and_traditional_stories") or ""
+        cult = mf.get("cultural_and_spiritual_significance") or mf.get("historical_significance") or ""
+        rituals = mf.get("important_rituals", [])
+        ritual_text = ", ".join(rituals) if isinstance(rituals, list) else str(rituals)
+        celeb = mf.get("how_people_celebrate") or ritual_text or ""
+        comm = mf.get("religious_or_cultural_association") or "Local Communities"
+        month = mf.get("usual_month") or "Annual"
+        source = mf.get("official_website") or "https://www.incredibleindia.gov.in"
+
+        return Festival(
+            id=fid,
+            name=mf.get("name", ""),
+            state=primary_state,
+            region="Pan-India" if "All" in str(states) else "Regional",
+            category=mf.get("category", "Cultural"),
+            description=desc,
+            historical_background=hist,
+            cultural_significance=cult,
+            celebration_details=celeb,
+            associated_communities=comm,
+            month_or_season=month,
+            associated_place_ids=[],
+            related_tradition_ids=[],
+            image_url=f"/assets/festivals/{fid}.jpg",
+            image_attribution="Ministry of Tourism / Incredible India",
+            license="Open Cultural Data Initiative",
+            source_url=source,
+            verification_status="VERIFIED"
+        )
+
+    def _convert_unesco_property(self, up: Dict[str, Any]) -> HeritagePlace:
+        uid = up.get("id", "")
+        name = up.get("official_unesco_name", "")
+        state = up.get("state", "India")
+        city = up.get("city_or_nearest_settlement") or up.get("district") or state
+        cat = f"UNESCO {up.get('category', 'Cultural')} Heritage"
+        year = str(up.get("inscription_year", "Historic"))
+        desc = up.get("historical_background") or ""
+        signif = up.get("cultural_importance") or up.get("architectural_or_ecological_significance") or ""
+        arch = up.get("architectural_or_ecological_significance") or ""
+        lat = float(up.get("latitude", 0.0) or 0.0)
+        lng = float(up.get("longitude", 0.0) or 0.0)
+        source = up.get("official_unesco_url") or "https://whc.unesco.org"
+
+        return HeritagePlace(
+            id=uid,
+            name=name,
+            state=state,
+            city=city,
+            category=cat,
+            historical_period=year,
+            description=desc,
+            historical_significance=signif,
+            architectural_style=arch,
+            latitude=lat,
+            longitude=lng,
+            image_url=f"/assets/heritage/{uid}.jpg",
+            image_attribution="UNESCO World Heritage Centre / ASI",
+            license="UNESCO World Heritage Public Registry",
+            source_url=source,
+            verification_status="VERIFIED",
+            entry_fee=None,
+            opening_hours="Sunrise to Sunset"
+        )
+
     def reload(self):
         """Loads or reloads data from the centralized database JSON."""
         with self._db_lock:
@@ -76,6 +146,30 @@ class CulturalRepository:
                 self.stories = [
                     CulturalStory(**item) for item in self.raw_data.get("cultural_stories", [])
                 ]
+
+                # Merge UNESCO World Heritage Properties
+                try:
+                    from app.services.heritage.unesco_heritage_service import unesco_heritage_service
+                    existing_place_ids = {p.id for p in self.heritage_places}
+                    for up in unesco_heritage_service.get_all_properties():
+                        uid = up.get("id")
+                        if uid and uid not in existing_place_ids:
+                            self.heritage_places.append(self._convert_unesco_property(up))
+                            existing_place_ids.add(uid)
+                except Exception as e:
+                    logger.warning(f"Could not merge UNESCO properties: {e}")
+
+                # Merge Master Festivals Knowledge Base
+                try:
+                    from app.services.festivals.festival_knowledge_service import festival_knowledge_service
+                    existing_fest_ids = {f.id for f in self.festivals}
+                    for mf in festival_knowledge_service.get_all_festivals():
+                        fid = mf.get("id")
+                        if fid and fid not in existing_fest_ids:
+                            self.festivals.append(self._convert_master_festival(mf))
+                            existing_fest_ids.add(fid)
+                except Exception as e:
+                    logger.warning(f"Could not merge Master Festivals: {e}")
 
                 # Rebuild fast index
                 self.by_id.clear()
@@ -153,22 +247,7 @@ class CulturalRepository:
             from app.services.heritage.unesco_heritage_service import unesco_heritage_service
             up = unesco_heritage_service.get_property_by_id(place_id)
             if up:
-                return HeritagePlace(
-                    id=up.get("id"),
-                    name=up.get("official_unesco_name"),
-                    state=up.get("state"),
-                    city=up.get("city_or_nearest_settlement", up.get("state")),
-                    category=f"UNESCO {up.get('category')} Heritage",
-                    historical_period=str(up.get("inscription_year")),
-                    description=up.get("historical_background", ""),
-                    historical_significance=up.get("cultural_importance", ""),
-                    architectural_style=up.get("architectural_or_ecological_significance", ""),
-                    latitude=float(up.get("latitude", 0.0)),
-                    longitude=float(up.get("longitude", 0.0)),
-                    image_url=f"/assets/heritage/{up.get('id')}.jpg",
-                    source_url=up.get("official_unesco_url", "https://whc.unesco.org"),
-                    verification_status="VERIFIED"
-                )
+                return self._convert_unesco_property(up)
         except Exception:
             pass
         return None
@@ -191,22 +270,7 @@ class CulturalRepository:
             from app.services.festivals.festival_knowledge_service import festival_knowledge_service
             mf = festival_knowledge_service.get_festival_by_id(festival_id)
             if mf:
-                return Festival(
-                    id=mf.get("id"),
-                    name=mf.get("name"),
-                    state=mf.get("major_states", ["India"])[0],
-                    region="Pan-India" if "All" in str(mf.get("major_states")) else "Regional",
-                    category=mf.get("category", "Cultural"),
-                    description=mf.get("short_description", ""),
-                    historical_background=mf.get("historical_background", ""),
-                    cultural_significance=mf.get("cultural_and_spiritual_significance", ""),
-                    celebration_details=mf.get("how_people_celebrate", ""),
-                    associated_communities=mf.get("religious_or_cultural_association", "Local Community"),
-                    month_or_season=mf.get("usual_month", "Annual"),
-                    image_url=f"/assets/festivals/{mf.get('id')}.jpg",
-                    source_url=mf.get("official_website", "https://www.incredibleindia.gov.in"),
-                    verification_status="VERIFIED"
-                )
+                return self._convert_master_festival(mf)
         except Exception:
             pass
         return None

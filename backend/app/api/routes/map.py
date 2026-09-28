@@ -73,6 +73,44 @@ def _filter_markers(
                 verification_status=e.verification_status
             ))
 
+    # 3. Festivals & Living Traditions (Festival = Red Pin)
+    # Map festivals to verified coordinates of host city or state capital
+    for f in cultural_repository.festivals:
+        if state and f.state.lower() != state.strip().lower():
+            continue
+        if category and category.lower() not in f.category.lower() and category.lower() not in ["festival", "festivals", "traditions", "all"]:
+            continue
+        if clean_q and (clean_q not in f.name.lower() and clean_q not in f.state.lower() and clean_q not in f.description.lower()):
+            continue
+
+        lat, lng = None, None
+        city_name = f.state
+        state_cities = [c for c in cultural_repository.get_cities(f.state) if hasattr(c, "coordinates") and c.coordinates]
+        if state_cities:
+            lat = state_cities[0].coordinates.lat
+            lng = state_cities[0].coordinates.lng
+            city_name = state_cities[0].name
+
+        if lat is not None and lng is not None and abs(lat) > 0.1 and abs(lng) > 0.1:
+            if min_lat is not None and (lat < min_lat or lat > max_lat):
+                continue
+            if min_lng is not None and (lng < min_lng or lng > max_lng):
+                continue
+
+            markers.append(MapMarker(
+                id=f.id,
+                name=f.name,
+                type="festival",
+                category=f.category,
+                state=f.state,
+                city=city_name,
+                latitude=lat,
+                longitude=lng,
+                description=f.description[:200] + ("..." if len(f.description) > 200 else ""),
+                image_url=f.image_url,
+                verification_status=f.verification_status
+            ))
+
     return markers
 
 @router.get("/cultural-map/markers", response_model=List[MapMarker])
