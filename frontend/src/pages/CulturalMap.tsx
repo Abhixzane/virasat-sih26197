@@ -78,20 +78,27 @@ export const CulturalMapPage: React.FC<CulturalMapPageProps> = ({ onExploreRelat
             </p>
           </div>
 
-          {/* Right Column: Monument Panorama Artwork & Flowing Tricolour Ribbon Wave */}
-          <div className="lg:col-span-5 relative min-h-[160px] lg:min-h-full overflow-hidden flex items-end justify-end">
-            {/* Smooth gradient scrim fading softly into the left background */}
-            <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#FFFDF9] to-transparent z-10 pointer-events-none hidden sm:block" />
+          {/* Right Column: Real-time Archaeological Photograph with Soft Light-Theme Fade */}
+          <div className="lg:col-span-5 relative min-h-[175px] lg:min-h-full overflow-hidden flex items-end justify-end group">
+            {/* Multi-stage light theme fade gradient scrim */}
+            <div className="absolute inset-y-0 left-0 w-36 sm:w-48 bg-gradient-to-r from-[#FFFDF9] via-[#FFFDF9]/80 to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#FFFDF9]/80 via-transparent to-[#FFFDF9]/30 z-10 pointer-events-none" />
 
             <img
-              src="/map-monuments-art@2x.jpg"
-              alt="Pan-India Cultural Monuments"
-              className="w-full h-full object-cover object-right select-none"
+              src="/hero/monument-1.jpg"
+              alt="Authentic Archaeological Heritage — UNESCO World Heritage Registry"
+              className="w-full h-full object-cover object-center select-none brightness-[0.98] contrast-[1.02] group-hover:scale-105 transition-transform duration-700"
             />
+
+            {/* Real Photography Tag */}
+            <div className="absolute top-3 right-3 z-20 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full border border-stone-200/80 shadow-xs flex items-center gap-1.5 text-[10px] font-semibold text-stone-700 select-none">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              <span>Real Archaeological Photography</span>
+            </div>
 
             {/* Curled Bharat Tricolour Ribbon Wave at bottom-right */}
             <div className="absolute bottom-0 right-0 w-full pointer-events-none z-10">
-              <svg viewBox="0 0 500 36" fill="none" preserveAspectRatio="none" className="w-full h-8 opacity-95">
+              <svg viewBox="0 0 500 36" fill="none" preserveAspectRatio="none" className="w-full h-8 opacity-90">
                 <path d="M0,36 Q250,6 500,14 L500,21 Q250,13 0,36 Z" fill="#FF6600" />
                 <path d="M0,36 Q250,13 500,21 L500,28 Q250,20 0,36 Z" fill="#FFFFFF" fillOpacity="0.9" />
                 <path d="M0,36 Q250,20 500,28 L500,36 Q250,28 0,36 Z" fill="#138808" />

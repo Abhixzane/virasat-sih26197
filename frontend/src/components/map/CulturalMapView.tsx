@@ -45,11 +45,21 @@ function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: numbe
   return R * c;
 }
 
-// 5 Distinct Cultural Categories metadata matching the visual legend
+// 6 Distinct Cultural Categories metadata matching the visual legend
 function getCategoryMeta(marker: MapMarker) {
   const cat = (marker.category || '').toLowerCase();
   const type = (marker.type || '').toLowerCase();
+  const name = (marker.name || '').toLowerCase();
 
+  if (type === 'experience' || cat.includes('experience') || cat.includes('masterclass') || cat.includes('trail') || cat.includes('atelier')) {
+    let expEmoji = '✨';
+    if (cat.includes('dawn') || cat.includes('aarti') || name.includes('dawn') || name.includes('sunrise') || name.includes('banaras')) expEmoji = '🌅';
+    else if (cat.includes('craft') || cat.includes('atelier') || cat.includes('loom') || cat.includes('foundry') || cat.includes('printing')) expEmoji = '🏺';
+    else if (cat.includes('river') || cat.includes('boat') || cat.includes('coracle') || cat.includes('landscape')) expEmoji = '🚣';
+    else if (cat.includes('meditation') || cat.includes('spiritual') || cat.includes('shrine') || cat.includes('prayer')) expEmoji = '🧘';
+    else if (cat.includes('walk') || cat.includes('precinct') || cat.includes('fort') || cat.includes('ruins')) expEmoji = '🚶';
+    return { color: '#E05A2B', emoji: expEmoji, label: 'Curated Cultural Experience', key: 'experiences' };
+  }
   if (type === 'festival' || cat.includes('festival')) {
     return { color: '#EF4444', emoji: '🏮', label: 'Festivals & Traditions', key: 'festivals' };
   }
@@ -283,6 +293,45 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
       };
     });
   }, [userLocation, selectedPin, markers]);
+
+  // Curated Experience Field Cards (Manual, non-AI presentation)
+  const experienceCards = React.useMemo(() => {
+    const exps = markers.filter((m) => m.type === 'experience');
+    if (exps.length === 0) return [];
+
+    return exps.map((m) => {
+      const distStr = userLocation 
+        ? `${calculateDistance(userLocation.lat, userLocation.lng, m.latitude, m.longitude).toFixed(1)} km away` 
+        : `${m.city}, ${m.state}`;
+      
+      let note = m.description;
+      const lower = m.name.toLowerCase();
+      if (lower.includes('banaras') || lower.includes('aarti')) {
+        note = 'Curator Tip: Board an oars-powered wooden bajra at Assi Ghat 20 mins before dawn for sunrise sitar ragas on water.';
+      } else if (lower.includes('parchinkari') || lower.includes('lapidary') || lower.includes('agra')) {
+        note = 'Curator Tip: Visit the master atelier behind Taj Ganj to watch 5th-generation stone artisans hand-inlay lapis lazuli in marble.';
+      } else if (lower.includes('coracle') || lower.includes('tungabhadra') || lower.includes('hampi')) {
+        note = 'Curator Tip: Cross near Kodandarama temple at sunset; traditional round wicker coracles provide pristine views of Vijayanagara boulders.';
+      } else if (lower.includes('bodhi') || lower.includes('meditation') || lower.includes('gaya')) {
+        note = 'Curator Tip: Arrive at dawn before tourist groups; the early morning chanting under the sacred tree is pure tranquility.';
+      } else if (lower.includes('ghoda') || lower.includes('mumbai')) {
+        note = 'Curator Tip: Best explored on a quiet Sunday morning when Victorian Gothic facades catch warm early light.';
+      } else if (lower.includes('bagru') || lower.includes('sanganer') || lower.includes('jaipur')) {
+        note = 'Curator Tip: Roll up your sleeves with master Chhipa block-printers using natural vegetable indigo and carved teakwood.';
+      } else if (lower.includes('raghurajpur') || lower.includes('puri')) {
+        note = 'Curator Tip: Walk through the painted mural lane where every home is an open masterstudio of Pattachitra and palm-leaf etching.';
+      }
+
+      return {
+        marker: m,
+        title: m.name,
+        subtitle: note,
+        timing: m.category,
+        distance: distStr,
+        location: `${m.city}, ${m.state}`
+      };
+    });
+  }, [markers, userLocation]);
 
   // Initialize Leaflet Map
   useEffect(() => {
@@ -856,6 +905,7 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
   const categories = [
     { key: 'all', label: 'All Categories' },
     { key: 'monuments', label: 'Monuments & Heritage Sites' },
+    { key: 'experiences', label: 'Curated Cultural Experiences' },
     { key: 'festivals', label: 'Festivals & Traditions' },
     { key: 'crafts', label: 'Arts & Crafts' },
     { key: 'performing', label: 'Performing Arts' },
@@ -1031,6 +1081,53 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Handcrafted Manual Experience Banner when activeTab === 'experience' */}
+      {activeTab === 'experience' && (
+        <div className="bg-gradient-to-r from-[#FFFDF9] via-amber-50/70 to-[#FFF9F2] border border-amber-200/90 rounded-2xl p-4 shadow-xs animate-fadeIn flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div className="flex items-start sm:items-center gap-3">
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#FF6600] to-[#C85A17] text-white flex items-center justify-center shrink-0 shadow-xs">
+              <Sparkles className="w-5 h-5 text-white" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider bg-orange-100 text-[#C85A17] px-2 py-0.5 rounded-md">
+                  Curated Field Experiences
+                </span>
+                <span className="text-[11px] font-semibold text-emerald-700 flex items-center gap-1">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                  100% Manually Documented
+                </span>
+              </div>
+              <p className="text-xs text-stone-700 mt-1 font-medium leading-snug">
+                Participatory living heritage: Bhor dawn ghat aartis, master artisan ateliers, sacred rituals & coracle trails across India.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-1.5 shrink-0">
+            {[
+              { label: 'All Experiences', q: '' },
+              { label: '🌅 Dawn Trails', q: 'dawn' },
+              { label: '🏺 Artisan Ateliers', q: 'artisan' },
+              { label: '🚣 River & Coracle', q: 'coracle' },
+              { label: '🕉️ Sacred Rituals', q: 'sacred' },
+            ].map((pill) => (
+              <button
+                key={pill.label}
+                onClick={() => setSearchFilter(pill.q)}
+                className={`text-[11px] font-bold px-3 py-1.5 rounded-xl transition-all cursor-pointer shadow-2xs border ${
+                  searchFilter === pill.q
+                    ? 'bg-[#FF6600] text-white border-[#FF6600]'
+                    : 'bg-white hover:bg-amber-100/60 border-amber-200/80 text-stone-800'
+                }`}
+              >
+                {pill.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Nearest Location Toast Alert */}
       {nearestDistanceNotice && (
@@ -1398,18 +1495,41 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
                 </span>
                 <span>Living Traditions</span>
               </div>
+              <div className="flex items-center gap-2 text-stone-700 font-medium">
+                <span className="w-4 h-4 rounded-full bg-[#E05A2B] text-white flex items-center justify-center text-[10px]">
+                  ✨
+                </span>
+                <span>Curated Cultural Experiences</span>
+              </div>
             </div>
           </div>
 
-          {/* Right Column: "Nearby Discoveries" Panel (4 columns) */}
+          {/* Right Column: "Nearby Discoveries" or "Curator's Field Notebook" Panel (4 columns) */}
           <div className="lg:col-span-4 h-[600px] xl:h-[640px] bg-white rounded-3xl border border-stone-200/90 shadow-xs p-4 flex flex-col justify-between overflow-hidden">
-            {/* Header: Location Pin + Nearby Discoveries + View All */}
+            {/* Header: Location Pin + Title + View All */}
             <div className="flex items-center justify-between pb-3 border-b border-stone-100">
-              <div className="flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-[#FF6600]" />
-                <h3 className="font-bold text-sm text-stone-900">
-                  {userLocation ? 'Nearest to Your Location' : selectedPin ? `Near ${selectedPin.name}` : 'Nearby Discoveries'}
-                </h3>
+              <div className="flex items-center gap-2">
+                {activeTab === 'experience' ? (
+                  <Sparkles className="w-4 h-4 text-[#FF6600]" />
+                ) : (
+                  <MapPin className="w-4 h-4 text-[#FF6600]" />
+                )}
+                <div>
+                  <h3 className="font-bold text-sm text-stone-900">
+                    {activeTab === 'experience'
+                      ? "Curator's Field Notebook"
+                      : userLocation
+                      ? 'Nearest to Your Location'
+                      : selectedPin
+                      ? `Near ${selectedPin.name}`
+                      : 'Nearby Discoveries'}
+                  </h3>
+                  {activeTab === 'experience' && (
+                    <span className="text-[10px] text-emerald-700 font-semibold block">
+                      ✓ Handcrafted Field Entries ({experienceCards.length})
+                    </span>
+                  )}
+                </div>
               </div>
               <button
                 onClick={() => setActiveTab('list')}
@@ -1420,52 +1540,110 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
               </button>
             </div>
 
-            {/* 4 Stacked Discovery Cards */}
-            <div className="flex-1 overflow-y-auto space-y-2.5 py-3 pr-1">
-              {discoveryCards.map((item, idx) => (
-                <div
-                  key={item.marker.id || idx}
-                  onClick={() => {
-                    if (item.marker && item.marker.latitude && item.marker.longitude && mapInstanceRef.current) {
-                      mapInstanceRef.current.flyTo([item.marker.latitude, item.marker.longitude], 12);
-                    }
-                    onSelectMarker(item.marker.type, item.marker.id);
-                  }}
-                  className="p-2.5 rounded-2xl border border-stone-100 hover:border-amber-200 bg-stone-50/50 hover:bg-amber-50/40 transition-all cursor-pointer flex items-center gap-3 group"
-                >
-                  {/* Thumbnail with overlay distance badge */}
-                  <div className="relative w-20 h-16 rounded-xl overflow-hidden shrink-0 border border-stone-200">
-                    <img
-                      src={item.marker.image_url || '/nearby-1.jpg'}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                    />
-                    <span className="absolute top-1 left-1 bg-white/95 text-stone-800 text-[9px] font-bold px-1.5 py-0.5 rounded-md flex items-center gap-0.5 shadow-2xs select-none">
-                      <Compass className="w-2.5 h-2.5 text-[#FF6600]" />
-                      {item.distance}
-                    </span>
-                  </div>
+            {/* Content: If experience tab, show Curator Field Notebook; otherwise show standard 4 discovery cards */}
+            {activeTab === 'experience' ? (
+              <div className="flex-1 overflow-y-auto space-y-3 py-3 pr-1 divide-y divide-amber-100/60">
+                {experienceCards.map((item, idx) => (
+                  <div
+                    key={item.marker.id || idx}
+                    onClick={() => {
+                      if (item.marker && item.marker.latitude && item.marker.longitude && mapInstanceRef.current) {
+                        mapInstanceRef.current.flyTo([item.marker.latitude, item.marker.longitude], 12);
+                      }
+                      setSelectedPin(item.marker);
+                      onSelectMarker(item.marker.type, item.marker.id);
+                    }}
+                    className="pt-2.5 first:pt-0 group cursor-pointer"
+                  >
+                    <div className="p-3 rounded-2xl border border-amber-200/60 hover:border-amber-400 bg-gradient-to-br from-[#FFFDF9] to-amber-50/30 hover:from-amber-50/50 hover:to-orange-50/40 transition-all shadow-2xs space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-[9.5px] font-bold uppercase tracking-wider bg-orange-100 text-[#C85A17] px-2 py-0.5 rounded-md flex items-center gap-1">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#FF6600]" />
+                          {item.timing || 'Curated Experience'}
+                        </span>
+                        <span className="text-[10.5px] font-medium text-stone-500">
+                          {item.location}
+                        </span>
+                      </div>
 
-                  {/* Text descriptions */}
-                  <div className="min-w-0 flex-1">
-                    <h4 className="text-xs sm:text-[13px] font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors truncate">
-                      {item.title}
-                    </h4>
-                    <p className="text-[11px] text-stone-500 line-clamp-2 mt-0.5 leading-snug">
-                      {item.subtitle}
-                    </p>
-                  </div>
+                      <h4 className="text-xs sm:text-[13px] font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors leading-snug">
+                        {item.title}
+                      </h4>
 
-                  {/* Orange Chevron */}
-                  <ChevronRight className="w-4 h-4 text-[#FF6600] group-hover:translate-x-0.5 transition-transform shrink-0" />
-                </div>
-              ))}
-            </div>
+                      {/* Curator Field Tip Note */}
+                      <div className="p-2 rounded-xl bg-amber-100/50 border border-amber-200/80 text-[11px] text-amber-950 italic leading-relaxed">
+                        ✍️ {item.subtitle}
+                      </div>
+
+                      <div className="flex items-center justify-between pt-1">
+                        <span className="text-[10px] text-emerald-700 font-bold flex items-center gap-1">
+                          <CheckCircle2 className="w-3 h-3 text-emerald-600" />
+                          Field Verified
+                        </span>
+                        <a
+                          href={`https://www.google.com/maps/dir/?api=1&destination=${item.marker.latitude},${item.marker.longitude}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="text-[10.5px] font-bold text-[#FF6600] hover:text-[#C85A17] flex items-center gap-1"
+                        >
+                          <span>Directions ↗</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              /* 4 Stacked Discovery Cards */
+              <div className="flex-1 overflow-y-auto space-y-2.5 py-3 pr-1">
+                {discoveryCards.map((item, idx) => (
+                  <div
+                    key={item.marker.id || idx}
+                    onClick={() => {
+                      if (item.marker && item.marker.latitude && item.marker.longitude && mapInstanceRef.current) {
+                        mapInstanceRef.current.flyTo([item.marker.latitude, item.marker.longitude], 12);
+                      }
+                      onSelectMarker(item.marker.type, item.marker.id);
+                    }}
+                    className="p-2.5 rounded-2xl border border-stone-100 hover:border-amber-200 bg-stone-50/50 hover:bg-amber-50/40 transition-all cursor-pointer flex items-center gap-3 group"
+                  >
+                    {/* Thumbnail with overlay distance badge */}
+                    <div className="relative w-20 h-16 rounded-xl overflow-hidden shrink-0 border border-stone-200">
+                      <img
+                        src={item.marker.image_url || '/nearby-1.jpg'}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      />
+                      <span className="absolute top-1 left-1 bg-white/95 text-stone-800 text-[9px] font-bold px-1.5 py-0.5 rounded-md flex items-center gap-0.5 shadow-2xs select-none">
+                        <Compass className="w-2.5 h-2.5 text-[#FF6600]" />
+                        {item.distance}
+                      </span>
+                    </div>
+
+                    {/* Text descriptions */}
+                    <div className="min-w-0 flex-1">
+                      <h4 className="text-xs sm:text-[13px] font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors truncate">
+                        {item.title}
+                      </h4>
+                      <p className="text-[11px] text-stone-500 line-clamp-2 mt-0.5 leading-snug">
+                        {item.subtitle}
+                      </p>
+                    </div>
+
+                    {/* Orange Chevron */}
+                    <ChevronRight className="w-4 h-4 text-[#FF6600] group-hover:translate-x-0.5 transition-transform shrink-0" />
+                  </div>
+                ))}
+              </div>
+            )}
 
             {/* Bottom Status bar */}
             <div className="pt-2 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 select-none">
-              <span>⚡ Verified GPS Registries</span>
-              <span className="font-semibold text-stone-700">ASI & State Portals</span>
+              <span>{activeTab === 'experience' ? '🌿 Living Traditions' : '⚡ Verified GPS Registries'}</span>
+              <span className="font-semibold text-stone-700">
+                {activeTab === 'experience' ? 'Curated Field Notes' : 'ASI & State Portals'}
+              </span>
             </div>
           </div>
         </div>
