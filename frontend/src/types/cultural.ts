@@ -182,12 +182,71 @@ export interface MapMarker {
   verification_status: string;
 }
 
+export interface TravelModeEstimate {
+  mode: string; // train, flight, bus, drive
+  title: string;
+  duration_hours: number;
+  duration_formatted: string;
+  estimated_fare_inr: string;
+  operational_details: string;
+  is_recommended: boolean;
+}
+
+export interface RouteCardData {
+  origin: string;
+  destination: string;
+  distance_km: number;
+  driving_time_formatted: string;
+  modes: TravelModeEstimate[];
+  highway_route?: string;
+  travel_tips: string[];
+  disclaimer: string;
+}
+
+export interface PlaceCardData {
+  id: string;
+  name: string;
+  type: string;
+  state: string;
+  district?: string;
+  category?: string;
+  image_url?: string;
+  description: string;
+  latitude?: number;
+  longitude?: number;
+  action_label?: string;
+}
+
+export interface UIAction {
+  action: string;
+  path?: string;
+  params?: Record<string, any>;
+  label: string;
+}
+
+export interface UserMemory {
+  home_city?: string;
+  preferred_language?: 'en' | 'hi' | 'hinglish';
+  budget_tier?: string;
+  budget_amount_inr?: number;
+  travel_style?: string;
+  interests?: string[];
+  dietary_pref?: string;
+  consent_personalized?: boolean;
+}
+
 export interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
   content: string;
   retrieved_records?: any[];
   source_references?: string[];
   suggested_follow_ups?: string[];
+  route_card?: RouteCardData;
+  places_cards?: PlaceCardData[];
+  itinerary_card?: any;
+  actions?: UIAction[];
+  memory_updates?: Record<string, any>;
+  intent_detected?: string;
 }
 
 export interface AIChatResponse {
@@ -202,6 +261,12 @@ export interface AIChatResponse {
   source_references: string[];
   suggested_follow_ups: string[];
   language_detected: string;
+  intent_detected?: string;
+  actions?: UIAction[];
+  route_card?: RouteCardData;
+  places_cards?: PlaceCardData[];
+  itinerary_card?: any;
+  memory_updates?: Record<string, any>;
 }
 
 export interface ItineraryDay {

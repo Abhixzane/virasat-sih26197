@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Bot, Send, User, Sparkles, Copy, Check, RefreshCw, ShieldCheck, Globe, ExternalLink } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Bot, Send, User, Sparkles, Copy, Check, RefreshCw, ShieldCheck, Globe, ExternalLink, Mic } from 'lucide-react';
 import { api } from '../../services/api';
-import { ChatMessage, AIChatResponse } from '../../types/cultural';
+import { userMemoryService } from '../../services/userMemory';
+import { ChatMessage, AIChatResponse, UIAction } from '../../types/cultural';
+import { RouteCard, PlaceCard, ItineraryPreviewCard, ActionButtons } from './CompanionCards';
 
 interface AIChatWidgetProps {
   initialPrompt?: string;
@@ -16,16 +19,17 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
   contextRecordType,
   className = '',
 }) => {
+  const navigate = useNavigate();
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: 'assistant',
       content:
         'Namaste! I am your VIRASAT AI Cultural Guide. I provide verified insights into India’s ancient monuments, living festivals, GI-tagged crafts, and folklore—strictly grounded in archaeological and archival records. How may I illuminate your cultural journey today?',
       suggested_follow_ups: [
+        'Delhi to Jaipur route options and travel time',
         'Explain the Vedic origins of Chhath Puja in Bihar.',
         'What is the architectural mystery of Hampi’s musical pillars?',
         'How is Jaipur Blue Pottery crafted without using any clay?',
-        'Tell me about the UNESCO-recognized Durga Puja of Kolkata.',
       ],
     },
   ]);
@@ -50,6 +54,21 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
     }
   }, [initialPrompt]);
 
+  const handleAction = (act: UIAction) => {
+    if (act.path) {
+      let target = act.path;
+      if (act.params) {
+        const queryParams = new URLSearchParams();
+        Object.entries(act.params).forEach(([k, v]) => {
+          if (v !== undefined && v !== null) queryParams.append(k, String(v));
+        });
+        const qs = queryParams.toString();
+        if (qs) target += `?${qs}`;
+      }
+      navigate(target);
+    }
+  };
+
   const handleSend = async (userText: string) => {
     const textToSend = userText.trim();
     if (!textToSend || loading) return;
@@ -60,12 +79,26 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
     setLoading(true);
 
     try {
+      const userMem = userMemoryService.getUserMemory();
+      const activeItin = messages.slice().reverse().find((m) => m.itinerary_card)?.itinerary_card;
+
       const res: AIChatResponse = await api.chatWithAI({
         message: textToSend,
         preferred_language: language,
         context_record_id: contextRecordId,
         context_record_type: contextRecordType,
+        user_memory: userMem,
+        active_itinerary: activeItin,
+        conversation_history: messages.slice(-6),
       });
+
+      if (res.memory_updates) {
+        if (res.memory_updates._action === 'CLEAR') {
+          userMemoryService.clearUserMemory();
+        } else {
+          userMemoryService.saveUserMemory(res.memory_updates);
+        }
+      }
 
       const assistantMsg: ChatMessage = {
         role: 'assistant',
@@ -73,6 +106,10 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
         retrieved_records: res.retrieved_records,
         source_references: res.source_references,
         suggested_follow_ups: res.suggested_follow_ups,
+        route_card: res.route_card,
+        places_cards: res.places_cards,
+        itinerary_card: res.itinerary_card,
+        actions: res.actions,
       };
 
       setMessages((prev) => [...prev, assistantMsg]);
@@ -189,6 +226,50 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
                 }`}
               >
                 {msg.content}
+
+                {/* Embedded Route Card */}
+                {msg.route_card && (
+                  <RouteCard
+                    data={msg.route_card}
+                    onNavigateAction={(path, params) => handleAction({ action: 'NAVIGATE', path, params, label: 'View' })}
+                  />
+                )}
+
+                {/* Embedded Places Cards */}
+                {msg.places_cards && msg.places_cards.length > 0 && (
+                  <div className="my-2 space-y-2">
+                    {msg.places_cards.map((p, pIdx) => (
+                      <PlaceCard
+                        key={pIdx}
+                        place={p}
+                        onNavigateAction={(path, params) => handleAction({ action: 'NAVIGATE', path, params, label: 'Explore' })}
+                      />
+                    ))}
+                  </div>
+                )}
+
+                {/* Embedded Itinerary Card */}
+                {msg.itinerary_card && (
+                  <ItineraryPreviewCard
+                    itinerary={msg.itinerary_card}
+                    onOpenItinerary={(itin) =>
+                      handleAction({
+                        action: 'OPEN_ITINERARY',
+                        path: '/itinerary',
+                        params: { destination: itin.destination, days: itin.duration_days },
+                        label: 'Open Itinerary'
+                      })
+                    }
+                  />
+                )}
+
+                {/* Embedded Action Buttons */}
+                {msg.actions && msg.actions.length > 0 && (
+                  <ActionButtons
+                    actions={msg.actions}
+                    onActionClick={handleAction}
+                  />
+                )}
 
                 {/* Grounding & Source Badges for Assistant */}
                 {msg.role === 'assistant' && msg.retrieved_records && msg.retrieved_records.length > 0 && (

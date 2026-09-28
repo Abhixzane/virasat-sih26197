@@ -20,6 +20,7 @@ import { ItineraryPage } from './pages/Itinerary';
 import { AboutPage } from './pages/About';
 import { SearchPage } from './pages/Search';
 import { EntityDetailPage } from './pages/EntityDetailPage';
+import { GlobalAICompanion } from './components/ai/GlobalAICompanion';
 
 const AppContent: React.FC = () => {
   const navigate = useNavigate();
@@ -198,22 +199,8 @@ const AppContent: React.FC = () => {
         </Routes>
       </main>
 
-      {/* Persistent Floating Action Button (FAB) for AI Guide (Matches Reference Design) */}
-      {!isMapOrChat && (
-        <Link
-          to="/ai-guide"
-          className="fixed bottom-6 right-6 z-30 flex items-center gap-2 pl-2 pr-3.5 py-2 bg-[#138808] hover:bg-[#0F6D07] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 group border-2 border-white/90 select-none"
-          title="Ask VIRASAT AI Cultural Guide"
-        >
-          <div className="w-6 h-6 rounded-full overflow-hidden bg-white p-0.5 shadow-2xs shrink-0 group-hover:scale-105 transition-transform flex items-center justify-center">
-            <img src="/virasat-logo.png" alt="VIRASAT" className="w-full h-full object-cover rounded-full" />
-          </div>
-          <span className="text-xs font-bold tracking-tight">Ask VIRASAT AI</span>
-          <div className="w-4 h-4 rounded-full bg-gradient-to-tr from-cyan-400 via-amber-300 to-rose-400 p-0.5 flex items-center justify-center shrink-0">
-            <Sparkles className="w-2.5 h-2.5 text-white fill-white" />
-          </div>
-        </Link>
-      )}
+      {/* Persistent Global AI Cultural Travel Companion across all pages */}
+      {location.pathname !== '/ai-guide' && <GlobalAICompanion />}
 
       {/* Shared Footer */}
       <SimpleFooter />

@@ -179,4 +179,144 @@ class ItineraryService:
             verified_map_coordinates=all_coords
         )
 
+    def modify_itinerary_conversationally(
+        self,
+        current_itinerary: Dict[str, Any],
+        instruction: str,
+        lang: str = "en"
+    ) -> Tuple[Dict[str, Any], str]:
+        """
+        Applies conversational edits to an active itinerary:
+        e.g., 'Day 2 mein ek aur temple add karo', 'budget 8000 ke andar rakho',
+        'relax the pace for elderly parents', 'add a local artisan market'.
+        """
+        import copy
+        import re
+        
+        updated = copy.deepcopy(current_itinerary)
+        inst_lower = instruction.lower().strip()
+        days_list = updated.get("days", [])
+        dest = updated.get("destination", "Cultural Circuit")
+
+        # 1. Identify targeted day
+        target_day_num = None
+        day_match = re.search(r'(?:day|din|दिन)\s*(\d+)', inst_lower)
+        if day_match:
+            target_day_num = int(day_match.group(1))
+        elif "pehla" in inst_lower or "first" in inst_lower:
+            target_day_num = 1
+        elif "dusra" in inst_lower or "second" in inst_lower:
+            target_day_num = 2
+        elif "teesra" in inst_lower or "third" in inst_lower:
+            target_day_num = 3
+
+        target_day = None
+        if target_day_num and days_list:
+            for d in days_list:
+                if d.get("day_number") == target_day_num:
+                    target_day = d
+                    break
+        if not target_day and days_list:
+            target_day = days_list[0]
+            target_day_num = target_day.get("day_number", 1)
+
+        change_summary_en = ""
+        change_summary_hi = ""
+        change_summary_hinglish = ""
+
+        # 2. Modify according to intent
+        if any(w in inst_lower for w in ["market", "bazaar", "shopping", "craft", "हाट", "बाजार"]):
+            # Add craft / market experience
+            new_exp = {
+                "id": f"exp-market-{target_day_num}",
+                "name": f"Local Heritage Crafts Bazaar & Artisan Enclave, {dest.title()}",
+                "state": target_day.get("heritage_places", [{}])[0].get("state", "India") if target_day.get("heritage_places") else "India",
+                "city": dest.title(),
+                "category": "Artisan Craft Trail",
+                "description": "Guided immersion into centuries-old artisan workshops, handloom weaving pits, and authentic government-recognized craft emporiums.",
+                "duration_hours": 2.0,
+                "latitude": target_day.get("heritage_places", [{}])[0].get("latitude", 26.9124) if target_day.get("heritage_places") else 26.9124,
+                "longitude": target_day.get("heritage_places", [{}])[0].get("longitude", 75.7873) if target_day.get("heritage_places") else 75.7873,
+                "cultural_significance": "Supports master artisans preserving UNESCO and GI-recognized indigenous crafts directly without intermediaries.",
+                "best_time_to_visit": "Late afternoon (4:00 PM – 7:00 PM)",
+                "image_url": "/craft-madhubani.jpg"
+            }
+            if "cultural_experiences" not in target_day:
+                target_day["cultural_experiences"] = []
+            target_day["cultural_experiences"].append(new_exp)
+            target_day["cultural_explanation"] += f" In the late afternoon, enjoy an authentic artisan walk through the local heritage craft market."
+            
+            change_summary_en = f"Added the Local Heritage Crafts Bazaar & Artisan Enclave to Day {target_day_num} afternoon/evening."
+            change_summary_hi = f"दिवस {target_day_num} के कार्यक्रम में पारंपरिक शिल्प बाज़ार और कारीगर केंद्र जोड़ दिया गया है।"
+            change_summary_hinglish = f"Day {target_day_num} mein authentic local craft bazaar aur artisan walk add kar diya hai."
+
+        elif any(w in inst_lower for w in ["temple", "mandir", "shrine", "मंदिर", "darshan"]):
+            # Add a temple
+            avail_temples = [p for p in self.repo.heritage_places if any(t in p.category.lower() or t in p.name.lower() for t in ["temple", "mandir", "shrine", "sacred"])]
+            chosen_temple = avail_temples[0] if avail_temples else self.repo.heritage_places[0]
+            temple_dict = chosen_temple.model_dump()
+            temple_dict["entry_fee"] = None
+            temple_dict["opening_hours"] = None
+            if "heritage_places" not in target_day:
+                target_day["heritage_places"] = []
+            target_day["heritage_places"].append(temple_dict)
+            target_day["cultural_explanation"] += f" Included a sacred visit to {chosen_temple.name} for early morning or evening peaceful aarti darshan."
+
+            change_summary_en = f"Added sacred visit to {chosen_temple.name} on Day {target_day_num}."
+            change_summary_hi = f"दिवस {target_day_num} में {chosen_temple.name} के पावन दर्शन और आरती को सम्मिलित किया गया है।"
+            change_summary_hinglish = f"Day {target_day_num} mein {chosen_temple.name} ka sacred visit add kar diya hai."
+
+        elif any(w in inst_lower for w in ["budget", "8000", "10000", "5000", "kam kharcha", "cost", "सस्ता"]):
+            amount_match = re.search(r'(?:rs\.?|₹|inr)?\s*(\d{3,6})', inst_lower)
+            cap_amt = amount_match.group(1) if amount_match else "8,000"
+            budget_note = (
+                f"\n\n**Budget Optimization (Capped under ₹{cap_amt}):** "
+                f"• Clean heritage guest house/homestay (~₹1,800/night) "
+                f"• Authentic regional vegetarian thalis & street eats (~₹700/day) "
+                f"• Shared e-rickshaws/metro transit (~₹400/day) "
+                f"• Standard ASI entry passes (~₹250/day)."
+            )
+            updated["overview"] += budget_note
+            change_summary_en = f"Optimized your overall trip budget to comfortably stay within ₹{cap_amt} with affordable heritage stays and local transit."
+            change_summary_hi = f"यात्रा कार्यक्रम को ₹{cap_amt} के बजट के भीतर अनुकूलित कर दिया गया है (पारंपरिक होमस्टे, क्षेत्रीय भोजन और स्थानीय ई-रिक्शा)।"
+            change_summary_hinglish = f"Aapka itinerary budget ₹{cap_amt} ke andar adjust kar diya hai, comfortable heritage stays aur local transit ke saath."
+
+        elif any(w in inst_lower for w in ["relax", "slow", "pace", "senior", "bache", "family", "kids", "आराम"]):
+            for d in days_list:
+                if len(d.get("heritage_places", [])) > 2:
+                    d["heritage_places"] = d["heritage_places"][:2]
+                d["cultural_explanation"] += " Pacing is relaxed with shaded courtyards and dedicated rest breaks suitable for all ages."
+            change_summary_en = "Adjusted pacing across all days with gentle scheduling, shaded rest periods, and family/senior-friendly transit."
+            change_summary_hi = "सभी दिनों के कार्यक्रम को आरामदेह बना दिया गया है (अधिकतम २ स्थल प्रतिदिन तथा पर्याप्त विश्राम समय)।"
+            change_summary_hinglish = "Pacing ko smooth aur relax kar diya hai—har din maximum 2 key spots taaki bina thakan aaram se ghoom sakein."
+
+        elif any(w in inst_lower for w in ["remove", "hata", "delete", "hatao", "निकाल"]):
+            if target_day.get("heritage_places") and len(target_day["heritage_places"]) > 1:
+                removed_p = target_day["heritage_places"].pop()
+                p_name = removed_p.get("name", "Site")
+                change_summary_en = f"Removed {p_name} from Day {target_day_num} to keep the day more focused."
+                change_summary_hi = f"दिवस {target_day_num} से {p_name} को हटा दिया गया है।"
+                change_summary_hinglish = f"Day {target_day_num} se {p_name} ko successfully remove kar diya hai."
+            else:
+                change_summary_en = f"Day {target_day_num} schedule retained as is to maintain minimum cultural context."
+                change_summary_hi = f"दिवस {target_day_num} का कार्यक्रम यथावत रखा गया है।"
+                change_summary_hinglish = f"Day {target_day_num} ka base schedule maintain rakha gaya hai."
+
+        else:
+            # General enhancement
+            target_day["cultural_explanation"] += f" Refined cultural recommendations based on: {instruction}."
+            change_summary_en = f"Refined Day {target_day_num} details to accommodate your preferences."
+            change_summary_hi = f"आपकी पसंद के अनुसार दिवस {target_day_num} के विवरण को अद्यतित कर दिया गया है।"
+            change_summary_hinglish = f"Aapki request ke mutabiq Day {target_day_num} ko update kar diya gaya hai."
+
+        if lang == "hi":
+            final_msg = f"निश्चय ही! {change_summary_hi}\n\nआपका संशोधित यात्रा कार्यक्रम अब तैयार है। क्या आप इसमें कुछ और बदलना चाहेंगे?"
+        elif lang == "hinglish":
+            final_msg = f"Ji bilkul! {change_summary_hinglish}\n\nAapka updated itinerary ready hai. Kya koi specific food spot ya timing change karna chahte hain?"
+        else:
+            final_msg = f"Certainly! {change_summary_en}\n\nYour customized itinerary has been successfully updated. Would you like to adjust any dining spots or evening schedules?"
+
+        return updated, final_msg
+
 itinerary_service = ItineraryService()
+

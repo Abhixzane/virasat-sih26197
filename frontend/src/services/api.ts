@@ -2,7 +2,7 @@ import {
   StateCity, HeritagePlace, Festival, ArtCraft,
   PerformingArt, CulturalExperience, CulturalStory,
   RelatedHeritageResponse, SearchResponse, MapMarker,
-  AIChatResponse, ItineraryResponse
+  AIChatResponse, ItineraryResponse, RouteCardData
 } from '../types/cultural';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
@@ -160,14 +160,34 @@ export const api = {
     return fetchJSON<MapMarker[]>(`/cultural-map/markers${qs ? `?${qs}` : ''}`);
   },
 
-  // AI Cultural Guide Chat
+  // AI Cultural Guide Chat & Companion
   chatWithAI: (payload: {
     message: string;
     preferred_language?: string;
     context_record_id?: string;
     context_record_type?: string;
+    conversation_history?: any[];
+    user_memory?: Record<string, any>;
+    active_itinerary?: Record<string, any>;
+    user_coordinates?: { lat: number; lng: number };
   }) =>
     fetchJSON<AIChatResponse>('/ai/chat', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    }),
+
+  getRoutePlan: (origin: string, destination: string) =>
+    fetchJSON<RouteCardData>(`/ai/route-plan?origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(destination)}`),
+
+  getNearbyDiscoveries: (lat: number, lng: number, radius_km = 70) =>
+    fetchJSON<any[]>(`/ai/nearby?lat=${lat}&lng=${lng}&radius_km=${radius_km}`),
+
+  modifyItineraryConversationally: (payload: {
+    current_itinerary: Record<string, any>;
+    instruction: string;
+    language?: string;
+  }) =>
+    fetchJSON<{ updated_itinerary: any; message: string }>('/ai/itinerary/modify', {
       method: 'POST',
       body: JSON.stringify(payload),
     }),

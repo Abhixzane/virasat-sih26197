@@ -199,11 +199,60 @@ class MapMarker(BaseModel):
     verification_status: str
 
 # -------------------------------------------------------------
-# AI Cultural Guide Chat Request & Response
+# AI Cultural Companion Schemas
 # -------------------------------------------------------------
+class UserMemory(BaseModel):
+    home_city: Optional[str] = None
+    preferred_language: Optional[str] = "en"
+    budget_tier: Optional[str] = None  # budget, moderate, luxury
+    budget_amount_inr: Optional[int] = None
+    travel_style: Optional[str] = None  # solo, family, couple, friends, senior
+    interests: List[str] = Field(default_factory=list)  # temples, forts, crafts, food, nature, festivals
+    dietary_pref: Optional[str] = None  # vegetarian, vegan, non-veg, jain
+    consent_personalized: bool = True
+
+class TravelModeEstimate(BaseModel):
+    mode: str  # train, flight, bus, drive
+    title: str
+    duration_hours: float
+    duration_formatted: str
+    estimated_fare_inr: str
+    operational_details: str
+    is_recommended: bool = False
+
+class RouteCardData(BaseModel):
+    origin: str
+    destination: str
+    distance_km: int
+    driving_time_formatted: str
+    modes: List[TravelModeEstimate] = Field(default_factory=list)
+    highway_route: Optional[str] = None
+    travel_tips: List[str] = Field(default_factory=list)
+    disclaimer: str = "Estimates based on national highway and rail network averages. Live bookings, schedules, and exact fares should be verified directly via IRCTC or official carriers."
+
+class PlaceCardData(BaseModel):
+    id: str
+    name: str
+    type: str  # heritage, craft, festival, experience, city
+    state: str
+    district: Optional[str] = None
+    category: Optional[str] = None
+    image_url: Optional[str] = None
+    description: str
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
+    action_label: Optional[str] = "Explore"
+
+class UIAction(BaseModel):
+    action: str  # NAVIGATE, SHOW_ON_MAP, OPEN_ITINERARY, FILTER_CRAFTS, FILTER_FESTIVALS, EXPLORE_RELATED
+    path: Optional[str] = None
+    params: Dict[str, Any] = Field(default_factory=dict)
+    label: str
+
 class ChatMessage(BaseModel):
     role: str  # user or assistant or system
     content: str
+    suggested_follow_ups: Optional[List[str]] = None
 
 class AIChatRequest(BaseModel):
     message: str
@@ -211,6 +260,9 @@ class AIChatRequest(BaseModel):
     preferred_language: Optional[str] = "en"  # en, hi, hinglish
     context_record_id: Optional[str] = None
     context_record_type: Optional[str] = None
+    user_memory: Optional[Dict[str, Any]] = None
+    active_itinerary: Optional[Dict[str, Any]] = None
+    user_coordinates: Optional[Coordinates] = None
 
 class AIChatResponse(BaseModel):
     response: str
@@ -219,6 +271,12 @@ class AIChatResponse(BaseModel):
     source_references: List[str] = Field(default_factory=list)
     suggested_follow_ups: List[str] = Field(default_factory=list)
     language_detected: str = "en"
+    intent_detected: Optional[str] = None
+    actions: List[UIAction] = Field(default_factory=list)
+    route_card: Optional[RouteCardData] = None
+    places_cards: List[PlaceCardData] = Field(default_factory=list)
+    itinerary_card: Optional[Dict[str, Any]] = None
+    memory_updates: Optional[Dict[str, Any]] = None
 
 # -------------------------------------------------------------
 # Cultural Itinerary Request & Response
