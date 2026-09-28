@@ -39,7 +39,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 
         <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
           <div className="flex items-center gap-1 drop-shadow-md">
-            <MapPin className="w-3.5 h-3.5 text-[#E05A2B] shrink-0" />
+            <MapPin className="w-3.5 h-3.5 text-[#FF6600] shrink-0" />
             <span className="font-medium">{experience.city}, {experience.state}</span>
           </div>
           <div className="flex items-center gap-1 bg-black/40 px-2 py-0.5 rounded backdrop-blur-xs text-[11px]">
@@ -51,7 +51,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="text-base font-bold text-stone-900 group-hover:text-[#E05A2B] transition-colors line-clamp-1 font-serif">
+          <h3 className="text-base font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors line-clamp-1">
             {experience.name}
           </h3>
 

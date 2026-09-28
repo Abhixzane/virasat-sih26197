@@ -61,7 +61,7 @@ export const ArtCraftCard: React.FC<ArtCraftCardProps> = ({
       {/* 2. Card Content Body */}
       <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
         <div>
-          <h3 className="text-base sm:text-lg font-bold font-serif text-stone-900 group-hover:text-[#FF6600] transition-colors line-clamp-1 leading-snug">
+          <h3 className="text-base font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors line-clamp-1 leading-snug">
             {art.name}
           </h3>
 

@@ -66,7 +66,7 @@ export const FestivalCard: React.FC<FestivalCardProps> = ({
           </div>
 
           {/* Title */}
-          <h3 className="text-base sm:text-lg font-bold text-stone-900 group-hover:text-[#E05A2B] transition-colors font-serif leading-snug line-clamp-1">
+          <h3 className="text-base font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors leading-snug line-clamp-1">
             {festival.name}
           </h3>
 
@@ -77,32 +77,42 @@ export const FestivalCard: React.FC<FestivalCardProps> = ({
         </div>
 
         {/* Footer Actions */}
-        <div className="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between">
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              onExploreRelated?.('festival', festival.id);
-            }}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 hover:bg-amber-100 text-[#E05A2B] border border-amber-200/80 text-xs font-semibold transition-colors"
-          >
-            <span>Connected Traditions</span>
+        <div className="pt-3 mt-3 border-t border-stone-100 flex items-center justify-between">
+          <span className="text-xs font-semibold text-[#FF6600] group-hover:underline flex items-center gap-1">
+            <span>View Celebrations</span>
             <span>→</span>
-          </button>
+          </span>
 
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setBookmarked(!bookmarked);
-            }}
-            className="p-1 rounded-md text-stone-400 hover:text-stone-700 transition-colors"
-            title={bookmarked ? 'Saved' : 'Save Festival'}
-          >
-            <Bookmark
-              className={`w-4 h-4 ${
-                bookmarked ? 'fill-amber-600 text-amber-600' : 'stroke-[1.75]'
-              }`}
-            />
-          </button>
+          <div className="flex items-center gap-2">
+            {onExploreRelated && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onExploreRelated('festival', festival.id);
+                }}
+                className="text-[11px] font-medium text-stone-400 hover:text-[#FF6600] transition-colors"
+                title="View Connected Traditions"
+              >
+                Connected
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                setBookmarked(!bookmarked);
+              }}
+              className="p-1 rounded-md text-stone-400 hover:text-stone-700 transition-colors"
+              title={bookmarked ? 'Saved' : 'Save Festival'}
+            >
+              <Bookmark
+                className={`w-3.5 h-3.5 ${
+                  bookmarked ? 'fill-amber-600 text-amber-600' : 'stroke-[1.75]'
+                }`}
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>

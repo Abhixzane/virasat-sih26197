@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
-  Compass, Landmark, Calendar, Palette, Sparkles, MapPin,
-  Search, ArrowRight, Bot, Map, ArrowUpRight, ChevronLeft, ChevronRight
+  Landmark, MapPin, Calendar, Palette, Search,
+  Map, ShieldCheck, ChevronLeft, ChevronRight
 } from 'lucide-react';
 import { api } from '../services/api';
 import { HeritagePlace, Festival } from '../types/cultural';
 import { HeritageCard } from '../components/cards/HeritageCard';
 import { FestivalCard } from '../components/cards/FestivalCard';
-import {
-  TricolourRibbonWave, MonumentSkyline, StatsCounterBar
-} from '../components/shared/TricolourBranding';
 
 interface HomePageProps {
   onOpenSearch: () => void;
@@ -28,22 +25,23 @@ export const HomePage: React.FC<HomePageProps> = ({
   const [places, setPlaces] = useState<HeritagePlace[]>([]);
   const [festivals, setFestivals] = useState<Festival[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState('');
 
-  // Exact curated 4 featured heritage monuments matching screenshot
+  // 4 Featured Heritage Destinations matching reference dashboard screenshot
   const featuredMonumentsFallback: HeritagePlace[] = [
     {
       id: 'place-taj-mahal',
       name: 'Taj Mahal',
       state: 'Uttar Pradesh',
       city: 'Agra',
-      category: 'Mughal Architecture',
+      category: 'UNESCO Heritage',
       historical_period: '1631 - 1648 CE',
-      description: 'An iconic symbol of love and a masterpiece of Mughal architecture, built by Emperor Shah Jahan.',
+      description: 'An eternal symbol of love and Mughal artistry.',
       historical_significance: 'UNESCO World Heritage Site and New 7 Wonders of the World.',
       architectural_style: 'Mughal Architectural Synthesis',
       latitude: 27.1751,
       longitude: 78.0421,
-      image_url: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1200&auto=format&fit=crop&q=80',
+      image_url: '/hero/monument-1.jpg',
       source_url: 'https://asi.nic.in',
       verification_status: 'VERIFIED',
     },
@@ -52,9 +50,9 @@ export const HomePage: React.FC<HomePageProps> = ({
       name: 'Red Fort',
       state: 'Delhi',
       city: 'Delhi',
-      category: 'Forts & Palaces',
+      category: 'Historic Fort',
       historical_period: '1639 - 1648 CE',
-      description: 'A magnificent fort complex and a symbol of India\'s rich history and freedom struggle.',
+      description: 'Iconic fortress of the Mughal Empire.',
       historical_significance: 'Historic seat of the Mughal Empire and national symbol of Indian independence.',
       architectural_style: 'Indo-Islamic & Timurid Style',
       latitude: 28.6562,
@@ -68,36 +66,36 @@ export const HomePage: React.FC<HomePageProps> = ({
       name: 'Konark Sun Temple',
       state: 'Odisha',
       city: 'Konark',
-      category: 'Temples & Sacred',
+      category: 'Ancient Temple',
       historical_period: '1250 CE',
-      description: 'A 13th-century architectural marvel dedicated to the Sun God, known for its intricate stone carvings.',
+      description: 'A masterpiece of Kalinga architecture.',
       historical_significance: 'Colossal stone chariot with 24 carved wheels serving as sundials.',
       architectural_style: 'Kalinga Temple Architecture',
       latitude: 19.8876,
       longitude: 86.0945,
-      image_url: 'https://images.unsplash.com/photo-1606214300344-93b6f007e052?w=1200&auto=format&fit=crop&q=80',
+      image_url: '/hero/monument-7.jpg',
       source_url: 'https://asi.nic.in',
       verification_status: 'VERIFIED',
     },
     {
       id: 'place-kashi-vishwanath',
-      name: 'Kashi Vishwanath',
+      name: 'Varanasi Ghats',
       state: 'Uttar Pradesh',
       city: 'Varanasi',
-      category: 'Temples & Sacred',
-      historical_period: 'Rebuilt 1780 CE',
-      description: 'One of the holiest Hindu temples, representing India\'s eternal spiritual heritage.',
-      historical_significance: 'One of the twelve sacred Jyotirlingas on the banks of the sacred Ganges River.',
-      architectural_style: 'Nagara Style with Gold Spire',
+      category: 'Spiritual Destination',
+      historical_period: 'Ancient Living Heritage',
+      description: 'A spiritual city on the banks of the Ganga.',
+      historical_significance: 'One of the oldest continuously inhabited sacred riverfronts in the world.',
+      architectural_style: 'Nagara Style Ghat Architecture',
       latitude: 25.3109,
       longitude: 83.0107,
-      image_url: 'https://images.unsplash.com/photo-1561359313-0639aad49ca6?w=1200&auto=format&fit=crop&q=80',
+      image_url: '/hero/monument-3.jpg',
       source_url: 'https://uptourism.gov.in',
       verification_status: 'VERIFIED',
     },
   ];
 
-  // Exact curated 4 featured festivals matching screenshot
+  // Curated 4 featured festivals
   const featuredFestivalsFallback: Festival[] = [
     {
       id: 'fest-chhath-puja',
@@ -110,10 +108,10 @@ export const HomePage: React.FC<HomePageProps> = ({
       historical_background: 'Mentioned in Mahabharata and Rigveda solar hymns.',
       cultural_significance: 'Ancient eco-worship offering gratitude to Surya and Usha along living waterbodies.',
       celebration_details: 'Four days: Nahay Khay, Kharna, Sandhya Arghya, and Usha Arghya.',
-      associated_communities: 'Vihari, Maithil, Bhojpuri communities',
+      associated_communities: 'Bihari, Maithil, Bhojpuri communities',
       associated_place_ids: [],
       related_tradition_ids: [],
-      image_url: 'https://images.unsplash.com/photo-1605371924599-2d0365da1ae0?w=1200&auto=format&fit=crop&q=80',
+      image_url: '/festivals/chhath-puja.jpg',
       source_url: 'https://bihartourism.gov.in',
       verification_status: 'VERIFIED',
     },
@@ -131,7 +129,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       associated_communities: 'Bengali community and artists across India',
       associated_place_ids: [],
       related_tradition_ids: [],
-      image_url: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80',
+      image_url: '/festivals/durga-puja.jpg',
       source_url: 'https://wbtourism.gov.in',
       verification_status: 'VERIFIED',
     },
@@ -149,7 +147,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       associated_communities: 'Malayali people across all faiths',
       associated_place_ids: [],
       related_tradition_ids: [],
-      image_url: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&auto=format&fit=crop&q=80',
+      image_url: '/festivals/onam.jpg',
       source_url: 'https://keralatourism.org',
       verification_status: 'VERIFIED',
     },
@@ -167,7 +165,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       associated_communities: 'Akharas, Sadhus, and millions of global pilgrims',
       associated_place_ids: [],
       related_tradition_ids: [],
-      image_url: 'https://images.unsplash.com/photo-1544717305-2782549b5136?w=1200&auto=format&fit=crop&q=80',
+      image_url: '/festivals/kumbh-mela.jpg',
       source_url: 'https://uptourism.gov.in',
       verification_status: 'VERIFIED',
     },
@@ -197,12 +195,12 @@ export const HomePage: React.FC<HomePageProps> = ({
         if (isMounted) {
           if (st) setStats(st);
 
-          // Find matching places if available, otherwise fallback
+          // Find exact matching places or fallback to curated list
           const taj = p.find((x) => x.name.toLowerCase().includes('taj')) || featuredMonumentsFallback[0];
           const redFort = p.find((x) => x.name.toLowerCase().includes('red fort')) || featuredMonumentsFallback[1];
           const konark = p.find((x) => x.name.toLowerCase().includes('konark')) || featuredMonumentsFallback[2];
-          const kashi = p.find((x) => x.name.toLowerCase().includes('kashi') || x.name.toLowerCase().includes('varanasi')) || featuredMonumentsFallback[3];
-          setPlaces([taj, redFort, konark, kashi]);
+          const varanasi = p.find((x) => x.name.toLowerCase().includes('kashi') || x.name.toLowerCase().includes('varanasi')) || featuredMonumentsFallback[3];
+          setPlaces([taj, redFort, konark, varanasi]);
 
           const chhath = f.find((x) => x.name.toLowerCase().includes('chhath')) || featuredFestivalsFallback[0];
           const durga = f.find((x) => x.name.toLowerCase().includes('durga')) || featuredFestivalsFallback[1];
@@ -211,7 +209,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           setFestivals([chhath, durga, onam, kumbh]);
         }
       } catch (err) {
-        console.error('Failed to load home cultural data, using curated verified defaults:', err);
+        console.error('Failed to load home data, using curated verified defaults:', err);
         if (isMounted) {
           setPlaces(featuredMonumentsFallback);
           setFestivals(featuredFestivalsFallback);
@@ -226,28 +224,23 @@ export const HomePage: React.FC<HomePageProps> = ({
     };
   }, []);
 
-  // 8 Authentic, distinct, high-quality images of iconic Indian monuments and temples
-  // Pure visual slides with ZERO monument names, captions, or text overlays
+  // Authentic Indian Heritage Photography Slideshow (starts with Varanasi Sunset Ghats)
   const heroSlides = [
-    { id: 'monument-1', url: '/hero/monument-1.jpg' }, // Taj Mahal, Agra
-    { id: 'monument-2', url: '/hero/monument-2.jpg' }, // Meenakshi Amman Temple, Madurai
-    { id: 'monument-3', url: '/hero/monument-3.jpg' }, // Varanasi Sacred Ghats & Waterfront
-    { id: 'monument-4', url: '/hero/monument-4.jpg' }, // Hampi Virupaksha & Stone Chariot
-    { id: 'monument-5', url: '/hero/monument-5.jpg' }, // Amber Fort Palace, Jaipur
-    { id: 'monument-6', url: '/hero/monument-6.jpg' }, // Golden Temple (Harmandir Sahib), Amritsar
-    { id: 'monument-7', url: '/hero/monument-7.jpg' }, // Konark Sun Temple, Odisha
-    { id: 'monument-8', url: '/hero/monument-8.jpg' }, // Khajuraho Sculpted Temple, Madhya Pradesh
+    { id: 'monument-3', url: '/hero/monument-3.jpg', title: 'Varanasi Sacred Ghats' },
+    { id: 'monument-1', url: '/hero/monument-1.jpg', title: 'Taj Mahal, Agra' },
+    { id: 'monument-2', url: '/hero/monument-2.jpg', title: 'Meenakshi Temple, Madurai' },
+    { id: 'monument-4', url: '/hero/monument-4.jpg', title: 'Hampi Virupaksha' },
+    { id: 'monument-7', url: '/hero/monument-7.jpg', title: 'Konark Sun Temple' },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Automatic slideshow changing every 3 seconds with smooth fade transitions
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(timer);
-  }, [currentSlide, heroSlides.length]);
+  }, [heroSlides.length]);
 
   const handlePrevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
@@ -257,11 +250,31 @@ export const HomePage: React.FC<HomePageProps> = ({
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   };
 
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    } else {
+      onOpenSearch();
+    }
+  };
+
+  const popularTags = [
+    { label: 'Taj Mahal', path: '/heritage/place-taj-mahal' },
+    { label: 'Jaipur', path: '/search?q=Jaipur' },
+    { label: 'Varanasi', path: '/search?q=Varanasi' },
+    { label: 'Rajasthan', path: '/search?q=Rajasthan' },
+    { label: 'Kerala', path: '/search?q=Kerala' },
+    { label: 'Tamil Nadu', path: '/search?q=Tamil%20Nadu' },
+    { label: 'Festivals', path: '/festivals' },
+    { label: 'GI Crafts', path: '/arts-crafts' },
+  ];
+
   return (
-    <div className="w-full">
-      {/* 1. Full-Width Automatic Heritage Image Slideshow Hero (100% Flush Edge-to-Edge) */}
-      <section className="relative w-full overflow-hidden bg-stone-950 min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between select-none shadow-2xl">
-        {/* Automatic Image Slideshow Background with Smooth Fade Transitions */}
+    <div className="w-full bg-[#FAF8F5] min-h-screen text-stone-900 font-sans">
+      {/* 1. Full-Width Heritage Hero Banner matching screenshot */}
+      <section className="relative w-full overflow-hidden bg-stone-950 min-h-[500px] sm:min-h-[540px] lg:min-h-[580px] flex flex-col justify-between select-none">
+        {/* Background Image Slideshow with smooth fade transitions */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           {heroSlides.map((slide, idx) => (
             <div
@@ -272,205 +285,188 @@ export const HomePage: React.FC<HomePageProps> = ({
             >
               <img
                 src={slide.url}
-                alt="Indian Cultural Heritage"
-                className="w-full h-full object-cover object-center brightness-110 contrast-[1.05]"
+                alt={slide.title}
+                className="w-full h-full object-cover object-center brightness-[0.88] contrast-[1.08]"
                 loading={idx === 0 ? 'eager' : 'lazy'}
               />
             </div>
           ))}
 
-          {/* Asymmetrical Lighting & Transparency:
-              - Left/Center-left side: Gentle gradient scrim for crisp text & search bar contrast
-              - Right side: Crystal-clear, high light transparency so the monument architecture is MOST VISIBLE! */}
-          <div className="absolute inset-0 z-20 bg-gradient-to-r from-stone-950/90 via-stone-950/45 to-transparent pointer-events-none" />
-          <div className="absolute inset-x-0 bottom-0 h-44 z-20 bg-gradient-to-t from-stone-950/80 via-stone-950/25 to-transparent pointer-events-none" />
-          <div className="absolute inset-x-0 top-0 h-24 z-20 bg-gradient-to-b from-stone-950/40 to-transparent pointer-events-none" />
+          {/* Scrim Overlay for high legibility */}
+          <div className="absolute inset-0 z-20 bg-gradient-to-r from-stone-950/80 via-stone-950/40 to-stone-950/20 pointer-events-none" />
+          <div className="absolute inset-x-0 bottom-0 h-32 z-20 bg-gradient-to-t from-stone-950/70 to-transparent pointer-events-none" />
         </div>
 
-        {/* Manual Left/Right Arrow Controls */}
+        {/* Left/Right Subtle Navigation Arrows */}
         <button
           type="button"
           onClick={handlePrevSlide}
-          className="absolute left-3 sm:left-6 lg:left-10 top-1/2 -translate-y-1/2 z-30 p-2.5 sm:p-3.5 rounded-full bg-black/45 hover:bg-black/75 text-white/85 hover:text-white border border-white/20 backdrop-blur-md transition-all shadow-xl hover:scale-110 active:scale-95 group"
-          aria-label="Previous monument slide"
+          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/30 hover:bg-black/60 text-white/80 hover:text-white backdrop-blur-xs transition-all shadow-md cursor-pointer"
+          aria-label="Previous slide"
         >
-          <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:-translate-x-0.5 transition-transform" />
+          <ChevronLeft className="w-5 h-5" />
         </button>
 
         <button
           type="button"
           onClick={handleNextSlide}
-          className="absolute right-3 sm:right-6 lg:right-10 top-1/2 -translate-y-1/2 z-30 p-2.5 sm:p-3.5 rounded-full bg-black/45 hover:bg-black/75 text-white/85 hover:text-white border border-white/20 backdrop-blur-md transition-all shadow-xl hover:scale-110 active:scale-95 group"
-          aria-label="Next monument slide"
+          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 p-2 sm:p-2.5 rounded-full bg-black/30 hover:bg-black/60 text-white/80 hover:text-white backdrop-blur-xs transition-all shadow-md cursor-pointer"
+          aria-label="Next slide"
         >
-          <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-0.5 transition-transform" />
+          <ChevronRight className="w-5 h-5" />
         </button>
 
-        {/* Centered Hero Content (Saffron, White, and Green Theme) */}
-        <div className="relative z-30 max-w-4xl mx-auto px-6 sm:px-10 lg:px-16 pt-16 sm:pt-20 lg:pt-24 pb-8 text-center space-y-6">
-          {/* Top Tag Pill */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/55 border border-amber-500/40 text-amber-300 text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-xs">
-            <Landmark className="w-3.5 h-3.5 text-[#FF9933]" />
-            <span>CONNECTED CULTURAL INTELLIGENCE</span>
+        {/* Hero Content matching exact screenshot typography and layout */}
+        <div className="relative z-30 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 pb-12 text-center space-y-4">
+          {/* Tagline */}
+          <div className="text-white/90 text-xs sm:text-sm font-semibold tracking-wider uppercase">
+            Explore • Experience • Preserve
           </div>
 
-          {/* Main Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black font-serif tracking-tight text-white leading-[1.15] drop-shadow-lg">
-            Discover India’s Living <br className="hidden sm:inline" />
-            <span className="text-[#FF9933] drop-shadow-sm">Cultural</span>{' '}
-            <span className="text-[#22c55e] drop-shadow-sm">Heritage</span>
+          {/* Main Title in bold Arial */}
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight drop-shadow-sm font-sans">
+            India's Living Heritage
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xs sm:text-sm md:text-base text-stone-200/95 max-w-2xl mx-auto leading-relaxed font-normal drop-shadow">
-            Journey across verified UNESCO monuments, vibrant festivals, GI-tagged crafts, and
-            classical performing arts. Discover the deep historical, cultural, and living traditions
-            that make India unique.
+          <p className="text-xs sm:text-sm md:text-base text-white/90 max-w-2xl mx-auto leading-relaxed font-normal">
+            Discover timeless traditions, vibrant festivals, magnificent monuments and the people who keep our culture alive.
           </p>
 
-          {/* Large Floating Search Bar + AI Guide Button */}
-          <div className="pt-2 max-w-2xl mx-auto w-full">
-            <div
-              onClick={onOpenSearch}
-              className="flex items-center justify-between bg-white/95 backdrop-blur-md pl-4 pr-1.5 py-1.5 rounded-full border border-stone-200/80 shadow-2xl hover:bg-white hover:shadow-amber-500/10 transition-all cursor-pointer group"
+          {/* Centralized Search Bar Pill */}
+          <div className="pt-3 max-w-2xl mx-auto w-full">
+            <form
+              onSubmit={handleSearchSubmit}
+              className="flex items-center justify-between bg-white rounded-full pl-4 sm:pl-5 pr-1.5 py-1.5 shadow-2xl border border-white/60 transition-all group"
             >
-              <div className="flex items-center gap-3 text-stone-500 group-hover:text-stone-700 text-xs sm:text-sm flex-1 truncate transition-colors">
-                <Search className="w-4 h-4 text-stone-400 group-hover:text-[#FF9933] shrink-0 transition-colors" />
-                <span className="truncate">Search monuments, festivals, crafts, cities or experiences...</span>
+              <div className="flex items-center gap-3 text-stone-500 text-xs sm:text-sm flex-1 truncate">
+                <Search className="w-4 h-4 text-stone-400 shrink-0" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search places, festivals, crafts, experiences..."
+                  className="w-full bg-transparent text-stone-800 text-xs sm:text-sm outline-none placeholder:text-stone-400 font-sans"
+                />
               </div>
               <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onOpenAIChat('Introduce me to India\'s living cultural heritage');
-                }}
-                className="px-5 py-2.5 rounded-full bg-[#FF9933] hover:bg-[#CC7A29] text-white text-xs sm:text-sm font-bold flex items-center gap-2 shadow-sm transition-colors shrink-0"
+                type="submit"
+                className="px-6 py-2.5 rounded-full bg-[#FF6600] hover:bg-[#E65100] text-white text-xs sm:text-sm font-semibold shadow-xs transition-colors shrink-0 cursor-pointer"
               >
-                <Sparkles className="w-4 h-4 text-white" />
-                <span>Ask AI Guide</span>
+                Search
               </button>
+            </form>
+
+            {/* Popular Search Chips */}
+            <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
+              <span className="text-white/80 text-xs font-semibold mr-1">Popular:</span>
+              {popularTags.map((tag) => (
+                <button
+                  key={tag.label}
+                  type="button"
+                  onClick={() => {
+                    if (tag.path.startsWith('/search?q=')) {
+                      navigate(tag.path);
+                    } else {
+                      navigate(tag.path);
+                    }
+                  }}
+                  className="px-3 py-1 rounded-full bg-black/40 hover:bg-black/65 border border-white/20 text-white text-xs font-normal transition-all cursor-pointer backdrop-blur-2xs"
+                >
+                  {tag.label}
+                </button>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Bottom Hero Section: Indicators & Tricolour Wave */}
-        <div className="relative z-30 w-full pt-4 space-y-3">
-          {/* Carousel Indicators (Dots) */}
-          <div className="flex items-center justify-center gap-2 z-30">
-            {heroSlides.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentSlide(idx)}
-                className={`transition-all duration-300 rounded-full ${
-                  idx === currentSlide
-                    ? 'w-7 sm:w-9 h-2 bg-[#FF9933] shadow-md shadow-amber-500/50'
-                    : 'w-2 h-2 bg-white/40 hover:bg-white/80'
-                }`}
-                aria-label={`Slide ${idx + 1}`}
-              />
-            ))}
-          </div>
-
-          {/* 3D Flowing Tricolour Ribbon Wave across Hero Bottom */}
-          <div className="w-full">
-            <TricolourRibbonWave />
-          </div>
+        {/* Clean bottom transition wave */}
+        <div className="relative z-20 w-full h-8 overflow-hidden pointer-events-none">
+          <svg
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            className="relative block w-full h-8 text-[#FAF8F5] fill-current"
+          >
+            <path d="M0,0 C150,90 350,-40 500,60 C650,140 900,20 1200,40 L1200,120 L0,120 Z" />
+          </svg>
         </div>
       </section>
 
-      {/* Main Centered Content Container below Full-Width Hero */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 pb-20">
-        {/* 2. Royal Bharat Cultural Intelligence Console (Creative Floating Dashboard) */}
-        <div className="relative z-30 -mt-12 sm:-mt-16">
-          <div className="bg-gradient-to-br from-white via-[#FFFDF9] to-amber-50/80 backdrop-blur-xl rounded-3xl border-2 border-amber-300/70 shadow-2xl p-6 sm:p-8 relative overflow-hidden">
-            {/* Top Status & Integrity Bar */}
-            <div className="flex flex-wrap items-center justify-between gap-3 pb-5 border-b border-amber-200/60">
-              <div className="flex items-center gap-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-xs font-extrabold tracking-wider text-emerald-800 uppercase font-sans">
-                  Live Cultural Intelligence Graph
-                </span>
-                <span className="hidden sm:inline-block text-stone-300">•</span>
-                <span className="hidden sm:inline-block text-[11px] font-semibold text-stone-500">
-                  36 States & Union Territories Synchronized
-                </span>
-              </div>
-
-              <div className="flex items-center gap-2 text-xs font-bold text-amber-900 bg-amber-100/80 px-3.5 py-1 rounded-full border border-amber-300/70 shadow-2xs">
-                <Sparkles className="w-3.5 h-3.5 text-[#FF9933]" />
-                <span>ASI & UNESCO Grounded Repository</span>
-              </div>
-            </div>
-
-            {/* 4 Creative Cultural Metrics with Royal Indian Aesthetics */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 pt-6">
-              {/* Metric 1 */}
-              <div className="flex items-start gap-4 p-3 rounded-2xl hover:bg-amber-50/50 transition-colors">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center shrink-0 shadow-lg shadow-amber-500/25 border border-amber-300/40">
-                  <Landmark className="w-6 h-6 text-white" />
+      {/* Main Container below Hero */}
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-14 pb-20">
+        
+        {/* 2. Attractive Statistics Cards (4 Columns) matching screenshot */}
+        <div className="relative z-30 -mt-6 sm:-mt-8">
+          <div className="bg-white rounded-2xl border border-stone-200/90 shadow-sm p-5 sm:p-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+              {/* Stat 1: 146 Heritage Monuments */}
+              <div className="flex items-center gap-3.5">
+                <div className="w-12 h-12 rounded-xl bg-[#FFF2E5] text-[#FF6600] flex items-center justify-center shrink-0">
+                  <Landmark className="w-6 h-6 text-[#FF6600]" />
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-black font-serif text-stone-900 leading-none tracking-tight">
-                    {stats ? `${stats.heritage_places}` : '146'}
+                  <div className="text-2xl sm:text-3xl font-bold text-stone-900 leading-none">
+                    {stats ? stats.heritage_places : '146'}
                   </div>
-                  <div className="text-xs font-bold text-stone-800 mt-1.5">
+                  <div className="text-xs sm:text-sm font-bold text-stone-800 mt-1">
                     Heritage Monuments
                   </div>
-                  <div className="text-[11px] text-amber-800/80 font-medium">
+                  <div className="text-[11px] text-stone-500 font-normal">
                     ASI & UNESCO Protected
                   </div>
                 </div>
               </div>
 
-              {/* Metric 2 */}
-              <div className="flex items-start gap-4 p-3 rounded-2xl hover:bg-emerald-50/50 transition-colors">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-700 text-white flex items-center justify-center shrink-0 shadow-lg shadow-emerald-600/25 border border-emerald-300/40">
-                  <MapPin className="w-6 h-6 text-white" />
+              {/* Stat 2: 36 States & Union Territories */}
+              <div className="flex items-center gap-3.5">
+                <div className="w-12 h-12 rounded-xl bg-[#E6F4EA] text-[#059669] flex items-center justify-center shrink-0">
+                  <MapPin className="w-6 h-6 text-[#059669]" />
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-black font-serif text-stone-900 leading-none tracking-tight">
-                    {stats ? `${stats.states_represented}` : '36'}
+                  <div className="text-2xl sm:text-3xl font-bold text-stone-900 leading-none">
+                    {stats ? stats.states_represented : '36'}
                   </div>
-                  <div className="text-xs font-bold text-stone-800 mt-1.5">
+                  <div className="text-xs sm:text-sm font-bold text-stone-800 mt-1">
                     States & Union Territories
                   </div>
-                  <div className="text-[11px] text-emerald-800/80 font-medium">
-                    100% Pan-Bharat Coverage
+                  <div className="text-[11px] text-stone-500 font-normal">
+                    100% Pan-India Coverage
                   </div>
                 </div>
               </div>
 
-              {/* Metric 3 */}
-              <div className="flex items-start gap-4 p-3 rounded-2xl hover:bg-orange-50/50 transition-colors">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-600 text-white flex items-center justify-center shrink-0 shadow-lg shadow-orange-500/25 border border-orange-300/40">
-                  <Calendar className="w-6 h-6 text-white" />
+              {/* Stat 3: 127 Festivals & GI Crafts */}
+              <div className="flex items-center gap-3.5">
+                <div className="w-12 h-12 rounded-xl bg-[#FFF8E6] text-[#F59E0B] flex items-center justify-center shrink-0">
+                  <Calendar className="w-6 h-6 text-[#F59E0B]" />
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-black font-serif text-stone-900 leading-none tracking-tight">
-                    {stats ? `${stats.festivals + stats.crafts}` : '127'}
+                  <div className="text-2xl sm:text-3xl font-bold text-stone-900 leading-none">
+                    {stats ? stats.festivals + stats.crafts : '127'}
                   </div>
-                  <div className="text-xs font-bold text-stone-800 mt-1.5">
+                  <div className="text-xs sm:text-sm font-bold text-stone-800 mt-1">
                     Festivals & GI Crafts
                   </div>
-                  <div className="text-[11px] text-orange-800/80 font-medium">
+                  <div className="text-[11px] text-stone-500 font-normal">
                     Living Intangible Heritage
                   </div>
                 </div>
               </div>
 
-              {/* Metric 4 */}
-              <div className="flex items-start gap-4 p-3 rounded-2xl hover:bg-blue-50/50 transition-colors">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white flex items-center justify-center shrink-0 shadow-lg shadow-blue-600/25 border border-blue-300/40">
-                  <Bot className="w-6 h-6 text-white" />
+              {/* Stat 4: 100% Source-Backed */}
+              <div className="flex items-center gap-3.5">
+                <div className="w-12 h-12 rounded-xl bg-[#EFF6FF] text-[#2563EB] flex items-center justify-center shrink-0">
+                  <ShieldCheck className="w-6 h-6 text-[#2563EB]" />
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-black font-serif text-stone-900 leading-none tracking-tight">
+                  <div className="text-2xl sm:text-3xl font-bold text-stone-900 leading-none">
                     {stats ? stats.verification_rate : '100%'}
                   </div>
-                  <div className="text-xs font-bold text-stone-800 mt-1.5">
-                    Statutory Verified
+                  <div className="text-xs sm:text-sm font-bold text-stone-800 mt-1">
+                    Source-Backed
                   </div>
-                  <div className="text-[11px] text-blue-800/80 font-medium">
-                    Zero Synthesized Folklore
+                  <div className="text-[11px] text-stone-500 font-normal">
+                    Statutory Verified Information
                   </div>
                 </div>
               </div>
@@ -478,326 +474,286 @@ export const HomePage: React.FC<HomePageProps> = ({
           </div>
         </div>
 
-        {/* 3. The Virasat Innovation / Connected Cultural Intelligence Section */}
-        <section className="space-y-6">
+        {/* 3. Connected Cultural Intelligence Section matching screenshot */}
+        <section className="space-y-5">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
-            <div>
-              <div className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#E05A2B] uppercase tracking-widest">
-                <Sparkles className="w-3.5 h-3.5 text-[#E05A2B]" />
-                <span>THE VIRASAT INNOVATION • विरासत नवाचार</span>
-              </div>
-              <h2 className="text-2xl sm:text-4xl font-extrabold font-serif text-stone-900 mt-1">
+            <div className="border-l-4 border-[#FF6600] pl-3">
+              <h2 className="text-xl sm:text-2xl font-bold text-stone-900 leading-tight font-sans">
                 Connected Cultural Intelligence
               </h2>
-              <p className="text-xs sm:text-sm text-stone-600 mt-1 max-w-2xl leading-relaxed">
-                Unite validated archaeological data, AI insights, and living traditions to explore India's sacred geography — monuments, artisan clusters, rituals, and heritage routes.
+              <p className="text-xs sm:text-sm text-stone-500 mt-0.5">
+                Explore India's rich cultural landscape through our curated collections.
               </p>
             </div>
 
             <Link
               to="/discover"
-              className="inline-flex items-center gap-1 text-xs font-bold text-[#E05A2B] hover:underline shrink-0"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#FF6600] hover:underline shrink-0"
             >
               <span>Explore All Connections</span>
               <span>→</span>
             </Link>
           </div>
 
-          {/* 4 Creative Cultural Gateway Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1: Festivals & Traditions */}
+          {/* 4 Cultural Category Cards with authentic images matching reference */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {/* Card 1: Festivals & Rituals */}
             <Link
               to="/festivals"
-              className="group bg-gradient-to-b from-amber-500/10 via-white to-white rounded-3xl border-2 border-amber-300/60 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
+              className="bg-white rounded-2xl border border-stone-200/90 p-5 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group"
             >
-              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-amber-400 to-[#FF9933]" />
-              <div className="space-y-3.5">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-2xl bg-amber-500/20 text-[#C85A32] flex items-center justify-center border border-amber-400/40 shadow-xs group-hover:scale-105 transition-transform">
-                    <Calendar className="w-6 h-6 text-[#C85A32]" />
+              <div className="space-y-3">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="w-10 h-10 rounded-xl bg-[#FFF2E5] text-[#FF6600] flex items-center justify-center shrink-0">
+                    <Calendar className="w-5 h-5 text-[#FF6600]" />
                   </div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-900 bg-amber-100/90 px-2.5 py-1 rounded-full border border-amber-300/60">
-                    67 Festivals
-                  </span>
+                  {/* Authentic Festival Ritual Preview Image */}
+                  <div className="w-20 h-20 rounded-xl overflow-hidden bg-stone-100 shrink-0 border border-stone-200/60 shadow-2xs">
+                    <img
+                      src="/festivals/category-cultural.jpg"
+                      alt="Festivals & Rituals"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = '/festivals/rath-yatra.jpg';
+                      }}
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <h3 className="text-base font-extrabold text-stone-900 font-serif group-hover:text-[#E05A2B] transition-colors">
+                  <h3 className="text-base font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors">
                     Festivals & Rituals
                   </h3>
-                  <p className="text-xs text-stone-600 mt-1 leading-relaxed">
+                  <p className="text-xs text-stone-500 mt-1 leading-relaxed line-clamp-2">
                     Living traditions tracked with solar & lunar calendars, community folklore, and rituals.
                   </p>
                 </div>
 
-                {/* Micro-preview pills */}
+                {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 pt-1">
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Chhath</span>
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Durga Puja</span>
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Onam</span>
+                  {['Diwali', 'Holi', 'Chhath', 'Onam'].map((t) => (
+                    <span key={t} className="text-[10px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded-md font-medium">
+                      {t}
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              <div className="pt-5 flex items-center justify-between border-t border-stone-100 mt-4">
-                <span className="text-xs font-bold text-[#C85A32] group-hover:underline">Explore Celebrations</span>
-                <div className="w-8 h-8 rounded-full bg-amber-100 group-hover:bg-[#C85A32] text-amber-900 group-hover:text-white flex items-center justify-center transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
+              <div className="pt-4 mt-3 border-t border-stone-100 flex items-center justify-between">
+                <span className="text-xs font-semibold text-[#FF6600] group-hover:underline">
+                  Explore Celebrations →
+                </span>
               </div>
             </Link>
 
-            {/* Card 2: Monuments & Heritage Sites */}
+            {/* Card 2: Sacred Monuments */}
             <Link
               to="/heritage"
-              className="group bg-gradient-to-b from-emerald-500/10 via-white to-white rounded-3xl border-2 border-emerald-300/60 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
+              className="bg-white rounded-2xl border border-stone-200/90 p-5 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group"
             >
-              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-emerald-400 to-[#138808]" />
-              <div className="space-y-3.5">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-800 flex items-center justify-center border border-emerald-400/40 shadow-xs group-hover:scale-105 transition-transform">
-                    <Landmark className="w-6 h-6 text-emerald-800" />
+              <div className="space-y-3">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="w-10 h-10 rounded-xl bg-[#E6F4EA] text-[#059669] flex items-center justify-center shrink-0">
+                    <Landmark className="w-5 h-5 text-[#059669]" />
                   </div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-900 bg-emerald-100/90 px-2.5 py-1 rounded-full border border-emerald-300/60">
-                    146 Monuments
-                  </span>
+                  {/* Authentic Temple Architecture Preview Image */}
+                  <div className="w-20 h-20 rounded-xl overflow-hidden bg-stone-100 shrink-0 border border-stone-200/60 shadow-2xs">
+                    <img
+                      src="/hero/monument-7.jpg"
+                      alt="Sacred Monuments"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <h3 className="text-base font-extrabold text-stone-900 font-serif group-hover:text-emerald-700 transition-colors">
+                  <h3 className="text-base font-bold text-stone-900 group-hover:text-[#059669] transition-colors">
                     Sacred Monuments
                   </h3>
-                  <p className="text-xs text-stone-600 mt-1 leading-relaxed">
-                    Colossal rock-cut caves, medieval hill citadels, stepwells, and Dravidian gopurams.
+                  <p className="text-xs text-stone-500 mt-1 leading-relaxed line-clamp-2">
+                    Colossal rock-cut caves, medieval hill citadels, stepwells, and Dravidian masterpieces.
                   </p>
                 </div>
 
-                {/* Micro-preview pills */}
+                {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 pt-1">
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Dravidian</span>
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Kalinga</span>
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Nagara</span>
+                  {['Khajuraho', 'Hampi', 'Konark', 'Ajanta'].map((t) => (
+                    <span key={t} className="text-[10px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded-md font-medium">
+                      {t}
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              <div className="pt-5 flex items-center justify-between border-t border-stone-100 mt-4">
-                <span className="text-xs font-bold text-emerald-700 group-hover:underline">Explore Architecture</span>
-                <div className="w-8 h-8 rounded-full bg-emerald-100 group-hover:bg-emerald-700 text-emerald-900 group-hover:text-white flex items-center justify-center transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
+              <div className="pt-4 mt-3 border-t border-stone-100 flex items-center justify-between">
+                <span className="text-xs font-semibold text-[#059669] group-hover:underline">
+                  Explore Architecture →
+                </span>
               </div>
             </Link>
 
-            {/* Card 3: Arts & Crafts */}
+            {/* Card 3: Indigenous GI Crafts */}
             <Link
               to="/arts-crafts"
-              className="group bg-gradient-to-b from-purple-500/10 via-white to-white rounded-3xl border-2 border-purple-300/60 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
+              className="bg-white rounded-2xl border border-stone-200/90 p-5 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group"
             >
-              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-purple-400 to-indigo-600" />
-              <div className="space-y-3.5">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-800 flex items-center justify-center border border-purple-400/40 shadow-xs group-hover:scale-105 transition-transform">
-                    <Palette className="w-6 h-6 text-purple-800" />
+              <div className="space-y-3">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="w-10 h-10 rounded-xl bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center shrink-0">
+                    <Palette className="w-5 h-5 text-[#7C3AED]" />
                   </div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-purple-900 bg-purple-100/90 px-2.5 py-1 rounded-full border border-purple-300/60">
-                    60 GI Crafts
-                  </span>
+                  {/* Authentic Artisan Pottery Painting Preview Image matching screenshot */}
+                  <div className="w-20 h-20 rounded-xl overflow-hidden bg-stone-100 shrink-0 border border-stone-200/60 shadow-2xs">
+                    <img
+                      src="/craft-jaipur-pottery.jpg"
+                      alt="Indigenous GI Crafts"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <h3 className="text-base font-extrabold text-stone-900 font-serif group-hover:text-purple-700 transition-colors">
+                  <h3 className="text-base font-bold text-stone-900 group-hover:text-[#7C3AED] transition-colors">
                     Indigenous GI Crafts
                   </h3>
-                  <p className="text-xs text-stone-600 mt-1 leading-relaxed">
+                  <p className="text-xs text-stone-500 mt-1 leading-relaxed line-clamp-2">
                     Handlooms, bronze casting, blue pottery, and lacquered woodcraft from master clusters.
                   </p>
                 </div>
 
-                {/* Micro-preview pills */}
+                {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 pt-1">
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Blue Pottery</span>
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Warli</span>
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Aranmula</span>
+                  {['Banarasi', 'Kanchipuram', 'Blue Pottery', 'Pashmina'].map((t) => (
+                    <span key={t} className="text-[10px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded-md font-medium">
+                      {t}
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              <div className="pt-5 flex items-center justify-between border-t border-stone-100 mt-4">
-                <span className="text-xs font-bold text-purple-700 group-hover:underline">Explore Artisan Guilds</span>
-                <div className="w-8 h-8 rounded-full bg-purple-100 group-hover:bg-purple-700 text-purple-900 group-hover:text-white flex items-center justify-center transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
+              <div className="pt-4 mt-3 border-t border-stone-100 flex items-center justify-between">
+                <span className="text-xs font-semibold text-[#7C3AED] group-hover:underline">
+                  Explore Artisan Guides →
+                </span>
               </div>
             </Link>
 
-            {/* Card 4: Heritage Maps */}
+            {/* Card 4: GIS Cultural Map */}
             <Link
               to="/cultural-map"
-              className="group bg-gradient-to-b from-blue-500/10 via-white to-white rounded-3xl border-2 border-blue-300/60 p-6 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
+              className="bg-white rounded-2xl border border-stone-200/90 p-5 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group"
             >
-              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-blue-400 to-indigo-600" />
-              <div className="space-y-3.5">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-2xl bg-blue-500/20 text-blue-800 flex items-center justify-center border border-blue-400/40 shadow-xs group-hover:scale-105 transition-transform">
-                    <Map className="w-6 h-6 text-blue-800" />
+              <div className="space-y-3">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="w-10 h-10 rounded-xl bg-[#EFF6FF] text-[#2563EB] flex items-center justify-center shrink-0">
+                    <Map className="w-5 h-5 text-[#2563EB]" />
                   </div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-blue-900 bg-blue-100/90 px-2.5 py-1 rounded-full border border-blue-300/60">
-                    184 Geo-Pins
-                  </span>
+                  {/* Authentic India Cultural Map Graphic matching screenshot */}
+                  <div className="w-20 h-20 rounded-xl overflow-hidden bg-stone-100 shrink-0 border border-stone-200/60 shadow-2xs">
+                    <img
+                      src="/map-monuments-art.jpg"
+                      alt="GIS Cultural Map"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <h3 className="text-base font-extrabold text-stone-900 font-serif group-hover:text-blue-700 transition-colors">
+                  <h3 className="text-base font-bold text-stone-900 group-hover:text-[#2563EB] transition-colors">
                     GIS Cultural Map
                   </h3>
-                  <p className="text-xs text-stone-600 mt-1 leading-relaxed">
+                  <p className="text-xs text-stone-500 mt-1 leading-relaxed line-clamp-2">
                     Interactive geospatial map with cluster zoom, category filters, and day itineraries.
                   </p>
                 </div>
 
-                {/* Micro-preview pills */}
+                {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 pt-1">
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Cluster Zoom</span>
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Geocoded</span>
-                  <span className="text-[10px] font-semibold bg-white border border-stone-200 text-stone-600 px-2 py-0.5 rounded-md">Itinerary</span>
+                  {['Cluster Zoom', 'Routes', 'Nearby', 'Itinerary'].map((t) => (
+                    <span key={t} className="text-[10px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded-md font-medium">
+                      {t}
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              <div className="pt-5 flex items-center justify-between border-t border-stone-100 mt-4">
-                <span className="text-xs font-bold text-blue-700 group-hover:underline">Launch Cultural GIS</span>
-                <div className="w-8 h-8 rounded-full bg-blue-100 group-hover:bg-blue-700 text-blue-900 group-hover:text-white flex items-center justify-center transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
+              <div className="pt-4 mt-3 border-t border-stone-100 flex items-center justify-between">
+                <span className="text-xs font-semibold text-[#2563EB] group-hover:underline">
+                  Launch Cultural GIS →
+                </span>
               </div>
             </Link>
           </div>
         </section>
 
-      {/* 3. Historical Foundations / Featured Heritage Destinations */}
-      <section className="space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
-          <div>
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E05A2B] uppercase tracking-widest">
-              <Landmark className="w-3.5 h-3.5 text-[#E05A2B]" />
-              <span>HISTORICAL FOUNDATIONS</span>
+        {/* 4. Featured Heritage Destinations Section matching screenshot */}
+        <section className="space-y-5">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+            <div className="border-l-4 border-[#FF6600] pl-3">
+              <h2 className="text-xl sm:text-2xl font-bold text-stone-900 leading-tight font-sans">
+                Featured Heritage Destinations
+              </h2>
+              <p className="text-xs sm:text-sm text-stone-500 mt-0.5">
+                Explore iconic monuments, heritage sites and cultural landmarks across India's rich history.
+              </p>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold font-serif text-stone-900 mt-1">
-              Featured Heritage Destinations
-            </h2>
-            <p className="text-xs sm:text-sm text-stone-600 mt-1 max-w-2xl leading-relaxed">
-              Explore iconic monuments, heritage sites and cultural landmarks across India's rich history.
-            </p>
+
+            <Link
+              to="/heritage"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#FF6600] hover:underline shrink-0"
+            >
+              <span>View All Destinations</span>
+              <span>→</span>
+            </Link>
           </div>
 
-          <Link
-            to="/heritage"
-            className="inline-flex items-center gap-1 text-xs font-bold text-[#E05A2B] hover:underline shrink-0"
-          >
-            <span>View All Destinations</span>
-            <span>→</span>
-          </Link>
-        </div>
+          {/* 4 Monument Cards matching screenshot (Taj Mahal, Red Fort, Konark, Varanasi Ghats) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {places.map((place) => (
+              <HeritageCard
+                key={place.id}
+                place={place}
+                onExploreRelated={onExploreRelated}
+                onClick={() => onExploreRelated('heritage', place.id)}
+              />
+            ))}
+          </div>
+        </section>
 
-        {/* 4 Monuments Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {places.map((place) => (
-            <HeritageCard
-              key={place.id}
-              place={place}
-              onExploreRelated={onExploreRelated}
-              onClick={() => onExploreRelated('heritage', place.id)}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* 4. Living Celebrations / Explore Indian Festivals & Traditions */}
-      <section className="space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
-          <div>
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E05A2B] uppercase tracking-widest">
-              <Calendar className="w-3.5 h-3.5 text-[#E05A2B]" />
-              <span>LIVING CELEBRATIONS</span>
+        {/* 5. Living Celebrations: Explore Indian Festivals & Traditions */}
+        <section className="space-y-5">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+            <div className="border-l-4 border-[#FF6600] pl-3">
+              <h2 className="text-xl sm:text-2xl font-bold text-stone-900 leading-tight font-sans">
+                Explore Indian Festivals & Traditions
+              </h2>
+              <p className="text-xs sm:text-sm text-stone-500 mt-0.5">
+                Experience the vibrant festivals, rituals and cultural traditions that keep India's heritage alive.
+              </p>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold font-serif text-stone-900 mt-1">
-              Explore Indian Festivals & Traditions
-            </h2>
-            <p className="text-xs sm:text-sm text-stone-600 mt-1 max-w-2xl leading-relaxed">
-              Experience the vibrant festivals, rituals and cultural traditions that keep India's heritage alive.
-            </p>
-          </div>
 
-          <Link
-            to="/festivals"
-            className="inline-flex items-center gap-1 text-xs font-bold text-[#E05A2B] hover:underline shrink-0"
-          >
-            <span>View All Festivals</span>
-            <span>→</span>
-          </Link>
-        </div>
-
-        {/* 4 Festival Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {festivals.map((fest) => (
-            <FestivalCard
-              key={fest.id}
-              festival={fest}
-              onExploreRelated={onExploreRelated}
-              onClick={() => onExploreRelated('festival', fest.id)}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* 5. Cultural Journey CTA band matching Section 6 Page 1 G */}
-      <section className="relative rounded-3xl overflow-hidden bg-[#EAF6EC] border border-[#5FBE72]/40 p-8 sm:p-12 text-center shadow-xs">
-        <div className="absolute inset-0 pointer-events-none opacity-15 text-[#138808]">
-          <MonumentSkyline opacity={0.2} />
-        </div>
-
-        <div className="relative z-10 max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/80 border border-[#5FBE72]/30 text-[#0F6D07] text-xs font-semibold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-[#138808]" />
-            <span>IMMERSIVE EXPLORATION</span>
-          </div>
-
-          <h2 className="text-2xl sm:text-4xl font-bold font-serif text-stone-900">
-            Plan Your <span className="text-[#FF9933]">Cultural</span>{' '}
-            <span className="text-[#138808]">Journey</span>
-          </h2>
-          <p className="text-xs sm:text-sm text-stone-600 leading-relaxed max-w-xl mx-auto">
-            Generate geo-clustered daily itineraries, explore verified coordinates on the interactive cultural map, or converse with our retrieval-grounded AI guide.
-          </p>
-
-          <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
-            {/* Button 1: Generate Itinerary */}
             <Link
-              to="/itinerary"
-              className="px-6 py-3 rounded-full bg-[#FF9933] hover:bg-[#CC7A29] text-white text-xs sm:text-sm font-bold flex items-center gap-2 shadow-md hover:shadow transition-all"
+              to="/festivals"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#FF6600] hover:underline shrink-0"
             >
-              <Calendar className="w-4 h-4 text-white" />
-              <span>Generate Itinerary</span>
-            </Link>
-
-            {/* Button 2: Explore Cultural Map */}
-            <Link
-              to="/cultural-map"
-              className="px-6 py-3 rounded-full bg-white hover:bg-stone-50 text-stone-800 border border-stone-300 text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-xs transition-all"
-            >
-              <Map className="w-4 h-4 text-[#138808]" />
-              <span>Explore Cultural Map</span>
-            </Link>
-
-            {/* Button 3: Ask VIRASAT AI */}
-            <Link
-              to="/ai-guide"
-              className="px-6 py-3 rounded-full bg-[#138808] hover:bg-[#0F6D07] text-white text-xs sm:text-sm font-bold flex items-center gap-2 shadow-md hover:shadow transition-all"
-            >
-              <Sparkles className="w-4 h-4 text-white" />
-              <span>Ask VIRASAT AI</span>
+              <span>View All Festivals</span>
+              <span>→</span>
             </Link>
           </div>
-        </div>
-      </section>
+
+          {/* 4 Festival Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {festivals.map((fest) => (
+              <FestivalCard
+                key={fest.id}
+                festival={fest}
+                onExploreRelated={onExploreRelated}
+                onClick={() => onExploreRelated('festival', fest.id)}
+              />
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
-);
+  );
 };

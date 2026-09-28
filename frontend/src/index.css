@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    background-color: #FAF8F5;
-    color: #0B192C;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  *, ::before, ::after {
+    font-family: Arial, Helvetica, sans-serif;
   }
   
-  h1, h2, h3, .font-heritage {
-    font-family: 'Georgia', 'Cinzel', serif;
+  body {
+    background-color: #FAF8F5;
+    color: #1A1A1A;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-heritage, .font-serif, .font-sans {
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
 

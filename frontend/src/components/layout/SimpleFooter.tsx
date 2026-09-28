@@ -21,14 +21,14 @@ export const SimpleFooter: React.FC = () => {
   };
 
   return (
-    <footer className="relative bg-[#FFFDF9] border-t border-stone-200 mt-16 select-none overflow-hidden">
-      {/* Top Monument Silhouette & Tricolour Ribbon Border matching screenshot */}
-      <div className="relative pt-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 opacity-20 text-[#D4AF37] pointer-events-none">
-          <MonumentSkyline opacity={0.25} />
-        </div>
-        <TricolourRibbonWave className="-mt-8" />
-      </div>
+    <footer className="relative bg-[#FFFDF9] border-t border-stone-200 mt-16 select-none overflow-hidden font-sans">
+      {/* Clean subtle Tricolour Accent Line at Top of Footer */}
+      <div
+        className="w-full h-[3px]"
+        style={{
+          background: 'linear-gradient(90deg, #FF6600 0%, #FF6600 45%, #FFFFFF 45%, #FFFFFF 55%, #138808 55%, #138808 100%)',
+        }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-stone-200">
