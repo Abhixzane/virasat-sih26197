@@ -333,7 +333,7 @@ class AIRetrievalEngine:
                     sources.append(s.source_url)
 
         # 8. Anaphora / Pronoun resolution across conversation history (English & Hindi/Hinglish)
-        pronoun_pattern = r'\b(it|its|this|that|these|those|there|here|the monument|the temple|the tomb|the fort|the palace|the site|the craft|the art|the festival|the place|woh|wahan|uske|iska|iski|iski history|udhar|pehle wala|previous one|is jagah)\b'
+        pronoun_pattern = r'\b(it|its|this|that|these|those|there|here|the monument|the temple|the tomb|the fort|the palace|the site|the craft|the art|the festival|the place|woh|woh jagah|wahan|uske|uske paas|iska|iski|iski history|udhar|pehle wala|previous wala|previous one|is jagah|us jagah)\b'
         has_pronoun = bool(re.search(pronoun_pattern, clean_q))
         is_follow_up = has_pronoun or (len(words) == 0 and len(clean_q.split()) <= 6)
 

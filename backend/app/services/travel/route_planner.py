@@ -43,7 +43,9 @@ CITY_ALIASES = {
     "bellary": "Ballari",
     "gurgaon": "Gurugram",
     "aurangabad": "Chhatrapati Sambhajinagar",
-    "chhatrapati sambhajinagar": "Chhatrapati Sambhajinagar"
+    "chhatrapati sambhajinagar": "Chhatrapati Sambhajinagar",
+    "bodh gaya": "Gaya",
+    "bodhgaya": "Gaya"
 }
 
 # Major known airport hubs in India
@@ -144,17 +146,39 @@ class RoutePlannerService:
     def resolve_city_name(self, query_token: str) -> Optional[str]:
         """Resolves colloquial, historic, or transliterated city names to canonical city keys."""
         norm = query_token.strip().lower()
+        if not norm or len(norm) < 3:
+            return None
+
+        # 1. Alias lookup
         if norm in CITY_ALIASES:
             norm = CITY_ALIASES[norm].lower()
-        
-        # Exact match in cities
+
+        # 2. Exact match in known cities
         if norm in self.cities:
             return norm
+
+        # 3. Stop words that must never resolve as a city via partial matching
+        if norm in {
+            "hai", "hain", "hoon", "hona", "jaana", "jana", "jaunga", "jaungi", "karo", "karna", "karein",
+            "travel", "route", "trip", "tour", "plan", "the", "and", "mein", "aur", "se", "to", "ke", "ka", "ki",
+            "mujhe", "humko", "apna", "batao", "banao", "options", "distance", "chahiye", "gayi", "din",
+            "visit", "want", "explore", "from", "around", "near", "nearby", "here", "there", "what", "where",
+            "how", "when", "city", "place", "places", "mandir", "temple", "fort", "museum", "about", "show"
+        }:
+            return None
         
-        # Partial match
+        # Match where a known multi-word city contains the token or vice-versa
         for ckey in self.cities:
-            if ckey == norm or ckey in norm or norm in ckey:
+            if ckey == norm:
                 return ckey
+            if len(ckey) >= 4 and ckey in norm:
+                return ckey
+
+        # Prefix match for minor spelling variations (e.g. 'bengalur' -> 'bengaluru')
+        for ckey in self.cities:
+            if len(norm) >= 5 and ckey.startswith(norm):
+                return ckey
+
         return None
 
     def extract_route_pair(self, text: str) -> Optional[Tuple[str, str]]:

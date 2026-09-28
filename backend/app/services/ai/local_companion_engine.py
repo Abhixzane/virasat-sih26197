@@ -134,6 +134,32 @@ class LocalCompanionEngine:
                     target_dest = state_token.title()
                     break
 
+            # If target_dest wasn't explicitly found in query, resolve from recent conversation history
+            if target_dest == "Varanasi" and req.conversation_history:
+                for prev_msg in reversed(req.conversation_history):
+                    if getattr(prev_msg, 'role', '') == 'user':
+                        prev_text = prev_msg.content.lower()
+                        for ckey, cinfo in self.routes.cities.items():
+                            # Skip cities that were marked as departure origin ("<city> se" or "from <city>")
+                            if re.search(rf'\b{ckey}\s+se\b', prev_text) or re.search(rf'\bfrom\s+{ckey}\b', prev_text):
+                                continue
+                            if ckey in prev_text or cinfo["name"].lower() in prev_text:
+                                target_dest = cinfo["name"]
+                                break
+                    if target_dest != "Varanasi":
+                        break
+                if target_dest == "Varanasi":
+                    for prev_msg in reversed(req.conversation_history):
+                        prev_text = prev_msg.content.lower()
+                        for ckey, cinfo in self.routes.cities.items():
+                            if re.search(rf'\b{ckey}\s+se\b', prev_text) or re.search(rf'\bfrom\s+{ckey}\b', prev_text):
+                                continue
+                            if ckey in prev_text or cinfo["name"].lower() in prev_text:
+                                target_dest = cinfo["name"]
+                                break
+                        if target_dest != "Varanasi":
+                            break
+
             itin = self.itineraries.generate_itinerary(ItineraryRequest(state_or_destination=target_dest, days=days_count))
             itin_dict = itin.model_dump()
 
@@ -203,6 +229,59 @@ class LocalCompanionEngine:
 
         # 6. Check for City-to-City Route Planning
         route_pair = self.routes.extract_route_pair(query)
+        if not route_pair:
+            # Multi-turn Origin/Destination Chaining:
+            # Case A: User specifies an origin in current turn (e.g. "Main Patna se jaunga", "From Kolkata", "Patna se")
+            # Destination was discussed in conversation history.
+            orig_match = re.search(r'\b(?:main\s+)?([a-zA-Z\u0900-\u097F]+)\s+(?:se\s+(?:jaunga|jaungi|travel|niklunga|start|chalu|aunga)|se)\b', q_lower)
+            if not orig_match:
+                orig_match = re.search(r'\bfrom\s+([a-zA-Z\u0900-\u097F]+)\b', q_lower)
+
+            if orig_match:
+                cand_token = orig_match.group(1).strip()
+                cand_orig = self.routes.resolve_city_name(cand_token)
+                if cand_orig:
+                    cand_dest = None
+                    if req.conversation_history:
+                        # Prioritize user messages in conversation history
+                        for prev_msg in reversed(req.conversation_history):
+                            if getattr(prev_msg, 'role', '') == 'user':
+                                prev_text = prev_msg.content.lower()
+                                for ckey in self.routes.cities:
+                                    if ckey != cand_orig and (ckey in prev_text or self.routes.cities[ckey]["name"].lower() in prev_text):
+                                        cand_dest = ckey
+                                        break
+                                if cand_dest:
+                                    break
+
+                        # Fallback to assistant messages if not found in user messages
+                        if not cand_dest:
+                            for prev_msg in reversed(req.conversation_history):
+                                prev_text = prev_msg.content.lower()
+                                for ckey in self.routes.cities:
+                                    if ckey != cand_orig and (ckey in prev_text or self.routes.cities[ckey]["name"].lower() in prev_text):
+                                        cand_dest = ckey
+                                        break
+                                if cand_dest:
+                                    break
+                    if cand_dest:
+                        route_pair = (cand_orig, cand_dest)
+
+            # Case B: User specifies a destination and asks how to reach, with saved home_city
+            if not route_pair and req.user_memory and req.user_memory.get("home_city"):
+                home_city = req.user_memory.get("home_city")
+                reach_intent = any(w in q_lower for w in ["kaise jayein", "kaise jaana", "how to reach", "travel options", "route to", "distance to", "transport to"])
+                if reach_intent:
+                    cand_dest = None
+                    for ckey in self.routes.cities:
+                        if ckey in q_lower or self.routes.cities[ckey]["name"].lower() in q_lower:
+                            cand_dest = ckey
+                            break
+                    if cand_dest:
+                        resolved_home = self.routes.resolve_city_name(home_city)
+                        if resolved_home and resolved_home != cand_dest:
+                            route_pair = (resolved_home, cand_dest)
+
         if route_pair:
             orig_key, dest_key = route_pair
             route_card = self.routes.plan_route(orig_key, dest_key)
@@ -249,6 +328,108 @@ class LocalCompanionEngine:
                     ]
                 )
 
+        # 6B. Check for Single Destination Inquiry (e.g. "Mujhe Jaipur jaana hai", "Planning to visit Varanasi")
+        is_dest_intent = (
+            any(w in q_lower for w in [
+                "jaana hai", "jana hai", "ghoomna hai", "ghoomne jaana", "ghoomne jana",
+                "want to visit", "planning to visit", "planning a trip to", "plan to visit",
+                "thinking of visiting", "would like to visit", "going to visit"
+            ]) and not any(w in q_lower for w in ["day", "days", "din", "itinerary", "route", "se "])
+        )
+        if is_dest_intent:
+            target_city_key = None
+            for ckey, cinfo in self.routes.cities.items():
+                if ckey in q_lower or cinfo["name"].lower() in q_lower:
+                    target_city_key = ckey
+                    break
+            
+            if target_city_key:
+                cinfo = self.routes.cities[target_city_key]
+                city_name = cinfo["name"]
+                state_name = cinfo.get("state_id", "").replace("state-", "").replace("-", " ").title()
+                city_places = self.repo.get_heritage_places(city=city_name)[:3]
+                if not city_places:
+                    city_places = self.repo.get_heritage_places(state=state_name)[:3]
+                crafts = self.repo.get_arts_crafts(state=state_name)[:2]
+
+                pnames = ", ".join([p.name for p in city_places]) if city_places else city_name
+                cnames = ", ".join([c.name for c in crafts]) if crafts else "पारंपरिक हस्तशिल्प और स्थानीय बाज़ार"
+
+                if lang == "hi":
+                    resp_text = (
+                        f"### 🪔 {city_name} ({state_name}) — आपकी यात्रा की तैयारी!\n\n"
+                        f"**{city_name}** की यात्रा की योजना बनाना बहुत ही सुखद विचार है! यह शहर अपनी ऐतिहासिक धरोहरों, "
+                        f"भव्य वास्तुकला और समृद्ध सांस्कृतिक परंपराओं के लिए जाना जाता है।\n\n"
+                        f"**प्रमुख ऐतिहासिक स्थल:** {pnames}\n"
+                        f"**प्रसिद्ध कला व हस्तशिल्प:** {cnames}\n\n"
+                        f"---\n"
+                        f"**आपकी सम्पूर्ण यात्रा की योजना बनाने के लिए:**\n"
+                        f"1. आप **कितने दिन** के लिए जा रहे हैं (उदा. २ दिन, ३ दिन या ५ दिन)?\n"
+                        f"2. आप **किस शहर से यात्रा शुरू** करेंगे (उदा. दिल्ली, पटना, मुम्बई)?\n\n"
+                        f"मुझे अपना प्रस्थान शहर और दिन बताएं, मैं आपके लिए सबसे तेज़ यात्रा मार्ग (ट्रेन/सड़क/फ्लाइट) और दिन-वार सांस्कृतिक यात्रा कार्यक्रम तैयार कर दूंगा!"
+                    )
+                elif lang == "hinglish":
+                    resp_text = (
+                        f"### 🪔 {city_name} ({state_name}) — Shandar Travel Choice!\n\n"
+                        f"**{city_name}** explore karne ka plan bahut hi badiya hai! Yeh city apne iconic heritage monuments, "
+                        f"vibrant markets aur authentic culinary traditions ke liye mashhoor hai.\n\n"
+                        f"**Top Highlights:** {pnames}\n"
+                        f"**Famous Crafts & Food:** {cnames}\n\n"
+                        f"---\n"
+                        f"**Aapki perfect trip plan karne ke liye:**\n"
+                        f"1. Tum **kitne din** ke liye ja rahe ho (e.g., 2 din, 3 din ya 4 din)?\n"
+                        f"2. Aur kis **city se travel** karoge (e.g., Delhi, Patna, Lucknow, Mumbai)?\n\n"
+                        f"Bas mujhe batao, aur main aapke liye fastest travel options (train/drive/flight) aur ek custom day-by-day heritage itinerary bana dunga!"
+                    )
+                else:
+                    resp_text = (
+                        f"### 🪔 Explore {city_name} ({state_name})\n\n"
+                        f"Planning a journey to **{city_name}** is an excellent choice! It is steeped in profound cultural heritage, "
+                        f"monumental architecture, and vibrant artisan quarters.\n\n"
+                        f"**Key Cultural Highlights:** {pnames}\n"
+                        f"**Traditional Crafts & Arts:** {cnames}\n\n"
+                        f"---\n"
+                        f"**To craft your personalized travel plan:**\n"
+                        f"1. **How many days** are you planning to spend (e.g., 2, 3, or 5 days)?\n"
+                        f"2. **Which city** will you be traveling from (e.g., Delhi, Patna, Bengaluru)?\n\n"
+                        f"Tell me your departure city and duration, and I will generate the optimal transit route and an authentic day-by-day heritage itinerary!"
+                    )
+
+                places_cards = [
+                    PlaceCardData(
+                        id=p.id,
+                        name=p.name,
+                        type="heritage",
+                        state=p.state,
+                        district=p.city,
+                        category=p.category,
+                        image_url=p.image_url,
+                        description=p.description[:180] + "...",
+                        latitude=p.latitude,
+                        longitude=p.longitude
+                    )
+                    for p in city_places
+                ]
+
+                return AIChatResponse(
+                    response=resp_text,
+                    grounded_in_database=True,
+                    retrieved_records=[p.model_dump() for p in city_places],
+                    source_references=sources or ["https://asi.nic.in"],
+                    suggested_follow_ups=[
+                        f"Main Delhi se travel karunga",
+                        f"{city_name} mein 3 din ka cultural itinerary banayein",
+                        f"{city_name} ke famous crafts aur souvenirs"
+                    ],
+                    language_detected=lang,
+                    intent_detected="DESTINATION_INQUIRY",
+                    places_cards=places_cards,
+                    actions=[
+                        UIAction(action="OPEN_ITINERARY", path="/itinerary", params={"destination": city_name, "days": 3}, label=f"Plan {city_name} Itinerary"),
+                        UIAction(action="NAVIGATE", path="/cultural-map", params={"destination": city_name}, label=f"Explore {city_name} on Map")
+                    ]
+                )
+
         # 7. Check for Nearby Discovery Query
         nearby_match = any(w in q_lower for w in ["nearby", "near", "paas mein", "paas", "ke paas", "aaspas", "around"])
         if nearby_match or req.user_coordinates:
@@ -291,10 +472,35 @@ class LocalCompanionEngine:
         q_clean = q.lower().strip()
         is_thanks = any(w in q_clean for w in ["thanks", "thank you", "dhanyawad", "shukriya", "bahut accha"])
         is_bye = any(w in q_clean for w in ["bye", "goodbye", "alvida", "good night", "phir milenge"])
+        is_kaise_ho = any(w in q_clean for w in ["kaise ho", "kya haal", "kaise hain", "how are you", "kaisa chal raha"])
 
         home_city = user_memory.get("home_city") if user_memory else None
 
-        if is_thanks:
+        if is_kaise_ho:
+            if lang == "hi":
+                resp = "मैं बहुत बढ़िया हूँ! आप बताइए, आज भारत की कौन सी ऐतिहासिक धरोहर, उत्सव या यात्रा कार्यक्रम को तलाशने की योजना है? हेरिटेज, खान-पान या सम्पूर्ण यात्रा कार्यक्रम?"
+            elif lang == "hinglish":
+                resp = "Main badhiya hoon! Tum batao, aaj kahaan ghoomne ka plan hai? Heritage, food, festivals ya ek proper travel itinerary?"
+            else:
+                resp = "I am doing great! Tell me, what part of India would you like to explore today? Ancient heritage, local food & crafts, living festivals, or a personalized travel itinerary?"
+            return AIChatResponse(
+                response=resp,
+                grounded_in_database=True,
+                retrieved_records=[],
+                source_references=["https://asi.nic.in"],
+                suggested_follow_ups=[
+                    "Mujhe Jaipur jaana hai",
+                    "Delhi to Jaipur route batao",
+                    "3-day Varanasi cultural itinerary banayein"
+                ],
+                language_detected=lang,
+                intent_detected="GREETING_OR_CHITCHAT",
+                actions=[
+                    UIAction(action="NAVIGATE", path="/cultural-map", params={}, label="Open Cultural Map"),
+                    UIAction(action="NAVIGATE", path="/festivals", params={}, label="Explore Living Festivals")
+                ]
+            )
+        elif is_thanks:
             if lang == "hi":
                 resp = "आपका बहुत स्वागत है! भारतीय कला, संस्कृति और प्राचीन धरोहरों के संरक्षण में आपकी रुचि देखकर बहुत प्रसन्नता हुई। क्या आप किसी अन्य शहर, मंदिर या पारंपरिक शिल्प के बारे में जानना चाहते हैं?"
             elif lang == "hinglish":
