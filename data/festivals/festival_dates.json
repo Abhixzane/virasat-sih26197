@@ -1,0 +1,4464 @@
+{
+  "calendar_systems_supported": [
+    "Hindu Luni-Solar (Saka & Vikram Samvat)",
+    "Solar Tamil Calendar (Tiruvalluvar Aandu)",
+    "Solar Malayalam Calendar (Kollam Era)",
+    "Solar Bengali Calendar (Bangabda)",
+    "Solar Assamese Calendar (Bhaskarābda)",
+    "Meitei Lunar Calendar",
+    "Tibetan Lunisolar Calendar (Phugpa tradition)",
+    "Islamic Lunar Hijri Calendar",
+    "Jain Vira Nirvana Samvat",
+    "Gregorian Tourism Calendar"
+  ],
+  "date_types_classified": [
+    "FIXED",
+    "LUNAR",
+    "LUNISOLAR",
+    "SOLAR",
+    "SEASONAL",
+    "ORGANIZER_ANNOUNCED",
+    "COMMUNITY_SPECIFIC"
+  ],
+  "months": [
+    {
+      "month_name": "January",
+      "festival_count": 58,
+      "festivals": [
+        {
+          "id": "fest-spituk-gustor",
+          "name": "Spituk Gustor Festival",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated in the 11th Tibetan month (usually mid to late January).",
+          "date_2026": "2026-01-16",
+          "date_2027": "2027-01-06",
+          "calendar_system": "Tibetan Lunisolar",
+          "states": [
+            "Ladakh"
+          ]
+        },
+        {
+          "id": "fest-halda-festival",
+          "name": "Halda Festival Keylong",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Usually celebrated during mid-January.",
+          "date_2026": "2026-01-22",
+          "date_2027": "2027-01-18",
+          "calendar_system": "Tibetan Lunisolar",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-lohri-punjab",
+          "name": "Lohri Statewide",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated on January 13 annually.",
+          "date_2026": "2026-01-13",
+          "date_2027": "2027-01-13",
+          "calendar_system": "Solar / Bikrami",
+          "states": [
+            "Punjab",
+            "Haryana",
+            "Delhi",
+            "Chandigarh"
+          ]
+        },
+        {
+          "id": "fest-maghi-mela-muktsar",
+          "name": "Maghi Mela Sri Muktsar Sahib",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated on January 14 annually.",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Solar / Bikrami",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-delhi-arts-festival",
+          "name": "Delhi International Arts Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Prasiddha Foundation & Ministry of Culture.",
+          "date_2026": "2026-12-01",
+          "date_2027": "2027-12-01",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-urdu-heritage-festival",
+          "name": "Urdu Heritage Festival Red Fort",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Urdu Academy Delhi.",
+          "date_2026": "2026-02-20",
+          "date_2027": "2027-02-19",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-haridwar-kumbh-mela",
+          "name": "Haridwar Kumbh Mela & Ardh Kumbh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Determined by precise planetary alignments of Jupiter and the Sun.",
+          "date_2026": "2026-03-14",
+          "date_2027": "2027-03-30",
+          "calendar_system": "Astrological Lunisolar",
+          "states": [
+            "Uttarakhand"
+          ]
+        },
+        {
+          "id": "fest-magh-mela-prayagraj",
+          "name": "Magh Mela / Kumbh Mela Prayagraj",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Commences Paush Purnima and ends Maha Shivratri.",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Astrological / Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-jhansi-mahotsav",
+          "name": "Jhansi Mahotsav Bundelkhand",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Jhansi District Administration & UP Tourism.",
+          "date_2026": "2026-02-10",
+          "date_2027": "2027-02-12",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-kabir-utsav-maghar",
+          "name": "Kabir Utsav Maghar",
+          "date_type": "FIXED",
+          "date_rule": "Held annually mid-January.",
+          "date_2026": "2026-01-20",
+          "date_2027": "2027-01-20",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-international-kite-festival",
+          "name": "International Kite Festival (Uttarayan)",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated January 14-15 every year.",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Solar / Makar Sankranti",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-modhera-dance-festival",
+          "name": "Modhera Dance Festival Sun Temple",
+          "date_type": "FIXED",
+          "date_rule": "Third Friday to Sunday of January.",
+          "date_2026": "2026-01-16",
+          "date_2027": "2027-01-15",
+          "calendar_system": "Solar / Cultural",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-grape-escapade",
+          "name": "Grape Escapade Wine Festival Panaji",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by GTDC.",
+          "date_2026": "2026-02-05",
+          "date_2027": "2027-02-04",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Goa"
+          ]
+        },
+        {
+          "id": "fest-daman-beach-carnival",
+          "name": "Daman Beach Carnival & Seafood Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Held annually during the winter holiday season.",
+          "date_2026": "2026-12-25",
+          "date_2027": "2027-12-24",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Dadra and Nagar Haveli and Daman and Diu"
+          ]
+        },
+        {
+          "id": "fest-ellora-ajanta-festival",
+          "name": "Ellora-Ajanta International Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by MTDC.",
+          "date_2026": "2026-01-23",
+          "date_2027": "2027-01-22",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-banganga-music-festival",
+          "name": "Banganga Classical Music Festival",
+          "date_type": "FIXED",
+          "date_rule": "Held annually over a January weekend.",
+          "date_2026": "2026-01-10",
+          "date_2027": "2027-01-09",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-chikoo-festival-dahanu",
+          "name": "Chikoo Festival Dahanu & Bordi",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Chikoo Festival Organizing Committee.",
+          "date_2026": "2026-02-14",
+          "date_2027": "2027-02-13",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-lokrang-festival-bhopal",
+          "name": "Lokrang Festival Bhopal",
+          "date_type": "FIXED",
+          "date_rule": "Held annually January 26-30 starting on Republic Day.",
+          "date_2026": "2026-01-26",
+          "date_2027": "2027-01-26",
+          "calendar_system": "Gregorian / Annual",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-mandu-festival",
+          "name": "Mandu Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by MP Tourism.",
+          "date_2026": "2026-12-28",
+          "date_2027": "2027-12-28",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-sirpur-dance-festival",
+          "name": "Sirpur National Dance and Music Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Chhattisgarh Tourism.",
+          "date_2026": "2026-01-16",
+          "date_2027": "2027-01-15",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Chhattisgarh"
+          ]
+        },
+        {
+          "id": "fest-mandar-mahotsav-banka",
+          "name": "Mandar Mahotsav Banka",
+          "date_type": "FIXED",
+          "date_rule": "Commences on Makar Sankranti (January 14).",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Solar / Makar Sankranti",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-tusu-parab-jharkhand",
+          "name": "Tusu Parab Chotanagpur",
+          "date_type": "FIXED",
+          "date_rule": "Culminates on Makar Sankranti (January 14).",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Solar / Winter Harvest",
+          "states": [
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-hal-punhya-jharkhand",
+          "name": "Hal Punhya",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated on the day following Makar Sankranti (January 15).",
+          "date_2026": "2026-01-15",
+          "date_2027": "2027-01-15",
+          "calendar_system": "Solar / Magh Sankranti",
+          "states": [
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-mukteswar-dance-festival",
+          "name": "Mukteswar Dance Festival Bhubaneswar",
+          "date_type": "FIXED",
+          "date_rule": "Held annually January 14-16.",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-gangasagar-mela",
+          "name": "Gangasagar Mela Sagar Island",
+          "date_type": "FIXED",
+          "date_rule": "Culminates on Makar Sankranti dawn (January 14-15).",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Solar / Makar Sankranti",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-saraswati-puja-kolkata",
+          "name": "Saraswati Puja Kolkata",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Magha Shukla Panchami.",
+          "date_2026": "2026-01-23",
+          "date_2027": "2027-02-11",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-kenduli-baul-mela",
+          "name": "Kenduli Baul Mela Joydev",
+          "date_type": "FIXED",
+          "date_rule": "Commences on Makar Sankranti (January 14).",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Solar / Makar Sankranti",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-hampi-utsav",
+          "name": "Hampi Utsav",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Karnataka Tourism & Bellary District Administration.",
+          "date_2026": "2026-01-29",
+          "date_2027": "2027-01-28",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-pattadakal-dance-festival",
+          "name": "Pattadakal Dance Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Karnataka Tourism & Bagalkot Administration.",
+          "date_2026": "2026-01-23",
+          "date_2027": "2027-01-22",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-banashankari-jatre",
+          "name": "Banashankari Jatre Badami",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Pushya Purnima.",
+          "date_2026": "2026-02-01",
+          "date_2027": "2027-01-22",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-makaravilakku-sabarimala",
+          "name": "Makaravilakku Sabarimala",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated on Makar Sankranti evening.",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Solar / Makar Sankranti",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-nishagandhi-dance-festival",
+          "name": "Nishagandhi Dance Festival Thiruvananthapuram",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Kerala Tourism.",
+          "date_2026": "2026-01-20",
+          "date_2027": "2027-01-20",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-cochin-carnival",
+          "name": "Cochin Carnival Fort Kochi",
+          "date_type": "FIXED",
+          "date_rule": "Peaks on December 31 night and January 1 parade.",
+          "date_2026": "2026-12-31",
+          "date_2027": "2027-12-31",
+          "calendar_system": "Gregorian / Year-End",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-utsavam-kerala-arts",
+          "name": "Utsavam Kerala Arts Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Department of Tourism Kerala.",
+          "date_2026": "2026-02-10",
+          "date_2027": "2027-02-09",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-pongal-jallikattu",
+          "name": "Pongal & Jallikattu Madurai",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated January 14-17 annually.",
+          "date_2026": "2026-01-14",
+          "date_2027": "2027-01-14",
+          "calendar_system": "Solar / Thai Sankranti",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-margazhi-season-chennai",
+          "name": "Margazhi Music and Dance Season Chennai",
+          "date_type": "SOLAR",
+          "date_rule": "Full season runs mid-December to mid-January.",
+          "date_2026": "2026-12-15",
+          "date_2027": "2027-12-15",
+          "calendar_system": "Tamil Solar Calendar",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-mahabalipuram-dance-festival",
+          "name": "Mahabalipuram Indian Dance Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Full season runs mid-December to mid-January.",
+          "date_2026": "2026-12-25",
+          "date_2027": "2027-12-25",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-thaipusam-palani",
+          "name": "Thaipusam Palani",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Thaipusam day.",
+          "date_2026": "2026-02-01",
+          "date_2027": "2027-01-22",
+          "calendar_system": "Tamil Solar Calendar",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-mamallapuram-heritage-dance",
+          "name": "Mamallapuram Heritage Dance Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Runs for four weeks across December and January.",
+          "date_2026": "2026-12-25",
+          "date_2027": "2027-12-25",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-flamingo-festival-nelapattu",
+          "name": "Flamingo Festival Nelapattu & Pulicat Lake",
+          "date_type": "FIXED",
+          "date_rule": "Held annually in mid-January.",
+          "date_2026": "2026-01-18",
+          "date_2027": "2027-01-17",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "fest-visakha-utsav",
+          "name": "Visakha Utsav Visakhapatnam",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Andhra Pradesh Tourism.",
+          "date_2026": "2026-12-26",
+          "date_2027": "2027-12-26",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "fest-bhavani-deeksha-vijayawada",
+          "name": "Bhavani Deeksha Vijayawada",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Margashirsha Purnima.",
+          "date_2026": "2026-12-24",
+          "date_2027": "2027-12-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "fest-amaravati-buddhist-festival",
+          "name": "Amaravati Buddhist Heritage Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Andhra Pradesh Tourism.",
+          "date_2026": "2026-02-06",
+          "date_2027": "2027-02-05",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "fest-golconda-masters-festival",
+          "name": "Golconda Masters Cultural Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Telangana Tourism.",
+          "date_2026": "2026-01-23",
+          "date_2027": "2027-01-22",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-nagoba-jatara-adilabad",
+          "name": "Nagoba Jatara Keslapur Adilabad",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Pushya Amavasya.",
+          "date_2026": "2026-01-18",
+          "date_2027": "2027-02-06",
+          "calendar_system": "Hindu-Tribal Lunisolar / Winter",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-komuravelli-mallanna-jatara",
+          "name": "Komuravelli Mallanna Jatara",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Peak rituals occur on Sundays between Makar Sankranti and Maha Shivratri.",
+          "date_2026": "2026-01-18",
+          "date_2027": "2027-01-17",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-ramappa-heritage-festival",
+          "name": "Ramappa Temple Heritage Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Telangana Tourism.",
+          "date_2026": "2026-01-30",
+          "date_2027": "2027-01-29",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-puducherry-yoga-festival",
+          "name": "Puducherry International Yoga Festival",
+          "date_type": "FIXED",
+          "date_rule": "Held annually January 4-7.",
+          "date_2026": "2026-01-04",
+          "date_2027": "2027-01-04",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Puducherry"
+          ]
+        },
+        {
+          "id": "fest-lakshadweep-sea-festival",
+          "name": "Lakshadweep National Sea Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Lakshadweep Tourism (SPORTS).",
+          "date_2026": "2026-02-10",
+          "date_2027": "2027-02-09",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Lakshadweep"
+          ]
+        },
+        {
+          "id": "magh-bihu-assam",
+          "name": "Magh Bihu",
+          "date_type": "SOLAR",
+          "date_rule": "Makar Sankranti alignment in Magh month",
+          "date_2026": "2026-01-14 to 2026-01-15",
+          "date_2027": "2027-01-14 to 2027-01-15",
+          "calendar_system": "Assamese Solar Calendar (Magh 1)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "jonbeel-mela-assam",
+          "name": "Jonbeel Mela",
+          "date_type": "COMMUNITY_SPECIFIC",
+          "date_rule": "First Thursday through Saturday after Magh Bihu",
+          "date_2026": "2026-01-22 to 2026-01-24",
+          "date_2027": "2027-01-21 to 2027-01-23",
+          "calendar_system": "Assamese Calendar (Magh month weekend)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "dehing-patkai-festival-assam",
+          "name": "Dehing Patkai Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Second or third weekend of January",
+          "date_2026": "2026-01-16 to 2026-01-19",
+          "date_2027": "2027-01-15 to 2027-01-18",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "me-dam-me-phi-assam",
+          "name": "Me-Dam-Me-Phi",
+          "date_type": "FIXED",
+          "date_rule": "January 31 every year",
+          "date_2026": "2026-01-31",
+          "date_2027": "2027-01-31",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "brahmaputra-beach-festival-assam",
+          "name": "Brahmaputra Beach Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced by Assam Tourism for a mid-January weekend",
+          "date_2026": "2026-01-23 to 2026-01-25",
+          "date_2027": "2027-01-22 to 2027-01-24",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "torgya-festival-tawang",
+          "name": "Torgya Festival",
+          "date_type": "LUNAR",
+          "date_rule": "28th day of 11th Tibetan lunar month",
+          "date_2026": "2026-01-16 to 2026-01-18",
+          "date_2027": "2027-01-15 to 2027-01-17",
+          "calendar_system": "Tibetan Lunar Calendar (11th month, 28th-30th days)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "island-tourism-festival-andaman",
+          "name": "Island Tourism Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "First or second week of January annually",
+          "date_2026": "2026-01-05 to 2026-01-14",
+          "date_2027": "2027-01-05 to 2027-01-14",
+          "calendar_system": "Gregorian (Winter Calendar)",
+          "states": [
+            "Andaman and Nicobar Islands"
+          ]
+        },
+        {
+          "id": "subhash-mela-havelock",
+          "name": "Subhash Mela",
+          "date_type": "FIXED",
+          "date_rule": "January 20 to 26 annually (main day January 23)",
+          "date_2026": "2026-01-20 to 2026-01-26",
+          "date_2027": "2027-01-20 to 2027-01-26",
+          "calendar_system": "Solar Calendar (Fixed Date Window)",
+          "states": [
+            "Andaman and Nicobar Islands"
+          ]
+        },
+        {
+          "id": "makar-sankranti-pan-india",
+          "name": "Makar Sankranti",
+          "date_type": "SOLAR",
+          "date_rule": "Sun transit into Makara Rashi (January 14/15 annually)",
+          "date_2026": "2026-01-14 to 2026-01-15",
+          "date_2027": "2027-01-14 to 2027-01-15",
+          "calendar_system": "Solar Calendar (Fixed Date Window)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "February",
+      "festival_count": 47,
+      "festivals": [
+        {
+          "id": "fest-herath-kashmir",
+          "name": "Herath (Maha Shivratri of Kashmir)",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on the 13th night of Phalguna Krishna Paksha.",
+          "date_2026": "2026-02-15",
+          "date_2027": "2027-03-06",
+          "calendar_system": "Hindu Lunisolar (Kashmiri Bikrami)",
+          "states": [
+            "Jammu and Kashmir"
+          ]
+        },
+        {
+          "id": "fest-dosmochey-ladakh",
+          "name": "Dosmochey Festival Leh & Likir",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed at the close of the 12th month of the Tibetan calendar.",
+          "date_2026": "2026-02-14",
+          "date_2027": "2027-02-04",
+          "calendar_system": "Tibetan Lunisolar",
+          "states": [
+            "Ladakh"
+          ]
+        },
+        {
+          "id": "fest-mandi-shivratri",
+          "name": "International Mandi Shivratri Fair",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Commences the day after Maha Shivratri in Phalguna.",
+          "date_2026": "2026-02-16",
+          "date_2027": "2027-03-07",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-fagli-festival-lahaul",
+          "name": "Fagli Festival Lahaul",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Occurs on Phalguna Amavasya.",
+          "date_2026": "2026-02-17",
+          "date_2027": "2027-03-08",
+          "calendar_system": "Hindu-Tibetan Lunisolar",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-losar-lahaul-spiti",
+          "name": "Losar Festival Lahaul & Spiti",
+          "date_type": "LUNISOLAR",
+          "date_rule": "First day of the first Tibetan month.",
+          "date_2026": "2026-02-18",
+          "date_2027": "2027-02-08",
+          "calendar_system": "Tibetan Lunisolar",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-kila-raipur-sports",
+          "name": "Kila Raipur Rural Olympics",
+          "date_type": "FIXED",
+          "date_rule": "First Friday to Sunday of February.",
+          "date_2026": "2026-02-06",
+          "date_2027": "2027-02-05",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-chandigarh-rose-festival",
+          "name": "Chandigarh Rose Festival",
+          "date_type": "FIXED",
+          "date_rule": "Last Friday to Sunday of February.",
+          "date_2026": "2026-02-27",
+          "date_2027": "2027-02-26",
+          "calendar_system": "Gregorian / Botanical",
+          "states": [
+            "Chandigarh"
+          ]
+        },
+        {
+          "id": "fest-surajkund-crafts-mela",
+          "name": "Surajkund International Crafts Mela",
+          "date_type": "FIXED",
+          "date_rule": "Held annually from February 1 to mid-February.",
+          "date_2026": "2026-02-01",
+          "date_2027": "2027-02-01",
+          "calendar_system": "Gregorian / Annual",
+          "states": [
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-garden-tourism-festival",
+          "name": "Garden Tourism Festival",
+          "date_type": "FIXED",
+          "date_rule": "Third Friday to Sunday of February.",
+          "date_2026": "2026-02-20",
+          "date_2027": "2027-02-19",
+          "calendar_system": "Gregorian / Spring",
+          "states": [
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-lathmar-holi-barsana",
+          "name": "Lathmar Holi Barsana",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Phalguna Shukla Navami (approx 5-6 days before main Holi).",
+          "date_2026": "2026-02-27",
+          "date_2027": "2027-03-18",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-braj-ki-holi",
+          "name": "Braj Ki Holi Mathura & Vrindavan",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Peak events occur during the 7 days leading to Phalguna Purnima.",
+          "date_2026": "2026-03-03",
+          "date_2027": "2027-03-22",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-taj-mahotsav-agra",
+          "name": "Taj Mahotsav Agra",
+          "date_type": "FIXED",
+          "date_rule": "Held annually February 18-27.",
+          "date_2026": "2026-02-18",
+          "date_2027": "2027-02-18",
+          "calendar_system": "Gregorian / Annual",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-desert-festival-jaisalmer",
+          "name": "Desert Festival Jaisalmer",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Full moon of Magh month.",
+          "date_2026": "2026-02-01",
+          "date_2027": "2027-02-20",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-shekhawati-festival",
+          "name": "Shekhawati Heritage Festival Nawalgarh",
+          "date_type": "FIXED",
+          "date_rule": "Held annually in mid-February.",
+          "date_2026": "2026-02-13",
+          "date_2027": "2027-02-12",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-rann-utsav-kutch",
+          "name": "Rann Utsav Kutch",
+          "date_type": "SEASONAL",
+          "date_rule": "Full season runs November to February.",
+          "date_2026": "2026-11-15",
+          "date_2027": "2027-11-15",
+          "calendar_system": "Seasonal / Winter",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-bhavnath-mahadev-fair",
+          "name": "Bhavnath Mahadev Fair Girnar Junagadh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Maha Shivratri midnight.",
+          "date_2026": "2026-02-15",
+          "date_2027": "2027-03-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-somnath-mahotsav",
+          "name": "Somnath Mahotsav Prabhas Patan",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Maha Shivratri night.",
+          "date_2026": "2026-02-15",
+          "date_2027": "2027-03-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-goa-carnival",
+          "name": "Goa Carnival",
+          "date_type": "LUNAR",
+          "date_rule": "Dates vary based on Easter; held four days prior to Ash Wednesday.",
+          "date_2026": "2026-02-14",
+          "date_2027": "2027-02-06",
+          "calendar_system": "Christian Liturgical (Pre-Lent)",
+          "states": [
+            "Goa"
+          ]
+        },
+        {
+          "id": "fest-elephanta-festival",
+          "name": "Elephanta Cultural Festival Elephanta Island",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by MTDC.",
+          "date_2026": "2026-02-21",
+          "date_2027": "2027-02-20",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-kala-ghoda-arts-festival",
+          "name": "Kala Ghoda Arts Festival Mumbai",
+          "date_type": "FIXED",
+          "date_rule": "Held annually during the first full week of February.",
+          "date_2026": "2026-02-07",
+          "date_2027": "2027-02-06",
+          "calendar_system": "Gregorian / Annual",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-shivaji-jayanti-shivneri",
+          "name": "Shivaji Jayanti Shivneri & Pune",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated officially on February 19 annually.",
+          "date_2026": "2026-02-19",
+          "date_2027": "2027-02-19",
+          "calendar_system": "Solar & Lunisolar (Dual Observance)",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-khajuraho-dance-festival",
+          "name": "Khajuraho Dance Festival",
+          "date_type": "FIXED",
+          "date_rule": "Held annually February 20-26.",
+          "date_2026": "2026-02-20",
+          "date_2027": "2027-02-20",
+          "calendar_system": "Gregorian / Annual",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-allauddin-khan-samaroh",
+          "name": "Allauddin Khan Sangeet Samaroh Maihar",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Organized annually by Ustad Allauddin Khan Sangeet Akademi.",
+          "date_2026": "2026-02-12",
+          "date_2027": "2027-02-11",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-bhojpur-utsav",
+          "name": "Bhojpur Utsav",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Maha Shivratri.",
+          "date_2026": "2026-02-15",
+          "date_2027": "2027-03-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-rajim-kumbh-mela",
+          "name": "Rajim Kumbh Mela",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins Magh Purnima and concludes Maha Shivratri.",
+          "date_2026": "2026-02-01",
+          "date_2027": "2027-02-20",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Chhattisgarh"
+          ]
+        },
+        {
+          "id": "fest-dhauli-kalinga-mahotsav",
+          "name": "Dhauli Kalinga Mahotsav",
+          "date_type": "FIXED",
+          "date_rule": "Held annually February 6-8.",
+          "date_2026": "2026-02-06",
+          "date_2027": "2027-02-06",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-joranda-mela-dhenkanal",
+          "name": "Joranda Mela Dhenkanal",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Magha Purnima.",
+          "date_2026": "2026-02-01",
+          "date_2027": "2027-02-20",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-jalpesh-mela",
+          "name": "Jalpesh Mela Jalpaiguri",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Commences on Maha Shivratri.",
+          "date_2026": "2026-02-15",
+          "date_2027": "2027-03-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-mahamastakabhisheka-shravanabelagola",
+          "name": "Mahamastakabhisheka Shravanabelagola",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated every 12 years in February (next in 2030).",
+          "date_2026": "2030-02-17",
+          "date_2027": "2030-02-25",
+          "calendar_system": "Astrological / 12-Year Cycle",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-chalukya-utsav-badami",
+          "name": "Chalukya Utsav Badami & Aihole",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Karnataka Tourism & Bagalkot Administration.",
+          "date_2026": "2026-02-06",
+          "date_2027": "2027-02-05",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-attukal-pongala",
+          "name": "Attukal Pongala Thiruvananthapuram",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Main Pongala day falls on Pooram star in Kumbham.",
+          "date_2026": "2026-03-03",
+          "date_2027": "2027-02-21",
+          "calendar_system": "Malayalam Solar Calendar",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-maramon-convention",
+          "name": "Maramon Convention",
+          "date_type": "FIXED",
+          "date_rule": "Held annually during the second week of February.",
+          "date_2026": "2026-02-08",
+          "date_2027": "2027-02-14",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-natyanjali-dance-festival",
+          "name": "Natyanjali Dance Festival Chidambaram",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Maha Shivratri night.",
+          "date_2026": "2026-02-15",
+          "date_2027": "2027-03-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-kumbakonam-mahamaham",
+          "name": "Kumbakonam Mahamaham",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated every 12 years (next in 2028).",
+          "date_2026": "2028-02-28",
+          "date_2027": "2028-03-08",
+          "calendar_system": "Astrological / 12-Year Cycle",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-lepakshi-heritage-festival",
+          "name": "Lepakshi Heritage Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Andhra Pradesh Tourism.",
+          "date_2026": "2026-02-14",
+          "date_2027": "2027-02-13",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "fest-kotappakonda-fair-guntur",
+          "name": "Kotappakonda Fair Guntur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Maha Shivratri.",
+          "date_2026": "2026-02-15",
+          "date_2027": "2027-03-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "fest-sammakka-saralamma-jatara",
+          "name": "Sammakka Saralamma Jatara Medaram",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated biennially in February (held in 2026, next in 2028).",
+          "date_2026": "2026-02-01",
+          "date_2027": "2028-02-18",
+          "calendar_system": "Tribal-Hindu Lunisolar / Biennial",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-edupayala-jathara",
+          "name": "Edupayala Vana Durga Bhavani Jathara",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during Maha Shivratri.",
+          "date_2026": "2026-02-15",
+          "date_2027": "2027-03-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "ali-ai-ligang-assam",
+          "name": "Ali-Ai-Ligang",
+          "date_type": "COMMUNITY_SPECIFIC",
+          "date_rule": "First Wednesday of Assamese month Phagun",
+          "date_2026": "2026-02-18 to 2026-02-22",
+          "date_2027": "2027-02-17 to 2027-02-21",
+          "calendar_system": "Assamese Luni-Solar Calendar (Phagun month)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "losar-festival-tawang",
+          "name": "Losar Festival Tawang",
+          "date_type": "LUNAR",
+          "date_rule": "First Day of first month of Tibetan Lunar Calendar",
+          "date_2026": "2026-02-18 to 2026-02-20",
+          "date_2027": "2027-02-07 to 2027-02-09",
+          "calendar_system": "Tibetan Lunar Calendar (First month, day 1)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "nyokum-yullo-arunachal",
+          "name": "Nyokum Yullo",
+          "date_type": "FIXED",
+          "date_rule": "February 26 annually (celebrations from Feb 24 to 27)",
+          "date_2026": "2026-02-24 to 2026-02-27",
+          "date_2027": "2027-02-24 to 2027-02-27",
+          "calendar_system": "Solar Calendar (Fixed Dates)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "sekrenyi-festival-nagaland",
+          "name": "Sekrenyi",
+          "date_type": "FIXED",
+          "date_rule": "February 25 to March 3 annually",
+          "date_2026": "2026-02-25 to 2026-03-03",
+          "date_2027": "2027-02-25 to 2027-03-03",
+          "calendar_system": "Solar Calendar (Fixed Date Window)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "hega-festival-nagaland",
+          "name": "Hega Festival",
+          "date_type": "FIXED",
+          "date_rule": "February 10 to 12 annually",
+          "date_2026": "2026-02-10 to 2026-02-12",
+          "date_2027": "2027-02-10 to 2027-02-12",
+          "calendar_system": "Solar Calendar (Fixed Dates)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "lui-ngai-ni-manipur",
+          "name": "Lui-Ngai-Ni",
+          "date_type": "FIXED",
+          "date_rule": "February 15 annually",
+          "date_2026": "2026-02-14 to 2026-02-15",
+          "date_2027": "2027-02-14 to 2027-02-15",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Manipur"
+          ]
+        },
+        {
+          "id": "ranikor-river-festival-meghalaya",
+          "name": "Ranikor River Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Last weekend of February annually",
+          "date_2026": "2026-02-27 to 2026-02-28",
+          "date_2027": "2027-02-26 to 2027-02-27",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Meghalaya"
+          ]
+        },
+        {
+          "id": "losar-festival-sikkim",
+          "name": "Sikkimese Losar",
+          "date_type": "LUNAR",
+          "date_rule": "First day of the first Tibetan lunar month",
+          "date_2026": "2026-02-18 to 2026-02-20",
+          "date_2027": "2027-02-07 to 2027-02-09",
+          "calendar_system": "Tibetan Lunar Calendar (First month, day 1)",
+          "states": [
+            "Sikkim"
+          ]
+        },
+        {
+          "id": "maha-shivratri-pan-india",
+          "name": "Maha Shivratri",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Krishna Chaturdashi of Phalguna month",
+          "date_2026": "2026-02-15 to 2026-02-16",
+          "date_2027": "2027-03-06 to 2027-03-07",
+          "calendar_system": "Hindu Luni-Solar Calendar (Phalguna Krishna Chaturdashi)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "March",
+      "festival_count": 39,
+      "festivals": [
+        {
+          "id": "fest-hola-mohalla",
+          "name": "Hola Mohalla Sri Anandpur Sahib",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins the day after Holi in Phalguna/Chaitra.",
+          "date_2026": "2026-03-04",
+          "date_2027": "2027-03-23",
+          "calendar_system": "Hindu-Nanakshahi Lunisolar",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-plaza-carnival-sector17",
+          "name": "Plaza Carnival Sector 17",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Organized on Saturday evenings during temperate months.",
+          "date_2026": "2026-10-17",
+          "date_2027": "2027-10-16",
+          "calendar_system": "Civic / Recurring",
+          "states": [
+            "Chandigarh"
+          ]
+        },
+        {
+          "id": "fest-jahan-e-khusrau",
+          "name": "Jahan-e-Khusrau World Sufi Festival",
+          "date_type": "FIXED",
+          "date_rule": "Held annually over a March weekend.",
+          "date_2026": "2026-03-06",
+          "date_2027": "2027-03-12",
+          "calendar_system": "Gregorian / Spring",
+          "states": [
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-international-yoga-festival",
+          "name": "International Yoga Festival Rishikesh",
+          "date_type": "FIXED",
+          "date_rule": "Held annually March 1-7.",
+          "date_2026": "2026-03-01",
+          "date_2027": "2027-03-01",
+          "calendar_system": "Gregorian / Annual",
+          "states": [
+            "Uttarakhand"
+          ]
+        },
+        {
+          "id": "fest-phool-dei-uttarakhand",
+          "name": "Phool Dei Spring Flower Festival",
+          "date_type": "SOLAR",
+          "date_rule": "Celebrated on Chaitra Sankranti (around March 14-15).",
+          "date_2026": "2026-03-15",
+          "date_2027": "2027-03-15",
+          "calendar_system": "Solar / Chaitra Sankranti",
+          "states": [
+            "Uttarakhand"
+          ]
+        },
+        {
+          "id": "fest-ram-navami-ayodhya",
+          "name": "Ram Navami Ayodhya",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Chaitra Shukla Navami at exactly 12:00 noon.",
+          "date_2026": "2026-03-27",
+          "date_2027": "2027-04-15",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-mewar-festival-udaipur",
+          "name": "Mewar Festival Udaipur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Gangaur day (Chaitra Shukla Tritiya).",
+          "date_2026": "2026-03-22",
+          "date_2027": "2027-04-10",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-gangaur-festival-jaipur",
+          "name": "Gangaur Festival Jaipur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Chaitra Shukla Tritiya.",
+          "date_2026": "2026-03-22",
+          "date_2027": "2027-04-10",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-elephant-festival-jaipur",
+          "name": "Elephant Festival Jaipur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held on the eve of Holi in Phalguna.",
+          "date_2026": "2026-03-03",
+          "date_2027": "2027-03-22",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-brij-holi-bharatpur",
+          "name": "Brij Holi Festival Bharatpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held 2-3 days before Holi.",
+          "date_2026": "2026-03-01",
+          "date_2027": "2027-03-20",
+          "calendar_system": "Hindu Lunisolar / Spring",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-madhavpur-fair",
+          "name": "Madhavpur Ghed Fair Porbandar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Chaitra Shukla Navami.",
+          "date_2026": "2026-03-27",
+          "date_2027": "2027-04-15",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-kavant-fair",
+          "name": "Kavant Tribal Fair Chhota Udepur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held three days after Holi.",
+          "date_2026": "2026-03-07",
+          "date_2027": "2027-03-26",
+          "calendar_system": "Hindu Lunisolar / Spring",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-dang-darbar-ahwa",
+          "name": "Dang Darbar Ahwa",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held 2-3 days before Holi.",
+          "date_2026": "2026-03-01",
+          "date_2027": "2027-03-20",
+          "calendar_system": "Hindu Lunisolar / Spring",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-chitra-vichitra-fair",
+          "name": "Chitra Vichitra Fair Sabarkantha",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held a fortnight after Holi on Amavasya.",
+          "date_2026": "2026-03-18",
+          "date_2027": "2027-04-06",
+          "calendar_system": "Hindu Lunisolar / Spring",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-shigmo-festival",
+          "name": "Shigmo Festival Statewide",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during the bright half of Phalguna month.",
+          "date_2026": "2026-03-03",
+          "date_2027": "2027-03-22",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Goa"
+          ]
+        },
+        {
+          "id": "fest-gangaji-fair-daman",
+          "name": "Gangaji Fair Daman",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held in Phalguna month.",
+          "date_2026": "2026-03-05",
+          "date_2027": "2027-03-24",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Dadra and Nagar Haveli and Daman and Diu"
+          ]
+        },
+        {
+          "id": "fest-gudi-padwa",
+          "name": "Gudi Padwa Mumbai & Nagpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Chaitra Shukla Pratipada.",
+          "date_2026": "2026-03-20",
+          "date_2027": "2027-04-07",
+          "calendar_system": "Hindu Lunisolar (Shalivahana Saka)",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-bhagoria-tribal-fair",
+          "name": "Bhagoria Tribal Fair Jhabua & Alirajpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during the week leading up to Holi in Phalguna.",
+          "date_2026": "2026-02-25",
+          "date_2027": "2027-03-16",
+          "calendar_system": "Hindu Lunisolar / Spring",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-madai-festival-bastar",
+          "name": "Madai Festival Bastar & Narayanpur",
+          "date_type": "COMMUNITY_SPECIFIC",
+          "date_rule": "Rotates across villages during winter months.",
+          "date_2026": "2026-02-23",
+          "date_2027": "2027-02-12",
+          "calendar_system": "Tribal Calendar / Winter",
+          "states": [
+            "Chhattisgarh"
+          ]
+        },
+        {
+          "id": "fest-bhoramdeo-mahotsav",
+          "name": "Bhoramdeo Mahotsav Kawardha",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held in Phalguna month around Holi.",
+          "date_2026": "2026-03-08",
+          "date_2027": "2027-03-27",
+          "calendar_system": "Hindu Lunisolar / Spring",
+          "states": [
+            "Chhattisgarh"
+          ]
+        },
+        {
+          "id": "fest-sarhul-festival-ranchi",
+          "name": "Sarhul Festival Ranchi",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Chaitra Shukla Tritiya.",
+          "date_2026": "2026-03-22",
+          "date_2027": "2027-04-10",
+          "calendar_system": "Hindu-Tribal Lunisolar / Spring",
+          "states": [
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-taratarini-mela",
+          "name": "Taratarini Mela Ganjam",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held on all Tuesdays of Chaitra month.",
+          "date_2026": "2026-03-24",
+          "date_2027": "2027-04-13",
+          "calendar_system": "Hindu Lunisolar / Spring",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-basanta-utsav-shantiniketan",
+          "name": "Basanta Utsav Shantiniketan",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on the day of Holi (Phalguna Purnima).",
+          "date_2026": "2026-03-03",
+          "date_2027": "2027-03-22",
+          "calendar_system": "Hindu Lunisolar / Spring",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-kambala-buffalo-race",
+          "name": "Kambala Buffalo Race Coastal Karnataka",
+          "date_type": "SEASONAL",
+          "date_rule": "Flagship races held between December and February.",
+          "date_2026": "2026-12-12",
+          "date_2027": "2027-12-11",
+          "calendar_system": "Seasonal / Winter Slush",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-karaga-shaktyotsava",
+          "name": "Karaga Shaktyotsava Bengaluru",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on the midnight of Chaitra Purnima.",
+          "date_2026": "2026-04-02",
+          "date_2027": "2027-04-20",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-vairamudi-brahmotsavam",
+          "name": "Vairamudi Brahmotsavam Melukote",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on the night of Pushya Nakshatra in Phalguna/Chaitra.",
+          "date_2026": "2026-03-29",
+          "date_2027": "2027-03-18",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-hoysala-mahotsava",
+          "name": "Hoysala Mahotsava Halebidu & Belur",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Karnataka Tourism & Hassan District Administration.",
+          "date_2026": "2026-03-13",
+          "date_2027": "2027-03-12",
+          "calendar_system": "Gregorian / Spring",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-arubathumoovar-festival",
+          "name": "Arubathumoovar Festival Mylapore Chennai",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during Panguni month (March - April).",
+          "date_2026": "2026-03-31",
+          "date_2027": "2027-04-19",
+          "calendar_system": "Tamil Solar Calendar",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-panguni-uthiram",
+          "name": "Panguni Uthiram Statewide",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Panguni Uthiram day.",
+          "date_2026": "2026-04-02",
+          "date_2027": "2027-03-22",
+          "calendar_system": "Tamil Solar Calendar",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-ugadi-andhra",
+          "name": "Ugadi Statewide",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Chaitra Suddha Padyami.",
+          "date_2026": "2026-03-20",
+          "date_2027": "2027-04-07",
+          "calendar_system": "Hindu Lunisolar (Shalivahana Saka)",
+          "states": [
+            "Andhra Pradesh",
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-sri-rama-navami-bhadrachalam",
+          "name": "Sri Rama Navami Bhadrachalam",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Chaitra Shukla Navami at exact mid-day.",
+          "date_2026": "2026-03-27",
+          "date_2027": "2027-04-15",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-eid-ul-fitr-lakshadweep",
+          "name": "Eid-ul-Fitr Kavaratti",
+          "date_type": "LUNAR",
+          "date_rule": "Dates determined by moon sighting marking the end of Ramadan.",
+          "date_2026": "2026-03-20",
+          "date_2027": "2027-03-10",
+          "calendar_system": "Islamic Lunar (Hijri)",
+          "states": [
+            "Lakshadweep"
+          ]
+        },
+        {
+          "id": "yaoshang-festival-manipur",
+          "name": "Yaoshang",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Full moon of Phalguna month",
+          "date_2026": "2026-03-03 to 2026-03-07",
+          "date_2027": "2027-03-22 to 2027-03-26",
+          "calendar_system": "Meitei Luni-Solar Calendar (Phalguna Full Moon)",
+          "states": [
+            "Manipur"
+          ]
+        },
+        {
+          "id": "chapchar-kut-mizoram",
+          "name": "Chapchar Kut",
+          "date_type": "FIXED",
+          "date_rule": "First Friday of March annually",
+          "date_2026": "2026-03-06",
+          "date_2027": "2027-03-05",
+          "calendar_system": "Solar Calendar (First Friday of March)",
+          "states": [
+            "Mizoram"
+          ]
+        },
+        {
+          "id": "lyuva-khutla-mizoram",
+          "name": "Lyuva Khutla",
+          "date_type": "FIXED",
+          "date_rule": "Third Tuesday to Thursday of March annually",
+          "date_2026": "2026-03-17 to 2026-03-19",
+          "date_2027": "2027-03-16 to 2027-03-18",
+          "calendar_system": "Solar Calendar (March Window)",
+          "states": [
+            "Mizoram"
+          ]
+        },
+        {
+          "id": "bumchu-festival-sikkim",
+          "name": "Bumchu Festival",
+          "date_type": "LUNAR",
+          "date_rule": "14th and 15th days of the first Tibetan lunar month",
+          "date_2026": "2026-03-03 to 2026-03-04",
+          "date_2027": "2027-02-21 to 2027-02-22",
+          "calendar_system": "Tibetan Lunar Calendar (1st month, 14th-15th days)",
+          "states": [
+            "Sikkim"
+          ]
+        },
+        {
+          "id": "holi-festival-of-colours",
+          "name": "Holi",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Phalguna Purnima (full moon of Phalguna month)",
+          "date_2026": "2026-03-03 to 2026-03-04",
+          "date_2027": "2027-03-22 to 2027-03-23",
+          "calendar_system": "Hindu Luni-Solar Calendar (Phalguna Purnima)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        },
+        {
+          "id": "eid-ul-fitr-pan-india",
+          "name": "Eid-ul-Fitr",
+          "date_type": "LUNAR",
+          "date_rule": "First day of Shawwal following moon sighting (Ruyat-e-Hilal)",
+          "date_2026": "2026-03-20 to 2026-03-21",
+          "date_2027": "2027-03-10 to 2027-03-11",
+          "calendar_system": "Islamic Hijri Lunar Calendar (Shawwal 1)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        },
+        {
+          "id": "mahavir-jayanti-pan-india",
+          "name": "Mahavir Jayanti",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Chaitra Shukla Trayodashi (13th day of bright fortnight of Chaitra)",
+          "date_2026": "2026-03-31",
+          "date_2027": "2027-04-19",
+          "calendar_system": "Jain Luni-Solar Calendar (Chaitra Shukla Trayodashi)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "April",
+      "festival_count": 26,
+      "festivals": [
+        {
+          "id": "fest-tulip-festival-srinagar",
+          "name": "Tulip Festival Srinagar",
+          "date_type": "SEASONAL",
+          "date_rule": "Usually commences first week of April depending on bud blossoming.",
+          "date_2026": "2026-04-05",
+          "date_2027": "2027-04-03",
+          "calendar_system": "Gregorian / Seasonal",
+          "states": [
+            "Jammu and Kashmir"
+          ]
+        },
+        {
+          "id": "fest-baisakhi-mughal-gardens",
+          "name": "Baisakhi at Mughal Gardens Srinagar",
+          "date_type": "SOLAR",
+          "date_rule": "Mesha Sankranti solar transition.",
+          "date_2026": "2026-04-14",
+          "date_2027": "2027-04-14",
+          "calendar_system": "Solar",
+          "states": [
+            "Jammu and Kashmir"
+          ]
+        },
+        {
+          "id": "fest-suhi-mela-chamba",
+          "name": "Suhi Mela Chamba",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated from 1st to 3rd of Baisakh month.",
+          "date_2026": "2026-04-13",
+          "date_2027": "2027-04-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-baisakhi-punjab",
+          "name": "Vaisakhi / Baisakhi Amritsar",
+          "date_type": "SOLAR",
+          "date_rule": "Fixed solar calendar date (April 13 or 14).",
+          "date_2026": "2026-04-14",
+          "date_2027": "2027-04-14",
+          "calendar_system": "Solar (Nanakshahi / Bikrami)",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-baisakhi-mela-pinjore",
+          "name": "Baisakhi Mela Pinjore",
+          "date_type": "FIXED",
+          "date_rule": "Held around April 13-14.",
+          "date_2026": "2026-04-13",
+          "date_2027": "2027-04-13",
+          "calendar_system": "Solar / Harvest",
+          "states": [
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-dilli-haat-baisakhi",
+          "name": "Dilli Haat Baisakhi and Crafts Mela",
+          "date_type": "FIXED",
+          "date_rule": "Held mid-April around Baisakhi day.",
+          "date_2026": "2026-04-13",
+          "date_2027": "2027-04-13",
+          "calendar_system": "Solar / Harvest",
+          "states": [
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-karni-mata-fair-deshnoke",
+          "name": "Karni Mata Fair Deshnoke",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed during Chaitra Navratri and Ashwin Navratri.",
+          "date_2026": "2026-10-15",
+          "date_2027": "2027-10-05",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-jyotiba-fair-kolhapur",
+          "name": "Jyotiba Fair Wadi Ratnagiri Kolhapur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Chaitra Purnima.",
+          "date_2026": "2026-04-02",
+          "date_2027": "2027-04-20",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-ujjain-simhastha-kumbh",
+          "name": "Ujjain Simhastha Kumbh Mela",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Occurs every 12 years (next in 2028).",
+          "date_2026": "2028-04-09",
+          "date_2027": "2028-05-08",
+          "calendar_system": "Astrological / 12-Year Cycle",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-bhagta-parab",
+          "name": "Bhagta Parab",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during spring in Chaitra/Baisakh.",
+          "date_2026": "2026-04-14",
+          "date_2027": "2027-04-14",
+          "calendar_system": "Hindu-Tribal Lunisolar / Spring",
+          "states": [
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-chandan-yatra-puri",
+          "name": "Chandan Yatra Puri",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Akshaya Tritiya.",
+          "date_2026": "2026-04-19",
+          "date_2027": "2027-05-09",
+          "calendar_system": "Hindu Lunisolar / Summer",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-chhau-mahotsav-baripada",
+          "name": "Chhau Mahotsav Baripada",
+          "date_type": "FIXED",
+          "date_rule": "Held annually April 11-13.",
+          "date_2026": "2026-04-11",
+          "date_2027": "2027-04-11",
+          "calendar_system": "Solar / Chaitra Parva",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-charak-puja-bengal",
+          "name": "Charak Puja & Gajan",
+          "date_type": "SOLAR",
+          "date_rule": "Concludes on Chaitra Sankranti (April 13-14).",
+          "date_2026": "2026-04-14",
+          "date_2027": "2027-04-14",
+          "calendar_system": "Bengali Solar Calendar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-thrissur-pooram",
+          "name": "Thrissur Pooram",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Pooram star in the Malayalam month of Medam.",
+          "date_2026": "2026-04-27",
+          "date_2027": "2027-05-16",
+          "calendar_system": "Malayalam Solar Calendar",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-vishu-kerala",
+          "name": "Vishu Statewide",
+          "date_type": "SOLAR",
+          "date_rule": "Celebrated on the first day of Medam month (April 14-15 annually).",
+          "date_2026": "2026-04-14",
+          "date_2027": "2027-04-15",
+          "calendar_system": "Malayalam Solar Calendar",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-chithirai-festival-madurai",
+          "name": "Chithirai Festival Madurai",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Chitra Pournami.",
+          "date_2026": "2026-05-02",
+          "date_2027": "2027-04-21",
+          "calendar_system": "Tamil Solar Calendar",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "bohag-bihu-assam",
+          "name": "Bohag Bihu",
+          "date_type": "SOLAR",
+          "date_rule": "First day of Assamese month Bohag (April 14/15 annually)",
+          "date_2026": "2026-04-14 to 2026-04-20",
+          "date_2027": "2027-04-14 to 2027-04-20",
+          "calendar_system": "Assamese Solar Calendar (Bohag 1)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "baishagu-festival-assam",
+          "name": "Baishagu",
+          "date_type": "SOLAR",
+          "date_rule": "April 14/15 annually coinciding with Spring Equinox calendar change",
+          "date_2026": "2026-04-14 to 2026-04-20",
+          "date_2027": "2027-04-14 to 2027-04-20",
+          "calendar_system": "Assamese/Bodo Solar Calendar",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "mopin-festival-arunachal",
+          "name": "Mopin Festival",
+          "date_type": "FIXED",
+          "date_rule": "April 5 annually (festivities April 4 to 8)",
+          "date_2026": "2026-04-04 to 2026-04-08",
+          "date_2027": "2027-04-04 to 2027-04-08",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "sanken-festival-arunachal",
+          "name": "Sanken Festival",
+          "date_type": "SOLAR",
+          "date_rule": "April 13 to 15 annually",
+          "date_2026": "2026-04-13 to 2026-04-15",
+          "date_2027": "2027-04-13 to 2027-04-15",
+          "calendar_system": "Tai Solar Calendar (Mid-April)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "aoleang-monyu-nagaland",
+          "name": "Aoleang Monyu",
+          "date_type": "FIXED",
+          "date_rule": "April 1 to 6 annually",
+          "date_2026": "2026-04-01 to 2026-04-06",
+          "date_2027": "2027-04-01 to 2027-04-06",
+          "calendar_system": "Solar Calendar (Fixed Dates)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "cheiraoba-festival-manipur",
+          "name": "Cheiraoba",
+          "date_type": "LUNISOLAR",
+          "date_rule": "First day of Sajibu month (New Moon)",
+          "date_2026": "2026-03-20",
+          "date_2027": "2027-04-07",
+          "calendar_system": "Meitei Luni-Solar Calendar (Sajibu 1)",
+          "states": [
+            "Manipur"
+          ]
+        },
+        {
+          "id": "shad-suk-mynsiem-meghalaya",
+          "name": "Shad Suk Mynsiem",
+          "date_type": "COMMUNITY_SPECIFIC",
+          "date_rule": "Second weekend of April annually",
+          "date_2026": "2026-04-11 to 2026-04-13",
+          "date_2027": "2027-04-10 to 2027-04-12",
+          "calendar_system": "Solar Calendar (Spring Season)",
+          "states": [
+            "Meghalaya"
+          ]
+        },
+        {
+          "id": "strawberry-festival-meghalaya",
+          "name": "Meghalaya Strawberry Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "First weekend of April annually",
+          "date_2026": "2026-04-03 to 2026-04-05",
+          "date_2027": "2027-04-02 to 2027-04-04",
+          "calendar_system": "Gregorian (Harvest Calendar)",
+          "states": [
+            "Meghalaya"
+          ]
+        },
+        {
+          "id": "garia-puja-tripura",
+          "name": "Garia Puja",
+          "date_type": "SOLAR",
+          "date_rule": "Commences on April 14 (Chaitra Sankranti) annually",
+          "date_2026": "2026-04-14 to 2026-04-20",
+          "date_2027": "2027-04-14 to 2027-04-20",
+          "calendar_system": "Solar Calendar (Chaitra Sankranti / Baisakh 1)",
+          "states": [
+            "Tripura"
+          ]
+        },
+        {
+          "id": "beach-festival-andaman",
+          "name": "Andaman Beach Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Third weekend of April annually",
+          "date_2026": "2026-04-17 to 2026-04-19",
+          "date_2027": "2027-04-16 to 2027-04-18",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Andaman and Nicobar Islands"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "May",
+      "festival_count": 17,
+      "festivals": [
+        {
+          "id": "fest-urs-shah-e-hamdan",
+          "name": "Urs Shah-e-Hamdan Srinagar",
+          "date_type": "LUNAR",
+          "date_rule": "Observed on 6th of Dhul Hijjah in the Islamic calendar.",
+          "date_2026": "2026-05-23",
+          "date_2027": "2027-05-12",
+          "calendar_system": "Islamic Lunar (Hijri)",
+          "states": [
+            "Jammu and Kashmir"
+          ]
+        },
+        {
+          "id": "fest-kheer-bhawani-mela",
+          "name": "Kheer Bhawani Mela Tulmulla",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed on Shukla Ashtami of Jyeshtha.",
+          "date_2026": "2026-06-22",
+          "date_2027": "2027-06-11",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Jammu and Kashmir"
+          ]
+        },
+        {
+          "id": "fest-doongri-fair-manali",
+          "name": "Doongri Fair Manali",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated during mid-May in Jyeshtha month.",
+          "date_2026": "2026-05-14",
+          "date_2027": "2027-05-14",
+          "calendar_system": "Solar / Lunar",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-ganga-dussehra-haridwar",
+          "name": "Ganga Dussehra Haridwar & Rishikesh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed on Jyeshtha Shukla Dashami.",
+          "date_2026": "2026-05-25",
+          "date_2027": "2027-06-14",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttarakhand",
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-sarnath-buddha-mahotsav",
+          "name": "Sarnath Buddha Mahotsav",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Vaisakha Purnima (Buddha Purnima).",
+          "date_2026": "2026-05-31",
+          "date_2027": "2027-05-20",
+          "calendar_system": "Buddhist Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-malwa-utsav",
+          "name": "Malwa Utsav Indore & Ujjain",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by MP Tourism.",
+          "date_2026": "2026-05-08",
+          "date_2027": "2027-05-07",
+          "calendar_system": "Gregorian / Spring",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-buddha-jayanti-bodh-gaya",
+          "name": "Buddha Jayanti Bodh Gaya",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Vaisakha Purnima.",
+          "date_2026": "2026-05-31",
+          "date_2027": "2027-05-20",
+          "calendar_system": "Buddhist Lunisolar",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-shital-sasthi-sambalpur",
+          "name": "Shital Sasthi Sambalpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Jyeshtha Shukla Shashti.",
+          "date_2026": "2026-06-20",
+          "date_2027": "2027-06-10",
+          "calendar_system": "Hindu Lunisolar / Summer",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-yakshagana-festival",
+          "name": "Yakshagana Bayalata Festival Coastal Karnataka",
+          "date_type": "SEASONAL",
+          "date_rule": "Peak performances occur between December and April.",
+          "date_2026": "2026-12-15",
+          "date_2027": "2027-12-15",
+          "calendar_system": "Seasonal / Winter-Spring",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-theyyam-festival-malabar",
+          "name": "Theyyam Festival North Malabar",
+          "date_type": "SEASONAL",
+          "date_rule": "Peak performances occur between December and March.",
+          "date_2026": "2026-12-15",
+          "date_2027": "2027-12-15",
+          "calendar_system": "Malayalam Solar Calendar",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-villianur-car-festival",
+          "name": "Villianur Temple Car Festival",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Vaikasi Pournami.",
+          "date_2026": "2026-05-31",
+          "date_2027": "2027-05-20",
+          "calendar_system": "Tamil Solar Calendar",
+          "states": [
+            "Puducherry"
+          ]
+        },
+        {
+          "id": "moatsu-mong-nagaland",
+          "name": "Moatsu Mong",
+          "date_type": "FIXED",
+          "date_rule": "May 1 to 3 annually",
+          "date_2026": "2026-05-01 to 2026-05-03",
+          "date_2027": "2027-05-01 to 2027-05-03",
+          "calendar_system": "Solar Calendar (Fixed Dates)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "bob-dylan-tribute-shillong",
+          "name": "Bob Dylan Birthday Tribute Shillong",
+          "date_type": "FIXED",
+          "date_rule": "May 24 annually",
+          "date_2026": "2026-05-24",
+          "date_2027": "2027-05-24",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Meghalaya"
+          ]
+        },
+        {
+          "id": "saga-dawa-sikkim",
+          "name": "Saga Dawa",
+          "date_type": "LUNAR",
+          "date_rule": "Full moon of the fourth Tibetan lunar month",
+          "date_2026": "2026-05-31",
+          "date_2027": "2027-05-20",
+          "calendar_system": "Tibetan Lunar Calendar (4th month, 15th day)",
+          "states": [
+            "Sikkim"
+          ]
+        },
+        {
+          "id": "monsoon-music-festival-andaman",
+          "name": "Monsoon Music Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Last weekend of May or first weekend of June annually",
+          "date_2026": "2026-05-29 to 2026-05-31",
+          "date_2027": "2027-05-28 to 2027-05-30",
+          "calendar_system": "Solar Calendar (Late May / Early June)",
+          "states": [
+            "Andaman and Nicobar Islands"
+          ]
+        },
+        {
+          "id": "eid-ul-adha-pan-india",
+          "name": "Eid-ul-Adha",
+          "date_type": "LUNAR",
+          "date_rule": "10th day of Islamic month Dhu al-Hijjah",
+          "date_2026": "2026-05-27 to 2026-05-29",
+          "date_2027": "2027-05-17 to 2027-05-19",
+          "calendar_system": "Islamic Hijri Lunar Calendar (Dhu al-Hijjah 10)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        },
+        {
+          "id": "buddha-purnima-pan-india",
+          "name": "Buddha Purnima",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Vaisakha Purnima (full moon of Vaisakha month)",
+          "date_2026": "2026-05-31",
+          "date_2027": "2027-05-20",
+          "calendar_system": "Luni-Solar Calendar (Vaisakha Purnima)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "June",
+      "festival_count": 11,
+      "festivals": [
+        {
+          "id": "fest-hemis-festival",
+          "name": "Hemis Festival Ladakh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "10th day of the 5th month of the Tibetan lunar calendar.",
+          "date_2026": "2026-06-25",
+          "date_2027": "2027-07-14",
+          "calendar_system": "Tibetan Lunisolar",
+          "states": [
+            "Ladakh"
+          ]
+        },
+        {
+          "id": "fest-sindhu-darshan",
+          "name": "Sindhu Darshan Festival Shey",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Ashadha Purnima (Guru Purnima).",
+          "date_2026": "2026-06-29",
+          "date_2027": "2027-07-18",
+          "calendar_system": "Guru Purnima Lunisolar",
+          "states": [
+            "Ladakh"
+          ]
+        },
+        {
+          "id": "fest-rath-yatra-ahmedabad",
+          "name": "Rath Yatra Ahmedabad",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Ashadha Shukla Dwitiya.",
+          "date_2026": "2026-07-16",
+          "date_2027": "2027-07-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-sao-joao-goa",
+          "name": "Sao Joao Water Festival Siolim",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated June 24 every year.",
+          "date_2026": "2026-06-24",
+          "date_2027": "2027-06-24",
+          "calendar_system": "Christian Liturgical",
+          "states": [
+            "Goa"
+          ]
+        },
+        {
+          "id": "fest-pandharpur-wari",
+          "name": "Pandharpur Wari Ashadhi Ekadashi",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Ashadhi Ekadashi.",
+          "date_2026": "2026-07-25",
+          "date_2027": "2027-07-15",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-goncha-festival",
+          "name": "Goncha Festival Jagdalpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Ashadha Shukla Dwitiya (same day as Puri Rath Yatra).",
+          "date_2026": "2026-07-16",
+          "date_2027": "2027-07-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Chhattisgarh"
+          ]
+        },
+        {
+          "id": "fest-rath-yatra-puri",
+          "name": "Rath Yatra Puri",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Ashadha Shukla Dwitiya.",
+          "date_2026": "2026-07-16",
+          "date_2027": "2027-07-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-raja-parba-odisha",
+          "name": "Raja Parba",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated June 14-17 annually.",
+          "date_2026": "2026-06-14",
+          "date_2027": "2027-06-14",
+          "calendar_system": "Solar / Mithuna Sankranti",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-mangani-festival-karaikal",
+          "name": "Mangani Festival Karaikal",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Aani Pournami.",
+          "date_2026": "2026-06-29",
+          "date_2027": "2027-06-18",
+          "calendar_system": "Tamil Solar Calendar",
+          "states": [
+            "Puducherry"
+          ]
+        },
+        {
+          "id": "ambubachi-mela-assam",
+          "name": "Ambubachi Mela",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Sun transit into Mithuna during Aashar month (June 21-26 window)",
+          "date_2026": "2026-06-22 to 2026-06-26",
+          "date_2027": "2027-06-22 to 2027-06-26",
+          "calendar_system": "Assamese Luni-Solar Calendar (Aashar month)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "muharram-ashura-pan-india",
+          "name": "Muharram",
+          "date_type": "LUNAR",
+          "date_rule": "10th day of Muharram (Ashura)",
+          "date_2026": "2026-06-25 to 2026-06-26",
+          "date_2027": "2027-06-15 to 2027-06-16",
+          "calendar_system": "Islamic Hijri Lunar Calendar (Muharram 10)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "July",
+      "festival_count": 19,
+      "festivals": [
+        {
+          "id": "fest-shikara-festival-kashmir",
+          "name": "Shikara Festival Dal Lake",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Department of Tourism.",
+          "date_2026": "2026-08-08",
+          "date_2027": "2027-08-07",
+          "calendar_system": "Organizer Announced",
+          "states": [
+            "Jammu and Kashmir"
+          ]
+        },
+        {
+          "id": "fest-gurez-festival",
+          "name": "Gurez Valley Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Organized by Bandipora District Administration & J&K Tourism.",
+          "date_2026": "2026-07-25",
+          "date_2027": "2027-07-24",
+          "calendar_system": "Organizer Announced",
+          "states": [
+            "Jammu and Kashmir"
+          ]
+        },
+        {
+          "id": "fest-taktok-festival",
+          "name": "Tak Tok Festival",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on the 10th day of the 6th Tibetan month.",
+          "date_2026": "2026-07-24",
+          "date_2027": "2027-08-12",
+          "calendar_system": "Tibetan Lunisolar",
+          "states": [
+            "Ladakh"
+          ]
+        },
+        {
+          "id": "fest-korzok-gustor",
+          "name": "Korzok Gustor Festival Tso Moriri",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Occurs in early July based on Tibetan calendar.",
+          "date_2026": "2026-07-13",
+          "date_2027": "2027-07-31",
+          "calendar_system": "Tibetan Lunisolar",
+          "states": [
+            "Ladakh"
+          ]
+        },
+        {
+          "id": "fest-minjar-mela-chamba",
+          "name": "Minjar Mela Chamba",
+          "date_type": "SOLAR",
+          "date_rule": "Second Sunday of Shravan month.",
+          "date_2026": "2026-07-26",
+          "date_2027": "2027-08-08",
+          "calendar_system": "Solar / Agricultural",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-mango-festival-pinjore",
+          "name": "Mango Festival Pinjore Gardens",
+          "date_type": "FIXED",
+          "date_rule": "First Saturday and Sunday of July.",
+          "date_2026": "2026-07-04",
+          "date_2027": "2027-07-03",
+          "calendar_system": "Gregorian / Summer Harvest",
+          "states": [
+            "Chandigarh",
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-kanwar-yatra-haridwar",
+          "name": "Kanwar Yatra Haridwar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins with Shravana Pratipada and ends on Shravana Shivratri.",
+          "date_2026": "2026-07-29",
+          "date_2027": "2027-07-18",
+          "calendar_system": "Hindu Lunisolar / Monsoon",
+          "states": [
+            "Uttarakhand",
+            "Uttar Pradesh",
+            "Haryana",
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-jageshwar-monsoon-festival",
+          "name": "Jageshwar Monsoon Festival",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed throughout the Hindu month of Shravana.",
+          "date_2026": "2026-07-29",
+          "date_2027": "2027-07-18",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttarakhand"
+          ]
+        },
+        {
+          "id": "fest-shravani-mela-sultanganj",
+          "name": "Shravani Mela Sultanganj to Deoghar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed throughout the Hindu month of Shravana.",
+          "date_2026": "2026-07-29",
+          "date_2027": "2027-07-18",
+          "calendar_system": "Hindu Lunisolar / Monsoon",
+          "states": [
+            "Bihar",
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-baidyanath-shravani-mela",
+          "name": "Baidyanath Shravani Mela Deoghar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed throughout the Hindu month of Shravana.",
+          "date_2026": "2026-07-29",
+          "date_2027": "2027-07-18",
+          "calendar_system": "Hindu Lunisolar / Monsoon",
+          "states": [
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-rottela-panduga-nellore",
+          "name": "Rottela Panduga Nellore",
+          "date_type": "LUNAR",
+          "date_rule": "Observed during the month of Muharram.",
+          "date_2026": "2026-07-28",
+          "date_2027": "2027-07-17",
+          "calendar_system": "Islamic Lunar (Muharram)",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "fest-bonalu-hyderabad",
+          "name": "Bonalu Hyderabad & Secunderabad",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated across Ashadha month.",
+          "date_2026": "2026-07-19",
+          "date_2027": "2027-07-11",
+          "calendar_system": "Hindu Lunisolar / Monsoon",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-french-bastille-day-puducherry",
+          "name": "French Bastille Day Heritage Celebrations",
+          "date_type": "FIXED",
+          "date_rule": "Held annually July 13-14.",
+          "date_2026": "2026-07-13",
+          "date_2027": "2027-07-14",
+          "calendar_system": "Gregorian / French National Day",
+          "states": [
+            "Puducherry"
+          ]
+        },
+        {
+          "id": "dree-festival-arunachal",
+          "name": "Dree Festival",
+          "date_type": "FIXED",
+          "date_rule": "July 4 to July 7 annually (main day July 5)",
+          "date_2026": "2026-07-04 to 2026-07-07",
+          "date_2027": "2027-07-04 to 2027-07-07",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "tuluni-festival-nagaland",
+          "name": "Tuluni",
+          "date_type": "FIXED",
+          "date_rule": "July 8 annually",
+          "date_2026": "2026-07-07 to 2026-07-09",
+          "date_2027": "2027-07-07 to 2027-07-09",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "naknyulem-festival-nagaland",
+          "name": "Naknyulem",
+          "date_type": "FIXED",
+          "date_rule": "July 11 to 13 annually",
+          "date_2026": "2026-07-11 to 2026-07-13",
+          "date_2027": "2027-07-11 to 2027-07-13",
+          "calendar_system": "Solar Calendar (Fixed Dates)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "kang-rath-yatra-manipur",
+          "name": "Kang Rath Yatra",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Ashadha Shukla Dwitiya",
+          "date_2026": "2026-07-16 to 2026-07-25",
+          "date_2027": "2027-07-06 to 2027-07-15",
+          "calendar_system": "Luni-Solar Calendar (Ashadha Shukla Dwitiya)",
+          "states": [
+            "Manipur"
+          ]
+        },
+        {
+          "id": "behdienkhlam-meghalaya",
+          "name": "Behdienkhlam",
+          "date_type": "COMMUNITY_SPECIFIC",
+          "date_rule": "Second or third weekend of July annually",
+          "date_2026": "2026-07-09 to 2026-07-12",
+          "date_2027": "2027-07-08 to 2027-07-11",
+          "calendar_system": "Solar Calendar (Mid-July)",
+          "states": [
+            "Meghalaya"
+          ]
+        },
+        {
+          "id": "kharchi-puja-tripura",
+          "name": "Kharchi Puja",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Ashadha Shukla Ashtami (eighth lunar day of bright fortnight of Ashadha)",
+          "date_2026": "2026-07-22 to 2026-07-28",
+          "date_2027": "2027-07-11 to 2027-07-17",
+          "calendar_system": "Luni-Solar Calendar (Ashadha Shukla Ashtami)",
+          "states": [
+            "Tripura"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "August",
+      "festival_count": 27,
+      "festivals": [
+        {
+          "id": "fest-rauza-sharif-urs",
+          "name": "Rauza Sharif Urs Sirhind",
+          "date_type": "LUNAR",
+          "date_rule": "Observed in the Islamic lunar month of Safar.",
+          "date_2026": "2026-08-28",
+          "date_2027": "2027-08-17",
+          "calendar_system": "Islamic Lunar (Hijri)",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-haryali-teej-haryana",
+          "name": "Haryali Teej of Haryana",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Shravana Shukla Tritiya.",
+          "date_2026": "2026-08-16",
+          "date_2027": "2027-08-05",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-nanda-devi-raj-jat",
+          "name": "Nanda Devi Raj Jat Yatra Chamoli",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Occurs every 12 years in Bhadrapada month.",
+          "date_2026": "2026-08-28",
+          "date_2027": "2027-09-10",
+          "calendar_system": "Astrological / 12-Year Cycle",
+          "states": [
+            "Uttarakhand"
+          ]
+        },
+        {
+          "id": "fest-butter-festival-dayara",
+          "name": "Butter Festival Dayara Bugyal",
+          "date_type": "SOLAR",
+          "date_rule": "Celebrated annually on Bhadrapada Sankranti.",
+          "date_2026": "2026-08-17",
+          "date_2027": "2027-08-17",
+          "calendar_system": "Solar / Bhadrapada Sankranti",
+          "states": [
+            "Uttarakhand"
+          ]
+        },
+        {
+          "id": "fest-hill-jatra-pithoragarh",
+          "name": "Hill Jatra Pithoragarh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during Bhadrapada month following Rikhola / Athon.",
+          "date_2026": "2026-08-25",
+          "date_2027": "2027-09-12",
+          "calendar_system": "Hindu Lunisolar / Monsoon",
+          "states": [
+            "Uttarakhand"
+          ]
+        },
+        {
+          "id": "fest-krishna-janmashtami-mathura",
+          "name": "Krishna Janmashtami Mathura",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Midnight celebration on Bhadrapada Krishna Ashtami (Rohini Nakshatra).",
+          "date_2026": "2026-09-04",
+          "date_2027": "2027-08-25",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-teej-festival-jaipur",
+          "name": "Teej Festival Jaipur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Shravana Shukla Tritiya.",
+          "date_2026": "2026-08-16",
+          "date_2027": "2027-08-05",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-tarnetar-fair",
+          "name": "Tarnetar Fair Surendranagar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Bhadrapada Shukla 4-6.",
+          "date_2026": "2026-09-15",
+          "date_2027": "2027-09-05",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-bonderam-festival",
+          "name": "Bonderam Flag Festival Divar Island",
+          "date_type": "FIXED",
+          "date_rule": "Fourth Saturday of August.",
+          "date_2026": "2026-08-22",
+          "date_2027": "2027-08-28",
+          "calendar_system": "Gregorian / Monsoon",
+          "states": [
+            "Goa"
+          ]
+        },
+        {
+          "id": "fest-nariyal-poornima-daman",
+          "name": "Nariyal Poornima Daman",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Shravana Purnima.",
+          "date_2026": "2026-08-28",
+          "date_2027": "2027-08-17",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Dadra and Nagar Haveli and Daman and Diu"
+          ]
+        },
+        {
+          "id": "fest-ganesh-chaturthi-maharashtra",
+          "name": "Ganesh Chaturthi Mumbai & Pune",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins Bhadrapada Shukla Chaturthi and ends Anant Chaturdashi.",
+          "date_2026": "2026-09-14",
+          "date_2027": "2027-09-04",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-narali-purnima",
+          "name": "Narali Purnima Koli Fishing Community",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Shravana Purnima (same day as Raksha Bandhan).",
+          "date_2026": "2026-08-28",
+          "date_2027": "2027-08-17",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-pola-festival-maharashtra",
+          "name": "Pola Cattle Festival Vidarbha",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Shravana Amavasya (Pithori Amavasya).",
+          "date_2026": "2026-09-10",
+          "date_2027": "2027-08-31",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-chakradhar-samaroh",
+          "name": "Chakradhar Samaroh Raigarh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Runs for the 10 days of Ganeshotsav.",
+          "date_2026": "2026-09-14",
+          "date_2027": "2027-09-04",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Chhattisgarh"
+          ]
+        },
+        {
+          "id": "fest-bihula-bishahari-bhagalpur",
+          "name": "Bihula-Bishahari Bhagalpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Shravana Amavasya / Bhadrapada Sankranti.",
+          "date_2026": "2026-08-17",
+          "date_2027": "2027-08-17",
+          "calendar_system": "Hindu Lunisolar / Monsoon",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-karma-festival-jharkhand",
+          "name": "Karma Festival Jharkhand",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Bhadrapada Shukla Ekadashi.",
+          "date_2026": "2026-09-22",
+          "date_2027": "2027-09-11",
+          "calendar_system": "Hindu-Tribal Lunisolar",
+          "states": [
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-nuakhai-sambalpur",
+          "name": "Nuakhai Sambalpur & Western Odisha",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Bhadrapada Shukla Panchami.",
+          "date_2026": "2026-09-15",
+          "date_2027": "2027-09-05",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-jhapan-mela-banka",
+          "name": "Jhapan Mela Bankura",
+          "date_type": "SOLAR",
+          "date_rule": "Celebrated on Shravana Sankranti (mid-August).",
+          "date_2026": "2026-08-17",
+          "date_2027": "2027-08-17",
+          "calendar_system": "Bengali Solar Calendar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-onam-kerala",
+          "name": "Onam Statewide",
+          "date_type": "SOLAR",
+          "date_rule": "Culminates on Thiruvonam day in Chingam month.",
+          "date_2026": "2026-08-26",
+          "date_2027": "2027-09-13",
+          "calendar_system": "Malayalam Solar Calendar (Kollam Era)",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-nehru-trophy-boat-race",
+          "name": "Nehru Trophy Boat Race Alappuzha",
+          "date_type": "FIXED",
+          "date_rule": "Held annually on the second Saturday of August.",
+          "date_2026": "2026-08-08",
+          "date_2027": "2027-08-14",
+          "calendar_system": "Gregorian / Monsoon",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-aranmula-boat-race",
+          "name": "Aranmula Uthrattathi Vallamkali",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Uthrattathi star during Onam season.",
+          "date_2026": "2026-08-30",
+          "date_2027": "2027-09-17",
+          "calendar_system": "Malayalam Solar Calendar",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-velankanni-feast",
+          "name": "Velankanni Feast",
+          "date_type": "FIXED",
+          "date_rule": "Flag hoisted August 29; feast day celebrated September 8.",
+          "date_2026": "2026-08-29",
+          "date_2027": "2027-08-29",
+          "calendar_system": "Christian Liturgical",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-fete-de-puducherry",
+          "name": "Fete de Puducherry",
+          "date_type": "FIXED",
+          "date_rule": "Held annually August 15-17.",
+          "date_2026": "2026-08-15",
+          "date_2027": "2027-08-15",
+          "calendar_system": "Gregorian / Monsoon",
+          "states": [
+            "Puducherry"
+          ]
+        },
+        {
+          "id": "fest-milad-un-nabi-lakshadweep",
+          "name": "Milad-un-Nabi Lakshadweep",
+          "date_type": "LUNAR",
+          "date_rule": "Celebrated on 12th Rabi al-Awwal.",
+          "date_2026": "2026-08-25",
+          "date_2027": "2027-08-14",
+          "calendar_system": "Islamic Lunar (Hijri)",
+          "states": [
+            "Lakshadweep"
+          ]
+        },
+        {
+          "id": "tendong-lho-rum-faat-sikkim",
+          "name": "Tendong Lho Rum Faat",
+          "date_type": "FIXED",
+          "date_rule": "August 8 annually",
+          "date_2026": "2026-08-07 to 2026-08-09",
+          "date_2027": "2027-08-07 to 2027-08-09",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Sikkim"
+          ]
+        },
+        {
+          "id": "ker-puja-tripura",
+          "name": "Ker Puja",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Two weeks after Kharchi Puja (Tuesday/Saturday alignment)",
+          "date_2026": "2026-08-04 to 2026-08-06",
+          "date_2027": "2027-07-27 to 2027-07-29",
+          "calendar_system": "Luni-Solar Calendar (Ashadha/Shravana month)",
+          "states": [
+            "Tripura"
+          ]
+        },
+        {
+          "id": "raksha-bandhan-pan-india",
+          "name": "Raksha Bandhan",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Shravana Purnima (full moon of Shravana month)",
+          "date_2026": "2026-08-28",
+          "date_2027": "2027-08-17",
+          "calendar_system": "Hindu Luni-Solar Calendar (Shravana Purnima)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "September",
+      "festival_count": 19,
+      "festivals": [
+        {
+          "id": "fest-ladakh-festival",
+          "name": "Ladakh Festival Leh",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced by Ladakh Tourism Department (usually Sep 1-7).",
+          "date_2026": "2026-09-01",
+          "date_2027": "2027-09-01",
+          "calendar_system": "Organizer Announced",
+          "states": [
+            "Ladakh"
+          ]
+        },
+        {
+          "id": "fest-chhapar-mela-ludhiana",
+          "name": "Chhapar Mela Ludhiana",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed on Anant Chaudas in Bhadrapada.",
+          "date_2026": "2026-09-25",
+          "date_2027": "2027-09-14",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-baba-farid-aagman",
+          "name": "Baba Farid Aagman Purb Faridkot",
+          "date_type": "FIXED",
+          "date_rule": "Observed September 19-23 every year.",
+          "date_2026": "2026-09-19",
+          "date_2027": "2027-09-19",
+          "calendar_system": "Gregorian / Anniversary",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-gugga-naumi-haryana",
+          "name": "Gugga Naumi Fair",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Bhadrapada Krishna Navami (the day after Janmashtami).",
+          "date_2026": "2026-09-05",
+          "date_2027": "2027-08-26",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-navratri-garba-gujarat",
+          "name": "Navratri Garba Mahotsav",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated for 9 nights in Ashwin month.",
+          "date_2026": "2026-10-11",
+          "date_2027": "2027-09-30",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-mount-mary-bandra-fair",
+          "name": "Mount Mary Bandra Fair Mumbai",
+          "date_type": "FIXED",
+          "date_rule": "Begins on the Sunday following September 8 annually.",
+          "date_2026": "2026-09-13",
+          "date_2027": "2027-09-12",
+          "calendar_system": "Christian Liturgical",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-bastar-dussehra",
+          "name": "Bastar Dussehra Jagdalpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Peak rituals occur during the 10 days of Navratri leading to Vijyadashami.",
+          "date_2026": "2026-10-11",
+          "date_2027": "2027-09-30",
+          "calendar_system": "Hindu-Tribal Lunisolar",
+          "states": [
+            "Chhattisgarh"
+          ]
+        },
+        {
+          "id": "fest-pitrapaksha-mela-gaya",
+          "name": "Pitrapaksha Mela Gaya",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Observed throughout the waning fortnight of Ashwin (Pitrapaksha).",
+          "date_2026": "2026-09-25",
+          "date_2027": "2027-09-15",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-durga-puja-cuttack",
+          "name": "Durga Puja Cuttack",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated during Ashwin Navratri / Durga Puja.",
+          "date_2026": "2026-10-17",
+          "date_2027": "2027-10-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-mysuru-dasara",
+          "name": "Mysuru Dasara",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Vijyadashami in Ashwin month.",
+          "date_2026": "2026-10-20",
+          "date_2027": "2027-10-10",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-tirumala-brahmotsavam",
+          "name": "Tirumala Brahmotsavam Tirupati",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during Navratri in Ashwin month.",
+          "date_2026": "2026-10-12",
+          "date_2027": "2027-10-01",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "ziro-festival-of-music-arunachal",
+          "name": "Ziro Festival of Music",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Last Thursday through Sunday of September annually",
+          "date_2026": "2026-09-24 to 2026-09-27",
+          "date_2027": "2027-09-23 to 2027-09-26",
+          "calendar_system": "Gregorian (Autumn Calendar)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "solung-festival-arunachal",
+          "name": "Solung Festival",
+          "date_type": "FIXED",
+          "date_rule": "September 1 annually (festivities Sept 1 to 5)",
+          "date_2026": "2026-09-01 to 2026-09-05",
+          "date_2027": "2027-09-01 to 2027-09-05",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "heikru-hidongba-manipur",
+          "name": "Heikru Hidongba",
+          "date_type": "LUNISOLAR",
+          "date_rule": "11th day of Langban month",
+          "date_2026": "2026-09-22",
+          "date_2027": "2027-09-11",
+          "calendar_system": "Meitei Luni-Solar Calendar (Langban 11)",
+          "states": [
+            "Manipur"
+          ]
+        },
+        {
+          "id": "mim-kut-mizoram",
+          "name": "Mim Kut",
+          "date_type": "COMMUNITY_SPECIFIC",
+          "date_rule": "First week of September annually",
+          "date_2026": "2026-09-04 to 2026-09-05",
+          "date_2027": "2027-09-03 to 2027-09-04",
+          "calendar_system": "Solar/Autumn Season (August/September)",
+          "states": [
+            "Mizoram"
+          ]
+        },
+        {
+          "id": "anthurium-festival-mizoram",
+          "name": "Anthurium Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Last weekend of September annually",
+          "date_2026": "2026-09-25 to 2026-09-27",
+          "date_2027": "2027-09-24 to 2027-09-26",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Mizoram"
+          ]
+        },
+        {
+          "id": "pang-lhabsol-sikkim",
+          "name": "Pang Lhabsol",
+          "date_type": "LUNAR",
+          "date_rule": "15th day of the 7th Tibetan lunar month",
+          "date_2026": "2026-08-27",
+          "date_2027": "2027-09-15",
+          "calendar_system": "Tibetan Lunar Calendar (7th month, 15th day)",
+          "states": [
+            "Sikkim"
+          ]
+        },
+        {
+          "id": "krishna-janmashtami-pan-india",
+          "name": "Krishna Janmashtami",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Bhadrapada Krishna Ashtami with Rohini Nakshatra",
+          "date_2026": "2026-09-03 to 2026-09-04",
+          "date_2027": "2027-08-25 to 2027-08-26",
+          "calendar_system": "Hindu Luni-Solar Calendar (Bhadrapada Krishna Ashtami)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        },
+        {
+          "id": "ganesh-chaturthi-pan-india",
+          "name": "Ganesh Chaturthi",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Bhadrapada Shukla Chaturthi to Anant Chaturdashi",
+          "date_2026": "2026-09-14 to 2026-09-24",
+          "date_2027": "2027-09-04 to 2027-09-14",
+          "calendar_system": "Hindu Luni-Solar Calendar (Bhadrapada Shukla Chaturthi)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "October",
+      "festival_count": 22,
+      "festivals": [
+        {
+          "id": "fest-saffron-festival-pampore",
+          "name": "Saffron Harvest Festival Pampore",
+          "date_type": "SEASONAL",
+          "date_rule": "Peak flowering occurs during early November crisp mornings.",
+          "date_2026": "2026-11-01",
+          "date_2027": "2027-11-03",
+          "calendar_system": "Seasonal / Autumn",
+          "states": [
+            "Jammu and Kashmir"
+          ]
+        },
+        {
+          "id": "fest-kullu-dussehra",
+          "name": "Kullu Dussehra",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Dashami of Ashwin Shukla Paksha.",
+          "date_2026": "2026-10-20",
+          "date_2027": "2027-10-10",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-pinjore-heritage-festival",
+          "name": "Pinjore Heritage Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Haryana Tourism.",
+          "date_2026": "2026-10-24",
+          "date_2027": "2027-10-23",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-phool-walon-ki-sair",
+          "name": "Phool Walon Ki Sair Mehrauli",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Organized annually by Anjuman Sair-e-Gul Faroshan.",
+          "date_2026": "2026-10-22",
+          "date_2027": "2027-10-14",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-deepotsav-ayodhya",
+          "name": "Deepotsav Ayodhya",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held on the eve of Diwali (Narak Chaturdashi / Chhoti Diwali).",
+          "date_2026": "2026-11-07",
+          "date_2027": "2027-10-28",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-shakumbhari-mela",
+          "name": "Shakumbhari Devi Mela Saharanpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Peaks during Ashwin Navratri and Shakambhari Purnima.",
+          "date_2026": "2026-10-15",
+          "date_2027": "2027-10-05",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-marwar-festival-jodhpur",
+          "name": "Marwar Festival Jodhpur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Sharad Purnima in Ashwin month.",
+          "date_2026": "2026-10-25",
+          "date_2027": "2027-10-15",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-kota-dussehra",
+          "name": "Kota Dussehra Fair",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Vijyadashami day.",
+          "date_2026": "2026-10-20",
+          "date_2027": "2027-10-10",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-orchha-mahotsav",
+          "name": "Orchha Mahotsav",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by MP Tourism.",
+          "date_2026": "2026-11-06",
+          "date_2027": "2027-11-05",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-chhath-puja-bihar",
+          "name": "Chhath Puja Patna & Gaya",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Commences 4 days after Diwali; main Arghya on Kartik Shukla Shashti.",
+          "date_2026": "2026-11-15",
+          "date_2027": "2027-11-05",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-durga-puja-kolkata",
+          "name": "Kolkata Durga Puja",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Maha Shashthi and culminates on Vijyadashami.",
+          "date_2026": "2026-10-16",
+          "date_2027": "2027-10-06",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-kali-puja-kolkata",
+          "name": "Kali Puja & Diwali Kolkata",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Diwali night (Kartik Amavasya).",
+          "date_2026": "2026-11-08",
+          "date_2027": "2027-10-29",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-tula-sankramana-coorg",
+          "name": "Tula Sankramana Coorg",
+          "date_type": "FIXED",
+          "date_rule": "Celebrated on Tula Sankranti (October 17-18 annually).",
+          "date_2026": "2026-10-18",
+          "date_2027": "2027-10-18",
+          "calendar_system": "Solar / Tula Sankramana",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-kanyakumari-cape-festival",
+          "name": "Kanyakumari Cape Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Tamil Nadu Tourism.",
+          "date_2026": "2026-10-18",
+          "date_2027": "2027-10-17",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-sirimanotsavam-vizianagaram",
+          "name": "Sirimanotsavam Vizianagaram",
+          "date_type": "LUNISOLAR",
+          "date_rule": "First Tuesday after Dussehra.",
+          "date_2026": "2026-10-27",
+          "date_2027": "2027-10-19",
+          "calendar_system": "Hindu Lunisolar / Autumn",
+          "states": [
+            "Andhra Pradesh"
+          ]
+        },
+        {
+          "id": "fest-bathukamma-telangana",
+          "name": "Bathukamma Statewide",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Durgashtami (Saddula Bathukamma).",
+          "date_2026": "2026-10-18",
+          "date_2027": "2027-10-07",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "fest-alai-balai-hyderabad",
+          "name": "Alai Balai Hyderabad",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held the day after Dussehra.",
+          "date_2026": "2026-10-21",
+          "date_2027": "2027-10-11",
+          "calendar_system": "Hindu Lunisolar / Post-Dussehra",
+          "states": [
+            "Telangana"
+          ]
+        },
+        {
+          "id": "kati-bihu-assam",
+          "name": "Kati Bihu",
+          "date_type": "SOLAR",
+          "date_rule": "First day of Assamese month Kati (October 17/18 annually)",
+          "date_2026": "2026-10-18",
+          "date_2027": "2026-10-18",
+          "calendar_system": "Assamese Solar Calendar (Kati 1)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "yemshe-festival-nagaland",
+          "name": "Yemshe",
+          "date_type": "FIXED",
+          "date_rule": "October 5 annually (festivities Oct 3 to 6)",
+          "date_2026": "2026-10-03 to 2026-10-06",
+          "date_2027": "2027-10-03 to 2027-10-06",
+          "calendar_system": "Solar Calendar (Fixed Date Window)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "autumn-festival-shillong",
+          "name": "Shillong Autumn Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced by Meghalaya Tourism for late October or early November",
+          "date_2026": "2026-10-24 to 2026-10-25",
+          "date_2027": "2027-10-23 to 2027-10-24",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Meghalaya"
+          ]
+        },
+        {
+          "id": "neermahal-water-festival-tripura",
+          "name": "Neermahal Water Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced by Tripura Tourism for an October weekend",
+          "date_2026": "2026-10-09 to 2026-10-11",
+          "date_2027": "2027-10-08 to 2027-10-10",
+          "calendar_system": "Gregorian (Autumn Calendar)",
+          "states": [
+            "Tripura"
+          ]
+        },
+        {
+          "id": "durga-puja-navratri-pan-india",
+          "name": "Sharad Navratri & Durga Puja",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Ashwin Shukla Pratipada to Dashami",
+          "date_2026": "2026-10-11 to 2026-10-20",
+          "date_2027": "2027-10-01 to 2027-10-10",
+          "calendar_system": "Hindu Luni-Solar Calendar (Ashwin Shukla Pratipada to Dashami)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "November",
+      "festival_count": 57,
+      "festivals": [
+        {
+          "id": "fest-renuka-ji-fair",
+          "name": "Renuka Ji Fair Sirmaur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Starts on Kartika Shukla Ekadashi.",
+          "date_2026": "2026-11-20",
+          "date_2027": "2027-11-10",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-gurpurab-guru-nanak",
+          "name": "Prakash Purab Guru Nanak Dev Ji",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Full moon day of the Hindu lunar month of Kartik.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar (Nanakshahi / Bikrami)",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-chandigarh-carnival",
+          "name": "Chandigarh Carnival",
+          "date_type": "FIXED",
+          "date_rule": "Last Friday to Sunday of November.",
+          "date_2026": "2026-11-27",
+          "date_2027": "2027-11-26",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Chandigarh"
+          ]
+        },
+        {
+          "id": "fest-international-gita-mahotsav",
+          "name": "International Gita Mahotsav Kurukshetra",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Margashirsha Shukla Ekadashi.",
+          "date_2026": "2026-12-20",
+          "date_2027": "2027-12-09",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-kartik-cultural-festival",
+          "name": "Kartik Cultural Festival Ballabgarh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during Kartik month (usually mid-November).",
+          "date_2026": "2026-11-14",
+          "date_2027": "2027-11-04",
+          "calendar_system": "Hindu Lunisolar / Autumn",
+          "states": [
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-kapal-mochan-mela",
+          "name": "Kapal Mochan Mela Yamunanagar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Kartik Purnima full moon.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Haryana"
+          ]
+        },
+        {
+          "id": "fest-qutub-festival",
+          "name": "Qutub Festival Mehrauli",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Delhi Tourism (usually late November).",
+          "date_2026": "2026-11-20",
+          "date_2027": "2027-11-19",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-dastkar-nature-bazaar",
+          "name": "Dastkar Nature Bazaar Kisan Haat",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Flagship Winter edition held mid-November.",
+          "date_2026": "2026-11-12",
+          "date_2027": "2027-11-11",
+          "calendar_system": "Seasonal / Autumn-Winter",
+          "states": [
+            "Delhi"
+          ]
+        },
+        {
+          "id": "fest-jauljibi-mela",
+          "name": "Jauljibi and Thal Mela Pithoragarh",
+          "date_type": "FIXED",
+          "date_rule": "Held annually November 14-21.",
+          "date_2026": "2026-11-14",
+          "date_2027": "2027-11-14",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Uttarakhand"
+          ]
+        },
+        {
+          "id": "fest-dev-deepawali-varanasi",
+          "name": "Dev Deepawali Varanasi",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Kartik Purnima (15 days after Diwali).",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-ganga-mahotsav-varanasi",
+          "name": "Ganga Mahotsav Varanasi",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during the five days preceding Kartik Purnima.",
+          "date_2026": "2026-11-20",
+          "date_2027": "2027-11-09",
+          "calendar_system": "Hindu Lunisolar / Autumn",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-lucknow-mahotsav",
+          "name": "Lucknow Mahotsav",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Lucknow District Administration & UP Tourism.",
+          "date_2026": "2026-11-25",
+          "date_2027": "2027-11-24",
+          "calendar_system": "Gregorian / Autumn-Winter",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-bateshwar-fair-agra",
+          "name": "Bateshwar Fair Agra",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Peaks during the days surrounding Kartik Purnima.",
+          "date_2026": "2026-11-20",
+          "date_2027": "2027-11-10",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh"
+          ]
+        },
+        {
+          "id": "fest-chhath-puja-up",
+          "name": "Chhath Puja at Gomti and Ganga Ghats",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins 4 days after Diwali; main Arghya on Kartik Shukla Shashti.",
+          "date_2026": "2026-11-15",
+          "date_2027": "2027-11-05",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Uttar Pradesh",
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-pushkar-camel-fair",
+          "name": "Pushkar Camel Fair",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Kartik Purnima.",
+          "date_2026": "2026-11-20",
+          "date_2027": "2027-11-10",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-kolayat-fair-bikaner",
+          "name": "Kolayat Fair (Kapil Muni Fair) Bikaner",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Kartik Purnima.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-bundi-utsav",
+          "name": "Bundi Utsav Bundi",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held in Kartik month following Kartik Purnima.",
+          "date_2026": "2026-11-26",
+          "date_2027": "2027-11-15",
+          "calendar_system": "Hindu Lunisolar / Autumn",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-vautha-fair",
+          "name": "Vautha Donkey & Cattle Fair",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Kartik Purnima.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-shamlaji-fair",
+          "name": "Shamlaji Fair Aravalli",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Peaks on Kartik Purnima.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Gujarat"
+          ]
+        },
+        {
+          "id": "fest-feast-st-francis-xavier",
+          "name": "Feast of St. Francis Xavier Old Goa",
+          "date_type": "FIXED",
+          "date_rule": "Feast day celebrated on December 3 annually.",
+          "date_2026": "2026-12-03",
+          "date_2027": "2027-12-03",
+          "calendar_system": "Christian Liturgical",
+          "states": [
+            "Goa"
+          ]
+        },
+        {
+          "id": "fest-tripurari-poornima-goa",
+          "name": "Tripurari Poornima Boat Festival Sankhali",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Kartik Purnima night.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Goa"
+          ]
+        },
+        {
+          "id": "fest-goa-heritage-festival",
+          "name": "Goa Heritage Festival Campal",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Organized annually by Goa Heritage Action Group.",
+          "date_2026": "2026-11-18",
+          "date_2027": "2027-11-17",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Goa"
+          ]
+        },
+        {
+          "id": "fest-tarpa-festival-silvassa",
+          "name": "Tarpa Folk Festival Silvassa",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Organized annually by UT Tourism Department.",
+          "date_2026": "2026-12-04",
+          "date_2027": "2027-12-03",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Dadra and Nagar Haveli and Daman and Diu"
+          ]
+        },
+        {
+          "id": "fest-marathwada-mahotsav",
+          "name": "Marathwada Mahotsav Aurangabad",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Maharashtra Cultural Board.",
+          "date_2026": "2026-11-20",
+          "date_2027": "2027-11-19",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Maharashtra"
+          ]
+        },
+        {
+          "id": "fest-chethiyagiri-vihara-sanchi",
+          "name": "Chethiyagiri Vihara Festival Sanchi",
+          "date_type": "FIXED",
+          "date_rule": "Last Saturday and Sunday of November.",
+          "date_2026": "2026-11-28",
+          "date_2027": "2027-11-27",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-nimar-utsav-maheshwar",
+          "name": "Nimar Utsav Maheshwar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated around Kartik Purnima.",
+          "date_2026": "2026-11-23",
+          "date_2027": "2027-11-12",
+          "calendar_system": "Hindu Lunisolar / Autumn",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-dhrupad-samaroh-bhopal",
+          "name": "Dhrupad Samaroh Bhopal",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by MP Culture Department.",
+          "date_2026": "2026-11-13",
+          "date_2027": "2027-11-12",
+          "calendar_system": "Gregorian / Autumn",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-raut-nacha-mahotsav",
+          "name": "Raut Nacha Mahotsav Bilaspur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held during Kartik month following Diwali.",
+          "date_2026": "2026-11-18",
+          "date_2027": "2027-11-08",
+          "calendar_system": "Hindu Lunisolar / Autumn",
+          "states": [
+            "Chhattisgarh"
+          ]
+        },
+        {
+          "id": "fest-sonepur-cattle-fair",
+          "name": "Sonepur Cattle Fair",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Commences on Kartik Purnima.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-rajgir-mahotsav",
+          "name": "Rajgir Mahotsav",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced annually by Bihar Tourism.",
+          "date_2026": "2026-11-27",
+          "date_2027": "2027-11-26",
+          "calendar_system": "Gregorian / Autumn-Winter",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-mithila-vivah-panchami",
+          "name": "Mithila Vivah Panchami Janakpur & Madhubani",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Margashirsha Shukla Panchami.",
+          "date_2026": "2026-12-14",
+          "date_2027": "2027-12-03",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-sama-chakeva-mithila",
+          "name": "Sama Chakeva Mithila",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on the day following Chhath and concludes on Kartik Purnima.",
+          "date_2026": "2026-11-17",
+          "date_2027": "2027-11-07",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Bihar"
+          ]
+        },
+        {
+          "id": "fest-sohrai-khovar-art-festival",
+          "name": "Sohrai and Khovar Art Festival Hazaribagh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held in Kartik month following Diwali.",
+          "date_2026": "2026-11-09",
+          "date_2027": "2027-10-30",
+          "calendar_system": "Hindu-Tribal Lunisolar",
+          "states": [
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-bandna-parab",
+          "name": "Bandna Parab",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Held in Kartik month around Diwali.",
+          "date_2026": "2026-11-08",
+          "date_2027": "2027-10-29",
+          "calendar_system": "Hindu-Tribal Lunisolar",
+          "states": [
+            "Jharkhand"
+          ]
+        },
+        {
+          "id": "fest-bali-yatra-cuttack",
+          "name": "Bali Yatra Cuttack",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Kartik Purnima.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-boita-bandana-odisha",
+          "name": "Boita Bandana",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated at dawn on Kartik Purnima.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-rash-mela-coochbehar",
+          "name": "Rash Mela Cooch Behar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Begins on Kartik Purnima night.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-jagaddhatri-puja-chandannagar",
+          "name": "Jagaddhatri Puja Chandannagar",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated approx one month after Durga Puja.",
+          "date_2026": "2026-11-18",
+          "date_2027": "2027-11-07",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-raas-utsav-nabadwip",
+          "name": "Raas Utsav Nabadwip",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on Kartik Purnima.",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-13",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-kadalekai-parishe",
+          "name": "Kadalekai Parishe Bengaluru",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated on the last Monday of Kartika month.",
+          "date_2026": "2026-11-30",
+          "date_2027": "2027-11-22",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "fest-chembai-sangeetholsavam",
+          "name": "Chembai Sangeetholsavam Guruvayur",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Guruvayur Ekadashi.",
+          "date_2026": "2026-12-08",
+          "date_2027": "2027-11-28",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-parumala-perunnal",
+          "name": "Parumala Perunnal",
+          "date_type": "FIXED",
+          "date_rule": "Held annually November 1-2.",
+          "date_2026": "2026-11-02",
+          "date_2027": "2027-11-02",
+          "calendar_system": "Gregorian / Annual",
+          "states": [
+            "Kerala"
+          ]
+        },
+        {
+          "id": "fest-karthigai-deepam-tiruvannamalai",
+          "name": "Karthigai Deepam Tiruvannamalai",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Culminates on Karthigai Deepam day.",
+          "date_2026": "2026-11-23",
+          "date_2027": "2027-12-12",
+          "calendar_system": "Tamil Solar Calendar",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "fest-kanthuri-festival-nagore",
+          "name": "Kanthuri Festival Nagore Dargah",
+          "date_type": "LUNAR",
+          "date_rule": "Observed during the Islamic month of Jumada al-Thani.",
+          "date_2026": "2026-11-20",
+          "date_2027": "2027-11-09",
+          "calendar_system": "Islamic Lunar (Hijri)",
+          "states": [
+            "Tamil Nadu"
+          ]
+        },
+        {
+          "id": "majuli-festival-assam",
+          "name": "Majuli Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Third or fourth weekend of November announced by Majuli District Administration",
+          "date_2026": "2026-11-20 to 2026-11-23",
+          "date_2027": "2027-11-19 to 2027-11-22",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "dihing-tea-festival-assam",
+          "name": "Dihing Tea Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced by Department of Tourism, Government of Assam",
+          "date_2026": "2026-11-27 to 2026-11-29",
+          "date_2027": "2027-11-26 to 2027-11-28",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Assam"
+          ]
+        },
+        {
+          "id": "chalo-loku-arunachal",
+          "name": "Chalo Loku",
+          "date_type": "FIXED",
+          "date_rule": "November 25 annually (Nov 24 to 26)",
+          "date_2026": "2026-11-24 to 2026-11-26",
+          "date_2027": "2027-11-24 to 2027-11-26",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "tokhu-emong-nagaland",
+          "name": "Tokhu Emong",
+          "date_type": "FIXED",
+          "date_rule": "November 7 annually",
+          "date_2026": "2026-11-04 to 2026-11-09",
+          "date_2027": "2027-11-04 to 2027-11-09",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "ngada-festival-nagaland",
+          "name": "Ngada",
+          "date_type": "FIXED",
+          "date_rule": "November 27 to 28 annually",
+          "date_2026": "2026-11-27 to 2026-11-28",
+          "date_2027": "2027-11-27 to 2027-11-28",
+          "calendar_system": "Solar Calendar (Fixed Date Window)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "sangai-festival-manipur",
+          "name": "Manipur Sangai Festival",
+          "date_type": "FIXED",
+          "date_rule": "November 21 to 30 annually",
+          "date_2026": "2026-11-21 to 2026-11-30",
+          "date_2027": "2027-11-21 to 2027-11-30",
+          "calendar_system": "Solar Calendar (Fixed Dates)",
+          "states": [
+            "Manipur"
+          ]
+        },
+        {
+          "id": "ningol-chakouba-manipur",
+          "name": "Ningol Chakouba",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Second day of the new moon of Hiyangei month",
+          "date_2026": "2026-11-11",
+          "date_2027": "2027-10-31",
+          "calendar_system": "Meitei Luni-Solar Calendar (Hiyangei month)",
+          "states": [
+            "Manipur"
+          ]
+        },
+        {
+          "id": "wangala-festival-meghalaya",
+          "name": "Wangala Festival",
+          "date_type": "FIXED",
+          "date_rule": "Second Thursday to Saturday of November annually",
+          "date_2026": "2026-11-12 to 2026-11-14",
+          "date_2027": "2027-11-11 to 2027-11-13",
+          "calendar_system": "Solar Calendar (Fixed Date Window)",
+          "states": [
+            "Meghalaya"
+          ]
+        },
+        {
+          "id": "nongkrem-dance-meghalaya",
+          "name": "Nongkrem Dance Festival",
+          "date_type": "COMMUNITY_SPECIFIC",
+          "date_rule": "Proclaimed by the Syiem of Khyrim for mid-November (usually 2nd or 3rd week)",
+          "date_2026": "2026-11-09 to 2026-11-13",
+          "date_2027": "2027-11-08 to 2027-11-12",
+          "calendar_system": "Solar/Autumn Season (Late Autumn)",
+          "states": [
+            "Meghalaya"
+          ]
+        },
+        {
+          "id": "thalfavang-kut-mizoram",
+          "name": "Thalfavang Kut",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced by Mizoram Tourism for mid-November",
+          "date_2026": "2026-11-13 to 2026-11-14",
+          "date_2027": "2027-11-12 to 2027-11-13",
+          "calendar_system": "Solar Calendar (November Window)",
+          "states": [
+            "Mizoram"
+          ]
+        },
+        {
+          "id": "orange-tourism-festival-tripura",
+          "name": "Orange & Tourism Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Last weekend of November annually",
+          "date_2026": "2026-11-27 to 2026-11-29",
+          "date_2027": "2027-11-26 to 2027-11-28",
+          "calendar_system": "Gregorian (Harvest Calendar)",
+          "states": [
+            "Tripura"
+          ]
+        },
+        {
+          "id": "diwali-deepavali-pan-india",
+          "name": "Diwali",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Amavasya of Kartika month (darkest night of the lunar month)",
+          "date_2026": "2026-11-08",
+          "date_2027": "2027-10-29",
+          "calendar_system": "Hindu Luni-Solar Calendar (Kartika Amavasya)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        },
+        {
+          "id": "guru-nanak-gurpurab-pan-india",
+          "name": "Guru Nanak Jayanti",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Kartika Purnima (full moon of Kartika month)",
+          "date_2026": "2026-11-24",
+          "date_2027": "2027-11-14",
+          "calendar_system": "Hindu/Sikh Luni-Solar Calendar (Kartika Purnima)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    },
+    {
+      "month_name": "December",
+      "festival_count": 21,
+      "festivals": [
+        {
+          "id": "fest-losar-ladakh",
+          "name": "Losar Festival Ladakh",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Commences on the 1st day of the 11th month of the Tibetan calendar.",
+          "date_2026": "2026-12-10",
+          "date_2027": "2027-12-28",
+          "calendar_system": "Tibetan Lunisolar",
+          "states": [
+            "Ladakh"
+          ]
+        },
+        {
+          "id": "fest-himalayan-festival-mcleodganj",
+          "name": "International Himalayan Festival McLeod Ganj",
+          "date_type": "FIXED",
+          "date_rule": "Commences December 10 annually.",
+          "date_2026": "2026-12-10",
+          "date_2027": "2027-12-10",
+          "calendar_system": "Gregorian / Anniversary",
+          "states": [
+            "Himachal Pradesh"
+          ]
+        },
+        {
+          "id": "fest-harballabh-sangeet-sammelan",
+          "name": "Harballabh Sangeet Sammelan Jalandhar",
+          "date_type": "FIXED",
+          "date_rule": "Last Friday to Sunday of December.",
+          "date_2026": "2026-12-25",
+          "date_2027": "2027-12-24",
+          "calendar_system": "Gregorian / Heritage",
+          "states": [
+            "Punjab"
+          ]
+        },
+        {
+          "id": "fest-kumbhalgarh-festival",
+          "name": "Kumbhalgarh Classical Festival",
+          "date_type": "FIXED",
+          "date_rule": "Held annually December 1-3.",
+          "date_2026": "2026-12-01",
+          "date_2027": "2027-12-01",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-mount-abu-winter-festival",
+          "name": "Mount Abu Winter Festival",
+          "date_type": "FIXED",
+          "date_rule": "Held annually December 29-31.",
+          "date_2026": "2026-12-29",
+          "date_2027": "2027-12-29",
+          "calendar_system": "Gregorian / Year-End",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-ranakpur-festival",
+          "name": "Ranakpur Temple Festival",
+          "date_type": "FIXED",
+          "date_rule": "Held annually December 21-22.",
+          "date_2026": "2026-12-21",
+          "date_2027": "2027-12-21",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Rajasthan"
+          ]
+        },
+        {
+          "id": "fest-tansen-samaroh-gwalior",
+          "name": "Tansen Samaroh Gwalior",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Organized annually in December by Ustad Allauddin Khan Sangeet Akademi.",
+          "date_2026": "2026-12-19",
+          "date_2027": "2027-12-18",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-pachmarhi-utsav",
+          "name": "Pachmarhi Utsav",
+          "date_type": "FIXED",
+          "date_rule": "Held annually December 26-30.",
+          "date_2026": "2026-12-26",
+          "date_2027": "2027-12-26",
+          "calendar_system": "Gregorian / Year-End",
+          "states": [
+            "Madhya Pradesh"
+          ]
+        },
+        {
+          "id": "fest-konark-dance-festival",
+          "name": "Konark Dance and Sand Art Festival",
+          "date_type": "FIXED",
+          "date_rule": "Held annually December 1-5.",
+          "date_2026": "2026-12-01",
+          "date_2027": "2027-12-01",
+          "calendar_system": "Gregorian / Annual",
+          "states": [
+            "Odisha"
+          ]
+        },
+        {
+          "id": "fest-poush-mela-shantiniketan",
+          "name": "Poush Mela Shantiniketan",
+          "date_type": "FIXED",
+          "date_rule": "Commences December 23 annually.",
+          "date_2026": "2026-12-23",
+          "date_2027": "2027-12-23",
+          "calendar_system": "Bengali Solar Calendar",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-bishnupur-festival",
+          "name": "Bishnupur Festival Bankura",
+          "date_type": "FIXED",
+          "date_rule": "Held annually December 27-30.",
+          "date_2026": "2026-12-27",
+          "date_2027": "2027-12-27",
+          "calendar_system": "Gregorian / Winter",
+          "states": [
+            "West Bengal"
+          ]
+        },
+        {
+          "id": "fest-godachi-jatre",
+          "name": "Godachi Jatre Belagavi",
+          "date_type": "LUNISOLAR",
+          "date_rule": "Celebrated in Margashirsha month.",
+          "date_2026": "2026-12-18",
+          "date_2027": "2027-12-07",
+          "calendar_system": "Hindu Lunisolar",
+          "states": [
+            "Karnataka"
+          ]
+        },
+        {
+          "id": "siang-river-festival-arunachal",
+          "name": "Siang River Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Announced by Arunachal Pradesh Tourism for a December weekend",
+          "date_2026": "2026-12-18 to 2026-12-20",
+          "date_2027": "2027-12-17 to 2027-12-19",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Arunachal Pradesh"
+          ]
+        },
+        {
+          "id": "hornbill-festival-nagaland",
+          "name": "Hornbill Festival",
+          "date_type": "FIXED",
+          "date_rule": "December 1 to 10 annually",
+          "date_2026": "2026-12-01 to 2026-12-10",
+          "date_2027": "2027-12-01 to 2027-12-10",
+          "calendar_system": "Solar Calendar (Fixed Dates)",
+          "states": [
+            "Nagaland"
+          ]
+        },
+        {
+          "id": "chumpha-festival-manipur",
+          "name": "Chumpha Festival",
+          "date_type": "FIXED",
+          "date_rule": "December 10 to 16 annually",
+          "date_2026": "2026-12-10 to 2026-12-16",
+          "date_2027": "2027-12-10 to 2027-12-16",
+          "calendar_system": "Solar Calendar (Fixed Date Window)",
+          "states": [
+            "Manipur"
+          ]
+        },
+        {
+          "id": "pawl-kut-mizoram",
+          "name": "Pawl Kut",
+          "date_type": "FIXED",
+          "date_rule": "First weekend of December annually",
+          "date_2026": "2026-12-04 to 2026-12-05",
+          "date_2027": "2027-12-03 to 2027-12-04",
+          "calendar_system": "Solar Calendar (December Window)",
+          "states": [
+            "Mizoram"
+          ]
+        },
+        {
+          "id": "losoong-namsoong-sikkim",
+          "name": "Losoong / Namsoong",
+          "date_type": "LUNAR",
+          "date_rule": "28th day of the 10th Tibetan lunar month",
+          "date_2026": "2026-12-08 to 2026-12-14",
+          "date_2027": "2027-12-27 to 2028-01-02",
+          "calendar_system": "Tibetan Lunar Calendar (10th month, 28th-29th days)",
+          "states": [
+            "Sikkim"
+          ]
+        },
+        {
+          "id": "kagyed-dance-sikkim",
+          "name": "Kagyed Dance",
+          "date_type": "LUNAR",
+          "date_rule": "28th and 29th days of the 10th Tibetan lunar month",
+          "date_2026": "2026-12-07 to 2026-12-08",
+          "date_2027": "2027-12-26 to 2027-12-27",
+          "calendar_system": "Tibetan Lunar Calendar (10th month, 28th-29th days)",
+          "states": [
+            "Sikkim"
+          ]
+        },
+        {
+          "id": "red-panda-winter-carnival-sikkim",
+          "name": "Red Panda Winter Carnival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Last week of December through New Year",
+          "date_2026": "2026-12-24 to 2027-01-01",
+          "date_2027": "2027-12-24 to 2028-01-01",
+          "calendar_system": "Gregorian (Winter Calendar)",
+          "states": [
+            "Sikkim"
+          ]
+        },
+        {
+          "id": "pilak-festival-tripura",
+          "name": "Pilak Archaeological & Cultural Festival",
+          "date_type": "ORGANIZER_ANNOUNCED",
+          "date_rule": "Third weekend of December annually",
+          "date_2026": "2026-12-18 to 2026-12-20",
+          "date_2027": "2027-12-17 to 2027-12-19",
+          "calendar_system": "Gregorian (Tourism Calendar)",
+          "states": [
+            "Tripura"
+          ]
+        },
+        {
+          "id": "christmas-in-india",
+          "name": "Christmas in India",
+          "date_type": "FIXED",
+          "date_rule": "December 25 annually",
+          "date_2026": "2026-12-24 to 2026-12-26",
+          "date_2027": "2027-12-24 to 2027-12-26",
+          "calendar_system": "Solar Calendar (Fixed Date)",
+          "states": [
+            "All States and Union Territories of India"
+          ]
+        }
+      ]
+    }
+  ]
+}

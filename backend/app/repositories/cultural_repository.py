@@ -148,6 +148,29 @@ class CulturalRepository:
         for p in self.heritage_places:
             if p.id == place_id or place_id in p.name.lower().replace(" ", "-"):
                 return p
+        # Check UNESCO Master Database
+        try:
+            from app.services.heritage.unesco_heritage_service import unesco_heritage_service
+            up = unesco_heritage_service.get_property_by_id(place_id)
+            if up:
+                return HeritagePlace(
+                    id=up.get("id"),
+                    name=up.get("official_unesco_name"),
+                    state=up.get("state"),
+                    city=up.get("city_or_nearest_settlement", up.get("state")),
+                    category=f"UNESCO {up.get('category')} Heritage",
+                    historical_period=str(up.get("inscription_year")),
+                    description=up.get("historical_background", ""),
+                    historical_significance=up.get("cultural_importance", ""),
+                    architectural_style=up.get("architectural_or_ecological_significance", ""),
+                    latitude=float(up.get("latitude", 0.0)),
+                    longitude=float(up.get("longitude", 0.0)),
+                    image_url=f"/assets/heritage/{up.get('id')}.jpg",
+                    source_url=up.get("official_unesco_url", "https://whc.unesco.org"),
+                    verification_status="VERIFIED"
+                )
+        except Exception:
+            pass
         return None
 
     def get_festivals(self, state: Optional[str] = None) -> List[Festival]:
@@ -163,6 +186,29 @@ class CulturalRepository:
         for f in self.festivals:
             if f.id == festival_id:
                 return f
+        # Check Master Festivals Database
+        try:
+            from app.services.festivals.festival_knowledge_service import festival_knowledge_service
+            mf = festival_knowledge_service.get_festival_by_id(festival_id)
+            if mf:
+                return Festival(
+                    id=mf.get("id"),
+                    name=mf.get("name"),
+                    state=mf.get("major_states", ["India"])[0],
+                    region="Pan-India" if "All" in str(mf.get("major_states")) else "Regional",
+                    category=mf.get("category", "Cultural"),
+                    description=mf.get("short_description", ""),
+                    historical_background=mf.get("historical_background", ""),
+                    cultural_significance=mf.get("cultural_and_spiritual_significance", ""),
+                    celebration_details=mf.get("how_people_celebrate", ""),
+                    associated_communities=mf.get("religious_or_cultural_association", "Local Community"),
+                    month_or_season=mf.get("usual_month", "Annual"),
+                    image_url=f"/assets/festivals/{mf.get('id')}.jpg",
+                    source_url=mf.get("official_website", "https://www.incredibleindia.gov.in"),
+                    verification_status="VERIFIED"
+                )
+        except Exception:
+            pass
         return None
 
     def get_arts_crafts(self, state: Optional[str] = None) -> List[ArtCraft]:

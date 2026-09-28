@@ -1,9 +1,46 @@
-from typing import List, Optional
+from typing import List, Optional, Dict, Any, Union
 from fastapi import APIRouter, HTTPException, Query
 from app.repositories.cultural_repository import cultural_repository
 from app.models.schemas import HeritagePlace
+from app.services.heritage.unesco_heritage_service import unesco_heritage_service
 
 router = APIRouter()
+
+@router.get("/heritage/unesco")
+def get_unesco_properties(
+    state: Optional[str] = Query(None, description="Filter by state name"),
+    category: Optional[str] = Query(None, description="Filter by UNESCO category (Cultural/Natural/Mixed)"),
+    search: Optional[str] = Query(None, description="Search by name, alternate names, attractions")
+):
+    """Retrieve official UNESCO World Heritage properties in India."""
+    props = unesco_heritage_service.get_all_properties()
+    if category:
+        props = [p for p in props if p.get("category", "").lower() == category.strip().lower()]
+    if state:
+        st_lower = state.strip().lower()
+        props = [p for p in props if st_lower in p.get("state", "").lower()]
+    if search:
+        props = unesco_heritage_service.search_properties(search)
+    return props
+
+@router.get("/heritage/unesco/stats")
+def get_unesco_stats():
+    """Retrieve statistical summary of UNESCO World Heritage sites in India."""
+    return unesco_heritage_service.get_stats()
+
+@router.get("/heritage/unesco/{slug_or_id}")
+def get_unesco_property(slug_or_id: str):
+    """Retrieve details of a specific UNESCO World Heritage site."""
+    clean_target = slug_or_id.strip().lower()
+    prop = unesco_heritage_service.get_property_by_id(slug_or_id)
+    if prop:
+        return prop
+
+    matches = unesco_heritage_service.search_properties(clean_target, limit=1)
+    if matches:
+        return matches[0]
+
+    raise HTTPException(status_code=404, detail=f"UNESCO site '{slug_or_id}' not found.")
 
 @router.get("/heritage", response_model=List[HeritagePlace])
 def get_heritage_places(

@@ -1,0 +1,68 @@
+{
+  "total_categories": 3,
+  "categories": [
+    {
+      "category": "Cultural",
+      "count": 34,
+      "description": "Masterpieces of human creative genius, outstanding architectural monuments, and monumental civilizational testimonies.",
+      "sites": [
+        "Taj Mahal",
+        "Agra Fort",
+        "Ajanta Caves",
+        "Ellora Caves",
+        "Sun Temple, Konark",
+        "Group of Monuments at Mahabalipuram",
+        "Churches and Convents of Goa",
+        "Khajuraho Group of Monuments",
+        "Group of Monuments at Hampi",
+        "Fatehpur Sikri",
+        "Group of Monuments at Pattadakal",
+        "Elephanta Caves",
+        "Great Living Chola Temples",
+        "Buddhist Monuments at Sanchi",
+        "Humayun's Tomb, Delhi",
+        "Qutb Minar and its Monuments, Delhi",
+        "Mountain Railways of India",
+        "Mahabodhi Temple Complex at Bodh Gaya",
+        "Rock Shelters of Bhimbetka",
+        "Chhatrapati Shivaji Maharaj Terminus (formerly Victoria Terminus)",
+        "Champaner-Pavagadh Archaeological Park",
+        "Red Fort Complex",
+        "The Jantar Mantar, Jaipur",
+        "Hill Forts of Rajasthan",
+        "Rani-ki-Vav (the Queen’s Stepwell) at Patan, Gujarat",
+        "Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar",
+        "The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement",
+        "Historic City of Ahmadabad",
+        "Victorian Gothic and Art Deco Ensembles of Mumbai",
+        "Jaipur City, Rajasthan",
+        "Kakatiya Rudreshwara (Ramappa) Temple, Telangana",
+        "Dholavira: a Harappan City",
+        "Santiniketan",
+        "Sacred Ensembles of the Hoysalas"
+      ]
+    },
+    {
+      "category": "Natural",
+      "count": 7,
+      "description": "Outstanding ecological habitats, significant evolutionary stages, and areas of exceptional natural beauty.",
+      "sites": [
+        "Kaziranga National Park",
+        "Keoladeo National Park",
+        "Manas Wildlife Sanctuary",
+        "Sundarbans National Park",
+        "Nanda Devi and Valley of Flowers National Parks",
+        "Western Ghats",
+        "Great Himalayan National Park Conservation Area"
+      ]
+    },
+    {
+      "category": "Mixed",
+      "count": 1,
+      "description": "Sites containing elements of both outstanding cultural significance and transcendent natural values.",
+      "sites": [
+        "Khangchendzonga National Park"
+      ]
+    }
+  ]
+}

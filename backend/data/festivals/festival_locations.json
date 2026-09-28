@@ -1,0 +1,4225 @@
+{
+  "total_regions": 37,
+  "last_updated": "2026-09-28",
+  "locations": [
+    {
+      "state_or_ut": "All States and Union Territories of India",
+      "festival_count": 15,
+      "festivals": [
+        {
+          "id": "diwali-deepavali-pan-india",
+          "name": "Diwali",
+          "cities": [
+            "Ayodhya",
+            "Varanasi",
+            "Vrindavan",
+            "Jaipur",
+            "Kolkata",
+            "Amritsar",
+            "Delhi",
+            "Mumbai",
+            "Madurai"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Dusk (6:00 PM to 9:30 PM) on Lakshmi Pujan night when millions of lamps flicker across every rooftop."
+        },
+        {
+          "id": "holi-festival-of-colours",
+          "name": "Holi",
+          "cities": [
+            "Mathura",
+            "Vrindavan",
+            "Barsana",
+            "Varanasi",
+            "Jaipur",
+            "Udaipur",
+            "Delhi",
+            "Shantiniketan"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning 9:30 AM to 1:30 PM on Dhulandi for the color playing, followed by a warm bath and feasting on sweet gujiyas."
+        },
+        {
+          "id": "maha-shivratri-pan-india",
+          "name": "Maha Shivratri",
+          "cities": [
+            "Varanasi",
+            "Ujjain",
+            "Haridwar",
+            "Rishikesh",
+            "Nashik",
+            "Mandi",
+            "Coimbatore"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Midnight (Nishita Kaal) from 11:45 PM to 12:45 AM for the profound midnight lingam abhishekam."
+        },
+        {
+          "id": "krishna-janmashtami-pan-india",
+          "name": "Krishna Janmashtami",
+          "cities": [
+            "Mathura",
+            "Vrindavan",
+            "Mumbai",
+            "Dwarka",
+            "Puri",
+            "Udupi",
+            "Imphal"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Midnight (12:00 AM) for the divine birth abhishekam in Mathura; next afternoon (2:00 PM to 6:00 PM) for Dahi Handi human pyramids in Mumbai."
+        },
+        {
+          "id": "ganesh-chaturthi-pan-india",
+          "name": "Ganesh Chaturthi",
+          "cities": [
+            "Mumbai",
+            "Pune",
+            "Hyderabad",
+            "Bengaluru",
+            "Goa",
+            "Chennai"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Morning darshan at Lalbaugcha Raja, and the final day (Anant Chaturdashi) from 2:00 PM to midnight at Girgaon Chowpatty for the sea immersion."
+        },
+        {
+          "id": "durga-puja-navratri-pan-india",
+          "name": "Sharad Navratri & Durga Puja",
+          "cities": [
+            "Kolkata",
+            "Ahmedabad",
+            "Vadodara",
+            "Delhi",
+            "Mysuru",
+            "Varanasi"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Late night (8:00 PM to 3:00 AM) in Kolkata for pandal hopping; evening 9:00 PM to 2:00 AM in Ahmedabad for Garba dancing."
+        },
+        {
+          "id": "raksha-bandhan-pan-india",
+          "name": "Raksha Bandhan",
+          "cities": [
+            "Delhi",
+            "Jaipur",
+            "Lucknow",
+            "Kolkata",
+            "Mumbai",
+            "Patna",
+            "Indore"
+          ],
+          "category": "FOLK_COMMUNITY",
+          "best_time_to_visit": "Morning auspicious Muhurat (between 9:00 AM and 1:30 PM) for the Rakhi tying ceremony."
+        },
+        {
+          "id": "eid-ul-fitr-pan-india",
+          "name": "Eid-ul-Fitr",
+          "cities": [
+            "Delhi",
+            "Hyderabad",
+            "Lucknow",
+            "Mumbai",
+            "Kolkata",
+            "Srinagar",
+            "Bhopal"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Morning 7:30 AM to 9:30 AM for the awe-inspiring congregational Eid prayers at Jama Masjid or Charminar."
+        },
+        {
+          "id": "eid-ul-adha-pan-india",
+          "name": "Eid-ul-Adha",
+          "cities": [
+            "Delhi",
+            "Hyderabad",
+            "Lucknow",
+            "Mumbai",
+            "Kozhikode",
+            "Bhopal"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Morning 8:00 AM for the serene Eid prayer and sermon at major historic Eidgahs."
+        },
+        {
+          "id": "guru-nanak-gurpurab-pan-india",
+          "name": "Guru Nanak Jayanti",
+          "cities": [
+            "Amritsar",
+            "Delhi",
+            "Anandpur Sahib",
+            "Patna",
+            "Nanded",
+            "Chandigarh"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Dusk to 10:00 PM at the Golden Temple Amritsar to witness the breathtaking deepmala illumination and fireworks reflecting in the sacred pool."
+        },
+        {
+          "id": "mahavir-jayanti-pan-india",
+          "name": "Mahavir Jayanti",
+          "cities": [
+            "Vaishali",
+            "Pawapuri",
+            "Palitana",
+            "Ranakpur",
+            "Shravanabelagola",
+            "Delhi",
+            "Jaipur"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Morning 8:00 AM to 11:30 AM for the grand silver chariot procession and abhisheka ceremony."
+        },
+        {
+          "id": "buddha-purnima-pan-india",
+          "name": "Buddha Purnima",
+          "cities": [
+            "Bodh Gaya",
+            "Sarnath",
+            "Kushinagar",
+            "Dharamshala",
+            "Gangtok",
+            "Ladakh"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Dawn (5:30 AM) for sunrise meditation beneath the sacred Bodhi Tree, and dusk (6:30 PM) when thousands of butter lamps illuminate the stone temple."
+        },
+        {
+          "id": "christmas-in-india",
+          "name": "Christmas in India",
+          "cities": [
+            "Kolkata",
+            "Goa",
+            "Kochi",
+            "Shillong",
+            "Mumbai",
+            "Kohima",
+            "Bengaluru"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Midnight (11:30 PM on Dec 24) for the cathedral Midnight Mass; evening on Dec 25 for the festive carnival on Kolkata's Park Street."
+        },
+        {
+          "id": "makar-sankranti-pan-india",
+          "name": "Makar Sankranti",
+          "cities": [
+            "Ahmedabad",
+            "Jaipur",
+            "Prayagraj",
+            "Varanasi",
+            "Surat",
+            "Patna",
+            "Hyderabad"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "All day on January 14 from sunrise to sunset on an old-city rooftop in Ahmedabad or Jaipur, followed by nighttime illuminated lantern kites (Tukkals)."
+        },
+        {
+          "id": "muharram-ashura-pan-india",
+          "name": "Muharram",
+          "cities": [
+            "Lucknow",
+            "Hyderabad",
+            "Delhi",
+            "Amroha",
+            "Kolkata",
+            "Mumbai"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Ashura day (10th Muharram) from 10:00 AM to 4:00 PM for the historic Tazia processions in Old Lucknow."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Andaman and Nicobar Islands",
+      "festival_count": 4,
+      "festivals": [
+        {
+          "id": "island-tourism-festival-andaman",
+          "name": "Island Tourism Festival",
+          "cities": [
+            "Port Blair"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Evenings from 5:30 PM to 9:30 PM for stage performances and street food markets."
+        },
+        {
+          "id": "subhash-mela-havelock",
+          "name": "Subhash Mela",
+          "cities": [
+            "Swaraj Dweep (Havelock Island)"
+          ],
+          "category": "CULTURAL_NATIONAL",
+          "best_time_to_visit": "January 23 morning for the patriotic parade; evenings for open-air cultural theatre."
+        },
+        {
+          "id": "monsoon-music-festival-andaman",
+          "name": "Monsoon Music Festival",
+          "cities": [
+            "Port Blair"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoon watching heavy rain curtains sweep across the ocean horizon while sipping hot masala chai."
+        },
+        {
+          "id": "beach-festival-andaman",
+          "name": "Andaman Beach Festival",
+          "cities": [
+            "Port Blair"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoon (3:30 PM) until sunset and into the breezy evening."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Andhra Pradesh",
+      "festival_count": 10,
+      "festivals": [
+        {
+          "id": "fest-tirumala-brahmotsavam",
+          "name": "Tirumala Brahmotsavam Tirupati",
+          "cities": [
+            "Tirumala",
+            "Tirupati"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Fifth night for the glorious Garuda Vahana Seva and final day morning for Chakrasnanam"
+        },
+        {
+          "id": "fest-ugadi-andhra",
+          "name": "Ugadi Statewide",
+          "cities": [
+            "Vijayawada",
+            "Tirupati",
+            "Visakhapatnam",
+            "Rajahmundry"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Morning hours between 7 AM and 11 AM for family rituals, Ugadi Pachadi tasting, and temple visits"
+        },
+        {
+          "id": "fest-lepakshi-heritage-festival",
+          "name": "Lepakshi Heritage Festival",
+          "cities": [
+            "Lepakshi",
+            "Hindupur",
+            "Ananthapuramu"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings between 5:30 PM and 9 PM during the illuminated temple dance concerts"
+        },
+        {
+          "id": "fest-flamingo-festival-nelapattu",
+          "name": "Flamingo Festival Nelapattu & Pulicat Lake",
+          "cities": [
+            "Sullurpeta",
+            "Nelapattu",
+            "Pulicat Lake",
+            "Tirupati"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Early morning (6:30 AM to 10 AM) for the best birdwatching light and active flamingo feeding"
+        },
+        {
+          "id": "fest-visakha-utsav",
+          "name": "Visakha Utsav Visakhapatnam",
+          "cities": [
+            "Visakhapatnam (Vizag)"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Late afternoon from 3:30 PM to 10 PM for beach activities and evening musical concerts"
+        },
+        {
+          "id": "fest-kotappakonda-fair-guntur",
+          "name": "Kotappakonda Fair Guntur",
+          "cities": [
+            "Kotappakonda",
+            "Narasaraopet",
+            "Guntur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Maha Shivratri evening (6 PM to midnight) when all 100-foot illuminated Prabhas assemble in the valley"
+        },
+        {
+          "id": "fest-sirimanotsavam-vizianagaram",
+          "name": "Sirimanotsavam Vizianagaram",
+          "cities": [
+            "Vizianagaram"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Afternoon between 3 PM and 6:30 PM when the Sirimanu chariot moves along the fort road"
+        },
+        {
+          "id": "fest-rottela-panduga-nellore",
+          "name": "Rottela Panduga Nellore",
+          "cities": [
+            "Nellore"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening between 4 PM and 9 PM when the lake roti exchange reaches peak activity"
+        },
+        {
+          "id": "fest-bhavani-deeksha-vijayawada",
+          "name": "Bhavani Deeksha Vijayawada",
+          "cities": [
+            "Vijayawada",
+            "Krishna"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn for the sacred hill walk (Giri Pradakshina) and sunset for the Krishna River swan boat festival"
+        },
+        {
+          "id": "fest-amaravati-buddhist-festival",
+          "name": "Amaravati Buddhist Heritage Festival",
+          "cities": [
+            "Amaravati",
+            "Guntur",
+            "Vijayawada"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Morning meditation at 8 AM and sunset views of the 125-foot Buddha statue reflecting in the Krishna River"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Arunachal Pradesh",
+      "festival_count": 10,
+      "festivals": [
+        {
+          "id": "losar-festival-tawang",
+          "name": "Losar Festival Tawang",
+          "cities": [
+            "Tawang",
+            "Bomdila",
+            "Dirang"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Early morning prayers at dawn followed by monastery courtyard gatherings."
+        },
+        {
+          "id": "torgya-festival-tawang",
+          "name": "Torgya Festival",
+          "cities": [
+            "Tawang"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "10:00 AM to 2:00 PM when the theatrical Cham mask dances reach peak dramatic intensity."
+        },
+        {
+          "id": "ziro-festival-of-music-arunachal",
+          "name": "Ziro Festival of Music",
+          "cities": [
+            "Ziro",
+            "Hapoli"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoons on Danyii Stage as the sunset illuminates golden paddy terraces."
+        },
+        {
+          "id": "nyokum-yullo-arunachal",
+          "name": "Nyokum Yullo",
+          "cities": [
+            "Yazali",
+            "Itanagar",
+            "Naharlagun",
+            "Seppa",
+            "Sagalee"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning of February 26 during the sacred Nyibu prayer invocations at the Yugang altar."
+        },
+        {
+          "id": "dree-festival-arunachal",
+          "name": "Dree Festival",
+          "cities": [
+            "Ziro",
+            "Hapoli"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "July 5 morning (9:00 AM to 1:00 PM) for ceremonial dances and distribution of auspicious cucumbers."
+        },
+        {
+          "id": "mopin-festival-arunachal",
+          "name": "Mopin Festival",
+          "cities": [
+            "Aalo (Along)",
+            "Basar",
+            "Itanagar",
+            "Pasighat"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning of April 5 when the Ette flour smearing and Popir dances start."
+        },
+        {
+          "id": "solung-festival-arunachal",
+          "name": "Solung Festival",
+          "cities": [
+            "Pasighat",
+            "Yingkiong",
+            "Roing",
+            "Itanagar"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Late afternoon into twilight when the hypnotic Ponung sword dance commences."
+        },
+        {
+          "id": "siang-river-festival-arunachal",
+          "name": "Siang River Festival",
+          "cities": [
+            "Pasighat",
+            "Tuting",
+            "Pangin"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Midday for exhilarating whitewater rafting; evenings for riverside acoustic performances."
+        },
+        {
+          "id": "sanken-festival-arunachal",
+          "name": "Sanken Festival",
+          "cities": [
+            "Namsai",
+            "Chongkham"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Mid-morning around 10:30 AM at the Golden Pagoda during the ceremonial water pouring on Buddha images."
+        },
+        {
+          "id": "chalo-loku-arunachal",
+          "name": "Chalo Loku",
+          "cities": [
+            "Khonsa",
+            "Deomali"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "November 25 morning for the dramatic warrior circle dances."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Assam",
+      "festival_count": 12,
+      "festivals": [
+        {
+          "id": "bohag-bihu-assam",
+          "name": "Bohag Bihu",
+          "cities": [
+            "Guwahati",
+            "Sivasagar",
+            "Tezpur",
+            "Jorhat",
+            "Dibrugarh"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Evenings between 5 PM and 10 PM at open-air cultural fields and community Husori rounds."
+        },
+        {
+          "id": "kati-bihu-assam",
+          "name": "Kati Bihu",
+          "cities": [
+            "Guwahati",
+            "Majuli",
+            "Nagaon",
+            "Golaghat"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Dusk (5 PM to 7 PM) when thousands of tiny flickering flames illuminate wide paddy fields."
+        },
+        {
+          "id": "magh-bihu-assam",
+          "name": "Magh Bihu",
+          "cities": [
+            "Guwahati",
+            "Barpeta",
+            "Nagaon",
+            "Morigaon",
+            "Jorhat"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Early morning dawn (5:30 AM to 7:30 AM) on Magh 1 when the towering Meji fires ignite."
+        },
+        {
+          "id": "ambubachi-mela-assam",
+          "name": "Ambubachi Mela",
+          "cities": [
+            "Guwahati"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Morning of the 4th day when the temple gates reopen for Darshan."
+        },
+        {
+          "id": "majuli-festival-assam",
+          "name": "Majuli Festival",
+          "cities": [
+            "Majuli Island",
+            "Jorhat"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Afternoons for artisan workshops at Samaguri Satra, evenings for theatrical Bhaona dramas under stage lights."
+        },
+        {
+          "id": "jonbeel-mela-assam",
+          "name": "Jonbeel Mela",
+          "cities": [
+            "Jagiroad",
+            "Morigaon",
+            "Guwahati"
+          ],
+          "category": "FOLK_COMMUNITY",
+          "best_time_to_visit": "Friday sunrise (5:00 AM to 8:00 AM) when the historic barter exchange takes place with hill tribes."
+        },
+        {
+          "id": "ali-ai-ligang-assam",
+          "name": "Ali-Ai-Ligang",
+          "cities": [
+            "Dhemaji",
+            "Lakhimpur",
+            "Majuli",
+            "Jorhat"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Wednesday afternoon and evening when youth perform Gumrag dance in every stilt-house courtyard."
+        },
+        {
+          "id": "dehing-patkai-festival-assam",
+          "name": "Dehing Patkai Festival",
+          "cities": [
+            "Digboi",
+            "Tinsukia",
+            "Margherita",
+            "Ledo"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Morning wildlife birding walks followed by evening ethnic cultural showcases."
+        },
+        {
+          "id": "me-dam-me-phi-assam",
+          "name": "Me-Dam-Me-Phi",
+          "cities": [
+            "Sivasagar",
+            "Charaideo",
+            "Jorhat",
+            "Guwahati"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "10:00 AM to 1:00 PM when Deodhai priests conduct the grand ancestral prayer ceremony at Charaideo Maidams."
+        },
+        {
+          "id": "brahmaputra-beach-festival-assam",
+          "name": "Brahmaputra Beach Festival",
+          "cities": [
+            "Guwahati"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoon (3:30 PM) until starry night under bonfire illumination."
+        },
+        {
+          "id": "baishagu-festival-assam",
+          "name": "Baishagu",
+          "cities": [
+            "Kokrajhar",
+            "Baksa",
+            "Udalguri",
+            "Chirang",
+            "Guwahati"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Afternoons when community Bagurumba dance circles form under village shade trees."
+        },
+        {
+          "id": "dihing-tea-festival-assam",
+          "name": "Dihing Tea Festival",
+          "cities": [
+            "Jorhat",
+            "Dibrugarh"
+          ],
+          "category": "CULTURAL_NATIONAL",
+          "best_time_to_visit": "Morning tea-plucking and cupping sessions followed by afternoon tea on manicured bungalow lawns."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Bihar",
+      "festival_count": 11,
+      "festivals": [
+        {
+          "id": "fest-chhath-puja-up",
+          "name": "Chhath Puja at Gomti and Ganga Ghats",
+          "cities": [
+            "Varanasi",
+            "Lucknow",
+            "Gorakhpur",
+            "Prayagraj"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sunset on the third day (Sandhya Arghya) and sunrise on the fourth day (Usha Arghya)"
+        },
+        {
+          "id": "fest-chhath-puja-bihar",
+          "name": "Chhath Puja Patna & Gaya",
+          "cities": [
+            "Patna",
+            "Gaya",
+            "Bhagalpur",
+            "Muzaffarpur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sunset of Day 3 (Sandhya Arghya) and sunrise of Day 4 (Usha Arghya)"
+        },
+        {
+          "id": "fest-sonepur-cattle-fair",
+          "name": "Sonepur Cattle Fair",
+          "cities": [
+            "Sonepur",
+            "Hajipur",
+            "Patna"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "First week including Kartik Purnima dawn for peak animal trading and holy bath"
+        },
+        {
+          "id": "fest-pitrapaksha-mela-gaya",
+          "name": "Pitrapaksha Mela Gaya",
+          "cities": [
+            "Gaya",
+            "Bodh Gaya"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning hours between 6 AM and 12 PM for ancestral Pind Daan rituals"
+        },
+        {
+          "id": "fest-rajgir-mahotsav",
+          "name": "Rajgir Mahotsav",
+          "cities": [
+            "Rajgir",
+            "Nalanda"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Morning visit to Gridhrakuta Peak and evening classical concerts"
+        },
+        {
+          "id": "fest-buddha-jayanti-bodh-gaya",
+          "name": "Buddha Jayanti Bodh Gaya",
+          "cities": [
+            "Bodh Gaya",
+            "Gaya"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn procession at 6:30 AM and illuminated evening butter lamp meditation under the Bodhi Tree"
+        },
+        {
+          "id": "fest-mithila-vivah-panchami",
+          "name": "Mithila Vivah Panchami Janakpur & Madhubani",
+          "cities": [
+            "Madhubani",
+            "Sitamarhi",
+            "Darbhanga",
+            "Janakpur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Day of Vivah Panchami for the grand wedding rituals and traditional Maithili feasts"
+        },
+        {
+          "id": "fest-sama-chakeva-mithila",
+          "name": "Sama Chakeva Mithila",
+          "cities": [
+            "Darbhanga",
+            "Madhubani",
+            "Samastipur",
+            "Sitamarhi"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Kartik Purnima evening when the concluding immersion and fire rituals take place"
+        },
+        {
+          "id": "fest-bihula-bishahari-bhagalpur",
+          "name": "Bihula-Bishahari Bhagalpur",
+          "cities": [
+            "Bhagalpur",
+            "Champanagar",
+            "Banka"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Day of the grand Manjusha procession and temple worship in Champanagar"
+        },
+        {
+          "id": "fest-shravani-mela-sultanganj",
+          "name": "Shravani Mela Sultanganj to Deoghar",
+          "cities": [
+            "Sultanganj",
+            "Banka",
+            "Deoghar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Mondays of Shravan month when pilgrim departures from Sultanganj reach peak intensity"
+        },
+        {
+          "id": "fest-mandar-mahotsav-banka",
+          "name": "Mandar Mahotsav Banka",
+          "cities": [
+            "Bausi",
+            "Banka",
+            "Bhagalpur"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Dawn on Makar Sankranti for the holy dip and morning climb up Mandar Hill"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Chandigarh",
+      "festival_count": 5,
+      "festivals": [
+        {
+          "id": "fest-lohri-punjab",
+          "name": "Lohri Statewide",
+          "cities": [
+            "Amritsar",
+            "Ludhiana",
+            "Jalandhar",
+            "Patiala"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Evening from 6 PM onwards around community bonfires"
+        },
+        {
+          "id": "fest-chandigarh-rose-festival",
+          "name": "Chandigarh Rose Festival",
+          "cities": [
+            "Chandigarh"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Mid-morning for photography and early evening for cultural shows"
+        },
+        {
+          "id": "fest-chandigarh-carnival",
+          "name": "Chandigarh Carnival",
+          "cities": [
+            "Chandigarh"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Afternoon 3 PM onwards into the vibrant musical star nights"
+        },
+        {
+          "id": "fest-mango-festival-pinjore",
+          "name": "Mango Festival Pinjore Gardens",
+          "cities": [
+            "Pinjore",
+            "Panchkula",
+            "Chandigarh"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Morning for mango exhibition judging and late afternoon for illuminated garden strolls"
+        },
+        {
+          "id": "fest-plaza-carnival-sector17",
+          "name": "Plaza Carnival Sector 17",
+          "cities": [
+            "Chandigarh"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Saturday evenings between 6 PM and 9 PM"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Chhattisgarh",
+      "festival_count": 8,
+      "festivals": [
+        {
+          "id": "fest-bastar-dussehra",
+          "name": "Bastar Dussehra Jagdalpur",
+          "cities": [
+            "Jagdalpur",
+            "Dantewada",
+            "Bastar"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Navratri Saptami to Vijyadashami for the chariot pulling and concluding Muria Darbar"
+        },
+        {
+          "id": "fest-madai-festival-bastar",
+          "name": "Madai Festival Bastar & Narayanpur",
+          "cities": [
+            "Narayanpur",
+            "Kondagaon",
+            "Jagdalpur",
+            "Kanker"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Daytime from 11 AM to 5 PM when deity totems assemble and tribal dancing reaches full energy"
+        },
+        {
+          "id": "fest-rajim-kumbh-mela",
+          "name": "Rajim Kumbh Mela",
+          "cities": [
+            "Rajim",
+            "Gariaband",
+            "Raipur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Magh Purnima dawn for the sacred holy bath and evening Pandavani performances"
+        },
+        {
+          "id": "fest-sirpur-dance-festival",
+          "name": "Sirpur National Dance and Music Festival",
+          "cities": [
+            "Sirpur",
+            "Mahasamund",
+            "Raipur"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 9:30 PM for floodlit classical concerts and morning archaeological walks"
+        },
+        {
+          "id": "fest-bhoramdeo-mahotsav",
+          "name": "Bhoramdeo Mahotsav Kawardha",
+          "cities": [
+            "Kawardha",
+            "Kabirdham"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evening from 5:30 PM to 9 PM during floodlit temple concerts"
+        },
+        {
+          "id": "fest-chakradhar-samaroh",
+          "name": "Chakradhar Samaroh Raigarh",
+          "cities": [
+            "Raigarh"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Nightly concerts from 7 PM to 11 PM during peak Kathak and Tabla performances"
+        },
+        {
+          "id": "fest-goncha-festival",
+          "name": "Goncha Festival Jagdalpur",
+          "cities": [
+            "Jagdalpur",
+            "Bastar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Afternoon between 2 PM and 6 PM during the chariot procession and Tupki games"
+        },
+        {
+          "id": "fest-raut-nacha-mahotsav",
+          "name": "Raut Nacha Mahotsav Bilaspur",
+          "cities": [
+            "Bilaspur"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Evening from 5 PM to 11 PM when competitive troupe performances take place"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Dadra and Nagar Haveli and Daman and Diu",
+      "festival_count": 4,
+      "festivals": [
+        {
+          "id": "fest-nariyal-poornima-daman",
+          "name": "Nariyal Poornima Daman",
+          "cities": [
+            "Daman",
+            "Diu"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Morning boat blessing ceremony at Nani Daman Jetty and afternoon beach games"
+        },
+        {
+          "id": "fest-tarpa-festival-silvassa",
+          "name": "Tarpa Folk Festival Silvassa",
+          "cities": [
+            "Silvassa",
+            "Khanvel",
+            "Dudhani"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Late afternoon and evening when the grand Tarpa spiral dances take place"
+        },
+        {
+          "id": "fest-gangaji-fair-daman",
+          "name": "Gangaji Fair Daman",
+          "cities": [
+            "Dabhel",
+            "Daman"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning for holy bath rituals and evening for the rural fairground vibrancy"
+        },
+        {
+          "id": "fest-daman-beach-carnival",
+          "name": "Daman Beach Carnival & Seafood Festival",
+          "cities": [
+            "Daman"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Afternoon 3 PM onwards for watersports and evening beachside concerts"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Delhi",
+      "festival_count": 10,
+      "festivals": [
+        {
+          "id": "fest-lohri-punjab",
+          "name": "Lohri Statewide",
+          "cities": [
+            "Amritsar",
+            "Ludhiana",
+            "Jalandhar",
+            "Patiala"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Evening from 6 PM onwards around community bonfires"
+        },
+        {
+          "id": "fest-qutub-festival",
+          "name": "Qutub Festival Mehrauli",
+          "cities": [
+            "New Delhi",
+            "Mehrauli"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6:30 PM and 10 PM during concert hours"
+        },
+        {
+          "id": "fest-phool-walon-ki-sair",
+          "name": "Phool Walon Ki Sair Mehrauli",
+          "cities": [
+            "Mehrauli",
+            "New Delhi"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Day of the grand floral pankha procession between Yogmaya Temple and Bakhtiyar Kaki Dargah"
+        },
+        {
+          "id": "fest-delhi-arts-festival",
+          "name": "Delhi International Arts Festival",
+          "cities": [
+            "New Delhi"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evening 6 PM to 9 PM at flagship auditorium and open-air park performances"
+        },
+        {
+          "id": "fest-dastkar-nature-bazaar",
+          "name": "Dastkar Nature Bazaar Kisan Haat",
+          "cities": [
+            "New Delhi",
+            "Chhatarpur"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Daytime from 11:30 AM to 5 PM for relaxed shopping and craft demonstrations"
+        },
+        {
+          "id": "fest-jahan-e-khusrau",
+          "name": "Jahan-e-Khusrau World Sufi Festival",
+          "cities": [
+            "New Delhi",
+            "Nizamuddin"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 7 PM and 10 PM under the moonlit sky"
+        },
+        {
+          "id": "fest-urdu-heritage-festival",
+          "name": "Urdu Heritage Festival Red Fort",
+          "cities": [
+            "Old Delhi",
+            "New Delhi"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings from 6 PM to 11 PM for Mushairas and Ghazal concerts"
+        },
+        {
+          "id": "fest-dilli-haat-baisakhi",
+          "name": "Dilli Haat Baisakhi and Crafts Mela",
+          "cities": [
+            "New Delhi",
+            "INA"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Late afternoon from 3 PM to 8 PM for live performances and street food"
+        },
+        {
+          "id": "fest-garden-tourism-festival",
+          "name": "Garden Tourism Festival",
+          "cities": [
+            "New Delhi",
+            "Said-ul-Ajaib"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Mid-morning for flower photography and late afternoon for amphitheatre concerts"
+        },
+        {
+          "id": "fest-kanwar-yatra-haridwar",
+          "name": "Kanwar Yatra Haridwar",
+          "cities": [
+            "Haridwar",
+            "Rishikesh",
+            "Roorkee",
+            "Meerut"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Peak days during the final 3 days before Shravan Shivratri"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Goa",
+      "festival_count": 8,
+      "festivals": [
+        {
+          "id": "fest-goa-carnival",
+          "name": "Goa Carnival",
+          "cities": [
+            "Panaji",
+            "Margao",
+            "Vasco da Gama",
+            "Mapusa"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Opening day parade on Saturday in Panaji and evening street dances"
+        },
+        {
+          "id": "fest-shigmo-festival",
+          "name": "Shigmo Festival Statewide",
+          "cities": [
+            "Panaji",
+            "Ponda",
+            "Margao",
+            "Bicholim",
+            "Mapusa"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Panaji city parade evening and Ponda cultural night for the most elaborate mythological floats"
+        },
+        {
+          "id": "fest-feast-st-francis-xavier",
+          "name": "Feast of St. Francis Xavier Old Goa",
+          "cities": [
+            "Old Goa (Velha Goa)",
+            "Panaji"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Feast Day (December 3) for the solemn morning High Mass or peaceful evening novena masses"
+        },
+        {
+          "id": "fest-bonderam-festival",
+          "name": "Bonderam Flag Festival Divar Island",
+          "cities": [
+            "Divar Island",
+            "Piedade",
+            "Panaji"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Afternoon between 3 PM and 8 PM for the flag parade and street carnival"
+        },
+        {
+          "id": "fest-sao-joao-goa",
+          "name": "Sao Joao Water Festival Siolim",
+          "cities": [
+            "Siolim",
+            "Benaulim",
+            "Anjuna",
+            "Curtorim"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Afternoon between 2 PM and 6:30 PM at the Siolim riverfront for the Sangodd boat parade"
+        },
+        {
+          "id": "fest-tripurari-poornima-goa",
+          "name": "Tripurari Poornima Boat Festival Sankhali",
+          "cities": [
+            "Sankhali (Sanquelim)",
+            "Bicholim"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Evening from 7 PM to midnight when the illuminated boat competition and release takes place"
+        },
+        {
+          "id": "fest-grape-escapade",
+          "name": "Grape Escapade Wine Festival Panaji",
+          "cities": [
+            "Panaji"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evening from 6 PM to 11 PM for wine tasting and live musical performances"
+        },
+        {
+          "id": "fest-goa-heritage-festival",
+          "name": "Goa Heritage Festival Campal",
+          "cities": [
+            "Panaji",
+            "Campal",
+            "Fontainhas"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Morning heritage architectural walks and evening Fado musical recitals"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Gujarat",
+      "festival_count": 14,
+      "festivals": [
+        {
+          "id": "fest-rann-utsav-kutch",
+          "name": "Rann Utsav Kutch",
+          "cities": [
+            "Dhordo",
+            "Bhuj",
+            "Kutch"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Full moon night and sunrise/sunset over the white salt plains"
+        },
+        {
+          "id": "fest-international-kite-festival",
+          "name": "International Kite Festival (Uttarayan)",
+          "cities": [
+            "Ahmedabad",
+            "Surat",
+            "Vadodara",
+            "Rajkot"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Sunrise to sunset on January 14 on an authentic Old City heritage rooftop"
+        },
+        {
+          "id": "fest-navratri-garba-gujarat",
+          "name": "Navratri Garba Mahotsav",
+          "cities": [
+            "Vadodara",
+            "Ahmedabad",
+            "Surat",
+            "Rajkot"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Night from 9 PM to 2 AM when the synchronized dancing reaches peak euphoria"
+        },
+        {
+          "id": "fest-modhera-dance-festival",
+          "name": "Modhera Dance Festival Sun Temple",
+          "cities": [
+            "Modhera",
+            "Mehsana",
+            "Patan"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6:30 PM and 9:30 PM during floodlit dance recitals"
+        },
+        {
+          "id": "fest-tarnetar-fair",
+          "name": "Tarnetar Fair Surendranagar",
+          "cities": [
+            "Tarnetar",
+            "Thangadh",
+            "Surendranagar"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Daytime from 11 AM to 5 PM for the grandest Rahado dance circles and umbrella displays"
+        },
+        {
+          "id": "fest-bhavnath-mahadev-fair",
+          "name": "Bhavnath Mahadev Fair Girnar Junagadh",
+          "cities": [
+            "Junagadh",
+            "Mount Girnar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Maha Shivratri night from 10 PM to 2 AM for the midnight Naga Sadhu procession"
+        },
+        {
+          "id": "fest-madhavpur-fair",
+          "name": "Madhavpur Ghed Fair Porbandar",
+          "cities": [
+            "Madhavpur Ghed",
+            "Porbandar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Chaitra Shukla Dwadashi for the grand wedding chariot procession to the beach"
+        },
+        {
+          "id": "fest-vautha-fair",
+          "name": "Vautha Donkey & Cattle Fair",
+          "cities": [
+            "Vautha",
+            "Dholka",
+            "Ahmedabad"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Kartik Purnima dawn for the sacred river dip and daytime donkey market"
+        },
+        {
+          "id": "fest-shamlaji-fair",
+          "name": "Shamlaji Fair Aravalli",
+          "cities": [
+            "Shamlaji",
+            "Aravalli"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Kartik Purnima day and night for peak tribal gatherings and flag processions"
+        },
+        {
+          "id": "fest-kavant-fair",
+          "name": "Kavant Tribal Fair Chhota Udepur",
+          "cities": [
+            "Kavant",
+            "Chhota Udepur"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Daytime from 11 AM to 5 PM when dancing troupes take over the village square"
+        },
+        {
+          "id": "fest-dang-darbar-ahwa",
+          "name": "Dang Darbar Ahwa",
+          "cities": [
+            "Ahwa",
+            "Saputara",
+            "The Dangs"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Opening day for the royal procession of the five kings and afternoon human pyramid dances"
+        },
+        {
+          "id": "fest-chitra-vichitra-fair",
+          "name": "Chitra Vichitra Fair Sabarkantha",
+          "cities": [
+            "Gunbhakhari",
+            "Poshina",
+            "Sabarkantha"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Morning hours when the emotional transition from mourning rituals to ecstatic dance takes place"
+        },
+        {
+          "id": "fest-rath-yatra-ahmedabad",
+          "name": "Rath Yatra Ahmedabad",
+          "cities": [
+            "Ahmedabad"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn (4 AM to 7 AM) at Jamalpur temple for Mangala Aarti and Pahind Vidhi"
+        },
+        {
+          "id": "fest-somnath-mahotsav",
+          "name": "Somnath Mahotsav Prabhas Patan",
+          "cities": [
+            "Prabhas Patan",
+            "Veraval",
+            "Somnath"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening aarti at 7 PM followed by the Sound-and-Light show and midnight Darshan"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Haryana",
+      "festival_count": 11,
+      "festivals": [
+        {
+          "id": "fest-lohri-punjab",
+          "name": "Lohri Statewide",
+          "cities": [
+            "Amritsar",
+            "Ludhiana",
+            "Jalandhar",
+            "Patiala"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Evening from 6 PM onwards around community bonfires"
+        },
+        {
+          "id": "fest-mango-festival-pinjore",
+          "name": "Mango Festival Pinjore Gardens",
+          "cities": [
+            "Pinjore",
+            "Panchkula",
+            "Chandigarh"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Morning for mango exhibition judging and late afternoon for illuminated garden strolls"
+        },
+        {
+          "id": "fest-surajkund-crafts-mela",
+          "name": "Surajkund International Crafts Mela",
+          "cities": [
+            "Faridabad",
+            "Delhi NCR"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Weekdays from 10:30 AM to 4 PM for uncrowded artisan browsing; evenings for cultural concerts"
+        },
+        {
+          "id": "fest-international-gita-mahotsav",
+          "name": "International Gita Mahotsav Kurukshetra",
+          "cities": [
+            "Kurukshetra",
+            "Jyotisar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening Maha Aarti at Brahma Sarovar and day visits to the sacred banyan tree at Jyotisar"
+        },
+        {
+          "id": "fest-pinjore-heritage-festival",
+          "name": "Pinjore Heritage Festival",
+          "cities": [
+            "Pinjore",
+            "Panchkula",
+            "Chandigarh"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings between 5 PM and 10 PM when palace illuminations and music concerts begin"
+        },
+        {
+          "id": "fest-haryali-teej-haryana",
+          "name": "Haryali Teej of Haryana",
+          "cities": [
+            "Rohtak",
+            "Hisar",
+            "Ambala",
+            "Jhajjar",
+            "Faridabad"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Afternoon and evening when swings are active and fairs are bustling"
+        },
+        {
+          "id": "fest-baisakhi-mela-pinjore",
+          "name": "Baisakhi Mela Pinjore",
+          "cities": [
+            "Pinjore",
+            "Panchkula"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Afternoon between 12 PM and 5 PM for dance competitions"
+        },
+        {
+          "id": "fest-gugga-naumi-haryana",
+          "name": "Gugga Naumi Fair",
+          "cities": [
+            "Hisar",
+            "Bhiwani",
+            "Sirsa",
+            "Jind",
+            "Rohtak"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Morning Chhari procession and nightlong ballad recitals"
+        },
+        {
+          "id": "fest-kartik-cultural-festival",
+          "name": "Kartik Cultural Festival Ballabgarh",
+          "cities": [
+            "Ballabgarh",
+            "Faridabad",
+            "Delhi NCR"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings from 6 PM to 10 PM when palace illuminations and classical concerts commence"
+        },
+        {
+          "id": "fest-kapal-mochan-mela",
+          "name": "Kapal Mochan Mela Yamunanagar",
+          "cities": [
+            "Bilaspur",
+            "Yamunanagar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Kartik Purnima eve and dawn for the sacred holy bath and Deepdaan"
+        },
+        {
+          "id": "fest-kanwar-yatra-haridwar",
+          "name": "Kanwar Yatra Haridwar",
+          "cities": [
+            "Haridwar",
+            "Rishikesh",
+            "Roorkee",
+            "Meerut"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Peak days during the final 3 days before Shravan Shivratri"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Himachal Pradesh",
+      "festival_count": 10,
+      "festivals": [
+        {
+          "id": "fest-kullu-dussehra",
+          "name": "Kullu Dussehra",
+          "cities": [
+            "Kullu",
+            "Manali"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Opening day for the majestic Rath Yatra and concluding Lanka Dahan day"
+        },
+        {
+          "id": "fest-mandi-shivratri",
+          "name": "International Mandi Shivratri Fair",
+          "cities": [
+            "Mandi"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "First day Shobha Yatra and concluding procession (Jaleb)"
+        },
+        {
+          "id": "fest-minjar-mela-chamba",
+          "name": "Minjar Mela Chamba",
+          "cities": [
+            "Chamba"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Opening Sunday and concluding immersion procession day"
+        },
+        {
+          "id": "fest-fagli-festival-lahaul",
+          "name": "Fagli Festival Lahaul",
+          "cities": [
+            "Pattan Valley",
+            "Udaipur (Lahaul)",
+            "Keylong"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Day of the straw-masked procession"
+        },
+        {
+          "id": "fest-halda-festival",
+          "name": "Halda Festival Keylong",
+          "cities": [
+            "Keylong",
+            "Ghar Valley",
+            "Guskar"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Night of the grand Halda torchlight bonfire"
+        },
+        {
+          "id": "fest-renuka-ji-fair",
+          "name": "Renuka Ji Fair Sirmaur",
+          "cities": [
+            "Renuka Ji",
+            "Nahan",
+            "Sirmaur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening Deepdaan ceremony on the lake waters"
+        },
+        {
+          "id": "fest-losar-lahaul-spiti",
+          "name": "Losar Festival Lahaul & Spiti",
+          "cities": [
+            "Kaza",
+            "Key",
+            "Tabo",
+            "Kibber"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "First three days for grand monastic gatherings"
+        },
+        {
+          "id": "fest-suhi-mela-chamba",
+          "name": "Suhi Mela Chamba",
+          "cities": [
+            "Chamba"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Morning procession of women climbing to the hilltop temple"
+        },
+        {
+          "id": "fest-himalayan-festival-mcleodganj",
+          "name": "International Himalayan Festival McLeod Ganj",
+          "cities": [
+            "McLeod Ganj",
+            "Dharamshala"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Morning opening ceremony and afternoon cultural concerts"
+        },
+        {
+          "id": "fest-doongri-fair-manali",
+          "name": "Doongri Fair Manali",
+          "cities": [
+            "Manali"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Afternoon sessions when folk dancing reaches peak energy under forest canopy"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Jammu and Kashmir",
+      "festival_count": 8,
+      "festivals": [
+        {
+          "id": "fest-herath-kashmir",
+          "name": "Herath (Maha Shivratri of Kashmir)",
+          "cities": [
+            "Srinagar",
+            "Jammu",
+            "Anantnag"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening during Vatuk Puja and morning of Doon Mavas"
+        },
+        {
+          "id": "fest-tulip-festival-srinagar",
+          "name": "Tulip Festival Srinagar",
+          "cities": [
+            "Srinagar"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Mid-morning or golden hour late afternoon"
+        },
+        {
+          "id": "fest-shikara-festival-kashmir",
+          "name": "Shikara Festival Dal Lake",
+          "cities": [
+            "Srinagar"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Late afternoon into illuminated night parade"
+        },
+        {
+          "id": "fest-gurez-festival",
+          "name": "Gurez Valley Festival",
+          "cities": [
+            "Dawar (Gurez)",
+            "Bandipora"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Full daytime cultural hours and evening campfires"
+        },
+        {
+          "id": "fest-baisakhi-mughal-gardens",
+          "name": "Baisakhi at Mughal Gardens Srinagar",
+          "cities": [
+            "Srinagar"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Afternoon and evening on April 13/14"
+        },
+        {
+          "id": "fest-urs-shah-e-hamdan",
+          "name": "Urs Shah-e-Hamdan Srinagar",
+          "cities": [
+            "Srinagar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Early morning Fajr prayers and afternoon congregational relic viewing"
+        },
+        {
+          "id": "fest-saffron-festival-pampore",
+          "name": "Saffron Harvest Festival Pampore",
+          "cities": [
+            "Pampore",
+            "Pulwama",
+            "Srinagar"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Early morning (7 AM to 11 AM) when flowers bloom fresh with dew"
+        },
+        {
+          "id": "fest-kheer-bhawani-mela",
+          "name": "Kheer Bhawani Mela Tulmulla",
+          "cities": [
+            "Tulmulla (Ganderbal)",
+            "Srinagar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning aarti and sacred spring pradakshina"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Jharkhand",
+      "festival_count": 9,
+      "festivals": [
+        {
+          "id": "fest-shravani-mela-sultanganj",
+          "name": "Shravani Mela Sultanganj to Deoghar",
+          "cities": [
+            "Sultanganj",
+            "Banka",
+            "Deoghar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Mondays of Shravan month when pilgrim departures from Sultanganj reach peak intensity"
+        },
+        {
+          "id": "fest-sarhul-festival-ranchi",
+          "name": "Sarhul Festival Ranchi",
+          "cities": [
+            "Ranchi",
+            "Khunti",
+            "Gumla",
+            "Jamshedpur"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Morning Sarna worship at Hatma and afternoon grand street procession down Main Road"
+        },
+        {
+          "id": "fest-karma-festival-jharkhand",
+          "name": "Karma Festival Jharkhand",
+          "cities": [
+            "Ranchi",
+            "Dumka",
+            "Hazaribagh",
+            "Bokaro",
+            "Chaibasa"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Nightlong dancing and storytelling around the sacred Karma tree at the village Akhra"
+        },
+        {
+          "id": "fest-tusu-parab-jharkhand",
+          "name": "Tusu Parab Chotanagpur",
+          "cities": [
+            "Ranchi",
+            "Jamshedpur",
+            "Purulia",
+            "Dhanbad"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Dawn of Makar Sankranti (January 14) for the colorful river immersion procession and daytime fair"
+        },
+        {
+          "id": "fest-sohrai-khovar-art-festival",
+          "name": "Sohrai and Khovar Art Festival Hazaribagh",
+          "cities": [
+            "Hazaribagh",
+            "Bada",
+            "Oriya",
+            "Isko"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Daytime from 9 AM to 4 PM for guided walking tours through painted art villages"
+        },
+        {
+          "id": "fest-baidyanath-shravani-mela",
+          "name": "Baidyanath Shravani Mela Deoghar",
+          "cities": [
+            "Deoghar",
+            "Jasidih"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn (4 AM to 8 AM) for early morning VIP/general darshan lines"
+        },
+        {
+          "id": "fest-hal-punhya-jharkhand",
+          "name": "Hal Punhya",
+          "cities": [
+            "Ranchi",
+            "Hazaribagh",
+            "Palamu",
+            "Giridih"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Early morning dawn hours (6 AM to 8 AM) when the ceremonial first plowing takes place"
+        },
+        {
+          "id": "fest-bandna-parab",
+          "name": "Bandna Parab",
+          "cities": [
+            "Dhanbad",
+            "Bokaro",
+            "Purulia",
+            "Ranchi",
+            "Giridih"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Evening during cattle shed illumination and morning decorated bullock parades"
+        },
+        {
+          "id": "fest-bhagta-parab",
+          "name": "Bhagta Parab",
+          "cities": [
+            "Tamar",
+            "Bundu",
+            "Ranchi"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Afternoon and evening when fire-walking and pole-swinging feats take place"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Karnataka",
+      "festival_count": 14,
+      "festivals": [
+        {
+          "id": "fest-mysuru-dasara",
+          "name": "Mysuru Dasara",
+          "cities": [
+            "Mysuru (Mysore)"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Vijyadashami day for the Jumboo Savari procession and nightly palace illumination at 7 PM"
+        },
+        {
+          "id": "fest-hampi-utsav",
+          "name": "Hampi Utsav",
+          "cities": [
+            "Hampi",
+            "Hosapete (Hospet)",
+            "Vijayanagara"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings between 6 PM and 10 PM when monuments are illuminated for classical concerts"
+        },
+        {
+          "id": "fest-kambala-buffalo-race",
+          "name": "Kambala Buffalo Race Coastal Karnataka",
+          "cities": [
+            "Moodabidri",
+            "Puttur",
+            "Mangaluru",
+            "Udupi"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Afternoon and night (4 PM to midnight) under the floodlights when semi-finals and finals take place"
+        },
+        {
+          "id": "fest-karaga-shaktyotsava",
+          "name": "Karaga Shaktyotsava Bengaluru",
+          "cities": [
+            "Bengaluru"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Midnight (11 PM to 4 AM) on Chaitra Purnima night during the grand street procession"
+        },
+        {
+          "id": "fest-pattadakal-dance-festival",
+          "name": "Pattadakal Dance Festival",
+          "cities": [
+            "Pattadakal",
+            "Badami",
+            "Bagalkot"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 9:30 PM during the floodlit classical dance recitals"
+        },
+        {
+          "id": "fest-kadalekai-parishe",
+          "name": "Kadalekai Parishe Bengaluru",
+          "cities": [
+            "Bengaluru",
+            "Basavanagudi"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Evening between 4 PM and 9 PM when the street fair is vibrant and peanuts are freshly roasted"
+        },
+        {
+          "id": "fest-vairamudi-brahmotsavam",
+          "name": "Vairamudi Brahmotsavam Melukote",
+          "cities": [
+            "Melukote",
+            "Pandavapura",
+            "Mandya"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Midnight (10 PM to 4 AM) when the deity wearing the diamond crown is carried on the golden Garuda vehicle"
+        },
+        {
+          "id": "fest-mahamastakabhisheka-shravanabelagola",
+          "name": "Mahamastakabhisheka Shravanabelagola",
+          "cities": [
+            "Shravanabelagola",
+            "Hassan"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning hours (8 AM to 1 PM) when the sacred color anointing (Abhisheka) takes place"
+        },
+        {
+          "id": "fest-yakshagana-festival",
+          "name": "Yakshagana Bayalata Festival Coastal Karnataka",
+          "cities": [
+            "Udupi",
+            "Mangaluru",
+            "Kundapura",
+            "Karkala",
+            "Dharmasthala"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Night from 10 PM to 4 AM when high-drama mythological battles and comedic interludes take place"
+        },
+        {
+          "id": "fest-chalukya-utsav-badami",
+          "name": "Chalukya Utsav Badami & Aihole",
+          "cities": [
+            "Badami",
+            "Aihole",
+            "Pattadakal"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings between 6 PM and 9:30 PM for floodlit lakefront concerts and morning cliff walks"
+        },
+        {
+          "id": "fest-tula-sankramana-coorg",
+          "name": "Tula Sankramana Coorg",
+          "cities": [
+            "Talakaveri",
+            "Madikeri",
+            "Bhagamandala",
+            "Kodagu"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "The exact predetermined astrological hour of Theerthodbhava (usually afternoon or evening) and dawn bathing"
+        },
+        {
+          "id": "fest-hoysala-mahotsava",
+          "name": "Hoysala Mahotsava Halebidu & Belur",
+          "cities": [
+            "Halebidu",
+            "Belur",
+            "Hassan"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 9 PM during the floodlit dance concerts and daytime for sculptural exploration"
+        },
+        {
+          "id": "fest-banashankari-jatre",
+          "name": "Banashankari Jatre Badami",
+          "cities": [
+            "Badami",
+            "Cholachagudda",
+            "Bagalkot"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Pushya Purnima day for the grand chariot pulling (Rathotsava) and evening illuminated tank strolls"
+        },
+        {
+          "id": "fest-godachi-jatre",
+          "name": "Godachi Jatre Belagavi",
+          "cities": [
+            "Godachi",
+            "Ramdurg",
+            "Belagavi"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Rathotsava day and evening for the dramatic Guggalu fire-pot procession"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Kerala",
+      "festival_count": 14,
+      "festivals": [
+        {
+          "id": "fest-onam-kerala",
+          "name": "Onam Statewide",
+          "cities": [
+            "Thiruvananthapuram",
+            "Kochi",
+            "Thrissur",
+            "Kottayam",
+            "Kozhikode"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Thiruvonam day for the grand family Onasadya feast and the fourth Onam day for Pulikali tiger dance in Thrissur"
+        },
+        {
+          "id": "fest-thrissur-pooram",
+          "name": "Thrissur Pooram",
+          "cities": [
+            "Thrissur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Afternoon between 2 PM and 6 PM for Ilanjithara Melam and Kudamattom umbrella exchange"
+        },
+        {
+          "id": "fest-theyyam-festival-malabar",
+          "name": "Theyyam Festival North Malabar",
+          "cities": [
+            "Kannur",
+            "Kasaragod",
+            "Nileshwar",
+            "Payyanur"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Night from 10 PM to 6 AM at a village Kavu when fire Theyyam rituals take place"
+        },
+        {
+          "id": "fest-attukal-pongala",
+          "name": "Attukal Pongala Thiruvananthapuram",
+          "cities": [
+            "Thiruvananthapuram"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Pongala day from 10 AM (lighting of hearths) to 2:30 PM (sanctified water blessing)"
+        },
+        {
+          "id": "fest-nehru-trophy-boat-race",
+          "name": "Nehru Trophy Boat Race Alappuzha",
+          "cities": [
+            "Alappuzha (Alleppey)"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Afternoon between 1:30 PM and 5:30 PM during the heats and grand final races"
+        },
+        {
+          "id": "fest-vishu-kerala",
+          "name": "Vishu Statewide",
+          "cities": [
+            "Thiruvananthapuram",
+            "Kochi",
+            "Guruvayur",
+            "Kozhikode"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Early morning dawn hours (4:30 AM to 6:30 AM) for viewing the sacred Vishu Kani"
+        },
+        {
+          "id": "fest-makaravilakku-sabarimala",
+          "name": "Makaravilakku Sabarimala",
+          "cities": [
+            "Sabarimala",
+            "Pathanamthitta"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dusk (5:30 PM to 7 PM) on Makar Sankranti for the Thiruvabharanam darshan and Makara Jyothi sighting"
+        },
+        {
+          "id": "fest-aranmula-boat-race",
+          "name": "Aranmula Uthrattathi Vallamkali",
+          "cities": [
+            "Aranmula",
+            "Pathanamthitta",
+            "Chengannur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Midday (11:30 AM to 3 PM) for the river pageant and Valla Sadya feast"
+        },
+        {
+          "id": "fest-chembai-sangeetholsavam",
+          "name": "Chembai Sangeetholsavam Guruvayur",
+          "cities": [
+            "Guruvayur",
+            "Thrissur"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Guruvayur Ekadashi night for the mass singing of the Pancharatna Kritis"
+        },
+        {
+          "id": "fest-parumala-perunnal",
+          "name": "Parumala Perunnal",
+          "cities": [
+            "Parumala",
+            "Mannar",
+            "Pathanamthitta",
+            "Chengannur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "November 2 morning for the solemn Holy Qurbana and grand circumambulation procession (Rasa)"
+        },
+        {
+          "id": "fest-nishagandhi-dance-festival",
+          "name": "Nishagandhi Dance Festival Thiruvananthapuram",
+          "cities": [
+            "Thiruvananthapuram"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 9:30 PM during classical dance concerts"
+        },
+        {
+          "id": "fest-cochin-carnival",
+          "name": "Cochin Carnival Fort Kochi",
+          "cities": [
+            "Kochi",
+            "Fort Kochi",
+            "Mattancherry"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "December 31 night from 10 PM to 1 AM for the midnight Papanji burning and beach countdown"
+        },
+        {
+          "id": "fest-utsavam-kerala-arts",
+          "name": "Utsavam Kerala Arts Festival",
+          "cities": [
+            "Thiruvananthapuram",
+            "Kochi",
+            "Kozhikode",
+            "Palakkad",
+            "Kollam"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 5:30 PM and 9:30 PM across all district stages"
+        },
+        {
+          "id": "fest-maramon-convention",
+          "name": "Maramon Convention",
+          "cities": [
+            "Maramon",
+            "Kozhencherry",
+            "Pathanamthitta"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning sessions (9:30 AM to 12 PM) and concluding Sunday valedictory service"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Ladakh",
+      "festival_count": 8,
+      "festivals": [
+        {
+          "id": "fest-hemis-festival",
+          "name": "Hemis Festival Ladakh",
+          "cities": [
+            "Leh",
+            "Hemis"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning session starting at 9 AM for the prime Cham dance sequences"
+        },
+        {
+          "id": "fest-ladakh-festival",
+          "name": "Ladakh Festival Leh",
+          "cities": [
+            "Leh"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Opening day street parade and afternoon polo matches"
+        },
+        {
+          "id": "fest-losar-ladakh",
+          "name": "Losar Festival Ladakh",
+          "cities": [
+            "Leh",
+            "Nubra Valley",
+            "Zanskar",
+            "Kargil"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "First three days including Metho fire procession night"
+        },
+        {
+          "id": "fest-dosmochey-ladakh",
+          "name": "Dosmochey Festival Leh & Likir",
+          "cities": [
+            "Leh",
+            "Likir",
+            "Diskit (Nubra)"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Second day afternoon during the dramatic tearing down of the thread mast"
+        },
+        {
+          "id": "fest-sindhu-darshan",
+          "name": "Sindhu Darshan Festival Shey",
+          "cities": [
+            "Shey",
+            "Leh"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Morning multi-river mingling ceremony and evening cultural gala"
+        },
+        {
+          "id": "fest-taktok-festival",
+          "name": "Tak Tok Festival",
+          "cities": [
+            "Sakti Village",
+            "Leh"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning session starting around 9:30 AM"
+        },
+        {
+          "id": "fest-korzok-gustor",
+          "name": "Korzok Gustor Festival Tso Moriri",
+          "cities": [
+            "Korzok",
+            "Tso Moriri",
+            "Changthang"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Both days during morning Cham dances"
+        },
+        {
+          "id": "fest-spituk-gustor",
+          "name": "Spituk Gustor Festival",
+          "cities": [
+            "Spituk",
+            "Leh"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Mid-day during the Cham dances when the winter sun is warmest"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Lakshadweep",
+      "festival_count": 3,
+      "festivals": [
+        {
+          "id": "fest-eid-ul-fitr-lakshadweep",
+          "name": "Eid-ul-Fitr Kavaratti",
+          "cities": [
+            "Kavaratti",
+            "Agatti",
+            "Amini",
+            "Minicoy",
+            "Kalpeni"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn for the congregational prayers at 7 AM and daytime house-to-house community visiting"
+        },
+        {
+          "id": "fest-milad-un-nabi-lakshadweep",
+          "name": "Milad-un-Nabi Lakshadweep",
+          "cities": [
+            "Kavaratti",
+            "Andrott",
+            "Minicoy",
+            "Agatti"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning Mawlid recitations (8 AM to 11 AM) and evening Dafmuttu performances"
+        },
+        {
+          "id": "fest-lakshadweep-sea-festival",
+          "name": "Lakshadweep National Sea Festival",
+          "cities": [
+            "Kavaratti",
+            "Bangaram",
+            "Kadmat"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Daytime from 8 AM to 4 PM for scuba diving, boat races, and lagoon water sports"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Madhya Pradesh",
+      "festival_count": 14,
+      "festivals": [
+        {
+          "id": "fest-khajuraho-dance-festival",
+          "name": "Khajuraho Dance Festival",
+          "cities": [
+            "Khajuraho",
+            "Chhatarpur"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6:30 PM and 10 PM during floodlit dance recitals"
+        },
+        {
+          "id": "fest-tansen-samaroh-gwalior",
+          "name": "Tansen Samaroh Gwalior",
+          "cities": [
+            "Gwalior"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evening baithaks (6 PM to 10 PM) and the serene Sunday morning dawn session (9 AM)"
+        },
+        {
+          "id": "fest-lokrang-festival-bhopal",
+          "name": "Lokrang Festival Bhopal",
+          "cities": [
+            "Bhopal"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 5:30 PM and 9:30 PM for main stage folk dance performances"
+        },
+        {
+          "id": "fest-ujjain-simhastha-kumbh",
+          "name": "Ujjain Simhastha Kumbh Mela",
+          "cities": [
+            "Ujjain"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn of designated Shahi Snan dates and evening Kshipra Aarti at Ram Ghat"
+        },
+        {
+          "id": "fest-bhagoria-tribal-fair",
+          "name": "Bhagoria Tribal Fair Jhabua & Alirajpur",
+          "cities": [
+            "Jhabua",
+            "Alirajpur",
+            "Bhabhra",
+            "Ranapur"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Daytime between 10 AM and 4 PM when the tribal haat reaches peak festive energy"
+        },
+        {
+          "id": "fest-mandu-festival",
+          "name": "Mandu Festival",
+          "cities": [
+            "Mandu (Mandav)",
+            "Dhar"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Sunrise for hot air ballooning and evening 6 PM onwards for illuminated palace concerts"
+        },
+        {
+          "id": "fest-pachmarhi-utsav",
+          "name": "Pachmarhi Utsav",
+          "cities": [
+            "Pachmarhi",
+            "Narmadapuram (Hoshangabad)"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Sunset at Dhoopgarh followed by evening cultural concerts at the festival ground"
+        },
+        {
+          "id": "fest-chethiyagiri-vihara-sanchi",
+          "name": "Chethiyagiri Vihara Festival Sanchi",
+          "cities": [
+            "Sanchi",
+            "Raisen",
+            "Bhopal"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning relic exposition ceremony at 9 AM and peaceful sunset meditation at the Great Stupa"
+        },
+        {
+          "id": "fest-malwa-utsav",
+          "name": "Malwa Utsav Indore & Ujjain",
+          "cities": [
+            "Indore",
+            "Ujjain"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 5:30 PM and 10:30 PM for street food tasting and cultural concerts"
+        },
+        {
+          "id": "fest-nimar-utsav-maheshwar",
+          "name": "Nimar Utsav Maheshwar",
+          "cities": [
+            "Maheshwar",
+            "Khargone"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Sunset on Kartik Purnima for the magnificent Deepdaan and evening classical concerts"
+        },
+        {
+          "id": "fest-orchha-mahotsav",
+          "name": "Orchha Mahotsav",
+          "cities": [
+            "Orchha",
+            "Niwari"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Morning aarti at Ram Raja Temple and evening projection show at Jahangir Mahal"
+        },
+        {
+          "id": "fest-allauddin-khan-samaroh",
+          "name": "Allauddin Khan Sangeet Samaroh Maihar",
+          "cities": [
+            "Maihar",
+            "Satna"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evening sessions from 6 PM to 10 PM for authentic classical instrumental recitals"
+        },
+        {
+          "id": "fest-dhrupad-samaroh-bhopal",
+          "name": "Dhrupad Samaroh Bhopal",
+          "cities": [
+            "Bhopal"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evening sessions from 6:30 PM to 10 PM for meditative listening"
+        },
+        {
+          "id": "fest-bhojpur-utsav",
+          "name": "Bhojpur Utsav",
+          "cities": [
+            "Bhojpur",
+            "Raisen",
+            "Bhopal"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Maha Shivratri day and evening for the grand temple illuminations and cultural concerts"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Maharashtra",
+      "festival_count": 14,
+      "festivals": [
+        {
+          "id": "fest-ganesh-chaturthi-maharashtra",
+          "name": "Ganesh Chaturthi Mumbai & Pune",
+          "cities": [
+            "Mumbai",
+            "Pune",
+            "Nagpur",
+            "Nashik"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Anant Chaturdashi day for the epic immersion procession at Girgaon Chowpatty and dawn pandal hopping"
+        },
+        {
+          "id": "fest-gudi-padwa",
+          "name": "Gudi Padwa Mumbai & Nagpur",
+          "cities": [
+            "Mumbai (Girgaon/Dadar)",
+            "Pune",
+            "Thane",
+            "Nagpur",
+            "Kolhapur"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Morning between 7 AM and 11 AM during the grand Shobha Yatra in Girgaon or Thane"
+        },
+        {
+          "id": "fest-elephanta-festival",
+          "name": "Elephanta Cultural Festival Elephanta Island",
+          "cities": [
+            "Elephanta Island (Gharapuri)",
+            "Mumbai"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 5 PM and 9:30 PM for sunset ferry ride and floodlit classical concerts"
+        },
+        {
+          "id": "fest-ellora-ajanta-festival",
+          "name": "Ellora-Ajanta International Festival",
+          "cities": [
+            "Ellora",
+            "Chhatrapati Sambhajinagar (Aurangabad)"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 10 PM when the Kailasa Temple is illuminated for classical concerts"
+        },
+        {
+          "id": "fest-pandharpur-wari",
+          "name": "Pandharpur Wari Ashadhi Ekadashi",
+          "cities": [
+            "Pandharpur",
+            "Alandi",
+            "Dehu",
+            "Pune"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Ashadhi Ekadashi dawn at Pandharpur and witnessing the Ringan ceremony in rural Pune/Solapur"
+        },
+        {
+          "id": "fest-banganga-music-festival",
+          "name": "Banganga Classical Music Festival",
+          "cities": [
+            "Mumbai",
+            "Malabar Hill"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6:30 PM and 10 PM under the starlit sky"
+        },
+        {
+          "id": "fest-narali-purnima",
+          "name": "Narali Purnima Koli Fishing Community",
+          "cities": [
+            "Mumbai (Versova, Worli, Mahim)",
+            "Alibaug",
+            "Thane"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Late afternoon from 3:30 PM to 7 PM for the coastal processions and boat blessing"
+        },
+        {
+          "id": "fest-kala-ghoda-arts-festival",
+          "name": "Kala Ghoda Arts Festival Mumbai",
+          "cities": [
+            "Mumbai"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Afternoon from 2 PM to 5 PM for art installation viewing and evening concerts at Asiatic Steps"
+        },
+        {
+          "id": "fest-chikoo-festival-dahanu",
+          "name": "Chikoo Festival Dahanu & Bordi",
+          "cities": [
+            "Dahanu",
+            "Bordi",
+            "Palghar"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Morning orchard walkthroughs and afternoon beachside craft shopping"
+        },
+        {
+          "id": "fest-marathwada-mahotsav",
+          "name": "Marathwada Mahotsav Aurangabad",
+          "cities": [
+            "Chhatrapati Sambhajinagar",
+            "Paithan",
+            "Nanded"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings between 5:30 PM and 9:30 PM for folk performances and Powada recitals"
+        },
+        {
+          "id": "fest-pola-festival-maharashtra",
+          "name": "Pola Cattle Festival Vidarbha",
+          "cities": [
+            "Nagpur",
+            "Amravati",
+            "Wardha",
+            "Akola",
+            "Kolhapur"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Afternoon between 2 PM and 6 PM during the grand decorated bullock procession"
+        },
+        {
+          "id": "fest-jyotiba-fair-kolhapur",
+          "name": "Jyotiba Fair Wadi Ratnagiri Kolhapur",
+          "cities": [
+            "Wadi Ratnagiri",
+            "Kolhapur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Chaitra Purnima day between 9 AM and 4 PM for the grand Sasan pole procession and pink clouds"
+        },
+        {
+          "id": "fest-mount-mary-bandra-fair",
+          "name": "Mount Mary Bandra Fair Mumbai",
+          "cities": [
+            "Mumbai",
+            "Bandra West"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Weekday mornings for peaceful church visits or late afternoon for the bustling fairground experience"
+        },
+        {
+          "id": "fest-shivaji-jayanti-shivneri",
+          "name": "Shivaji Jayanti Shivneri & Pune",
+          "cities": [
+            "Junnar",
+            "Shivneri Fort",
+            "Pune",
+            "Mumbai",
+            "Raigad"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Morning cradle ceremony at Shivneri Fort and evening Shobha Yatra in Pune or Mumbai"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Manipur",
+      "festival_count": 8,
+      "festivals": [
+        {
+          "id": "sangai-festival-manipur",
+          "name": "Manipur Sangai Festival",
+          "cities": [
+            "Imphal",
+            "Moirang",
+            "Bishnupur"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoon polo matches at Mapal Kangjeibung followed by 6:00 PM classical dance recitals at the Bhagyachandra Open Air Theatre (BOAT)."
+        },
+        {
+          "id": "yaoshang-festival-manipur",
+          "name": "Yaoshang",
+          "cities": [
+            "Imphal",
+            "Moirang",
+            "Kakching",
+            "Thoubal"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Evening 8:00 PM to midnight when the magnificent Thabal Chongba moonlight dance circles form across Imphal."
+        },
+        {
+          "id": "ningol-chakouba-manipur",
+          "name": "Ningol Chakouba",
+          "cities": [
+            "Imphal",
+            "Bishnupur",
+            "Thoubal"
+          ],
+          "category": "FOLK_COMMUNITY",
+          "best_time_to_visit": "Morning shopping at Ema Keithel market followed by lunch gatherings in traditional Manipuri homes."
+        },
+        {
+          "id": "cheiraoba-festival-manipur",
+          "name": "Cheiraoba",
+          "cities": [
+            "Imphal"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Late afternoon (3:00 PM to 6:00 PM) climbing Cheiraoching hill alongside thousands of locals for a panoramic sunset over Imphal valley."
+        },
+        {
+          "id": "kang-rath-yatra-manipur",
+          "name": "Kang Rath Yatra",
+          "cities": [
+            "Imphal"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Opening day afternoon (2:00 PM to 5:00 PM) for the grand chariot procession."
+        },
+        {
+          "id": "lui-ngai-ni-manipur",
+          "name": "Lui-Ngai-Ni",
+          "cities": [
+            "Ukhrul",
+            "Senapati",
+            "Tamenglong",
+            "Chandel"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning of February 15 for the grand ceremonial parade and lighting of the sacred seed-sowing torch."
+        },
+        {
+          "id": "heikru-hidongba-manipur",
+          "name": "Heikru Hidongba",
+          "cities": [
+            "Imphal"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "1:00 PM to 4:00 PM when the ceremonial boat race takes place on the canal."
+        },
+        {
+          "id": "chumpha-festival-manipur",
+          "name": "Chumpha Festival",
+          "cities": [
+            "Ukhrul"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Evenings when community bonfires are lit and four-part harmony choral songs echo across the hills."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Meghalaya",
+      "festival_count": 8,
+      "festivals": [
+        {
+          "id": "wangala-festival-meghalaya",
+          "name": "Wangala Festival",
+          "cities": [
+            "Tura",
+            "Asanang"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Final day morning from 9:30 AM to 1:30 PM for the world-famous synchronized 100-Drums dance."
+        },
+        {
+          "id": "shad-suk-mynsiem-meghalaya",
+          "name": "Shad Suk Mynsiem",
+          "cities": [
+            "Shillong"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Final day afternoon (1:30 PM to 5:00 PM) when over 500 dancers in heirloom gold and silk fill the Weiking amphitheater."
+        },
+        {
+          "id": "nongkrem-dance-meghalaya",
+          "name": "Nongkrem Dance Festival",
+          "cities": [
+            "Smit",
+            "Shillong"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Final two days (Thursday & Friday) from 12:00 PM to 4:30 PM for the public royal court dances."
+        },
+        {
+          "id": "behdienkhlam-meghalaya",
+          "name": "Behdienkhlam",
+          "cities": [
+            "Jowai",
+            "Shillong"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Final day (Sunday) from 1:00 PM to 4:30 PM at the Aitnar pool for the dramatic chariot immersion."
+        },
+        {
+          "id": "autumn-festival-shillong",
+          "name": "Shillong Autumn Festival",
+          "cities": [
+            "Shillong",
+            "Umiam"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoon (3:30 PM) until 10:00 PM for scenic sunset views over Umiam Lake followed by headline music concerts."
+        },
+        {
+          "id": "strawberry-festival-meghalaya",
+          "name": "Meghalaya Strawberry Festival",
+          "cities": [
+            "Nongpoh",
+            "Sohliya",
+            "Umsning"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning from 9:30 AM to 1:00 PM for the freshest berry plucking in warm morning sun."
+        },
+        {
+          "id": "ranikor-river-festival-meghalaya",
+          "name": "Ranikor River Festival",
+          "cities": [
+            "Ranikor",
+            "Mawkyrwat",
+            "Shillong"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Early morning 6:30 AM for mist-covered river angling; late afternoon for sunset kayaking."
+        },
+        {
+          "id": "bob-dylan-tribute-shillong",
+          "name": "Bob Dylan Birthday Tribute Shillong",
+          "cities": [
+            "Shillong"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "5:00 PM to 10:00 PM when Lou Majaw and his band take the stage for the main headline set."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Mizoram",
+      "festival_count": 6,
+      "festivals": [
+        {
+          "id": "chapchar-kut-mizoram",
+          "name": "Chapchar Kut",
+          "cities": [
+            "Aizawl",
+            "Lunglei",
+            "Champhai"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "9:30 AM to 2:30 PM at AR Ground Lammual for the mass Cheraw bamboo dance and grand cultural parade."
+        },
+        {
+          "id": "mim-kut-mizoram",
+          "name": "Mim Kut",
+          "cities": [
+            "Aizawl",
+            "Serchhip",
+            "Champhai"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Evening when families gather for quiet musical remembrance sessions."
+        },
+        {
+          "id": "pawl-kut-mizoram",
+          "name": "Pawl Kut",
+          "cities": [
+            "Aizawl",
+            "Champhai",
+            "Lunglei"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Afternoon when the heartwarming Chawnghnawt child-feeding rituals take place."
+        },
+        {
+          "id": "thalfavang-kut-mizoram",
+          "name": "Thalfavang Kut",
+          "cities": [
+            "Aizawl"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "10:00 AM to 3:00 PM at Falkawn Model Village for traditional dance showcases."
+        },
+        {
+          "id": "anthurium-festival-mizoram",
+          "name": "Anthurium Festival",
+          "cities": [
+            "Aizawl",
+            "Reiek"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Morning trek to the breathtaking Reiek cliff summit followed by afternoon flower exhibitions."
+        },
+        {
+          "id": "lyuva-khutla-mizoram",
+          "name": "Lyuva Khutla",
+          "cities": [
+            "Siaha"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Midday for the electrifying Awkhachipa bamboo dance performances."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Nagaland",
+      "festival_count": 10,
+      "festivals": [
+        {
+          "id": "hornbill-festival-nagaland",
+          "name": "Hornbill Festival",
+          "cities": [
+            "Kohima",
+            "Kisama"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Morning session from 9:30 AM to 12:30 PM for main arena dances; evening 6 PM for rock music and Kohima night market."
+        },
+        {
+          "id": "moatsu-mong-nagaland",
+          "name": "Moatsu Mong",
+          "cities": [
+            "Mokokchung",
+            "Chuchuyimlang",
+            "Ungma"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "May 2 afternoon when the central community dances and fire-making rituals are held at Chuchuyimlang."
+        },
+        {
+          "id": "sekrenyi-festival-nagaland",
+          "name": "Sekrenyi",
+          "cities": [
+            "Kohima",
+            "Khonoma",
+            "Touphema"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Days 2 and 4 when young people gather in traditional attire at village gates for Thekra Hie singing."
+        },
+        {
+          "id": "aoleang-monyu-nagaland",
+          "name": "Aoleang Monyu",
+          "cities": [
+            "Mon",
+            "Longwa",
+            "Shangnyu"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "April 3 and 4 (Gonyi and Goki days) when the warrior gun salutes and community dances peak in Longwa village."
+        },
+        {
+          "id": "tokhu-emong-nagaland",
+          "name": "Tokhu Emong",
+          "cities": [
+            "Wokha",
+            "Pangti"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "November 7 morning for traditional cultural dances, followed by afternoon visits to Doyang reservoir for the Amur Falcon migration."
+        },
+        {
+          "id": "tuluni-festival-nagaland",
+          "name": "Tuluni",
+          "cities": [
+            "Zunheboto",
+            "Dimapur",
+            "Kohima"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "July 8 morning for the breathtaking Sumi warrior jumping dances and marital pageantry."
+        },
+        {
+          "id": "ngada-festival-nagaland",
+          "name": "Ngada",
+          "cities": [
+            "Tseminyu",
+            "Kohima"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning of November 28 for community dancing and traditional wrestling matches."
+        },
+        {
+          "id": "hega-festival-nagaland",
+          "name": "Hega Festival",
+          "cities": [
+            "Peren",
+            "Jalukie"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "February 11 for the world-famous synchronized Zeliang circle dances."
+        },
+        {
+          "id": "naknyulem-festival-nagaland",
+          "name": "Naknyulem",
+          "cities": [
+            "Tuensang"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Afternoon of July 12 when the Kongkei musical performances and top-spinning games take place."
+        },
+        {
+          "id": "yemshe-festival-nagaland",
+          "name": "Yemshe",
+          "cities": [
+            "Meluri",
+            "Phek"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "October 5 morning for the formal community dances and elderly blessings."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Odisha",
+      "festival_count": 14,
+      "festivals": [
+        {
+          "id": "fest-rath-yatra-puri",
+          "name": "Rath Yatra Puri",
+          "cities": [
+            "Puri"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Opening day for the pulling of chariots (Rath Yatra) and concluding Bahuda Yatra"
+        },
+        {
+          "id": "fest-konark-dance-festival",
+          "name": "Konark Dance and Sand Art Festival",
+          "cities": [
+            "Konark",
+            "Puri"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 8:30 PM for dance recitals and daytime for sand art viewing"
+        },
+        {
+          "id": "fest-raja-parba-odisha",
+          "name": "Raja Parba",
+          "cities": [
+            "Bhubaneswar",
+            "Cuttack",
+            "Puri",
+            "Balasore",
+            "Sambalpur"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Afternoon between 3 PM and 7 PM when swings are bustling and folk singing is at its peak"
+        },
+        {
+          "id": "fest-durga-puja-cuttack",
+          "name": "Durga Puja Cuttack",
+          "cities": [
+            "Cuttack"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Maha Ashtami night for viewing the glowing silver filigree backdrops and Vijyadashami for the Bhasani procession"
+        },
+        {
+          "id": "fest-nuakhai-sambalpur",
+          "name": "Nuakhai Sambalpur & Western Odisha",
+          "cities": [
+            "Sambalpur",
+            "Bargarh",
+            "Balangir",
+            "Jharsuguda",
+            "Rourkela"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Morning auspicious Lagna hour for temple Nabanna offering and evening Sambalpuri cultural programs"
+        },
+        {
+          "id": "fest-bali-yatra-cuttack",
+          "name": "Bali Yatra Cuttack",
+          "cities": [
+            "Cuttack"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Evening between 5 PM and 10 PM for the glittering mega-fairground atmosphere"
+        },
+        {
+          "id": "fest-chandan-yatra-puri",
+          "name": "Chandan Yatra Puri",
+          "cities": [
+            "Puri"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evenings between 5:30 PM and 8:30 PM during the boat cruise in Narendra Tank"
+        },
+        {
+          "id": "fest-boita-bandana-odisha",
+          "name": "Boita Bandana",
+          "cities": [
+            "Bhubaneswar",
+            "Cuttack",
+            "Puri",
+            "Sambalpur",
+            "Paradip"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Pre-dawn hours (4:30 AM to 6:30 AM) when thousands of glowing boats are released at sunrise"
+        },
+        {
+          "id": "fest-dhauli-kalinga-mahotsav",
+          "name": "Dhauli Kalinga Mahotsav",
+          "cities": [
+            "Dhauli",
+            "Bhubaneswar"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 9 PM during the floodlit martial and classical dance concerts"
+        },
+        {
+          "id": "fest-mukteswar-dance-festival",
+          "name": "Mukteswar Dance Festival Bhubaneswar",
+          "cities": [
+            "Bhubaneswar"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 8:30 PM for intimate open-air classical concerts"
+        },
+        {
+          "id": "fest-chhau-mahotsav-baripada",
+          "name": "Chhau Mahotsav Baripada",
+          "cities": [
+            "Baripada",
+            "Mayurbhanj"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Nightly performances between 7 PM and 11 PM when competitive troupe battles unfold"
+        },
+        {
+          "id": "fest-taratarini-mela",
+          "name": "Taratarini Mela Ganjam",
+          "cities": [
+            "Purushottampur",
+            "Berhampur",
+            "Ganjam"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Early morning hours (5 AM to 10 AM) on Chaitra Tuesdays to avoid afternoon hill heat"
+        },
+        {
+          "id": "fest-shital-sasthi-sambalpur",
+          "name": "Shital Sasthi Sambalpur",
+          "cities": [
+            "Sambalpur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Night of the grand Shobha Yatra (wedding street carnival) from 10 PM to 6 AM"
+        },
+        {
+          "id": "fest-joranda-mela-dhenkanal",
+          "name": "Joranda Mela Dhenkanal",
+          "cities": [
+            "Joranda",
+            "Dhenkanal"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Magha Purnima sunset and midnight when the Akhanda Dhuni fire offerings reach peak intensity"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Puducherry",
+      "festival_count": 5,
+      "festivals": [
+        {
+          "id": "fest-puducherry-yoga-festival",
+          "name": "Puducherry International Yoga Festival",
+          "cities": [
+            "Puducherry (Pondicherry)",
+            "Auroville"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Dawn sessions (6:30 AM to 8:30 AM) on the sea promenade for coastal yoga practice"
+        },
+        {
+          "id": "fest-fete-de-puducherry",
+          "name": "Fete de Puducherry",
+          "cities": [
+            "Puducherry"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings from 5:30 PM to 10 PM for seaside carnival walks, live music, and fireworks"
+        },
+        {
+          "id": "fest-french-bastille-day-puducherry",
+          "name": "French Bastille Day Heritage Celebrations",
+          "cities": [
+            "Puducherry"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "July 13 evening for the torchlight procession and July 14 morning for the solemn wreath-laying ceremony"
+        },
+        {
+          "id": "fest-villianur-car-festival",
+          "name": "Villianur Temple Car Festival",
+          "cities": [
+            "Villianur",
+            "Puducherry"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning between 7 AM and 11 AM when the massive wooden chariot is pulled through town streets"
+        },
+        {
+          "id": "fest-mangani-festival-karaikal",
+          "name": "Mangani Festival Karaikal",
+          "cities": [
+            "Karaikal"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Aani Pournami day between 9 AM and 1 PM during the mango-throwing street procession"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Punjab",
+      "festival_count": 10,
+      "festivals": [
+        {
+          "id": "fest-baisakhi-punjab",
+          "name": "Vaisakhi / Baisakhi Amritsar",
+          "cities": [
+            "Amritsar",
+            "Anandpur Sahib",
+            "Bathinda",
+            "Ludhiana"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Early morning at Golden Temple for Amrit Snan and evening fireworks"
+        },
+        {
+          "id": "fest-lohri-punjab",
+          "name": "Lohri Statewide",
+          "cities": [
+            "Amritsar",
+            "Ludhiana",
+            "Jalandhar",
+            "Patiala"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Evening from 6 PM onwards around community bonfires"
+        },
+        {
+          "id": "fest-hola-mohalla",
+          "name": "Hola Mohalla Sri Anandpur Sahib",
+          "cities": [
+            "Sri Anandpur Sahib",
+            "Rupnagar"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Morning martial displays at Charan Ganga Stadium and grand concluding Mohalla procession"
+        },
+        {
+          "id": "fest-gurpurab-guru-nanak",
+          "name": "Prakash Purab Guru Nanak Dev Ji",
+          "cities": [
+            "Amritsar",
+            "Sultanpur Lodhi",
+            "Dera Baba Nanak",
+            "Patiala"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening at the Golden Temple during Deepmala illumination and midnight birth hour prayers"
+        },
+        {
+          "id": "fest-maghi-mela-muktsar",
+          "name": "Maghi Mela Sri Muktsar Sahib",
+          "cities": [
+            "Sri Muktsar Sahib"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Dawn of January 14 for the sacred holy bath"
+        },
+        {
+          "id": "fest-harballabh-sangeet-sammelan",
+          "name": "Harballabh Sangeet Sammelan Jalandhar",
+          "cities": [
+            "Jalandhar"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Night sessions (8 PM to 4 AM) when meditative nocturnal ragas are performed"
+        },
+        {
+          "id": "fest-chhapar-mela-ludhiana",
+          "name": "Chhapar Mela Ludhiana",
+          "cities": [
+            "Chhapar",
+            "Ludhiana"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Daytime fair activities and afternoon Malwai Giddha sessions"
+        },
+        {
+          "id": "fest-baba-farid-aagman",
+          "name": "Baba Farid Aagman Purb Faridkot",
+          "cities": [
+            "Faridkot"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening Sufi musical sessions at Darbar Ganj and the opening peace procession"
+        },
+        {
+          "id": "fest-rauza-sharif-urs",
+          "name": "Rauza Sharif Urs Sirhind",
+          "cities": [
+            "Sirhind",
+            "Fatehgarh Sahib"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning congregational prayers and afternoon relic viewing"
+        },
+        {
+          "id": "fest-kila-raipur-sports",
+          "name": "Kila Raipur Rural Olympics",
+          "cities": [
+            "Kila Raipur",
+            "Ludhiana"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Mid-day from 11 AM to 4 PM for the most thrilling strength feats and chariot races"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Rajasthan",
+      "festival_count": 16,
+      "festivals": [
+        {
+          "id": "fest-pushkar-camel-fair",
+          "name": "Pushkar Camel Fair",
+          "cities": [
+            "Pushkar",
+            "Ajmer"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Early morning hot air balloon rides over dunes and evening Brahma Ghat aarti"
+        },
+        {
+          "id": "fest-desert-festival-jaisalmer",
+          "name": "Desert Festival Jaisalmer",
+          "cities": [
+            "Jaisalmer",
+            "Sam Sand Dunes"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Sunset and night sessions at Sam Sand Dunes under the full moon"
+        },
+        {
+          "id": "fest-mewar-festival-udaipur",
+          "name": "Mewar Festival Udaipur",
+          "cities": [
+            "Udaipur"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Late afternoon at Gangaur Ghat followed by sunset boat procession on Lake Pichola"
+        },
+        {
+          "id": "fest-gangaur-festival-jaipur",
+          "name": "Gangaur Festival Jaipur",
+          "cities": [
+            "Jaipur"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Afternoon from 4:30 PM to 6:30 PM when the royal procession marches through the Old City"
+        },
+        {
+          "id": "fest-teej-festival-jaipur",
+          "name": "Teej Festival Jaipur",
+          "cities": [
+            "Jaipur"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Afternoon between 4:30 PM and 7 PM during the royal street procession"
+        },
+        {
+          "id": "fest-marwar-festival-jodhpur",
+          "name": "Marwar Festival Jodhpur",
+          "cities": [
+            "Jodhpur"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings from 6 PM to 10 PM under the full moon at Mehrangarh Fort"
+        },
+        {
+          "id": "fest-elephant-festival-jaipur",
+          "name": "Elephant Festival Jaipur",
+          "cities": [
+            "Jaipur"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Afternoon between 3 PM and 6:30 PM for the beauty pageant and cultural show"
+        },
+        {
+          "id": "fest-kumbhalgarh-festival",
+          "name": "Kumbhalgarh Classical Festival",
+          "cities": [
+            "Kumbhalgarh",
+            "Rajsamand",
+            "Udaipur"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 9:30 PM when the fortress is floodlit for classical concerts"
+        },
+        {
+          "id": "fest-kolayat-fair-bikaner",
+          "name": "Kolayat Fair (Kapil Muni Fair) Bikaner",
+          "cities": [
+            "Kolayat",
+            "Bikaner"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sunset on Kartik Purnima for the magnificent Deepdaan ceremony and dawn for holy dips"
+        },
+        {
+          "id": "fest-brij-holi-bharatpur",
+          "name": "Brij Holi Festival Bharatpur",
+          "cities": [
+            "Bharatpur",
+            "Deeg"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Afternoon fountain operation at Deeg Palace and evening Charkula dance concerts"
+        },
+        {
+          "id": "fest-shekhawati-festival",
+          "name": "Shekhawati Heritage Festival Nawalgarh",
+          "cities": [
+            "Nawalgarh",
+            "Mandawa",
+            "Fatehpur",
+            "Jhunjhunu"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Morning architectural walking tours (8:30 AM to 12 PM) and evening folk concerts"
+        },
+        {
+          "id": "fest-bundi-utsav",
+          "name": "Bundi Utsav Bundi",
+          "cities": [
+            "Bundi"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Deepdaan evening at Nawal Sagar and morning procession from Garh Palace"
+        },
+        {
+          "id": "fest-mount-abu-winter-festival",
+          "name": "Mount Abu Winter Festival",
+          "cities": [
+            "Mount Abu",
+            "Sirohi"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Evenings at Nakki Lake for boat illumination and midnight New Year's Eve celebrations"
+        },
+        {
+          "id": "fest-ranakpur-festival",
+          "name": "Ranakpur Temple Festival",
+          "cities": [
+            "Ranakpur",
+            "Sadri",
+            "Pali"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Morning temple architecture walkthrough and evening classical musical concert"
+        },
+        {
+          "id": "fest-karni-mata-fair-deshnoke",
+          "name": "Karni Mata Fair Deshnoke",
+          "cities": [
+            "Deshnoke",
+            "Bikaner"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning aarti at 6 AM when hundreds of rats gather around large milk basins"
+        },
+        {
+          "id": "fest-kota-dussehra",
+          "name": "Kota Dussehra Fair",
+          "cities": [
+            "Kota"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Vijyadashami evening between 5 PM and 8 PM for the effigy burning spectacle"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Sikkim",
+      "festival_count": 8,
+      "festivals": [
+        {
+          "id": "losar-festival-sikkim",
+          "name": "Sikkimese Losar",
+          "cities": [
+            "Gangtok",
+            "Pelling",
+            "Ravangla",
+            "Rumtek"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Morning of Day 1 for family prayer and butter lamp offerings, Day 2 for monastery visits."
+        },
+        {
+          "id": "saga-dawa-sikkim",
+          "name": "Saga Dawa",
+          "cities": [
+            "Gangtok",
+            "Pelling",
+            "Yuksom"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Early morning 7:30 AM for the Kangyur scripture street procession starting from Tsuklakhang Palace Monastery in Gangtok."
+        },
+        {
+          "id": "pang-lhabsol-sikkim",
+          "name": "Pang Lhabsol",
+          "cities": [
+            "Gangtok",
+            "Kabi Lungchok"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "9:30 AM to 1:30 PM at Tsuklakhang Royal Chapel for the extraordinary Pangtoed Cham warrior sword dance."
+        },
+        {
+          "id": "bumchu-festival-sikkim",
+          "name": "Bumchu Festival",
+          "cities": [
+            "Tashiding",
+            "Pelling",
+            "Yuksom",
+            "Gyalshing"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Midnight of the 14th lunar day when the sacred vase is officially unsealed by high lamas."
+        },
+        {
+          "id": "losoong-namsoong-sikkim",
+          "name": "Losoong / Namsoong",
+          "cities": [
+            "Gangtok",
+            "Phodong",
+            "Rumtek",
+            "Mangan"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning 9:30 AM to 1:30 PM at Phodong Monastery for the most authentic Black Hat Cham dances."
+        },
+        {
+          "id": "tendong-lho-rum-faat-sikkim",
+          "name": "Tendong Lho Rum Faat",
+          "cities": [
+            "Namchi",
+            "Damthang",
+            "Gangtok"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning of August 8 for the summit prayer ceremony at Mount Tendong, followed by afternoon cultural events in Namchi."
+        },
+        {
+          "id": "kagyed-dance-sikkim",
+          "name": "Kagyed Dance",
+          "cities": [
+            "Gangtok"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "10:00 AM to 2:00 PM for the core Cham dances, culminating in the burning of the effigy."
+        },
+        {
+          "id": "red-panda-winter-carnival-sikkim",
+          "name": "Red Panda Winter Carnival",
+          "cities": [
+            "Gangtok"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoon (4:00 PM) to 8:30 PM when MG Marg lights up with carnival parades and open-air concerts."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Tamil Nadu",
+      "festival_count": 14,
+      "festivals": [
+        {
+          "id": "fest-pongal-jallikattu",
+          "name": "Pongal & Jallikattu Madurai",
+          "cities": [
+            "Madurai (Alanganallur, Palamedu)",
+            "Chennai",
+            "Thanjavur",
+            "Coimbatore"
+          ],
+          "category": "Harvest & Agriculture",
+          "best_time_to_visit": "Surya Pongal morning (Jan 15) for home cooking and Mattu Pongal day (Jan 16) for Alanganallur Jallikattu"
+        },
+        {
+          "id": "fest-chithirai-festival-madurai",
+          "name": "Chithirai Festival Madurai",
+          "cities": [
+            "Madurai"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Meenakshi Kalyanam day (temple wedding) and Lord Alagar's morning entry into the Vaigai River"
+        },
+        {
+          "id": "fest-margazhi-season-chennai",
+          "name": "Margazhi Music and Dance Season Chennai",
+          "cities": [
+            "Chennai (Mylapore, T. Nagar, Alwarpet)"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Morning 8:30 AM lecture demonstrations and evening 6:30 PM prime concerts at The Music Academy"
+        },
+        {
+          "id": "fest-mahabalipuram-dance-festival",
+          "name": "Mahabalipuram Indian Dance Festival",
+          "cities": [
+            "Mamallapuram (Mahabalipuram)",
+            "Chengalpattu"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 8:30 PM for open-air dance performances against the illuminated rock"
+        },
+        {
+          "id": "fest-karthigai-deepam-tiruvannamalai",
+          "name": "Karthigai Deepam Tiruvannamalai",
+          "cities": [
+            "Tiruvannamalai"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sunset (6:00 PM) on Maha Deepam day when the summit flame is lit, and midnight for Girivalam mountain walk"
+        },
+        {
+          "id": "fest-natyanjali-dance-festival",
+          "name": "Natyanjali Dance Festival Chidambaram",
+          "cities": [
+            "Chidambaram",
+            "Cuddalore"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Maha Shivratri night (6 PM to 6 AM) for continuous all-night classical dance offerings"
+        },
+        {
+          "id": "fest-thaipusam-palani",
+          "name": "Thaipusam Palani",
+          "cities": [
+            "Palani",
+            "Dindigul",
+            "Madurai"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Thaipusam day for viewing the Kavadi processions and daytime trance dancing"
+        },
+        {
+          "id": "fest-kanthuri-festival-nagore",
+          "name": "Kanthuri Festival Nagore Dargah",
+          "cities": [
+            "Nagore",
+            "Nagapattinam"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "10th night of the festival for the grand Santhanakoodu chariot procession and dawn sandalwood anointing"
+        },
+        {
+          "id": "fest-velankanni-feast",
+          "name": "Velankanni Feast",
+          "cities": [
+            "Velankanni",
+            "Nagapattinam"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening car procession at 8 PM and September 8 morning feast day High Mass"
+        },
+        {
+          "id": "fest-arubathumoovar-festival",
+          "name": "Arubathumoovar Festival Mylapore Chennai",
+          "cities": [
+            "Chennai",
+            "Mylapore"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Afternoon between 2:30 PM and 7 PM for the procession of the 63 Nayanmars"
+        },
+        {
+          "id": "fest-kanyakumari-cape-festival",
+          "name": "Kanyakumari Cape Festival",
+          "cities": [
+            "Kanyakumari"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Dawn for the three-seas sunrise and evening 5:30 PM to 8:30 PM for sunset and cultural shows"
+        },
+        {
+          "id": "fest-kumbakonam-mahamaham",
+          "name": "Kumbakonam Mahamaham",
+          "cities": [
+            "Kumbakonam",
+            "Thanjavur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn of the main Theerthavari bathing day for the holy dip in the sacred tank"
+        },
+        {
+          "id": "fest-panguni-uthiram",
+          "name": "Panguni Uthiram Statewide",
+          "cities": [
+            "Kanchipuram",
+            "Madurai",
+            "Palani",
+            "Srirangam",
+            "Mylapore Chennai"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening from 5 PM to 11 PM during the celestial wedding ceremony (Thirukalyanam)"
+        },
+        {
+          "id": "fest-mamallapuram-heritage-dance",
+          "name": "Mamallapuram Heritage Dance Festival",
+          "cities": [
+            "Mamallapuram",
+            "Chengalpattu"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6 PM and 8:30 PM for sunset viewing and open-air classical dance recitals"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Telangana",
+      "festival_count": 11,
+      "festivals": [
+        {
+          "id": "fest-ugadi-andhra",
+          "name": "Ugadi Statewide",
+          "cities": [
+            "Vijayawada",
+            "Tirupati",
+            "Visakhapatnam",
+            "Rajahmundry"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Morning hours between 7 AM and 11 AM for family rituals, Ugadi Pachadi tasting, and temple visits"
+        },
+        {
+          "id": "fest-bathukamma-telangana",
+          "name": "Bathukamma Statewide",
+          "cities": [
+            "Hyderabad",
+            "Warangal",
+            "Karimnagar",
+            "Nizamabad"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Saddula Bathukamma evening (Day 9) from 4:30 PM to 8:30 PM when millions of flower mounds are immersed"
+        },
+        {
+          "id": "fest-bonalu-hyderabad",
+          "name": "Bonalu Hyderabad & Secunderabad",
+          "cities": [
+            "Hyderabad",
+            "Secunderabad"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sundays of Ashadha month, especially Secunderabad Mahakali Bonalu and Old City Lal Darwaza Bonalu"
+        },
+        {
+          "id": "fest-sammakka-saralamma-jatara",
+          "name": "Sammakka Saralamma Jatara Medaram",
+          "cities": [
+            "Medaram",
+            "Mulugu",
+            "Warangal"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Day of Sammakka's arrival at the Gadde (Day 2 and 3) when religious fervor reaches its absolute peak"
+        },
+        {
+          "id": "fest-alai-balai-hyderabad",
+          "name": "Alai Balai Hyderabad",
+          "cities": [
+            "Hyderabad"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Daytime from 11 AM to 4 PM for the cultural performances and grand communal feast"
+        },
+        {
+          "id": "fest-golconda-masters-festival",
+          "name": "Golconda Masters Cultural Festival",
+          "cities": [
+            "Hyderabad",
+            "Golconda"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings between 6 PM and 9:30 PM for floodlit concerts inside the historic fort"
+        },
+        {
+          "id": "fest-nagoba-jatara-adilabad",
+          "name": "Nagoba Jatara Keslapur Adilabad",
+          "cities": [
+            "Keslapur",
+            "Indervelly",
+            "Adilabad"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Opening night on Pushya Amavasya for the sacred midnight Godavari water bathing ritual"
+        },
+        {
+          "id": "fest-komuravelli-mallanna-jatara",
+          "name": "Komuravelli Mallanna Jatara",
+          "cities": [
+            "Komuravelli",
+            "Siddipet",
+            "Jangaon"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sundays during the festival season, especially the Sunday preceding Maha Shivratri for Patnam rituals"
+        },
+        {
+          "id": "fest-edupayala-jathara",
+          "name": "Edupayala Vana Durga Bhavani Jathara",
+          "cities": [
+            "Edupayalu",
+            "Nagasanpalli",
+            "Medak"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Maha Shivratri day and evening for the holy river bath and forest fairground energy"
+        },
+        {
+          "id": "fest-ramappa-heritage-festival",
+          "name": "Ramappa Temple Heritage Festival",
+          "cities": [
+            "Palampet",
+            "Mulugu",
+            "Warangal"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evenings between 6 PM and 9:30 PM for floodlit classical concerts and morning architectural walks"
+        },
+        {
+          "id": "fest-sri-rama-navami-bhadrachalam",
+          "name": "Sri Rama Navami Bhadrachalam",
+          "cities": [
+            "Bhadrachalam",
+            "Bhadradri Kothagudem"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Mid-day (10:30 AM to 1 PM) for the grand celestial wedding ceremony and pearl showering"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Tripura",
+      "festival_count": 6,
+      "festivals": [
+        {
+          "id": "kharchi-puja-tripura",
+          "name": "Kharchi Puja",
+          "cities": [
+            "Agartala",
+            "Old Agartala"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Opening day dawn (5:30 AM to 8:30 AM) when the Chantai carries the 14 deities to the Howrah river for their sacred ablution."
+        },
+        {
+          "id": "ker-puja-tripura",
+          "name": "Ker Puja",
+          "cities": [
+            "Agartala"
+          ],
+          "category": "RELIGIOUS_TEMPLE",
+          "best_time_to_visit": "Witnessing the planting of the bamboo pole marking the boundary or the post-lockdown reopening ceremonies."
+        },
+        {
+          "id": "garia-puja-tripura",
+          "name": "Garia Puja",
+          "cities": [
+            "Agartala",
+            "Khowai",
+            "Udaipur",
+            "Ambassa"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Day 1 and Day 7 when the grand community Garia dance circles assemble in village squares."
+        },
+        {
+          "id": "neermahal-water-festival-tripura",
+          "name": "Neermahal Water Festival",
+          "cities": [
+            "Melaghar",
+            "Agartala"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoon (3:00 PM) for the boat race heats followed by sunset boat ride to the illuminated palace."
+        },
+        {
+          "id": "pilak-festival-tripura",
+          "name": "Pilak Archaeological & Cultural Festival",
+          "cities": [
+            "Jolaibari",
+            "Santirbazar",
+            "Agartala"
+          ],
+          "category": "MUSIC_DANCE_ARTS",
+          "best_time_to_visit": "Late afternoon (3:00 PM to 6:30 PM) when the setting sun illuminates the ancient stone carvings."
+        },
+        {
+          "id": "orange-tourism-festival-tripura",
+          "name": "Orange & Tourism Festival",
+          "cities": [
+            "Vanghmun",
+            "Phuldungsei",
+            "Dharmanagar"
+          ],
+          "category": "HARVEST_SEASONAL",
+          "best_time_to_visit": "Morning 8:30 AM to 1:00 PM for scenic orchard walks and panoramic views towards the Chittagong Hill Tracts."
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Uttar Pradesh",
+      "festival_count": 18,
+      "festivals": [
+        {
+          "id": "fest-ganga-dussehra-haridwar",
+          "name": "Ganga Dussehra Haridwar & Rishikesh",
+          "cities": [
+            "Haridwar",
+            "Rishikesh",
+            "Varanasi",
+            "Prayagraj"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn for sacred bathing rituals and dusk for the magnificent floating lamp aarti"
+        },
+        {
+          "id": "fest-kanwar-yatra-haridwar",
+          "name": "Kanwar Yatra Haridwar",
+          "cities": [
+            "Haridwar",
+            "Rishikesh",
+            "Roorkee",
+            "Meerut"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Peak days during the final 3 days before Shravan Shivratri"
+        },
+        {
+          "id": "fest-dev-deepawali-varanasi",
+          "name": "Dev Deepawali Varanasi",
+          "cities": [
+            "Varanasi"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sunset (5 PM to 9 PM) on Kartik Purnima night from a river cruise or heritage rooftop"
+        },
+        {
+          "id": "fest-ganga-mahotsav-varanasi",
+          "name": "Ganga Mahotsav Varanasi",
+          "cities": [
+            "Varanasi"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Evenings between 6:30 PM and 10:30 PM during musical concert hours"
+        },
+        {
+          "id": "fest-lathmar-holi-barsana",
+          "name": "Lathmar Holi Barsana",
+          "cities": [
+            "Barsana",
+            "Mathura",
+            "Nandgaon"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Afternoon between 2 PM and 5:30 PM when the Lathmar duel unfolds in Rangeeli Gali"
+        },
+        {
+          "id": "fest-braj-ki-holi",
+          "name": "Braj Ki Holi Mathura & Vrindavan",
+          "cities": [
+            "Mathura",
+            "Vrindavan",
+            "Gokul",
+            "Govardhan",
+            "Dauji"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Phoolon Wali Holi day at Banke Bihari Temple (Ekadashi before Holi) and Huranga at Dauji"
+        },
+        {
+          "id": "fest-ram-navami-ayodhya",
+          "name": "Ram Navami Ayodhya",
+          "cities": [
+            "Ayodhya"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Mid-day 12:00 noon on Ram Navami for the divine birth celebration and Surya Tilak"
+        },
+        {
+          "id": "fest-deepotsav-ayodhya",
+          "name": "Deepotsav Ayodhya",
+          "cities": [
+            "Ayodhya"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sunset (5:30 PM to 9 PM) on the evening of Chhoti Diwali"
+        },
+        {
+          "id": "fest-taj-mahotsav-agra",
+          "name": "Taj Mahotsav Agra",
+          "cities": [
+            "Agra"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Late afternoon from 3 PM to 9 PM for shopping and evening star concerts"
+        },
+        {
+          "id": "fest-magh-mela-prayagraj",
+          "name": "Magh Mela / Kumbh Mela Prayagraj",
+          "cities": [
+            "Prayagraj"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn on Makar Sankranti and Mauni Amavasya for the sacred holy bath"
+        },
+        {
+          "id": "fest-lucknow-mahotsav",
+          "name": "Lucknow Mahotsav",
+          "cities": [
+            "Lucknow"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Late afternoon from 3:30 PM to 10 PM for food tasting and evening cultural programs"
+        },
+        {
+          "id": "fest-krishna-janmashtami-mathura",
+          "name": "Krishna Janmashtami Mathura",
+          "cities": [
+            "Mathura",
+            "Vrindavan"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Midnight (11:00 PM to 1:00 AM) for the divine birth aarti and panchamrit distribution"
+        },
+        {
+          "id": "fest-jhansi-mahotsav",
+          "name": "Jhansi Mahotsav Bundelkhand",
+          "cities": [
+            "Jhansi"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Evening 5:30 PM to 9 PM for fort illumination and Bundeli folk performances"
+        },
+        {
+          "id": "fest-sarnath-buddha-mahotsav",
+          "name": "Sarnath Buddha Mahotsav",
+          "cities": [
+            "Sarnath",
+            "Varanasi"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn meditation at 6 AM and illuminated evening prayer ceremony at Dhamek Stupa"
+        },
+        {
+          "id": "fest-kabir-utsav-maghar",
+          "name": "Kabir Utsav Maghar",
+          "cities": [
+            "Maghar",
+            "Sant Kabir Nagar",
+            "Gorakhpur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Evening musical sessions from 6 PM to 10 PM for authentic Kabir bhajan recitals"
+        },
+        {
+          "id": "fest-shakumbhari-mela",
+          "name": "Shakumbhari Devi Mela Saharanpur",
+          "cities": [
+            "Saharanpur"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn aarti and afternoon fairground exploration"
+        },
+        {
+          "id": "fest-bateshwar-fair-agra",
+          "name": "Bateshwar Fair Agra",
+          "cities": [
+            "Bateshwar",
+            "Bah",
+            "Agra"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Kartik Purnima dawn for the 101 temple pradakshina and daytime cattle fair"
+        },
+        {
+          "id": "fest-chhath-puja-up",
+          "name": "Chhath Puja at Gomti and Ganga Ghats",
+          "cities": [
+            "Varanasi",
+            "Lucknow",
+            "Gorakhpur",
+            "Prayagraj"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Sunset on the third day (Sandhya Arghya) and sunrise on the fourth day (Usha Arghya)"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "Uttarakhand",
+      "festival_count": 10,
+      "festivals": [
+        {
+          "id": "fest-haridwar-kumbh-mela",
+          "name": "Haridwar Kumbh Mela & Ardh Kumbh",
+          "cities": [
+            "Haridwar",
+            "Rishikesh"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn of designated Shahi Snan bathing dates and evening Ganga Aarti"
+        },
+        {
+          "id": "fest-nanda-devi-raj-jat",
+          "name": "Nanda Devi Raj Jat Yatra Chamoli",
+          "cities": [
+            "Nauti",
+            "Karanprayag",
+            "Wan",
+            "Bedni Bugyal",
+            "Homkund"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Trek through Bedni Bugyal and the sacred farewell ceremony at Homkund"
+        },
+        {
+          "id": "fest-international-yoga-festival",
+          "name": "International Yoga Festival Rishikesh",
+          "cities": [
+            "Rishikesh"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Dawn yoga sessions at 6:30 AM and evening Ganga Aarti at sunset"
+        },
+        {
+          "id": "fest-ganga-dussehra-haridwar",
+          "name": "Ganga Dussehra Haridwar & Rishikesh",
+          "cities": [
+            "Haridwar",
+            "Rishikesh",
+            "Varanasi",
+            "Prayagraj"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn for sacred bathing rituals and dusk for the magnificent floating lamp aarti"
+        },
+        {
+          "id": "fest-kanwar-yatra-haridwar",
+          "name": "Kanwar Yatra Haridwar",
+          "cities": [
+            "Haridwar",
+            "Rishikesh",
+            "Roorkee",
+            "Meerut"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Peak days during the final 3 days before Shravan Shivratri"
+        },
+        {
+          "id": "fest-butter-festival-dayara",
+          "name": "Butter Festival Dayara Bugyal",
+          "cities": [
+            "Dayara Bugyal",
+            "Raithal",
+            "Barsu",
+            "Uttarkashi"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Morning 10 AM to 2 PM when celebrations and butter games reach full swing"
+        },
+        {
+          "id": "fest-phool-dei-uttarakhand",
+          "name": "Phool Dei Spring Flower Festival",
+          "cities": [
+            "Pauri",
+            "Tehri",
+            "Almora",
+            "Nainital",
+            "Chamoli"
+          ],
+          "category": "Seasonal & Nature",
+          "best_time_to_visit": "Early morning hours when children deliver fresh flower petals to doorsteps"
+        },
+        {
+          "id": "fest-hill-jatra-pithoragarh",
+          "name": "Hill Jatra Pithoragarh",
+          "cities": [
+            "Pithoragarh"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Afternoon 2 PM to 6 PM when the open-air folk theatre unfolds"
+        },
+        {
+          "id": "fest-jageshwar-monsoon-festival",
+          "name": "Jageshwar Monsoon Festival",
+          "cities": [
+            "Jageshwar",
+            "Almora"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning Rudrabhishek at 7 AM and peaceful evening aarti at 6:30 PM"
+        },
+        {
+          "id": "fest-jauljibi-mela",
+          "name": "Jauljibi and Thal Mela Pithoragarh",
+          "cities": [
+            "Jauljibi",
+            "Dharchula",
+            "Pithoragarh"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Daytime from 11 AM to 4 PM for vibrant riverside bazaar browsing"
+        }
+      ]
+    },
+    {
+      "state_or_ut": "West Bengal",
+      "festival_count": 14,
+      "festivals": [
+        {
+          "id": "fest-durga-puja-kolkata",
+          "name": "Kolkata Durga Puja",
+          "cities": [
+            "Kolkata",
+            "Howrah"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Maha Saptami and Maha Ashtami nights (8 PM to 4 AM) for all-night pandal hopping"
+        },
+        {
+          "id": "fest-poush-mela-shantiniketan",
+          "name": "Poush Mela Shantiniketan",
+          "cities": [
+            "Shantiniketan",
+            "Bolpur",
+            "Birbhum"
+          ],
+          "category": "Fair & Mela",
+          "best_time_to_visit": "Dawn service at the Glass Temple and evening Baul music circles under the trees"
+        },
+        {
+          "id": "fest-gangasagar-mela",
+          "name": "Gangasagar Mela Sagar Island",
+          "cities": [
+            "Sagar Island",
+            "Kakdwip",
+            "Kolkata"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Dawn of Makar Sankranti (January 14) for the sacred holy bath at the ocean confluence"
+        },
+        {
+          "id": "fest-basanta-utsav-shantiniketan",
+          "name": "Basanta Utsav Shantiniketan",
+          "cities": [
+            "Shantiniketan",
+            "Bolpur"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Early morning from 7 AM to 11 AM during the opening musical procession and dance ballets"
+        },
+        {
+          "id": "fest-rash-mela-coochbehar",
+          "name": "Rash Mela Cooch Behar",
+          "cities": [
+            "Cooch Behar"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Kartik Purnima midnight for the ceremonial spinning of the Rash Chakra and opening prayers"
+        },
+        {
+          "id": "fest-jagaddhatri-puja-chandannagar",
+          "name": "Jagaddhatri Puja Chandannagar",
+          "cities": [
+            "Chandannagar",
+            "Bhadreswar",
+            "Hooghly"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Navami night for illuminated light gates and Dashami night for the 24-hour immersion parade"
+        },
+        {
+          "id": "fest-kali-puja-kolkata",
+          "name": "Kali Puja & Diwali Kolkata",
+          "cities": [
+            "Kolkata",
+            "Barasat",
+            "Dakshineswar"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Midnight (11 PM to 2 AM) on Diwali night for the sacred tantric Kali Puja"
+        },
+        {
+          "id": "fest-saraswati-puja-kolkata",
+          "name": "Saraswati Puja Kolkata",
+          "cities": [
+            "Kolkata",
+            "Howrah",
+            "Siliguri",
+            "Burdwan"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Morning between 9 AM and 1 PM for school ceremonies, followed by afternoon strolling at Victoria Memorial"
+        },
+        {
+          "id": "fest-charak-puja-bengal",
+          "name": "Charak Puja & Gajan",
+          "cities": [
+            "Burdwan",
+            "Bankura",
+            "Birbhum",
+            "Hooghly",
+            "Kolkata (Kalighat)"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Afternoon between 2 PM and 6 PM on Chaitra Sankranti when the Charak swinging takes place"
+        },
+        {
+          "id": "fest-kenduli-baul-mela",
+          "name": "Kenduli Baul Mela Joydev",
+          "cities": [
+            "Joydev Kenduli",
+            "Birbhum",
+            "Bolpur"
+          ],
+          "category": "Art & Cultural Festival",
+          "best_time_to_visit": "Nighttime from 9 PM to 4 AM for the most authentic and soulful Baul musical sessions in the Akhras"
+        },
+        {
+          "id": "fest-bishnupur-festival",
+          "name": "Bishnupur Festival Bankura",
+          "cities": [
+            "Bishnupur",
+            "Bankura"
+          ],
+          "category": "Historical & Royal",
+          "best_time_to_visit": "Morning architectural temple walks and evening classical concerts at Rasmancha"
+        },
+        {
+          "id": "fest-jhapan-mela-banka",
+          "name": "Jhapan Mela Bankura",
+          "cities": [
+            "Bishnupur",
+            "Bankura"
+          ],
+          "category": "Tribal & Folk Traditions",
+          "best_time_to_visit": "Afternoon between 2 PM and 6 PM during the snake procession and handling displays"
+        },
+        {
+          "id": "fest-jalpesh-mela",
+          "name": "Jalpesh Mela Jalpaiguri",
+          "cities": [
+            "Mainaguri",
+            "Jalpaiguri"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Maha Shivratri night and morning for the sacred abhishek and vibrant opening fair"
+        },
+        {
+          "id": "fest-raas-utsav-nabadwip",
+          "name": "Raas Utsav Nabadwip",
+          "cities": [
+            "Nabadwip",
+            "Mayapur",
+            "Nadia"
+          ],
+          "category": "Spiritual & Temple",
+          "best_time_to_visit": "Night of Kartik Purnima and the following day for viewing the colossal clay idols and immersion procession"
+        }
+      ]
+    }
+  ]
+}

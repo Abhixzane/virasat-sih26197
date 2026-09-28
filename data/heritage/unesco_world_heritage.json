@@ -1,0 +1,2617 @@
+{
+  "database_name": "VIRASAT UNESCO World Heritage Master Database",
+  "version": "2.0.0",
+  "last_updated": "2026-09-28",
+  "total_properties": 42,
+  "cultural_properties": 34,
+  "natural_properties": 7,
+  "mixed_properties": 1,
+  "criteria_reference": {
+    "(i)": {
+      "code": "(i)",
+      "name": "Masterpiece of Human Creative Genius",
+      "official_definition": "To represent a masterpiece of human creative genius.",
+      "simple_english": "Represents an extraordinary artistic or architectural masterpiece created by human brilliance.",
+      "hinglish_explanation": "Manushya ki extraordinary creative genius aur adbhut kala/architecture ka sarvashreshtha udaharan hai."
+    },
+    "(ii)": {
+      "code": "(ii)",
+      "name": "Interchange of Human Values",
+      "official_definition": "To exhibit an important interchange of human values, over a span of time or within a cultural area of the world, on developments in architecture or technology, monumental arts, town-planning or landscape design.",
+      "simple_english": "Shows an important exchange of ideas, artistic styles, or technologies across cultures over time.",
+      "hinglish_explanation": "Vibhinn sanskritiyo aur samay ke dauran architecture, kala aur vikas ke adan-pradan ko darshata hai."
+    },
+    "(iii)": {
+      "code": "(iii)",
+      "name": "Testimony to Cultural Tradition",
+      "official_definition": "To bear a unique or at least exceptional testimony to a cultural tradition or to a civilization which is living or which has disappeared.",
+      "simple_english": "Bears unique or exceptional testimony to a living cultural tradition or an ancient civilization.",
+      "hinglish_explanation": "Kisi prachin sabhyata ya jivit sanskritik parampara ka anokha praman deta hai."
+    },
+    "(iv)": {
+      "code": "(iv)",
+      "name": "Architectural or Technological Ensemble",
+      "official_definition": "To be an outstanding example of a type of building, architectural or technological ensemble or landscape which illustrates (a) significant stage(s) in human history.",
+      "simple_english": "An outstanding example of an architectural, technological, or landscape ensemble illustrating significant human history.",
+      "hinglish_explanation": "Manav itihas ke kisi mukhya daur ko darshane wali shreshtha imarat ya technical structure."
+    },
+    "(v)": {
+      "code": "(v)",
+      "name": "Traditional Human Settlement or Land Use",
+      "official_definition": "To be an outstanding example of a traditional human settlement, land-use, or sea-use which is representative of a culture (or cultures), or human interaction with the environment especially when it has become vulnerable under the impact of irreversible change.",
+      "simple_english": "Represents traditional human settlement or living in harmony with nature, vulnerable to irreversible changes.",
+      "hinglish_explanation": "Prakriti aur manushya ke sathmilkar rehne ke paramparik tarike aur astitva ka adbhut udaharan."
+    },
+    "(vi)": {
+      "code": "(vi)",
+      "name": "Heritage of Universal Significance (Events/Ideas)",
+      "official_definition": "To be directly or tangibly associated with events or living traditions, with ideas, or with beliefs, with artistic and literary works of outstanding universal significance.",
+      "simple_english": "Directly associated with events, living traditions, ideas, beliefs, or artistic works of universal significance.",
+      "hinglish_explanation": "Vishwa-star par mahatvapurna vicharon, ghatnao, granthon ya vishwaso se juda hua sthal."
+    },
+    "(vii)": {
+      "code": "(vii)",
+      "name": "Superlative Natural Phenomena or Natural Beauty",
+      "official_definition": "To contain superlative natural phenomena or areas of exceptional natural beauty and aesthetic importance.",
+      "simple_english": "Contains exceptional natural beauty and breathtaking landscapes of superlative aesthetic quality.",
+      "hinglish_explanation": "Alaukik prakritik sundarta aur adbhut nazaron se samriddha sthan."
+    },
+    "(viii)": {
+      "code": "(viii)",
+      "name": "Major Stages of Earth's History",
+      "official_definition": "To be outstanding examples representing major stages of earth's history, including the record of life, significant on-going geological processes in the development of landforms, or significant geomorphic or physiographic features.",
+      "simple_english": "Outstanding examples representing major stages of Earth's history, fossils, or ongoing geological processes.",
+      "hinglish_explanation": "Prithvi ke nirman, fossils aur bhu-garbhiya (geological) itihas ka anokha record."
+    },
+    "(ix)": {
+      "code": "(ix)",
+      "name": "Significant Ecological and Biological Processes",
+      "official_definition": "To be outstanding examples representing significant on-going ecological and biological processes in the evolution and development of terrestrial, fresh water, coastal and marine ecosystems and communities of plants and animals.",
+      "simple_english": "Represents ongoing ecological and evolutionary processes in ecosystems, plants, and animal communities.",
+      "hinglish_explanation": "Prakritik vatavaran, ped-paudhe aur pashuon ke vikas ki chal rahi prakritik prakriya."
+    },
+    "(x)": {
+      "code": "(x)",
+      "name": "Conservation of Biological Diversity",
+      "official_definition": "To contain the most important and significant natural habitats for in-situ conservation of biological diversity, including those containing threatened species of outstanding universal value from the point of view of science or conservation.",
+      "simple_english": "Habitats of exceptional biodiversity containing rare or threatened species of global importance.",
+      "hinglish_explanation": "Vilupt ho rahi durlabh prajatiyon (species) aur bio-diversity ke sanrakshan ka sabse pramukh habitat."
+    }
+  },
+  "properties": [
+    {
+      "id": "unesco-taj-mahal",
+      "official_unesco_name": "Taj Mahal",
+      "alternate_names": [
+        "Taj",
+        "Rauza-i-Munawwara",
+        "Crown of the Palace"
+      ],
+      "category": "Cultural",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "city_or_nearest_settlement": "Agra",
+      "inscription_year": 1983,
+      "unesco_criteria": [
+        "(i)"
+      ],
+      "historical_background": "Commissioned in 1631 by Mughal Emperor Shah Jahan to house the tomb of his favorite wife Mumtaz Mahal; completed in 1648 CE with surrounding gardens and outbuildings completed by 1653 CE.",
+      "architectural_or_ecological_significance": "Peak jewel of Indo-Islamic Mughal architecture utilizing pristine white Makrana marble with Pietra Dura pietra-inlay work, octagonal chamber, symmetrical minarets, and bulbous central dome.",
+      "cultural_importance": "Globally revered symbol of eternal devotion and the quintessential architectural icon of India.",
+      "historical_events_stories": "Built by an estimated 20,000 artisans under chief architect Ustad Ahmad Lahori. Shah Jahan was later imprisoned in Agra Fort by his son Aurangzeb, gazing at the Taj across the Yamuna River.",
+      "major_attractions": [
+        "Main Mausoleum",
+        "Charbagh Gardens",
+        "Mosque (Masjid)",
+        "Mehman Khana (Assembly Hall)",
+        "Jawab Gateway",
+        "Taj Museum"
+      ],
+      "visitor_experience": "Breathtaking symmetrical vistas, ethereal white marble changing hue with sunlight from golden at dawn to silver by moonlight.",
+      "best_time_to_visit": "October to March; sunrise and sunset provide the most photogenic views.",
+      "recommended_visit_duration": "3 to 4 hours",
+      "nearest_railway_station": "Agra Cantt Railway Station (AGC) - 6 km",
+      "nearest_airport": "Agra Kheria Airport (AGR) - 13 km; Indira Gandhi International Airport Delhi (DEL) - 220 km",
+      "nearby_cities": [
+        "Mathura (58 km)",
+        "Fatehpur Sikri (38 km)",
+        "Delhi (210 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Agra Fort",
+        "Fatehpur Sikri",
+        "Itmad-ud-Daulah",
+        "Mehtab Bagh"
+      ],
+      "nearby_hotels_areas": [
+        "Fatehabad Road",
+        "Tajganj",
+        "Cantt Area"
+      ],
+      "local_cuisine": [
+        "Agra Petha (Angoori, Kesar)",
+        "Bedmi Puri with Aloo Sabzi",
+        "Mughlai Biryani",
+        "Dalmoth"
+      ],
+      "transportation_information": "Battery-operated golf carts and electric eco-rickshaws connect outer security gates to entry gates; Yamuna Expressway connects directly from Delhi in 3 hours.",
+      "latitude": 27.1751,
+      "longitude": 78.0421,
+      "official_unesco_url": "https://whc.unesco.org/en/list/252",
+      "official_tourism_url": "https://www.uptourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-agra-fort",
+      "official_unesco_name": "Agra Fort",
+      "alternate_names": [
+        "Red Fort of Agra",
+        "Qila-i-Akbari"
+      ],
+      "category": "Cultural",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "city_or_nearest_settlement": "Agra",
+      "inscription_year": 1983,
+      "unesco_criteria": [
+        "(iii)"
+      ],
+      "historical_background": "Constructed in red sandstone by Emperor Akbar in 1565 CE on the banks of the Yamuna River; served as the primary imperial residence of Mughal emperors until 1638 CE.",
+      "architectural_or_ecological_significance": "Crescent-shaped fortress with 2.5 km long double walls of red sandstone rising 70 feet, integrating defensive bastions with delicate marble palaces.",
+      "cultural_importance": "Core epicenter of Mughal governance and monumental history for over a century.",
+      "historical_events_stories": "Where Shah Jahan spent his final 8 years under house arrest in the Musamman Burj, observing the Taj Mahal.",
+      "major_attractions": [
+        "Jahangiri Mahal",
+        "Khas Mahal",
+        "Sheesh Mahal",
+        "Diwan-i-Aam",
+        "Diwan-i-Khas",
+        "Musamman Burj",
+        "Moti Masjid"
+      ],
+      "visitor_experience": "Grand royal pavilions, panoramic views of the Yamuna and Taj Mahal, intricate sandstone carvings.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Agra Fort Railway Station (AF) - 1.5 km",
+      "nearest_airport": "Agra Airport - 8 km; Delhi International Airport - 215 km",
+      "nearby_cities": [
+        "Mathura",
+        "Fatehpur Sikri",
+        "Bharatpur"
+      ],
+      "nearby_heritage_destinations": [
+        "Taj Mahal (2.5 km)",
+        "Jama Masjid Agra",
+        "Itmad-ud-Daulah"
+      ],
+      "nearby_hotels_areas": [
+        "Fatehabad Road",
+        "Agra Cantt"
+      ],
+      "local_cuisine": [
+        "Agra Petha",
+        "Bedmi Puri",
+        "Mughlai Kebabs"
+      ],
+      "transportation_information": "Pre-paid taxis and auto-rickshaws available outside gate.",
+      "latitude": 27.1795,
+      "longitude": 78.0211,
+      "official_unesco_url": "https://whc.unesco.org/en/list/251",
+      "official_tourism_url": "https://www.uptourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-ajanta-caves",
+      "official_unesco_name": "Ajanta Caves",
+      "alternate_names": [
+        "Ajanta Buddhist Rock-Cut Caves"
+      ],
+      "category": "Cultural",
+      "state": "Maharashtra",
+      "district": "Chhatrapati Sambhajinagar (Aurangabad)",
+      "city_or_nearest_settlement": "Lenapur / Aurangabad",
+      "inscription_year": 1983,
+      "unesco_criteria": [
+        "(i)",
+        "(ii)",
+        "(iii)",
+        "(vi)"
+      ],
+      "historical_background": "Rock-cut Buddhist cave monuments excavated in two phases: the early Hinayana phase (2nd century BCE to 1st century CE) and the Mahayana phase (5th century CE under the Vakatakas).",
+      "architectural_or_ecological_significance": "Horse-shoe shaped gorge along the Waghur River containing 30 rock-cut chaityas (prayer halls) and viharas (monasteries) adorned with masterwork fresco tempera paintings.",
+      "cultural_importance": "Crown zenith of classical ancient Indian painting and Buddhist sacred narrative art (Jataka tales).",
+      "historical_events_stories": "Discovered by British cavalry officer John Smith in 1819 while hunting tigers along the ravine.",
+      "major_attractions": [
+        "Cave 1 (Padmapani and Vajrapani Bodhisattvas)",
+        "Cave 2 (Ceiling Frescoes)",
+        "Cave 19 (Sculpted Chaitya)",
+        "Cave 26 (Colossal Reclining Buddha)"
+      ],
+      "visitor_experience": "Ancient serene monasteries carved out of sheer basalt rock, illuminated frescoes showing expressive royal and divine life.",
+      "best_time_to_visit": "November to March; monsoon season (July to September) reveals lush green waterfalls.",
+      "recommended_visit_duration": "4 to 6 hours",
+      "nearest_railway_station": "Jalgaon Railway Station - 60 km; Aurangabad Railway Station - 100 km",
+      "nearest_airport": "Chhatrapati Sambhajinagar Airport (IXU) - 105 km",
+      "nearby_cities": [
+        "Chhatrapati Sambhajinagar (Aurangabad)",
+        "Jalgaon",
+        "Bhusawal"
+      ],
+      "nearby_heritage_destinations": [
+        "Ellora Caves (100 km)",
+        "Daulatabad Fort",
+        "Bibi Ka Maqbara"
+      ],
+      "nearby_hotels_areas": [
+        "Fardapur (MTDC Resort)",
+        "Aurangabad City"
+      ],
+      "local_cuisine": [
+        "Naan Qalia",
+        "Maharashtrian Thali",
+        "Pithla Bhakri",
+        "Puran Poli"
+      ],
+      "transportation_information": "MSRTC green electric shuttle buses operate from T-point parking to the cave foot entrance.",
+      "latitude": 20.5519,
+      "longitude": 75.7033,
+      "official_unesco_url": "https://whc.unesco.org/en/list/242",
+      "official_tourism_url": "https://www.maharashtratourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-ellora-caves",
+      "official_unesco_name": "Ellora Caves",
+      "alternate_names": [
+        "Verul Leni",
+        "Elapura"
+      ],
+      "category": "Cultural",
+      "state": "Maharashtra",
+      "district": "Chhatrapati Sambhajinagar (Aurangabad)",
+      "city_or_nearest_settlement": "Verul / Aurangabad",
+      "inscription_year": 1983,
+      "unesco_criteria": [
+        "(i)",
+        "(iii)",
+        "(vi)"
+      ],
+      "historical_background": "Complex of 34 major rock-cut monasteries and temples excavated sequentially between 600 and 1000 CE under the Rashtrakuta and Yadava dynasties.",
+      "architectural_or_ecological_significance": "Harmonious coexistence of 12 Buddhist, 17 Hindu, and 5 Jain monuments side-by-side; contains Cave 16 (Kailasa Temple), the largest monolithic rock excavation on Earth carved top-down from a single cliff.",
+      "cultural_importance": "Demonstrates ancient India's supreme spirit of religious tolerance and architectural daring.",
+      "historical_events_stories": "Kailasa Temple was commissioned by Rashtrakuta King Krishna I (c. 756-773 CE). Over 200,000 tonnes of basalt were chiselled out without cranes or mortar.",
+      "major_attractions": [
+        "Cave 16 (Kailasa Temple)",
+        "Cave 10 (Vishvakarma Carpenter's Cave)",
+        "Cave 15 (Dashavatara Cave)",
+        "Cave 32 (Indra Sabha)"
+      ],
+      "visitor_experience": "Awe-inspiring view of multi-storey rock-carved pavilions, monolithic elephants, and mythological friezes.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "4 to 5 hours",
+      "nearest_railway_station": "Aurangabad Railway Station (AWB) - 30 km",
+      "nearest_airport": "Chhatrapati Sambhajinagar Airport (IXU) - 35 km",
+      "nearby_cities": [
+        "Chhatrapati Sambhajinagar",
+        "Pune (240 km)",
+        "Nashik (180 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Grishneshwar Jyotirlinga (1 km)",
+        "Daulatabad Fort (15 km)",
+        "Ajanta Caves (100 km)"
+      ],
+      "nearby_hotels_areas": [
+        "Ellora Village",
+        "Aurangabad Station Road"
+      ],
+      "local_cuisine": [
+        "Hurda",
+        "Shev Bhaji",
+        "Misal Pav",
+        "Solkadhi"
+      ],
+      "transportation_information": "Regular MSRTC buses and private cabs from Aurangabad central bus stand; battery cars inside site.",
+      "latitude": 20.0268,
+      "longitude": 75.1792,
+      "official_unesco_url": "https://whc.unesco.org/en/list/243",
+      "official_tourism_url": "https://www.maharashtratourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-sun-temple-konark",
+      "official_unesco_name": "Sun Temple, Konark",
+      "alternate_names": [
+        "Black Pagoda",
+        "Arka Kshetra"
+      ],
+      "category": "Cultural",
+      "state": "Odisha",
+      "district": "Puri",
+      "city_or_nearest_settlement": "Konark",
+      "inscription_year": 1984,
+      "unesco_criteria": [
+        "(i)",
+        "(iii)",
+        "(vi)"
+      ],
+      "historical_background": "Constructed in 1250 CE by King Narasimhadeva I of the Eastern Ganga Dynasty to celebrate military triumphs and honor Surya, the Sun God.",
+      "architectural_or_ecological_significance": "Designed as a colossal chariot of the Sun God drawn by 7 horses with 24 carved stone wheels that function as precise astronomical sundials; Kalinga architectural mastery.",
+      "cultural_importance": "Crown jewel of Kalinga temple architecture and India's finest sun worship shrine.",
+      "historical_events_stories": "Legend of Dharmapada, the 12-year-old son of chief architect Bisu Maharana, who successfully placed the heavy kalasha crowning stone to save the artisans' lives.",
+      "major_attractions": [
+        "Jagamohana (Audience Hall)",
+        "24 Sundial Chariot Wheels",
+        "Natamandira (Dancing Hall)",
+        "War Horse Sculptures",
+        "Elephant Friezes"
+      ],
+      "visitor_experience": "Intricately detailed stone carvings of celestial musicians, astronomical chronometers, and maritime life.",
+      "best_time_to_visit": "October to March; Konark Dance Festival in December.",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Puri Railway Station (PURI) - 35 km; Bhubaneswar (BBS) - 65 km",
+      "nearest_airport": "Biju Patnaik International Airport Bhubaneswar (BBI) - 65 km",
+      "nearby_cities": [
+        "Puri (35 km)",
+        "Bhubaneswar (65 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Jagannath Temple Puri",
+        "Chandrabhaga Beach",
+        "Pipili Applique Village"
+      ],
+      "nearby_hotels_areas": [
+        "Konark Marine Drive",
+        "OTDC Panthanivas Konark",
+        "Puri Beach"
+      ],
+      "local_cuisine": [
+        "Dalma",
+        "Chhena Poda",
+        "Chhenagaja",
+        "Odisha Coastal Fish Curry"
+      ],
+      "transportation_information": "Scenic Marine Drive highway connects directly from Puri and Bhubaneswar.",
+      "latitude": 19.8876,
+      "longitude": 86.0945,
+      "official_unesco_url": "https://whc.unesco.org/en/list/246",
+      "official_tourism_url": "https://odishatourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-mahabalipuram",
+      "official_unesco_name": "Group of Monuments at Mahabalipuram",
+      "alternate_names": [
+        "Mamallapuram Monuments",
+        "Seven Pagodas"
+      ],
+      "category": "Cultural",
+      "state": "Tamil Nadu",
+      "district": "Chengalpattu",
+      "city_or_nearest_settlement": "Mamallapuram",
+      "inscription_year": 1984,
+      "unesco_criteria": [
+        "(i)",
+        "(ii)",
+        "(iii)",
+        "(vi)"
+      ],
+      "historical_background": "Founded by the Pallava king Narasimhavarman I (Mamalla) in the 7th and 8th centuries CE as an ancient maritime trading port connected to Southeast Asia.",
+      "architectural_or_ecological_significance": "Contains world-famous monolithic rathas (chariots), rock-cut mandapas, structural beachside shrines, and the colossal open-air bas-relief 'Descent of the Ganges'.",
+      "cultural_importance": "Birthplace of South Indian Dravidian structural temple architecture.",
+      "historical_events_stories": "Known to early European mariners as the 'Seven Pagodas'; survived the 2004 Indian Ocean tsunami which temporarily exposed submerged ancient temple walls.",
+      "major_attractions": [
+        "Shore Temple",
+        "Descent of the Ganges (Arjuna's Penance)",
+        "Pancha Rathas (Five Chariots)",
+        "Krishna's Butterball",
+        "Varaha Cave"
+      ],
+      "visitor_experience": "Sea breeze mingling with granitic monolithic temples, living stone sculptors chiselling statues along town lanes.",
+      "best_time_to_visit": "November to February; Mamallapuram Dance Festival in December-January.",
+      "recommended_visit_duration": "1 full day",
+      "nearest_railway_station": "Chengalpattu Junction (CGL) - 30 km; Chennai Central (MAS) - 55 km",
+      "nearest_airport": "Chennai International Airport (MAA) - 50 km",
+      "nearby_cities": [
+        "Chennai (55 km)",
+        "Kanchipuram (65 km)",
+        "Puducherry (95 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Kanchipuram Silk City",
+        "Sadras Dutch Fort",
+        "DakshinaChitra"
+      ],
+      "nearby_hotels_areas": [
+        "East Coast Road (ECR)",
+        "Othavadai Street"
+      ],
+      "local_cuisine": [
+        "Fresh Coastal Seafood Fry",
+        "Tamil Banana Leaf Meals",
+        "Kanchipuram Idli",
+        "Filter Coffee"
+      ],
+      "transportation_information": "Frequent air-conditioned buses and taxis via East Coast Road (ECR).",
+      "latitude": 12.6269,
+      "longitude": 80.1927,
+      "official_unesco_url": "https://whc.unesco.org/en/list/249",
+      "official_tourism_url": "https://www.tamilnadutourism.tn.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-kaziranga",
+      "official_unesco_name": "Kaziranga National Park",
+      "alternate_names": [
+        "Kaziranga Tiger Reserve"
+      ],
+      "category": "Natural",
+      "state": "Assam",
+      "district": "Golaghat and Nagaon",
+      "city_or_nearest_settlement": "Kohora / Bokakhat",
+      "inscription_year": 1985,
+      "unesco_criteria": [
+        "(ix)",
+        "(x)"
+      ],
+      "historical_background": "Proposed as a reserve forest in 1905 by Mary Curzon, wife of the Viceroy Lord Curzon, to protect remaining one-horned rhinos; declared a National Park in 1974.",
+      "architectural_or_ecological_significance": "Vast expanse of tall elephant grass, marshland, and tropical moist broadleaf forest nourished by the Brahmaputra River floodplains; hosts two-thirds of the world's Great One-Horned Rhinoceros population.",
+      "cultural_importance": "Global gold-standard triumph of wildlife conservation.",
+      "historical_events_stories": "Population grew from fewer than 20 rhinos in 1905 to over 2,600 today through dedicated anti-poaching forest ranger patrols.",
+      "major_attractions": [
+        "One-Horned Rhinoceros",
+        "Royal Bengal Tigers",
+        "Wild Water Buffalo",
+        "Eastern Swamp Deer",
+        "Elephant Safaris in Kohora and Bagori ranges"
+      ],
+      "visitor_experience": "Early dawn elephant safari through morning mist encountering rhinos grazing close by in tall grassland.",
+      "best_time_to_visit": "November to April (park closed May to October due to monsoon floods).",
+      "recommended_visit_duration": "2 to 3 days",
+      "nearest_railway_station": "Furkating Junction - 75 km; Guwahati - 215 km",
+      "nearest_airport": "Jorhat Airport (JRH) - 95 km; Guwahati Airport (GAU) - 225 km",
+      "nearby_cities": [
+        "Jorhat",
+        "Tezpur",
+        "Guwahati"
+      ],
+      "nearby_heritage_destinations": [
+        "Majuli River Island",
+        "Tea Gardens of Golaghat",
+        "Kakochang Waterfalls"
+      ],
+      "nearby_hotels_areas": [
+        "Kohora Central Range",
+        "Bagori Western Range"
+      ],
+      "local_cuisine": [
+        "Assamese Thali",
+        "Masor Tenga (Tangy Fish Curry)",
+        "Khar",
+        "Pitha"
+      ],
+      "transportation_information": "Regular state buses and tourist vehicles along NH-715 (old NH-37).",
+      "latitude": 26.5775,
+      "longitude": 93.1711,
+      "official_unesco_url": "https://whc.unesco.org/en/list/337",
+      "official_tourism_url": "https://tourism.assam.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-keoladeo",
+      "official_unesco_name": "Keoladeo National Park",
+      "alternate_names": [
+        "Bharatpur Bird Sanctuary"
+      ],
+      "category": "Natural",
+      "state": "Rajasthan",
+      "district": "Bharatpur",
+      "city_or_nearest_settlement": "Bharatpur",
+      "inscription_year": 1985,
+      "unesco_criteria": [
+        "(x)"
+      ],
+      "historical_background": "Originally created as a duck-hunting reserve for the Maharaja of Bharatpur in 1850; converted into a bird sanctuary in 1956 and designated a Ramsar site in 1981.",
+      "architectural_or_ecological_significance": "29 sq km man-made wetland complex hosting over 370 bird species; critical wintering ground for migratory waterfowl on the Central Asian Flyway.",
+      "cultural_importance": "Renowned pilgrimage site for global ornithologists and avian researchers.",
+      "historical_events_stories": "Historical hunting stones still display record duck tallies shot by visiting British dignitaries before conservation laws halted hunting.",
+      "major_attractions": [
+        "Painted Storks Heronry",
+        "Sarus Cranes",
+        "Pelicans",
+        "Bicycle and Cycle-Rickshaw Bird Tours",
+        "Keoladeo Shiva Temple"
+      ],
+      "visitor_experience": "Silent morning cycle-rickshaw rides driven by certified naturalist guides identifying rare calls and nesting colonies.",
+      "best_time_to_visit": "October to March for migratory species; August to November for indigenous nesting.",
+      "recommended_visit_duration": "1 to 2 days",
+      "nearest_railway_station": "Bharatpur Junction (BTE) - 5 km",
+      "nearest_airport": "Agra Airport - 55 km; Delhi Airport - 180 km; Jaipur Airport - 185 km",
+      "nearby_cities": [
+        "Agra (55 km)",
+        "Mathura (38 km)",
+        "Fatehpur Sikri (22 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Lohagarh Fort Bharatpur",
+        "Deeg Palace",
+        "Fatehpur Sikri"
+      ],
+      "nearby_hotels_areas": [
+        "Saras Chauraha",
+        "Fatehpur Road"
+      ],
+      "local_cuisine": [
+        "Dal Baati Churma",
+        "Gatte ki Sabzi",
+        "Ker Sangri",
+        "Mawa Kachori"
+      ],
+      "transportation_information": "Eco-friendly non-motorized cycle-rickshaws, rented bicycles, and battery vehicles inside.",
+      "latitude": 27.1594,
+      "longitude": 77.5204,
+      "official_unesco_url": "https://whc.unesco.org/en/list/340",
+      "official_tourism_url": "https://www.tourism.rajasthan.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-manas",
+      "official_unesco_name": "Manas Wildlife Sanctuary",
+      "alternate_names": [
+        "Manas National Park",
+        "Manas Biosphere Reserve"
+      ],
+      "category": "Natural",
+      "state": "Assam",
+      "district": "Baksa and Chirang (Bodoland)",
+      "city_or_nearest_settlement": "Barpeta Road",
+      "inscription_year": 1985,
+      "unesco_criteria": [
+        "(vii)",
+        "(ix)",
+        "(x)"
+      ],
+      "historical_background": "Former royal hunting reserve of the Cooch Behar royal family and King of Gauripur; declared a Project Tiger reserve in 1973 and a National Park in 1990.",
+      "architectural_or_ecological_significance": "Located at the foothills of the Eastern Himalayas contiguous with Royal Manas National Park in Bhutan; home to endemic species including the Pygmy Hog, Golden Langur, and Hispid Hare.",
+      "cultural_importance": "Critical transboundary biodiversity corridor in the Eastern Himalayan biodiversity hotspot.",
+      "historical_events_stories": "Successfully removed from the 'World Heritage in Danger' list in 2011 following post-conflict community conservation leadership.",
+      "major_attractions": [
+        "Manas River Rapids",
+        "Golden Langurs",
+        "Pygmy Hog Conservation Breeding Center",
+        "Wild Water Buffalo",
+        "River Rafting"
+      ],
+      "visitor_experience": "Spectacular forested foothill scenery against Himalayan peaks, gentle river rafting with elephant sightings.",
+      "best_time_to_visit": "October to April",
+      "recommended_visit_duration": "2 to 3 days",
+      "nearest_railway_station": "Barpeta Road Railway Station (BPRD) - 40 km",
+      "nearest_airport": "Lokpriya Gopinath Bordoloi International Airport Guwahati (GAU) - 145 km",
+      "nearby_cities": [
+        "Barpeta Road",
+        "Bongaigaon",
+        "Guwahati"
+      ],
+      "nearby_heritage_destinations": [
+        "Barpeta Satra (Neo-Vaishnavite monastery)",
+        "Bhutan Border check-post"
+      ],
+      "nearby_hotels_areas": [
+        "Bansbari Eco Range",
+        "Barpeta Road"
+      ],
+      "local_cuisine": [
+        "Bodo Tribal Dishes",
+        "Pitha",
+        "Smoked Pork with Bamboo Shoots",
+        "Local Assam Tea"
+      ],
+      "transportation_information": "Pre-booked 4x4 safari jeeps required for park exploration.",
+      "latitude": 26.6594,
+      "longitude": 91.0011,
+      "official_unesco_url": "https://whc.unesco.org/en/list/338",
+      "official_tourism_url": "https://tourism.assam.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-churches-goa",
+      "official_unesco_name": "Churches and Convents of Goa",
+      "alternate_names": [
+        "Velha Goa Monuments",
+        "Old Goa Heritage Complex"
+      ],
+      "category": "Cultural",
+      "state": "Goa",
+      "district": "North Goa",
+      "city_or_nearest_settlement": "Old Goa (Velha Goa)",
+      "inscription_year": 1986,
+      "unesco_criteria": [
+        "(ii)",
+        "(iv)",
+        "(vi)"
+      ],
+      "historical_background": "Constructed between the 16th and 18th centuries by Portuguese colonial rulers and religious orders (Jesuits, Franciscans, Augustinians) in the former capital of Portuguese India.",
+      "architectural_or_ecological_significance": "Manueline, Baroque, and Mannerist architectural styles rendered in local laterite stone plastered with lime; influenced the spread of Baroque art across Asia.",
+      "cultural_importance": "Epicenter of Asian Christian evangelization and home to the sacred relics of St. Francis Xavier.",
+      "historical_events_stories": "Basilica of Bom Jesus has housed the non-decomposed sacred body of St. Francis Xavier for over 450 years.",
+      "major_attractions": [
+        "Basilica of Bom Jesus",
+        "Sé Cathedral (Cathedral of Santa Catarina)",
+        "Church of St. Francis of Assisi",
+        "Ruins of St. Augustine Tower",
+        "Church of Divine Providence (St. Cajetan)"
+      ],
+      "visitor_experience": "Towering gilded altars, resonant Golden Bell, deeply historic sacred art and centuries of spiritual reverence.",
+      "best_time_to_visit": "November to February; Feast of St. Francis Xavier on December 3.",
+      "recommended_visit_duration": "3 to 4 hours",
+      "nearest_railway_station": "Karmali Railway Station (KRMI) - 3 km",
+      "nearest_airport": "Manohar International Airport Mopa (GOX) - 35 km; Dabolim Airport (GOI) - 25 km",
+      "nearby_cities": [
+        "Panaji (10 km)",
+        "Vasco da Gama (30 km)",
+        "Margao (32 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Fontainhas Latin Quarter Panaji",
+        "Reis Magos Fort",
+        "Divar Island"
+      ],
+      "nearby_hotels_areas": [
+        "Panaji City",
+        "Candolim",
+        "Bambolim"
+      ],
+      "local_cuisine": [
+        "Goan Fish Curry Rice",
+        "Bebinca",
+        "Pork Vindaloo",
+        "Feni",
+        "Poi Bread"
+      ],
+      "transportation_information": "Short 15-minute taxi or bus ride from Panaji central bus terminus.",
+      "latitude": 15.5009,
+      "longitude": 73.9116,
+      "official_unesco_url": "https://whc.unesco.org/en/list/234",
+      "official_tourism_url": "https://goatourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-khajuraho",
+      "official_unesco_name": "Khajuraho Group of Monuments",
+      "alternate_names": [
+        "Khajuraho Temples",
+        "Kharjuravahaka"
+      ],
+      "category": "Cultural",
+      "state": "Madhya Pradesh",
+      "district": "Chhatarpur",
+      "city_or_nearest_settlement": "Khajuraho",
+      "inscription_year": 1986,
+      "unesco_criteria": [
+        "(i)",
+        "(iii)"
+      ],
+      "historical_background": "Constructed between 950 and 1050 CE during the zenith of the Chandela dynasty; of the original 85 temples, 25 survive across Western, Eastern, and Southern groups.",
+      "architectural_or_ecological_significance": "Peak expression of Nagara-style temple architecture in sandstone with curvilinear shikharas evoking Mount Meru; famous for sculptural depictions of dharma, artha, kama, and moksha.",
+      "cultural_importance": "Transcendent monument to human expression, celebration of life, and tantric philosophy.",
+      "historical_events_stories": "Survived hidden in dense teak forests for centuries until rediscovered by British surveyor T.S. Burt in 1838.",
+      "major_attractions": [
+        "Kandariya Mahadeva Temple",
+        "Lakshmana Temple",
+        "Chausath Yogini",
+        "Parshvanatha Temple",
+        "Matangeshwar Temple"
+      ],
+      "visitor_experience": "Awe-inspiring stone artistry depicting gods, celestial nymphs (apsaras), warriors, musicians, and everyday medieval life.",
+      "best_time_to_visit": "October to March; Khajuraho Dance Festival in February.",
+      "recommended_visit_duration": "1 to 2 days",
+      "nearest_railway_station": "Khajuraho Railway Station (KURJ) - 6 km",
+      "nearest_airport": "Khajuraho Airport (HJR) - 4 km",
+      "nearby_cities": [
+        "Chhatarpur (45 km)",
+        "Jhansi (175 km)",
+        "Satna (115 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Panna National Park (25 km)",
+        "Raneh Falls",
+        "Orchha (170 km)"
+      ],
+      "nearby_hotels_areas": [
+        "Sevagram",
+        "Airport Road Khajuraho"
+      ],
+      "local_cuisine": [
+        "Bundelkhandi Thali",
+        "Mawa Baati",
+        "Dal Bafla",
+        "Chironji Kheer"
+      ],
+      "transportation_information": "Compact walkable town; bicycles, auto-rickshaws, and e-rickshaws readily available.",
+      "latitude": 24.8318,
+      "longitude": 79.9199,
+      "official_unesco_url": "https://whc.unesco.org/en/list/383",
+      "official_tourism_url": "https://www.mptourism.com",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-hampi",
+      "official_unesco_name": "Group of Monuments at Hampi",
+      "alternate_names": [
+        "Hampi Vijayanagara",
+        "Kishkindha"
+      ],
+      "category": "Cultural",
+      "state": "Karnataka",
+      "district": "Vijayanagara",
+      "city_or_nearest_settlement": "Hampi / Hosapete",
+      "inscription_year": 1986,
+      "unesco_criteria": [
+        "(i)",
+        "(iii)",
+        "(iv)"
+      ],
+      "historical_background": "Magnificent capital of the Vijayanagara Empire from 1336 to 1565 CE, visited and described by Persian and European travelers as one of the richest cities on Earth before its sack in 1565.",
+      "architectural_or_ecological_significance": "Surreal landscape of giant granite boulders along the Tungabhadra River containing over 1,600 surviving monuments: grand stepped tanks, market bazaars, pillared halls, and stone chariot shrines.",
+      "cultural_importance": "Preserves the pinnacle of South Indian Vijayanagara architecture and culture.",
+      "historical_events_stories": "The musical pillars of the Vittala Temple resonate with distinct musical tones when tapped.",
+      "major_attractions": [
+        "Virupaksha Temple",
+        "Vittala Temple and Stone Chariot",
+        "Lotus Mahal",
+        "Elephant Stables",
+        "Queen's Bath",
+        "Matanga Hill"
+      ],
+      "visitor_experience": "Climbing Matanga Hill for sunrise over boulder-strewn ruins, walking ancient stone chariot bazaars, and Coracle rides on the Tungabhadra River.",
+      "best_time_to_visit": "October to March; Hampi Utsav cultural festival in November/January.",
+      "recommended_visit_duration": "2 to 3 days",
+      "nearest_railway_station": "Hosapete Junction (HPT) - 13 km",
+      "nearest_airport": "Jindal Vijayanagar Airport Bellary (VDY) - 35 km; Hubballi Airport (HBX) - 145 km",
+      "nearby_cities": [
+        "Hosapete (13 km)",
+        "Ballari (65 km)",
+        "Hubballi (145 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Anegundi",
+        "Badami (140 km)",
+        "Aihole & Pattadakal (135 km)"
+      ],
+      "nearby_hotels_areas": [
+        "Hampi Bazaar",
+        "Hosapete Town",
+        "Sanapur / Hippie Island"
+      ],
+      "local_cuisine": [
+        "Karnataka Banana Leaf Meals",
+        "Benne Dosa",
+        "Jolada Rotti",
+        "Filter Coffee"
+      ],
+      "transportation_information": "Rental scooters, bicycles, auto-rickshaws, and electric carts at Vittala complex.",
+      "latitude": 15.335,
+      "longitude": 76.46,
+      "official_unesco_url": "https://whc.unesco.org/en/list/241",
+      "official_tourism_url": "https://karnatakatourism.org",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-fatehpur-sikri",
+      "official_unesco_name": "Fatehpur Sikri",
+      "alternate_names": [
+        "City of Victory"
+      ],
+      "category": "Cultural",
+      "state": "Uttar Pradesh",
+      "district": "Agra",
+      "city_or_nearest_settlement": "Fatehpur Sikri",
+      "inscription_year": 1986,
+      "unesco_criteria": [
+        "(ii)",
+        "(iii)",
+        "(iv)"
+      ],
+      "historical_background": "Built in 1571 CE by Mughal Emperor Akbar to serve as his new imperial capital in honor of Sufi saint Sheikh Salim Chishti; served as capital until abandoned in 1585 CE due to water shortages.",
+      "architectural_or_ecological_significance": "Remarkably preserved planned city of red sandstone fusing Hindu, Jain, Gujarati, and Persian architectural idioms; contains Buland Darwaza (Gate of Magnificence), the highest gateway in the world at 54 meters.",
+      "cultural_importance": "Physical embodiment of Akbar's eclectic cultural synthesis and Din-i Ilahi interfaith dialogue.",
+      "historical_events_stories": "Akbar walked barefoot from Agra to Sikri to seek blessings from saint Salim Chishti for a male heir. Jahangir was born here.",
+      "major_attractions": [
+        "Buland Darwaza",
+        "Tomb of Sheikh Salim Chishti",
+        "Jama Masjid",
+        "Panch Mahal",
+        "Diwan-i-Khas (Central Pillar)",
+        "Jodha Bai Palace"
+      ],
+      "visitor_experience": "Walking through vast sandstone courtyards, tying sacred thread (mannat) on the delicate marble jali screens of Chishti's shrine.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "3 to 4 hours",
+      "nearest_railway_station": "Fatehpur Sikri Railway Station (FTS) - 2 km; Agra Cantt - 38 km",
+      "nearest_airport": "Agra Airport - 35 km; Delhi Airport - 230 km",
+      "nearby_cities": [
+        "Agra (38 km)",
+        "Bharatpur (22 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Keoladeo National Park (22 km)",
+        "Taj Mahal",
+        "Agra Fort"
+      ],
+      "nearby_hotels_areas": [
+        "Agra City",
+        "Fatehpur Sikri Bypass"
+      ],
+      "local_cuisine": [
+        "Khatai Sweets",
+        "Bedmi Aloo",
+        "Mughlai Pulao"
+      ],
+      "transportation_information": "Regular direct buses and tourist cabs from Agra bus terminus.",
+      "latitude": 27.0945,
+      "longitude": 77.6679,
+      "official_unesco_url": "https://whc.unesco.org/en/list/255",
+      "official_tourism_url": "https://www.uptourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-pattadakal",
+      "official_unesco_name": "Group of Monuments at Pattadakal",
+      "alternate_names": [
+        "Pattadakallu",
+        "Raktapura"
+      ],
+      "category": "Cultural",
+      "state": "Karnataka",
+      "district": "Bagalkot",
+      "city_or_nearest_settlement": "Pattadakal / Badami",
+      "inscription_year": 1987,
+      "unesco_criteria": [
+        "(iii)",
+        "(iv)"
+      ],
+      "historical_background": "Holy coronation site ('Pattada Kisuvolal') of the Chalukya dynasty in the 7th and 8th centuries CE on the banks of the Malaprabha River.",
+      "architectural_or_ecological_significance": "Pioneering architectural crucible where North Indian Nagara and South Indian Dravida temple styles were harmonized side by side; Virupaksha Temple served as the model for the Kailasa Temple at Ellora.",
+      "cultural_importance": "Foundational milestone in the evolution of classical Indian temple architecture.",
+      "historical_events_stories": "Virupaksha Temple was built in 740 CE by Queen Lokamahadevi to commemorate King Vikramaditya II's victory over the Pallavas of Kanchipuram.",
+      "major_attractions": [
+        "Virupaksha Temple",
+        "Mallikarjuna Temple",
+        "Sangameshwara Temple",
+        "Galaganatha Temple",
+        "Papanatha Temple",
+        "Jain Narayana Temple"
+      ],
+      "visitor_experience": "Serene riverside temple complex of red sandstone glowing in afternoon sunlight.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Badami Railway Station (BDM) - 22 km",
+      "nearest_airport": "Hubballi Airport (HBX) - 130 km; Belagavi Airport - 150 km",
+      "nearby_cities": [
+        "Badami (22 km)",
+        "Bagalkot (40 km)",
+        "Hubballi (130 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Badami Cave Temples (22 km)",
+        "Aihole Cradle of Architecture (13 km)",
+        "Mahakuta"
+      ],
+      "nearby_hotels_areas": [
+        "Badami Town",
+        "KSTDC Hotel Mayura Chalukya Badami"
+      ],
+      "local_cuisine": [
+        "North Karnataka Jolada Rotti Oota",
+        "Shenga Chutney",
+        "Yenne Gai (Stuffed Brinjal)",
+        "Dharwad Pedha"
+      ],
+      "transportation_information": "Easily explored as part of the famous Badami-Pattadakal-Aihole circuit by taxi.",
+      "latitude": 15.949,
+      "longitude": 75.816,
+      "official_unesco_url": "https://whc.unesco.org/en/list/239",
+      "official_tourism_url": "https://karnatakatourism.org",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-elephanta",
+      "official_unesco_name": "Elephanta Caves",
+      "alternate_names": [
+        "Gharapuri",
+        "City of Caves"
+      ],
+      "category": "Cultural",
+      "state": "Maharashtra",
+      "district": "Raigad",
+      "city_or_nearest_settlement": "Gharapuri Island / Mumbai",
+      "inscription_year": 1987,
+      "unesco_criteria": [
+        "(i)",
+        "(iii)"
+      ],
+      "historical_background": "Rock-cut cave temples carved between the mid-5th and 6th centuries CE, attributed to the Konkan Mauryas and Kalachuris, dedicated primarily to Lord Shiva.",
+      "architectural_or_ecological_significance": "Magnificent rock-hewn pillars and colossal high-relief sculptures, dominated by the 20-foot tall three-headed 'Trimurti' (Sadashiva) representing creator, preserver, and destroyer.",
+      "cultural_importance": "Among the most profound sculpted masterpieces of Shaivite iconography and Indian rock-cut art.",
+      "historical_events_stories": "Named 'Elephanta' by 16th-century Portuguese navigators who discovered a colossal stone elephant near the island's dock.",
+      "major_attractions": [
+        "Main Cave (Cave 1)",
+        "Trimurti Sadashiva",
+        "Ardhanarishvara",
+        "Gangadhara Shiva",
+        "Nataraja Relief",
+        "Ravana Shaking Mount Kailash"
+      ],
+      "visitor_experience": "Scenic 1-hour ferry ride from Gateway of India past Mumbai harbor followed by climb up stone steps lined with craft stalls.",
+      "best_time_to_visit": "November to March (ferry services can be suspended during heavy monsoon storms).",
+      "recommended_visit_duration": "4 to 5 hours including ferry travel",
+      "nearest_railway_station": "Chhatrapati Shivaji Maharaj Terminus (CSMT) Mumbai - 3 km to ferry point",
+      "nearest_airport": "Chhatrapati Shivaji Maharaj International Airport Mumbai (BOM) - 25 km",
+      "nearby_cities": [
+        "Mumbai",
+        "Navi Mumbai"
+      ],
+      "nearby_heritage_destinations": [
+        "Gateway of India",
+        "Kanheri Caves",
+        "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya"
+      ],
+      "nearby_hotels_areas": [
+        "Colaba",
+        "Fort",
+        "Marine Drive"
+      ],
+      "local_cuisine": [
+        "Mumbai Street Food",
+        "Vada Pav",
+        "Pav Bhaji",
+        "Bombay Duck Fry"
+      ],
+      "transportation_information": "Regular tourist ferries operate every 30 minutes from Gateway of India jetty; toy train on jetty.",
+      "latitude": 18.9633,
+      "longitude": 72.9315,
+      "official_unesco_url": "https://whc.unesco.org/en/list/244",
+      "official_tourism_url": "https://www.maharashtratourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-great-chola-temples",
+      "official_unesco_name": "Great Living Chola Temples",
+      "alternate_names": [
+        "Brihadisvara Temples",
+        "Chola Temple Architecture"
+      ],
+      "category": "Cultural",
+      "state": "Tamil Nadu",
+      "district": "Thanjavur, Ariyalur, and Thanjavur",
+      "city_or_nearest_settlement": "Thanjavur, Gangaikonda Cholapuram, and Darasuram",
+      "inscription_year": 1987,
+      "unesco_criteria": [
+        "(ii)",
+        "(iii)"
+      ],
+      "historical_background": "Constructed during the Chola Empire: Brihadisvara at Thanjavur by Rajaraja I (1010 CE), Brihadisvara at Gangaikonda Cholapuram by Rajendra I (1035 CE), and Airavatesvara at Darasuram by Rajaraja II (12th century).",
+      "architectural_or_ecological_significance": "Peak realization of Dravidian architecture; Thanjavur vimana rises 66 meters with an 80-tonne monolithic granite cupola capstone; living temples with unceasing rituals for over 1,000 years.",
+      "cultural_importance": "Testament to Chola maritime empire, bronze casting, classical Bharatanatyam, and enduring spiritual practice.",
+      "historical_events_stories": "Shadow of the 66-meter high vimana at Thanjavur was engineered to demonstrate profound astronomical precision.",
+      "major_attractions": [
+        "Brihadisvara Temple Thanjavur",
+        "Gangaikonda Cholapuram Temple",
+        "Airavatesvara Temple Darasuram",
+        "Colossal Monolithic Nandi",
+        "Chola Frescoes"
+      ],
+      "visitor_experience": "Awe-inspiring granite architecture of immense scale, evening lamps illuminating centuries-old bronze icons and continuous chanting.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "1 to 2 days across all three temple sites",
+      "nearest_railway_station": "Thanjavur Junction (TJ) - 2 km",
+      "nearest_airport": "Tiruchirappalli International Airport (TRZ) - 55 km",
+      "nearby_cities": [
+        "Thanjavur",
+        "Kumbakonam (40 km)",
+        "Tiruchirappalli (55 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Thanjavur Maratha Palace & Saraswathi Mahal Library",
+        "Srirangam Temple",
+        "Chettinad"
+      ],
+      "nearby_hotels_areas": [
+        "South Rampart Road Thanjavur",
+        "Kumbakonam"
+      ],
+      "local_cuisine": [
+        "Thanjavur Sambar",
+        "Kumbakonam Degree Coffee",
+        "Ashoka Halwa",
+        "Tamil Thali"
+      ],
+      "transportation_information": "Regular direct trains and buses from Trichy and Chennai.",
+      "latitude": 10.7828,
+      "longitude": 79.1318,
+      "official_unesco_url": "https://whc.unesco.org/en/list/250",
+      "official_tourism_url": "https://www.tamilnadutourism.tn.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-sundarbans",
+      "official_unesco_name": "Sundarbans National Park",
+      "alternate_names": [
+        "Sundarban Tiger Reserve",
+        "Ganges Mangrove Forest"
+      ],
+      "category": "Natural",
+      "state": "West Bengal",
+      "district": "South 24 Parganas",
+      "city_or_nearest_settlement": "Gosaba / Canning",
+      "inscription_year": 1987,
+      "unesco_criteria": [
+        "(ix)",
+        "(x)"
+      ],
+      "historical_background": "Created as a wildlife sanctuary in 1977, designated a national park in 1984, and inscribed as a World Heritage site in 1987; forms the largest mangrove forest in the world on the delta of the Ganga, Brahmaputra, and Meghna rivers.",
+      "architectural_or_ecological_significance": "Intertidal mangrove ecosystem with pneumatophores (breathing roots) hosting the world's only mangrove-dwelling Royal Bengal Tigers, saltwater crocodiles, and Ganges river dolphins.",
+      "cultural_importance": "Vital natural biosheild protecting the Bengal coast against tropical cyclones and sea storms.",
+      "historical_events_stories": "Devotion to Bonbibi (goddess of the forest) shared by both Hindu and Muslim honey-gatherers (Mowalis) and fishermen entering the deep forest.",
+      "major_attractions": [
+        "Boat Safaris through Tidal Creeks",
+        "Sajnekhali Watch Tower and Mangrove Interpretation Centre",
+        "Dobanki Canopy Walk",
+        "Sudhanyakhali Tiger Watch Tower",
+        "Netidhopani Ruins"
+      ],
+      "visitor_experience": "Gliding on motorized wooden boats through narrow mangrove channels surrounded by silent mudflats and watching for swimming tigers.",
+      "best_time_to_visit": "October to March (pleasant cool weather).",
+      "recommended_visit_duration": "2 to 3 days",
+      "nearest_railway_station": "Canning Railway Station - 30 km to ferry point; Sealdah Kolkata - 100 km",
+      "nearest_airport": "Netaji Subhash Chandra Bose International Airport Kolkata (CCU) - 110 km",
+      "nearby_cities": [
+        "Kolkata (110 km)",
+        "Canning"
+      ],
+      "nearby_heritage_destinations": [
+        "Kolkata Heritage Core",
+        "Bakkhali Beach"
+      ],
+      "nearby_hotels_areas": [
+        "Pakhiralay",
+        "Dayapur Island Eco Resorts"
+      ],
+      "local_cuisine": [
+        "Fresh Bhetki Fish Curry",
+        "Chingri Malai Curry",
+        "Kolkata Biryani",
+        "Sundarbans Wild Honey"
+      ],
+      "transportation_information": "Road journey from Kolkata to Godkhali ghat (3 hours), then motorized boat transfer.",
+      "latitude": 21.9497,
+      "longitude": 89.1833,
+      "official_unesco_url": "https://whc.unesco.org/en/list/452",
+      "official_tourism_url": "https://wbtourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-nanda-devi",
+      "official_unesco_name": "Nanda Devi and Valley of Flowers National Parks",
+      "alternate_names": [
+        "Nanda Devi Biosphere Reserve",
+        "Valley of Flowers"
+      ],
+      "category": "Natural",
+      "state": "Uttarakhand",
+      "district": "Chamoli and Pithoragarh",
+      "city_or_nearest_settlement": "Joshimath / Govindghat",
+      "inscription_year": 1988,
+      "unesco_criteria": [
+        "(vii)",
+        "(x)"
+      ],
+      "historical_background": "Nanda Devi National Park established in 1982 around India's second-highest peak (7,816 m); Valley of Flowers discovered by mountaineer Frank Smythe in 1931 was inscribed as an extension in 2005.",
+      "architectural_or_ecological_significance": "Pristine alpine transition zone with high diversity of threatened flora including Brahma Kamal, blue poppy, and edelweiss, home to snow leopard, Asiatic black bear, and blue sheep.",
+      "cultural_importance": "Nanda Devi peak is venerated as a sacred goddess across Garhwal and Kumaon folk traditions.",
+      "historical_events_stories": "Frank Smythe stumbled upon the alpine paradise in 1931 while returning from Mount Kamet, publishing his classic book 'The Valley of Flowers'.",
+      "major_attractions": [
+        "Valley of Flowers Alpine Meadows",
+        "Pushpawati River",
+        "Hemkund Sahib (Nearby Sikh pilgrimage)",
+        "Brahma Kamal Blooms",
+        "Ghangaria Basecamp"
+      ],
+      "visitor_experience": "Trek through a kaleidoscope of millions of alpine wildflowers blooming in lush mountain mist under snow-capped peaks.",
+      "best_time_to_visit": "July to September (peak bloom season); park closed in winter.",
+      "recommended_visit_duration": "4 to 6 days including trek",
+      "nearest_railway_station": "Rishikesh Railway Station (RKSH) - 275 km; Haridwar - 300 km",
+      "nearest_airport": "Jolly Grant Airport Dehradun (DED) - 290 km",
+      "nearby_cities": [
+        "Joshimath (30 km)",
+        "Rishikesh (275 km)",
+        "Badrinath (45 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Badrinath Temple",
+        "Hemkund Sahib",
+        "Mana Village (First Village of India)"
+      ],
+      "nearby_hotels_areas": [
+        "Ghangaria",
+        "Govindghat",
+        "Joshimath"
+      ],
+      "local_cuisine": [
+        "Garhwali Thali",
+        "Kafli",
+        "Chainsoo",
+        "Bal Mithai",
+        "Mandua Roti"
+      ],
+      "transportation_information": "Drive to Govindghat, then 14 km trek or pony/helicopter ride to Ghangaria basecamp, then 3 km trek into the Valley.",
+      "latitude": 30.728,
+      "longitude": 79.6053,
+      "official_unesco_url": "https://whc.unesco.org/en/list/335",
+      "official_tourism_url": "https://uttarakhandtourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-sanchi",
+      "official_unesco_name": "Buddhist Monuments at Sanchi",
+      "alternate_names": [
+        "Sanchi Stupa",
+        "Great Stupa"
+      ],
+      "category": "Cultural",
+      "state": "Madhya Pradesh",
+      "district": "Raisen",
+      "city_or_nearest_settlement": "Sanchi / Vidisha",
+      "inscription_year": 1989,
+      "unesco_criteria": [
+        "(i)",
+        "(ii)",
+        "(iii)",
+        "(iv)",
+        "(vi)"
+      ],
+      "historical_background": "Oldest surviving stone structure in India, originally commissioned by Emperor Ashoka the Great in the 3rd century BCE to enshrine relics of Gautama Buddha; enlarged under the Shungas and Satavahanas.",
+      "architectural_or_ecological_significance": "Hemispherical stone dome surmounting a terrace with chatra umbrella, surrounded by high balustrades with four elaborately carved ceremonial gateways (toranas) depicting Jataka tales.",
+      "cultural_importance": "Foundational monument of Buddhist art and monumental stone architecture in Asia.",
+      "historical_events_stories": "Ashoka's queen Devi was from nearby Vidisha; their children Mahendra and Sanghamitta departed from Sanchi to propagate Buddhism in Sri Lanka.",
+      "major_attractions": [
+        "Great Stupa 1",
+        "Four Torana Gateways",
+        "Stupa 2 (Floral carvings)",
+        "Stupa 3 (Sariputra Relics)",
+        "Ashoka Pillar Edicts",
+        "Sanchi Archaeological Museum"
+      ],
+      "visitor_experience": "Serene hilltop setting surrounded by ancient monastic ruins, admiring 2,200-year-old stone reliefs carved with the delicacy of ivory.",
+      "best_time_to_visit": "October to March; Chetiyagiri Vihara Festival in November.",
+      "recommended_visit_duration": "3 to 4 hours",
+      "nearest_railway_station": "Sanchi Railway Station (SCI) - 1.5 km; Vidisha - 10 km; Bhopal Junction - 46 km",
+      "nearest_airport": "Raja Bhoj Airport Bhopal (BHO) - 52 km",
+      "nearby_cities": [
+        "Vidisha (10 km)",
+        "Bhopal (46 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Udayagiri Caves (13 km)",
+        "Heliodorus Pillar Vidisha",
+        "Bhimbetka (90 km)"
+      ],
+      "nearby_hotels_areas": [
+        "MP Tourism Gateway Retreat Sanchi",
+        "Bhopal"
+      ],
+      "local_cuisine": [
+        "Poha Jalebi",
+        "Bhopali Gosht Korma",
+        "Bhutte ka Kees",
+        "Dal Bafla"
+      ],
+      "transportation_information": "Regular trains from Bhopal and local buses; easy 1-hour drive along NH-146.",
+      "latitude": 23.4795,
+      "longitude": 77.7397,
+      "official_unesco_url": "https://whc.unesco.org/en/list/524",
+      "official_tourism_url": "https://www.mptourism.com",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-humayuns-tomb",
+      "official_unesco_name": "Humayun's Tomb, Delhi",
+      "alternate_names": [
+        "Maqbara-i-Humayun",
+        "Dormitory of the Mughals"
+      ],
+      "category": "Cultural",
+      "state": "Delhi",
+      "district": "South East Delhi",
+      "city_or_nearest_settlement": "New Delhi (Nizamuddin East)",
+      "inscription_year": 1993,
+      "unesco_criteria": [
+        "(ii)",
+        "(iv)"
+      ],
+      "historical_background": "Commissioned in 1565 CE by Humayun's senior widow Empress Bega Begum (Haji Begum) and designed by Persian architect Mirak Mirza Ghiyas; completed in 1572 CE.",
+      "architectural_or_ecological_significance": "First monumental garden-tomb on the Indian subcontinent, introducing the Charbagh geometric quadrilateral garden and high double-dome, directly inspiring the architectural conception of the Taj Mahal.",
+      "cultural_importance": "Landmark synthesis of Persian garden geometry with Indian red sandstone and white marble craftsmanship.",
+      "historical_events_stories": "Last Mughal Emperor Bahadur Shah Zafar took refuge here before his capture by British officer William Hodson during the 1857 Rebellion.",
+      "major_attractions": [
+        "Main Mausoleum",
+        "Charbagh Water Channels",
+        "Isa Khan's Tomb and Mosque",
+        "Bu Halima's Garden",
+        "Afsarwala Tomb",
+        "Barber's Tomb (Nai ka Gumbad)"
+      ],
+      "visitor_experience": "Immaculately restored paradise gardens with flowing water channels, grand vaulted arches, and glowing red sandstone.",
+      "best_time_to_visit": "October to March; late afternoon for golden hour photography.",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Hazrat Nizamuddin Railway Station (NZM) - 1.5 km",
+      "nearest_airport": "Indira Gandhi International Airport (DEL) - 18 km",
+      "nearby_cities": [
+        "Noida",
+        "Gurugram",
+        "Faridabad"
+      ],
+      "nearby_heritage_destinations": [
+        "Hazrat Nizamuddin Dargah (500 m)",
+        "Sunder Nursery (Adjacent)",
+        "India Gate (4 km)"
+      ],
+      "nearby_hotels_areas": [
+        "Nizamuddin",
+        "Lutyens Delhi",
+        "Connaught Place"
+      ],
+      "local_cuisine": [
+        "Delhi Street Chaat",
+        "Nizamuddin Kebabs and Biryani",
+        "Mughlai Korma",
+        "Kulfi Falooda"
+      ],
+      "transportation_information": "JLN Stadium Metro Station (Violet Line) is 1.5 km away; battery rickshaws abundant.",
+      "latitude": 28.5933,
+      "longitude": 77.2507,
+      "official_unesco_url": "https://whc.unesco.org/en/list/633",
+      "official_tourism_url": "https://delhitourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-qutb-minar",
+      "official_unesco_name": "Qutb Minar and its Monuments, Delhi",
+      "alternate_names": [
+        "Qutub Minar",
+        "Vijay Stambha of Mehrauli"
+      ],
+      "category": "Cultural",
+      "state": "Delhi",
+      "district": "South Delhi",
+      "city_or_nearest_settlement": "Mehrauli, New Delhi",
+      "inscription_year": 1993,
+      "unesco_criteria": [
+        "(iv)"
+      ],
+      "historical_background": "Commenced in 1199 CE by Qutb-ud-din Aibak to mark the establishment of the Delhi Sultanate; added to by Shams-ud-din Iltutmish (1220 CE) and Firoz Shah Tughlaq (1368 CE).",
+      "architectural_or_ecological_significance": "Highest brick minaret in the world at 72.5 meters, tapering with projecting balconies supported by stalactite-like corbels; complex contains the 4th-century CE rust-resistant Iron Pillar of Chandragupta II.",
+      "cultural_importance": "Foundational architectural monument of the Delhi Sultanate and Indo-Islamic building art.",
+      "historical_events_stories": "The 1,600-year-old Iron Pillar has withstood monsoons and weathering for over sixteen centuries without showing corrosion, a marvel of ancient Indian metallurgy.",
+      "major_attractions": [
+        "Qutb Minar",
+        "Quwwat-ul-Islam Mosque",
+        "Iron Pillar of Delhi",
+        "Alai Darwaza",
+        "Tomb of Iltutmish",
+        "Alai Minar (Unfinished minaret)"
+      ],
+      "visitor_experience": "Towering red sandstone fluted minaret covered in delicate Arabic calligraphy and geometric bands set against manicured green lawns.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "New Delhi Railway Station (NDLS) - 15 km; Hazrat Nizamuddin - 14 km",
+      "nearest_airport": "Indira Gandhi International Airport (DEL) - 12 km",
+      "nearby_cities": [
+        "Gurugram (18 km)",
+        "Noida (22 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Mehrauli Archaeological Park",
+        "Jamali Kamali Mosque",
+        "Hauz Khas Complex"
+      ],
+      "nearby_hotels_areas": [
+        "Saket",
+        "Mehrauli",
+        "Aerocity"
+      ],
+      "local_cuisine": [
+        "Chole Bhature",
+        "Parathas",
+        "Kebabs of Old Delhi",
+        "Rabri Falooda"
+      ],
+      "transportation_information": "Qutab Minar Metro Station (Yellow Line) is 1.5 km away with direct connectivity from central Delhi.",
+      "latitude": 28.5245,
+      "longitude": 77.1855,
+      "official_unesco_url": "https://whc.unesco.org/en/list/642",
+      "official_tourism_url": "https://delhitourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-mountain-railways",
+      "official_unesco_name": "Mountain Railways of India",
+      "alternate_names": [
+        "Darjeeling Himalayan Railway",
+        "Nilgiri Mountain Railway",
+        "Kalka Shimla Railway"
+      ],
+      "category": "Cultural",
+      "state": "West Bengal, Tamil Nadu, Himachal Pradesh",
+      "district": "Darjeeling, Nilgiris, Shimla",
+      "city_or_nearest_settlement": "Darjeeling, Ooty, Shimla",
+      "inscription_year": 1999,
+      "unesco_criteria": [
+        "(ii)",
+        "(iv)"
+      ],
+      "historical_background": "Serial inscription encompassing three historic 19th and early 20th-century narrow-gauge mountain railways: Darjeeling (1881), Nilgiri (1908, with unique rack and pinion system), and Kalka-Shimla (1903).",
+      "architectural_or_ecological_significance": "Bold engineering triumphs navigating extreme mountain gradients with loops, 'Z'-reverses, multi-arched viaducts, and tunnels through Himalayan and Western Ghat terrains.",
+      "cultural_importance": "Transformed social, economic, and cultural connectivity in India's mountainous tea and forest regions.",
+      "historical_events_stories": "The Darjeeling Himalayan Railway introduced the innovative 'Loop' and 'Reverse' systems to conquer steep gradients without heavy tunneling.",
+      "major_attractions": [
+        "Steam Locomotive Runs",
+        "Batasia Loop (Darjeeling)",
+        "Barog Tunnel (Kalka-Shimla)",
+        "Rack and Pinion Climb (Nilgiri)",
+        "Mountain Scenery"
+      ],
+      "visitor_experience": "Unforgettable nostalgic journey chugging past tea plantations, pine forests, and misty valleys with whistle echoes.",
+      "best_time_to_visit": "March to June and October to December",
+      "recommended_visit_duration": "Full day scenic rail ride",
+      "nearest_railway_station": "New Jalpaiguri (DHR); Mettupalayam (NMR); Kalka (KSR)",
+      "nearest_airport": "Bagdogra (IXB) for Darjeeling; Coimbatore (CJB) for Nilgiri; Chandigarh (IXC) for Shimla",
+      "nearby_cities": [
+        "Siliguri",
+        "Coimbatore",
+        "Chandigarh"
+      ],
+      "nearby_heritage_destinations": [
+        "Viceregal Lodge Shimla",
+        "Tea Estates Darjeeling",
+        "Botanical Gardens Ooty"
+      ],
+      "nearby_hotels_areas": [
+        "The Mall Shimla",
+        "Chowrasta Darjeeling",
+        "Charring Cross Ooty"
+      ],
+      "local_cuisine": [
+        "Momos and Thukpa (Darjeeling)",
+        "Himachali Dham (Shimla)",
+        "Ooty Homemade Chocolates"
+      ],
+      "transportation_information": "Book toy train tickets well in advance on IRCTC official portal.",
+      "latitude": 27.036,
+      "longitude": 88.2627,
+      "official_unesco_url": "https://whc.unesco.org/en/list/944",
+      "official_tourism_url": "https://indianrailways.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-mahabodhi",
+      "official_unesco_name": "Mahabodhi Temple Complex at Bodh Gaya",
+      "alternate_names": [
+        "Bodh Gaya Temple",
+        "Vajrasana Temple"
+      ],
+      "category": "Cultural",
+      "state": "Bihar",
+      "district": "Gaya",
+      "city_or_nearest_settlement": "Bodh Gaya",
+      "inscription_year": 2002,
+      "unesco_criteria": [
+        "(i)",
+        "(ii)",
+        "(iii)",
+        "(iv)",
+        "(vi)"
+      ],
+      "historical_background": "First temple built by Emperor Ashoka in the 3rd century BCE around the sacred Bodhi Tree where Siddhartha Gautama attained supreme Enlightenment (Buddhatva) in c. 531 BCE; present grand brick temple dates to the 5th-6th century CE (Gupta period).",
+      "architectural_or_ecological_significance": "One of the earliest temple structures built entirely in brick still standing in India, towering 55 meters with classic sikhara and chaitya niches.",
+      "cultural_importance": "The holiest pilgrimage site in the Buddhist world, venerated across Theravada, Mahayana, and Vajrayana traditions.",
+      "historical_events_stories": "The current sacred Bodhi Tree is a direct descendant of the original tree under which the Buddha meditated, nurtured from a sapling brought back from Sri Lanka.",
+      "major_attractions": [
+        "Sacred Bodhi Tree (Sri Maha Bodhi)",
+        "Vajrasana (Diamond Throne)",
+        "Main Mahabodhi Sanctuary",
+        "Muchalinda Lake",
+        "Chankramana (Jewelled Cloister)",
+        "7 Sacred Enlightenment Meditation Spots"
+      ],
+      "visitor_experience": "Deep serene spiritual ambiance, saffron-robed monks chanting under the rustling leaves of the Bodhi Tree, thousands of glowing butter lamps at dusk.",
+      "best_time_to_visit": "October to March; Buddha Purnima in May is intensely auspicious.",
+      "recommended_visit_duration": "1 full day",
+      "nearest_railway_station": "Gaya Junction (GAYA) - 16 km",
+      "nearest_airport": "Gaya International Airport (GAY) - 10 km; Patna Airport (PAT) - 110 km",
+      "nearby_cities": [
+        "Gaya (16 km)",
+        "Patna (110 km)",
+        "Varanasi (250 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Vishnupad Temple Gaya (15 km)",
+        "Dungeshwari Cave Temples (12 km)",
+        "Nalanda (85 km)",
+        "Rajgir (70 km)"
+      ],
+      "nearby_hotels_areas": [
+        "Temple Road Bodh Gaya",
+        "International Monasteries Sector"
+      ],
+      "local_cuisine": [
+        "Litti Chokha",
+        "Gaya Tilkut",
+        "Anarsa",
+        "Sattu Sharbat",
+        "Khaja"
+      ],
+      "transportation_information": "Pre-paid taxis and auto-rickshaws run continuously from Gaya railway station and airport.",
+      "latitude": 24.6961,
+      "longitude": 84.9913,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1056",
+      "official_tourism_url": "https://tourism.bihar.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-bhimbetka",
+      "official_unesco_name": "Rock Shelters of Bhimbetka",
+      "alternate_names": [
+        "Bhimbetka Caves",
+        "Bhim Baithak"
+      ],
+      "category": "Cultural",
+      "state": "Madhya Pradesh",
+      "district": "Raisen",
+      "city_or_nearest_settlement": "Bhojpur / Obaidullaganj",
+      "inscription_year": 2003,
+      "unesco_criteria": [
+        "(iii)",
+        "(v)"
+      ],
+      "historical_background": "Naturally sculpted sandstone rock shelters in the foothills of the Vindhyan Mountains showing continuous human occupation from the Lower Paleolithic to the medieval era (spanning over 100,000 years).",
+      "architectural_or_ecological_significance": "Over 750 rock shelters spread across seven hills containing prehistoric rock paintings dating from the Upper Paleolithic and Mesolithic (10,000 BCE) with mineral pigments of ochre and white.",
+      "cultural_importance": "Among the oldest documented records of human artistic expression, hunting rituals, and dance on Earth.",
+      "historical_events_stories": "Discovered in 1957 by Indian archaeologist Dr. V. S. Wakankar who noticed the natural stone formations from a train window and began excavations.",
+      "major_attractions": [
+        "Auditorium Cave (Cave 3)",
+        "Zoo Rock Shelter (Animal scenes)",
+        "Boar Rock (Colossal mythological beast)",
+        "Mesolithic Hunting Friezes"
+      ],
+      "visitor_experience": "Walking through prehistoric forested natural rock amphitheatres viewing vibrant paintings of elephants, bisons, and dancing hunters.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Obaidullaganj - 15 km; Bhopal Junction - 45 km",
+      "nearest_airport": "Raja Bhoj Airport Bhopal (BHO) - 55 km",
+      "nearby_cities": [
+        "Bhopal (45 km)",
+        "Hoshangabad (35 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Bhojeshwar Shiva Temple Bhojpur (28 km)",
+        "Sanchi (90 km)",
+        "Bhopal Tribal Museum"
+      ],
+      "nearby_hotels_areas": [
+        "MP Tourism Highway Treat Bhimbetka",
+        "Bhopal"
+      ],
+      "local_cuisine": [
+        "Bhopali Poha",
+        "Dal Bafla",
+        "Shahi Tukda"
+      ],
+      "transportation_information": "Conveniently reached by taxi or bus from Bhopal along the Bhopal-Hoshangabad highway (NH-46).",
+      "latitude": 22.9372,
+      "longitude": 77.6127,
+      "official_unesco_url": "https://whc.unesco.org/en/list/925",
+      "official_tourism_url": "https://www.mptourism.com",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-csmt",
+      "official_unesco_name": "Chhatrapati Shivaji Maharaj Terminus (formerly Victoria Terminus)",
+      "alternate_names": [
+        "CSMT",
+        "Victoria Terminus (VT)"
+      ],
+      "category": "Cultural",
+      "state": "Maharashtra",
+      "district": "Mumbai City",
+      "city_or_nearest_settlement": "Fort, Mumbai",
+      "inscription_year": 2004,
+      "unesco_criteria": [
+        "(ii)",
+        "(iv)"
+      ],
+      "historical_background": "Designed by British architect F. W. Stevens and constructed between 1878 and 1887 to commemorate the Golden Jubilee of Queen Victoria; renamed in 1996 in honor of Chhatrapati Shivaji Maharaj.",
+      "architectural_or_ecological_significance": "Outstanding masterpiece of Victorian Italianate Gothic Revival architecture fused with traditional Indian palace motifs, stone domes, turrets, and pointed arches.",
+      "cultural_importance": "Beating heart of Mumbai's suburban rail lifeline and commercial dynamism.",
+      "historical_events_stories": "The high central octagonal ribbed dome is crowned by a colossal 4-meter bronze figure of 'Progress' holding a torch in her right hand and a wheel in her left.",
+      "major_attractions": [
+        "Central Grand Dome and Grand Staircase",
+        "Stained Glass Windows",
+        "Carved Peacocks and Gargoyles",
+        "Heritage Rail Gallery",
+        "Nocturnal LED Illumination"
+      ],
+      "visitor_experience": "Dramatic Victorian gothic facade bustling with thousands of daily commuters, illuminated brilliantly in tricolour and heritage lights each evening.",
+      "best_time_to_visit": "October to March; best viewed externally at dusk when lit.",
+      "recommended_visit_duration": "1 to 2 hours",
+      "nearest_railway_station": "CSMT is itself the premier terminus of Central Railway",
+      "nearest_airport": "Chhatrapati Shivaji Maharaj International Airport (BOM) - 22 km",
+      "nearby_cities": [
+        "Navi Mumbai",
+        "Thane",
+        "Pune"
+      ],
+      "nearby_heritage_destinations": [
+        "BMC Headquarters (Opposite)",
+        "Flora Fountain",
+        "Gateway of India (2.5 km)",
+        "Marine Drive"
+      ],
+      "nearby_hotels_areas": [
+        "Fort",
+        "Colaba",
+        "Marine Lines"
+      ],
+      "local_cuisine": [
+        "Mumbai Vada Pav at Aram Canteen",
+        "Bombay Duck",
+        "Parsi Berry Pulao at Britannia",
+        "Bun Maska Chai"
+      ],
+      "transportation_information": "Directly connected to suburban local train lines (Central and Harbour lines) and upcoming Metro 3.",
+      "latitude": 18.94,
+      "longitude": 72.8353,
+      "official_unesco_url": "https://whc.unesco.org/en/list/945",
+      "official_tourism_url": "https://www.maharashtratourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-champaner-pavagadh",
+      "official_unesco_name": "Champaner-Pavagadh Archaeological Park",
+      "alternate_names": [
+        "Champaner Heritage Site",
+        "Pavagadh Hill"
+      ],
+      "category": "Cultural",
+      "state": "Gujarat",
+      "district": "Panchmahal",
+      "city_or_nearest_settlement": "Champaner / Halol",
+      "inscription_year": 2004,
+      "unesco_criteria": [
+        "(iii)",
+        "(iv)",
+        "(v)",
+        "(vi)"
+      ],
+      "historical_background": "Founded as the capital of Sultan Mahmud Begada in the late 15th century, built upon an 8th-century Rajput hill fortress; complete unexcavated medieval pre-Mughal city.",
+      "architectural_or_ecological_significance": "Remarkable transition of regional Hindu and Jain craftsmanship into Indo-Islamic architectural idioms; includes water harvesting systems, stepped wells, palaces, and mosques.",
+      "cultural_importance": "The only complete and unchanged pre-Mughal Islamic city site in India.",
+      "historical_events_stories": "Kalika Mata Temple atop the summit of Pavagadh Hill (800 meters) is an ancient Shakti Peetha venerated for over a thousand years.",
+      "major_attractions": [
+        "Jami Masjid",
+        "Sahar ki Masjid",
+        "Kevada Masjid",
+        "Nagina Masjid",
+        "Pavagadh Ropeway and Kalika Mata Temple",
+        "Vada Talav"
+      ],
+      "visitor_experience": "Majestic isolated mosques with fine stone jali work set against Pavagadh volcanic hill, ropeway ride to the sacred summit.",
+      "best_time_to_visit": "October to March; monsoon season is breathtakingly green.",
+      "recommended_visit_duration": "4 to 5 hours",
+      "nearest_railway_station": "Vadodara Junction (BRC) - 45 km",
+      "nearest_airport": "Vadodara Airport (BDQ) - 42 km; Ahmedabad Airport (AMD) - 145 km",
+      "nearby_cities": [
+        "Vadodara (45 km)",
+        "Godhra (40 km)",
+        "Ahmedabad (140 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Laxmi Vilas Palace Vadodara",
+        "Statue of Unity (115 km)",
+        "Dabhoi Fort"
+      ],
+      "nearby_hotels_areas": [
+        "Halol",
+        "Vadodara City"
+      ],
+      "local_cuisine": [
+        "Gujarati Kathiyawadi Thali",
+        "Sev Usal",
+        "Khaman Dhokla",
+        "Fafda Jalebi"
+      ],
+      "transportation_information": "Convenient day-trip from Vadodara by car or GSRTC state bus.",
+      "latitude": 22.4833,
+      "longitude": 73.5333,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1101",
+      "official_tourism_url": "https://www.gujarattourism.com",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-red-fort",
+      "official_unesco_name": "Red Fort Complex",
+      "alternate_names": [
+        "Lal Qila",
+        "Qila-i-Mubarak"
+      ],
+      "category": "Cultural",
+      "state": "Delhi",
+      "district": "North East / Central Delhi",
+      "city_or_nearest_settlement": "Old Delhi (Shahjahanabad)",
+      "inscription_year": 2007,
+      "unesco_criteria": [
+        "(ii)",
+        "(iii)",
+        "(vi)"
+      ],
+      "historical_background": "Constructed by Mughal Emperor Shah Jahan between 1639 and 1648 CE when he shifted the imperial capital from Agra to his new city of Shahjahanabad.",
+      "architectural_or_ecological_significance": "Peak of Mughal palace architecture in red sandstone and white marble; innovative octagonal grid layout, Persian garden canals (Nahr-i-Bihisht or Stream of Paradise), and chhatri pavilions.",
+      "cultural_importance": "The national symbol of Indian sovereignty where the Prime Minister unfurls the national tricolour each Independence Day (15 August).",
+      "historical_events_stories": "The famous Peacock Throne once stood in the Diwan-i-Khas until looted by Nadir Shah of Persia in 1739. In 1945, the historic INA trials were held here.",
+      "major_attractions": [
+        "Lahori Gate",
+        "Diwan-i-Aam",
+        "Diwan-i-Khas",
+        "Rang Mahal",
+        "Moti Masjid",
+        "Mumtaz Mahal Museum",
+        "Sound and Light Show"
+      ],
+      "visitor_experience": "Walking through grand octagonal gates, exploring covered Chhatta Chowk bazaar, and standing in the grand audience halls of the Mughals.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Old Delhi Railway Station (DLI) - 1.5 km; New Delhi (NDLS) - 4 km",
+      "nearest_airport": "Indira Gandhi International Airport (DEL) - 20 km",
+      "nearby_cities": [
+        "Noida",
+        "Gurugram",
+        "Ghaziabad"
+      ],
+      "nearby_heritage_destinations": [
+        "Jama Masjid Delhi (500 m)",
+        "Chandni Chowk",
+        "Raj Ghat",
+        "Fatehpuri Masjid"
+      ],
+      "nearby_hotels_areas": [
+        "Daryaganj",
+        "Connaught Place",
+        "Karol Bagh"
+      ],
+      "local_cuisine": [
+        "Chandni Chowk Parathe Wali Gali",
+        "Karim's Mutton Korma",
+        "Old Delhi Jalebi",
+        "Daulat ki Chaat"
+      ],
+      "transportation_information": "Lal Quila Metro Station (Heritage Violet Line) is directly outside the gate.",
+      "latitude": 28.6562,
+      "longitude": 77.241,
+      "official_unesco_url": "https://whc.unesco.org/en/list/231",
+      "official_tourism_url": "https://delhitourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-jantar-mantar-jaipur",
+      "official_unesco_name": "The Jantar Mantar, Jaipur",
+      "alternate_names": [
+        "Jaipur Observatory",
+        "Yantra Mantra"
+      ],
+      "category": "Cultural",
+      "state": "Rajasthan",
+      "district": "Jaipur",
+      "city_or_nearest_settlement": "Jaipur",
+      "inscription_year": 2010,
+      "unesco_criteria": [
+        "(iii)",
+        "(iv)"
+      ],
+      "historical_background": "Completed in 1734 CE by Maharaja Sawai Jai Singh II, founder of Jaipur, who constructed five astronomical observatories across northern India.",
+      "architectural_or_ecological_significance": "Collection of nineteen architectural astronomical instruments built of stone and local marble, including the Vrihat Samrat Yantra, the world's largest stone sundial measuring time to an accuracy of 2 seconds.",
+      "cultural_importance": "Masterpiece of late medieval Indian astronomical innovation and scientific synthesis combining Hindu, Islamic, and European astronomical systems.",
+      "historical_events_stories": "Jai Singh sent scholarly emissaries to Portugal, Arabia, and Persia to collect astronomical tables before designing these monumental naked-eye calculation instruments.",
+      "major_attractions": [
+        "Vrihat Samrat Yantra (Gigantic Sundial)",
+        "Jai Prakash Yantra",
+        "Rama Yantra",
+        "Misra Yantra",
+        "Rashivalaya (Zodiac instruments)"
+      ],
+      "visitor_experience": "Fascinating experience observing real-time shadows casting exact Jaipur solar time and planetary alignments on giant geometric stone arcs.",
+      "best_time_to_visit": "October to March; midday (11:30 AM to 1:30 PM) is best to observe the sundials in active overhead sunlight.",
+      "recommended_visit_duration": "1.5 to 2 hours",
+      "nearest_railway_station": "Jaipur Junction (JP) - 5 km",
+      "nearest_airport": "Jaipur International Airport (JAI) - 13 km",
+      "nearby_cities": [
+        "Ajmer (135 km)",
+        "Pushkar (145 km)",
+        "Delhi (260 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "City Palace Jaipur (Adjacent)",
+        "Hawa Mahal (400 m)",
+        "Amer Fort (10 km)",
+        "Nahargarh Fort"
+      ],
+      "nearby_hotels_areas": [
+        "Old Pink City",
+        "MI Road",
+        "Bani Park"
+      ],
+      "local_cuisine": [
+        "Ghevar (LMB Sweet Shop)",
+        "Pyaaz Kachori (Rawat)",
+        "Dal Baati Churma",
+        "Laal Maas"
+      ],
+      "transportation_information": "Chhoti Chaupar Metro Station is within easy walking distance.",
+      "latitude": 26.9248,
+      "longitude": 75.8246,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1338",
+      "official_tourism_url": "https://www.tourism.rajasthan.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-western-ghats",
+      "official_unesco_name": "Western Ghats",
+      "alternate_names": [
+        "Sahyadri Mountain Range",
+        "Western Ghats Serial Site"
+      ],
+      "category": "Natural",
+      "state": "Maharashtra, Goa, Karnataka, Tamil Nadu, Kerala, Gujarat",
+      "district": "Multiple mountain districts across 6 states",
+      "city_or_nearest_settlement": "Agumbe, Munnar, Mahabaleshwar, Silent Valley",
+      "inscription_year": 2012,
+      "unesco_criteria": [
+        "(ix)",
+        "(x)"
+      ],
+      "historical_background": "Ancient 1,600 km mountain chain older than the Himalayas, inscribed as a serial property comprising 39 individual protected reserves, national parks, and wildlife sanctuaries across six states.",
+      "architectural_or_ecological_significance": "One of the world's eight 'hottest hotspots' of biological diversity; mediates the Indian southwest monsoon; hosts over 5,000 flowering plant species, 139 mammal species, and 508 bird species with extraordinary endemism.",
+      "cultural_importance": "Lifeline of South India giving birth to major peninsular rivers: Godavari, Krishna, and Kaveri.",
+      "historical_events_stories": "Home to the rare Kurinji shrub (Strobilanthes kunthiana) that blooms once every 12 years in Munnar, turning entire hillsides purple-blue.",
+      "major_attractions": [
+        "Agumbe Rainforest (Cobra capital)",
+        "Silent Valley National Park",
+        "Periyar Tiger Reserve",
+        "Eravikulam National Park (Nilgiri Tahr)",
+        "Kudremukh National Park"
+      ],
+      "visitor_experience": "Lush emerald tea slopes, cascading waterfalls, tropical evergreen rainforests, and calls of the lion-tailed macaque.",
+      "best_time_to_visit": "September to March for general travel; June to August for dramatic monsoon landscapes.",
+      "recommended_visit_duration": "3 to 5 days depending on sub-cluster",
+      "nearest_railway_station": "Kochi, Mangaluru, Coimbatore, or Pune depending on cluster",
+      "nearest_airport": "Cochin International Airport (COK); Mangaluru (IXE); Coimbatore (CJB)",
+      "nearby_cities": [
+        "Kochi",
+        "Coimbatore",
+        "Mangaluru",
+        "Mysuru"
+      ],
+      "nearby_heritage_destinations": [
+        "Wayanad Petroglyphs",
+        "Madikeri Fort Coorg",
+        "Bekal Fort"
+      ],
+      "nearby_hotels_areas": [
+        "Munnar",
+        "Wayanad",
+        "Coorg",
+        "Thekkady"
+      ],
+      "local_cuisine": [
+        "Kerala Appam with Stew",
+        "Coorg Pandi Curry",
+        "Malabar Parotta",
+        "Filter Coffee"
+      ],
+      "transportation_information": "Well-connected scenic ghat mountain highways (NH-183, NH-766, NH-275).",
+      "latitude": 10.15,
+      "longitude": 77.06,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1342",
+      "official_tourism_url": "https://www.keralatourism.org",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-hill-forts-rajasthan",
+      "official_unesco_name": "Hill Forts of Rajasthan",
+      "alternate_names": [
+        "Rajasthan Hill Forts Serial Site",
+        "Rajput Forts"
+      ],
+      "category": "Cultural",
+      "state": "Rajasthan",
+      "district": "Chittorgarh, Rajsamand, Sawai Madhopur, Jhalawar, Jaipur, Jaisalmer",
+      "city_or_nearest_settlement": "Chittorgarh, Kumbhalgarh, Ranthambore, Gagron, Amer, Jaisalmer",
+      "inscription_year": 2013,
+      "unesco_criteria": [
+        "(ii)",
+        "(iii)"
+      ],
+      "historical_background": "Serial inscription of six monumental Rajput hill forts built between the 8th and 18th centuries CE representing the zenith of Rajput princely military architecture.",
+      "architectural_or_ecological_significance": "Ingenious integration of sheer natural rocky terrain, massive defensive stone bastions, urban settlements, and sophisticated water harvesting reservoirs inside fortifications.",
+      "cultural_importance": "Epicenter of Rajput chivalry, martial legends (Jauhar and Saka), and courtly arts.",
+      "historical_events_stories": "Kumbhalgarh features the second-longest continuous defensive wall on Earth (36 km), second only to the Great Wall of China.",
+      "major_attractions": [
+        "Chittorgarh Fort (Vijay Stambha)",
+        "Kumbhalgarh Fort (Great Wall)",
+        "Ranthambore Fort (Tigers and Trinetra Ganesha)",
+        "Gagron Fort (Water-protected hill fort)",
+        "Amer Fort (Sheesh Mahal)",
+        "Jaisalmer Fort (Living Golden Fort)"
+      ],
+      "visitor_experience": "Stepping into living medieval worlds with panoramic desert and mountain views, royal palaces, and ancient temple spires.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "4 to 7 days to cover multiple forts",
+      "nearest_railway_station": "Jaipur, Udaipur, Chittorgarh, or Jaisalmer depending on fort",
+      "nearest_airport": "Jaipur (JAI); Udaipur (UDR); Jaisalmer (JSA)",
+      "nearby_cities": [
+        "Jaipur",
+        "Udaipur",
+        "Jodhpur",
+        "Jaisalmer"
+      ],
+      "nearby_heritage_destinations": [
+        "City Palace Udaipur",
+        "Mehrangarh Fort Jodhpur",
+        "Ranakpur Jain Temples"
+      ],
+      "nearby_hotels_areas": [
+        "Heritage havelis in Jaipur, Udaipur, and Jaisalmer"
+      ],
+      "local_cuisine": [
+        "Dal Baati Churma",
+        "Laal Maas",
+        "Gatte ki Sabzi",
+        "Ker Sangri",
+        "Mirchi Vada"
+      ],
+      "transportation_information": "Rajasthan State Road Transport Corporation (RSRTC) and excellent state highways.",
+      "latitude": 24.8879,
+      "longitude": 74.6453,
+      "official_unesco_url": "https://whc.unesco.org/en/list/247",
+      "official_tourism_url": "https://www.tourism.rajasthan.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-great-himalayan-national-park",
+      "official_unesco_name": "Great Himalayan National Park Conservation Area",
+      "alternate_names": [
+        "GHNP",
+        "Kullu Himalayan Sanctuary"
+      ],
+      "category": "Natural",
+      "state": "Himachal Pradesh",
+      "district": "Kullu",
+      "city_or_nearest_settlement": "Banjar / Sainj",
+      "inscription_year": 2014,
+      "unesco_criteria": [
+        "(x)"
+      ],
+      "historical_background": "Established in 1984 in the Western Himalayas and declared a national park in 1999; protects 905 sq km of alpine meadows, glaciers, and river catchments of the Tirthan and Sainj valleys.",
+      "architectural_or_ecological_significance": "Located at the junction of Indomalayan and Palearctic ecozones; essential refuge for the Western Tragopan (Himachal's state bird), snow leopard, Himalayan musk deer, and blue sheep.",
+      "cultural_importance": "Exemplary model of participatory biodiversity conservation working in harmony with local devta (deity) sacred forest traditions.",
+      "historical_events_stories": "Successfully protected through a ban on commercial livestock grazing and joint community forestry cooperatives.",
+      "major_attractions": [
+        "Tirthan Valley River Trek",
+        "Rolla Waterfall",
+        "Shilt Hut Trek",
+        "Snow Leopard Habitat",
+        "Trout Fishing in Eco-zone"
+      ],
+      "visitor_experience": "Unspoiled Himalayan wilderness, crystal clear glacier rivers, pine and deodar forests with zero motorized roads inside the core zone.",
+      "best_time_to_visit": "April to June (blooming rhododendrons) and September to November (crisp autumn skies).",
+      "recommended_visit_duration": "3 to 5 days trekking",
+      "nearest_railway_station": "Chandigarh Railway Station (CDG) - 240 km",
+      "nearest_airport": "Bhuntar Airport Kullu (KUU) - 50 km; Chandigarh Airport - 245 km",
+      "nearby_cities": [
+        "Kullu (50 km)",
+        "Mandi (70 km)",
+        "Manali (90 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Chehni Kothi (Tall timber fort)",
+        "Shringi Rishi Temple",
+        "Naggar Castle"
+      ],
+      "nearby_hotels_areas": [
+        "Gushaini",
+        "Jibhi",
+        "Sai Ropa Eco-Tourism Centre"
+      ],
+      "local_cuisine": [
+        "Siddu with Ghee",
+        "Himachali Dham",
+        "Fresh Himalayan Rainbow Trout",
+        "Chha Gosht"
+      ],
+      "transportation_information": "Road access to Gushaini or Neuli, then trekking permits required from park authorities.",
+      "latitude": 31.7333,
+      "longitude": 77.55,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1406",
+      "official_tourism_url": "https://himachaltourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-rani-ki-vav",
+      "official_unesco_name": "Rani-ki-Vav (the Queen’s Stepwell) at Patan, Gujarat",
+      "alternate_names": [
+        "Queen's Stepwell",
+        "Rani ni Vav"
+      ],
+      "category": "Cultural",
+      "state": "Gujarat",
+      "district": "Patan",
+      "city_or_nearest_settlement": "Patan",
+      "inscription_year": 2014,
+      "unesco_criteria": [
+        "(i)",
+        "(iv)"
+      ],
+      "historical_background": "Constructed in 1063 CE by Queen Udayamati as a loving memorial to her deceased husband King Bhima I of the Solanki/Chaulukya dynasty on the banks of the Saraswati River.",
+      "architectural_or_ecological_significance": "Pinnacle of Maru-Gurjara stepwell architecture; designed as an inverted subterranean temple with seven levels of stairs descending to water, adorned with over 500 principal sculptures.",
+      "cultural_importance": "Featured on the modern Indian 100-rupee currency note; celebrated as water conservation elevated to divine art.",
+      "historical_events_stories": "Submerged by flood silts of the Saraswati River in the 13th century, preserving its delicate sandstone carvings pristine until excavated by the ASI in the 1980s.",
+      "major_attractions": [
+        "Sheshashayi Vishnu (Reclining on Ananta)",
+        "Dashavatara Sculptures",
+        "Apsaras and Mahishasuramardini",
+        "Seven Subterranean Stepped Pavilions"
+      ],
+      "visitor_experience": "Descending down cool subterranean pillared stone galleries into the earth surrounded by breathtaking carved deities.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Patan Railway Station (PTN) - 3 km; Mehsana Junction - 50 km",
+      "nearest_airport": "Sardar Vallabhbhai Patel International Airport Ahmedabad (AMD) - 125 km",
+      "nearby_cities": [
+        "Patan",
+        "Mehsana (50 km)",
+        "Ahmedabad (125 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Sun Temple Modhera (35 km)",
+        "Patan Patola Saree Weaving Center",
+        "Sahastralinga Talav"
+      ],
+      "nearby_hotels_areas": [
+        "Patan Town",
+        "Mehsana"
+      ],
+      "local_cuisine": [
+        "Patan Devda Sweet",
+        "Gujarati Thali",
+        "Khaman",
+        "Handvo"
+      ],
+      "transportation_information": "Direct 2.5-hour highway drive from Ahmedabad; combined easily with Modhera Sun Temple.",
+      "latitude": 23.8589,
+      "longitude": 72.1017,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1301",
+      "official_tourism_url": "https://www.gujarattourism.com",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-nalanda-mahavihara",
+      "official_unesco_name": "Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar",
+      "alternate_names": [
+        "Nalanda University Ruins",
+        "Ancient Nalanda"
+      ],
+      "category": "Cultural",
+      "state": "Bihar",
+      "district": "Nalanda",
+      "city_or_nearest_settlement": "Nalanda / Rajgir",
+      "inscription_year": 2016,
+      "unesco_criteria": [
+        "(iv)",
+        "(vi)"
+      ],
+      "historical_background": "World's most illustrious ancient residential university, flourishing from the 5th century CE (under the Guptas) to 1200 CE (under the Palas); hosted over 10,000 students and 2,000 scholars from across Asia.",
+      "architectural_or_ecological_significance": "Unrivalled architectural ensemble of red brick monasteries (viharas) and grand stupa temples arranged symmetrically with advanced drainage, lecture halls, and dormitories.",
+      "cultural_importance": "Epicenter of Buddhist philosophy, logic, mathematics, astronomy, and medicine; celebrated by Chinese pilgrims Xuanzang and Yijing.",
+      "historical_events_stories": "The famous library 'Dharmaganja' housed hundreds of thousands of sacred manuscripts across three multi-storey towers named Ratnasagara, Ratnodadhi, and Ratnaranjaka.",
+      "major_attractions": [
+        "Temple Site 3 (Sariputra Stupa)",
+        "Monastery 1 (Courtyard and meditation cells)",
+        "Nalanda Archaeological Museum",
+        "Xuanzang Memorial Hall",
+        "Nav Nalanda Mahavihara"
+      ],
+      "visitor_experience": "Walking through expansive manicured gardens exploring the red brick foundations of lecture halls where ancient scholars debated world philosophy.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "3 to 4 hours",
+      "nearest_railway_station": "Nalanda Railway Station (NLD) - 2 km; Rajgir - 12 km; Patna Junction - 90 km",
+      "nearest_airport": "Gaya Airport - 95 km; Jay Prakash Narayan Airport Patna (PAT) - 90 km",
+      "nearby_cities": [
+        "Rajgir (12 km)",
+        "Bihar Sharif (15 km)",
+        "Patna (90 km)",
+        "Gaya (95 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Rajgir Vulture Peak & Ropeway (12 km)",
+        "Ghora Katora Lake",
+        "Bodh Gaya (85 km)",
+        "Pawapuri (25 km)"
+      ],
+      "nearby_hotels_areas": [
+        "Rajgir Town (Hot spring resort hub)",
+        "Nalanda"
+      ],
+      "local_cuisine": [
+        "Silao Khaja (GI Tagged multi-layered sweet)",
+        "Litti Chokha",
+        "Sattu Paratha",
+        "Tilkut"
+      ],
+      "transportation_information": "Easily accessible via four-lane highway from Patna (2 hours) and Rajgir (15 minutes).",
+      "latitude": 25.1357,
+      "longitude": 85.4449,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1502",
+      "official_tourism_url": "https://tourism.bihar.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-khangchendzonga",
+      "official_unesco_name": "Khangchendzonga National Park",
+      "alternate_names": [
+        "Kanchenjunga National Park",
+        "KNP Sikkim"
+      ],
+      "category": "Mixed",
+      "state": "Sikkim",
+      "district": "North and West Sikkim",
+      "city_or_nearest_settlement": "Yuksom / Chungthang",
+      "inscription_year": 2016,
+      "unesco_criteria": [
+        "(iii)",
+        "(vi)",
+        "(vii)",
+        "(x)"
+      ],
+      "historical_background": "Established in 1977 and inscribed in 2016 as India's first and only 'Mixed' World Heritage site, recognizing both its superlative natural wilderness and profound cultural sacredness.",
+      "architectural_or_ecological_significance": "Dominated by Mount Khangchendzonga (8,586 m), the world's third-highest peak; encompasses 18 glaciers including Zemu Glacier, pristine alpine lakes, and rhododendron forests.",
+      "cultural_importance": "Core sacred landscape of the 'Beyul' (hidden sacred valley) in Tibetan Buddhism, venerated as the protective guardian deity of the Sikkimese people.",
+      "historical_events_stories": "The sacred covenant between the guardian mountain deity Khangchendzonga and the Lepcha and Bhutia communities is celebrated annually in the Pang Lhabsol festival.",
+      "major_attractions": [
+        "Mount Khangchendzonga Views",
+        "Goechala Pass Trek",
+        "Dzongri Viewpoint",
+        "Samiti Lake",
+        "Red Panda and Snow Leopard Habitat",
+        "Yuksom (Historical Coronation Throne)"
+      ],
+      "visitor_experience": "High-altitude trek through pristine rhododendron forests emerging into amphitheaters of towering Himalayan ice giants.",
+      "best_time_to_visit": "March to May (rhododendron blooms) and September to November (crystal-clear skies).",
+      "recommended_visit_duration": "7 to 10 days for full high-altitude trek",
+      "nearest_railway_station": "New Jalpaiguri (NJP) - 150 km to Yuksom",
+      "nearest_airport": "Pakyong Airport Gangtok (PYG) - 130 km; Bagdogra Airport (IXB) - 160 km",
+      "nearby_cities": [
+        "Yuksom",
+        "Pelling",
+        "Gangtok (140 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Dubdi Monastery (Oldest in Sikkim)",
+        "Pemayangtse Monastery",
+        "Rabdentse Ruins"
+      ],
+      "nearby_hotels_areas": [
+        "Yuksom Basecamp",
+        "Pelling"
+      ],
+      "local_cuisine": [
+        "Sikkimese Momos",
+        "Thukpa",
+        "Gundruk Soup",
+        "Chhurpi Cheese",
+        "Tongba (Millet Beer)"
+      ],
+      "transportation_information": "Trekking permits from Sikkim Forest Department and Home Department required at Yuksom.",
+      "latitude": 27.6719,
+      "longitude": 88.2044,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1513",
+      "official_tourism_url": "https://www.sikkimtourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-le-corbusier-chandigarh",
+      "official_unesco_name": "The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement",
+      "alternate_names": [
+        "Chandigarh Capitol Complex",
+        "Le Corbusier Complex"
+      ],
+      "category": "Cultural",
+      "state": "Chandigarh",
+      "district": "Chandigarh (UT)",
+      "city_or_nearest_settlement": "Chandigarh Sector 1",
+      "inscription_year": 2016,
+      "unesco_criteria": [
+        "(i)",
+        "(ii)",
+        "(vi)"
+      ],
+      "historical_background": "Part of a transnational serial inscription across seven countries; the Capitol Complex in Chandigarh was designed in the 1950s by Swiss-French master architect Le Corbusier as the governmental seat of post-independence Punjab and Haryana.",
+      "architectural_or_ecological_significance": "Triumph of modern exposed concrete (béton brut) architecture integrating climate-responsive brise-soleil sunshades, monumental geometric pylons, and the iconic Open Hand Monument.",
+      "cultural_importance": "Symbol of independent India's embrace of modern urban planning, secular democracy, and architectural boldness.",
+      "historical_events_stories": "Commissioned by Prime Minister Jawaharlal Nehru who proclaimed: 'Let this be a new town, symbolic of the freedom of India, unfettered by the traditions of the past.'",
+      "major_attractions": [
+        "Palace of Assembly (Legislative Assembly)",
+        "Secretariat Building",
+        "High Court of Punjab and Haryana",
+        "Open Hand Monument (Symbol of peace)",
+        "Tower of Shadows",
+        "Geometric Hill"
+      ],
+      "visitor_experience": "Stunning monumental modern architecture framed against the Shivalik Hills, feeling the raw poetic rhythm of concrete forms.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours (prior online tourist permit recommended)",
+      "nearest_railway_station": "Chandigarh Railway Station (CDG) - 10 km",
+      "nearest_airport": "Shaheed Bhagat Singh International Airport Chandigarh (IXC) - 18 km",
+      "nearby_cities": [
+        "Panchkula",
+        "Mohali",
+        "Ambala"
+      ],
+      "nearby_heritage_destinations": [
+        "Rock Garden of Nek Chand (Adjacent)",
+        "Sukhna Lake",
+        "Zakir Hussain Rose Garden"
+      ],
+      "nearby_hotels_areas": [
+        "Sector 17",
+        "Sector 35",
+        "Madhya Marg"
+      ],
+      "local_cuisine": [
+        "Amritsari Kulcha",
+        "Makki di Roti with Sarson da Saag",
+        "Butter Chicken",
+        "Patiala Lassi"
+      ],
+      "transportation_information": "Located in Sector 1; visitor center at the entrance provides guided architecture tours.",
+      "latitude": 30.7589,
+      "longitude": 76.8056,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1321",
+      "official_tourism_url": "https://chandigarhtourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-ahmadabad",
+      "official_unesco_name": "Historic City of Ahmadabad",
+      "alternate_names": [
+        "Old Ahmedabad",
+        "Amdavad Walled City"
+      ],
+      "category": "Cultural",
+      "state": "Gujarat",
+      "district": "Ahmedabad",
+      "city_or_nearest_settlement": "Ahmedabad",
+      "inscription_year": 2017,
+      "unesco_criteria": [
+        "(ii)",
+        "(v)"
+      ],
+      "historical_background": "Founded in 1411 CE by Sultan Ahmad Shah on the eastern bank of the Sabarmati River; India's first UNESCO World Heritage City.",
+      "architectural_or_ecological_significance": "Densely packed traditional urban settlements known as 'pols' with self-contained gates, intricately carved wooden havelis, community bird-feeders (chabutras), and exquisite Indo-Islamic sultanate mosques.",
+      "cultural_importance": "Demonstrates centuries of community harmony, textile merchant heritage, and Mahatma Gandhi's freedom struggle.",
+      "historical_events_stories": "Sidi Saiyyed Mosque's 'Tree of Life' stone jali window carved in 1573 CE is an international symbol of artistic perfection.",
+      "major_attractions": [
+        "Bhadra Fort",
+        "Jami Masjid",
+        "Sidi Saiyyed Mosque (Tree of Life Jali)",
+        "Heritage Pols and Chabutras",
+        "Hutheesing Jain Temple",
+        "Sabarmati Ashram"
+      ],
+      "visitor_experience": "Early morning guided heritage walk through narrow winding pols smelling freshly fried fafda, observing multi-storey wooden bracketed havelis.",
+      "best_time_to_visit": "October to March; International Kite Festival (Uttarayan) in January.",
+      "recommended_visit_duration": "1 to 2 days",
+      "nearest_railway_station": "Ahmedabad Junction / Kalupur Station (ADI) - In the old city",
+      "nearest_airport": "Sardar Vallabhbhai Patel International Airport (AMD) - 10 km",
+      "nearby_cities": [
+        "Gandhinagar (28 km)",
+        "Vadodara (110 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Adalaj Stepwell (18 km)",
+        "Sabarmati Ashram",
+        "Sarkhej Roza (12 km)"
+      ],
+      "nearby_hotels_areas": [
+        "Old City Heritage Havelis",
+        "Ashram Road",
+        "Ellisbridge"
+      ],
+      "local_cuisine": [
+        "Gujarati Thali (Agashiye)",
+        "Fafda Jalebi at Chandravilas",
+        "Khaman Dhokla",
+        "Maskabun Chai"
+      ],
+      "transportation_information": "Ahmedabad Metro Line 1 connects the old city; walking is best inside the pols.",
+      "latitude": 23.0225,
+      "longitude": 72.5714,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1551",
+      "official_tourism_url": "https://www.gujarattourism.com",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-mumbai-victorian-art-deco",
+      "official_unesco_name": "Victorian Gothic and Art Deco Ensembles of Mumbai",
+      "alternate_names": [
+        "Mumbai Heritage Ensembles",
+        "Oval Maidan Precinct"
+      ],
+      "category": "Cultural",
+      "state": "Maharashtra",
+      "district": "Mumbai City",
+      "city_or_nearest_settlement": "Fort / Marine Drive, Mumbai",
+      "inscription_year": 2018,
+      "unesco_criteria": [
+        "(ii)",
+        "(iv)"
+      ],
+      "historical_background": "Ensemble of 19th-century Victorian Neo-Gothic public buildings facing early 20th-century Art Deco residential and commercial buildings across the historic Oval Maidan.",
+      "architectural_or_ecological_significance": "Second-largest concentration of Art Deco buildings in the world after Miami, creating an extraordinary confrontation between 19th-century Victorian Gothic and 20th-century streamlined nautical Art Deco.",
+      "cultural_importance": "Captures Mumbai's historic transformation into the premier international financial and maritime metropolis of modern India.",
+      "historical_events_stories": "The Art Deco buildings along Marine Drive feature 'nautical modern' elements: porthole windows, ship bow balconies, and sweeping aerodynamic waves.",
+      "major_attractions": [
+        "Bombay High Court",
+        "University of Mumbai and Rajabai Clock Tower",
+        "Old Secretariat",
+        "Eros Cinema",
+        "Marine Drive Art Deco Promenade",
+        "Regal Cinema"
+      ],
+      "visitor_experience": "Strolling along the sea breeze of Marine Drive at sunset, admiring pastel-toned Art Deco facades on one side and the Arabian Sea on the other.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Churchgate Railway Station - 500 m; CSMT - 1.5 km",
+      "nearest_airport": "Chhatrapati Shivaji Maharaj International Airport (BOM) - 22 km",
+      "nearby_cities": [
+        "Navi Mumbai",
+        "Thane"
+      ],
+      "nearby_heritage_destinations": [
+        "Gateway of India (1.5 km)",
+        "Kala Ghoda Arts Precinct",
+        "Prince of Wales Museum"
+      ],
+      "nearby_hotels_areas": [
+        "Marine Drive",
+        "Colaba",
+        "Churchgate"
+      ],
+      "local_cuisine": [
+        "Coastal Seafood at Trishna",
+        "Irani Chai at Kyani & Co.",
+        "Bhelpuri at Chowpatty",
+        "Parsi Akuri"
+      ],
+      "transportation_information": "Walking along Oval Maidan and Marine Drive is best; convenient access via Churchgate station.",
+      "latitude": 18.9298,
+      "longitude": 72.8296,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1480",
+      "official_tourism_url": "https://www.maharashtratourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-jaipur-city",
+      "official_unesco_name": "Jaipur City, Rajasthan",
+      "alternate_names": [
+        "The Pink City",
+        "Walled City of Jaipur"
+      ],
+      "category": "Cultural",
+      "state": "Rajasthan",
+      "district": "Jaipur",
+      "city_or_nearest_settlement": "Jaipur",
+      "inscription_year": 2019,
+      "unesco_criteria": [
+        "(ii)",
+        "(iv)",
+        "(vi)"
+      ],
+      "historical_background": "Founded in 1727 CE by astronomer-king Maharaja Sawai Jai Singh II as India's first planned city in the modern period, designed in collaboration with Bengali architect Vidyadhar Bhattacharya.",
+      "architectural_or_ecological_significance": "Gridiron street plan derived from ancient Vedic Vastu Shastra (nine-square mandala); distinctive pink-terracotta facades mandated in 1876 CE to welcome the Prince of Wales.",
+      "cultural_importance": "Living world center of traditional artisan crafts: gemstone cutting, block printing, Kundan-Meena jewellery, and blue pottery.",
+      "historical_events_stories": "The iconic Hawa Mahal (Palace of Winds) with its 953 jharokha honeycomb windows allowed royal women to observe street processions without being seen from outside.",
+      "major_attractions": [
+        "Hawa Mahal",
+        "City Palace Jaipur",
+        "Jantar Mantar",
+        "Albert Hall Museum",
+        "Bapu Bazaar and Johari Bazaar",
+        "Nahargarh Fort"
+      ],
+      "visitor_experience": "Vibrant pink bazaar streets filled with camel carts, jewelers, colorful block-printed textiles, and historical gateways.",
+      "best_time_to_visit": "October to March; Jaipur Literature Festival in January.",
+      "recommended_visit_duration": "2 to 3 days",
+      "nearest_railway_station": "Jaipur Junction (JP) - 4 km",
+      "nearest_airport": "Jaipur International Airport (JAI) - 12 km",
+      "nearby_cities": [
+        "Ajmer (130 km)",
+        "Delhi (260 km)",
+        "Agra (240 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Amer Fort (10 km)",
+        "Jaigarh Fort",
+        "Galtaji Monkey Temple",
+        "Sanganer"
+      ],
+      "nearby_hotels_areas": [
+        "Heritage Havelis in Old City",
+        "MI Road",
+        "Civil Lines"
+      ],
+      "local_cuisine": [
+        "Dal Baati Churma",
+        "Pyaaz Kachori",
+        "Ghevar",
+        "Ker Sangri",
+        "Laal Maas"
+      ],
+      "transportation_information": "Jaipur Metro runs directly to Badi Chaupar and Chhoti Chaupar inside the walled city.",
+      "latitude": 26.9124,
+      "longitude": 75.7873,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1605",
+      "official_tourism_url": "https://www.tourism.rajasthan.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-ramappa-temple",
+      "official_unesco_name": "Kakatiya Rudreshwara (Ramappa) Temple, Telangana",
+      "alternate_names": [
+        "Ramappa Temple",
+        "Rudreshwara Temple Palampet"
+      ],
+      "category": "Cultural",
+      "state": "Telangana",
+      "district": "Mulugu",
+      "city_or_nearest_settlement": "Palampet / Mulugu",
+      "inscription_year": 2021,
+      "unesco_criteria": [
+        "(i)",
+        "(iii)"
+      ],
+      "historical_background": "Constructed in 1213 CE during the reign of Kakatiya ruler Ganapati Deva under his general Recharla Rudra; uniquely named after its chief master sculptor, Ramappa.",
+      "architectural_or_ecological_significance": "Stands on a 6-foot high star-shaped platform with sandbox foundations to absorb seismic shocks; pyramidical sikhara constructed with porous 'floating bricks' so light they float on water; exquisite black basalt bracket figures (madhanikas).",
+      "cultural_importance": "The crowning architectural achievement of the medieval Kakatiya Dynasty.",
+      "historical_events_stories": "Italian explorer Marco Polo visited the Kakatiya kingdom and described the temple as the 'brightest star in the galaxy of medieval temples'.",
+      "major_attractions": [
+        "Main Rudreshwara Sanctum",
+        "Black Basalt Dancing Bracket Figures (Madanikas)",
+        "Intricately Carved Nandi Mandapa",
+        "Floating Brick Shikhara",
+        "Ramappa Lake (Kakatiya water reservoir)"
+      ],
+      "visitor_experience": "Marveling at the lustrous polish of black basalt sculptures carved with breathtaking movement, gazing across the tranquil waters of Ramappa Lake.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 to 3 hours",
+      "nearest_railway_station": "Warangal Railway Station (WL) - 70 km; Kazipet Junction - 75 km",
+      "nearest_airport": "Rajiv Gandhi International Airport Hyderabad (HYD) - 215 km",
+      "nearby_cities": [
+        "Warangal (70 km)",
+        "Hyderabad (210 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Warangal Fort (70 km)",
+        "Thousand Pillar Temple Hanamkonda (65 km)",
+        "Laknavaram Lake"
+      ],
+      "nearby_hotels_areas": [
+        "Haritha Lake View Resort Ramappa",
+        "Warangal City"
+      ],
+      "local_cuisine": [
+        "Telangana Thali",
+        "Sarva Pindi",
+        "Gongura Mutton",
+        "Sakinalu",
+        "Hyderabadi Biryani"
+      ],
+      "transportation_information": "Scenic drive from Warangal via NH-163 (approx. 1.5 hours).",
+      "latitude": 18.2636,
+      "longitude": 79.9408,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1570",
+      "official_tourism_url": "https://tourism.telangana.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-dholavira",
+      "official_unesco_name": "Dholavira: a Harappan City",
+      "alternate_names": [
+        "Kotada Timba",
+        "Dholavira Indus Valley Site"
+      ],
+      "category": "Cultural",
+      "state": "Gujarat",
+      "district": "Kutch",
+      "city_or_nearest_settlement": "Khadir Bet / Bhachau",
+      "inscription_year": 2021,
+      "unesco_criteria": [
+        "(iii)",
+        "(iv)"
+      ],
+      "historical_background": "One of the most remarkable and best-preserved urban settlements of the Harappan (Indus Valley) Civilization, thriving from 3000 to 1500 BCE on the island of Khadir Bet in the Great Rann of Kutch.",
+      "architectural_or_ecological_significance": "Tripartite city plan consisting of a fortified Citadel, Middle Town, and Lower Town built of dressed stone (unlike the mud-brick of Mohenjo-daro); world's most sophisticated ancient water management and stormwater reservoir system.",
+      "cultural_importance": "Foundational testament to the origins of South Asian urban planning, hydrology, and ancient trade networks.",
+      "historical_events_stories": "The northern gateway revealed the world-famous 'Dholavira Signboard', one of the longest known inscriptions of the Indus script featuring 10 large glyphs made of crystalline gypsum.",
+      "major_attractions": [
+        "Massive Rock-Cut Reservoirs",
+        "Citadel Fortifications and Ceremonial Grounds",
+        "Ancient Indus Signboard Gateway",
+        "Dholavira Archaeological Museum",
+        "Scenic Great Rann of Kutch Road"
+      ],
+      "visitor_experience": "Walking among the 4,500-year-old stone streets, reservoirs, and drainage canals surrounded by the stark white salt plains of the Rann.",
+      "best_time_to_visit": "November to February",
+      "recommended_visit_duration": "3 to 4 hours",
+      "nearest_railway_station": "Bhachau Railway Station - 140 km; Bhuj - 215 km",
+      "nearest_airport": "Bhuj Airport (BHJ) - 215 km; Ahmedabad Airport - 340 km",
+      "nearby_cities": [
+        "Bhuj (215 km)",
+        "Gandhidham (180 km)",
+        "Rapar (95 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "White Desert of Dhordo",
+        "Kala Dungar (Black Hill)",
+        "Bhuj Aina Mahal"
+      ],
+      "nearby_hotels_areas": [
+        "Dholavira Village Homestays",
+        "Toran Resort Dholavira",
+        "Rapar"
+      ],
+      "local_cuisine": [
+        "Kutchi Thali",
+        "Bajra no Rotlo with Ringna no Oro",
+        "Kutchi Dabeli",
+        "Fresh Chhas (Buttermilk)"
+      ],
+      "transportation_information": "Approached via the newly built scenic 'Road to Heaven' highway slicing directly across the white salt flats.",
+      "latitude": 23.8864,
+      "longitude": 70.2131,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1645",
+      "official_tourism_url": "https://www.gujarattourism.com",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-santiniketan",
+      "official_unesco_name": "Santiniketan",
+      "alternate_names": [
+        "Visva-Bharati",
+        "Abode of Peace"
+      ],
+      "category": "Cultural",
+      "state": "West Bengal",
+      "district": "Birbhum",
+      "city_or_nearest_settlement": "Bolpur / Santiniketan",
+      "inscription_year": 2023,
+      "unesco_criteria": [
+        "(iv)",
+        "(vi)"
+      ],
+      "historical_background": "Founded in 1863 by Maharshi Debendranath Tagore as an ashram, and transformed in 1901 by Nobel laureate Rabindranath Tagore into an experimental open-air school and university (Visva-Bharati) exploring pan-Asian universal humanism.",
+      "architectural_or_ecological_significance": "Open-air classrooms under spreading banyan trees, modernist mud and relief-sculpted architectural houses (Kala Bhavana, Uttarayan complex) designed by Tagore, Nandalal Bose, and Ramkinkar Baij.",
+      "cultural_importance": "Birthplace of the Bengal School of Art, modern Indian ecological education, and global cultural dialogue.",
+      "historical_events_stories": "Tagore utilized his Nobel Prize in Literature funds to expand Visva-Bharati into an international learning center where 'the world makes its home in a single nest' (Yatra Visvam Bhavatyekanidam).",
+      "major_attractions": [
+        "Uttarayan Complex (Udayan, Konarka, Shyamali, Punashcha)",
+        "Rabindra Bhavana Museum",
+        "Kala Bhavana Murals",
+        "Chhatimtala Meditation Spot",
+        "Upasana Griha (Glass Prayer Hall)",
+        "Amar Kutir Artisan Center"
+      ],
+      "visitor_experience": "Peaceful strolls along red soil pathways shaded by sal trees, listening to students practicing Rabindra Sangeet and Baul folk songs.",
+      "best_time_to_visit": "October to March; Poush Mela in December and Basanta Utsav (Holi) in spring.",
+      "recommended_visit_duration": "1 to 2 days",
+      "nearest_railway_station": "Bolpur Shantiniketan Railway Station (BHP) - 2.5 km",
+      "nearest_airport": "Kazi Nazrul Islam Airport Durgapur (RGH) - 60 km; Netaji Subhash Chandra Bose Airport Kolkata (CCU) - 160 km",
+      "nearby_cities": [
+        "Bolpur",
+        "Suri",
+        "Kolkata (160 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Kankalitala Shaktipeeth (8 km)",
+        "Terracotta Temples of Ilambazar",
+        "Khoai Shonibarer Haat (Saturday Market)"
+      ],
+      "nearby_hotels_areas": [
+        "Shantiniketan Town",
+        "Prantik",
+        "Bolpur"
+      ],
+      "local_cuisine": [
+        "Bengali Thali",
+        "Luchi Cholar Dal",
+        "Posto Bora",
+        "Mishti Doi",
+        "Rosogolla"
+      ],
+      "transportation_information": "Frequent express trains from Howrah and Sealdah in Kolkata (2 to 2.5 hours); cycle-rickshaws and toto e-rickshaws in town.",
+      "latitude": 23.68,
+      "longitude": 87.69,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1675",
+      "official_tourism_url": "https://wbtourism.gov.in",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    },
+    {
+      "id": "unesco-sacred-ensembles-hoysalas",
+      "official_unesco_name": "Sacred Ensembles of the Hoysalas",
+      "alternate_names": [
+        "Hoysala Temples of Belur, Halebidu and Somanathapura"
+      ],
+      "category": "Cultural",
+      "state": "Karnataka",
+      "district": "Hassan and Mysuru",
+      "city_or_nearest_settlement": "Belur, Halebidu, and Somanathapura",
+      "inscription_year": 2023,
+      "unesco_criteria": [
+        "(i)",
+        "(ii)",
+        "(iv)"
+      ],
+      "historical_background": "Serial inscription of three supreme 12th and 13th-century temples built by the Hoysala Empire: the Chennakeshava Temple at Belur (1117 CE), the Hoysaleswara Temple at Halebidu (1121 CE), and the Keshava Temple at Somanathapura (1268 CE).",
+      "architectural_or_ecological_significance": "Carved from soft chloritic schist (soapstone) allowing extraordinary microscopic precision, featuring star-shaped (stellate) plans, stepped friezes of thousands of elephants and horses, and signed sculptor masterworks.",
+      "cultural_importance": "Peak realization of medieval Karnata Dravida temple art and soapstone sculptural virtuosity.",
+      "historical_events_stories": "Sculptors like Mallitamma, Dasoja, and Chavana proudly signed their individual stone panels, an exceptional demonstration of recognized artist identity in ancient India.",
+      "major_attractions": [
+        "Chennakeshava Temple Belur (Madanika bracket figures)",
+        "Hoysaleswara Temple Halebidu (Endless mythological friezes)",
+        "Keshava Temple Somanathapura (Pristine triple-shrined trikuta)",
+        "Monolithic Nandi Pavilions"
+      ],
+      "visitor_experience": "Gazing in astonishment at intricate soapstone friezes where lace, jewelry, and fingernails are carved in stone with jewel-like delicacy.",
+      "best_time_to_visit": "October to March",
+      "recommended_visit_duration": "2 days to cover Belur, Halebidu, and Somanathapura",
+      "nearest_railway_station": "Hassan Railway Station (HAS) - 38 km for Belur/Halebidu; Mysuru Junction (MYS) - 35 km for Somanathapura",
+      "nearest_airport": "Mangaluru Airport (IXE) - 150 km; Kempegowda International Airport Bengaluru (BLR) - 220 km",
+      "nearby_cities": [
+        "Hassan (38 km)",
+        "Mysuru (35 km from Somanathapura)",
+        "Bengaluru (215 km)"
+      ],
+      "nearby_heritage_destinations": [
+        "Shravanabelagola (Monolithic Gommateshwara statue)",
+        "Mysore Palace",
+        "Halebidu Archaeological Museum"
+      ],
+      "nearby_hotels_areas": [
+        "Hassan City",
+        "Belur KSTDC Hotel Mayura Velapuri",
+        "Mysuru"
+      ],
+      "local_cuisine": [
+        "Mysore Masala Dosa",
+        "Akki Rotti",
+        "Bisi Bele Bath",
+        "Mysore Pak",
+        "Filter Coffee"
+      ],
+      "transportation_information": "Excellent four-lane highway from Bengaluru to Hassan (3.5 hours); convenient local taxis for the circuit.",
+      "latitude": 13.1623,
+      "longitude": 75.8596,
+      "official_unesco_url": "https://whc.unesco.org/en/list/1670",
+      "official_tourism_url": "https://karnatakatourism.org",
+      "data_verification_status": "VERIFIED_OFFICIAL"
+    }
+  ]
+}

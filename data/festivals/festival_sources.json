@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "database": "VIRASAT India Festivals Master Knowledge Database",
+    "verification_protocol": "Multi-tier Official Institutional Verification",
+    "last_audited": "2026-09-28",
+    "confidence_threshold": "VERIFIED_OFFICIAL"
+  },
+  "institutional_sources": [
+    {
+      "institution": "Ministry of Tourism, Government of India (Incredible India)",
+      "domain": "National Cultural Tourism Portal & National Festival Calendar",
+      "authority_level": "Central Government"
+    },
+    {
+      "institution": "Archaeological Survey of India (ASI)",
+      "domain": "Centrally Protected Monumental Sites & Sacred Heritage Rituals",
+      "authority_level": "Central Government"
+    },
+    {
+      "institution": "Sangeet Natak Akademi & Zonal Cultural Centres (NZCC, EZCC, SZCC, WZCC, NEZCC)",
+      "domain": "Intangible Cultural Heritage, Performing Arts, and Folk Festivals",
+      "authority_level": "National Academy of Performing Arts"
+    },
+    {
+      "institution": "Official State Tourism Boards (36 States & UTs)",
+      "domain": "Annual State Tourism Calendars, Gazetted Holidays, and Regional Carnivals",
+      "authority_level": "State Governments"
+    },
+    {
+      "institution": "Statutory Temple and Shrine Devaswoms & Waqf Boards",
+      "domain": "Tirumala Tirupati Devasthanams, Shree Jagannatha Temple Administration, Travancore Devaswom Board, Kamakhya Devalaya, SGPC, Golden Temple Council",
+      "authority_level": "Statutory Religious Administrations"
+    },
+    {
+      "institution": "Rashtriya Panchang & Positional Astronomy Centre, IMD",
+      "domain": "National Lunisolar and Astronomical Calculations for Hindu, Jain, and Buddhist Tithis",
+      "authority_level": "Government of India Astronomical Authority"
+    }
+  ]
+}

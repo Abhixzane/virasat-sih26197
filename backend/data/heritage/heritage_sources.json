@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source_authority": "UNESCO World Heritage Centre, Paris & Archaeological Survey of India (ASI)",
+    "convention": "Convention Concerning the Protection of the World Cultural and Natural Heritage (1972)",
+    "state_party": "Republic of India",
+    "last_verified": "2026-09-28"
+  },
+  "official_records": [
+    {
+      "source": "UNESCO World Heritage Convention Official List (India)",
+      "url": "https://whc.unesco.org/en/statesparties/in",
+      "authority": "UNESCO Intergovernmental Committee"
+    },
+    {
+      "source": "Archaeological Survey of India (ASI) - World Heritage Section",
+      "url": "https://asi.nic.in/world-heritage-sites-in-india/",
+      "authority": "Ministry of Culture, Government of India"
+    },
+    {
+      "source": "Wildlife Institute of India (WII) - Natural World Heritage",
+      "url": "https://wii.gov.in",
+      "authority": "Ministry of Environment, Forest and Climate Change"
+    }
+  ]
+}

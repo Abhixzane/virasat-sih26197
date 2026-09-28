@@ -1,0 +1,2643 @@
+{
+  "total_categories": 12,
+  "last_updated": "2026-09-28",
+  "categories": [
+    {
+      "category_id": "Spiritual & Temple",
+      "display_name": "Spiritual & Temple",
+      "description": "Cultural observance category",
+      "total_festivals": 100,
+      "festivals": [
+        {
+          "id": "fest-herath-kashmir",
+          "name": "Herath (Maha Shivratri of Kashmir)",
+          "state": "Jammu and Kashmir",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-urs-shah-e-hamdan",
+          "name": "Urs Shah-e-Hamdan Srinagar",
+          "state": "Jammu and Kashmir",
+          "usual_month": "May - June",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "fest-kheer-bhawani-mela",
+          "name": "Kheer Bhawani Mela Tulmulla",
+          "state": "Jammu and Kashmir",
+          "usual_month": "May - June",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-hemis-festival",
+          "name": "Hemis Festival Ladakh",
+          "state": "Ladakh",
+          "usual_month": "June - July",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-dosmochey-ladakh",
+          "name": "Dosmochey Festival Leh & Likir",
+          "state": "Ladakh",
+          "usual_month": "February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-taktok-festival",
+          "name": "Tak Tok Festival",
+          "state": "Ladakh",
+          "usual_month": "July - August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-korzok-gustor",
+          "name": "Korzok Gustor Festival Tso Moriri",
+          "state": "Ladakh",
+          "usual_month": "July - August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-spituk-gustor",
+          "name": "Spituk Gustor Festival",
+          "state": "Ladakh",
+          "usual_month": "January",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-mandi-shivratri",
+          "name": "International Mandi Shivratri Fair",
+          "state": "Himachal Pradesh",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-renuka-ji-fair",
+          "name": "Renuka Ji Fair Sirmaur",
+          "state": "Himachal Pradesh",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-doongri-fair-manali",
+          "name": "Doongri Fair Manali",
+          "state": "Himachal Pradesh",
+          "usual_month": "May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-gurpurab-guru-nanak",
+          "name": "Prakash Purab Guru Nanak Dev Ji",
+          "state": "Punjab",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-baba-farid-aagman",
+          "name": "Baba Farid Aagman Purb Faridkot",
+          "state": "Punjab",
+          "usual_month": "September",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-rauza-sharif-urs",
+          "name": "Rauza Sharif Urs Sirhind",
+          "state": "Punjab",
+          "usual_month": "August - September",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "fest-international-gita-mahotsav",
+          "name": "International Gita Mahotsav Kurukshetra",
+          "state": "Haryana",
+          "usual_month": "November - December",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kapal-mochan-mela",
+          "name": "Kapal Mochan Mela Yamunanagar",
+          "state": "Haryana",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-haridwar-kumbh-mela",
+          "name": "Haridwar Kumbh Mela & Ardh Kumbh",
+          "state": "Uttarakhand",
+          "usual_month": "January - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-ganga-dussehra-haridwar",
+          "name": "Ganga Dussehra Haridwar & Rishikesh",
+          "state": "Uttarakhand",
+          "usual_month": "May - June",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kanwar-yatra-haridwar",
+          "name": "Kanwar Yatra Haridwar",
+          "state": "Uttarakhand",
+          "usual_month": "July - August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-jageshwar-monsoon-festival",
+          "name": "Jageshwar Monsoon Festival",
+          "state": "Uttarakhand",
+          "usual_month": "July - August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-dev-deepawali-varanasi",
+          "name": "Dev Deepawali Varanasi",
+          "state": "Uttar Pradesh",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-lathmar-holi-barsana",
+          "name": "Lathmar Holi Barsana",
+          "state": "Uttar Pradesh",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-braj-ki-holi",
+          "name": "Braj Ki Holi Mathura & Vrindavan",
+          "state": "Uttar Pradesh",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-ram-navami-ayodhya",
+          "name": "Ram Navami Ayodhya",
+          "state": "Uttar Pradesh",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-deepotsav-ayodhya",
+          "name": "Deepotsav Ayodhya",
+          "state": "Uttar Pradesh",
+          "usual_month": "October - November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-magh-mela-prayagraj",
+          "name": "Magh Mela / Kumbh Mela Prayagraj",
+          "state": "Uttar Pradesh",
+          "usual_month": "January - February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-krishna-janmashtami-mathura",
+          "name": "Krishna Janmashtami Mathura",
+          "state": "Uttar Pradesh",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-sarnath-buddha-mahotsav",
+          "name": "Sarnath Buddha Mahotsav",
+          "state": "Uttar Pradesh",
+          "usual_month": "May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kabir-utsav-maghar",
+          "name": "Kabir Utsav Maghar",
+          "state": "Uttar Pradesh",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-shakumbhari-mela",
+          "name": "Shakumbhari Devi Mela Saharanpur",
+          "state": "Uttar Pradesh",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-chhath-puja-up",
+          "name": "Chhath Puja at Gomti and Ganga Ghats",
+          "state": "Uttar Pradesh",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kolayat-fair-bikaner",
+          "name": "Kolayat Fair (Kapil Muni Fair) Bikaner",
+          "state": "Rajasthan",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-karni-mata-fair-deshnoke",
+          "name": "Karni Mata Fair Deshnoke",
+          "state": "Rajasthan",
+          "usual_month": "April & October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-bhavnath-mahadev-fair",
+          "name": "Bhavnath Mahadev Fair Girnar Junagadh",
+          "state": "Gujarat",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-madhavpur-fair",
+          "name": "Madhavpur Ghed Fair Porbandar",
+          "state": "Gujarat",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-shamlaji-fair",
+          "name": "Shamlaji Fair Aravalli",
+          "state": "Gujarat",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-rath-yatra-ahmedabad",
+          "name": "Rath Yatra Ahmedabad",
+          "state": "Gujarat",
+          "usual_month": "June - July",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-somnath-mahotsav",
+          "name": "Somnath Mahotsav Prabhas Patan",
+          "state": "Gujarat",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-feast-st-francis-xavier",
+          "name": "Feast of St. Francis Xavier Old Goa",
+          "state": "Goa",
+          "usual_month": "November - December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-gangaji-fair-daman",
+          "name": "Gangaji Fair Daman",
+          "state": "Dadra and Nagar Haveli and Daman and Diu",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-ganesh-chaturthi-maharashtra",
+          "name": "Ganesh Chaturthi Mumbai & Pune",
+          "state": "Maharashtra",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-pandharpur-wari",
+          "name": "Pandharpur Wari Ashadhi Ekadashi",
+          "state": "Maharashtra",
+          "usual_month": "June - July",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-jyotiba-fair-kolhapur",
+          "name": "Jyotiba Fair Wadi Ratnagiri Kolhapur",
+          "state": "Maharashtra",
+          "usual_month": "April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-mount-mary-bandra-fair",
+          "name": "Mount Mary Bandra Fair Mumbai",
+          "state": "Maharashtra",
+          "usual_month": "September",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-ujjain-simhastha-kumbh",
+          "name": "Ujjain Simhastha Kumbh Mela",
+          "state": "Madhya Pradesh",
+          "usual_month": "April - May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-chethiyagiri-vihara-sanchi",
+          "name": "Chethiyagiri Vihara Festival Sanchi",
+          "state": "Madhya Pradesh",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-bhojpur-utsav",
+          "name": "Bhojpur Utsav",
+          "state": "Madhya Pradesh",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-rajim-kumbh-mela",
+          "name": "Rajim Kumbh Mela",
+          "state": "Chhattisgarh",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-goncha-festival",
+          "name": "Goncha Festival Jagdalpur",
+          "state": "Chhattisgarh",
+          "usual_month": "June - July",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-chhath-puja-bihar",
+          "name": "Chhath Puja Patna & Gaya",
+          "state": "Bihar",
+          "usual_month": "October - November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-pitrapaksha-mela-gaya",
+          "name": "Pitrapaksha Mela Gaya",
+          "state": "Bihar",
+          "usual_month": "September - October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-buddha-jayanti-bodh-gaya",
+          "name": "Buddha Jayanti Bodh Gaya",
+          "state": "Bihar",
+          "usual_month": "May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-mithila-vivah-panchami",
+          "name": "Mithila Vivah Panchami Janakpur & Madhubani",
+          "state": "Bihar",
+          "usual_month": "November - December",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-shravani-mela-sultanganj",
+          "name": "Shravani Mela Sultanganj to Deoghar",
+          "state": "Bihar",
+          "usual_month": "July - August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-baidyanath-shravani-mela",
+          "name": "Baidyanath Shravani Mela Deoghar",
+          "state": "Jharkhand",
+          "usual_month": "July - August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-rath-yatra-puri",
+          "name": "Rath Yatra Puri",
+          "state": "Odisha",
+          "usual_month": "June - July",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-durga-puja-cuttack",
+          "name": "Durga Puja Cuttack",
+          "state": "Odisha",
+          "usual_month": "September - October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-chandan-yatra-puri",
+          "name": "Chandan Yatra Puri",
+          "state": "Odisha",
+          "usual_month": "April - May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-taratarini-mela",
+          "name": "Taratarini Mela Ganjam",
+          "state": "Odisha",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-shital-sasthi-sambalpur",
+          "name": "Shital Sasthi Sambalpur",
+          "state": "Odisha",
+          "usual_month": "May - June",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-joranda-mela-dhenkanal",
+          "name": "Joranda Mela Dhenkanal",
+          "state": "Odisha",
+          "usual_month": "February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-durga-puja-kolkata",
+          "name": "Kolkata Durga Puja",
+          "state": "West Bengal",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-gangasagar-mela",
+          "name": "Gangasagar Mela Sagar Island",
+          "state": "West Bengal",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-jagaddhatri-puja-chandannagar",
+          "name": "Jagaddhatri Puja Chandannagar",
+          "state": "West Bengal",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kali-puja-kolkata",
+          "name": "Kali Puja & Diwali Kolkata",
+          "state": "West Bengal",
+          "usual_month": "October - November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-saraswati-puja-kolkata",
+          "name": "Saraswati Puja Kolkata",
+          "state": "West Bengal",
+          "usual_month": "January - February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-jalpesh-mela",
+          "name": "Jalpesh Mela Jalpaiguri",
+          "state": "West Bengal",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-raas-utsav-nabadwip",
+          "name": "Raas Utsav Nabadwip",
+          "state": "West Bengal",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-karaga-shaktyotsava",
+          "name": "Karaga Shaktyotsava Bengaluru",
+          "state": "Karnataka",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-vairamudi-brahmotsavam",
+          "name": "Vairamudi Brahmotsavam Melukote",
+          "state": "Karnataka",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-mahamastakabhisheka-shravanabelagola",
+          "name": "Mahamastakabhisheka Shravanabelagola",
+          "state": "Karnataka",
+          "usual_month": "February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-tula-sankramana-coorg",
+          "name": "Tula Sankramana Coorg",
+          "state": "Karnataka",
+          "usual_month": "October",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-banashankari-jatre",
+          "name": "Banashankari Jatre Badami",
+          "state": "Karnataka",
+          "usual_month": "January - February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-godachi-jatre",
+          "name": "Godachi Jatre Belagavi",
+          "state": "Karnataka",
+          "usual_month": "December",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-thrissur-pooram",
+          "name": "Thrissur Pooram",
+          "state": "Kerala",
+          "usual_month": "April - May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-attukal-pongala",
+          "name": "Attukal Pongala Thiruvananthapuram",
+          "state": "Kerala",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-makaravilakku-sabarimala",
+          "name": "Makaravilakku Sabarimala",
+          "state": "Kerala",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-aranmula-boat-race",
+          "name": "Aranmula Uthrattathi Vallamkali",
+          "state": "Kerala",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-parumala-perunnal",
+          "name": "Parumala Perunnal",
+          "state": "Kerala",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-maramon-convention",
+          "name": "Maramon Convention",
+          "state": "Kerala",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-chithirai-festival-madurai",
+          "name": "Chithirai Festival Madurai",
+          "state": "Tamil Nadu",
+          "usual_month": "April - May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-karthigai-deepam-tiruvannamalai",
+          "name": "Karthigai Deepam Tiruvannamalai",
+          "state": "Tamil Nadu",
+          "usual_month": "November - December",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-thaipusam-palani",
+          "name": "Thaipusam Palani",
+          "state": "Tamil Nadu",
+          "usual_month": "January - February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kanthuri-festival-nagore",
+          "name": "Kanthuri Festival Nagore Dargah",
+          "state": "Tamil Nadu",
+          "usual_month": "November - December",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "fest-velankanni-feast",
+          "name": "Velankanni Feast",
+          "state": "Tamil Nadu",
+          "usual_month": "August - September",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-arubathumoovar-festival",
+          "name": "Arubathumoovar Festival Mylapore Chennai",
+          "state": "Tamil Nadu",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kumbakonam-mahamaham",
+          "name": "Kumbakonam Mahamaham",
+          "state": "Tamil Nadu",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-panguni-uthiram",
+          "name": "Panguni Uthiram Statewide",
+          "state": "Tamil Nadu",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-tirumala-brahmotsavam",
+          "name": "Tirumala Brahmotsavam Tirupati",
+          "state": "Andhra Pradesh",
+          "usual_month": "September - October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kotappakonda-fair-guntur",
+          "name": "Kotappakonda Fair Guntur",
+          "state": "Andhra Pradesh",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-rottela-panduga-nellore",
+          "name": "Rottela Panduga Nellore",
+          "state": "Andhra Pradesh",
+          "usual_month": "July",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "fest-bhavani-deeksha-vijayawada",
+          "name": "Bhavani Deeksha Vijayawada",
+          "state": "Andhra Pradesh",
+          "usual_month": "December - January",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-bonalu-hyderabad",
+          "name": "Bonalu Hyderabad & Secunderabad",
+          "state": "Telangana",
+          "usual_month": "July - August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-komuravelli-mallanna-jatara",
+          "name": "Komuravelli Mallanna Jatara",
+          "state": "Telangana",
+          "usual_month": "January - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-edupayala-jathara",
+          "name": "Edupayala Vana Durga Bhavani Jathara",
+          "state": "Telangana",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-sri-rama-navami-bhadrachalam",
+          "name": "Sri Rama Navami Bhadrachalam",
+          "state": "Telangana",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-villianur-car-festival",
+          "name": "Villianur Temple Car Festival",
+          "state": "Puducherry",
+          "usual_month": "May - June",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-mangani-festival-karaikal",
+          "name": "Mangani Festival Karaikal",
+          "state": "Puducherry",
+          "usual_month": "June - July",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-eid-ul-fitr-lakshadweep",
+          "name": "Eid-ul-Fitr Kavaratti",
+          "state": "Lakshadweep",
+          "usual_month": "March - April",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "fest-milad-un-nabi-lakshadweep",
+          "name": "Milad-un-Nabi Lakshadweep",
+          "state": "Lakshadweep",
+          "usual_month": "August - September",
+          "date_type": "LUNAR"
+        }
+      ]
+    },
+    {
+      "category_id": "Art & Cultural Festival",
+      "display_name": "Art & Cultural Festival",
+      "description": "Cultural observance category",
+      "total_festivals": 65,
+      "festivals": [
+        {
+          "id": "fest-shikara-festival-kashmir",
+          "name": "Shikara Festival Dal Lake",
+          "state": "Jammu and Kashmir",
+          "usual_month": "July - August",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-ladakh-festival",
+          "name": "Ladakh Festival Leh",
+          "state": "Ladakh",
+          "usual_month": "September",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-sindhu-darshan",
+          "name": "Sindhu Darshan Festival Shey",
+          "state": "Ladakh",
+          "usual_month": "June",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-himalayan-festival-mcleodganj",
+          "name": "International Himalayan Festival McLeod Ganj",
+          "state": "Himachal Pradesh",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-harballabh-sangeet-sammelan",
+          "name": "Harballabh Sangeet Sammelan Jalandhar",
+          "state": "Punjab",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-kila-raipur-sports",
+          "name": "Kila Raipur Rural Olympics",
+          "state": "Punjab",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-chandigarh-carnival",
+          "name": "Chandigarh Carnival",
+          "state": "Chandigarh",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-plaza-carnival-sector17",
+          "name": "Plaza Carnival Sector 17",
+          "state": "Chandigarh",
+          "usual_month": "October - March",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-qutub-festival",
+          "name": "Qutub Festival Mehrauli",
+          "state": "Delhi",
+          "usual_month": "November - December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-delhi-arts-festival",
+          "name": "Delhi International Arts Festival",
+          "state": "Delhi",
+          "usual_month": "December - January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-jahan-e-khusrau",
+          "name": "Jahan-e-Khusrau World Sufi Festival",
+          "state": "Delhi",
+          "usual_month": "March",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-urdu-heritage-festival",
+          "name": "Urdu Heritage Festival Red Fort",
+          "state": "Delhi",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-international-yoga-festival",
+          "name": "International Yoga Festival Rishikesh",
+          "state": "Uttarakhand",
+          "usual_month": "March",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-ganga-mahotsav-varanasi",
+          "name": "Ganga Mahotsav Varanasi",
+          "state": "Uttar Pradesh",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-taj-mahotsav-agra",
+          "name": "Taj Mahotsav Agra",
+          "state": "Uttar Pradesh",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-desert-festival-jaisalmer",
+          "name": "Desert Festival Jaisalmer",
+          "state": "Rajasthan",
+          "usual_month": "February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kumbhalgarh-festival",
+          "name": "Kumbhalgarh Classical Festival",
+          "state": "Rajasthan",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-brij-holi-bharatpur",
+          "name": "Brij Holi Festival Bharatpur",
+          "state": "Rajasthan",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-ranakpur-festival",
+          "name": "Ranakpur Temple Festival",
+          "state": "Rajasthan",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-rann-utsav-kutch",
+          "name": "Rann Utsav Kutch",
+          "state": "Gujarat",
+          "usual_month": "November - February",
+          "date_type": "SEASONAL"
+        },
+        {
+          "id": "fest-navratri-garba-gujarat",
+          "name": "Navratri Garba Mahotsav",
+          "state": "Gujarat",
+          "usual_month": "September - October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-modhera-dance-festival",
+          "name": "Modhera Dance Festival Sun Temple",
+          "state": "Gujarat",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-goa-carnival",
+          "name": "Goa Carnival",
+          "state": "Goa",
+          "usual_month": "February",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "fest-shigmo-festival",
+          "name": "Shigmo Festival Statewide",
+          "state": "Goa",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-grape-escapade",
+          "name": "Grape Escapade Wine Festival Panaji",
+          "state": "Goa",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-daman-beach-carnival",
+          "name": "Daman Beach Carnival & Seafood Festival",
+          "state": "Dadra and Nagar Haveli and Daman and Diu",
+          "usual_month": "December - January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-elephanta-festival",
+          "name": "Elephanta Cultural Festival Elephanta Island",
+          "state": "Maharashtra",
+          "usual_month": "February - March",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-ellora-ajanta-festival",
+          "name": "Ellora-Ajanta International Festival",
+          "state": "Maharashtra",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-banganga-music-festival",
+          "name": "Banganga Classical Music Festival",
+          "state": "Maharashtra",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-kala-ghoda-arts-festival",
+          "name": "Kala Ghoda Arts Festival Mumbai",
+          "state": "Maharashtra",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-khajuraho-dance-festival",
+          "name": "Khajuraho Dance Festival",
+          "state": "Madhya Pradesh",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-tansen-samaroh-gwalior",
+          "name": "Tansen Samaroh Gwalior",
+          "state": "Madhya Pradesh",
+          "usual_month": "December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-lokrang-festival-bhopal",
+          "name": "Lokrang Festival Bhopal",
+          "state": "Madhya Pradesh",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-malwa-utsav",
+          "name": "Malwa Utsav Indore & Ujjain",
+          "state": "Madhya Pradesh",
+          "usual_month": "May",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-allauddin-khan-samaroh",
+          "name": "Allauddin Khan Sangeet Samaroh Maihar",
+          "state": "Madhya Pradesh",
+          "usual_month": "February - March",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-dhrupad-samaroh-bhopal",
+          "name": "Dhrupad Samaroh Bhopal",
+          "state": "Madhya Pradesh",
+          "usual_month": "November - December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-sirpur-dance-festival",
+          "name": "Sirpur National Dance and Music Festival",
+          "state": "Chhattisgarh",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-bhoramdeo-mahotsav",
+          "name": "Bhoramdeo Mahotsav Kawardha",
+          "state": "Chhattisgarh",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-chakradhar-samaroh",
+          "name": "Chakradhar Samaroh Raigarh",
+          "state": "Chhattisgarh",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-rajgir-mahotsav",
+          "name": "Rajgir Mahotsav",
+          "state": "Bihar",
+          "usual_month": "November - December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-sohrai-khovar-art-festival",
+          "name": "Sohrai and Khovar Art Festival Hazaribagh",
+          "state": "Jharkhand",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-konark-dance-festival",
+          "name": "Konark Dance and Sand Art Festival",
+          "state": "Odisha",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-dhauli-kalinga-mahotsav",
+          "name": "Dhauli Kalinga Mahotsav",
+          "state": "Odisha",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-mukteswar-dance-festival",
+          "name": "Mukteswar Dance Festival Bhubaneswar",
+          "state": "Odisha",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-chhau-mahotsav-baripada",
+          "name": "Chhau Mahotsav Baripada",
+          "state": "Odisha",
+          "usual_month": "April",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-basanta-utsav-shantiniketan",
+          "name": "Basanta Utsav Shantiniketan",
+          "state": "West Bengal",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kenduli-baul-mela",
+          "name": "Kenduli Baul Mela Joydev",
+          "state": "West Bengal",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-kambala-buffalo-race",
+          "name": "Kambala Buffalo Race Coastal Karnataka",
+          "state": "Karnataka",
+          "usual_month": "November - March",
+          "date_type": "SEASONAL"
+        },
+        {
+          "id": "fest-pattadakal-dance-festival",
+          "name": "Pattadakal Dance Festival",
+          "state": "Karnataka",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-yakshagana-festival",
+          "name": "Yakshagana Bayalata Festival Coastal Karnataka",
+          "state": "Karnataka",
+          "usual_month": "November - May",
+          "date_type": "SEASONAL"
+        },
+        {
+          "id": "fest-hoysala-mahotsava",
+          "name": "Hoysala Mahotsava Halebidu & Belur",
+          "state": "Karnataka",
+          "usual_month": "March",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-nehru-trophy-boat-race",
+          "name": "Nehru Trophy Boat Race Alappuzha",
+          "state": "Kerala",
+          "usual_month": "August",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-chembai-sangeetholsavam",
+          "name": "Chembai Sangeetholsavam Guruvayur",
+          "state": "Kerala",
+          "usual_month": "November - December",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-nishagandhi-dance-festival",
+          "name": "Nishagandhi Dance Festival Thiruvananthapuram",
+          "state": "Kerala",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-cochin-carnival",
+          "name": "Cochin Carnival Fort Kochi",
+          "state": "Kerala",
+          "usual_month": "December - January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-utsavam-kerala-arts",
+          "name": "Utsavam Kerala Arts Festival",
+          "state": "Kerala",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-margazhi-season-chennai",
+          "name": "Margazhi Music and Dance Season Chennai",
+          "state": "Tamil Nadu",
+          "usual_month": "December - January",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-mahabalipuram-dance-festival",
+          "name": "Mahabalipuram Indian Dance Festival",
+          "state": "Tamil Nadu",
+          "usual_month": "December - January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-natyanjali-dance-festival",
+          "name": "Natyanjali Dance Festival Chidambaram",
+          "state": "Tamil Nadu",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-mamallapuram-heritage-dance",
+          "name": "Mamallapuram Heritage Dance Festival",
+          "state": "Tamil Nadu",
+          "usual_month": "December - January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-visakha-utsav",
+          "name": "Visakha Utsav Visakhapatnam",
+          "state": "Andhra Pradesh",
+          "usual_month": "December - January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-amaravati-buddhist-festival",
+          "name": "Amaravati Buddhist Heritage Festival",
+          "state": "Andhra Pradesh",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-alai-balai-hyderabad",
+          "name": "Alai Balai Hyderabad",
+          "state": "Telangana",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-puducherry-yoga-festival",
+          "name": "Puducherry International Yoga Festival",
+          "state": "Puducherry",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-fete-de-puducherry",
+          "name": "Fete de Puducherry",
+          "state": "Puducherry",
+          "usual_month": "August",
+          "date_type": "FIXED"
+        }
+      ]
+    },
+    {
+      "category_id": "HARVEST_SEASONAL",
+      "display_name": "Harvest Seasonal",
+      "description": "Festivals celebrating agrarian cycles, sowing, harvest, equinoxes, solstices, and changing seasons across India.",
+      "total_festivals": 36,
+      "festivals": [
+        {
+          "id": "bohag-bihu-assam",
+          "name": "Bohag Bihu",
+          "state": "Assam",
+          "usual_month": "April",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "kati-bihu-assam",
+          "name": "Kati Bihu",
+          "state": "Assam",
+          "usual_month": "October",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "magh-bihu-assam",
+          "name": "Magh Bihu",
+          "state": "Assam",
+          "usual_month": "January",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "ali-ai-ligang-assam",
+          "name": "Ali-Ai-Ligang",
+          "state": "Assam",
+          "usual_month": "February",
+          "date_type": "COMMUNITY_SPECIFIC"
+        },
+        {
+          "id": "baishagu-festival-assam",
+          "name": "Baishagu",
+          "state": "Assam",
+          "usual_month": "April",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "nyokum-yullo-arunachal",
+          "name": "Nyokum Yullo",
+          "state": "Arunachal Pradesh",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "dree-festival-arunachal",
+          "name": "Dree Festival",
+          "state": "Arunachal Pradesh",
+          "usual_month": "July",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "mopin-festival-arunachal",
+          "name": "Mopin Festival",
+          "state": "Arunachal Pradesh",
+          "usual_month": "April",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "solung-festival-arunachal",
+          "name": "Solung Festival",
+          "state": "Arunachal Pradesh",
+          "usual_month": "September",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "chalo-loku-arunachal",
+          "name": "Chalo Loku",
+          "state": "Arunachal Pradesh",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "moatsu-mong-nagaland",
+          "name": "Moatsu Mong",
+          "state": "Nagaland",
+          "usual_month": "May",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "aoleang-monyu-nagaland",
+          "name": "Aoleang Monyu",
+          "state": "Nagaland",
+          "usual_month": "April",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "tokhu-emong-nagaland",
+          "name": "Tokhu Emong",
+          "state": "Nagaland",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "tuluni-festival-nagaland",
+          "name": "Tuluni",
+          "state": "Nagaland",
+          "usual_month": "July",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "ngada-festival-nagaland",
+          "name": "Ngada",
+          "state": "Nagaland",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "hega-festival-nagaland",
+          "name": "Hega Festival",
+          "state": "Nagaland",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "naknyulem-festival-nagaland",
+          "name": "Naknyulem",
+          "state": "Nagaland",
+          "usual_month": "July",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "yemshe-festival-nagaland",
+          "name": "Yemshe",
+          "state": "Nagaland",
+          "usual_month": "October",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "yaoshang-festival-manipur",
+          "name": "Yaoshang",
+          "state": "Manipur",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "cheiraoba-festival-manipur",
+          "name": "Cheiraoba",
+          "state": "Manipur",
+          "usual_month": "April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "lui-ngai-ni-manipur",
+          "name": "Lui-Ngai-Ni",
+          "state": "Manipur",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "chumpha-festival-manipur",
+          "name": "Chumpha Festival",
+          "state": "Manipur",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "wangala-festival-meghalaya",
+          "name": "Wangala Festival",
+          "state": "Meghalaya",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "shad-suk-mynsiem-meghalaya",
+          "name": "Shad Suk Mynsiem",
+          "state": "Meghalaya",
+          "usual_month": "April",
+          "date_type": "COMMUNITY_SPECIFIC"
+        },
+        {
+          "id": "strawberry-festival-meghalaya",
+          "name": "Meghalaya Strawberry Festival",
+          "state": "Meghalaya",
+          "usual_month": "April",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "chapchar-kut-mizoram",
+          "name": "Chapchar Kut",
+          "state": "Mizoram",
+          "usual_month": "March",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "mim-kut-mizoram",
+          "name": "Mim Kut",
+          "state": "Mizoram",
+          "usual_month": "September",
+          "date_type": "COMMUNITY_SPECIFIC"
+        },
+        {
+          "id": "pawl-kut-mizoram",
+          "name": "Pawl Kut",
+          "state": "Mizoram",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "thalfavang-kut-mizoram",
+          "name": "Thalfavang Kut",
+          "state": "Mizoram",
+          "usual_month": "November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "lyuva-khutla-mizoram",
+          "name": "Lyuva Khutla",
+          "state": "Mizoram",
+          "usual_month": "March",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "losoong-namsoong-sikkim",
+          "name": "Losoong / Namsoong",
+          "state": "Sikkim",
+          "usual_month": "December",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "tendong-lho-rum-faat-sikkim",
+          "name": "Tendong Lho Rum Faat",
+          "state": "Sikkim",
+          "usual_month": "August",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "garia-puja-tripura",
+          "name": "Garia Puja",
+          "state": "Tripura",
+          "usual_month": "April",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "orange-tourism-festival-tripura",
+          "name": "Orange & Tourism Festival",
+          "state": "Tripura",
+          "usual_month": "November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "holi-festival-of-colours",
+          "name": "Holi",
+          "state": "All States and Union Territories of India",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "makar-sankranti-pan-india",
+          "name": "Makar Sankranti",
+          "state": "All States and Union Territories of India",
+          "usual_month": "January",
+          "date_type": "SOLAR"
+        }
+      ]
+    },
+    {
+      "category_id": "Historical & Royal",
+      "display_name": "Historical & Royal",
+      "description": "Cultural observance category",
+      "total_festivals": 33,
+      "festivals": [
+        {
+          "id": "fest-kullu-dussehra",
+          "name": "Kullu Dussehra",
+          "state": "Himachal Pradesh",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-suhi-mela-chamba",
+          "name": "Suhi Mela Chamba",
+          "state": "Himachal Pradesh",
+          "usual_month": "April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-hola-mohalla",
+          "name": "Hola Mohalla Sri Anandpur Sahib",
+          "state": "Punjab",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-maghi-mela-muktsar",
+          "name": "Maghi Mela Sri Muktsar Sahib",
+          "state": "Punjab",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-pinjore-heritage-festival",
+          "name": "Pinjore Heritage Festival",
+          "state": "Haryana",
+          "usual_month": "October - November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-kartik-cultural-festival",
+          "name": "Kartik Cultural Festival Ballabgarh",
+          "state": "Haryana",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-phool-walon-ki-sair",
+          "name": "Phool Walon Ki Sair Mehrauli",
+          "state": "Delhi",
+          "usual_month": "October - November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-lucknow-mahotsav",
+          "name": "Lucknow Mahotsav",
+          "state": "Uttar Pradesh",
+          "usual_month": "November - December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-jhansi-mahotsav",
+          "name": "Jhansi Mahotsav Bundelkhand",
+          "state": "Uttar Pradesh",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-mewar-festival-udaipur",
+          "name": "Mewar Festival Udaipur",
+          "state": "Rajasthan",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-gangaur-festival-jaipur",
+          "name": "Gangaur Festival Jaipur",
+          "state": "Rajasthan",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-teej-festival-jaipur",
+          "name": "Teej Festival Jaipur",
+          "state": "Rajasthan",
+          "usual_month": "August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-marwar-festival-jodhpur",
+          "name": "Marwar Festival Jodhpur",
+          "state": "Rajasthan",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-elephant-festival-jaipur",
+          "name": "Elephant Festival Jaipur",
+          "state": "Rajasthan",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-shekhawati-festival",
+          "name": "Shekhawati Heritage Festival Nawalgarh",
+          "state": "Rajasthan",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-bundi-utsav",
+          "name": "Bundi Utsav Bundi",
+          "state": "Rajasthan",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kota-dussehra",
+          "name": "Kota Dussehra Fair",
+          "state": "Rajasthan",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-bonderam-festival",
+          "name": "Bonderam Flag Festival Divar Island",
+          "state": "Goa",
+          "usual_month": "August",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-goa-heritage-festival",
+          "name": "Goa Heritage Festival Campal",
+          "state": "Goa",
+          "usual_month": "November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-marathwada-mahotsav",
+          "name": "Marathwada Mahotsav Aurangabad",
+          "state": "Maharashtra",
+          "usual_month": "November - December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-shivaji-jayanti-shivneri",
+          "name": "Shivaji Jayanti Shivneri & Pune",
+          "state": "Maharashtra",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-mandu-festival",
+          "name": "Mandu Festival",
+          "state": "Madhya Pradesh",
+          "usual_month": "December - January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-nimar-utsav-maheshwar",
+          "name": "Nimar Utsav Maheshwar",
+          "state": "Madhya Pradesh",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-orchha-mahotsav",
+          "name": "Orchha Mahotsav",
+          "state": "Madhya Pradesh",
+          "usual_month": "October - November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-rash-mela-coochbehar",
+          "name": "Rash Mela Cooch Behar",
+          "state": "West Bengal",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-bishnupur-festival",
+          "name": "Bishnupur Festival Bankura",
+          "state": "West Bengal",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-mysuru-dasara",
+          "name": "Mysuru Dasara",
+          "state": "Karnataka",
+          "usual_month": "September - October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-hampi-utsav",
+          "name": "Hampi Utsav",
+          "state": "Karnataka",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-chalukya-utsav-badami",
+          "name": "Chalukya Utsav Badami & Aihole",
+          "state": "Karnataka",
+          "usual_month": "February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-lepakshi-heritage-festival",
+          "name": "Lepakshi Heritage Festival",
+          "state": "Andhra Pradesh",
+          "usual_month": "February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-golconda-masters-festival",
+          "name": "Golconda Masters Cultural Festival",
+          "state": "Telangana",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-ramappa-heritage-festival",
+          "name": "Ramappa Temple Heritage Festival",
+          "state": "Telangana",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-french-bastille-day-puducherry",
+          "name": "French Bastille Day Heritage Celebrations",
+          "state": "Puducherry",
+          "usual_month": "July",
+          "date_type": "FIXED"
+        }
+      ]
+    },
+    {
+      "category_id": "RELIGIOUS_TEMPLE",
+      "display_name": "Religious Temple",
+      "description": "Sacred festivals, temple chariot processions (Rath Yatras), Utsavams, and divine ceremonies honoring diverse deities and faiths.",
+      "total_festivals": 28,
+      "festivals": [
+        {
+          "id": "ambubachi-mela-assam",
+          "name": "Ambubachi Mela",
+          "state": "Assam",
+          "usual_month": "June",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "me-dam-me-phi-assam",
+          "name": "Me-Dam-Me-Phi",
+          "state": "Assam",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "losar-festival-tawang",
+          "name": "Losar Festival Tawang",
+          "state": "Arunachal Pradesh",
+          "usual_month": "February",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "torgya-festival-tawang",
+          "name": "Torgya Festival",
+          "state": "Arunachal Pradesh",
+          "usual_month": "January",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "sanken-festival-arunachal",
+          "name": "Sanken Festival",
+          "state": "Arunachal Pradesh",
+          "usual_month": "April",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "sekrenyi-festival-nagaland",
+          "name": "Sekrenyi",
+          "state": "Nagaland",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "kang-rath-yatra-manipur",
+          "name": "Kang Rath Yatra",
+          "state": "Manipur",
+          "usual_month": "July",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "nongkrem-dance-meghalaya",
+          "name": "Nongkrem Dance Festival",
+          "state": "Meghalaya",
+          "usual_month": "November",
+          "date_type": "COMMUNITY_SPECIFIC"
+        },
+        {
+          "id": "behdienkhlam-meghalaya",
+          "name": "Behdienkhlam",
+          "state": "Meghalaya",
+          "usual_month": "July",
+          "date_type": "COMMUNITY_SPECIFIC"
+        },
+        {
+          "id": "losar-festival-sikkim",
+          "name": "Sikkimese Losar",
+          "state": "Sikkim",
+          "usual_month": "February",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "saga-dawa-sikkim",
+          "name": "Saga Dawa",
+          "state": "Sikkim",
+          "usual_month": "May",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "pang-lhabsol-sikkim",
+          "name": "Pang Lhabsol",
+          "state": "Sikkim",
+          "usual_month": "September",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "bumchu-festival-sikkim",
+          "name": "Bumchu Festival",
+          "state": "Sikkim",
+          "usual_month": "March",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "kagyed-dance-sikkim",
+          "name": "Kagyed Dance",
+          "state": "Sikkim",
+          "usual_month": "December",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "kharchi-puja-tripura",
+          "name": "Kharchi Puja",
+          "state": "Tripura",
+          "usual_month": "July",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "ker-puja-tripura",
+          "name": "Ker Puja",
+          "state": "Tripura",
+          "usual_month": "August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "diwali-deepavali-pan-india",
+          "name": "Diwali",
+          "state": "All States and Union Territories of India",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "maha-shivratri-pan-india",
+          "name": "Maha Shivratri",
+          "state": "All States and Union Territories of India",
+          "usual_month": "February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "krishna-janmashtami-pan-india",
+          "name": "Krishna Janmashtami",
+          "state": "All States and Union Territories of India",
+          "usual_month": "September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "ganesh-chaturthi-pan-india",
+          "name": "Ganesh Chaturthi",
+          "state": "All States and Union Territories of India",
+          "usual_month": "September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "durga-puja-navratri-pan-india",
+          "name": "Sharad Navratri & Durga Puja",
+          "state": "All States and Union Territories of India",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "eid-ul-fitr-pan-india",
+          "name": "Eid-ul-Fitr",
+          "state": "All States and Union Territories of India",
+          "usual_month": "March",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "eid-ul-adha-pan-india",
+          "name": "Eid-ul-Adha",
+          "state": "All States and Union Territories of India",
+          "usual_month": "May",
+          "date_type": "LUNAR"
+        },
+        {
+          "id": "guru-nanak-gurpurab-pan-india",
+          "name": "Guru Nanak Jayanti",
+          "state": "All States and Union Territories of India",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "mahavir-jayanti-pan-india",
+          "name": "Mahavir Jayanti",
+          "state": "All States and Union Territories of India",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "buddha-purnima-pan-india",
+          "name": "Buddha Purnima",
+          "state": "All States and Union Territories of India",
+          "usual_month": "May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "christmas-in-india",
+          "name": "Christmas in India",
+          "state": "All States and Union Territories of India",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "muharram-ashura-pan-india",
+          "name": "Muharram",
+          "state": "All States and Union Territories of India",
+          "usual_month": "June",
+          "date_type": "LUNAR"
+        }
+      ]
+    },
+    {
+      "category_id": "Seasonal & Nature",
+      "display_name": "Seasonal & Nature",
+      "description": "Cultural observance category",
+      "total_festivals": 26,
+      "festivals": [
+        {
+          "id": "fest-tulip-festival-srinagar",
+          "name": "Tulip Festival Srinagar",
+          "state": "Jammu and Kashmir",
+          "usual_month": "April",
+          "date_type": "SEASONAL"
+        },
+        {
+          "id": "fest-losar-ladakh",
+          "name": "Losar Festival Ladakh",
+          "state": "Ladakh",
+          "usual_month": "December",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-halda-festival",
+          "name": "Halda Festival Keylong",
+          "state": "Himachal Pradesh",
+          "usual_month": "January",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-losar-lahaul-spiti",
+          "name": "Losar Festival Lahaul & Spiti",
+          "state": "Himachal Pradesh",
+          "usual_month": "February - March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-lohri-punjab",
+          "name": "Lohri Statewide",
+          "state": "Punjab",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-chandigarh-rose-festival",
+          "name": "Chandigarh Rose Festival",
+          "state": "Chandigarh",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-haryali-teej-haryana",
+          "name": "Haryali Teej of Haryana",
+          "state": "Haryana",
+          "usual_month": "August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-garden-tourism-festival",
+          "name": "Garden Tourism Festival",
+          "state": "Delhi",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-butter-festival-dayara",
+          "name": "Butter Festival Dayara Bugyal",
+          "state": "Uttarakhand",
+          "usual_month": "August",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-phool-dei-uttarakhand",
+          "name": "Phool Dei Spring Flower Festival",
+          "state": "Uttarakhand",
+          "usual_month": "March",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-mount-abu-winter-festival",
+          "name": "Mount Abu Winter Festival",
+          "state": "Rajasthan",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-international-kite-festival",
+          "name": "International Kite Festival (Uttarayan)",
+          "state": "Gujarat",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-sao-joao-goa",
+          "name": "Sao Joao Water Festival Siolim",
+          "state": "Goa",
+          "usual_month": "June",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-tripurari-poornima-goa",
+          "name": "Tripurari Poornima Boat Festival Sankhali",
+          "state": "Goa",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-nariyal-poornima-daman",
+          "name": "Nariyal Poornima Daman",
+          "state": "Dadra and Nagar Haveli and Daman and Diu",
+          "usual_month": "August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-gudi-padwa",
+          "name": "Gudi Padwa Mumbai & Nagpur",
+          "state": "Maharashtra",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-narali-purnima",
+          "name": "Narali Purnima Koli Fishing Community",
+          "state": "Maharashtra",
+          "usual_month": "August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-pachmarhi-utsav",
+          "name": "Pachmarhi Utsav",
+          "state": "Madhya Pradesh",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-raja-parba-odisha",
+          "name": "Raja Parba",
+          "state": "Odisha",
+          "usual_month": "June",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-boita-bandana-odisha",
+          "name": "Boita Bandana",
+          "state": "Odisha",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-vishu-kerala",
+          "name": "Vishu Statewide",
+          "state": "Kerala",
+          "usual_month": "April",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-kanyakumari-cape-festival",
+          "name": "Kanyakumari Cape Festival",
+          "state": "Tamil Nadu",
+          "usual_month": "October",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-ugadi-andhra",
+          "name": "Ugadi Statewide",
+          "state": "Andhra Pradesh",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-flamingo-festival-nelapattu",
+          "name": "Flamingo Festival Nelapattu & Pulicat Lake",
+          "state": "Andhra Pradesh",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-bathukamma-telangana",
+          "name": "Bathukamma Statewide",
+          "state": "Telangana",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-lakshadweep-sea-festival",
+          "name": "Lakshadweep National Sea Festival",
+          "state": "Lakshadweep",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        }
+      ]
+    },
+    {
+      "category_id": "Tribal & Folk Traditions",
+      "display_name": "Tribal & Folk Traditions",
+      "description": "Cultural observance category",
+      "total_festivals": 26,
+      "festivals": [
+        {
+          "id": "fest-gurez-festival",
+          "name": "Gurez Valley Festival",
+          "state": "Jammu and Kashmir",
+          "usual_month": "July - August",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-fagli-festival-lahaul",
+          "name": "Fagli Festival Lahaul",
+          "state": "Himachal Pradesh",
+          "usual_month": "February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-chhapar-mela-ludhiana",
+          "name": "Chhapar Mela Ludhiana",
+          "state": "Punjab",
+          "usual_month": "September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-gugga-naumi-haryana",
+          "name": "Gugga Naumi Fair",
+          "state": "Haryana",
+          "usual_month": "September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-nanda-devi-raj-jat",
+          "name": "Nanda Devi Raj Jat Yatra Chamoli",
+          "state": "Uttarakhand",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-hill-jatra-pithoragarh",
+          "name": "Hill Jatra Pithoragarh",
+          "state": "Uttarakhand",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-tarnetar-fair",
+          "name": "Tarnetar Fair Surendranagar",
+          "state": "Gujarat",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-kavant-fair",
+          "name": "Kavant Tribal Fair Chhota Udepur",
+          "state": "Gujarat",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-dang-darbar-ahwa",
+          "name": "Dang Darbar Ahwa",
+          "state": "Gujarat",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-chitra-vichitra-fair",
+          "name": "Chitra Vichitra Fair Sabarkantha",
+          "state": "Gujarat",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-tarpa-festival-silvassa",
+          "name": "Tarpa Folk Festival Silvassa",
+          "state": "Dadra and Nagar Haveli and Daman and Diu",
+          "usual_month": "November - December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-bhagoria-tribal-fair",
+          "name": "Bhagoria Tribal Fair Jhabua & Alirajpur",
+          "state": "Madhya Pradesh",
+          "usual_month": "March",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-bastar-dussehra",
+          "name": "Bastar Dussehra Jagdalpur",
+          "state": "Chhattisgarh",
+          "usual_month": "September - October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-madai-festival-bastar",
+          "name": "Madai Festival Bastar & Narayanpur",
+          "state": "Chhattisgarh",
+          "usual_month": "December - March",
+          "date_type": "COMMUNITY_SPECIFIC"
+        },
+        {
+          "id": "fest-raut-nacha-mahotsav",
+          "name": "Raut Nacha Mahotsav Bilaspur",
+          "state": "Chhattisgarh",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-sama-chakeva-mithila",
+          "name": "Sama Chakeva Mithila",
+          "state": "Bihar",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-bihula-bishahari-bhagalpur",
+          "name": "Bihula-Bishahari Bhagalpur",
+          "state": "Bihar",
+          "usual_month": "August",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-sarhul-festival-ranchi",
+          "name": "Sarhul Festival Ranchi",
+          "state": "Jharkhand",
+          "usual_month": "March - April",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-karma-festival-jharkhand",
+          "name": "Karma Festival Jharkhand",
+          "state": "Jharkhand",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-bhagta-parab",
+          "name": "Bhagta Parab",
+          "state": "Jharkhand",
+          "usual_month": "April - May",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-charak-puja-bengal",
+          "name": "Charak Puja & Gajan",
+          "state": "West Bengal",
+          "usual_month": "April",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-jhapan-mela-banka",
+          "name": "Jhapan Mela Bankura",
+          "state": "West Bengal",
+          "usual_month": "August",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-theyyam-festival-malabar",
+          "name": "Theyyam Festival North Malabar",
+          "state": "Kerala",
+          "usual_month": "October - May",
+          "date_type": "SEASONAL"
+        },
+        {
+          "id": "fest-sirimanotsavam-vizianagaram",
+          "name": "Sirimanotsavam Vizianagaram",
+          "state": "Andhra Pradesh",
+          "usual_month": "October",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-sammakka-saralamma-jatara",
+          "name": "Sammakka Saralamma Jatara Medaram",
+          "state": "Telangana",
+          "usual_month": "February",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-nagoba-jatara-adilabad",
+          "name": "Nagoba Jatara Keslapur Adilabad",
+          "state": "Telangana",
+          "usual_month": "January - February",
+          "date_type": "LUNISOLAR"
+        }
+      ]
+    },
+    {
+      "category_id": "MUSIC_DANCE_ARTS",
+      "display_name": "Music Dance Arts",
+      "description": "Grand performing arts, classical music recitals, folk dances, rock concerts, and craft celebrations.",
+      "total_festivals": 18,
+      "festivals": [
+        {
+          "id": "majuli-festival-assam",
+          "name": "Majuli Festival",
+          "state": "Assam",
+          "usual_month": "November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "dehing-patkai-festival-assam",
+          "name": "Dehing Patkai Festival",
+          "state": "Assam",
+          "usual_month": "January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "brahmaputra-beach-festival-assam",
+          "name": "Brahmaputra Beach Festival",
+          "state": "Assam",
+          "usual_month": "January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "ziro-festival-of-music-arunachal",
+          "name": "Ziro Festival of Music",
+          "state": "Arunachal Pradesh",
+          "usual_month": "September",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "siang-river-festival-arunachal",
+          "name": "Siang River Festival",
+          "state": "Arunachal Pradesh",
+          "usual_month": "December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "hornbill-festival-nagaland",
+          "name": "Hornbill Festival",
+          "state": "Nagaland",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "sangai-festival-manipur",
+          "name": "Manipur Sangai Festival",
+          "state": "Manipur",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "heikru-hidongba-manipur",
+          "name": "Heikru Hidongba",
+          "state": "Manipur",
+          "usual_month": "September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "autumn-festival-shillong",
+          "name": "Shillong Autumn Festival",
+          "state": "Meghalaya",
+          "usual_month": "October",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "ranikor-river-festival-meghalaya",
+          "name": "Ranikor River Festival",
+          "state": "Meghalaya",
+          "usual_month": "February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "bob-dylan-tribute-shillong",
+          "name": "Bob Dylan Birthday Tribute Shillong",
+          "state": "Meghalaya",
+          "usual_month": "May",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "anthurium-festival-mizoram",
+          "name": "Anthurium Festival",
+          "state": "Mizoram",
+          "usual_month": "September",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "red-panda-winter-carnival-sikkim",
+          "name": "Red Panda Winter Carnival",
+          "state": "Sikkim",
+          "usual_month": "December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "neermahal-water-festival-tripura",
+          "name": "Neermahal Water Festival",
+          "state": "Tripura",
+          "usual_month": "October",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "pilak-festival-tripura",
+          "name": "Pilak Archaeological & Cultural Festival",
+          "state": "Tripura",
+          "usual_month": "December",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "island-tourism-festival-andaman",
+          "name": "Island Tourism Festival",
+          "state": "Andaman and Nicobar Islands",
+          "usual_month": "January",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "monsoon-music-festival-andaman",
+          "name": "Monsoon Music Festival",
+          "state": "Andaman and Nicobar Islands",
+          "usual_month": "May",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "beach-festival-andaman",
+          "name": "Andaman Beach Festival",
+          "state": "Andaman and Nicobar Islands",
+          "usual_month": "April",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        }
+      ]
+    },
+    {
+      "category_id": "Harvest & Agriculture",
+      "display_name": "Harvest & Agriculture",
+      "description": "Cultural observance category",
+      "total_festivals": 15,
+      "festivals": [
+        {
+          "id": "fest-baisakhi-mughal-gardens",
+          "name": "Baisakhi at Mughal Gardens Srinagar",
+          "state": "Jammu and Kashmir",
+          "usual_month": "April",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-saffron-festival-pampore",
+          "name": "Saffron Harvest Festival Pampore",
+          "state": "Jammu and Kashmir",
+          "usual_month": "October - November",
+          "date_type": "SEASONAL"
+        },
+        {
+          "id": "fest-minjar-mela-chamba",
+          "name": "Minjar Mela Chamba",
+          "state": "Himachal Pradesh",
+          "usual_month": "July - August",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-baisakhi-punjab",
+          "name": "Vaisakhi / Baisakhi Amritsar",
+          "state": "Punjab",
+          "usual_month": "April",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-mango-festival-pinjore",
+          "name": "Mango Festival Pinjore Gardens",
+          "state": "Chandigarh",
+          "usual_month": "July",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-baisakhi-mela-pinjore",
+          "name": "Baisakhi Mela Pinjore",
+          "state": "Haryana",
+          "usual_month": "April",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-dilli-haat-baisakhi",
+          "name": "Dilli Haat Baisakhi and Crafts Mela",
+          "state": "Delhi",
+          "usual_month": "April",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-chikoo-festival-dahanu",
+          "name": "Chikoo Festival Dahanu & Bordi",
+          "state": "Maharashtra",
+          "usual_month": "January - February",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-pola-festival-maharashtra",
+          "name": "Pola Cattle Festival Vidarbha",
+          "state": "Maharashtra",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-tusu-parab-jharkhand",
+          "name": "Tusu Parab Chotanagpur",
+          "state": "Jharkhand",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-hal-punhya-jharkhand",
+          "name": "Hal Punhya",
+          "state": "Jharkhand",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-bandna-parab",
+          "name": "Bandna Parab",
+          "state": "Jharkhand",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-nuakhai-sambalpur",
+          "name": "Nuakhai Sambalpur & Western Odisha",
+          "state": "Odisha",
+          "usual_month": "August - September",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-onam-kerala",
+          "name": "Onam Statewide",
+          "state": "Kerala",
+          "usual_month": "August - September",
+          "date_type": "SOLAR"
+        },
+        {
+          "id": "fest-pongal-jallikattu",
+          "name": "Pongal & Jallikattu Madurai",
+          "state": "Tamil Nadu",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        }
+      ]
+    },
+    {
+      "category_id": "Fair & Mela",
+      "display_name": "Fair & Mela",
+      "description": "Cultural observance category",
+      "total_festivals": 11,
+      "festivals": [
+        {
+          "id": "fest-surajkund-crafts-mela",
+          "name": "Surajkund International Crafts Mela",
+          "state": "Haryana",
+          "usual_month": "February",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-dastkar-nature-bazaar",
+          "name": "Dastkar Nature Bazaar Kisan Haat",
+          "state": "Delhi",
+          "usual_month": "November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "fest-jauljibi-mela",
+          "name": "Jauljibi and Thal Mela Pithoragarh",
+          "state": "Uttarakhand",
+          "usual_month": "November",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-bateshwar-fair-agra",
+          "name": "Bateshwar Fair Agra",
+          "state": "Uttar Pradesh",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-pushkar-camel-fair",
+          "name": "Pushkar Camel Fair",
+          "state": "Rajasthan",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-vautha-fair",
+          "name": "Vautha Donkey & Cattle Fair",
+          "state": "Gujarat",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-sonepur-cattle-fair",
+          "name": "Sonepur Cattle Fair",
+          "state": "Bihar",
+          "usual_month": "November - December",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-mandar-mahotsav-banka",
+          "name": "Mandar Mahotsav Banka",
+          "state": "Bihar",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-bali-yatra-cuttack",
+          "name": "Bali Yatra Cuttack",
+          "state": "Odisha",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "fest-poush-mela-shantiniketan",
+          "name": "Poush Mela Shantiniketan",
+          "state": "West Bengal",
+          "usual_month": "December",
+          "date_type": "FIXED"
+        },
+        {
+          "id": "fest-kadalekai-parishe",
+          "name": "Kadalekai Parishe Bengaluru",
+          "state": "Karnataka",
+          "usual_month": "November - December",
+          "date_type": "LUNISOLAR"
+        }
+      ]
+    },
+    {
+      "category_id": "FOLK_COMMUNITY",
+      "display_name": "Folk Community",
+      "description": "Grassroots community celebrations, tribal bonding rituals, village melas, and family thanksgiving traditions.",
+      "total_festivals": 3,
+      "festivals": [
+        {
+          "id": "jonbeel-mela-assam",
+          "name": "Jonbeel Mela",
+          "state": "Assam",
+          "usual_month": "January",
+          "date_type": "COMMUNITY_SPECIFIC"
+        },
+        {
+          "id": "ningol-chakouba-manipur",
+          "name": "Ningol Chakouba",
+          "state": "Manipur",
+          "usual_month": "November",
+          "date_type": "LUNISOLAR"
+        },
+        {
+          "id": "raksha-bandhan-pan-india",
+          "name": "Raksha Bandhan",
+          "state": "All States and Union Territories of India",
+          "usual_month": "August",
+          "date_type": "LUNISOLAR"
+        }
+      ]
+    },
+    {
+      "category_id": "CULTURAL_NATIONAL",
+      "display_name": "Cultural National",
+      "description": "National commemorations, patriotic tributes, and pan-Indian socio-cultural milestones.",
+      "total_festivals": 2,
+      "festivals": [
+        {
+          "id": "dihing-tea-festival-assam",
+          "name": "Dihing Tea Festival",
+          "state": "Assam",
+          "usual_month": "November",
+          "date_type": "ORGANIZER_ANNOUNCED"
+        },
+        {
+          "id": "subhash-mela-havelock",
+          "name": "Subhash Mela",
+          "state": "Andaman and Nicobar Islands",
+          "usual_month": "January",
+          "date_type": "FIXED"
+        }
+      ]
+    }
+  ]
+}

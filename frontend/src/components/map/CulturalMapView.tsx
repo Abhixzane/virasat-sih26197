@@ -3,7 +3,8 @@ import L from 'leaflet';
 import { MapMarker } from '../../types/cultural';
 import {
   MapPin, Landmark, Sparkles, Search, Layers, ChevronDown,
-  ChevronRight, Compass, ArrowRight, List, Map as MapIcon, X
+  ChevronRight, Compass, ArrowRight, List, Map as MapIcon, X,
+  Crosshair, Navigation, Route, Car, Train, ExternalLink, Clock, Milestone
 } from 'lucide-react';
 
 interface CulturalMapViewProps {
@@ -55,6 +56,8 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const layerGroupRef = useRef<L.LayerGroup | null>(null);
+  const userMarkerRef = useRef<L.Marker | null>(null);
+  const routeLineRef = useRef<L.Polyline | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const [activeTab, setActiveTab] = useState<'map' | 'list' | 'experience'>('map');
@@ -62,6 +65,24 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [searchFilter, setSearchFilter] = useState('');
   const [selectedPin, setSelectedPin] = useState<MapMarker | null>(null);
+
+  // Geolocation & Route Studio State
+  const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [isLocating, setIsLocating] = useState(false);
+  const [nearestDistanceNotice, setNearestDistanceNotice] = useState<string | null>(null);
+  const [isRouteStudioOpen, setIsRouteStudioOpen] = useState(false);
+  const [routeOrigin, setRouteOrigin] = useState<string>('current_location');
+  const [routeDestination, setRouteDestination] = useState<string>('');
+  const [travelMode, setTravelMode] = useState<'driving' | 'transit'>('driving');
+  const [routeDistance, setRouteDistance] = useState<number | null>(null);
+  const [routeDuration, setRouteDuration] = useState<string | null>(null);
+
+  // Set default destination when markers load
+  useEffect(() => {
+    if (markers.length > 0 && !routeDestination) {
+      setRouteDestination(markers[0].id);
+    }
+  }, [markers, routeDestination]);
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -100,14 +121,20 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
     return true;
   });
 
-  // Calculate nearby discoveries for selectedPin or default 4 prominent discoveries
+  // Calculate nearby discoveries for userLocation, selectedPin or default 4 prominent discoveries
   const discoveryCards = React.useMemo(() => {
-    if (selectedPin) {
+    const referenceCenter = userLocation
+      ? { lat: userLocation.lat, lng: userLocation.lng, title: 'Your Location' }
+      : selectedPin
+      ? { lat: selectedPin.latitude, lng: selectedPin.longitude, title: selectedPin.name }
+      : null;
+
+    if (referenceCenter) {
       const sorted = markers
-        .filter((m) => m.id !== selectedPin.id && Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1)
+        .filter((m) => (!selectedPin || m.id !== selectedPin.id) && Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1)
         .map((m) => ({
           marker: m,
-          distance: `${calculateDistance(selectedPin.latitude, selectedPin.longitude, m.latitude, m.longitude).toFixed(1)} km`,
+          distance: `${calculateDistance(referenceCenter.lat, referenceCenter.lng, m.latitude, m.longitude).toFixed(1)} km`,
           title: m.name,
           subtitle: m.description || `Verified cultural asset in ${m.city}, ${m.state}.`,
         }))
@@ -117,7 +144,7 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
       if (sorted.length > 0) return sorted;
     }
 
-    // Default 4 representative items matching reference image layout
+    // Default 4 representative items matching reference layout
     const sampleTypes = [
       { key: 'heritage', defaultTitle: 'Heritage Site', defaultSub: 'Explore this historic site and its cultural significance.', fallbackDist: '2.4 km', fallbackImg: '/nearby-1.jpg' },
       { key: 'craft', defaultTitle: 'Artisan Cluster', defaultSub: 'Discover traditional crafts and local artisans.', fallbackDist: '5.1 km', fallbackImg: '/nearby-2.jpg' },
@@ -152,7 +179,7 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
         subtitle: item.defaultSub,
       };
     });
-  }, [selectedPin, markers]);
+  }, [userLocation, selectedPin, markers]);
 
   // Initialize Leaflet Map
   useEffect(() => {
@@ -273,6 +300,163 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
     }
   }, [filteredMarkers, activeTab, onSelectMarker]);
 
+  // "Locate Me" Handler
+  const handleLocateMe = () => {
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser.");
+      return;
+    }
+
+    setIsLocating(true);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setIsLocating(false);
+        const coords = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+        setUserLocation(coords);
+
+        if (mapInstanceRef.current) {
+          mapInstanceRef.current.flyTo([coords.lat, coords.lng], 12, { duration: 1.5 });
+
+          // Pulsing user marker
+          if (userMarkerRef.current) {
+            userMarkerRef.current.setLatLng([coords.lat, coords.lng]);
+          } else {
+            const userIcon = L.divIcon({
+              className: 'user-pulse-pin',
+              html: `
+                <div style="position:relative; width:28px; height:28px; display:flex; align-items:center; justify-content:center;">
+                  <div style="position:absolute; width:26px; height:26px; border-radius:50%; background:#2563EB; opacity:0.4; animation: ping 1.5s cubic-bezier(0,0,0.2,1) infinite;"></div>
+                  <div style="position:relative; width:14px; height:14px; border-radius:50%; background:#1D4ED8; border:2.5px solid white; box-shadow:0 2px 6px rgba(0,0,0,0.35);"></div>
+                </div>
+              `,
+              iconSize: [28, 28],
+              iconAnchor: [14, 14]
+            });
+            const uMarker = L.marker([coords.lat, coords.lng], { icon: userIcon }).addTo(mapInstanceRef.current);
+            uMarker.bindPopup("<b>📍 You Are Here</b><br/><span style='font-size:11px;color:#4B5563;'>Current Geolocation Verified</span>").openPopup();
+            userMarkerRef.current = uMarker;
+          }
+
+          // Find nearest heritage site
+          const validSites = markers.filter(m => Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1);
+          if (validSites.length > 0) {
+            const sorted = [...validSites].sort((a, b) => {
+              const da = calculateDistance(coords.lat, coords.lng, a.latitude, a.longitude);
+              const db = calculateDistance(coords.lat, coords.lng, b.latitude, b.longitude);
+              return da - db;
+            });
+            const nearest = sorted[0];
+            const dist = calculateDistance(coords.lat, coords.lng, nearest.latitude, nearest.longitude).toFixed(1);
+            setSelectedPin(nearest);
+            setNearestDistanceNotice(`Nearest: ${nearest.name} is ${dist} km away`);
+            setTimeout(() => setNearestDistanceNotice(null), 8000);
+          }
+        }
+      },
+      (err) => {
+        setIsLocating(false);
+        console.warn("Geolocation warning:", err.message);
+        // Fallback demo coordinates (New Delhi India Gate)
+        const coords = { lat: 28.6129, lng: 77.2295 };
+        setUserLocation(coords);
+        if (mapInstanceRef.current) {
+          mapInstanceRef.current.flyTo([coords.lat, coords.lng], 12);
+        }
+        setNearestDistanceNotice("Using India Gate as simulated reference location.");
+        setTimeout(() => setNearestDistanceNotice(null), 6000);
+      },
+      { enableHighAccuracy: true, timeout: 8000 }
+    );
+  };
+
+  // Route Studio calculation & Polyline drawing
+  const handleComputeRoute = () => {
+    if (!mapInstanceRef.current) return;
+
+    let originLat: number;
+    let originLng: number;
+    let originName: string;
+
+    if (routeOrigin === 'current_location') {
+      if (!userLocation) {
+        handleLocateMe();
+        return;
+      }
+      originLat = userLocation.lat;
+      originLng = userLocation.lng;
+      originName = "Your Location";
+    } else {
+      const orig = markers.find(m => m.id === routeOrigin);
+      if (!orig) return;
+      originLat = orig.latitude;
+      originLng = orig.longitude;
+      originName = orig.name;
+    }
+
+    const dest = markers.find(m => m.id === routeDestination);
+    if (!dest) return;
+    const destLat = dest.latitude;
+    const destLng = dest.longitude;
+
+    const straightDist = calculateDistance(originLat, originLng, destLat, destLng);
+    // Estimated driving road distance factor (approx 1.25x)
+    const roadDist = Math.round(straightDist * 1.24);
+    setRouteDistance(roadDist);
+
+    const avgSpeed = travelMode === 'driving' ? 65 : 52;
+    const totalHours = roadDist / avgSpeed;
+    const hrs = Math.floor(totalHours);
+    const mins = Math.round((totalHours - hrs) * 60);
+    setRouteDuration(hrs > 0 ? `${hrs}h ${mins}m` : `${mins}m`);
+
+    // Draw styled polyline
+    if (routeLineRef.current) {
+      routeLineRef.current.remove();
+    }
+
+    // Curved waypoint interpolation
+    const midLat = (originLat + destLat) / 2 + (destLng - originLng) * 0.04;
+    const midLng = (originLng + destLng) / 2 - (destLat - originLat) * 0.04;
+    const points: [number, number][] = [
+      [originLat, originLng],
+      [midLat, midLng],
+      [destLat, destLng]
+    ];
+
+    const polyline = L.polyline(points, {
+      color: '#FF6600',
+      weight: 5,
+      opacity: 0.9,
+      dashArray: travelMode === 'transit' ? '8, 8' : undefined
+    }).addTo(mapInstanceRef.current);
+
+    routeLineRef.current = polyline;
+    mapInstanceRef.current.fitBounds(polyline.getBounds(), { padding: [70, 70] });
+  };
+
+  const getGoogleMapsUrl = () => {
+    let oLat = userLocation?.lat || 28.6129;
+    let oLng = userLocation?.lng || 77.2295;
+    if (routeOrigin !== 'current_location') {
+      const orig = markers.find(m => m.id === routeOrigin);
+      if (orig) {
+        oLat = orig.latitude;
+        oLng = orig.longitude;
+      }
+    }
+
+    let dLat = 27.1751;
+    let dLng = 78.0421;
+    const dest = markers.find(m => m.id === routeDestination);
+    if (dest) {
+      dLat = dest.latitude;
+      dLng = dest.longitude;
+    }
+
+    const mode = travelMode === 'driving' ? 'driving' : 'transit';
+    return `https://www.google.com/maps/dir/?api=1&origin=${oLat},${oLng}&destination=${dLat},${dLng}&travelmode=${mode}`;
+  };
+
   const categories = [
     { key: 'all', label: 'All Categories' },
     { key: 'monuments', label: 'Monuments & Heritage Sites' },
@@ -286,9 +470,9 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
 
   return (
     <div className="space-y-4">
-      {/* 1. Exact Controls Bar Above Map Matching Reference Image */}
+      {/* 1. Controls Bar Above Map */}
       <div className="flex flex-wrap items-center justify-between gap-3 bg-transparent">
-        {/* Left Tabs: Map View | List View | Cultural Experiences */}
+        {/* Left Tabs & Action Buttons */}
         <div className="flex flex-wrap items-center gap-2">
           {/* Map View */}
           <button
@@ -330,6 +514,34 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
           >
             <Sparkles className="w-3.5 h-3.5 text-stone-500" />
             <span>Cultural Experiences</span>
+          </button>
+
+          {/* "Locate Me" Button */}
+          <button
+            onClick={handleLocateMe}
+            disabled={isLocating}
+            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer border ${
+              userLocation
+                ? 'bg-blue-50 border-blue-200 text-blue-700 hover:bg-blue-100'
+                : 'bg-white hover:bg-stone-50 border-stone-200 text-stone-700'
+            }`}
+            title="Locate my position on the cultural map"
+          >
+            <Crosshair className={`w-3.5 h-3.5 text-blue-600 ${isLocating ? 'animate-spin' : ''}`} />
+            <span>{isLocating ? 'Locating...' : userLocation ? 'Located' : 'Locate Me'}</span>
+          </button>
+
+          {/* "Route Studio" Toggle Button */}
+          <button
+            onClick={() => setIsRouteStudioOpen(!isRouteStudioOpen)}
+            className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer border ${
+              isRouteStudioOpen
+                ? 'bg-amber-500 text-white border-amber-600 shadow-xs'
+                : 'bg-white hover:bg-stone-50 border-stone-200 text-stone-700'
+            }`}
+          >
+            <Route className="w-3.5 h-3.5" />
+            <span>Route Studio</span>
           </button>
         </div>
 
@@ -394,6 +606,136 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Nearest Location Toast Alert */}
+      {nearestDistanceNotice && (
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 text-blue-900 px-4 py-2 rounded-xl text-xs flex items-center justify-between shadow-xs">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-blue-600 animate-ping" />
+            <span className="font-semibold">{nearestDistanceNotice}</span>
+          </div>
+          <button onClick={() => setNearestDistanceNotice(null)} className="text-blue-500 hover:text-blue-700">
+            <X className="w-3.5 h-3.5" />
+          </button>
+        </div>
+      )}
+
+      {/* Route Studio Panel (Collapsible Drawer) */}
+      {isRouteStudioOpen && (
+        <div className="bg-[#FFFDF9] border border-amber-200 rounded-2xl p-4 shadow-sm animate-fadeIn space-y-3">
+          <div className="flex items-center justify-between border-b border-amber-100 pb-2">
+            <div className="flex items-center gap-2 text-xs font-bold text-[#C85A17] uppercase tracking-wider">
+              <Route className="w-4 h-4 text-[#FF6600]" />
+              <span>Route Studio & Cultural Navigation</span>
+            </div>
+            <button
+              onClick={() => setIsRouteStudioOpen(false)}
+              className="text-stone-400 hover:text-stone-600"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-3 items-end">
+            {/* Origin Selector */}
+            <div className="md:col-span-4 space-y-1">
+              <label className="text-[11px] font-semibold text-stone-600">Starting Point (Origin):</label>
+              <select
+                value={routeOrigin}
+                onChange={(e) => setRouteOrigin(e.target.value)}
+                className="w-full bg-white border border-stone-200 rounded-xl px-3 py-2 text-xs text-stone-800 outline-none focus:border-[#FF6600]"
+              >
+                <option value="current_location">📍 My Location {userLocation ? '(Detected)' : '(Click to Geocode)'}</option>
+                {markers.slice(0, 30).map((m) => (
+                  <option key={`orig-${m.id}`} value={m.id}>
+                    {m.name} ({m.city}, {m.state})
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Destination Selector */}
+            <div className="md:col-span-4 space-y-1">
+              <label className="text-[11px] font-semibold text-stone-600">Cultural Destination:</label>
+              <select
+                value={routeDestination}
+                onChange={(e) => setRouteDestination(e.target.value)}
+                className="w-full bg-white border border-stone-200 rounded-xl px-3 py-2 text-xs text-stone-800 outline-none focus:border-[#FF6600]"
+              >
+                {markers.map((m) => (
+                  <option key={`dest-${m.id}`} value={m.id}>
+                    {m.name} ({m.city}, {m.state})
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Travel Mode & Action */}
+            <div className="md:col-span-4 flex items-center gap-2">
+              <div className="flex bg-stone-100 p-0.5 rounded-xl border border-stone-200 shrink-0">
+                <button
+                  onClick={() => setTravelMode('driving')}
+                  className={`p-1.5 rounded-lg text-xs flex items-center gap-1 cursor-pointer ${
+                    travelMode === 'driving' ? 'bg-white shadow-2xs font-bold text-[#FF6600]' : 'text-stone-600'
+                  }`}
+                  title="Driving Mode"
+                >
+                  <Car className="w-3.5 h-3.5" />
+                  <span>Road</span>
+                </button>
+                <button
+                  onClick={() => setTravelMode('transit')}
+                  className={`p-1.5 rounded-lg text-xs flex items-center gap-1 cursor-pointer ${
+                    travelMode === 'transit' ? 'bg-white shadow-2xs font-bold text-indigo-600' : 'text-stone-600'
+                  }`}
+                  title="Transit / Rail Mode"
+                >
+                  <Train className="w-3.5 h-3.5" />
+                  <span>Rail</span>
+                </button>
+              </div>
+
+              <button
+                onClick={handleComputeRoute}
+                className="flex-1 bg-[#FF6600] hover:bg-[#E65100] text-white font-semibold text-xs py-2 px-3 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-xs cursor-pointer"
+              >
+                <Navigation className="w-3.5 h-3.5" />
+                <span>Draw Route</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Route Summary Result Card */}
+          {routeDistance !== null && (
+            <div className="bg-white border border-amber-200/80 rounded-xl p-3 flex flex-wrap items-center justify-between gap-3 text-xs">
+              <div className="flex flex-wrap items-center gap-4">
+                <div className="flex items-center gap-1.5 text-stone-800">
+                  <Milestone className="w-4 h-4 text-[#FF6600]" />
+                  <span>Distance: <b className="text-stone-900">{routeDistance} km</b></span>
+                </div>
+                <div className="flex items-center gap-1.5 text-stone-800">
+                  <Clock className="w-4 h-4 text-indigo-600" />
+                  <span>Est. Time: <b className="text-stone-900">{routeDuration}</b></span>
+                </div>
+                <div className="text-[11px] text-stone-500">
+                  Corridor: <span className="font-semibold text-stone-700">Golden Quadrilateral / National Highways</span>
+                </div>
+              </div>
+
+              {/* Direct Deep Link to Google Maps Navigation */}
+              <a
+                href={getGoogleMapsUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-1.5 px-3 rounded-lg transition-colors shadow-xs ml-auto"
+              >
+                <span>Open in Google Maps</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* 2. Main Visual Display: Map + Nearby Discoveries (Or List View) */}
       {activeTab === 'list' ? (
@@ -490,7 +832,9 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
             <div className="flex items-center justify-between pb-3 border-b border-stone-100">
               <div className="flex items-center gap-1.5">
                 <MapPin className="w-4 h-4 text-[#FF6600]" />
-                <h3 className="font-bold text-sm text-stone-900">Nearby Discoveries</h3>
+                <h3 className="font-bold text-sm text-stone-900">
+                  {userLocation ? 'Nearest to Your Location' : selectedPin ? `Near ${selectedPin.name}` : 'Nearby Discoveries'}
+                </h3>
               </div>
               <button
                 onClick={() => setActiveTab('list')}

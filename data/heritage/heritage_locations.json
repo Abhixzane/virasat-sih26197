@@ -1,0 +1,545 @@
+{
+  "total_states": 20,
+  "locations": [
+    {
+      "state": "Assam",
+      "site_count": 2,
+      "sites": [
+        {
+          "id": "unesco-kaziranga",
+          "official_unesco_name": "Kaziranga National Park",
+          "category": "Natural",
+          "inscription_year": 1985,
+          "coordinates": {
+            "latitude": 26.5775,
+            "longitude": 93.1711
+          }
+        },
+        {
+          "id": "unesco-manas",
+          "official_unesco_name": "Manas Wildlife Sanctuary",
+          "category": "Natural",
+          "inscription_year": 1985,
+          "coordinates": {
+            "latitude": 26.6594,
+            "longitude": 91.0011
+          }
+        }
+      ]
+    },
+    {
+      "state": "Bihar",
+      "site_count": 2,
+      "sites": [
+        {
+          "id": "unesco-mahabodhi",
+          "official_unesco_name": "Mahabodhi Temple Complex at Bodh Gaya",
+          "category": "Cultural",
+          "inscription_year": 2002,
+          "coordinates": {
+            "latitude": 24.6961,
+            "longitude": 84.9913
+          }
+        },
+        {
+          "id": "unesco-nalanda-mahavihara",
+          "official_unesco_name": "Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar",
+          "category": "Cultural",
+          "inscription_year": 2016,
+          "coordinates": {
+            "latitude": 25.1357,
+            "longitude": 85.4449
+          }
+        }
+      ]
+    },
+    {
+      "state": "Chandigarh",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-le-corbusier-chandigarh",
+          "official_unesco_name": "The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement",
+          "category": "Cultural",
+          "inscription_year": 2016,
+          "coordinates": {
+            "latitude": 30.7589,
+            "longitude": 76.8056
+          }
+        }
+      ]
+    },
+    {
+      "state": "Delhi",
+      "site_count": 3,
+      "sites": [
+        {
+          "id": "unesco-humayuns-tomb",
+          "official_unesco_name": "Humayun's Tomb, Delhi",
+          "category": "Cultural",
+          "inscription_year": 1993,
+          "coordinates": {
+            "latitude": 28.5933,
+            "longitude": 77.2507
+          }
+        },
+        {
+          "id": "unesco-qutb-minar",
+          "official_unesco_name": "Qutb Minar and its Monuments, Delhi",
+          "category": "Cultural",
+          "inscription_year": 1993,
+          "coordinates": {
+            "latitude": 28.5245,
+            "longitude": 77.1855
+          }
+        },
+        {
+          "id": "unesco-red-fort",
+          "official_unesco_name": "Red Fort Complex",
+          "category": "Cultural",
+          "inscription_year": 2007,
+          "coordinates": {
+            "latitude": 28.6562,
+            "longitude": 77.241
+          }
+        }
+      ]
+    },
+    {
+      "state": "Goa",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-churches-goa",
+          "official_unesco_name": "Churches and Convents of Goa",
+          "category": "Cultural",
+          "inscription_year": 1986,
+          "coordinates": {
+            "latitude": 15.5009,
+            "longitude": 73.9116
+          }
+        }
+      ]
+    },
+    {
+      "state": "Gujarat",
+      "site_count": 4,
+      "sites": [
+        {
+          "id": "unesco-champaner-pavagadh",
+          "official_unesco_name": "Champaner-Pavagadh Archaeological Park",
+          "category": "Cultural",
+          "inscription_year": 2004,
+          "coordinates": {
+            "latitude": 22.4833,
+            "longitude": 73.5333
+          }
+        },
+        {
+          "id": "unesco-rani-ki-vav",
+          "official_unesco_name": "Rani-ki-Vav (the Queen’s Stepwell) at Patan, Gujarat",
+          "category": "Cultural",
+          "inscription_year": 2014,
+          "coordinates": {
+            "latitude": 23.8589,
+            "longitude": 72.1017
+          }
+        },
+        {
+          "id": "unesco-ahmadabad",
+          "official_unesco_name": "Historic City of Ahmadabad",
+          "category": "Cultural",
+          "inscription_year": 2017,
+          "coordinates": {
+            "latitude": 23.0225,
+            "longitude": 72.5714
+          }
+        },
+        {
+          "id": "unesco-dholavira",
+          "official_unesco_name": "Dholavira: a Harappan City",
+          "category": "Cultural",
+          "inscription_year": 2021,
+          "coordinates": {
+            "latitude": 23.8864,
+            "longitude": 70.2131
+          }
+        }
+      ]
+    },
+    {
+      "state": "Himachal Pradesh",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-great-himalayan-national-park",
+          "official_unesco_name": "Great Himalayan National Park Conservation Area",
+          "category": "Natural",
+          "inscription_year": 2014,
+          "coordinates": {
+            "latitude": 31.7333,
+            "longitude": 77.55
+          }
+        }
+      ]
+    },
+    {
+      "state": "Karnataka",
+      "site_count": 3,
+      "sites": [
+        {
+          "id": "unesco-hampi",
+          "official_unesco_name": "Group of Monuments at Hampi",
+          "category": "Cultural",
+          "inscription_year": 1986,
+          "coordinates": {
+            "latitude": 15.335,
+            "longitude": 76.46
+          }
+        },
+        {
+          "id": "unesco-pattadakal",
+          "official_unesco_name": "Group of Monuments at Pattadakal",
+          "category": "Cultural",
+          "inscription_year": 1987,
+          "coordinates": {
+            "latitude": 15.949,
+            "longitude": 75.816
+          }
+        },
+        {
+          "id": "unesco-sacred-ensembles-hoysalas",
+          "official_unesco_name": "Sacred Ensembles of the Hoysalas",
+          "category": "Cultural",
+          "inscription_year": 2023,
+          "coordinates": {
+            "latitude": 13.1623,
+            "longitude": 75.8596
+          }
+        }
+      ]
+    },
+    {
+      "state": "Madhya Pradesh",
+      "site_count": 3,
+      "sites": [
+        {
+          "id": "unesco-khajuraho",
+          "official_unesco_name": "Khajuraho Group of Monuments",
+          "category": "Cultural",
+          "inscription_year": 1986,
+          "coordinates": {
+            "latitude": 24.8318,
+            "longitude": 79.9199
+          }
+        },
+        {
+          "id": "unesco-sanchi",
+          "official_unesco_name": "Buddhist Monuments at Sanchi",
+          "category": "Cultural",
+          "inscription_year": 1989,
+          "coordinates": {
+            "latitude": 23.4795,
+            "longitude": 77.7397
+          }
+        },
+        {
+          "id": "unesco-bhimbetka",
+          "official_unesco_name": "Rock Shelters of Bhimbetka",
+          "category": "Cultural",
+          "inscription_year": 2003,
+          "coordinates": {
+            "latitude": 22.9372,
+            "longitude": 77.6127
+          }
+        }
+      ]
+    },
+    {
+      "state": "Maharashtra",
+      "site_count": 5,
+      "sites": [
+        {
+          "id": "unesco-ajanta-caves",
+          "official_unesco_name": "Ajanta Caves",
+          "category": "Cultural",
+          "inscription_year": 1983,
+          "coordinates": {
+            "latitude": 20.5519,
+            "longitude": 75.7033
+          }
+        },
+        {
+          "id": "unesco-ellora-caves",
+          "official_unesco_name": "Ellora Caves",
+          "category": "Cultural",
+          "inscription_year": 1983,
+          "coordinates": {
+            "latitude": 20.0268,
+            "longitude": 75.1792
+          }
+        },
+        {
+          "id": "unesco-elephanta",
+          "official_unesco_name": "Elephanta Caves",
+          "category": "Cultural",
+          "inscription_year": 1987,
+          "coordinates": {
+            "latitude": 18.9633,
+            "longitude": 72.9315
+          }
+        },
+        {
+          "id": "unesco-csmt",
+          "official_unesco_name": "Chhatrapati Shivaji Maharaj Terminus (formerly Victoria Terminus)",
+          "category": "Cultural",
+          "inscription_year": 2004,
+          "coordinates": {
+            "latitude": 18.94,
+            "longitude": 72.8353
+          }
+        },
+        {
+          "id": "unesco-mumbai-victorian-art-deco",
+          "official_unesco_name": "Victorian Gothic and Art Deco Ensembles of Mumbai",
+          "category": "Cultural",
+          "inscription_year": 2018,
+          "coordinates": {
+            "latitude": 18.9298,
+            "longitude": 72.8296
+          }
+        }
+      ]
+    },
+    {
+      "state": "Maharashtra, Goa, Karnataka, Tamil Nadu, Kerala, Gujarat",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-western-ghats",
+          "official_unesco_name": "Western Ghats",
+          "category": "Natural",
+          "inscription_year": 2012,
+          "coordinates": {
+            "latitude": 10.15,
+            "longitude": 77.06
+          }
+        }
+      ]
+    },
+    {
+      "state": "Odisha",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-sun-temple-konark",
+          "official_unesco_name": "Sun Temple, Konark",
+          "category": "Cultural",
+          "inscription_year": 1984,
+          "coordinates": {
+            "latitude": 19.8876,
+            "longitude": 86.0945
+          }
+        }
+      ]
+    },
+    {
+      "state": "Rajasthan",
+      "site_count": 4,
+      "sites": [
+        {
+          "id": "unesco-keoladeo",
+          "official_unesco_name": "Keoladeo National Park",
+          "category": "Natural",
+          "inscription_year": 1985,
+          "coordinates": {
+            "latitude": 27.1594,
+            "longitude": 77.5204
+          }
+        },
+        {
+          "id": "unesco-jantar-mantar-jaipur",
+          "official_unesco_name": "The Jantar Mantar, Jaipur",
+          "category": "Cultural",
+          "inscription_year": 2010,
+          "coordinates": {
+            "latitude": 26.9248,
+            "longitude": 75.8246
+          }
+        },
+        {
+          "id": "unesco-hill-forts-rajasthan",
+          "official_unesco_name": "Hill Forts of Rajasthan",
+          "category": "Cultural",
+          "inscription_year": 2013,
+          "coordinates": {
+            "latitude": 24.8879,
+            "longitude": 74.6453
+          }
+        },
+        {
+          "id": "unesco-jaipur-city",
+          "official_unesco_name": "Jaipur City, Rajasthan",
+          "category": "Cultural",
+          "inscription_year": 2019,
+          "coordinates": {
+            "latitude": 26.9124,
+            "longitude": 75.7873
+          }
+        }
+      ]
+    },
+    {
+      "state": "Sikkim",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-khangchendzonga",
+          "official_unesco_name": "Khangchendzonga National Park",
+          "category": "Mixed",
+          "inscription_year": 2016,
+          "coordinates": {
+            "latitude": 27.6719,
+            "longitude": 88.2044
+          }
+        }
+      ]
+    },
+    {
+      "state": "Tamil Nadu",
+      "site_count": 2,
+      "sites": [
+        {
+          "id": "unesco-mahabalipuram",
+          "official_unesco_name": "Group of Monuments at Mahabalipuram",
+          "category": "Cultural",
+          "inscription_year": 1984,
+          "coordinates": {
+            "latitude": 12.6269,
+            "longitude": 80.1927
+          }
+        },
+        {
+          "id": "unesco-great-chola-temples",
+          "official_unesco_name": "Great Living Chola Temples",
+          "category": "Cultural",
+          "inscription_year": 1987,
+          "coordinates": {
+            "latitude": 10.7828,
+            "longitude": 79.1318
+          }
+        }
+      ]
+    },
+    {
+      "state": "Telangana",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-ramappa-temple",
+          "official_unesco_name": "Kakatiya Rudreshwara (Ramappa) Temple, Telangana",
+          "category": "Cultural",
+          "inscription_year": 2021,
+          "coordinates": {
+            "latitude": 18.2636,
+            "longitude": 79.9408
+          }
+        }
+      ]
+    },
+    {
+      "state": "Uttar Pradesh",
+      "site_count": 3,
+      "sites": [
+        {
+          "id": "unesco-taj-mahal",
+          "official_unesco_name": "Taj Mahal",
+          "category": "Cultural",
+          "inscription_year": 1983,
+          "coordinates": {
+            "latitude": 27.1751,
+            "longitude": 78.0421
+          }
+        },
+        {
+          "id": "unesco-agra-fort",
+          "official_unesco_name": "Agra Fort",
+          "category": "Cultural",
+          "inscription_year": 1983,
+          "coordinates": {
+            "latitude": 27.1795,
+            "longitude": 78.0211
+          }
+        },
+        {
+          "id": "unesco-fatehpur-sikri",
+          "official_unesco_name": "Fatehpur Sikri",
+          "category": "Cultural",
+          "inscription_year": 1986,
+          "coordinates": {
+            "latitude": 27.0945,
+            "longitude": 77.6679
+          }
+        }
+      ]
+    },
+    {
+      "state": "Uttarakhand",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-nanda-devi",
+          "official_unesco_name": "Nanda Devi and Valley of Flowers National Parks",
+          "category": "Natural",
+          "inscription_year": 1988,
+          "coordinates": {
+            "latitude": 30.728,
+            "longitude": 79.6053
+          }
+        }
+      ]
+    },
+    {
+      "state": "West Bengal",
+      "site_count": 2,
+      "sites": [
+        {
+          "id": "unesco-sundarbans",
+          "official_unesco_name": "Sundarbans National Park",
+          "category": "Natural",
+          "inscription_year": 1987,
+          "coordinates": {
+            "latitude": 21.9497,
+            "longitude": 89.1833
+          }
+        },
+        {
+          "id": "unesco-santiniketan",
+          "official_unesco_name": "Santiniketan",
+          "category": "Cultural",
+          "inscription_year": 2023,
+          "coordinates": {
+            "latitude": 23.68,
+            "longitude": 87.69
+          }
+        }
+      ]
+    },
+    {
+      "state": "West Bengal, Tamil Nadu, Himachal Pradesh",
+      "site_count": 1,
+      "sites": [
+        {
+          "id": "unesco-mountain-railways",
+          "official_unesco_name": "Mountain Railways of India",
+          "category": "Cultural",
+          "inscription_year": 1999,
+          "coordinates": {
+            "latitude": 27.036,
+            "longitude": 88.2627
+          }
+        }
+      ]
+    }
+  ]
+}
