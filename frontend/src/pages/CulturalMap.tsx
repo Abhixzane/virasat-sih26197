@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { BookOpen, Compass } from 'lucide-react';
 import { api } from '../services/api';
 import { MapMarker } from '../types/cultural';
@@ -10,9 +11,26 @@ interface CulturalMapPageProps {
 }
 
 export const CulturalMapPage: React.FC<CulturalMapPageProps> = ({ onExploreRelated }) => {
+  const [searchParams] = useSearchParams();
+  const initialDestination = searchParams.get('destination') || searchParams.get('city') || '';
+  const initialMode = searchParams.get('mode') || '';
+  const initialLat = searchParams.get('lat') ? parseFloat(searchParams.get('lat')!) : undefined;
+  const initialLng = searchParams.get('lng') ? parseFloat(searchParams.get('lng')!) : undefined;
+  const initialName = searchParams.get('name') || '';
+
   const [markers, setMarkers] = useState<MapMarker[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedState, setSelectedState] = useState<string>('');
+
+  // Auto-set state if initialDestination is a recognized state
+  useEffect(() => {
+    if (initialDestination) {
+      const match = popularStates.find(st => st.toLowerCase() === initialDestination.toLowerCase());
+      if (match && match !== 'All') {
+        setSelectedState(match);
+      }
+    }
+  }, [initialDestination]);
 
   useEffect(() => {
     let isMounted = true;
@@ -127,6 +145,9 @@ export const CulturalMapPage: React.FC<CulturalMapPageProps> = ({ onExploreRelat
           onSelectMarker={onExploreRelated}
           selectedState={selectedState}
           onSelectState={(st) => setSelectedState(st)}
+          initialDestination={initialDestination}
+          initialMode={initialMode}
+          initialTargetPoint={initialLat && initialLng ? { lat: initialLat, lng: initialLng, name: initialName } : undefined}
         />
       )}
 

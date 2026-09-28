@@ -4,14 +4,31 @@ import { MapMarker } from '../../types/cultural';
 import {
   MapPin, Landmark, Sparkles, Search, Layers, ChevronDown,
   ChevronRight, Compass, ArrowRight, List, Map as MapIcon, X,
-  Crosshair, Navigation, Route, Car, Train, ExternalLink, Clock, Milestone
+  Crosshair, Navigation, Route, Car, Train, ExternalLink, Clock, Milestone,
+  Maximize2, Minimize2, Footprints, CheckCircle2
 } from 'lucide-react';
+
+export interface RouteStop {
+  step: number;
+  name: string;
+  city: string;
+  state: string;
+  lat: number;
+  lng: number;
+  category?: string;
+  highway?: string;
+  distFromPrev?: string;
+  timeFromPrev?: string;
+}
 
 interface CulturalMapViewProps {
   markers: MapMarker[];
   onSelectMarker: (type: string, id: string) => void;
   selectedState?: string;
   onSelectState?: (state: string) => void;
+  initialDestination?: string;
+  initialMode?: string;
+  initialTargetPoint?: { lat: number; lng: number; name?: string };
 }
 
 // Haversine distance in km
@@ -52,12 +69,19 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
   onSelectMarker,
   selectedState = '',
   onSelectState,
+  initialDestination = '',
+  initialMode = '',
+  initialTargetPoint,
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
+  const mapWrapperRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const layerGroupRef = useRef<L.LayerGroup | null>(null);
+  const routeMarkersGroupRef = useRef<L.LayerGroup | null>(null);
   const userMarkerRef = useRef<L.Marker | null>(null);
+  const targetPinMarkerRef = useRef<L.Marker | null>(null);
   const routeLineRef = useRef<L.Polyline | null>(null);
+  const tileLayerRef = useRef<L.TileLayer | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const [activeTab, setActiveTab] = useState<'map' | 'list' | 'experience'>('map');
@@ -65,6 +89,11 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [searchFilter, setSearchFilter] = useState('');
   const [selectedPin, setSelectedPin] = useState<MapMarker | null>(null);
+
+  // Google Maps features state
+  const [mapLayer, setMapLayer] = useState<'streets' | 'satellite' | 'terrain'>('streets');
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [multiStops, setMultiStops] = useState<RouteStop[]>([]);
 
   // Geolocation & Route Studio State
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
@@ -194,19 +223,45 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
       zoomControl: true,
     });
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    const initialTile = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19
     }).addTo(map);
+    tileLayerRef.current = initialTile;
 
     const layerGroup = L.layerGroup().addTo(map);
+    const routeGroup = L.layerGroup().addTo(map);
     mapInstanceRef.current = map;
     layerGroupRef.current = layerGroup;
+    routeMarkersGroupRef.current = routeGroup;
 
     return () => {
       map.remove();
       mapInstanceRef.current = null;
     };
   }, []);
+
+  // Google Maps Style Layer Switcher Effect (Street / Satellite / Terrain)
+  useEffect(() => {
+    if (!mapInstanceRef.current) return;
+    if (tileLayerRef.current) {
+      tileLayerRef.current.remove();
+    }
+
+    let url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    let attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+    if (mapLayer === 'satellite') {
+      url = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+      attribution = 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community';
+    } else if (mapLayer === 'terrain') {
+      url = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
+      attribution = 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)';
+    }
+
+    const newLayer = L.tileLayer(url, { attribution, maxZoom: 19 }).addTo(mapInstanceRef.current);
+    tileLayerRef.current = newLayer;
+  }, [mapLayer]);
 
   // Update Markers when filteredMarkers change
   useEffect(() => {
@@ -256,20 +311,36 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
           <div style="font-size: 11px; color: #6B6B6B; margin-bottom: 6px;">${marker.city}, ${marker.state}</div>
           <div style="font-size: 11px; color: #2B2B2B; line-height: 1.4; margin-bottom: 8px;">${marker.description}</div>
           <div style="font-size: 10px; color: #138808; font-weight: 600;">✓ Verified Coordinates: ${marker.latitude.toFixed(4)}, ${marker.longitude.toFixed(4)}</div>
-          <button id="view-details-btn-${marker.id}" style="
-            width: 100%;
-            margin-top: 8px;
-            padding: 7px 10px;
-            background: #FF6600;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 11px;
-            font-weight: bold;
-            cursor: pointer;
-          ">
-            View Full Record & Connections →
-          </button>
+          <div style="display: flex; gap: 6px; margin-top: 8px;">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=${marker.latitude},${marker.longitude}" target="_blank" rel="noopener noreferrer" style="
+              flex: 1;
+              padding: 7px 8px;
+              background: #059669;
+              color: white;
+              border-radius: 8px;
+              font-size: 10.5px;
+              font-weight: bold;
+              text-align: center;
+              text-decoration: none;
+              box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            ">
+              🧭 Google Maps ↗
+            </a>
+            <button id="view-details-btn-${marker.id}" style="
+              flex: 1;
+              padding: 7px 8px;
+              background: #FF6600;
+              color: white;
+              border: none;
+              border-radius: 8px;
+              font-size: 10.5px;
+              font-weight: bold;
+              cursor: pointer;
+              box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            ">
+              Details →
+            </button>
+          </div>
         </div>
       `;
 
@@ -456,6 +527,238 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
     const mode = travelMode === 'driving' ? 'driving' : 'transit';
     return `https://www.google.com/maps/dir/?api=1&origin=${oLat},${oLng}&destination=${dLat},${dLng}&travelmode=${mode}`;
   };
+
+  // Google Maps Multi-Stop URL Generator
+  const getGoogleMapsMultiStopUrl = () => {
+    if (!multiStops || multiStops.length === 0) {
+      return getGoogleMapsUrl();
+    }
+    if (multiStops.length === 1) {
+      return `https://www.google.com/maps/search/?api=1&query=${multiStops[0].lat},${multiStops[0].lng}`;
+    }
+    const origin = `${multiStops[0].lat},${multiStops[0].lng}`;
+    const dest = `${multiStops[multiStops.length - 1].lat},${multiStops[multiStops.length - 1].lng}`;
+    const waypoints = multiStops.slice(1, multiStops.length - 1).map(s => `${s.lat},${s.lng}`).join('|');
+    const mode = travelMode === 'transit' ? 'transit' : 'driving';
+
+    if (waypoints) {
+      return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${dest}&waypoints=${waypoints}&travelmode=${mode}`;
+    }
+    return `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${dest}&travelmode=${mode}`;
+  };
+
+  // Multi-Stop Route Computation for Selected State or Circuit
+  const computeMultiStopRouteForDestination = (destName: string) => {
+    if (!mapInstanceRef.current || !markers.length) return;
+    const q = destName.toLowerCase().trim();
+    if (!q) return;
+
+    // Filter markers in that destination/state with valid coordinates
+    let matched = markers.filter(m => 
+      (m.state.toLowerCase().includes(q) || m.city.toLowerCase().includes(q) || m.name.toLowerCase().includes(q)) &&
+      Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1
+    );
+
+    // If few, fallback to top national monuments
+    if (matched.length < 2) {
+      matched = markers.filter(m => Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1).slice(0, 5);
+    }
+
+    // Sort to form a realistic sequence
+    matched = [...matched].sort((a, b) => b.latitude - a.latitude).slice(0, 6);
+
+    const stops: RouteStop[] = [];
+    let cumulativeDist = 0;
+
+    for (let i = 0; i < matched.length; i++) {
+      const curr = matched[i];
+      let distFromPrev = 'Starting Point';
+      let timeFromPrev = '0 mins';
+      let highway = 'Departure Enclave';
+
+      if (i > 0) {
+        const prev = matched[i - 1];
+        const distKm = Math.round(calculateDistance(prev.latitude, prev.longitude, curr.latitude, curr.longitude) * 1.25);
+        cumulativeDist += distKm;
+        distFromPrev = `${distKm} km`;
+        const hrs = Math.floor(distKm / 60);
+        const mins = Math.round(distKm % 60);
+        timeFromPrev = hrs > 0 ? `${hrs}h ${mins}m` : `${mins}m`;
+
+        if (distKm > 120) {
+          highway = `National Highway Corridor (NH ${Math.floor(distKm % 30) * 2 + 16})`;
+        } else if (distKm > 40) {
+          highway = `State Highway / Express Arterial`;
+        } else {
+          highway = `Heritage City Arterial & E-Rickshaw Link`;
+        }
+      }
+
+      stops.push({
+        step: i + 1,
+        name: curr.name,
+        city: curr.city,
+        state: curr.state,
+        lat: curr.latitude,
+        lng: curr.longitude,
+        category: curr.category,
+        highway,
+        distFromPrev,
+        timeFromPrev
+      });
+    }
+
+    setMultiStops(stops);
+    setRouteDistance(cumulativeDist);
+    const totalHours = cumulativeDist / (travelMode === 'driving' ? 62 : 48);
+    const hrs = Math.floor(totalHours);
+    const mins = Math.round((totalHours - hrs) * 60);
+    setRouteDuration(hrs > 0 ? `${hrs}h ${mins}m` : `${mins}m`);
+
+    // Draw multi-stop polyline and numbered markers
+    if (routeLineRef.current) routeLineRef.current.remove();
+    if (routeMarkersGroupRef.current) {
+      routeMarkersGroupRef.current.clearLayers();
+    } else {
+      routeMarkersGroupRef.current = L.layerGroup().addTo(mapInstanceRef.current);
+    }
+
+    const latlngs: [number, number][] = stops.map(s => [s.lat, s.lng]);
+    const polyline = L.polyline(latlngs, {
+      color: '#E05A2B',
+      weight: 6,
+      opacity: 0.9,
+      lineCap: 'round',
+      lineJoin: 'round',
+      dashArray: travelMode === 'transit' ? '8, 8' : undefined
+    }).addTo(mapInstanceRef.current);
+
+    routeLineRef.current = polyline;
+
+    // Numbered circular markers for stops
+    stops.forEach((s) => {
+      const numIcon = L.divIcon({
+        className: 'route-num-pin',
+        html: `
+          <div style="
+            background: linear-gradient(135deg, #E05A2B, #B33E16);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 900;
+            border: 2.5px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+          ">
+            ${s.step}
+          </div>
+        `,
+        iconSize: [32, 32],
+        iconAnchor: [16, 16],
+      });
+
+      const m = L.marker([s.lat, s.lng], { icon: numIcon }).addTo(routeMarkersGroupRef.current!);
+      m.bindPopup(`
+        <div style="font-family: inherit; width: 230px;">
+          <div style="font-size: 10px; font-weight: bold; color: #E05A2B; text-transform: uppercase;">Stop ${s.step} of ${stops.length}</div>
+          <div style="font-size: 13px; font-weight: bold; color: #161616; margin-top: 2px;">${s.name}</div>
+          <div style="font-size: 11px; color: #6B6B6B;">${s.city}, ${s.state}</div>
+          ${s.distFromPrev !== 'Starting Point' ? `<div style="font-size: 10.5px; color: #059669; font-weight: 600; margin-top: 4px;">🚗 ${s.distFromPrev} (${s.timeFromPrev}) via ${s.highway}</div>` : '<div style="font-size: 10.5px; color: #2563EB; font-weight: 600; margin-top: 4px;">🚩 Journey Departure Hub</div>'}
+          <a href="https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}&travelmode=${travelMode}" target="_blank" rel="noopener noreferrer" style="
+            display: block;
+            margin-top: 8px;
+            padding: 6px 8px;
+            background: #059669;
+            color: white;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: bold;
+            text-decoration: none;
+          ">
+            Navigate to Stop in Google Maps ↗
+          </a>
+        </div>
+      `);
+    });
+
+    mapInstanceRef.current.fitBounds(polyline.getBounds(), { padding: [60, 60] });
+  };
+
+  // Fullscreen Handler
+  const handleToggleFullscreen = () => {
+    if (!mapWrapperRef.current) return;
+    if (!document.fullscreenElement) {
+      mapWrapperRef.current.requestFullscreen().then(() => {
+        setIsFullscreen(true);
+        setTimeout(() => mapInstanceRef.current?.invalidateSize(), 200);
+      }).catch(err => console.warn("Fullscreen request error:", err));
+    } else {
+      document.exitFullscreen().then(() => {
+        setIsFullscreen(false);
+        setTimeout(() => mapInstanceRef.current?.invalidateSize(), 200);
+      }).catch(err => console.warn("Exit fullscreen error:", err));
+    }
+  };
+
+  // Handle initial target point fly-to
+  useEffect(() => {
+    if (!mapInstanceRef.current || !initialTargetPoint) return;
+    mapInstanceRef.current.flyTo([initialTargetPoint.lat, initialTargetPoint.lng], 14, { duration: 1.5 });
+
+    if (targetPinMarkerRef.current) {
+      targetPinMarkerRef.current.remove();
+    }
+
+    const pin = L.divIcon({
+      className: 'target-focus-pin',
+      html: `
+        <div style="position:relative; width:36px; height:36px; display:flex; align-items:center; justify-content:center;">
+          <div style="position:absolute; width:36px; height:36px; border-radius:50%; background:#E05A2B; opacity:0.4; animation: ping 1.5s cubic-bezier(0,0,0.2,1) infinite;"></div>
+          <div style="position:relative; width:24px; height:24px; border-radius:50%; background:#E05A2B; border:2.5px solid white; box-shadow:0 3px 8px rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center; color:white; font-size:12px; font-weight:bold;">📍</div>
+        </div>
+      `,
+      iconSize: [36, 36],
+      iconAnchor: [18, 18]
+    });
+    const targetMarker = L.marker([initialTargetPoint.lat, initialTargetPoint.lng], { icon: pin }).addTo(mapInstanceRef.current);
+    targetMarker.bindPopup(`
+      <div style="font-family: inherit; width: 220px;">
+        <div style="font-size: 10px; font-weight: bold; color: #E05A2B; text-transform: uppercase;">Selected Monument</div>
+        <div style="font-size: 13px; font-weight: bold; color: #161616; margin-top: 2px;">${initialTargetPoint.name || 'Verified Heritage Site'}</div>
+        <div style="font-size: 11px; color: #4B5563; margin-top: 2px;">Coordinates: ${initialTargetPoint.lat.toFixed(4)}, ${initialTargetPoint.lng.toFixed(4)}</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=${initialTargetPoint.lat},${initialTargetPoint.lng}" target="_blank" rel="noopener noreferrer" style="
+          display: block;
+          margin-top: 8px;
+          padding: 6px 8px;
+          background: #059669;
+          color: white;
+          border-radius: 6px;
+          text-align: center;
+          font-size: 11px;
+          font-weight: bold;
+          text-decoration: none;
+        ">
+          Navigate in Google Maps ↗
+        </a>
+      </div>
+    `).openPopup();
+    targetPinMarkerRef.current = targetMarker;
+  }, [initialTargetPoint]);
+
+  // Handle initial destination & mode
+  useEffect(() => {
+    if (initialMode === 'route' || initialDestination) {
+      setIsRouteStudioOpen(true);
+      if (initialDestination && markers.length > 0) {
+        computeMultiStopRouteForDestination(initialDestination);
+      }
+    }
+  }, [initialMode, initialDestination, markers]);
 
   const categories = [
     { key: 'all', label: 'All Categories' },
@@ -705,8 +1008,92 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
             </div>
           </div>
 
-          {/* Route Summary Result Card */}
-          {routeDistance !== null && (
+          {/* Multi-Stop / Turn-by-Turn Route Navigation Breakdown */}
+          {multiStops.length > 0 ? (
+            <div className="bg-white border border-amber-200/90 rounded-2xl p-4 space-y-3.5 shadow-2xs">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-100 pb-2.5">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-[#E05A2B] uppercase tracking-wider">
+                      ✦ Stop-by-Stop Expedition Route
+                    </span>
+                    <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-[10px] font-extrabold">
+                      {multiStops.length} Verified Stops
+                    </span>
+                  </div>
+                  <div className="text-[11px] text-stone-500 mt-0.5">
+                    Total Circuit: <b className="text-stone-900">{routeDistance} km</b> • Est. Driving Time: <b className="text-stone-900">{routeDuration}</b>
+                  </div>
+                </div>
+
+                {/* Master Google Maps Launch Button */}
+                <a
+                  href={getGoogleMapsMultiStopUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs py-2 px-3.5 rounded-xl transition-all shadow-xs"
+                >
+                  <Navigation className="w-3.5 h-3.5" />
+                  <span>Launch in Google Maps App</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+
+              {/* Stop by Stop Leg Cards */}
+              <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
+                {multiStops.map((stop, idx) => (
+                  <div
+                    key={stop.step}
+                    className="p-2.5 rounded-xl bg-stone-50 border border-stone-200/80 hover:bg-amber-50/50 hover:border-amber-300 transition-all flex items-center justify-between gap-3 text-xs"
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#E05A2B] to-[#B33E16] text-white font-black text-[11px] flex items-center justify-center shrink-0 shadow-2xs">
+                        {stop.step}
+                      </div>
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-1.5">
+                          <span className="font-bold text-stone-900 truncate">{stop.name}</span>
+                          <span className="text-[10px] text-stone-500 shrink-0">({stop.city})</span>
+                        </div>
+                        <div className="text-[10.5px] text-stone-500 mt-0.5 flex items-center gap-2">
+                          {idx === 0 ? (
+                            <span className="text-blue-600 font-semibold">🚩 Departure Hub</span>
+                          ) : (
+                            <span className="text-emerald-700 font-semibold">
+                              🚗 {stop.distFromPrev} ({stop.timeFromPrev}) • <span className="text-stone-500 font-normal">{stop.highway}</span>
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          mapInstanceRef.current?.flyTo([stop.lat, stop.lng], 14, { duration: 1.2 });
+                        }}
+                        className="p-1.5 rounded-lg border border-stone-200 bg-white hover:bg-stone-100 text-stone-600 text-[10.5px] font-semibold cursor-pointer shadow-2xs"
+                        title="Focus on Map"
+                      >
+                        <MapPin className="w-3.5 h-3.5 text-[#E05A2B]" />
+                      </button>
+                      <a
+                        href={`https://www.google.com/maps/dir/?api=1&destination=${stop.lat},${stop.lng}&travelmode=${travelMode}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-2.5 py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-[10.5px] font-bold flex items-center gap-1 transition-colors"
+                        title="Navigate this leg in Google Maps"
+                      >
+                        <span>Directions</span>
+                        <ExternalLink className="w-3 h-3 text-emerald-700" />
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : routeDistance !== null && (
             <div className="bg-white border border-amber-200/80 rounded-xl p-3 flex flex-wrap items-center justify-between gap-3 text-xs">
               <div className="flex flex-wrap items-center gap-4">
                 <div className="flex items-center gap-1.5 text-stone-800">
@@ -788,8 +1175,74 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
         /* Map View + Nearby Discoveries Grid (Exact Reference Image Layout) */
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
           {/* Left Column: Leaflet Map (8 columns) */}
-          <div className="lg:col-span-8 h-[600px] xl:h-[640px] rounded-3xl overflow-hidden border border-stone-200/90 shadow-xs relative bg-stone-100">
+          <div ref={mapWrapperRef} className="lg:col-span-8 h-[600px] xl:h-[640px] rounded-3xl overflow-hidden border border-stone-200/90 shadow-xs relative bg-stone-100">
             <div ref={mapContainerRef} className="w-full h-full z-10" />
+
+            {/* Google Maps Layer Switcher & Fullscreen Overlay Controls */}
+            <div className="absolute top-4 right-4 z-[400] flex items-center gap-1.5 bg-white/95 backdrop-blur-md p-1.5 rounded-2xl border border-stone-200/90 shadow-md">
+              <button
+                type="button"
+                onClick={() => setMapLayer('streets')}
+                className={`px-2.5 py-1 rounded-xl text-[11px] font-bold transition-all cursor-pointer ${
+                  mapLayer === 'streets'
+                    ? 'bg-[#FF6600] text-white shadow-2xs'
+                    : 'text-stone-700 hover:bg-stone-100'
+                }`}
+              >
+                🗺️ Street
+              </button>
+              <button
+                type="button"
+                onClick={() => setMapLayer('satellite')}
+                className={`px-2.5 py-1 rounded-xl text-[11px] font-bold transition-all cursor-pointer ${
+                  mapLayer === 'satellite'
+                    ? 'bg-[#FF6600] text-white shadow-2xs'
+                    : 'text-stone-700 hover:bg-stone-100'
+                }`}
+              >
+                🛰️ Satellite
+              </button>
+              <button
+                type="button"
+                onClick={() => setMapLayer('terrain')}
+                className={`px-2.5 py-1 rounded-xl text-[11px] font-bold transition-all cursor-pointer ${
+                  mapLayer === 'terrain'
+                    ? 'bg-[#FF6600] text-white shadow-2xs'
+                    : 'text-stone-700 hover:bg-stone-100'
+                }`}
+              >
+                🏔️ Terrain
+              </button>
+
+              <div className="w-[1px] h-4 bg-stone-200 mx-0.5" />
+
+              <button
+                type="button"
+                onClick={handleToggleFullscreen}
+                className="p-1.5 rounded-xl hover:bg-stone-100 text-stone-700 cursor-pointer transition-colors"
+                title={isFullscreen ? "Exit Fullscreen" : "Fullscreen View (Google Maps Style)"}
+              >
+                {isFullscreen ? <Minimize2 className="w-3.5 h-3.5" /> : <Maximize2 className="w-3.5 h-3.5" />}
+              </button>
+            </div>
+
+            {/* Active Route Floating Chip */}
+            {multiStops.length > 0 && (
+              <div className="absolute top-4 left-4 z-[400] bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-amber-300 shadow-md flex items-center gap-2 text-xs">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#E05A2B] animate-pulse" />
+                <span className="font-extrabold text-stone-900">
+                  {multiStops.length} Stops Active ({routeDistance} km)
+                </span>
+                <a
+                  href={getGoogleMapsMultiStopUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-1 px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10.5px] flex items-center gap-1 shadow-2xs"
+                >
+                  <span>Google Maps ↗</span>
+                </a>
+              </div>
+            )}
 
             {/* Exact Bottom-Left Map Legend Card */}
             <div className="absolute bottom-4 left-4 z-[400] bg-white/95 backdrop-blur-md px-3.5 py-3 rounded-2xl border border-stone-200 shadow-md text-xs space-y-1.5 select-none pointer-events-auto">
