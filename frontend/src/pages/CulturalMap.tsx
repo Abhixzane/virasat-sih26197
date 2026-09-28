@@ -5,6 +5,7 @@ import { api } from '../services/api';
 import { MapMarker } from '../types/cultural';
 import { CulturalMapView } from '../components/map/CulturalMapView';
 import { StatsCounterBar } from '../components/shared/TricolourBranding';
+import { INDIA_ALL_STATES_AND_UTS } from '../data/indiaCitiesMaster';
 
 interface CulturalMapPageProps {
   onExploreRelated: (type: string, id: string) => void;
@@ -126,6 +127,21 @@ export const CulturalMapPage: React.FC<CulturalMapPageProps> = ({ onExploreRelat
               </button>
             );
           })}
+
+          {/* Complete 36 States & UTs selector */}
+          <select
+            value={selectedState || 'All'}
+            onChange={(e) => setSelectedState(e.target.value === 'All' ? '' : e.target.value)}
+            className="px-3 py-1 rounded-full text-xs font-semibold bg-stone-100 hover:bg-stone-200/80 border border-stone-300 text-stone-800 outline-none cursor-pointer"
+            title="Select from all 28 States and 8 Union Territories"
+          >
+            <option value="All">More States / UTs (All 36)...</option>
+            {INDIA_ALL_STATES_AND_UTS.map((st) => (
+              <option key={st} value={st}>
+                {st}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div className="text-xs text-stone-600 font-medium ml-auto select-none">

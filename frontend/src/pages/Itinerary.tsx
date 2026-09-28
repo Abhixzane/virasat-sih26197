@@ -12,6 +12,7 @@ import {
 import { api } from '../services/api';
 import { ItineraryResponse, ItineraryDay, HeritagePlace } from '../types/cultural';
 import { MonumentSkyline } from '../components/shared/TricolourBranding';
+import { INDIA_MASTER_CITIES, ALL_CITY_COORDINATES_MAP, INDIA_ALL_STATES_AND_UTS } from '../data/indiaCitiesMaster';
 
 interface ItineraryPageProps {
   onExploreRelated: (type: string, id: string) => void;
@@ -382,8 +383,9 @@ const CIRCUIT_DOSSIERS: Record<string, CircuitDossier> = {
   },
 };
 
-// Comprehensive city coordinates for genuine geographic routing
+// Comprehensive city coordinates for genuine geographic routing (All 962 cities from 28 states & 8 UTs)
 const MAJOR_CITY_COORDINATES: Record<string, { lat: number; lng: number }> = {
+  ...ALL_CITY_COORDINATES_MAP,
   'delhi': { lat: 28.6139, lng: 77.2090 },
   'new delhi': { lat: 28.6139, lng: 77.2090 },
   'agra': { lat: 27.1767, lng: 78.0081 },
@@ -776,21 +778,14 @@ export const ItineraryPage: React.FC<ItineraryPageProps> = ({ onExploreRelated }
     { label: '🧘 Bodh Gaya & Nalanda', dest: 'Bihar' },
   ];
 
-  const INDIAN_CITIES_SUGGESTIONS = [
-    'Agra', 'Ahmedabad', 'Ajmer', 'Aligarh', 'Almora', 'Alwar', 'Amritsar', 'Aurangabad (Chhatrapati Sambhajinagar)',
-    'Ayodhya', 'Badami', 'Bengaluru', 'Bhopal', 'Bhubaneswar', 'Bhuj', 'Bikaner', 'Bodh Gaya',
-    'Chamba', 'Chandigarh', 'Chennai', 'Chidambaram', 'Chittorgarh', 'Coimbatore', 'Cuttack',
-    'Darjeeling', 'Dehradun', 'Delhi', 'Dharamshala', 'Dwarka', 'Fatehpur Sikri', 'Gaya', 'Gwalior',
-    'Halebidu', 'Hampi', 'Haridwar', 'Hyderabad', 'Indore', 'Jaipur', 'Jaisalmer', 'Jammu', 'Jhansi',
-    'Jodhpur', 'Kanchipuram', 'Kannur', 'Kanyakumari', 'Khajuraho', 'Kochi', 'Kolkata', 'Kollam',
-    'Konark', 'Kozhikode', 'Kullu', 'Kumbakonam', 'Kumbhalgarh', 'Kurukshetra', 'Leh', 'Lucknow',
-    'Madurai', 'Mahabalipuram', 'Maheshwar', 'Manali', 'Mandu', 'Mathura', 'Mount Abu', 'Mumbai',
-    'Munnar', 'Mussoorie', 'Mysore', 'Nainital', 'Nalanda', 'Nashik', 'Ooty', 'Orchha', 'Patan',
-    'Patna', 'Pattadakal', 'Pondicherry', 'Prayagraj', 'Pune', 'Puri', 'Pushkar', 'Rajgir',
-    'Rameswaram', 'Ranchi', 'Rishikesh', 'Sanchi', 'Shillong', 'Shimla', 'Shirdi', 'Somnath',
-    'Srinagar', 'Tanjore (Thanjavur)', 'Thiruvananthapuram', 'Tiruchirappalli', 'Tirupati', 'Udaipur',
-    'Ujjain', 'Vadodara', 'Varanasi (Kashi)', 'Vellore', 'Vijayawada', 'Visakhapatnam', 'Vrindavan', 'Warangal'
-  ];
+  const INDIAN_CITIES_SUGGESTIONS = React.useMemo(() => {
+    const list: string[] = [];
+    INDIA_ALL_STATES_AND_UTS.forEach((s) => list.push(s));
+    INDIA_MASTER_CITIES.forEach((c) => {
+      list.push(c.name);
+    });
+    return Array.from(new Set(list));
+  }, []);
 
 
   const exploreTabs = [

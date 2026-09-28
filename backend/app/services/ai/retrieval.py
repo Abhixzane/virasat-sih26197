@@ -337,7 +337,17 @@ class AIRetrievalEngine:
                 if s.source_url and s.source_url not in sources:
                     sources.append(s.source_url)
 
-        # 8. Anaphora / Pronoun resolution across conversation history (English & Hindi/Hinglish)
+        # 8. Check cities and cultural destinations (All 28 States & 8 UTs)
+        for c in self.repo.states_and_cities:
+            if matches_entity(c.name, c.id, c.state, ""):
+                d = c.model_dump()
+                d["_entity_type"] = "city"
+                if not any(r.get("id") == d.get("id") for r in retrieved_records):
+                    retrieved_records.append(d)
+                if getattr(c, "source_url", None) and c.source_url not in sources:
+                    sources.append(c.source_url)
+
+        # 9. Anaphora / Pronoun resolution across conversation history (English & Hindi/Hinglish)
         pronoun_pattern = r'\b(it|its|this|that|these|those|there|here|the monument|the temple|the tomb|the fort|the palace|the site|the craft|the art|the festival|the place|woh|woh jagah|wahan|uske|uske paas|iska|iski|iski history|udhar|pehle wala|previous wala|previous one|is jagah|us jagah)\b'
         has_pronoun = bool(re.search(pronoun_pattern, clean_q))
         is_follow_up = has_pronoun or (len(words) == 0 and len(clean_q.split()) <= 6)

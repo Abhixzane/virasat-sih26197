@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import { MapMarker } from '../../types/cultural';
+import { INDIA_MASTER_CITIES, MasterCityEntry } from '../../data/indiaCitiesMaster';
 import {
   MapPin, Landmark, Sparkles, Search, Layers, ChevronDown,
   ChevronRight, Compass, ArrowRight, List, Map as MapIcon, X,
@@ -83,12 +84,17 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
   const routeLineRef = useRef<L.Polyline | null>(null);
   const tileLayerRef = useRef<L.TileLayer | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const suggestionsBoxRef = useRef<HTMLDivElement>(null);
 
   const [activeTab, setActiveTab] = useState<'map' | 'list' | 'experience'>('map');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [searchFilter, setSearchFilter] = useState('');
   const [selectedPin, setSelectedPin] = useState<MapMarker | null>(null);
+
+  // 962 Indian Cities Auto-suggestion state
+  const [searchSuggestions, setSearchSuggestions] = useState<MasterCityEntry[]>([]);
+  const [isSuggestionsOpen, setIsSuggestionsOpen] = useState(false);
 
   // Google Maps features state
   const [mapLayer, setMapLayer] = useState<'streets' | 'satellite' | 'terrain'>('streets');
@@ -106,6 +112,21 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
   const [routeDistance, setRouteDistance] = useState<number | null>(null);
   const [routeDuration, setRouteDuration] = useState<string | null>(null);
 
+  // Filter city search suggestions across all 962 cities from 28 states & 8 UTs
+  useEffect(() => {
+    const q = searchFilter.trim().toLowerCase();
+    if (q.length >= 2) {
+      const matches = INDIA_MASTER_CITIES.filter(
+        c => c.name.toLowerCase().includes(q) || c.cleanName.toLowerCase().includes(q) || c.state.toLowerCase().includes(q)
+      ).slice(0, 10);
+      setSearchSuggestions(matches);
+      setIsSuggestionsOpen(matches.length > 0);
+    } else {
+      setSearchSuggestions([]);
+      setIsSuggestionsOpen(false);
+    }
+  }, [searchFilter]);
+
   // Set default destination when markers load
   useEffect(() => {
     if (markers.length > 0 && !routeDestination) {
@@ -119,10 +140,63 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setCategoryDropdownOpen(false);
       }
+      if (suggestionsBoxRef.current && !suggestionsBoxRef.current.contains(e.target as Node)) {
+        setIsSuggestionsOpen(false);
+      }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  // Quick Fly-to & Spotlight Pin for Selected City Suggestion
+  const handleSelectCitySuggestion = (city: MasterCityEntry) => {
+    setSearchFilter(city.name);
+    setIsSuggestionsOpen(false);
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.flyTo([city.lat, city.lng], 12);
+
+      if (targetPinMarkerRef.current) {
+        targetPinMarkerRef.current.remove();
+      }
+
+      const pin = L.divIcon({
+        className: 'city-spotlight-pin',
+        html: `
+          <div style="position:relative; width:36px; height:36px; display:flex; align-items:center; justify-content:center;">
+            <div style="position:absolute; width:36px; height:36px; border-radius:50%; background:#FF6600; opacity:0.4; animation: ping 1.5s cubic-bezier(0,0,0.2,1) infinite;"></div>
+            <div style="position:relative; width:26px; height:26px; border-radius:50%; background:#FF6600; border:2.5px solid white; box-shadow:0 3px 8px rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center; color:white; font-size:13px; font-weight:bold;">📍</div>
+          </div>
+        `,
+        iconSize: [36, 36],
+        iconAnchor: [18, 18]
+      });
+
+      const cityMarker = L.marker([city.lat, city.lng], { icon: pin }).addTo(mapInstanceRef.current);
+      cityMarker.bindPopup(`
+        <div style="font-family: inherit; width: 230px;">
+          <div style="font-size: 10px; font-weight: bold; color: #FF6600; text-transform: uppercase;">${city.state} • ${city.region}</div>
+          <div style="font-size: 14px; font-weight: bold; color: #161616; margin-top: 2px;">${city.name}</div>
+          <div style="font-size: 11px; color: #4B5563; margin-top: 4px; line-height: 1.4;">${city.description}</div>
+          <div style="font-size: 10.5px; color: #059669; font-weight: 600; margin-top: 6px;">Verified Coordinates: ${city.lat.toFixed(4)}, ${city.lng.toFixed(4)}</div>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=${city.lat},${city.lng}" target="_blank" rel="noopener noreferrer" style="
+            display: block;
+            margin-top: 8px;
+            padding: 6px 8px;
+            background: #059669;
+            color: white;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: bold;
+            text-decoration: none;
+          ">
+            Navigate in Google Maps ↗
+          </a>
+        </div>
+      `).openPopup();
+      targetPinMarkerRef.current = cityMarker;
+    }
+  };
 
   // Filter markers based on state, category, search, and active tab
   const filteredMarkers = markers.filter((m) => {
@@ -559,9 +633,28 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
       Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1
     );
 
-    // If few, fallback to top national monuments
+    // If few, check if we have cities matching in INDIA_MASTER_CITIES
     if (matched.length < 2) {
-      matched = markers.filter(m => Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1).slice(0, 5);
+      const cityMatches = INDIA_MASTER_CITIES.filter(c =>
+        c.state.toLowerCase().includes(q) || c.name.toLowerCase().includes(q) || c.region.toLowerCase().includes(q)
+      );
+      if (cityMatches.length >= 2) {
+        matched = cityMatches.map(c => ({
+          id: c.id,
+          name: c.name,
+          type: 'heritage',
+          category: 'Cultural Destination',
+          state: c.state,
+          city: c.name,
+          latitude: c.lat,
+          longitude: c.lng,
+          description: c.description,
+          image_url: '/nearby-1.jpg',
+          verification_status: 'VERIFIED'
+        }));
+      } else {
+        matched = markers.filter(m => Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1).slice(0, 5);
+      }
     }
 
     // Sort to form a realistic sequence
@@ -867,6 +960,35 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
               >
                 <X className="w-3.5 h-3.5" />
               </button>
+            )}
+
+            {/* Floating City Auto-Suggestions (962 Cities & Towns across 28 States & 8 UTs) */}
+            {isSuggestionsOpen && searchSuggestions.length > 0 && (
+              <div
+                ref={suggestionsBoxRef}
+                className="absolute left-0 top-full mt-1.5 w-72 sm:w-80 bg-white border border-stone-200 rounded-2xl shadow-xl py-1.5 z-50 animate-fadeIn text-xs max-h-64 overflow-y-auto"
+              >
+                <div className="px-3 py-1.5 text-[10px] font-bold text-stone-400 uppercase tracking-wider border-b border-stone-100 flex items-center justify-between">
+                  <span>Indian Cities & Towns ({searchSuggestions.length})</span>
+                  <span>Click to locate</span>
+                </div>
+                {searchSuggestions.map((c) => (
+                  <button
+                    key={c.id}
+                    onClick={() => handleSelectCitySuggestion(c)}
+                    className="w-full text-left px-3 py-2 hover:bg-orange-50/80 transition-colors flex items-center justify-between cursor-pointer border-b border-stone-50 last:border-0"
+                  >
+                    <div>
+                      <div className="font-bold text-stone-800 flex items-center gap-1.5">
+                        <MapPin className="w-3 h-3 text-[#FF6600] shrink-0" />
+                        <span>{c.name}</span>
+                      </div>
+                      <div className="text-[10.5px] text-stone-500 pl-4.5">{c.state} • {c.region}</div>
+                    </div>
+                    <ChevronRight className="w-3 h-3 text-stone-400 shrink-0" />
+                  </button>
+                ))}
+              </div>
             )}
           </div>
 

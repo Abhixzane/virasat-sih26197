@@ -111,6 +111,38 @@ def _filter_markers(
                 verification_status=f.verification_status
             ))
 
+    # 4. Cultural Cities & Heritage Hubs (All 28 States & 8 UTs)
+    # Guarantees exact search and map placement for all 962 verified cities and towns
+    for c in cultural_repository.states_and_cities:
+        if state and c.state.lower() != state.strip().lower():
+            continue
+        if category and category.lower() not in ["all", "cities", "city", "destination", "destinations", "heritage"] and not clean_q:
+            continue
+        if clean_q and (clean_q not in c.name.lower() and clean_q not in c.state.lower() and clean_q not in c.description.lower()):
+            continue
+
+        lat = c.coordinates.lat if hasattr(c, "coordinates") and c.coordinates else None
+        lng = c.coordinates.lng if hasattr(c, "coordinates") and c.coordinates else None
+        if lat is not None and lng is not None and abs(lat) > 0.1 and abs(lng) > 0.1:
+            if min_lat is not None and (lat < min_lat or lat > max_lat):
+                continue
+            if min_lng is not None and (lng < min_lng or lng > max_lng):
+                continue
+
+            markers.append(MapMarker(
+                id=c.id,
+                name=c.name,
+                type="experience",
+                category="Cultural Destination & Heritage Hub",
+                state=c.state,
+                city=c.name,
+                latitude=lat,
+                longitude=lng,
+                description=c.description[:200] + ("..." if len(c.description) > 200 else ""),
+                image_url=c.image_url,
+                verification_status="VERIFIED"
+            ))
+
     return markers
 
 @router.get("/cultural-map/markers", response_model=List[MapMarker])
