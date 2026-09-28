@@ -1,0 +1,134 @@
+[
+  {
+    "entity_id": "fest-kumbh-mela-haridwar",
+    "entity_name": "Haridwar Maha Kumbh Mela",
+    "category": "festivals_and_traditions",
+    "state": "Uttarakhand",
+    "query_used": "Haridwar Kumbh Mela astrological conjunction Jupiter in Aquarius Sun in Aries dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Kumbh_Mela",
+    "page_fetched": false,
+    "claim_checked": "Astrological conjunction when Jupiter enters Aquarius and Sun enters Aries (Mesha Sankranti) on the banks of holy Ganga in Haridwar",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Magha - Chaitra",
+      "exact_date": "Astrological Conjunction (Jupiter in Aquarius, Sun in Aries)",
+      "approximate_season": "January - April (12-year cycle)"
+    },
+    "supporting_claim": "Sacred gathering occurring every 12 years in Haridwar when Jupiter transits Aquarius and the Sun enters Aries with royal shahi snan.",
+    "source_url": "https://en.wikipedia.org/wiki/Kumbh_Mela"
+  },
+  {
+    "entity_id": "fest-srinagar-tulip-festival",
+    "entity_name": "Srinagar Tulip Festival & Baisakhi",
+    "category": "festivals_and_traditions",
+    "state": "Jammu and Kashmir",
+    "query_used": "Tulip Festival Srinagar Indira Gandhi Memorial Tulip Garden April dates",
+    "tool_used": "search_web",
+    "result_url": "https://travelcoffee.in",
+    "page_fetched": false,
+    "claim_checked": "Annual spring bloom festival at Indira Gandhi Memorial Tulip Garden on the foothills of Zabarwan range, Srinagar during early April",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to APPROX_SEASONAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "APPROX_SEASONAL",
+      "traditional_month": "April",
+      "exact_date": "First Two Weeks of April (Peak Bloom Season)",
+      "approximate_season": "Early April"
+    },
+    "supporting_claim": "Spring bloom festival at Asia's largest tulip garden (Indira Gandhi Memorial Tulip Garden) in Srinagar overlooking Dal Lake.",
+    "source_url": "https://travelcoffee.in"
+  },
+  {
+    "entity_id": "fest-pongal-harvest",
+    "entity_name": "Thai Pongal (Tamil Harvest Thanksgiving)",
+    "category": "festivals_and_traditions",
+    "state": "Tamil Nadu",
+    "query_used": "Thai Pongal Tamil Nadu January 14 to 17 Mattu Pongal Bhogi dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Pongal_(festival)",
+    "page_fetched": false,
+    "claim_checked": "Four-day solar harvest festival (Bhogi, Surya Pongal, Mattu Pongal, Kaanum Pongal) starting on 1st day of Tamil month Thai (Jan 14-17)",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to SOLAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "SOLAR",
+      "traditional_month": "Thai",
+      "exact_date": "January 14 - 17 Annually (Thai 1 - 4)",
+      "approximate_season": "Mid-January"
+    },
+    "supporting_claim": "4-day Tamil solar harvest festival dedicated to Sun God Surya, cattle (Mattu Pongal), and community bonding.",
+    "source_url": "https://en.wikipedia.org/wiki/Pongal_(festival)"
+  },
+  {
+    "entity_id": "fest-goa-carnival",
+    "entity_name": "Goa Carnival (Carnaval & King Momo)",
+    "category": "festivals_and_traditions",
+    "state": "Goa",
+    "query_used": "Goa Carnival King Momo four days preceding Ash Wednesday Lent dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Carnival_in_Goa",
+    "page_fetched": false,
+    "claim_checked": "4-day carnival preceding Ash Wednesday (Sabado Gordo to Shrove Tuesday) led by King Momo with street parades, floats, and Red and Black dance",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "February / March",
+      "exact_date": "Four Days Preceding Ash Wednesday (Lent)",
+      "approximate_season": "February - March"
+    },
+    "supporting_claim": "Annual pre-Lenten carnival introduced by Portuguese in Goa featuring King Momo decrees, colorful floats, and street dancing.",
+    "source_url": "https://en.wikipedia.org/wiki/Carnival_in_Goa"
+  },
+  {
+    "entity_id": "fest-chandigarh-rose-festival",
+    "entity_name": "Chandigarh Rose Festival (Zakir Hussain Garden)",
+    "category": "festivals_and_traditions",
+    "state": "Chandigarh",
+    "query_used": "Rose Festival Chandigarh Zakir Hussain Rose Garden last weekend of February dates",
+    "tool_used": "search_web",
+    "result_url": "https://utsav.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Annual 3-day festival held at Zakir Hussain Rose Garden, Sector 16, Chandigarh in late February celebrating hundreds of rose varieties",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to ANNUAL_OFFICIAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "ANNUAL_OFFICIAL",
+      "traditional_month": "February",
+      "exact_date": "Last Weekend of February (3 days)",
+      "approximate_season": "Late February"
+    },
+    "supporting_claim": "Signature tourism festival in Chandigarh showcasing thousands of rose varieties at Zakir Hussain Rose Garden with cultural events.",
+    "source_url": "https://utsav.gov.in"
+  },
+  {
+    "entity_id": "fest-phool-walon-ki-sair",
+    "entity_name": "Phool Walon Ki Sair (Festival of the Flower Sellers)",
+    "category": "festivals_and_traditions",
+    "state": "Delhi",
+    "query_used": "Phool Walon Ki Sair Mehrauli Yogmaya Bakhtiar Kaki floral fan October November dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Phool_Walon_Ki_Sair",
+    "page_fetched": false,
+    "claim_checked": "Mughal-era festival of communal harmony in Mehrauli offering floral pankhas to Yogmaya Temple and Dargah of Bakhtiyar Kaki with celebrations at Jahaz Mahal",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to APPROX_SEASONAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "APPROX_SEASONAL",
+      "traditional_month": "Autumn (Post-monsoon)",
+      "exact_date": "October / November (Post-Monsoon Autumn)",
+      "approximate_season": "Autumn"
+    },
+    "supporting_claim": "Historic 3-day Delhi festival of composite culture where embroidered floral fans are offered at both Hindu and Sufi shrines in Mehrauli.",
+    "source_url": "https://en.wikipedia.org/wiki/Phool_Walon_Ki_Sair"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-gudi-padwa",
+    "entity_name": "Gudi Padwa (Marathi New Year & Shobha Yatra)",
+    "category": "festivals_and_traditions",
+    "state": "Maharashtra",
+    "query_used": "Gudi Padwa Maharashtra Chaitra Shukla Pratipada Shobha Yatra Marathi new year dates",
+    "tool_used": "search_web",
+    "result_url": "https://maharashtratourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Observed on Chaitra Shukla Pratipada marking Marathi New Year with hoisting of the Gudi and Shobha Yatra cultural processions",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Chaitra",
+      "exact_date": "Chaitra Shukla Pratipada",
+      "approximate_season": "March - April"
+    },
+    "supporting_claim": "Marathi New Year festival celebrating victory and spring harvest with Gudi flag hoisting and traditional Shobha Yatras across Maharashtra.",
+    "source_url": "https://maharashtratourism.gov.in"
+  },
+  {
+    "entity_id": "fest-baisakhi-punjab",
+    "entity_name": "Vaisakhi (Harvest & Khalsa Sirjana Divas)",
+    "category": "festivals_and_traditions",
+    "state": "Punjab",
+    "query_used": "Vaisakhi Punjab Khalsa Sirjana April 13 April 14 solar calendar Anandpur Sahib dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Vaisakhi",
+    "page_fetched": false,
+    "claim_checked": "Solar festival on Mesha Sankranti (April 13/14) celebrating harvest and creation of Khalsa Panth in 1699 at Anandpur Sahib by Guru Gobind Singh",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to SOLAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "SOLAR",
+      "traditional_month": "Vaisakh",
+      "exact_date": "April 13 / 14 Annually (Mesha Sankranti)",
+      "approximate_season": "Mid-April"
+    },
+    "supporting_claim": "Solar New Year and harvest festival commemorating the 1699 creation of the Khalsa by Guru Gobind Singh at Takht Sri Keshgarh Sahib Anandpur Sahib.",
+    "source_url": "https://en.wikipedia.org/wiki/Vaisakhi"
+  }
+]

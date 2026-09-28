@@ -84,17 +84,80 @@ export const api = {
     return fetchJSON<SearchResponse>(`/search?${p.toString()}`);
   },
 
+  // Statistics
+  getStatistics: () =>
+    fetchJSON<{
+      heritage_places: number;
+      states_represented: number;
+      festivals: number;
+      crafts: number;
+      performing_arts: number;
+      cultural_experiences: number;
+      stories: number;
+      total_records: number;
+      verification_rate: string;
+    }>('/statistics'),
+
+  // Sources and Provenance
+  getSources: (entityType: string, entityId: string) =>
+    fetchJSON<Array<{
+      organization: string;
+      source_title: string;
+      source_url: string;
+      supporting_claim: string;
+      verification_status: string;
+    }>>(`/sources/${encodeURIComponent(entityType)}/${encodeURIComponent(entityId)}`),
+
+  // Artisans
+  getArtisans: (craft?: string) =>
+    fetchJSON<Array<{
+      id: string;
+      name: string;
+      craft_name: string;
+      craft_id: string;
+      location: string;
+      artisan_cluster: string;
+      biography: string;
+      source_reference: string;
+      verification_status: string;
+    }>>(`/artisans${craft ? `?craft=${encodeURIComponent(craft)}` : ''}`),
+
   // Connected Cultural Intelligence
   getRelatedHeritage: (recordType: string, recordId: string) =>
     fetchJSON<RelatedHeritageResponse>(`/related/${encodeURIComponent(recordType)}/${encodeURIComponent(recordId)}`),
 
+  getRelatedEntities: (entityType: string, id: string) =>
+    fetchJSON<RelatedHeritageResponse>(`/entities/${encodeURIComponent(entityType)}/${encodeURIComponent(id)}/related`),
+
   // Map Locations
-  getMapLocations: (params?: { state?: string; category?: string }) => {
+  getMapLocations: (params?: { state?: string; category?: string; q?: string }) => {
     const p = new URLSearchParams();
     if (params?.state) p.append('state', params.state);
     if (params?.category) p.append('category', params.category);
+    if (params?.q) p.append('q', params.q);
     const qs = p.toString();
-    return fetchJSON<MapMarker[]>(`/map/locations${qs ? `?${qs}` : ''}`);
+    return fetchJSON<MapMarker[]>(`/cultural-map/markers${qs ? `?${qs}` : ''}`);
+  },
+
+  getCulturalMapMarkers: (params?: {
+    state?: string;
+    category?: string;
+    q?: string;
+    min_lat?: number;
+    max_lat?: number;
+    min_lng?: number;
+    max_lng?: number;
+  }) => {
+    const p = new URLSearchParams();
+    if (params?.state) p.append('state', params.state);
+    if (params?.category) p.append('category', params.category);
+    if (params?.q) p.append('q', params.q);
+    if (params?.min_lat) p.append('min_lat', params.min_lat.toString());
+    if (params?.max_lat) p.append('max_lat', params.max_lat.toString());
+    if (params?.min_lng) p.append('min_lng', params.min_lng.toString());
+    if (params?.max_lng) p.append('max_lng', params.max_lng.toString());
+    const qs = p.toString();
+    return fetchJSON<MapMarker[]>(`/cultural-map/markers${qs ? `?${qs}` : ''}`);
   },
 
   // AI Cultural Guide Chat

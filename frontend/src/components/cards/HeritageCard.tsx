@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MapPin, Sparkles, Bookmark, Check } from 'lucide-react';
 import { HeritagePlace } from '../../types/cultural';
 
@@ -13,6 +14,7 @@ export const HeritageCard: React.FC<HeritageCardProps> = ({
   onExploreRelated,
   onClick,
 }) => {
+  const navigate = useNavigate();
   const [bookmarked, setBookmarked] = useState(false);
 
   // Dynamic Category badge styles
@@ -40,7 +42,7 @@ export const HeritageCard: React.FC<HeritageCardProps> = ({
 
   return (
     <div
-      onClick={onClick}
+      onClick={onClick || (() => navigate(`/heritage/${place.id}`))}
       className="group bg-white rounded-2xl border border-stone-200/90 overflow-hidden shadow-2xs hover:shadow-lg transition-all duration-300 flex flex-col cursor-pointer"
     >
       {/* Image container */}
@@ -102,9 +104,9 @@ export const HeritageCard: React.FC<HeritageCardProps> = ({
               e.stopPropagation();
               onExploreRelated?.('heritage', place.id);
             }}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#2563EB] hover:text-[#1D4ED8] transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#E05A2B] hover:text-[#C84E23] transition-colors"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#2563EB]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#E05A2B]" />
             <span>Connected Intelligence</span>
             <span>→</span>
           </button>

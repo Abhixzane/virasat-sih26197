@@ -112,10 +112,10 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
   return (
     <div className={`flex flex-col bg-white rounded-2xl border border-stone-200 shadow-heritage overflow-hidden ${className}`}>
       {/* Header with Language Selector & Controls */}
-      <div className="px-4 py-3 bg-gradient-to-r from-indigo-950 via-stone-900 to-indigo-900 text-white flex items-center justify-between border-b border-stone-800">
+      <div className="px-4 py-3 bg-[#1C1917] text-white flex items-center justify-between border-b border-stone-800">
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300">
-            <Bot className="w-4 h-4" />
+          <div className="w-8 h-8 rounded-full bg-white border border-amber-400/40 flex items-center justify-center overflow-hidden shrink-0 shadow-xs">
+            <img src="/virasat-logo.png" alt="VIRASAT AI" className="w-full h-full object-cover" />
           </div>
           <div>
             <div className="text-xs font-bold font-serif text-white flex items-center gap-1.5">
@@ -175,8 +175,8 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
             className={`flex items-start gap-3 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             {msg.role === 'assistant' && (
-              <div className="w-8 h-8 rounded-full bg-amber-100 border border-amber-300 flex items-center justify-center text-amber-900 shrink-0 mt-0.5">
-                <Bot className="w-4 h-4" />
+              <div className="w-8 h-8 rounded-full bg-white border border-amber-300 flex items-center justify-center overflow-hidden shrink-0 mt-0.5 shadow-xs">
+                <img src="/virasat-logo.png" alt="VIRASAT AI" className="w-full h-full object-cover" />
               </div>
             )}
 
@@ -184,7 +184,7 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
               <div
                 className={`p-4 rounded-2xl text-xs sm:text-sm leading-relaxed shadow-2xs ${
                   msg.role === 'user'
-                    ? 'bg-amber-900 text-white rounded-tr-xs'
+                    ? 'bg-[#E05A2B] text-white rounded-tr-xs'
                     : 'bg-white text-stone-800 border border-stone-200 rounded-tl-xs whitespace-pre-wrap'
                 }`}
               >
@@ -203,7 +203,7 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
                         href={src}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1 text-stone-500 hover:text-amber-800 bg-stone-100 px-1.5 py-0.5 rounded"
+                        className="inline-flex items-center gap-1 text-stone-500 hover:text-[#E05A2B] bg-stone-100 px-1.5 py-0.5 rounded transition-colors"
                       >
                         <ExternalLink className="w-2.5 h-2.5" />
                         <span>Source</span>
@@ -246,7 +246,7 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
                       <button
                         key={sIdx}
                         onClick={() => handleSend(sug)}
-                        className="text-left text-[11px] font-medium text-indigo-900 bg-indigo-50/80 hover:bg-indigo-100/90 border border-indigo-200/70 px-2.5 py-1.5 rounded-xl transition-colors"
+                        className="text-left text-[11px] font-medium text-stone-800 bg-[#FFF8EE] hover:bg-[#FFEED9] border border-amber-200/80 px-2.5 py-1.5 rounded-xl transition-colors"
                       >
                         {sug}
                       </button>
@@ -266,14 +266,14 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
 
         {loading && (
           <div className="flex items-start gap-3">
-            <div className="w-8 h-8 rounded-full bg-amber-100 border border-amber-300 flex items-center justify-center text-amber-900 shrink-0">
+            <div className="w-8 h-8 rounded-full bg-amber-100 border border-amber-300 flex items-center justify-center text-[#E05A2B] shrink-0">
               <Bot className="w-4 h-4" />
             </div>
             <div className="bg-white border border-stone-200 p-3 rounded-2xl rounded-tl-xs shadow-2xs flex items-center gap-2 text-xs text-stone-500">
               <div className="flex gap-1">
-                <span className="w-2 h-2 rounded-full bg-amber-600 animate-bounce" style={{ animationDelay: '0ms' }} />
-                <span className="w-2 h-2 rounded-full bg-amber-600 animate-bounce" style={{ animationDelay: '150ms' }} />
-                <span className="w-2 h-2 rounded-full bg-amber-600 animate-bounce" style={{ animationDelay: '300ms' }} />
+                <span className="w-2 h-2 rounded-full bg-[#E05A2B] animate-bounce" style={{ animationDelay: '0ms' }} />
+                <span className="w-2 h-2 rounded-full bg-[#E05A2B] animate-bounce" style={{ animationDelay: '150ms' }} />
+                <span className="w-2 h-2 rounded-full bg-[#E05A2B] animate-bounce" style={{ animationDelay: '300ms' }} />
               </div>
               <span>Grounding answer in cultural database...</span>
             </div>
@@ -296,12 +296,12 @@ export const AIChatWidget: React.FC<AIChatWidgetProps> = ({
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder={`Ask about monuments, crafts, or festivals in ${language === 'hi' ? 'हिन्दी' : language === 'hinglish' ? 'Hinglish' : 'English'}...`}
-          className="flex-1 bg-stone-100 hover:bg-stone-50 focus:bg-white text-stone-900 text-xs sm:text-sm px-4 py-2.5 rounded-xl border border-stone-200 focus:border-amber-600 outline-none transition-all"
+          className="flex-1 bg-stone-100 hover:bg-stone-50 focus:bg-white text-stone-900 text-xs sm:text-sm px-4 py-2.5 rounded-xl border border-stone-200 focus:border-[#E05A2B] outline-none transition-all"
         />
         <button
           type="submit"
           disabled={!input.trim() || loading}
-          className="p-2.5 rounded-xl bg-amber-800 hover:bg-amber-900 disabled:bg-stone-300 text-white font-semibold shadow-xs transition-colors"
+          className="p-2.5 rounded-xl bg-[#E05A2B] hover:bg-[#C84E23] disabled:bg-stone-300 text-white font-semibold shadow-xs transition-colors"
         >
           <Send className="w-4 h-4" />
         </button>

@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-tirumala-brahmotsavam",
+    "entity_name": "Sri Venkateswara Swami Salakatla Brahmotsavam",
+    "category": "festivals_and_traditions",
+    "state": "Andhra Pradesh",
+    "query_used": "Tirumala Brahmotsavam Salakatla Navaratri Kanya masam Garuda Seva dates",
+    "tool_used": "search_web",
+    "result_url": "https://tirumala.org",
+    "page_fetched": false,
+    "claim_checked": "Annual 9-day temple festival in Kanya Masam (Ashwin Navaratri) featuring Garuda Seva, Rathotsavam, and Chakrasnanam",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Kanya Masam (Ashwin)",
+      "exact_date": "Ashwin Navaratri (9 days)",
+      "approximate_season": "September - October"
+    },
+    "supporting_claim": "Grand annual 9-day Brahmotsavam at Tirumala Venkateswara Temple during Navaratri featuring majestic Garuda Seva.",
+    "source_url": "https://tirumala.org"
+  },
+  {
+    "entity_id": "fest-ugadi-andhra",
+    "entity_name": "Ugadi (Telugu New Year)",
+    "category": "festivals_and_traditions",
+    "state": "Andhra Pradesh",
+    "query_used": "Ugadi Andhra Pradesh Chaitra Shukla Pratipada Ugadi Pachadi Telugu new year dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Ugadi",
+    "page_fetched": false,
+    "claim_checked": "Observed on Chaitra Shukla Pratipada marking Telugu New Year with Panchanga Sravanam and preparation of six-taste Ugadi Pachadi",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Chaitra",
+      "exact_date": "Chaitra Shukla Pratipada",
+      "approximate_season": "March - April"
+    },
+    "supporting_claim": "Telugu New Year observed on the first day of Chaitra month marked by preparing symbolic six-flavored Ugadi Pachadi.",
+    "source_url": "https://en.wikipedia.org/wiki/Ugadi"
+  }
+]

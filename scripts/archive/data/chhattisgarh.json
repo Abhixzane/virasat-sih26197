@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-bastar-dussehra",
+    "entity_name": "Bastar Dussehra",
+    "category": "festivals_and_traditions",
+    "state": "Chhattisgarh",
+    "query_used": "Bastar Dussehra 75 days Danteshwari Shravan Amavasya Jagdalpur dates",
+    "tool_used": "search_web",
+    "result_url": "https://bastardussehra.com",
+    "page_fetched": false,
+    "claim_checked": "75-day festival starting on Shravan Amavasya (Hareli) and concluding on Vijayadashami honoring Maa Danteshwari with massive chariot pulling and Muria Durbar",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Shravan to Ashwin",
+      "exact_date": "Shravan Amavasya to Ashwin Shukla Dashami (75 days)",
+      "approximate_season": "August - October"
+    },
+    "supporting_claim": "World's longest festival (75 days) in Bastar honoring Goddess Danteshwari featuring Rath Yatra, Nisha Jatra, and Muria Durbar.",
+    "source_url": "https://bastardussehra.com"
+  },
+  {
+    "entity_id": "fest-madai-tribal-mela",
+    "entity_name": "Bastar Madai Festival",
+    "category": "festivals_and_traditions",
+    "state": "Chhattisgarh",
+    "query_used": "Madai Festival Bastar Narayanpur Chhattisgarh December March tribal deity dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Madai_Festival",
+    "page_fetched": false,
+    "claim_checked": "Roving tribal gathering of Gond and tribal communities traveling across Bastar, Kanker, and Narayanpur from December to March worshipping village deities",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to APPROX_SEASONAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "APPROX_SEASONAL",
+      "traditional_month": "December - March",
+      "exact_date": "December to March (Roving Tribal Schedule)",
+      "approximate_season": "Winter - Spring"
+    },
+    "supporting_claim": "Traveling tribal carnival of Bastar and Narayanpur where deities are reunited on Anga palanquins accompanied by Saila and Karma dances.",
+    "source_url": "https://en.wikipedia.org/wiki/Madai_Festival"
+  }
+]

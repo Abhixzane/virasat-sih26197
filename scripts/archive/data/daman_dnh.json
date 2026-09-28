@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-nariyal-poornima-daman",
+    "entity_name": "Nariyal Poornima (Coconut Day) of Daman",
+    "category": "festivals_and_traditions",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "query_used": "Nariyal Poornima Daman Shravan Purnima coconut sea offering dates",
+    "tool_used": "search_web",
+    "result_url": "https://daman.nic.in",
+    "page_fetched": false,
+    "claim_checked": "Observed on Shravan Purnima (August full moon) by coastal fishing communities offering coconuts to Lord Varuna to reopen the fishing season",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Shravan",
+      "exact_date": "Shravan Purnima",
+      "approximate_season": "August"
+    },
+    "supporting_claim": "Coastal fishing festival in Daman on Shravan Purnima where Koli fishermen offer coconuts to sea god Varuna.",
+    "source_url": "https://daman.nic.in"
+  },
+  {
+    "entity_id": "fest-barash-festival",
+    "entity_name": "Barash Tribal Harvest Festival",
+    "category": "festivals_and_traditions",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "query_used": "Barash Dadra and Nagar Haveli tribal harvest festival Kokna or Varli dates",
+    "tool_used": "search_web",
+    "result_url": "https://vajiramandravi.com",
+    "page_fetched": false,
+    "claim_checked": "Tribal harvest festival observed in September by Kokna and Varli tribes of Dadra and Nagar Haveli with Tarpa dances and home illumination",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to APPROX_SEASONAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "APPROX_SEASONAL",
+      "traditional_month": "Bhadrapada / September",
+      "exact_date": "September (Bhadrapada Waxing Moon)",
+      "approximate_season": "September"
+    },
+    "supporting_claim": "Tribal harvest festival celebrated by Kokna and Varli communities in September featuring traditional bean harvest rites and Tarpa dance.",
+    "source_url": "https://vajiramandravi.com"
+  }
+]

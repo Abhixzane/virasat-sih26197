@@ -1,0 +1,254 @@
+[
+  {
+    "id": "state-chandigarh",
+    "name": "Chandigarh",
+    "state_code": "CHA",
+    "region": "Northern India",
+    "capital": "Chandigarh"
+  },
+  {
+    "id": "state-delhi",
+    "name": "Delhi",
+    "state_code": "DEL",
+    "region": "Northern India",
+    "capital": "Delhi"
+  },
+  {
+    "id": "state-haryana",
+    "name": "Haryana",
+    "state_code": "HAR",
+    "region": "Northern India",
+    "capital": "Haryana"
+  },
+  {
+    "id": "state-himachal-pradesh",
+    "name": "Himachal Pradesh",
+    "state_code": "HIM",
+    "region": "Northern India",
+    "capital": "Himachal Pradesh"
+  },
+  {
+    "id": "state-jammu-and-kashmir",
+    "name": "Jammu and Kashmir",
+    "state_code": "JAM",
+    "region": "Northern India",
+    "capital": "Jammu and Kashmir"
+  },
+  {
+    "id": "state-ladakh",
+    "name": "Ladakh",
+    "state_code": "LAD",
+    "region": "Northern India",
+    "capital": "Ladakh"
+  },
+  {
+    "id": "state-punjab",
+    "name": "Punjab",
+    "state_code": "PUN",
+    "region": "Northern India",
+    "capital": "Punjab"
+  },
+  {
+    "id": "state-rajasthan",
+    "name": "Rajasthan",
+    "state_code": "RAJ",
+    "region": "Northern India",
+    "capital": "Rajasthan"
+  },
+  {
+    "id": "state-uttar-pradesh",
+    "name": "Uttar Pradesh",
+    "state_code": "UTT",
+    "region": "Northern India",
+    "capital": "Uttar Pradesh"
+  },
+  {
+    "id": "state-uttarakhand",
+    "name": "Uttarakhand",
+    "state_code": "UTT",
+    "region": "Northern India",
+    "capital": "Uttarakhand"
+  },
+  {
+    "id": "state-arunachal-pradesh",
+    "name": "Arunachal Pradesh",
+    "state_code": "ARU",
+    "region": "Northeastern India",
+    "capital": "Arunachal Pradesh"
+  },
+  {
+    "id": "state-assam",
+    "name": "Assam",
+    "state_code": "ASS",
+    "region": "Northeastern India",
+    "capital": "Assam"
+  },
+  {
+    "id": "state-manipur",
+    "name": "Manipur",
+    "state_code": "MAN",
+    "region": "Northeastern India",
+    "capital": "Manipur"
+  },
+  {
+    "id": "state-meghalaya",
+    "name": "Meghalaya",
+    "state_code": "MEG",
+    "region": "Northeastern India",
+    "capital": "Meghalaya"
+  },
+  {
+    "id": "state-mizoram",
+    "name": "Mizoram",
+    "state_code": "MIZ",
+    "region": "Northeastern India",
+    "capital": "Mizoram"
+  },
+  {
+    "id": "state-nagaland",
+    "name": "Nagaland",
+    "state_code": "NAG",
+    "region": "Northeastern India",
+    "capital": "Nagaland"
+  },
+  {
+    "id": "state-sikkim",
+    "name": "Sikkim",
+    "state_code": "SIK",
+    "region": "Northeastern India",
+    "capital": "Sikkim"
+  },
+  {
+    "id": "state-tripura",
+    "name": "Tripura",
+    "state_code": "TRI",
+    "region": "Northeastern India",
+    "capital": "Tripura"
+  },
+  {
+    "id": "state-andaman-and-nicobar-islands",
+    "name": "Andaman and Nicobar Islands",
+    "state_code": "AND",
+    "region": "Eastern India",
+    "capital": "Andaman and Nicobar Islands"
+  },
+  {
+    "id": "state-bihar",
+    "name": "Bihar",
+    "state_code": "BIH",
+    "region": "Eastern India",
+    "capital": "Bihar"
+  },
+  {
+    "id": "state-jharkhand",
+    "name": "Jharkhand",
+    "state_code": "JHA",
+    "region": "Eastern India",
+    "capital": "Jharkhand"
+  },
+  {
+    "id": "state-odisha",
+    "name": "Odisha",
+    "state_code": "ODI",
+    "region": "Eastern India",
+    "capital": "Odisha"
+  },
+  {
+    "id": "state-west-bengal",
+    "name": "West Bengal",
+    "state_code": "WES",
+    "region": "Eastern India",
+    "capital": "West Bengal"
+  },
+  {
+    "id": "state-chhattisgarh",
+    "name": "Chhattisgarh",
+    "state_code": "CHH",
+    "region": "Central India",
+    "capital": "Chhattisgarh"
+  },
+  {
+    "id": "state-madhya-pradesh",
+    "name": "Madhya Pradesh",
+    "state_code": "MAD",
+    "region": "Central India",
+    "capital": "Madhya Pradesh"
+  },
+  {
+    "id": "state-dadra-and-nagar-haveli-and-daman-and-diu",
+    "name": "Dadra and Nagar Haveli and Daman and Diu",
+    "state_code": "DAD",
+    "region": "Western India",
+    "capital": "Dadra and Nagar Haveli and Daman and Diu"
+  },
+  {
+    "id": "state-goa",
+    "name": "Goa",
+    "state_code": "GOA",
+    "region": "Western India",
+    "capital": "Goa"
+  },
+  {
+    "id": "state-gujarat",
+    "name": "Gujarat",
+    "state_code": "GUJ",
+    "region": "Western India",
+    "capital": "Gujarat"
+  },
+  {
+    "id": "state-maharashtra",
+    "name": "Maharashtra",
+    "state_code": "MAH",
+    "region": "Western India",
+    "capital": "Maharashtra"
+  },
+  {
+    "id": "state-andhra-pradesh",
+    "name": "Andhra Pradesh",
+    "state_code": "AND",
+    "region": "Southern India",
+    "capital": "Andhra Pradesh"
+  },
+  {
+    "id": "state-karnataka",
+    "name": "Karnataka",
+    "state_code": "KAR",
+    "region": "Southern India",
+    "capital": "Karnataka"
+  },
+  {
+    "id": "state-kerala",
+    "name": "Kerala",
+    "state_code": "KER",
+    "region": "Southern India",
+    "capital": "Kerala"
+  },
+  {
+    "id": "state-lakshadweep",
+    "name": "Lakshadweep",
+    "state_code": "LAK",
+    "region": "Southern India",
+    "capital": "Lakshadweep"
+  },
+  {
+    "id": "state-puducherry",
+    "name": "Puducherry",
+    "state_code": "PUD",
+    "region": "Southern India",
+    "capital": "Puducherry"
+  },
+  {
+    "id": "state-tamil-nadu",
+    "name": "Tamil Nadu",
+    "state_code": "TAM",
+    "region": "Southern India",
+    "capital": "Tamil Nadu"
+  },
+  {
+    "id": "state-telangana",
+    "name": "Telangana",
+    "state_code": "TEL",
+    "region": "Southern India",
+    "capital": "Telangana"
+  }
+]

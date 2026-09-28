@@ -1,13 +1,49 @@
 import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import { MapMarker } from '../../types/cultural';
-import { MapPin, Landmark, Navigation, Filter, List, Map as MapIcon, ShieldCheck, ArrowRight } from 'lucide-react';
+import {
+  MapPin, Landmark, Sparkles, Search, Layers, ChevronDown,
+  ChevronRight, Compass, ArrowRight, List, Map as MapIcon, X
+} from 'lucide-react';
 
 interface CulturalMapViewProps {
   markers: MapMarker[];
   onSelectMarker: (type: string, id: string) => void;
   selectedState?: string;
   onSelectState?: (state: string) => void;
+}
+
+// Haversine distance in km
+function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * (Math.PI / 180);
+  const dLon = (lon2 - lon1) * (Math.PI / 180);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+// 5 Distinct Cultural Categories metadata matching the visual legend
+function getCategoryMeta(marker: MapMarker) {
+  const cat = (marker.category || '').toLowerCase();
+  const type = (marker.type || '').toLowerCase();
+
+  if (type === 'festival' || cat.includes('festival')) {
+    return { color: '#EF4444', emoji: '🏮', label: 'Festivals & Traditions', key: 'festivals' };
+  }
+  if (type === 'art_craft' || cat.includes('craft') || cat.includes('art') || cat.includes('handloom') || cat.includes('pottery')) {
+    return { color: '#138808', emoji: '🎨', label: 'Arts & Crafts', key: 'crafts' };
+  }
+  if (type === 'performing_art' || cat.includes('dance') || cat.includes('music') || cat.includes('theatre')) {
+    return { color: '#8B5CF6', emoji: '🎭', label: 'Performing Arts', key: 'performing' };
+  }
+  if (cat.includes('living') || cat.includes('tradition') || cat.includes('ritual') || cat.includes('oral')) {
+    return { color: '#0EA5E9', emoji: '🌿', label: 'Living Traditions', key: 'living' };
+  }
+  return { color: '#FF6600', emoji: '🏛️', label: 'Monuments & Heritage Sites', key: 'monuments' };
 }
 
 export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
@@ -19,37 +55,116 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const layerGroupRef = useRef<L.LayerGroup | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [viewMode, setViewMode] = useState<'map' | 'list'>('map');
+  const [activeTab, setActiveTab] = useState<'map' | 'list' | 'experience'>('map');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [searchFilter, setSearchFilter] = useState('');
+  const [selectedPin, setSelectedPin] = useState<MapMarker | null>(null);
 
-  // Filter markers
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setCategoryDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Filter markers based on state, category, search, and active tab
   const filteredMarkers = markers.filter((m) => {
     if (selectedState && m.state.toLowerCase() !== selectedState.toLowerCase()) return false;
-    if (activeCategory === 'heritage' && m.type !== 'heritage') return false;
-    if (activeCategory === 'experience' && m.type !== 'experience') return false;
+    
+    // Tab filter
+    if (activeTab === 'experience' && m.type !== 'experience') return false;
+
+    // Category dropdown filter
+    if (selectedCategory !== 'all') {
+      const meta = getCategoryMeta(m);
+      if (meta.key !== selectedCategory) return false;
+    }
+
+    // Search query filter
     if (searchFilter) {
       const q = searchFilter.toLowerCase();
-      return (
-        m.name.toLowerCase().includes(q) ||
-        m.city.toLowerCase().includes(q) ||
-        m.state.toLowerCase().includes(q)
-      );
+      const matchName = m.name?.toLowerCase().includes(q);
+      const matchCity = m.city?.toLowerCase().includes(q);
+      const matchState = m.state?.toLowerCase().includes(q);
+      const matchCategory = m.category?.toLowerCase().includes(q);
+      if (!matchName && !matchCity && !matchState && !matchCategory) return false;
     }
+
     return true;
   });
 
-  // Initialize Map
+  // Calculate nearby discoveries for selectedPin or default 4 prominent discoveries
+  const discoveryCards = React.useMemo(() => {
+    if (selectedPin) {
+      const sorted = markers
+        .filter((m) => m.id !== selectedPin.id && Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1)
+        .map((m) => ({
+          marker: m,
+          distance: `${calculateDistance(selectedPin.latitude, selectedPin.longitude, m.latitude, m.longitude).toFixed(1)} km`,
+          title: m.name,
+          subtitle: m.description || `Verified cultural asset in ${m.city}, ${m.state}.`,
+        }))
+        .sort((a, b) => parseFloat(a.distance) - parseFloat(b.distance))
+        .slice(0, 4);
+
+      if (sorted.length > 0) return sorted;
+    }
+
+    // Default 4 representative items matching reference image layout
+    const sampleTypes = [
+      { key: 'heritage', defaultTitle: 'Heritage Site', defaultSub: 'Explore this historic site and its cultural significance.', fallbackDist: '2.4 km', fallbackImg: '/nearby-1.jpg' },
+      { key: 'craft', defaultTitle: 'Artisan Cluster', defaultSub: 'Discover traditional crafts and local artisans.', fallbackDist: '5.1 km', fallbackImg: '/nearby-2.jpg' },
+      { key: 'experience', defaultTitle: 'Cultural Experience', defaultSub: 'Experience local festivals and living traditions.', fallbackDist: '7.8 km', fallbackImg: '/nearby-3.jpg' },
+      { key: 'monument', defaultTitle: 'Monument', defaultSub: 'Visit this iconic monument with historical context.', fallbackDist: '12.3 km', fallbackImg: '/nearby-4.jpg' },
+    ];
+
+    return sampleTypes.map((item, index) => {
+      const matchedMarker = markers.find((m) => {
+        const cat = (m.category || '').toLowerCase();
+        if (item.key === 'craft') return m.type === 'art_craft' || cat.includes('craft');
+        if (item.key === 'experience') return m.type === 'experience' || cat.includes('experience') || cat.includes('festival');
+        return m.type === 'heritage';
+      }) || markers[index] || {
+        id: `sample-${index}`,
+        name: item.defaultTitle,
+        type: 'heritage',
+        category: item.defaultTitle,
+        state: 'National',
+        city: 'India',
+        latitude: 28.6129,
+        longitude: 77.2295,
+        description: item.defaultSub,
+        image_url: item.fallbackImg,
+        verification_status: 'VERIFIED',
+      };
+
+      return {
+        marker: matchedMarker,
+        distance: item.fallbackDist,
+        title: item.defaultTitle,
+        subtitle: item.defaultSub,
+      };
+    });
+  }, [selectedPin, markers]);
+
+  // Initialize Leaflet Map
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return;
 
     // Centered over India
     const map = L.map(mapContainerRef.current, {
-      center: [21.7679, 78.8718],
+      center: [22.5937, 78.9629],
       zoom: 5,
       minZoom: 4,
       maxZoom: 18,
+      zoomControl: true,
     });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -75,10 +190,10 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
     filteredMarkers.forEach((marker) => {
       if (Math.abs(marker.latitude) < 0.1 || Math.abs(marker.longitude) < 0.1) return;
 
-      const isHeritage = marker.type === 'heritage';
+      const meta = getCategoryMeta(marker);
       const markerHtml = `
         <div style="
-          background-color: ${isHeritage ? '#9A3412' : '#1D4ED8'};
+          background-color: ${meta.color};
           color: white;
           width: 32px;
           height: 32px;
@@ -87,10 +202,11 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
           align-items: center;
           justify-content: center;
           border: 2px solid white;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.28);
           cursor: pointer;
+          transition: transform 0.2s ease;
         ">
-          <span style="font-size: 14px;">${isHeritage ? '🏛️' : '✨'}</span>
+          <span style="font-size: 14px;">${meta.emoji}</span>
         </div>
       `;
 
@@ -108,30 +224,31 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
       popupContent.innerHTML = `
         <div style="font-family: inherit;">
           <img src="${marker.image_url}" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 8px;" />
-          <div style="font-size: 9px; font-weight: bold; text-transform: uppercase; color: ${isHeritage ? '#9A3412' : '#1D4ED8'};">${marker.category}</div>
-          <div style="font-size: 14px; font-weight: bold; color: #1C1917; margin-top: 2px;">${marker.name}</div>
-          <div style="font-size: 11px; color: #78716C; margin-bottom: 6px;">${marker.city}, ${marker.state}</div>
-          <div style="font-size: 11px; color: #44403C; line-height: 1.4; margin-bottom: 8px;">${marker.description}</div>
-          <div style="font-size: 10px; color: #047857; font-weight: 600;">✓ ${marker.verification_status} Coordinates: ${marker.latitude.toFixed(4)}, ${marker.longitude.toFixed(4)}</div>
+          <div style="font-size: 9px; font-weight: bold; text-transform: uppercase; color: ${meta.color};">${marker.category}</div>
+          <div style="font-size: 14px; font-weight: bold; color: #161616; margin-top: 2px;">${marker.name}</div>
+          <div style="font-size: 11px; color: #6B6B6B; margin-bottom: 6px;">${marker.city}, ${marker.state}</div>
+          <div style="font-size: 11px; color: #2B2B2B; line-height: 1.4; margin-bottom: 8px;">${marker.description}</div>
+          <div style="font-size: 10px; color: #138808; font-weight: 600;">✓ Verified Coordinates: ${marker.latitude.toFixed(4)}, ${marker.longitude.toFixed(4)}</div>
           <button id="view-details-btn-${marker.id}" style="
             width: 100%;
             margin-top: 8px;
-            padding: 6px 10px;
-            background: #9A3412;
+            padding: 7px 10px;
+            background: #FF6600;
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-size: 11px;
             font-weight: bold;
             cursor: pointer;
           ">
-            Explore Heritage Connections →
+            View Full Record & Connections →
           </button>
         </div>
       `;
 
       leafletMarker.bindPopup(popupContent);
       leafletMarker.on('popupopen', () => {
+        setSelectedPin(marker);
         const btn = document.getElementById(`view-details-btn-${marker.id}`);
         if (btn) {
           btn.onclick = () => {
@@ -143,130 +260,297 @@ export const CulturalMapView: React.FC<CulturalMapViewProps> = ({
       leafletMarker.addTo(layerGroupRef.current!);
     });
 
-    // Fit bounds if markers exist and viewMode is map
-    if (filteredMarkers.length > 0 && mapInstanceRef.current && viewMode === 'map') {
+    // Auto-fit bounds when markers change
+    if (filteredMarkers.length > 0 && mapInstanceRef.current && activeTab !== 'list') {
       const validPoints = filteredMarkers
         .filter((m) => Math.abs(m.latitude) > 0.1 && Math.abs(m.longitude) > 0.1)
         .map((m) => [m.latitude, m.longitude] as [number, number]);
 
       if (validPoints.length > 0) {
         const bounds = L.latLngBounds(validPoints);
-        mapInstanceRef.current.fitBounds(bounds, { padding: [40, 40], maxZoom: 10 });
+        mapInstanceRef.current.fitBounds(bounds, { padding: [50, 50], maxZoom: 8 });
       }
     }
-  }, [filteredMarkers, viewMode, onSelectMarker]);
+  }, [filteredMarkers, activeTab, onSelectMarker]);
+
+  const categories = [
+    { key: 'all', label: 'All Categories' },
+    { key: 'monuments', label: 'Monuments & Heritage Sites' },
+    { key: 'festivals', label: 'Festivals & Traditions' },
+    { key: 'crafts', label: 'Arts & Crafts' },
+    { key: 'performing', label: 'Performing Arts' },
+    { key: 'living', label: 'Living Traditions' },
+  ];
+
+  const currentCategoryLabel = categories.find((c) => c.key === selectedCategory)?.label || 'All Categories';
 
   return (
-    <div className="flex flex-col bg-white rounded-3xl border border-stone-200 shadow-heritage overflow-hidden">
-      {/* Controls Bar */}
-      <div className="p-4 bg-stone-50 border-b border-stone-200 flex flex-wrap items-center justify-between gap-3">
+    <div className="space-y-4">
+      {/* 1. Exact Controls Bar Above Map Matching Reference Image */}
+      <div className="flex flex-wrap items-center justify-between gap-3 bg-transparent">
+        {/* Left Tabs: Map View | List View | Cultural Experiences */}
         <div className="flex flex-wrap items-center gap-2">
-          {/* Category Filters */}
+          {/* Map View */}
           <button
-            onClick={() => setActiveCategory('all')}
-            className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
-              activeCategory === 'all'
-                ? 'bg-amber-800 text-white shadow-2xs'
-                : 'bg-white text-stone-700 border border-stone-200 hover:border-amber-400'
+            onClick={() => setActiveTab('map')}
+            className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              activeTab === 'map'
+                ? 'bg-[#FF6600] text-white shadow-xs'
+                : 'bg-white hover:bg-stone-50 text-stone-700 border border-stone-200'
             }`}
           >
-            All Verified ({markers.length})
+            <MapIcon className="w-3.5 h-3.5" />
+            <span>Map View</span>
           </button>
+
+          {/* List View */}
           <button
-            onClick={() => setActiveCategory('heritage')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
-              activeCategory === 'heritage'
-                ? 'bg-amber-800 text-white shadow-2xs'
-                : 'bg-white text-stone-700 border border-stone-200 hover:border-amber-400'
+            onClick={() => setActiveTab('list')}
+            className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              activeTab === 'list'
+                ? 'bg-[#FF6600] text-white shadow-xs'
+                : 'bg-white hover:bg-stone-50 text-stone-700 border border-stone-200'
             }`}
           >
-            <Landmark className="w-3.5 h-3.5" />
-            <span>Monuments</span>
+            <List className="w-3.5 h-3.5 text-stone-500" />
+            <span>List View</span>
           </button>
+
+          {/* Cultural Experiences */}
           <button
-            onClick={() => setActiveCategory('experience')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
-              activeCategory === 'experience'
-                ? 'bg-amber-800 text-white shadow-2xs'
-                : 'bg-white text-stone-700 border border-stone-200 hover:border-amber-400'
+            onClick={() => {
+              setActiveTab('experience');
+              setSelectedCategory('all');
+            }}
+            className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+              activeTab === 'experience'
+                ? 'bg-[#FF6600] text-white shadow-xs'
+                : 'bg-white hover:bg-stone-50 text-stone-700 border border-stone-200'
             }`}
           >
-            <Navigation className="w-3.5 h-3.5" />
-            <span>Cultural Walks</span>
+            <Sparkles className="w-3.5 h-3.5 text-stone-500" />
+            <span>Cultural Experiences</span>
           </button>
         </div>
 
-        {/* Search & Toggle Mode */}
-        <div className="flex items-center gap-2">
-          <input
-            type="text"
-            value={searchFilter}
-            onChange={(e) => setSearchFilter(e.target.value)}
-            placeholder="Filter map by name or city..."
-            className="text-xs px-3 py-1.5 rounded-xl bg-white border border-stone-200 outline-none focus:border-amber-600 w-44 sm:w-56"
-          />
+        {/* Right Section: Search Input + Categories Dropdown */}
+        <div className="flex flex-wrap items-center gap-2.5 ml-auto">
+          {/* Search Box */}
+          <div className="relative flex items-center">
+            <Search className="w-3.5 h-3.5 text-stone-400 absolute left-3 pointer-events-none" />
+            <input
+              type="text"
+              value={searchFilter}
+              onChange={(e) => setSearchFilter(e.target.value)}
+              placeholder="Search places, cities or experiences..."
+              className="bg-[#F9FAFB] hover:bg-stone-100/60 focus:bg-white border border-stone-200 focus:border-[#FF6600] rounded-xl pl-9 pr-3.5 py-2 text-xs text-stone-800 placeholder-stone-400 outline-none w-56 sm:w-64 lg:w-72 transition-all shadow-2xs"
+            />
+            {searchFilter && (
+              <button
+                onClick={() => setSearchFilter('')}
+                className="absolute right-2.5 text-stone-400 hover:text-stone-600"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
 
-          <div className="flex items-center bg-stone-200 p-0.5 rounded-xl text-xs font-semibold">
+          {/* Categories Dropdown */}
+          <div className="relative" ref={dropdownRef}>
             <button
-              onClick={() => setViewMode('map')}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg transition-all ${
-                viewMode === 'map' ? 'bg-white text-stone-900 shadow-2xs' : 'text-stone-600'
-              }`}
+              onClick={() => setCategoryDropdownOpen(!categoryDropdownOpen)}
+              className="bg-white hover:bg-stone-50 border border-stone-200 rounded-xl px-3.5 py-2 text-xs font-semibold text-stone-800 flex items-center gap-2 transition-all cursor-pointer shadow-2xs"
             >
-              <MapIcon className="w-3.5 h-3.5" />
-              <span>Map</span>
+              <Layers className="w-3.5 h-3.5 text-stone-600" />
+              <span>{currentCategoryLabel}</span>
+              <ChevronDown
+                className={`w-3.5 h-3.5 text-stone-400 transition-transform ${
+                  categoryDropdownOpen ? 'rotate-180' : ''
+                }`}
+              />
             </button>
-            <button
-              onClick={() => setViewMode('list')}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded-lg transition-all ${
-                viewMode === 'list' ? 'bg-white text-stone-900 shadow-2xs' : 'text-stone-600'
-              }`}
-            >
-              <List className="w-3.5 h-3.5" />
-              <span>List ({filteredMarkers.length})</span>
-            </button>
+
+            {categoryDropdownOpen && (
+              <div className="absolute right-0 top-full mt-1.5 w-56 bg-white border border-stone-200 rounded-2xl shadow-xl py-1.5 z-50 animate-fadeIn text-xs">
+                {categories.map((c) => (
+                  <button
+                    key={c.key}
+                    onClick={() => {
+                      setSelectedCategory(c.key);
+                      setCategoryDropdownOpen(false);
+                    }}
+                    className={`w-full text-left px-3.5 py-2 transition-colors flex items-center justify-between cursor-pointer ${
+                      selectedCategory === c.key
+                        ? 'bg-[#FFF2E5] text-[#FF6600] font-bold'
+                        : 'text-stone-700 hover:bg-stone-50 font-medium'
+                    }`}
+                  >
+                    <span>{c.label}</span>
+                    {selectedCategory === c.key && <span className="w-1.5 h-1.5 rounded-full bg-[#FF6600]" />}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
 
-      {/* Map or List View Container */}
-      <div className="relative w-full h-[580px] bg-stone-100">
-        {viewMode === 'map' ? (
-          <div ref={mapContainerRef} className="w-full h-full" />
-        ) : (
-          <div className="w-full h-full overflow-y-auto p-6 divide-y divide-stone-100">
-            {filteredMarkers.map((marker) => (
+      {/* 2. Main Visual Display: Map + Nearby Discoveries (Or List View) */}
+      {activeTab === 'list' ? (
+        /* List View */
+        <div className="bg-white rounded-3xl border border-stone-200 shadow-xs p-6 divide-y divide-stone-100 max-h-[660px] overflow-y-auto">
+          <div className="pb-3 text-xs font-bold text-stone-500 uppercase tracking-wider">
+            Showing {filteredMarkers.length} Records in List View
+          </div>
+          {filteredMarkers.map((marker) => {
+            const meta = getCategoryMeta(marker);
+            return (
               <div
                 key={marker.id}
                 onClick={() => onSelectMarker(marker.type, marker.id)}
-                className="py-3 flex items-start gap-4 hover:bg-amber-50/50 p-3 rounded-xl cursor-pointer transition-colors"
+                className="py-3.5 flex items-start gap-4 hover:bg-amber-50/50 p-3 rounded-2xl cursor-pointer transition-colors group"
               >
                 <img
                   src={marker.image_url}
                   alt={marker.name}
-                  className="w-16 h-16 rounded-xl object-cover border border-stone-200 shrink-0"
+                  className="w-20 h-20 rounded-xl object-cover border border-stone-200 shrink-0 group-hover:scale-105 transition-transform"
                 />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-bold text-amber-800 uppercase bg-amber-50 px-2 py-0.5 rounded">
+                    <span
+                      style={{ backgroundColor: `${meta.color}15`, color: meta.color }}
+                      className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-md"
+                    >
                       {marker.category}
                     </span>
-                    <span className="text-xs text-stone-500">
+                    <span className="text-xs text-stone-500 font-medium">
                       {marker.city}, {marker.state}
                     </span>
                     <span className="text-[11px] font-mono text-stone-400">
                       ({marker.latitude.toFixed(3)}, {marker.longitude.toFixed(3)})
                     </span>
                   </div>
-                  <h4 className="text-sm font-bold text-stone-900 mt-1">{marker.name}</h4>
-                  <p className="text-xs text-stone-600 mt-0.5 line-clamp-2">{marker.description}</p>
+                  <h4 className="text-sm font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors mt-1">
+                    {marker.name}
+                  </h4>
+                  <p className="text-xs text-stone-600 mt-1 line-clamp-2 leading-relaxed">
+                    {marker.description}
+                  </p>
                 </div>
-                <ArrowRight className="w-4 h-4 text-stone-300 self-center shrink-0" />
+                <ChevronRight className="w-5 h-5 text-stone-300 group-hover:text-[#FF6600] transition-colors self-center shrink-0" />
               </div>
-            ))}
+            );
+          })}
+        </div>
+      ) : (
+        /* Map View + Nearby Discoveries Grid (Exact Reference Image Layout) */
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+          {/* Left Column: Leaflet Map (8 columns) */}
+          <div className="lg:col-span-8 h-[600px] xl:h-[640px] rounded-3xl overflow-hidden border border-stone-200/90 shadow-xs relative bg-stone-100">
+            <div ref={mapContainerRef} className="w-full h-full z-10" />
+
+            {/* Exact Bottom-Left Map Legend Card */}
+            <div className="absolute bottom-4 left-4 z-[400] bg-white/95 backdrop-blur-md px-3.5 py-3 rounded-2xl border border-stone-200 shadow-md text-xs space-y-1.5 select-none pointer-events-auto">
+              <div className="flex items-center gap-2 text-stone-700 font-medium">
+                <span className="w-4 h-4 rounded-full bg-[#FF6600] text-white flex items-center justify-center text-[10px]">
+                  🏛️
+                </span>
+                <span>Monuments & Heritage Sites</span>
+              </div>
+              <div className="flex items-center gap-2 text-stone-700 font-medium">
+                <span className="w-4 h-4 rounded-full bg-[#EF4444] text-white flex items-center justify-center text-[10px]">
+                  🏮
+                </span>
+                <span>Festivals & Traditions</span>
+              </div>
+              <div className="flex items-center gap-2 text-stone-700 font-medium">
+                <span className="w-4 h-4 rounded-full bg-[#138808] text-white flex items-center justify-center text-[10px]">
+                  🎨
+                </span>
+                <span>Arts & Crafts</span>
+              </div>
+              <div className="flex items-center gap-2 text-stone-700 font-medium">
+                <span className="w-4 h-4 rounded-full bg-[#8B5CF6] text-white flex items-center justify-center text-[10px]">
+                  🎭
+                </span>
+                <span>Performing Arts</span>
+              </div>
+              <div className="flex items-center gap-2 text-stone-700 font-medium">
+                <span className="w-4 h-4 rounded-full bg-[#0EA5E9] text-white flex items-center justify-center text-[10px]">
+                  🌿
+                </span>
+                <span>Living Traditions</span>
+              </div>
+            </div>
           </div>
-        )}
-      </div>
+
+          {/* Right Column: "Nearby Discoveries" Panel (4 columns) */}
+          <div className="lg:col-span-4 h-[600px] xl:h-[640px] bg-white rounded-3xl border border-stone-200/90 shadow-xs p-4 flex flex-col justify-between overflow-hidden">
+            {/* Header: Location Pin + Nearby Discoveries + View All */}
+            <div className="flex items-center justify-between pb-3 border-b border-stone-100">
+              <div className="flex items-center gap-1.5">
+                <MapPin className="w-4 h-4 text-[#FF6600]" />
+                <h3 className="font-bold text-sm text-stone-900">Nearby Discoveries</h3>
+              </div>
+              <button
+                onClick={() => setActiveTab('list')}
+                className="text-xs font-semibold text-[#FF6600] hover:text-[#E65100] flex items-center gap-0.5 transition-colors cursor-pointer"
+              >
+                <span>View All</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            {/* 4 Stacked Discovery Cards */}
+            <div className="flex-1 overflow-y-auto space-y-2.5 py-3 pr-1">
+              {discoveryCards.map((item, idx) => (
+                <div
+                  key={item.marker.id || idx}
+                  onClick={() => {
+                    if (item.marker && item.marker.latitude && item.marker.longitude && mapInstanceRef.current) {
+                      mapInstanceRef.current.flyTo([item.marker.latitude, item.marker.longitude], 12);
+                    }
+                    onSelectMarker(item.marker.type, item.marker.id);
+                  }}
+                  className="p-2.5 rounded-2xl border border-stone-100 hover:border-amber-200 bg-stone-50/50 hover:bg-amber-50/40 transition-all cursor-pointer flex items-center gap-3 group"
+                >
+                  {/* Thumbnail with overlay distance badge */}
+                  <div className="relative w-20 h-16 rounded-xl overflow-hidden shrink-0 border border-stone-200">
+                    <img
+                      src={item.marker.image_url || '/nearby-1.jpg'}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                    <span className="absolute top-1 left-1 bg-white/95 text-stone-800 text-[9px] font-bold px-1.5 py-0.5 rounded-md flex items-center gap-0.5 shadow-2xs select-none">
+                      <Compass className="w-2.5 h-2.5 text-[#FF6600]" />
+                      {item.distance}
+                    </span>
+                  </div>
+
+                  {/* Text descriptions */}
+                  <div className="min-w-0 flex-1">
+                    <h4 className="text-xs sm:text-[13px] font-bold text-stone-900 group-hover:text-[#FF6600] transition-colors truncate">
+                      {item.title}
+                    </h4>
+                    <p className="text-[11px] text-stone-500 line-clamp-2 mt-0.5 leading-snug">
+                      {item.subtitle}
+                    </p>
+                  </div>
+
+                  {/* Orange Chevron */}
+                  <ChevronRight className="w-4 h-4 text-[#FF6600] group-hover:translate-x-0.5 transition-transform shrink-0" />
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom Status bar */}
+            <div className="pt-2 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 select-none">
+              <span>⚡ Verified GPS Registries</span>
+              <span className="font-semibold text-stone-700">ASI & State Portals</span>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

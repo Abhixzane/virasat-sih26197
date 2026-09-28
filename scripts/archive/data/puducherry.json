@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-yoga-festival-puducherry",
+    "entity_name": "International Yoga Festival, Puducherry",
+    "category": "festivals_and_traditions",
+    "state": "Puducherry",
+    "query_used": "International Yoga Festival Puducherry January 4 to 7 tourism dates",
+    "tool_used": "search_web",
+    "result_url": "https://py.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Annual 4-day festival organized by Puducherry Tourism consistently held from January 4th to January 7th",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to ANNUAL_OFFICIAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "ANNUAL_OFFICIAL",
+      "traditional_month": "January",
+      "exact_date": "January 4 - 7 Annually",
+      "approximate_season": "Early January"
+    },
+    "supporting_claim": "Official annual 4-day yoga festival organized by Tourism Department of Puducherry held January 4-7 at Beach Road.",
+    "source_url": "https://py.gov.in"
+  },
+  {
+    "entity_id": "fest-manakula-vinayagar-brahmotsavam",
+    "entity_name": "Manakula Vinayagar Temple Brahmotsavam",
+    "category": "festivals_and_traditions",
+    "state": "Puducherry",
+    "query_used": "Manakula Vinayagar Brahmotsavam Puducherry Avani chariot dates",
+    "tool_used": "search_web",
+    "result_url": "https://manakulavinayagartemple.com",
+    "page_fetched": false,
+    "claim_checked": "24-day annual temple festival celebrated during the Tamil month of Avani (August-September) with golden chariot procession",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Avani",
+      "exact_date": "Avani month (24 days observance)",
+      "approximate_season": "August - September"
+    },
+    "supporting_claim": "Major 24-day annual temple festival at Arulmigu Manakula Vinayagar Temple in Avani month featuring golden chariot procession.",
+    "source_url": "https://manakulavinayagartemple.com"
+  }
+]

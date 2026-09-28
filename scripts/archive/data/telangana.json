@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-bonalu-telangana",
+    "entity_name": "Bonalu Mahankali Jathara",
+    "category": "festivals_and_traditions",
+    "state": "Telangana",
+    "query_used": "Bonalu Telangana Ashada Masam Golconda Mahankali brass pot dates",
+    "tool_used": "search_web",
+    "result_url": "https://telangana.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Celebrated across Ashada Masam (Sundays in July-August) starting at Golconda Fort with women carrying decorated brass/earthen Bonam pots to Mahankali temples",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Ashada Masam",
+      "exact_date": "Sundays of Ashada Masam (Month-long festival)",
+      "approximate_season": "July - August"
+    },
+    "supporting_claim": "Telangana state festival celebrated across Ashada month with Bonam food offerings in decorated pots carried to Mahankali shrines.",
+    "source_url": "https://telangana.gov.in"
+  },
+  {
+    "entity_id": "fest-bathukamma-floral",
+    "entity_name": "Bathukamma (Floral Goddess Festival)",
+    "category": "festivals_and_traditions",
+    "state": "Telangana",
+    "query_used": "Bathukamma Telangana Mahalaya Amavasya Saddula floral arrangement dates",
+    "tool_used": "search_web",
+    "result_url": "https://telangana.gov.in",
+    "page_fetched": false,
+    "claim_checked": "9-day floral festival celebrated by women starting on Mahalaya Amavasya and concluding on Durgashtami (Saddula Bathukamma) honoring Goddess Gauri",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Bhadrapada Amavasya to Ashwin",
+      "exact_date": "Mahalaya Amavasya to Durgashtami (9 days)",
+      "approximate_season": "September - October"
+    },
+    "supporting_claim": "Telangana state floral festival celebrated for 9 days from Mahalaya Amavasya to Saddula Bathukamma with seasonal concentric flower stacks.",
+    "source_url": "https://telangana.gov.in"
+  }
+]

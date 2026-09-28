@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PerformingArt",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "state",
+    "category",
+    "description",
+    "cultural_significance",
+    "verification_status"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "slug": { "type": "string" },
+    "state": { "type": "string" },
+    "origin_region": { "type": ["string", "null"] },
+    "category": { "type": "string" },
+    "description": { "type": "string" },
+    "historical_context": { "type": ["string", "null"] },
+    "instruments": { "type": ["array", "null"] },
+    "cultural_significance": { "type": "string" },
+    "image_url": { "type": ["string", "null"] },
+    "image_attribution": { "type": ["string", "null"] },
+    "license": { "type": ["string", "null"] },
+    "source_url": { "type": ["string", "null"] },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "PARTIALLY_VERIFIED", "UNVERIFIED", "NEEDS_REVIEW"]
+    }
+  }
+}

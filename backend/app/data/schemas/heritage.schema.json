@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HeritageSite",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "state",
+    "city",
+    "category",
+    "historical_description",
+    "cultural_significance",
+    "latitude",
+    "longitude",
+    "verification_status"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "slug": { "type": "string" },
+    "state": { "type": "string" },
+    "city": { "type": "string" },
+    "category": { "type": "string" },
+    "architectural_style": { "type": ["string", "null"] },
+    "historical_period": { "type": ["string", "null"] },
+    "construction_period": { "type": ["string", "null"] },
+    "historical_description": { "type": "string" },
+    "cultural_significance": { "type": "string" },
+    "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+    "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+    "image_url": { "type": ["string", "null"] },
+    "image_attribution": { "type": ["string", "null"] },
+    "license": { "type": ["string", "null"] },
+    "source_url": { "type": ["string", "null"] },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "PARTIALLY_VERIFIED", "UNVERIFIED", "NEEDS_REVIEW"]
+    }
+  }
+}

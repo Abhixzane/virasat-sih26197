@@ -1,5 +1,6 @@
 import React from 'react';
-import { Palette, MapPin, Sparkles, ExternalLink, ShieldCheck, Award } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { MapPin, Sparkles, ExternalLink, Award } from 'lucide-react';
 import { ArtCraft } from '../../types/cultural';
 
 interface ArtCraftCardProps {
@@ -13,85 +14,97 @@ export const ArtCraftCard: React.FC<ArtCraftCardProps> = ({
   onExploreRelated,
   onClick,
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div
-      onClick={onClick}
-      className="group bg-white rounded-2xl border border-[#EFE8DF] overflow-hidden shadow-heritage hover:shadow-heritage-hover transition-all duration-300 flex flex-col cursor-pointer"
+      onClick={onClick || (() => navigate(`/arts-crafts/${art.id}`))}
+      className="group bg-white rounded-3xl border border-stone-200/90 overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer"
     >
-      <div className="relative h-52 overflow-hidden bg-stone-100">
+      {/* 1. Visual Card Header with Photo & Badges */}
+      <div className="relative h-56 overflow-hidden bg-stone-100">
         <img
           src={art.image_url}
           alt={art.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           onError={(e) => {
-            (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800';
+            (e.target as HTMLImageElement).src =
+              'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800';
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+        {/* Scrim overlay for location readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none" />
 
-        <div className="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-[11px] font-bold text-emerald-900 shadow-xs">
-          <Palette className="w-3.5 h-3.5 text-emerald-700" />
-          <span>{art.craft_category}</span>
+        {/* Top-Left Category Badge with exact teal vector icon */}
+        <div className="absolute top-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-[11px] font-semibold text-stone-800 shadow-2xs border border-stone-200/50">
+          <Sparkles className="w-3.5 h-3.5 text-teal-700 shrink-0" />
+          <span className="truncate max-w-[180px]">{art.craft_category}</span>
         </div>
 
+        {/* Top-Right GI Tagged Badge */}
         {art.gi_status && (
-          <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-950/80 backdrop-blur-md text-[10px] font-bold text-amber-300 border border-amber-500/40">
+          <div className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-950/85 backdrop-blur-md text-[10px] font-bold text-amber-300 border border-amber-500/40 shadow-xs">
             <Award className="w-3 h-3 text-amber-400" />
             <span>GI Tagged</span>
           </div>
         )}
 
-        <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
-          <div className="flex items-center gap-1 drop-shadow-md">
+        {/* Bottom-Left Origin Geolocation Pin */}
+        <div className="absolute bottom-2.5 left-3 right-3 flex items-center text-white text-xs drop-shadow-md font-medium">
+          <div className="flex items-center gap-1.5 truncate">
             <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-            <span className="font-medium">{art.origin}, {art.state}</span>
+            <span className="truncate">{art.origin || 'Heritage Cluster'}, {art.state}</span>
           </div>
         </div>
       </div>
 
-      <div className="p-5 flex-1 flex flex-col justify-between">
+      {/* 2. Card Content Body */}
+      <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
         <div>
-          <h3 className="text-lg font-bold text-stone-900 group-hover:text-emerald-900 transition-colors line-clamp-1 font-serif">
+          <h3 className="text-base sm:text-lg font-bold font-serif text-stone-900 group-hover:text-[#FF6600] transition-colors line-clamp-1 leading-snug">
             {art.name}
           </h3>
 
-          <div className="text-[11px] font-medium text-stone-500 mt-1 mb-2">
-            <span className="font-semibold text-stone-700">Artisan Guild:</span> {art.artisan_name}
+          <div className="text-xs text-stone-500 font-medium mt-1">
+            <span className="font-bold text-stone-800">Artisan Guild:</span>{' '}
+            <span className="text-stone-700">{art.artisan_name || 'Traditional Master Guild'}</span>
           </div>
 
-          <p className="text-xs text-stone-600 line-clamp-3 leading-relaxed">
+          <p className="text-xs text-stone-600 line-clamp-3 leading-relaxed mt-2">
             {art.description}
           </p>
 
-          <div className="mt-3 text-[11px] text-stone-500 bg-stone-50 p-2 rounded-lg border border-stone-200/60">
-            <span className="font-semibold text-stone-700">Materials:</span> {art.materials_used}
+          <div className="mt-3 text-[11px] text-stone-600 bg-stone-50/80 p-2.5 rounded-xl border border-stone-200/60 leading-relaxed">
+            <span className="font-bold text-stone-800">Materials:</span>{' '}
+            <span className="text-stone-600">
+              {art.materials_used || 'Natural plant dyes, native timber, non-toxic mineral pigments'}
+            </span>
           </div>
         </div>
 
-        <div className="pt-4 mt-4 border-t border-stone-100 flex items-center justify-between">
+        {/* 3. Action Buttons Footer */}
+        <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
           <button
             onClick={(e) => {
               e.stopPropagation();
               onExploreRelated?.('art_craft', art.id);
             }}
-            className="inline-flex items-center gap-1 text-xs font-semibold text-indigo-900 hover:text-indigo-700 bg-indigo-50/80 hover:bg-indigo-100 px-2.5 py-1.5 rounded-lg border border-indigo-200 transition-colors"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200/80 transition-all cursor-pointer group-hover:shadow-2xs"
           >
-            <Sparkles className="w-3 h-3 text-indigo-600" />
-            <span>Connected Intelligence</span>
+            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+            <span>Learn More →</span>
           </button>
 
-          {art.source_url && (
-            <a
-              href={art.source_url}
-              target="_blank"
-              rel="noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="text-stone-400 hover:text-stone-700 transition-colors"
-              title="Official Craft Source"
-            >
-              <ExternalLink className="w-4 h-4" />
-            </a>
-          )}
+          <a
+            href={art.source_url || 'https://search.ipindia.gov.in/GIRPublic/'}
+            target="_blank"
+            rel="noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="text-stone-400 hover:text-[#FF6600] transition-colors p-1"
+            title="Official Craft Registry Source"
+          >
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </div>

@@ -44,7 +44,8 @@ class AIChatService:
         # 1. Retrieve relevant records from central database
         records, sources = self.retrieval.extract_entities_and_retrieve(
             user_query,
-            context_record_id=req.context_record_id
+            context_record_id=req.context_record_id,
+            conversation_history=req.conversation_history
         )
 
         is_grounded = len(records) > 0
@@ -60,7 +61,8 @@ class AIChatService:
             prompt=prompt,
             system_instruction=VIRASAT_SYSTEM_PROMPT,
             retrieved_records=records,
-            language=lang
+            language=lang,
+            user_query=user_query
         )
 
         # 5. Formulate contextual follow-up suggestions

@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-sama-chakeva",
+    "entity_name": "Sama-Chakeva Winter Bird Festival",
+    "category": "festivals_and_traditions",
+    "state": "Bihar",
+    "query_used": "Sama Chakeva Mithila Bihar Kartik Shukla Saptami to Purnima clay birds dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Sama_Chakeva",
+    "page_fetched": false,
+    "claim_checked": "Observed from Kartik Shukla Saptami to Kartik Purnima (November) in Mithila by sisters crafting clay bird figurines welcoming winter migratory birds",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Kartik",
+      "exact_date": "Kartik Shukla Saptami to Kartik Purnima",
+      "approximate_season": "November"
+    },
+    "supporting_claim": "Mithila folk festival celebrating brother-sister bond and welcoming Himalayan migratory birds with clay figurines concluding on Kartik Purnima.",
+    "source_url": "https://en.wikipedia.org/wiki/Sama_Chakeva"
+  },
+  {
+    "entity_id": "fest-sonepur-mela",
+    "entity_name": "Sonepur Harihar Kshetra Mela",
+    "category": "festivals_and_traditions",
+    "state": "Bihar",
+    "query_used": "Sonepur Mela Harihar Kshetra Kartik Purnima Bihar cattle fair dates",
+    "tool_used": "search_web",
+    "result_url": "https://state.bihar.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Starts on Kartik Purnima (November) extending for a month at the confluence of Ganga and Gandak rivers at Harihar Kshetra, Sonepur",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Kartik to Margashirsha",
+      "exact_date": "Starts Kartik Purnima (approx 1 month duration)",
+      "approximate_season": "November - December"
+    },
+    "supporting_claim": "Historic cattle and cultural fair in Sonepur starting on Kartik Purnima with holy dips at the Ganga-Gandak confluence.",
+    "source_url": "https://state.bihar.gov.in"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-gujarat-navratri-garba",
+    "entity_name": "Navratri Mahotsav & Vibrant Garba",
+    "category": "festivals_and_traditions",
+    "state": "Gujarat",
+    "query_used": "Garba of Gujarat UNESCO Intangible Cultural Heritage 2023 Ashwin Navratri dates",
+    "tool_used": "search_web",
+    "result_url": "https://pib.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Inscribed on UNESCO Representative List of Intangible Cultural Heritage of Humanity (Dec 2023), 9 nights of Garba during Ashwin Shukla Pratipada to Navami",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Ashwin",
+      "exact_date": "Ashwin Shukla Pratipada to Navami (9 nights)",
+      "approximate_season": "September - October"
+    },
+    "supporting_claim": "Inscribed on UNESCO Intangible Cultural Heritage list in Dec 2023; world's longest dance festival spanning 9 nights of devotion to Goddess Amba.",
+    "source_url": "https://pib.gov.in"
+  },
+  {
+    "entity_id": "fest-rann-utsav-kutch",
+    "entity_name": "Rann Utsav & White Desert Cultural",
+    "category": "festivals_and_traditions",
+    "state": "Gujarat",
+    "query_used": "Rann Utsav Dhordo Kutch Gujarat Tourism November to February tent city dates",
+    "tool_used": "search_web",
+    "result_url": "https://rannutsav.net",
+    "page_fetched": false,
+    "claim_checked": "Annual tourism festival running from November to March at Tent City Dhordo, Great Rann of Kutch celebrating desert folk crafts and full moon nights",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to ANNUAL_OFFICIAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "ANNUAL_OFFICIAL",
+      "traditional_month": "November - March",
+      "exact_date": "November 1 to March (Annual Winter Season)",
+      "approximate_season": "Winter (Nov - Feb)"
+    },
+    "supporting_claim": "Annual winter festival in the white salt desert of Dhordo, Kutch featuring Kutchi folk dances, artisans, and full-moon desert viewing.",
+    "source_url": "https://rannutsav.net"
+  }
+]

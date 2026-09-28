@@ -37,8 +37,12 @@ class HeritagePlace(BaseModel):
     latitude: float
     longitude: float
     image_url: str
+    image_attribution: Optional[str] = None
+    license: Optional[str] = None
     source_url: str
     verification_status: str = "VERIFIED"
+    entry_fee: Optional[str] = None
+    opening_hours: Optional[str] = None
 
 # -------------------------------------------------------------
 # Collection C: Festivals and Traditions
@@ -58,6 +62,8 @@ class Festival(BaseModel):
     associated_place_ids: List[str] = Field(default_factory=list)
     related_tradition_ids: List[str] = Field(default_factory=list)
     image_url: str
+    image_attribution: Optional[str] = None
+    license: Optional[str] = None
     source_url: str
     verification_status: str = "VERIFIED"
 
@@ -78,6 +84,8 @@ class ArtCraft(BaseModel):
     artisan_location: str
     gi_status: bool = False
     image_url: str
+    image_attribution: Optional[str] = None
+    license: Optional[str] = None
     source_url: str
     verification_status: str = "VERIFIED"
 
@@ -95,6 +103,8 @@ class PerformingArt(BaseModel):
     instruments: List[str] = Field(default_factory=list)
     cultural_significance: str
     image_url: str
+    image_attribution: Optional[str] = None
+    license: Optional[str] = None
     source_url: str
     verification_status: str = "VERIFIED"
 
@@ -114,8 +124,12 @@ class CulturalExperience(BaseModel):
     latitude: float
     longitude: float
     image_url: str
+    image_attribution: Optional[str] = None
+    license: Optional[str] = None
     source_url: str
     verification_status: str = "VERIFIED"
+    entry_fee: Optional[str] = None
+    opening_hours: Optional[str] = None
 
 # -------------------------------------------------------------
 # Collection G: Cultural Stories

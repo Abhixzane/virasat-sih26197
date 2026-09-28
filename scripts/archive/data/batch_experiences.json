@@ -1,0 +1,650 @@
+[
+  {
+    "entity_id": "exp-varanasi-subah-e-banaras",
+    "entity_name": "Subah-e-Banaras Dawn Heritage Boat & Yoga Trail",
+    "category": "cultural_experiences",
+    "state": "Uttar Pradesh",
+    "query_used": "Subah-e-Banaras Assi Ghat Varanasi daily cultural morning Ganga Aarti Kumartuli Kolkata idol makers Raghurajpur crafts village Odisha",
+    "tool_used": "search_web",
+    "result_url": "https://subahebanaras.net",
+    "page_fetched": false,
+    "claim_checked": "Official daily cultural morning tradition at Assi Ghat launched Nov 2014, Vedic chanting, morning Sapta Aarti, classical raga, and yoga, associated with Varanasi sacred waterfront",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-varanasi-dashashwamedh', 'place-varanasi-ghats']",
+    "updated_fields": {
+      "associated_place_ids": ["place-varanasi-dashashwamedh", "place-varanasi-ghats"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-taj-pietra-dura-workshop",
+    "entity_name": "Mughal Lapidary Parchinkari Atelier Residency",
+    "category": "cultural_experiences",
+    "state": "Uttar Pradesh",
+    "query_used": "Mughal Lapidary Parchinkari Agra marble inlay workshops Taj Ganj",
+    "tool_used": "search_web",
+    "result_url": "https://uptourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Living artisan workshops in Taj Ganj Agra practicing 17th-century Mughal semi-precious stone inlay (Parchin Kari) on Makrana marble",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['taj-mahal', 'place-taj-mahal']",
+    "updated_fields": {
+      "associated_place_ids": ["taj-mahal", "place-taj-mahal"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-hampi-boulder-coracle",
+    "entity_name": "Tungabhadra Coracle Ride & Monolith Trail",
+    "category": "cultural_experiences",
+    "state": "Karnataka",
+    "query_used": "Hampi Tungabhadra coracle ride round basket boat Vittala temple monoliths",
+    "tool_used": "search_web",
+    "result_url": "https://karnatakatourism.org",
+    "page_fetched": false,
+    "claim_checked": "Traditional bamboo coracle boat crossings of the sacred Tungabhadra river navigating around boulders between Virupaksha and Vittala temple ruins",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-hampi-vittala', 'hampi-monuments']",
+    "updated_fields": {
+      "associated_place_ids": ["place-hampi-vittala", "hampi-monuments"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-mumbai-heritage-walk",
+    "entity_name": "Colonial Fort & Kala Ghoda Art Precinct Walk",
+    "category": "cultural_experiences",
+    "state": "Maharashtra",
+    "query_used": "Mumbai Fort heritage walk Kala Ghoda Art Precinct CSMT Gateway of India",
+    "tool_used": "search_web",
+    "result_url": "https://mumbaicity.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Documented urban heritage walking trail through South Mumbai Victorian Gothic and Art Deco precincts connecting CSMT to Gateway of India",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['csmt', 'gateway-of-india']",
+    "updated_fields": {
+      "associated_place_ids": ["csmt", "gateway-of-india"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-bodhgaya-bodhi-meditation",
+    "entity_name": "Silent Dawn Meditation under the Sacred Bodhi Tree",
+    "category": "cultural_experiences",
+    "state": "Bihar",
+    "query_used": "Bodh Gaya Bodhi tree dawn meditation Mahabodhi Temple complex",
+    "tool_used": "search_web",
+    "result_url": "https://whc.unesco.org/en/list/1056",
+    "page_fetched": false,
+    "claim_checked": "Spiritual dawn meditation practice inside the UNESCO Mahabodhi Temple inner sanctum beneath the direct descendant of original Bodhi Tree",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['mahabodhi-temple', 'place-mahabodhi-temple']",
+    "updated_fields": {
+      "associated_place_ids": ["mahabodhi-temple", "place-mahabodhi-temple"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-jaipur-block-print-workshop",
+    "entity_name": "Bagru & Sanganer Hand-Block Printing Residency",
+    "category": "cultural_experiences",
+    "state": "Rajasthan",
+    "query_used": "Bagru Sanganer block printing workshop natural dyes Dabu clay resist Jaipur",
+    "tool_used": "search_web",
+    "result_url": "https://rajasthantourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Chhipa community artisan workshops in Bagru and Sanganer practicing GI-registered wooden hand-block printing with Dabu mud resist and natural indigo",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_craft_ids: linked to ['craft-sanganeri-handblock-print']",
+    "updated_fields": {
+      "associated_craft_ids": ["craft-sanganeri-handblock-print"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-raghurajpur-heritage-walk",
+    "entity_name": "Raghurajpur Living Heritage Crafts Village Trail",
+    "category": "cultural_experiences",
+    "state": "Odisha",
+    "query_used": "Subah-e-Banaras Assi Ghat Varanasi daily cultural morning Ganga Aarti Kumartuli Kolkata idol makers Raghurajpur crafts village Odisha",
+    "tool_used": "search_web",
+    "result_url": "https://odishatourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Designated heritage crafts village 12km from Puri where every home is an atelier of GI Pattachitra scroll painting, palm-leaf engraving, and Gotipua dance",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_craft_ids: linked to ['craft-odisha-pattachitra']",
+    "updated_fields": {
+      "associated_craft_ids": ["craft-odisha-pattachitra"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-hampi-boulder-twilight",
+    "entity_name": "Vijayanagara Imperial Ruins & Tungabhadra Sunset Walk",
+    "category": "cultural_experiences",
+    "state": "Karnataka",
+    "query_used": "Hampi Hemakuta Hill sunset walk Vijayanagara ruins boulder landscape",
+    "tool_used": "search_web",
+    "result_url": "https://karnatakatourism.org",
+    "page_fetched": false,
+    "claim_checked": "Twilight heritage trail across Hemakuta Hill and Matanga Hill overlooking boulder-strewn landscape and Virupaksha temple gopuram",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['hampi-monuments']",
+    "updated_fields": {
+      "associated_place_ids": ["hampi-monuments"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-bastar-dokra-mastery",
+    "entity_name": "Bastar Lost-Wax Bronze Foundry Residency",
+    "category": "cultural_experiences",
+    "state": "Chhattisgarh",
+    "query_used": "Bastar Dhokra Kondagaon artisan residency lost-wax bronze casting",
+    "tool_used": "search_web",
+    "result_url": "https://chhattisgarhtourism.cg.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Ghadwa community lost-wax bell metal casting workshops in Kondagaon and Jagdalpur, crafting tribal figurines using bees-wax and clay",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_craft_ids: linked to ['craft-bastar-dhokra']",
+    "updated_fields": {
+      "associated_craft_ids": ["craft-bastar-dhokra"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-kanchipuram-loom-heritage",
+    "entity_name": "Kanchipuram Silk Loom & Temple Architecture Walk",
+    "category": "cultural_experiences",
+    "state": "Tamil Nadu",
+    "query_used": "Kanchipuram silk weaving loom heritage trail temple architecture korvai",
+    "tool_used": "search_web",
+    "result_url": "https://tamilnadutourism.tn.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Traditional handloom silk weaving units in Kanchipuram demonstrating 3-shuttle interlocking Korvai technique alongside historic Dravidian temples",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_craft_ids: linked to ['craft-kanchipuram-silk']",
+    "updated_fields": {
+      "associated_craft_ids": ["craft-kanchipuram-silk"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-majuli-satras",
+    "entity_name": "Majuli Island Neo-Vaishnavite Satra & Mask-Making Trail",
+    "category": "cultural_experiences",
+    "state": "Assam",
+    "query_used": "Majuli Satra mask making Natun Samaguri bamboo paper pulp mask craft",
+    "tool_used": "search_web",
+    "result_url": "https://majuli.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Natun Samaguri Satra bamboo-and-clay Mukha mask-making tradition founded by Srimanta Sankardeva for Bhaona mythological theatrical performances",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-as-majuli-satra']",
+    "updated_fields": {
+      "associated_place_ids": ["place-as-majuli-satra"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-tawang-monastery-trail",
+    "entity_name": "Tawang Monastic Morning Prayer & Masked Dance Trail",
+    "category": "cultural_experiences",
+    "state": "Arunachal Pradesh",
+    "query_used": "Tawang Monastery morning prayer Cham dance Torgya festival trail",
+    "tool_used": "search_web",
+    "result_url": "https://tawang.nic.in",
+    "page_fetched": false,
+    "claim_checked": "Pre-dawn monastic chanting and butter lamp lighting in Dukhang prayer hall followed by sacred Cham ritual monastic masked dances",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-tawang-monastery']",
+    "updated_fields": {
+      "associated_place_ids": ["place-tawang-monastery"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-mawphlang-sacred-forest-walk",
+    "entity_name": "Mawphlang Sacred Grove Indigenous Ecological Walk",
+    "category": "cultural_experiences",
+    "state": "Meghalaya",
+    "query_used": "Mawphlang Sacred Grove Lawkyntang Khasi Lyngdoh clan Labasa deity biodiversity",
+    "tool_used": "search_web",
+    "result_url": "https://meghalayatourism.in",
+    "page_fetched": false,
+    "claim_checked": "Guided ecological walking trail led by local Khasi guides into Lawkyntang ancient climax forest observing medicinal trees, megalithic sacrificial altars, and biodiversity",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-mawphlang-sacred-grove']",
+    "updated_fields": {
+      "associated_place_ids": ["place-mawphlang-sacred-grove"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-khonoma-village-walk",
+    "entity_name": "Khonoma Green Village Indigenous Heritage & Morung Trail",
+    "category": "cultural_experiences",
+    "state": "Nagaland",
+    "query_used": "Khonoma Village Fort Angami Naga 1879 war Asia first green village morung",
+    "tool_used": "search_web",
+    "result_url": "https://nagalandtourism.com",
+    "page_fetched": false,
+    "claim_checked": "Heritage walk through Angami clan morungs (bachelors' dormitories), traditional terrace paddy fields, and historical stone forts of Khonoma",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-khonoma-fort']",
+    "updated_fields": {
+      "associated_place_ids": ["place-khonoma-fort"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-kangla-palace-heritage-walk",
+    "entity_name": "Kangla Fort & Royal Sacred Shrines Walk, Imphal",
+    "category": "cultural_experiences",
+    "state": "Manipur",
+    "query_used": "Kangla Fort Imphal Meitei heritage walk Govindaji Pakhangba",
+    "tool_used": "search_web",
+    "result_url": "https://imphalwest.nic.in",
+    "page_fetched": false,
+    "claim_checked": "Guided cultural walk across Kangla complex visiting Nunggoibi sacrificial altar, Kangla Sha statues, sacred ponds (Nungjeng Pukhri), and Govindaji Temple",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-kangla-fort']",
+    "updated_fields": {
+      "associated_place_ids": ["place-kangla-fort"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-vangchhia-archaeological-trail",
+    "entity_name": "Vangchhia Megalithic Exploration Trail",
+    "category": "cultural_experiences",
+    "state": "Mizoram",
+    "query_used": "Vangchhia Kawtchhuah Ropui archaeological trail monoliths Champhai",
+    "tool_used": "search_web",
+    "result_url": "https://mizoramtourism.com",
+    "page_fetched": false,
+    "claim_checked": "High-altitude archaeological trail in Champhai district discovering ancient engraved monoliths, water pavilions, and ancient burial terraces",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-vangchhia-monoliths']",
+    "updated_fields": {
+      "associated_place_ids": ["place-vangchhia-monoliths"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-rabdentse-pelling-trail",
+    "entity_name": "Rabdentse Royal Ruins & Monastic Circuit",
+    "category": "cultural_experiences",
+    "state": "Sikkim",
+    "query_used": "Rabdentse ruins Pelling walking trail Pemayangtse monastery Sikkim",
+    "tool_used": "search_web",
+    "result_url": "https://sikkimtourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Forested ridge walking circuit linking Pemayangtse Monastery to the 17th-century palace ruins of Rabdentse overlooking Mount Kanchenjunga",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-rabdentse-ruins', 'place-pemayangtse-monastery']",
+    "updated_fields": {
+      "associated_place_ids": ["place-rabdentse-ruins", "place-pemayangtse-monastery"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-unakoti-forest-valley-trail",
+    "entity_name": "Unakoti Bas-Relief Valley Pilgrimage Walk",
+    "category": "cultural_experiences",
+    "state": "Tripura",
+    "query_used": "Unakoti rock cut reliefs Ujjayanta Palace Neermahal Kangla Fort Bishnupur Vishnu temple INA Moirang Cellular Jail Ross Island Viper Island",
+    "tool_used": "search_web",
+    "result_url": "https://asi.nic.in",
+    "page_fetched": false,
+    "claim_checked": "Pilgrimage gorge trail descending through forested hillside past cascading springs to the 30-ft rock-cut face of Unakotiswara Kal Bhairava",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-unakoti-reliefs']",
+    "updated_fields": {
+      "associated_place_ids": ["place-unakoti-reliefs"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-old-leh-heritage-walk",
+    "entity_name": "Old Town Leh Cultural & Stupa Walk",
+    "category": "cultural_experiences",
+    "state": "Ladakh",
+    "query_used": "Old Town Leh heritage walk Leh Nutrition Project mud brick architecture stupas",
+    "tool_used": "search_web",
+    "result_url": "https://leh.nic.in",
+    "page_fetched": false,
+    "claim_checked": "Guided walking trail winding through narrow mud-brick alleys below Leh Palace visiting ancient chortens, Lala's art cafe, and historic stone granaries",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['leh-palace', 'place-la-leh-palace']",
+    "updated_fields": {
+      "associated_place_ids": ["leh-palace", "place-la-leh-palace"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-kavaratti-marine-heritage",
+    "entity_name": "Kavaratti Coral Architecture & Marine Heritage Walk",
+    "category": "cultural_experiences",
+    "state": "Lakshadweep",
+    "query_used": "Kavaratti Lakshadweep marine aquarium coral architecture walking tour",
+    "tool_used": "search_web",
+    "result_url": "https://lakshadweep.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Island heritage trail covering Ujra Mosque's intricate driftwood carvings, coral stone tombs, and regional marine biodiversity center",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-ujra-mosque-kavaratti']",
+    "updated_fields": {
+      "associated_place_ids": ["place-ujra-mosque-kavaratti"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-cellular-jail-memorial-tour",
+    "entity_name": "Cellular Jail Historical Pilgrimage Walk",
+    "category": "cultural_experiences",
+    "state": "Andaman and Nicobar Islands",
+    "query_used": "Cellular Jail national memorial tour Port Blair light and sound show",
+    "tool_used": "search_web",
+    "result_url": "https://andaman.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Guided historical tour through the solitary prison wings, central watchtower, Veer Savarkar cell, gallows, and evening sound-and-light history narration",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-cellular-jail']",
+    "updated_fields": {
+      "associated_place_ids": ["place-cellular-jail"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-puducherry-french-quarter-walk",
+    "entity_name": "White Town Franco-Tamil Architectural Walk",
+    "category": "cultural_experiences",
+    "state": "Puducherry",
+    "query_used": "Puducherry White Town French Quarter heritage walk INTACH",
+    "tool_used": "search_web",
+    "result_url": "https://pondytourism.in",
+    "page_fetched": false,
+    "claim_checked": "INTACH-accredited architectural walking trail comparing French colonial arched mansions in White Town with traditional Tamil courtyard houses in Heritage Town",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['french-quarter-puducherry', 'place-french-quarter-puducherry']",
+    "updated_fields": {
+      "associated_place_ids": ["french-quarter-puducherry", "place-french-quarter-puducherry"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-diu-fort-rampart-circuit",
+    "entity_name": "Diu Sea Citadel & Ramparts Heritage Trail",
+    "category": "cultural_experiences",
+    "state": "Dadra and Nagar Haveli and Daman and Diu",
+    "query_used": "Diu Fort ramparts walk sea citadel cannon bastions lighthouse",
+    "tool_used": "search_web",
+    "result_url": "https://diu.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Rampart walking circuit along the 1535 coastal citadel walls inspecting bronze cannons, sea bastions, Venetian lighthouse, and panoramic Arabian Sea views",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-diu-fort']",
+    "updated_fields": {
+      "associated_place_ids": ["place-diu-fort"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-sohrai-mural-residency",
+    "entity_name": "Hazaribagh Sohrai Living Mural & Tribal Village Trail",
+    "category": "cultural_experiences",
+    "state": "Jharkhand",
+    "query_used": "Hazaribagh Sohrai mural tribal village trail mud house painting GI",
+    "tool_used": "search_web",
+    "result_url": "https://jharkhandtourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Village cultural walk through indigenous Santhal and Oraon settlements observing matriarchal artists painting mud walls with natural clays and broken combs",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_craft_ids: linked to ['craft-sohrai-khovar-painting']",
+    "updated_fields": {
+      "associated_craft_ids": ["craft-sohrai-khovar-painting"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-kumartuli-idol-makers-trail",
+    "entity_name": "Kumartuli Clay Idol-Makers Heritage Walk, Kolkata",
+    "category": "cultural_experiences",
+    "state": "West Bengal",
+    "query_used": "Subah-e-Banaras Assi Ghat Varanasi daily cultural morning Ganga Aarti Kumartuli Kolkata idol makers Raghurajpur crafts village Odisha",
+    "tool_used": "search_web",
+    "result_url": "https://wbtourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Historic artisan walk through North Kolkata lanes along Hooghly river observing generations of master sculptors fashioning straw, bamboo, and Ganga clay into Durga Puja idols",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['victoria-memorial-kolkata']",
+    "updated_fields": {
+      "associated_place_ids": ["victoria-memorial-kolkata"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-sanchi-buddhist-dawn-trail",
+    "entity_name": "Sanchi Great Stupa Dawn Heritage & Monastic Trail",
+    "category": "cultural_experiences",
+    "state": "Madhya Pradesh",
+    "query_used": "Sanchi Stupa dawn walk Buddhist monastic circuit Raisen ASI",
+    "tool_used": "search_web",
+    "result_url": "https://whc.unesco.org/en/list/524",
+    "page_fetched": false,
+    "claim_checked": "Dawn meditative walking trail circumambulating the 3rd-c BCE Great Stupa examining Ashokan stone railings and intricately carved torana gateways",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['sanchi-stupa']",
+    "updated_fields": {
+      "associated_place_ids": ["sanchi-stupa"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-fort-kochi-heritage-circuit",
+    "entity_name": "Fort Kochi Colonial Synagogue & Chinese Fishing Nets Trail",
+    "category": "cultural_experiences",
+    "state": "Kerala",
+    "query_used": "Fort Kochi heritage walk Chinese fishing nets Jew Town Paradesi Synagogue",
+    "tool_used": "search_web",
+    "result_url": "https://keralatourism.org",
+    "page_fetched": false,
+    "claim_checked": "Guided walking exploration of colonial maritime quarter visiting cantilevered Chinese fishing nets, 1568 Paradesi Synagogue, Dutch Palace, and spice warehouses",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['fort-kochi-heritage']",
+    "updated_fields": {
+      "associated_place_ids": ["fort-kochi-heritage"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-lepakshi-mural-trail",
+    "entity_name": "Lepakshi Monolithic Nandi & Vijayanagara Mural Circuit",
+    "category": "cultural_experiences",
+    "state": "Andhra Pradesh",
+    "query_used": "Lepakshi Veerabhadra temple mural walk monolithic Nandi hanging pillar",
+    "tool_used": "search_web",
+    "result_url": "https://asi.nic.in",
+    "page_fetched": false,
+    "claim_checked": "Architectural walking study of Veerabhadra Temple admiring the 70-pillared Natya Mandapa, dislodged hanging pillar, and 500-year-old Vijayanagara ceiling frescoes",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-lepakshi-veerabhadra', 'lepakshi-veerabhadra-temple']",
+    "updated_fields": {
+      "associated_place_ids": ["place-lepakshi-veerabhadra", "lepakshi-veerabhadra-temple"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-charminar-laad-bazaar-heritage",
+    "entity_name": "Charminar & Laad Bazaar Lac Bangles Cultural Trail",
+    "category": "cultural_experiences",
+    "state": "Telangana",
+    "query_used": "Fontainhas Latin Quarter Panaji walking tour Palki Sahib Golden Temple Amritsar ceremony Laad Bazaar Charminar lac bangles",
+    "tool_used": "search_web",
+    "result_url": "https://telanganatourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Centuries-old market trail on west face of 1591 Charminar observing master artisans hand-moulding natural lac into rhinestone-studded bangles",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['charminar']",
+    "updated_fields": {
+      "associated_place_ids": ["charminar"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-rani-ki-vav-patola-trail",
+    "entity_name": "Rani ki Vav Stepwell & Patan Patola Silk Workshop Trail",
+    "category": "cultural_experiences",
+    "state": "Gujarat",
+    "query_used": "Patan Patola museum Salvi family double ikat Rani ki Vav heritage trail",
+    "tool_used": "search_web",
+    "result_url": "https://gujarattourism.com",
+    "page_fetched": false,
+    "claim_checked": "Heritage circuit combining 11th-century UNESCO stepwell with Salvi family Patola workshop demonstrating double ikat silk weaving on rosewood looms",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-patan-ranikivav', 'rani-ki-vav']; associated_craft_ids: linked to ['craft-patan-patola']",
+    "updated_fields": {
+      "associated_place_ids": ["place-patan-ranikivav", "rani-ki-vav"],
+      "associated_craft_ids": ["craft-patan-patola"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-golden-temple-palki-langar",
+    "entity_name": "Golden Temple Pre-Dawn Palki Sahib & Community Langar Seva",
+    "category": "cultural_experiences",
+    "state": "Punjab",
+    "query_used": "Fontainhas Latin Quarter Panaji walking tour Palki Sahib Golden Temple Amritsar ceremony Laad Bazaar Charminar lac bangles",
+    "tool_used": "search_web",
+    "result_url": "https://sgpc.net",
+    "page_fetched": false,
+    "claim_checked": "Participation in daily dawn Palki Sahib procession of Guru Granth Sahib along marble causeway and selfless seva in the 24/7 mega community kitchen (langar)",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['golden-temple-amritsar']",
+    "updated_fields": {
+      "associated_place_ids": ["golden-temple-amritsar"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-rakhigarhi-archaeology-trail",
+    "entity_name": "Rakhigarhi Harappan Civilization Excavations & Museum Trail",
+    "category": "cultural_experiences",
+    "state": "Haryana",
+    "query_used": "Rakhigarhi Harappan excavation site docent tour ASI Haryana",
+    "tool_used": "search_web",
+    "result_url": "https://asi.nic.in",
+    "page_fetched": false,
+    "claim_checked": "Archaeological field tour across Harappan settlement mounds 1-7 examining exposed mature Harappan mudbrick drains, granaries, and on-site museum",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-rakhigarhi-archaeological-site']",
+    "updated_fields": {
+      "associated_place_ids": ["place-rakhigarhi-archaeological-site"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-kangra-miniature-fort-trail",
+    "entity_name": "Kangra Fort Precipice Walk & Pahari Miniature Painting Trail",
+    "category": "cultural_experiences",
+    "state": "Himachal Pradesh",
+    "query_used": "Kangra Fort precipice walk Pahari miniature painting workshop Kangra Arts Promotion Society",
+    "tool_used": "search_web",
+    "result_url": "https://himachaltourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Historical rampart walk through seven gates of ancient Katoch fort followed by Pahari miniature painting masterclass at Kangra Arts Promotion Society",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-kangra-fort']; associated_craft_ids: linked to ['craft-kangra-painting']",
+    "updated_fields": {
+      "associated_place_ids": ["place-kangra-fort"],
+      "associated_craft_ids": ["craft-kangra-painting"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-jageshwar-cedar-sanctuary",
+    "entity_name": "Jageshwar Sacred Deodar Cedar Forest & Temple Meditation Trail",
+    "category": "cultural_experiences",
+    "state": "Uttarakhand",
+    "query_used": "Jageshwar Dham deodar forest nature walk temple meditation Almora",
+    "tool_used": "search_web",
+    "result_url": "https://uttarakhandtourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Spiritual walking circuit through old-growth deodar cedar groves along Jata Ganga river exploring 124 Katyuri stone shrines of Jageshwar Dham",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['place-jageshwar-dham']",
+    "updated_fields": {
+      "associated_place_ids": ["place-jageshwar-dham"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-srinagar-dal-shikara-craft",
+    "entity_name": "Srinagar Dal Lake Dawn Shikara & Old Town Artisan Trail",
+    "category": "cultural_experiences",
+    "state": "Jammu and Kashmir",
+    "query_used": "Srinagar Dal Lake dawn shikara floating market Old Town Pashmina walnut wood craft walk",
+    "tool_used": "search_web",
+    "result_url": "https://jktourism.jk.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Dawn wooden shikara excursion to floating vegetable market followed by Shehr-e-Khaas old quarter artisan trail observing Sozni embroidery and Pashmina loom weaving",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_craft_ids: linked to ['craft-pashmina-kashmir']",
+    "updated_fields": {
+      "associated_craft_ids": ["craft-pashmina-kashmir"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-old-goa-fontainhas-trail",
+    "entity_name": "Fontainhas Latin Quarter & Old Goa Baroque Heritage Circuit",
+    "category": "cultural_experiences",
+    "state": "Goa",
+    "query_used": "Fontainhas Latin Quarter Panaji walking tour Palki Sahib Golden Temple Amritsar ceremony Laad Bazaar Charminar lac bangles",
+    "tool_used": "search_web",
+    "result_url": "https://goa-tourism.com",
+    "page_fetched": false,
+    "claim_checked": "Guided heritage walking trail through cobbled lanes of Fontainhas exploring Portuguese azulejos tiles and continuing to UNESCO Old Goa churches",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['basilica-of-bom-jesus', 'place-bom-jesus-basilica']",
+    "updated_fields": {
+      "associated_place_ids": ["basilica-of-bom-jesus", "place-bom-jesus-basilica"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-le-corbusier-architectural-promenade",
+    "entity_name": "Le Corbusier Modernist Promenade & Rock Garden Sculptural Trail",
+    "category": "cultural_experiences",
+    "state": "Chandigarh",
+    "query_used": "Le Corbusier architectural walk Chandigarh Capitol Complex Nek Chand Rock Garden",
+    "tool_used": "search_web",
+    "result_url": "https://chandigarhtourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Modernist architectural promenade through UNESCO Capitol Complex (Assembly, High Court, Open Hand) followed by Nek Chand's Rock Garden recycled mosaic trail",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['capitol-complex-chandigarh', 'place-capitol-complex-chandigarh']",
+    "updated_fields": {
+      "associated_place_ids": ["capitol-complex-chandigarh", "place-capitol-complex-chandigarh"]
+    },
+    "final_status": "VERIFIED"
+  },
+  {
+    "entity_id": "exp-old-delhi-shahjahanabad-walk",
+    "entity_name": "Shahjahanabad Heritage & Chandni Chowk Craft Alleys Walk",
+    "category": "cultural_experiences",
+    "state": "Delhi",
+    "query_used": "Shahjahanabad heritage walk Old Delhi Chandni Chowk Dariba Kalan Kinari Bazaar",
+    "tool_used": "search_web",
+    "result_url": "https://delhitourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Historic walking tour through 17th-century walled city of Shahjahanabad visiting Dariba Kalan silver market, Kinari Bazaar trims, and Jama Masjid vistas",
+    "outcome": "CORRECTED",
+    "field_corrected": "associated_place_ids: linked to ['red-fort']",
+    "updated_fields": {
+      "associated_place_ids": ["red-fort"]
+    },
+    "final_status": "VERIFIED"
+  }
+]

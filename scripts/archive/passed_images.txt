@@ -1,0 +1,648 @@
+[Tier 1] heritage_places | place-hampi-vittala: 'Vittala Temple Complex & Stone Chariot, Hampi'
+  File: 'vishnu temple no.iii facing south gateway of vittala temple.jpg'
+
+[Tier 1] heritage_places | place-patan-ranikivav: 'Rani ki Vav (The Queen's Stepwell), Patan'
+  File: 'rani ki vav - patan - gujarat - dsc001.jpg'
+
+[Tier 1] heritage_places | place-jaipur-amber: 'Amber Fort & Palace, Jaipur'
+  File: 'amber fort-jaipur-india0016.jpg'
+
+[Tier 1] heritage_places | place-or-konark-sun: 'Sun Temple, Konark'
+  File: '13th century sculptures at konark sun temple puri district, odisha, india.jpg'
+
+[Tier 1] heritage_places | place-mh-mumbai-csmt: 'Chhatrapati Shivaji Maharaj Terminus & Fort Precinct, Mumbai'
+  File: 'chhatrapati shivaji maharaj terminus - mumbai - maharashtra - img 0703.jpg'
+
+[Tier 1] heritage_places | place-dl-humayuns-tomb: 'Humayun's Tomb Complex, New Delhi'
+  File: '20191205 afsarwala tomb, delhi 1051 6789.jpg'
+
+[Tier 1] heritage_places | taj-mahal: 'Taj Mahal'
+  File: 'aks the reflection taj mahal.jpg'
+
+[Tier 1] heritage_places | qutub-minar: 'Qutub Minar & Complex'
+  File: 'qutb minar 2011.jpg'
+
+[Tier 1] heritage_places | kalka-shimla-railway: 'Kalka-Shimla Mountain Railway'
+  File: 'kalka–shimla toy train.jpg'
+
+[Tier 1] heritage_places | shalimar-bagh-srinagar: 'Shalimar Bagh Mughal Garden'
+  File: 'a view of shalimar bagh in srinagar.jpg'
+
+[Tier 1] heritage_places | capitol-complex-chandigarh: 'The Capitol Complex (Le Corbusier)'
+  File: 'capitol complex monument 1 chandigarh.jpg'
+
+[Tier 1] heritage_places | amber-fort: 'Amber Fort & Palace (Amer)'
+  File: 'amber fort-jaipur-india0016.jpg'
+
+[Tier 1] heritage_places | hawa-mahal: 'Hawa Mahal (Palace of Winds)'
+  File: '20191218 hawa mahal (the palace of winds) in jaipur, 1150 9148.jpg'
+
+[Tier 1] heritage_places | jaisalmer-fort: 'Jaisalmer Fort (Sonar Qila / Golden Fort)'
+  File: 'corner battlements jaisalmer fort dec14 dsc 6282.jpg'
+
+[Tier 1] heritage_places | rani-ki-vav: 'Rani ki Vav (The Queen's Stepwell)'
+  File: 'rani ki vav - patan - gujarat - dsc001.jpg'
+
+[Tier 1] heritage_places | champaner-pavagadh: 'Champaner-Pavagadh Archaeological Park'
+  File: 'champaner-pavagadh - gujarat - 001.jpg'
+
+[Tier 1] heritage_places | ajanta-caves: 'Ajanta Caves'
+  File: 'ajanta caves panorama 2010.jpg'
+
+[Tier 1] heritage_places | csmt: 'Chhatrapati Shivaji Maharaj Terminus (CSMT)'
+  File: 'chhatrapati shivaji maharaj terminus - mumbai - maharashtra - img 0703.jpg'
+
+[Tier 1] heritage_places | basilica-of-bom-jesus: 'Basilica of Bom Jesus & Old Goa Churches'
+  File: 'basilica of bom jesus, goa 2.jpg'
+
+[Tier 1] heritage_places | hampi-monuments: 'Group of Monuments at Hampi (Vijayanagara)'
+  File: 'hampi, india, rocky landscape of hampi, granite rocks of matanga hill.jpg'
+
+[Tier 1] heritage_places | pattadakal-monuments: 'Group of Monuments at Pattadakal'
+  File: '7th - 9th century hindu and jain temples, pattadakal monuments karnataka 7.jpg'
+
+[Tier 1] heritage_places | brihadisvara-temple: 'Brihadisvara Temple (Peruvudaiyar Kovil)'
+  File: 'an elephant relief on the brihadisvara temple, thanjavur.jpg'
+
+[Tier 1] heritage_places | shore-temple-mahabalipuram: 'Shore Temple & Monuments at Mahabalipuram'
+  File: 'mahabalipuram shore temple, tamil nadu.jpg'
+
+[Tier 1] heritage_places | ramappa-temple: 'Kakatiya Rudreshwara (Ramappa) Temple'
+  File: 'beautifully carved gate of the kakatiya rudreshwara ramappa temple.jpg'
+
+[Tier 1] heritage_places | sanchi-stupa: 'Great Stupa at Sanchi'
+  File: 'buddha statue, sanchi 01.jpg'
+
+[Tier 1] heritage_places | sun-temple-konark: 'Sun Temple Konark (Black Pagoda)'
+  File: '13th century sculptures at konark sun temple puri district, odisha, india.jpg'
+
+[Tier 1] heritage_places | mahabodhi-temple: 'Mahabodhi Temple Complex'
+  File: 'decorative panels on votive stupas - mahabodhi temple complex (1).jpg'
+
+[Tier 1] heritage_places | nalanda-university-ruins: 'Archaeological Site of Nalanda Mahavihara'
+  File: 'exhibits in display at archeological survey of india's museum at nalanda, bihar, india 04.jpg'
+
+[Tier 1] heritage_places | living-root-bridges: 'Living Root Bridges of Cherrapunji (Nongriat)'
+  File: 'cherrapunji 1.jpg'
+
+[Tier 1] heritage_places | place-taj-mahal: 'Taj Mahal'
+  File: 'aks the reflection taj mahal.jpg'
+
+[Tier 1] heritage_places | place-mahabodhi-temple: 'Mahabodhi Temple Complex'
+  File: 'decorative panels on votive stupas - mahabodhi temple complex (1).jpg'
+
+[Tier 1] heritage_places | place-konark-sun-temple: 'Konark Sun Temple'
+  File: '13th century sculptures at konark sun temple puri district, odisha, india.jpg'
+
+[Tier 1] heritage_places | place-qutb-minar: 'Qutb Minar & Monument Complex'
+  File: 'art work on the wall of qutb minar complex.jpg'
+
+[Tier 1] heritage_places | place-ajanta-caves: 'Ajanta Caves'
+  File: 'ajanta caves panorama 2010.jpg'
+
+[Tier 1] heritage_places | place-hawa-mahal: 'Hawa Mahal (Palace of Winds)'
+  File: '20191218 hawa mahal (the palace of winds) in jaipur, 1150 9148.jpg'
+
+[Tier 1] heritage_places | place-rani-ki-vav: 'Rani ki Vav (The Queen's Stepwell)'
+  File: 'rani ki vav - patan - gujarat - dsc001.jpg'
+
+[Tier 1] heritage_places | place-amber-fort: 'Amber Fort & Palace'
+  File: 'amber fort-jaipur-india0016.jpg'
+
+[Tier 1] heritage_places | place-sun-temple-konark: 'Sun Temple, Konark (Black Pagoda)'
+  File: '13th century sculptures at konark sun temple puri district, odisha, india.jpg'
+
+[Tier 1] heritage_places | place-ramappa-temple: 'Kakatiya Rudreshwara (Ramappa) Temple'
+  File: 'beautifully carved gate of the kakatiya rudreshwara ramappa temple.jpg'
+
+[Tier 1] heritage_places | place-bhimbetka-caves: 'Rock Shelters of Bhimbetka'
+  File: 'rock shelter 3, bhimbetka 01.jpg'
+
+[Tier 1] heritage_places | place-charaideo-maidams: 'Charaideo Maidams (Mound-Burial System of Ahom Dynasty)'
+  File: 'charaideo maidam of ahom kings at charaideo in sivasagar, assam 4.jpg'
+
+[Tier 1] heritage_places | place-living-root-bridges: 'Living Root Bridges of Cherrapunji (Nongriat Jingkieng Jokeng)'
+  File: 'cherrapunji 1.jpg'
+
+[Tier 1] heritage_places | place-unakoti-reliefs: 'Unakoti Rock-Cut Bas-Reliefs'
+  File: 'unakoti group of bas-relief sculptures, tripura, india.jpg'
+
+[Tier 1] heritage_places | place-shantiniketan-visva-bharati: 'Santiniketan (Rabindranath Tagore's Living Ashram)'
+  File: 'illuminated tree-santiniketan-west bengal-ma11.jpg'
+
+[Tier 1] heritage_places | place-orchha-fort-complex: 'Orchha Fort Complex & Raja Ram Temple'
+  File: 'jahangir mahal of orchha in monsoon.jpg'
+
+[Tier 1] heritage_places | place-bom-jesus-basilica: 'Basilica of Bom Jesus, Old Goa'
+  File: 'basilica of bom jesus, goa 2.jpg'
+
+[Tier 1] heritage_places | place-capitol-complex-chandigarh: 'Capitol Complex of Le Corbusier'
+  File: 'chandigarh capitol complex - le corbusier - hall of shadows ramp.jpg'
+
+[Tier 1] festivals_and_traditions | fest-chhath-puja: 'Chhath Puja'
+  File: 'chhath puja, bihar, india (2022).jpg'
+
+[Tier 1] festivals_and_traditions | fest-durga-puja: 'Durga Puja'
+  File: 'chalta bagan durga puja 2019.jpg'
+
+[Tier 1] festivals_and_traditions | fest-ganesh-utsav: 'Ganesh Chaturthi (Ganeshotsav)'
+  File: 'ganesh chaturthi 2024.jpg'
+
+[Tier 1] festivals_and_traditions | fest-onam: 'Onam'
+  File: 'jervice cj onam kerala cultural dress.jpg'
+
+[Tier 1] festivals_and_traditions | fest-pushkar-fair: 'Pushkar Camel & Cultural Fair'
+  File: '20191215 camel-drawn cart, pushkar 1433 8812 dxo.jpg'
+
+[Tier 1] festivals_and_traditions | fest-bihu: 'Rongali (Bohag) Bihu'
+  File: 'bihu dance , festival of india.jpg'
+
+[Tier 1] festivals_and_traditions | fest-bihu-assam: 'Rongali Bihu (Bohag Bihu)'
+  File: 'bihu dance , festival of india.jpg'
+
+[Tier 1] festivals_and_traditions | fest-hornbill-nagaland: 'Hornbill Festival (Festival of Festivals)'
+  File: 'hornbill festival,nagaland 2.jpg'
+
+[Tier 1] festivals_and_traditions | fest-hemis-ladakh: 'Hemis Tsechu Monastery Festival'
+  File: 'hemis monastery festival 1.jpg'
+
+[Tier 1] festivals_and_traditions | fest-thrissur-pooram: 'Thrissur Pooram'
+  File: 'a glimpse of kuttiyankavu pooram in thrissur kerala.jpg'
+
+[Tier 1] festivals_and_traditions | fest-rongali-bihu: 'Rongali Bihu (Bohag Bihu)'
+  File: 'bihu dance , festival of india.jpg'
+
+[Tier 1] festivals_and_traditions | fest-losar-ladakh: 'Ladakhi Losar (New Year Festival)'
+  File: 'ladakh's new year.jpg'
+
+[Tier 1] festivals_and_traditions | fest-pushkar-camel-fair: 'Pushkar International Camel & Cattle Fair'
+  File: '20191215 camel-drawn cart, pushkar 1433 8812 dxo.jpg'
+
+[Tier 1] festivals_and_traditions | fest-dev-deepawali-varanasi: 'Dev Deepawali (Diwali of the Gods)'
+  File: 'dev deepavali at varanasi dsc04305 04.jpg'
+
+[Tier 1] festivals_and_traditions | fest-srinagar-tulip-festival: 'Srinagar Tulip Festival & Baisakhi Spring'
+  File: 'tulip-fastival-kashmir-valley-shringar.jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-madhubani-painting: 'Madhubani (Mithila) Painting'
+  File: 'indian train decorated with madhubani painting.jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-jaipur-blue-pottery: 'Jaipur Blue Pottery'
+  File: 'blue pottery from jaipur 2.jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-kanjeevaram-silk: 'Kanchipuram Silk Sarees (Kanjeevaram)'
+  File: 'kanchipuram sarees (7642282200).jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-blue-pottery-jaipur: 'Jaipur Blue Pottery'
+  File: 'blue pottery from jaipur 2.jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-channapatna-toys: 'Channapatna Wooden Toys & Lacquerware'
+  File: 'channapatna toys06.jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-pashmina-kashmir: 'Kashmir Pashmina & Kani Shawl'
+  File: 'the tableau of jammu & kashmir on the theme ‘pashmina linking tradition with technology’ passes through the rajpath during the full dress rehearsal for the republic day parade-2013, in new delhi on january 23, 2013.jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-tanjore-painting: 'Thanjavur (Tanjore) Gold Leaf Painting'
+  File: 'hodges view of the great pagoda at tanjore, 1787.jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-ladakh-pashmina: 'Ladakh Pashmina (Cashmere)'
+  File: 'india - ladakh - trekking - 077 - sending out the herds in the monring (3896556490).jpg'
+
+[Tier 1] arts_crafts_and_artisans | art-warli-bamboo-craft: 'Warli Bamboo & Palm Craft of Silvassa'
+  File: 'nakashikam (warli painting).jpg'
+
+[Tier 1] arts_crafts_and_artisans | craft-kalamkari-srikalahasti: 'Srikalahasti Freehand Kalamkari'
+  File: 'dashavatara de kalamkari, british museum.jpg'
+
+[Tier 1] arts_crafts_and_artisans | craft-patan-patola: 'Patan Double Ikat Patola Silk'
+  File: 'antique patan patola double ikat trade textile courtesy wovensouls collection, singapore.jpg'
+
+[Tier 1] folk_and_performing_arts | folk-kathakali-dance: 'Kathakali Classical Dance-Drama'
+  File: ''kathakali'-the cultural soul of kerala.jpg'
+
+[Tier 1] folk_and_performing_arts | folk-kalbelia-dance: 'Kalbelia Folk Dance & Music'
+  File: 'glimpse of indian folk dance (kalbelia dance).jpg'
+
+[Tier 1] folk_and_performing_arts | folk-bharatanatyam-carnatic: 'Bharatanatyam Classical Dance'
+  File: 'a vibrant bharatanatyam group interpretation.jpg'
+
+[Tier 1] folk_and_performing_arts | folk-odissi-classical-dance: 'Odissi Classical Dance'
+  File: 'indian classical dance odissi at kamani auditorium new delhi 17.jpg'
+
+[Tier 1] folk_and_performing_arts | art-bharatanatyam: 'Bharatanatyam Classical Dance'
+  File: 'a vibrant bharatanatyam group interpretation.jpg'
+
+[Tier 1] folk_and_performing_arts | art-odissi: 'Odissi Classical Dance'
+  File: 'indian classical dance odissi at kamani auditorium new delhi 17.jpg'
+
+[Tier 1] folk_and_performing_arts | art-yakshagana: 'Yakshagana Coastal Dance-Drama'
+  File: '"yakshagana".jpg'
+
+[Tier 1] folk_and_performing_arts | art-chhau: 'Chhau Martial Mask Dance'
+  File: 'a cultural crescendo chhau dance 27.jpg'
+
+[Tier 1] folk_and_performing_arts | art-kuchipudi: 'Kuchipudi Classical Dance'
+  File: 'a kuchipudi dance by hindu girls in washington dc.jpg'
+
+[Tier 1] folk_and_performing_arts | folk-manipuri-raas-leela: 'Manipuri Classical Dance (Raas Leela)'
+  File: 'jagoi manipuri dance 1.jpg'
+
+[Tier 1] folk_and_performing_arts | folk-garba-dance-gujarat: 'Garba of Gujarat (UNESCO Intangible Cultural Heritage)'
+  File: 'garba navratri 02.jpg'
+
+[Tier 1] folk_and_performing_arts | folk-kathak-dance-lucknow: 'Kathak Classical Dance (Lucknow & Banaras Gharana)'
+  File: 'kathak dancer at varanasi ghat.jpg'
+
+[Tier 2] heritage_places | place-lepakshi-veerabhadra: 'Veerabhadra Temple & Hanging Pillar, Lepakshi'
+  File: 'hampi - uddana veerabhadra temple - hanuman - 2.jpg'
+
+[Tier 2] heritage_places | place-varanasi-dashashwamedh: 'Dashashwamedh Ghat & Kashi Waterfront, Varanasi'
+  File: 'dashashwamedh ghat's view varanasi.jpg'
+
+[Tier 2] heritage_places | place-ka-badami-caves: 'Badami Rock-Cut Cave Temples, Bagalkot'
+  File: 'badami rock cut hindu jain temples in karnataka india.jpg'
+
+[Tier 2] heritage_places | place-kl-bekal-fort: 'Bekal Fort & Coastal Citadel, Kasaragod'
+  File: 'bekal fort, kerala.jpg'
+
+[Tier 2] heritage_places | place-la-leh-palace: 'Leh Palace & Tsemo Hill Citadel, Leh'
+  File: 'leh palace - leh - ladakh - view from shanti stupa.jpg'
+
+[Tier 2] heritage_places | golden-temple-amritsar: 'Sri Harmandir Sahib (The Golden Temple)'
+  File: 'akal takht and harmandir sahib, amritsar, punjab, india.jpg'
+
+[Tier 2] heritage_places | leh-palace: 'Leh Palace & Tsemo Fort'
+  File: 'leh palace - leh - ladakh - view from shanti stupa.jpg'
+
+[Tier 2] heritage_places | meenakshi-amman-temple: 'Arulmigu Meenakshi Amman Temple'
+  File: 'meenakshi temple- west tower.jpg'
+
+[Tier 2] heritage_places | fort-kochi-heritage: 'Fort Kochi & Mattancherry Palace'
+  File: 'fort kochi - fisher - 1.jpg'
+
+[Tier 2] heritage_places | lepakshi-veerabhadra-temple: 'Lepakshi Veerabhadra Temple & Nandi'
+  File: 'hampi - uddana veerabhadra temple - hanuman - 2.jpg'
+
+[Tier 2] heritage_places | charminar: 'Charminar Monument & Mosque'
+  File: 'charminar monument in hyderabad,telangana,india.jpg'
+
+[Tier 2] heritage_places | golconda-fort: 'Golconda Fort & Citadel'
+  File: 'ceiling of echo dome, golconda fort (oct 2025).jpg'
+
+[Tier 2] heritage_places | sirpur-monuments: 'Laxman Brick Temple & Sirpur Monuments'
+  File: '7th century reliefs on brick walls, lakshmana hindu temple, sirpur chhattisgarh india 1.jpg'
+
+[Tier 2] heritage_places | victoria-memorial-kolkata: 'Victoria Memorial Hall'
+  File: 'victoria memorial hall the haritag of kolkata west bengal india 03.jpg'
+
+[Tier 2] heritage_places | baidyanath-dham-deoghar: 'Baidyanath Jyotirlinga Temple Complex'
+  File: 'baidyanath temple and temple complex, deoghar 07.jpg'
+
+[Tier 2] heritage_places | rumtek-monastery: 'Rumtek Monastery (Dharma Chakra Centre)'
+  File: 'rumtek monastery 01.jpg'
+
+[Tier 2] heritage_places | place-meenakshi-temple: 'Meenakshi Sundareswarar Temple'
+  File: '03 sunrise view of meenakshi temple gopuram.jpg'
+
+[Tier 2] heritage_places | place-varanasi-ghats: 'Varanasi Ghats & Kashi Vishwanath Precinct'
+  File: 'scindia ghat in morning, varanasi, uttar pradesh, india (2012).jpg'
+
+[Tier 2] heritage_places | place-lepakshi-temple: 'Veerabhadra Temple & Hanging Pillar'
+  File: 'hampi - uddana veerabhadra temple - hanuman - 2.jpg'
+
+[Tier 2] heritage_places | place-dashashwamedh-ghat: 'Dashashwamedh Ghat & Kashi Sacred Riverfront'
+  File: 'dashashwamedh ghat's view varanasi.jpg'
+
+[Tier 2] heritage_places | place-rang-ghar: 'Rang Ghar (Royal Ahom Amphitheatre)'
+  File: 'floral terracotta decoration rang ghar sivasagar.jpg 01.jpg'
+
+[Tier 2] heritage_places | place-kamakhya-temple: 'Kamakhya Temple Complex, Nilachal Hill'
+  File: 'daily bhog or prasad of kamakhya temple, guwahati, assam.jpg'
+
+[Tier 2] heritage_places | place-kareng-ghar: 'Kareng Ghar (Garhgaon Royal Palace)'
+  File: 'kareng ghar, sivasagar, assam.jpg'
+
+[Tier 2] heritage_places | place-tawang-monastery: 'Tawang Monastery (Galden Namgey Lhatse)'
+  File: 'bhavachakra or the buddhist wheel of life at tawang monastery, tawang, arunachal pradesh, india.jpg'
+
+[Tier 2] heritage_places | place-ita-fort: 'Ita Fort (Fort of Bricks), Itanagar'
+  File: 'ita fort 01.jpg'
+
+[Tier 2] heritage_places | place-malinithan-ruins: 'Malinithan Archaeological Site, Likabali'
+  File: 'entrance of malinithan.jpg'
+
+[Tier 2] heritage_places | place-nartiang-monoliths: 'Nartiang Monoliths (Mawbynna)'
+  File: 'monoliths of nartiang, meghalaya.jpg'
+
+[Tier 2] heritage_places | place-mawphlang-sacred-grove: 'Mawphlang Sacred Forest (Lawkyntang)'
+  File: 'ancient monoliths in mawphlang sacred grove.jpg'
+
+[Tier 2] heritage_places | place-kachari-ruins: 'Kachari Ruins of Dimapur'
+  File: 'kachari ruins, dimapur, nagaland.jpg'
+
+[Tier 2] heritage_places | place-kohima-war-cemetery: 'Kohima War Memorial & Cemetery (Garrison Hill)'
+  File: 'kohima war cemetery, kohima, nagaland (89).jpeg'
+
+[Tier 2] heritage_places | place-kangla-fort: 'Kangla Fort & Royal Palace Complex'
+  File: 'kangla fort, imphal.jpg'
+
+[Tier 2] heritage_places | place-ina-memorial-moirang: 'INA War Memorial & Museum, Moirang'
+  File: 'ina memorial, moirang, manipur (12).jpeg'
+
+[Tier 2] heritage_places | place-vangchhia-monoliths: 'Vangchhia Archaeological Site (Kawtchhuah Ropui)'
+  File: 'embossed figures kawtchhuah ropui vangchhia mapuia hnamte (2).jpg'
+
+[Tier 2] heritage_places | place-sibuta-lung: 'Sibuta Lung (Monument of Sibuta)'
+  File: 'sibuta lung.jpg'
+
+[Tier 2] heritage_places | place-rabdentse-ruins: 'Rabdentse Royal Palace Ruins'
+  File: 'chortens in the premises of ruins of rabdentse, second capital of sikkim near pelling, west sikkim.jpg'
+
+[Tier 2] heritage_places | place-pemayangtse-monastery: 'Pemayangtse Monastery'
+  File: 'exterior decorations of pemayangtse monastery, pelling, west sikkim 20.jpg'
+
+[Tier 2] heritage_places | place-rumtek-monastery: 'Rumtek Monastery (Dharma Chakra Centre)'
+  File: 'rumtek monastery 01.jpg'
+
+[Tier 2] heritage_places | place-ujjayanta-palace: 'Ujjayanta Palace (Tripura State Museum)'
+  File: 'central facade of ujjayanta palace, agartala, tripura 01.jpg'
+
+[Tier 2] heritage_places | place-neermahal-palace: 'Neermahal Water Palace (Twijilikma)'
+  File: 'a minar inside neermahal, tripura, india.jpg'
+
+[Tier 2] heritage_places | place-hemis-monastery: 'Hemis Monastery (Changchub Ling)'
+  File: 'hemis gompa - monk cells.jpg'
+
+[Tier 2] heritage_places | place-leh-palace: 'Leh Palace (Lhachen Palkhar)'
+  File: 'leh palace - leh - ladakh - view from shanti stupa.jpg'
+
+[Tier 2] heritage_places | place-cellular-jail: 'Cellular Jail National Memorial (Kala Pani)'
+  File: 'cellularjail-portblair-andaman and nicobar-dsc0001.jpg'
+
+[Tier 2] heritage_places | place-ross-island-ruins: 'Ross Island (Netaji Subhash Chandra Bose Dweep) Ruins'
+  File: 'north ross island, andaman nicobar island.jpg'
+
+[Tier 2] heritage_places | place-viper-island-gallows: 'Viper Island Gallows & Historic Jail Ruins'
+  File: 'gallows on viper island.jpg'
+
+[Tier 2] heritage_places | place-french-quarter-puducherry: 'French Quarter (White Town) & Raj Nivas'
+  File: 'pondicherry-french quarter-puducherry police-wus02313.jpg'
+
+[Tier 2] heritage_places | place-sacred-heart-basilica: 'Basilica of the Sacred Heart of Jesus'
+  File: 'a building inside the sacred heart basillica church, puducherry.jpg'
+
+[Tier 2] heritage_places | place-moti-daman-fort: 'Moti Daman Fort (Fortaleza de Sao Jeronimo)'
+  File: 'church of bom jesus, daman, dadra and nagar haveli and daman and diu, india (2015).jpg'
+
+[Tier 2] heritage_places | place-diu-fort: 'Diu Fort & Sea Citadel'
+  File: 'church of bom jesus, daman, dadra and nagar haveli and daman and diu, india (2015).jpg'
+
+[Tier 2] heritage_places | place-st-paul-church-diu: 'St. Paul's Church, Diu'
+  File: 'major churches of diu island.jpg'
+
+[Tier 2] heritage_places | place-sirpur-monuments: 'Sirpur Group of Monuments (Laxman Temple & Buddhist Viharas)'
+  File: '6th century anandaprabha vihara buddhist site, sirpur chhattisgarh.jpg'
+
+[Tier 2] heritage_places | place-maluti-temples: 'Maluti Terracotta Temples'
+  File: 'maluti temple at jharkhand.jpg'
+
+[Tier 2] heritage_places | place-baidyanath-dham: 'Baba Baidyanath Jyotirlinga Temple'
+  File: 'prime minister narendra modi at baba baidyanath temple in deoghar, jharkhand.jpg'
+
+[Tier 2] heritage_places | place-palamu-forts: 'Palamu Forts (Purana Qila & Naya Qila)'
+  File: 'palamu fort, palamu, jharkhand 01.jpg'
+
+[Tier 2] heritage_places | place-barabar-caves: 'Barabar Caves (Lomas Rishi & Sudama Caves)'
+  File: '3rd century bce barabar caves, bihar, plans and sections, 1847 sketch.jpg'
+
+[Tier 2] heritage_places | place-bishnupur-temples: 'Bishnupur Terracotta Temples (Rasmancha & Jor Bangla)'
+  File: 'beautiful terracotta works at madan mohan temple in bishnupur west bengal.jpg'
+
+[Tier 2] heritage_places | place-hazarduari-palace: 'Hazarduari Palace, Murshidabad'
+  File: 'hazarduari - murshidabad - west bengal.jpg'
+
+[Tier 2] heritage_places | place-gwalior-fort: 'Gwalior Fort & Man Mandir Palace'
+  File: 'gwalior fort piller view 003.jpg'
+
+[Tier 2] heritage_places | place-bekal-fort: 'Bekal Fort & Keyhole Observation Bastion'
+  File: 'bekal fort, kerala.jpg'
+
+[Tier 2] heritage_places | place-qila-mubarak-bathinda: 'Qila Mubarak, Bathinda (Govindgarh Fort)'
+  File: 'detail of a mural of ala singh of patiala state from the sheesh mahal of the qila mubarak.jpg'
+
+[Tier 2] heritage_places | place-sheesh-mahal-patiala: 'Sheesh Mahal & Qila Mubarak, Patiala'
+  File: 'main gate of sheesh mahal patiala.jpg'
+
+[Tier 2] heritage_places | place-brahma-sarovar-kurukshetra: 'Brahma Sarovar & Jyotisar Gita Birthplace'
+  File: 'arjun chowk near brahma sarovar - kurukshetra.jpg'
+
+[Tier 2] heritage_places | place-baijnath-temple-uttarakhand: 'Baijnath Ancient Temple Complex'
+  File: 'baijnath temple-baijnath-uttarakhand-dsc 001.jpg'
+
+[Tier 2] heritage_places | place-martand-sun-temple: 'Martand Sun Temple Ruins'
+  File: '1 sun temple martand jammu kashmir india ancient hindu temple in ruins.jpg'
+
+[Tier 2] heritage_places | place-pari-mahal-srinagar: 'Pari Mahal (Abode of Fairies & Observatory)'
+  File: 'a view of pari mahal jammu and kashmir india.jpg'
+
+[Tier 2] heritage_places | place-tambdi-surla-temple: 'Mahadev Temple, Tambdi Surla'
+  File: 'a 3-d image of a temple created using just bricks on the wall of the mahadeva temple.(close up).jpg'
+
+[Tier 2] festivals_and_traditions | fest-rath-yatra: 'Puri Jagannath Rath Yatra'
+  File: 'annual chariot festival 'jagannath yatra', puri odisha.jpg'
+
+[Tier 2] festivals_and_traditions | fest-rath-yatra-puri: 'Jagannath Puri Rath Yatra (Chariot Festival)'
+  File: 'annual chariot festival 'jagannath yatra', puri odisha.jpg'
+
+[Tier 2] festivals_and_traditions | fest-ambubachi-mela: 'Ambubachi Mela, Kamakhya'
+  File: 'ambubachi mela at kamakhya temple by vikramjit kakati.jpg'
+
+[Tier 2] festivals_and_traditions | fest-wangala-meghalaya: 'Wangala Festival (100 Drums Festival)'
+  File: '136th 100 drums wangala festival,asanangre tura,meghalaya,india(picture by vishma thapa) (1).jpg'
+
+[Tier 2] festivals_and_traditions | fest-shad-suk-mynsiem: 'Shad Suk Mynsiem (Dance of Peaceful Hearts)'
+  File: 'shad suk mynsiem (the dance of peaceful hearts) 01.jpg'
+
+[Tier 2] festivals_and_traditions | fest-sangai-manipur: 'Manipur Sangai Festival'
+  File: 'kabui naga dance was presented in front of the prime minister, shri narendra modi, at the closing function of manipur sangai festival-2014, in imphal. the governor of manipur.jpg'
+
+[Tier 2] festivals_and_traditions | fest-milad-un-nabi-lakshadweep: 'Milad-un-Nabi & Ratheeb Rituals'
+  File: 'milad un nabi celebration kerala (12).jpg'
+
+[Tier 2] festivals_and_traditions | fest-yoga-festival-puducherry: 'International Yoga Festival, Puducherry'
+  File: 'the unique musical 3d mapping show, yoga-the tree of life held as part of yoga festival ahead of the international day of yoga-2016, at sukhna lake, chandigarh on june 11, 2016.jpg'
+
+[Tier 2] festivals_and_traditions | fest-bastar-dussehra: 'Bastar Dussehra'
+  File: 'bastar dusshera unexplored bastar.jpg'
+
+[Tier 2] festivals_and_traditions | fest-sarhul-jharkhand: 'Sarhul (Festival of the Sal Blossoms)'
+  File: 'sarhul in ranchi.jpg'
+
+[Tier 2] festivals_and_traditions | fest-poush-mela: 'Poush Mela of Santiniketan'
+  File: 'a stall display at poush mela-santiniketan-west bengal.jpg'
+
+[Tier 2] festivals_and_traditions | fest-khajuraho-dance-festival: 'Khajuraho Classical Dance Festival'
+  File: 'khajuraho dance festival 2025, madhya pradesh 03.jpg'
+
+[Tier 2] festivals_and_traditions | fest-bhagoria-haat: 'Bhagoria Tribal Festival & Haat'
+  File: 'bhagoria festival women.jpg'
+
+[Tier 2] festivals_and_traditions | fest-ugadi-andhra: 'Ugadi (Telugu New Year)'
+  File: 'hevilambi 2018 ugadi puraskars of andhra pradesh government 01.jpg'
+
+[Tier 2] festivals_and_traditions | fest-bathukamma-floral: 'Bathukamma (Floral Goddess Festival)'
+  File: 'bathukamma - festival of flowers.jpg'
+
+[Tier 2] festivals_and_traditions | fest-gujarat-navratri-garba: 'Navratri Mahotsav & Vibrant Garba'
+  File: 'garba folk dance.jpg'
+
+[Tier 2] festivals_and_traditions | fest-rann-utsav-kutch: 'Rann Utsav & White Desert Cultural Carnival'
+  File: 'rann utsav.jpg'
+
+[Tier 2] festivals_and_traditions | fest-gudi-padwa: 'Gudi Padwa (Marathi New Year & Shobha Yatra)'
+  File: 'a gudi kept in an old house on gudi padwa 2025.jpg'
+
+[Tier 2] festivals_and_traditions | fest-surajkund-crafts-mela: 'Surajkund International Crafts Mela'
+  File: 'pothuraju artist in culture of telangana programme at surajkund, haryana (02.02.2016) 03.jpg'
+
+[Tier 2] festivals_and_traditions | fest-kullu-dussehra: 'Kullu International Dussehra'
+  File: 'giant wheel at kullu dussehra fair, himachal pradesh 01.jpg'
+
+[Tier 2] festivals_and_traditions | fest-goa-carnival: 'Goa Carnival (Carnaval & King Momo)'
+  File: 'carnival 2009 at mapusa goa - cidade de goa float.jpg'
+
+[Tier 2] festivals_and_traditions | fest-chandigarh-rose-festival: 'Chandigarh Rose Festival (Zakir Hussain Rose Garden)'
+  File: 'rose festival chandigarh-wikimedians of the north india photowalk rose festival, chandigarh-february 2017 01.jpg'
+
+[Tier 2] festivals_and_traditions | fest-phool-walon-ki-sair: 'Phool Walon Ki Sair (Festival of the Flower Sellers)'
+  File: 'pratibha devisingh patil receiving pankha of phool walon ki sair, organized by the anjuman sair-e-gul faroshn at rashtrapati bhavan, in new delhi on november 04, 2011. dr. devisingh ramsingh shekhawat is also seen.jpg'
+
+[Tier 3] arts_crafts_and_artisans | art-muga-silk-weaving: 'Assam Muga Golden Silk Weaving'
+  File: 'manchester of assam- sualkuchi.jpg'
+
+[Tier 3] arts_crafts_and_artisans | art-aranmula-kannadi: 'Aranmula Kannadi (Front-Surface Metal Mirror)'
+  File: 'aranmula kannadi.jpg'
+
+[Tier 3] arts_crafts_and_artisans | art-muga-silk: 'Muga Silk of Assam (Golden Silk)'
+  File: 'an authentic assam muga silk.jpg'
+
+[Tier 3] arts_crafts_and_artisans | art-muga-silk-assam: 'Muga Silk of Assam'
+  File: 'an authentic assam muga silk.jpg'
+
+[Tier 3] arts_crafts_and_artisans | art-majuli-mask-making: 'Majuli Mask Making (Mukha Shilpa)'
+  File: 'art of mask making,majuli,assam.jpg'
+
+[Tier 3] arts_crafts_and_artisans | art-naga-shawls: 'Naga Handwoven Shawls'
+  File: 'these are traditional handwoven naga shawls,.jpg'
+
+[Tier 3] arts_crafts_and_artisans | art-longpi-pottery: 'Longpi Black Stone Pottery (Hamlei)'
+  File: 'longpi blackstone pottery.jpg'
+
+[Tier 3] arts_crafts_and_artisans | art-tripura-bamboo-craft: 'Tripura Bamboo & Cane Screen Craft'
+  File: 'art on weaving apparatus srinibash para dhalai tripura india.jpg'
+
+[Tier 3] arts_crafts_and_artisans | craft-sohrai-khovar-painting: 'Sohrai and Khovar Mural Painting'
+  File: 'a house with sohrai paintings at isko village, hazaribagh, jharkhand, india.jpg'
+
+[Tier 3] arts_crafts_and_artisans | craft-sikki-grass-craft: 'Sikki Grass Craft of Bihar'
+  File: 'sikki grass craft by artisan nazda khatun of bihar 01.jpg'
+
+[Tier 3] arts_crafts_and_artisans | craft-aranmula-kannadi: 'Aranmula Kannadi (Front-Surface Metal Mirror)'
+  File: 'aranmula kannadi.jpg'
+
+[Tier 3] arts_crafts_and_artisans | craft-rogan-art-kutch: 'Rogan Painting of Nirona, Kutch'
+  File: 'ashish shantilal kansara rogan art 2.jpg'
+
+[Tier 3] arts_crafts_and_artisans | craft-paithani-sari: 'Paithani Handloom Silk Saree'
+  File: 'parrot peacock border paithani saree.jpg'
+
+[Tier 3] arts_crafts_and_artisans | craft-chamba-rumal: 'Chamba Rumal (Double-Sided Needle Painting)'
+  File: '19th century chamba rumal.jpg'
+
+[Tier 3] arts_crafts_and_artisans | craft-kashmir-walnut-wood-carving: 'Kashmir Walnut Wood Carving'
+  File: 'kmrwalnut.jpg'
+
+[Tier 3] arts_crafts_and_artisans | craft-delhi-zardozi: 'Delhi Zardozi Gold & Metallic Embroidery'
+  File: 'john lockwood kipling - zardozi workers in delhi 2007bm7334 jpg l.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-lavani-dance: 'Lavani & Powada Folk Theatre'
+  File: 'lavani 1.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-bhojpuri-maithili-geet: 'Bhojpuri & Maithili Folk Music (Biraha & Sohar)'
+  File: 'bhojpuri region of bihar & utter pradesh.png'
+
+[Tier 3] folk_and_performing_arts | art-sattriya: 'Sattriya Classical Dance'
+  File: 'a sattriya dancer performing the dance form in assam, india.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-sattriya-dance: 'Sattriya Classical Dance'
+  File: 'a sattriya dancer performing the dance form in assam, india.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-pung-cholom: 'Pung Cholom (Acrobatic Drum Dance)'
+  File: 'meitei and english bilingual description of the different body parts of a pung cholom performing artist, a classical meitei ritualistic musical & dancing performing art form of manipur (kangleipak).jpg'
+
+[Tier 3] folk_and_performing_arts | folk-cheraw-dance: 'Cheraw (Mizo Bamboo Dance)'
+  File: 'cheraw mizoram.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-hojagiri-dance: 'Hojagiri Dance of the Reang Tribe'
+  File: 'girl from reang tribe of tripura ready for hojagiri dance wearing rignai dscn1230.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-cham-dance-ladakh: 'Cham Sacred Tantric Mask Dance'
+  File: 'cham dance.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-kolkali-lakshadweep: 'Kolkali Folk Dance of Lakshadweep'
+  File: 'kolkali-parichakali folk dance.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-nicobarese-dance: 'Nicobarese Traditional Island Dance'
+  File: 'nicobarese people.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-paika-dance-jharkhand: 'Paika Martial Dance'
+  File: 'paiki nagpuri martial folk dance.png'
+
+[Tier 3] folk_and_performing_arts | folk-baul-music-philosophy: 'Baul Songs & Mystic Philosophy'
+  File: 'baul folk.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-theyyam-ritual-dance: 'Theyyam Ritual Dance-Drama (Kaliyattam)'
+  File: 'kerala theyyam performance.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-perini-sivatandavam: 'Perini Sivatandavam (Warrior Dance of Kakatiyas)'
+  File: 'perini dance performance on lord srirama's life at mahathi auditorium in gajwel 15.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-rouf-dance-kashmir: 'Rouf Folk Dance of Kashmir'
+  File: 'rouf dance.jpg'
+
+[Tier 3] folk_and_performing_arts | folk-fugdi-dhalo-goa: 'Fugdi and Dhalo Folk Dances of Goa'
+  File: 'fugdi dancers from south goa.jpg'
+
+[Tier 3] cultural_experiences | exp-mumbai-heritage-walk: 'Colonial Fort & Kala Ghoda Art Precinct Walk'
+  File: 'colonial-era building - near fort district - mumbai - maharashtra - india (26325835541).jpg'
+
+[Tier 3] cultural_experiences | exp-kanchipuram-loom-heritage: 'Kanchipuram Silk Loom & Temple Architecture Tour'
+  File: 'complicated hand-loom for silk weaving, kanchipuram, tamil nadu.jpg'
+
+[Tier 3] cultural_experiences | exp-kangla-palace-heritage-walk: 'Kangla Fort & Royal Sacred Shrines Walk'
+  File: 'kangla fort, imphal.jpg'
+
+[Tier 3] cultural_experiences | exp-rabdentse-pelling-trail: 'Rabdentse Royal Ruins & Monastic Circuit'
+  File: 'chortens in the premises of ruins of rabdentse, second capital of sikkim near pelling, west sikkim.jpg'
+
+[Tier 3] cultural_experiences | exp-old-leh-heritage-walk: 'Old Town Leh Cultural & Stupa Walk'
+  File: 'leh palace 04.jpg'
+
+[Tier 3] cultural_experiences | exp-lepakshi-mural-trail: 'Lepakshi Monolithic Nandi & Vijayanagara Mural Circuit'
+  File: '1 massive nandi bull sculpture in lepakshi india 2017.jpg'
+
+[Tier 3] cultural_experiences | exp-charminar-laad-bazaar-heritage: 'Charminar & Laad Bazaar Lac Bangles Cultural Trail'
+  File: 'charminar - hyderabad, telangana, india.jpg'
+
+[Tier 3] cultural_experiences | exp-rani-ki-vav-patola-trail: 'Rani ki Vav Stepwell & Patan Patola Silk Workshop Trail'
+  File: 'rani ki vav - patan - gujarat - wall decorations.jpg'
+
+[Tier 3] cultural_experiences | exp-srinagar-dal-shikara-craft: 'Srinagar Dal Lake Dawn Shikara & Old Town Artisan Trail'
+  File: 'india - srinagar - 038 - quiet morning on nagin lake (3919417944).jpg'
+
+[Tier 3] cultural_experiences | exp-old-goa-fontainhas-trail: 'Fontainhas Latin Quarter & Old Goa Baroque Heritage Circuit'
+  File: 'latin quarter of panjim in goa, india.jpg'
+
+[Tier 3] cultural_experiences | exp-old-delhi-shahjahanabad-walk: 'Shahjahanabad Heritage & Chandni Chowk Craft Alleys Walk'
+  File: 'jama masjid shahjahanabad.jpg'
+

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MapPin, Bookmark } from 'lucide-react';
 import { Festival } from '../../types/cultural';
 
@@ -13,6 +14,7 @@ export const FestivalCard: React.FC<FestivalCardProps> = ({
   onExploreRelated,
   onClick,
 }) => {
+  const navigate = useNavigate();
   const [bookmarked, setBookmarked] = useState(false);
 
   // Dynamic Category badge styles matching screenshot
@@ -29,7 +31,7 @@ export const FestivalCard: React.FC<FestivalCardProps> = ({
 
   return (
     <div
-      onClick={onClick}
+      onClick={onClick || (() => navigate(`/festivals/${festival.id}`))}
       className="group bg-white rounded-2xl border border-stone-200/90 overflow-hidden shadow-2xs hover:shadow-lg transition-all duration-300 flex flex-col cursor-pointer"
     >
       {/* Image container */}
@@ -81,9 +83,9 @@ export const FestivalCard: React.FC<FestivalCardProps> = ({
               e.stopPropagation();
               onExploreRelated?.('festival', festival.id);
             }}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-50 hover:bg-sky-100 text-sky-800 border border-sky-200/80 text-xs font-semibold transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 hover:bg-amber-100 text-[#E05A2B] border border-amber-200/80 text-xs font-semibold transition-colors"
           >
-            <span>Explore Festival</span>
+            <span>Connected Traditions</span>
             <span>→</span>
           </button>
 

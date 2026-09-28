@@ -1,0 +1,232 @@
+[Tier 1] place-as-majuli-satra: 'Kamalabari Satra & Living Craft Island, Majuli'
+  File: 'badala padma ata.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'badala padma ata'
+
+[Tier 1] fatehpur-sikri: 'Fatehpur Sikri City of Victory'
+  File: 'buland darwaza hd.jpg'
+  Reason: No distinctive keyword from ['fatehpur', 'victory', 'sikri'] found in file title 'buland darwaza hd.jpg'
+
+[Tier 1] red-fort: 'Red Fort (Lal Qila)'
+  File: '20191203 czerwony fort w delhi 0528 6405 dxo.jpg'
+  Reason: No distinctive keyword from ['red'] found in file title '20191203 czerwony fort w delhi 0528 6405 dxo.jpg'
+
+[Tier 1] humayuns-tomb: 'Humayun's Tomb'
+  File: '20191205 afsarwala tomb, delhi 1051 6789.jpg'
+  Reason: No distinctive keyword from ["humayun's", 'humayuns'] found in file title '20191205 afsarwala tomb, delhi 1051 6789.jpg'
+
+[Tier 1] ellora-caves: 'Ellora Caves & Kailasa Temple'
+  File: 'annona squamosa 20180920 133254.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'annona squamosa'
+
+[Tier 1] hoysala-temples-belur: 'Sacred Ensembles of the Hoysalas (Belur & Halebidu)'
+  File: 'pxl 20240101 065233377.mp.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'pxl 20240101'
+
+[Tier 1] khajuraho-monuments: 'Khajuraho Group of Monuments'
+  File: 'homosexuality in khajuraho sculpture.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'homosexuality in khajuraho'
+
+[Tier 1] kaziranga-living-heritage: 'Kaziranga Living Heritage & Wilderness'
+  File: 'asian barred owlet in kaziranga national park march 2025 by tisha mukherjee 01.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'barred owlet'
+
+[Tier 1] place-dholavira-harappan: 'Dholavira: A Harappan Metropolis'
+  File: 'historic heritage sites of gujarat with gps coordinates.jpg'
+  Reason: No distinctive keyword from ['harappan', 'dholavira:', 'dholavira'] found in file title 'historic heritage sites of gujarat with gps coordinates.jpg'
+
+[Tier 1] place-humayuns-tomb: 'Humayun's Tomb & Charbagh Garden Tomb'
+  File: '20191205 afsarwala tomb, delhi 1051 6789.jpg'
+  Reason: No distinctive keyword from ["humayun's", 'charbagh', 'humayuns'] found in file title '20191205 afsarwala tomb, delhi 1051 6789.jpg'
+
+[Tier 1] fest-losar-arunachal: 'Losar Festival (Monpa New Year)'
+  File: '2018 leh dosmoche festival 03.jpg'
+  Reason: No distinctive keyword from ['losar', 'arunachal'] found in file title '2018 leh dosmoche festival 03.jpg'
+
+[Tier 1] fest-hemis-tsechu: 'Hemis Tsechu Monastic Festival'
+  File: 'reverie - sarang deshpande.jpg'
+  Reason: No distinctive keyword from ['tsechu', 'hemis', 'monastic'] found in file title 'reverie - sarang deshpande.jpg'
+
+[Tier 1] fest-baisakhi-punjab: 'Vaisakhi (Harvest & Khalsa Sirjana Divas)'
+  File: 'bihu themed craft activity at edmonton rongali bihu celebration, 2025, alberta, canada.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'alberta, canada'
+
+[Tier 1] fest-pongal-harvest: 'Thai Pongal (Tamil Harvest Thanksgiving)'
+  File: ''peacock dance' body art -1.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'peacock dance' body art'
+
+[Tier 1] art-warli-painting: 'Warli Tribal Folk Painting'
+  File: 'face is canvas.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'face is canvas'
+
+[Tier 1] craft-chanderi-fabric: 'Chanderi Handloom Fabric & Sarees'
+  File: 'celebrating the artistry and tradition of handmade elegance each stitch in a handicraft saree tells a story of skill, heritage, and timeless beauty.jpg'
+  Reason: No distinctive keyword from ['chanderi'] found in file title 'celebrating the artistry and tradition of handmade elegance each stitch in a handicraft saree tells a story of skill, heritage, and timeless beauty.jpg'
+
+[Tier 1] craft-bidriware: 'Bidriware Metal Inlay Craft'
+  File: 'stylized windflower motif with symmetrical foliage in bidri metal craft and mughal arts.png'
+  Reason: No distinctive keyword from ['bidriware'] found in file title 'stylized windflower motif with symmetrical foliage in bidri metal craft and mughal arts.png'
+
+[Tier 1] craft-punjab-phulkari: 'Phulkari Geometric Silk Embroidery'
+  File: 'hanging (am 1961.176-2).jpg'
+  Reason: Matches blacklisted mismatch pattern: 'hanging (am 1961'
+
+[Tier 1] craft-goa-kaavi-art: 'Kaavi Architectural Sgraffito Murals'
+  File: 'christian art on an arch, with indo-portuguese - goan influences at convent of santa monica, old goa.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'christian art on an arch'
+
+[Tier 1] folk-bihu-folk-dance: 'Bihu Folk Dance of Assam'
+  File: 'a sattriya dancer performing the dance form in assam, india.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'a sattriya dancer performing the dance form in assam'
+
+[Tier 1] folk-bihu-dance: 'Bihu Folk Dance of Assam'
+  File: 'a sattriya dancer performing the dance form in assam, india.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'a sattriya dancer performing the dance form in assam'
+
+[Tier 2] india-gate: 'India Gate & National War Memorial'
+  File: '20191216 delhi gate, ajmer 1108 8851.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'delhi gate, ajmer'
+
+[Tier 2] kedarnath-temple: 'Kedarnath Temple'
+  File: 'a map showing the panch kedar hindu tirtha sites, uttarakhand india.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'a map showing'
+
+[Tier 2] gateway-of-india: 'Gateway of India'
+  File: 'commemorative inscription for the landing of king george v and queen mary at gateway of india, 1911.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'commemorative inscription'
+
+[Tier 2] french-quarter-puducherry: 'French Quarter (White Town) Heritage Precinct'
+  File: 'münster, prinzipalmarkt -- 2017 -- 3318-24.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'prinzipalmarkt'
+
+[Tier 2] place-gateway-of-india: 'Gateway of India'
+  File: 'commemorative inscription for the landing of king george v and queen mary at gateway of india, 1911.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'commemorative inscription'
+
+[Tier 2] place-vishnu-temple-bishnupur: 'Vishnu Temple of Bishnupur'
+  File: 'vishnu prambanan temple.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'prambanan'
+
+[Tier 2] place-ujra-mosque-kavaratti: 'Ujra Mosque, Kavaratti'
+  File: 'hujra shah muqeem.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'hujra shah'
+
+[Tier 2] place-danteshwari-temple: 'Danteshwari Temple, Dantewada'
+  File: '0011222 barsur danteswari mavali mata temple chattisgarh 005.jpg'
+  Reason: No distinctive keyword from ['danteshwari', 'dantewada'] found in file title '0011222 barsur danteswari mavali mata temple chattisgarh 005.jpg'
+
+[Tier 2] place-vikramshila-monastery: 'Vikramashila Mahavihara'
+  File: 'goureswar gouradhipoti maharaja dharmapal.jpg'
+  Reason: No distinctive keyword from ['mahavihara', 'vikramshila', 'vikramashila'] found in file title 'goureswar gouradhipoti maharaja dharmapal.jpg'
+
+[Tier 2] place-padmanabhapuram-palace: 'Padmanabhapuram Wooden Palace'
+  File: 'front entrance door- padmanaba puram palace.jpg'
+  Reason: No distinctive keyword from ['padmanabhapuram', 'wooden'] found in file title 'front entrance door- padmanaba puram palace.jpg'
+
+[Tier 2] place-rakhigarhi-archaeological-site: 'Rakhigarhi Indus Valley Archaeological Site'
+  File: 'pre mature post harappan time micaceous red ware 1 1 1 1.png'
+  Reason: Matches blacklisted mismatch pattern: 'pre mature post harappan time micaceous red ware'
+
+[Tier 2] place-pinjore-yadavindra-gardens: 'Pinjore Gardens (Yadavindra Mughal Terraced Gardens)'
+  File: 'gardenschandigarh.jpg'
+  Reason: No distinctive keyword from ['pinjore', 'yadavindra'] found in file title 'gardenschandigarh.jpg'
+
+[Tier 2] place-kangra-fort: 'Kangra Fort (Nagarkot)'
+  File: 'bull type coin, the hindu shahi dynasty, kangra fort museum, himachal pradesh.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'bull type coin'
+
+[Tier 2] place-masrur-rock-cut-temples: 'Masrur Rock-Cut Temples (Ellora of the Himalayas)'
+  File: 'full view of masroor temple.jpg'
+  Reason: No distinctive keyword from ['cut', 'masrur'] found in file title 'full view of masroor temple.jpg'
+
+[Tier 2] fest-mysore-dasara: 'Mysuru Dasara (Nada Habba)'
+  File: 'at-the-dussera.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'at-the-dussera'
+
+[Tier 2] fest-yaoshang-manipur: 'Yaoshang Festival of Manipur'
+  File: 'kids in traditional attire.jpg'
+  Reason: No distinctive keyword from ['pung cholom', 'manipur', 'moirang', 'ina memorial', 'sangai', 'yaoshang'] found in file title 'kids in traditional attire.jpg'
+
+[Tier 2] fest-losoong-sikkim: 'Losoong (Namsoong) Sikkimese New Year'
+  File: 'gumpa.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'gumpa.jpg'
+
+[Tier 2] fest-kharchi-puja: 'Kharchi Puja of the Fourteen Deities'
+  File: 'temple of 14 gods-tripura.jpg'
+  Reason: No distinctive keyword from ['kharchi', 'fourteen'] found in file title 'temple of 14 gods-tripura.jpg'
+
+[Tier 2] fest-island-tourism-festival: 'Island Tourism Festival, Port Blair'
+  File: 'lascar elephanta island - three headed figure emerging from shiva (4558850202).jpg'
+  Reason: Matches blacklisted mismatch pattern: 'elephanta island'
+
+[Tier 2] fest-subhash-mela-andaman: 'Subhash Mela (Netaji Commemoration)'
+  File: 'gende ka phool.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'gende ka phool'
+
+[Tier 2] fest-mysuru-dasara: 'Mysuru Dasara (Nada Habba)'
+  File: 'at-the-dussera.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'at-the-dussera'
+
+[Tier 2] fest-kumbh-mela-haridwar: 'Haridwar Maha Kumbh Mela'
+  File: 'third shahi snan in hari ki pauri.jpg'
+  Reason: No distinctive keyword from ['haridwar', 'maha', 'kumbh'] found in file title 'third shahi snan in hari ki pauri.jpg'
+
+[Tier 3] art-pietra-dura-inlay: 'Pietra Dura (Parchin Kari) Marble Inlay'
+  File: 'agra ni13-03.jpg'
+  Reason: No distinctive keyword from ['dura', 'marble', 'pietra'] found in file title 'agra ni13-03.jpg'
+
+[Tier 3] art-kumartuli-clay-sculpting: 'Kumartuli Clay Idol Sculpting'
+  File: 'giving life from clay (238511167).jpeg'
+  Reason: No distinctive keyword from ['kumartuli', 'idol', 'sculpting'] found in file title 'giving life from clay (238511167).jpeg'
+
+[Tier 3] art-ladakh-wood-carving: 'Ladakh Wood Carving (Shingskos)'
+  File: 'chiktan khar 01.jpg'
+  Reason: No distinctive keyword from ['ladakh', 'losar', 'shingskos', 'hemis', 'cham dance', 'leh'] found in file title 'chiktan khar 01.jpg'
+
+[Tier 3] art-lakshadweep-coir: 'Lakshadweep Island Coir & Coconut Fiber Craft'
+  File: 'coconut tree from kerala.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'coconut tree'
+
+[Tier 3] craft-bastar-wrought-iron: 'Bastar Wrought Iron Craft (Loha Shilp)'
+  File: 'artist from agariya tribe of madhya pradesh img 8561.jpg'
+  Reason: No distinctive keyword from ['bastar', 'wrought', 'iron'] found in file title 'artist from agariya tribe of madhya pradesh img 8561.jpg'
+
+[Tier 3] art-koodiyattam: 'Koodiyattam Sanskrit Temple Theatre'
+  File: 'a kutiyattam scene performed at irinjalakuda thrissur district kerala.jpg'
+  Reason: No distinctive keyword from ['sanskrit', 'koodiyattam'] found in file title 'a kutiyattam scene performed at irinjalakuda thrissur district kerala.jpg'
+
+[Tier 3] folk-chang-lo-dance: 'Chang Lo (Sua Lua) Warrior Dance'
+  File: 'sahlam.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'sahlam.jpg'
+
+[Tier 3] folk-garadi-dance: 'Garadi Folk Dance of Puducherry'
+  File: 'ervatthuru garadi house.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'ervatthuru garadi house'
+
+[Tier 3] folk-tarpa-dance: 'Tarpa Dance of the Warli Tribe'
+  File: 'bohada in palghar tribe festival (40549).jpg'
+  Reason: Matches blacklisted mismatch pattern: 'bohada in palghar'
+
+[Tier 3] folk-dhamal-ragini-haryana: 'Dhamal Folk Dance & Saang Ragini'
+  File: 'siddhi dhamal gujarat.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'siddhi dhamal gujarat'
+
+[Tier 3] folk-nati-dance-himachal: 'Kullu Nati Folk Dance'
+  File: 'dance of himanchal pradesh.jpg'
+  Reason: No distinctive keyword from ['himachal', 'dussehra', 'kullu', 'nati'] found in file title 'dance of himanchal pradesh.jpg'
+
+[Tier 3] exp-jaipur-block-print-workshop: 'Bagru & Sanganer Hand-Block Printing Masterclass'
+  File: 'an elderly woman being carried to cast her vote at the polling booth of palri meena, bagru, in jaipur, during the rajasthan assembly election, on december 01, 2013.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'elderly woman being carried to cast her vote'
+
+[Tier 3] exp-hampi-boulder-twilight: 'Vijayanagara Imperial Ruins & Tungabhadra Twilight Trail'
+  File: 'garuda temple, maha mandapa and eastern gopura, vitthala temple complex 1856 photo.jpg'
+  Reason: No distinctive keyword from ['virupaksha', 'tungabhadra', 'vijayanagara', 'vittala', 'hampi', 'boulder'] found in file title 'garuda temple, maha mandapa and eastern gopura, vitthala temple complex 1856 photo.jpg'
+
+[Tier 3] exp-fort-kochi-heritage-circuit: 'Fort Kochi Colonial Synagogue & Chinese Fishing Nets Trail'
+  File: 'la maison de vasco de gama (cochin, inde) (13745048684).jpg'
+  Reason: No distinctive keyword from ['nets', 'synagogue', 'chinese', 'kochi', 'fishing', 'colonial'] found in file title 'la maison de vasco de gama (cochin, inde) (13745048684).jpg'
+
+[Tier 3] exp-le-corbusier-architectural-promenade: 'Le Corbusier Modernist Promenade & Rock Garden Sculptural Trail'
+  File: 'stacja kolejowa tarnów-mościce.pawlo68.jpg'
+  Reason: Matches blacklisted mismatch pattern: 'tarnów'
+

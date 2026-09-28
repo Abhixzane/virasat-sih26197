@@ -1,0 +1,269 @@
+Total reviewed: 67
+ 1. [Tier 1] place-as-majuli-satra: 'Kamalabari Satra & Living Craft Island, Majuli'
+   OLD: 'badala padma ata.jpg'
+   NEW: 'File:Kamalabari Satra.jpg' (corrected_with_verified_image)
+
+ 2. [Tier 1] place-dl-humayuns-tomb: 'Humayun's Tomb Complex, New Delhi'
+   OLD: '20191205 afsarwala tomb, delhi 1051 6789.jpg'
+   NEW: 'File:Gumbad inside Barber's Tomb (Nai ka Makbra) in Humayun's tomb.jpg' (corrected_with_verified_image)
+
+ 3. [Tier 1] fatehpur-sikri: 'Fatehpur Sikri City of Victory'
+   OLD: 'buland darwaza hd.jpg'
+   NEW: 'File:Backside of the Buland Darwaza in Fatehpur Sikri, Agra,India.jpg' (corrected_with_verified_image)
+
+ 4. [Tier 1] red-fort: 'Red Fort (Lal Qila)'
+   OLD: '20191203 czerwony fort w delhi 0528 6405 dxo.jpg'
+   NEW: 'File:Khas Mahal (Red Fort).jpg' (corrected_with_verified_image)
+
+ 5. [Tier 1] humayuns-tomb: 'Humayun's Tomb'
+   OLD: '20191205 afsarwala tomb, delhi 1051 6789.jpg'
+   NEW: 'File:'Humayun's Tomb'.jpg' (corrected_with_verified_image)
+
+ 6. [Tier 1] ellora-caves: 'Ellora Caves & Kailasa Temple'
+   OLD: 'annona squamosa 20180920 133254.jpg'
+   NEW: 'File:Ellora Cave 16 Pillar.jpg' (corrected_with_verified_image)
+
+ 7. [Tier 1] hoysala-temples-belur: 'Sacred Ensembles of the Hoysalas (Belur & Halebidu)'
+   OLD: 'pxl 20240101 065233377.mp.jpg'
+   NEW: 'File:KA 037 Belur Frieze 01 small.jpg' (corrected_with_verified_image)
+
+ 8. [Tier 1] khajuraho-monuments: 'Khajuraho Group of Monuments'
+   OLD: 'homosexuality in khajuraho sculpture.jpg'
+   NEW: 'File:2023 Khajuraho Temple.jpg' (corrected_with_verified_image)
+
+ 9. [Tier 1] kaziranga-living-heritage: 'Kaziranga Living Heritage & Wilderness'
+   OLD: 'asian barred owlet in kaziranga national park march 2025 by tisha mukherjee 01.jpg'
+   NEW: 'File:Greater one-horned rhinoceros at Chitwan.jpg' (corrected_with_verified_image)
+
+10. [Tier 1] place-dholavira-harappan: 'Dholavira: A Harappan Metropolis'
+   OLD: 'historic heritage sites of gujarat with gps coordinates.jpg'
+   NEW: 'File:System of reservoirs and canals found at Dholavira.jpg' (corrected_with_verified_image)
+
+11. [Tier 1] place-humayuns-tomb: 'Humayun's Tomb & Charbagh Garden Tomb'
+   OLD: '20191205 afsarwala tomb, delhi 1051 6789.jpg'
+   NEW: 'File:'Humayun's Tomb'.jpg' (corrected_with_verified_image)
+
+12. [Tier 1] fest-losar-arunachal: 'Losar Festival (Monpa New Year)'
+   OLD: '2018 leh dosmoche festival 03.jpg'
+   NEW: 'File:Chemar on Kongpo Losar.jpg' (corrected_with_verified_image)
+
+13. [Tier 1] fest-hemis-tsechu: 'Hemis Tsechu Monastic Festival'
+   OLD: 'reverie - sarang deshpande.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+14. [Tier 1] fest-losar-ladakh: 'Ladakhi Losar (New Year Festival)'
+   OLD: 'ladakh's new year.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+15. [Tier 1] fest-baisakhi-punjab: 'Vaisakhi (Harvest & Khalsa Sirjana Divas)'
+   OLD: 'bihu themed craft activity at edmonton rongali bihu celebration, 2025, alberta, canada.jpg'
+   NEW: 'File:Photograph of a woman selling or hand-crafting traditional Punjabi tandoors (clay ovens), Moga, Punjab, India, 9 April 2023.jpg' (corrected_with_verified_image)
+
+16. [Tier 1] fest-pongal-harvest: 'Thai Pongal (Tamil Harvest Thanksgiving)'
+   OLD: ''peacock dance' body art -1.jpg'
+   NEW: 'File:Pongal Celebration in home.JPG' (corrected_with_verified_image)
+
+17. [Tier 1] art-warli-painting: 'Warli Tribal Folk Painting'
+   OLD: 'face is canvas.jpg'
+   NEW: 'File:Bajuband or Armlet, Warli Tribe, housed in the Tribal Museum, Pune, Maharashtra.jpg' (corrected_with_verified_image)
+
+18. [Tier 1] art-tanjore-painting: 'Thanjavur (Tanjore) Gold Leaf Painting'
+   OLD: 'hodges view of the great pagoda at tanjore, 1787.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+19. [Tier 1] art-ladakh-pashmina: 'Ladakh Pashmina (Cashmere)'
+   OLD: 'india - ladakh - trekking - 077 - sending out the herds in the monring (3896556490).jpg'
+   NEW: 'File:Cashmere12.8micronJos&fine.jpg' (corrected_with_verified_image)
+
+20. [Tier 1] craft-chanderi-fabric: 'Chanderi Handloom Fabric & Sarees'
+   OLD: 'celebrating the artistry and tradition of handmade elegance each stitch in a handicraft saree tells a story of skill, heritage, and timeless beauty.jpg'
+   NEW: 'File:A man weaving the famous handloom Chanderi Saree.jpg' (corrected_with_verified_image)
+
+21. [Tier 1] craft-punjab-phulkari: 'Phulkari Geometric Silk Embroidery'
+   OLD: 'hanging (am 1961.176-2).jpg'
+   NEW: 'File:'Phulkari' (bridal shawl), Punjab, early 20th century, cotton, silk and embroidery, Honolulu Academy of Arts.jpg' (corrected_with_verified_image)
+
+22. [Tier 1] craft-goa-kaavi-art: 'Kaavi Architectural Sgraffito Murals'
+   OLD: 'christian art on an arch, with indo-portuguese - goan influences at convent of santa monica, old goa.jpg'
+   NEW: 'File:Kaavi Art in the Convent of Santa Monica, Old Goa, India..jpg' (corrected_with_verified_image)
+
+23. [Tier 1] folk-bihu-folk-dance: 'Bihu Folk Dance of Assam'
+   OLD: 'a sattriya dancer performing the dance form in assam, india.jpg'
+   NEW: 'File:Assam Portal.jpg' (corrected_with_verified_image)
+
+24. [Tier 1] folk-bihu-dance: 'Bihu Folk Dance of Assam'
+   OLD: 'a sattriya dancer performing the dance form in assam, india.jpg'
+   NEW: 'File:Assam Portal.jpg' (corrected_with_verified_image)
+
+25. [Tier 2] india-gate: 'India Gate & National War Memorial'
+   OLD: '20191216 delhi gate, ajmer 1108 8851.jpg'
+   NEW: 'File:Evening,india gate,delhi - panoramio.jpg' (corrected_with_verified_image)
+
+26. [Tier 2] kedarnath-temple: 'Kedarnath Temple'
+   OLD: 'a map showing the panch kedar hindu tirtha sites, uttarakhand india.jpg'
+   NEW: 'File:Fully covered snow hill view just behind kedarnath 06.jpg' (corrected_with_verified_image)
+
+27. [Tier 2] gateway-of-india: 'Gateway of India'
+   OLD: 'commemorative inscription for the landing of king george v and queen mary at gateway of india, 1911.jpg'
+   NEW: 'File:Arch-monument - Gate Way of India.jpg' (corrected_with_verified_image)
+
+28. [Tier 2] french-quarter-puducherry: 'French Quarter (White Town) Heritage Precinct'
+   OLD: 'münster, prinzipalmarkt -- 2017 -- 3318-24.jpg'
+   NEW: 'File:French Quarter, Pondicherry (1) (23662163628).jpg' (corrected_with_verified_image)
+
+29. [Tier 2] place-gateway-of-india: 'Gateway of India'
+   OLD: 'commemorative inscription for the landing of king george v and queen mary at gateway of india, 1911.jpg'
+   NEW: 'File:Arch-monument - Gate Way of India.jpg' (corrected_with_verified_image)
+
+30. [Tier 2] place-vishnu-temple-bishnupur: 'Vishnu Temple of Bishnupur'
+   OLD: 'vishnu prambanan temple.jpg'
+   NEW: 'File:Aerial of Vishnu Temple and Wotans Throne.jpg' (corrected_with_verified_image)
+
+31. [Tier 2] place-ujra-mosque-kavaratti: 'Ujra Mosque, Kavaratti'
+   OLD: 'hujra shah muqeem.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+32. [Tier 2] place-moti-daman-fort: 'Moti Daman Fort (Fortaleza de Sao Jeronimo)'
+   OLD: 'church of bom jesus, daman, dadra and nagar haveli and daman and diu, india (2015).jpg'
+   NEW: 'File:Daman2.jpg' (corrected_with_verified_image)
+
+33. [Tier 2] place-diu-fort: 'Diu Fort & Sea Citadel'
+   OLD: 'church of bom jesus, daman, dadra and nagar haveli and daman and diu, india (2015).jpg'
+   NEW: 'File:Diu,Gujarat,India (3).jpg' (corrected_with_verified_image)
+
+34. [Tier 2] place-st-paul-church-diu: 'St. Paul's Church, Diu'
+   OLD: 'major churches of diu island.jpg'
+   NEW: 'File:Paulskirche FFM 2012.jpg' (corrected_with_verified_image)
+
+35. [Tier 2] place-danteshwari-temple: 'Danteshwari Temple, Dantewada'
+   OLD: '0011222 barsur danteswari mavali mata temple chattisgarh 005.jpg'
+   NEW: 'File:0011122 Dantewada Danteswari Mata Mandir Chattisgarh 041.jpg' (corrected_with_verified_image)
+
+36. [Tier 2] place-barabar-caves: 'Barabar Caves (Lomas Rishi & Sudama Caves)'
+   OLD: '3rd century bce barabar caves, bihar, plans and sections, 1847 sketch.jpg'
+   NEW: 'File:20211020125152 IMG 5438.jpg' (corrected_with_verified_image)
+
+37. [Tier 2] place-vikramshila-monastery: 'Vikramashila Mahavihara'
+   OLD: 'goureswar gouradhipoti maharaja dharmapal.jpg'
+   NEW: 'File:Closer view of the stupas.jpg' (corrected_with_verified_image)
+
+38. [Tier 2] place-qila-mubarak-bathinda: 'Qila Mubarak, Bathinda (Govindgarh Fort)'
+   OLD: 'detail of a mural of ala singh of patiala state from the sheesh mahal of the qila mubarak.jpg'
+   NEW: 'File:Another building.JPG' (corrected_with_verified_image)
+
+39. [Tier 2] place-rakhigarhi-archaeological-site: 'Rakhigarhi Indus Valley Archaeological Site'
+   OLD: 'pre mature post harappan time micaceous red ware 1 1 1 1.png'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+40. [Tier 2] place-pinjore-yadavindra-gardens: 'Pinjore Gardens (Yadavindra Mughal Terraced Gardens)'
+   OLD: 'gardenschandigarh.jpg'
+   NEW: 'File:Mugal garnden pinjour (cropped).jpg' (corrected_with_verified_image)
+
+41. [Tier 2] place-kangra-fort: 'Kangra Fort (Nagarkot)'
+   OLD: 'bull type coin, the hindu shahi dynasty, kangra fort museum, himachal pradesh.jpg'
+   NEW: 'File:Backside Wall of Ruined Laxmi Narayan Temple within Kangra Fort Compounds..JPG' (corrected_with_verified_image)
+
+42. [Tier 2] fest-mysore-dasara: 'Mysuru Dasara (Nada Habba)'
+   OLD: 'at-the-dussera.jpg'
+   NEW: 'File:Mysore Palace Dussehra Illumination.jpg' (corrected_with_verified_image)
+
+43. [Tier 2] fest-yaoshang-manipur: 'Yaoshang Festival of Manipur'
+   OLD: 'kids in traditional attire.jpg'
+   NEW: 'File:The tableau of the state of Manipur depicting, great festival of Yaoshang Holi Pala , gliding down the Rajpath during the Republic Day Parade - 2006, in New Delhi on January 26, 2006.jpg' (corrected_with_verified_image)
+
+44. [Tier 2] fest-losoong-sikkim: 'Losoong (Namsoong) Sikkimese New Year'
+   OLD: 'gumpa.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+45. [Tier 2] fest-kharchi-puja: 'Kharchi Puja of the Fourteen Deities'
+   OLD: 'temple of 14 gods-tripura.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+46. [Tier 2] fest-milad-un-nabi-lakshadweep: 'Milad-un-Nabi & Ratheeb Rituals'
+   OLD: 'milad un nabi celebration kerala (12).jpg'
+   NEW: 'File:Annual Maulid Anabi 2018 01.jpg' (corrected_with_verified_image)
+
+47. [Tier 2] fest-island-tourism-festival: 'Island Tourism Festival, Port Blair'
+   OLD: 'lascar elephanta island - three headed figure emerging from shiva (4558850202).jpg'
+   NEW: 'File:APTC tourism graduate Ted Blessing Makaa prepares to fight at the Santa Catalina spear festival (Wogasia). (10666664474).jpg' (corrected_with_verified_image)
+
+48. [Tier 2] fest-subhash-mela-andaman: 'Subhash Mela (Netaji Commemoration)'
+   OLD: 'gende ka phool.jpg'
+   NEW: 'File:Title-page of 'Quran Sharif', a Punjabi (in Gurmukhi) translation of the Quran, Shri Gurmat Press, Amritsar, April 1911.jpg' (corrected_with_verified_image)
+
+49. [Tier 2] fest-yoga-festival-puducherry: 'International Yoga Festival, Puducherry'
+   OLD: 'the unique musical 3d mapping show, yoga-the tree of life held as part of yoga festival ahead of the international day of yoga-2016, at sukhna lake, chandigarh on june 11, 2016.jpg'
+   NEW: 'File:The Minister of State for Tourism (IC) and Electronics & Information Technology, Shri Alphons Kannanthanam addressing the International Yoga Festival, at Parmarth Niketan, Rishikesh, in Uttarakhand on March 03, 2018.jpg' (corrected_with_verified_image)
+
+50. [Tier 2] fest-mysuru-dasara: 'Mysuru Dasara (Nada Habba)'
+   OLD: 'at-the-dussera.jpg'
+   NEW: 'File:Mysore Palace Dussehra Illumination.jpg' (corrected_with_verified_image)
+
+51. [Tier 2] fest-kumbh-mela-haridwar: 'Haridwar Maha Kumbh Mela'
+   OLD: 'third shahi snan in hari ki pauri.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+52. [Tier 3] art-pietra-dura-inlay: 'Pietra Dura (Parchin Kari) Marble Inlay'
+   OLD: 'agra ni13-03.jpg'
+   NEW: 'File:Akbar the Great Mogul, 1542-1605 (1917) (14773029622).jpg' (corrected_with_verified_image)
+
+53. [Tier 3] art-kumartuli-clay-sculpting: 'Kumartuli Clay Idol Sculpting'
+   OLD: 'giving life from clay (238511167).jpeg'
+   NEW: 'File:Where is Mouse.jpg' (corrected_with_verified_image)
+
+54. [Tier 3] art-tripura-bamboo-craft: 'Tripura Bamboo & Cane Screen Craft'
+   OLD: 'art on weaving apparatus srinibash para dhalai tripura india.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+55. [Tier 3] art-ladakh-wood-carving: 'Ladakh Wood Carving (Shingskos)'
+   OLD: 'chiktan khar 01.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+56. [Tier 3] art-lakshadweep-coir: 'Lakshadweep Island Coir & Coconut Fiber Craft'
+   OLD: 'coconut tree from kerala.jpg'
+   NEW: 'File:LACCADIVE ISLANDS CANOE.jpg' (corrected_with_verified_image)
+
+57. [Tier 3] craft-bastar-wrought-iron: 'Bastar Wrought Iron Craft (Loha Shilp)'
+   OLD: 'artist from agariya tribe of madhya pradesh img 8561.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+58. [Tier 3] folk-bhojpuri-maithili-geet: 'Bhojpuri & Maithili Folk Music (Biraha & Sohar)'
+   OLD: 'bhojpuri region of bihar & utter pradesh.png'
+   NEW: 'File:A Letter from Pratap Malla to Dalakhamba Baniya, Bhojpuri language.jpg' (corrected_with_verified_image)
+
+59. [Tier 3] folk-chang-lo-dance: 'Chang Lo (Sua Lua) Warrior Dance'
+   OLD: 'sahlam.jpg'
+   NEW: 'Neutral Architectural Motif (Fallback)' (fallback_to_placeholder)
+
+60. [Tier 3] folk-garadi-dance: 'Garadi Folk Dance of Puducherry'
+   OLD: 'ervatthuru garadi house.jpg'
+   NEW: 'File:Garadi (2023) Kannada film poster.jpg' (corrected_with_verified_image)
+
+61. [Tier 3] folk-tarpa-dance: 'Tarpa Dance of the Warli Tribe'
+   OLD: 'bohada in palghar tribe festival (40549).jpg'
+   NEW: 'File:Bohada in Palghar Tribe Festival.jpg' (corrected_with_verified_image)
+
+62. [Tier 3] folk-dhamal-ragini-haryana: 'Dhamal Folk Dance & Saang Ragini'
+   OLD: 'siddhi dhamal gujarat.jpg'
+   NEW: 'File:Dhamali Shah.jpg' (corrected_with_verified_image)
+
+63. [Tier 3] folk-nati-dance-himachal: 'Kullu Nati Folk Dance'
+   OLD: 'dance of himanchal pradesh.jpg'
+   NEW: 'File:Himachali Nati.jpg' (corrected_with_verified_image)
+
+64. [Tier 3] exp-jaipur-block-print-workshop: 'Bagru & Sanganer Hand-Block Printing Masterclass'
+   OLD: 'an elderly woman being carried to cast her vote at the polling booth of palri meena, bagru, in jaipur, during the rajasthan assembly election, on december 01, 2013.jpg'
+   NEW: 'File:Woman doing Block Printing at Bagru village, Jaipur, India.jpg' (corrected_with_verified_image)
+
+65. [Tier 3] exp-hampi-boulder-twilight: 'Vijayanagara Imperial Ruins & Tungabhadra Twilight Trail'
+   OLD: 'garuda temple, maha mandapa and eastern gopura, vitthala temple complex 1856 photo.jpg'
+   NEW: 'File:Hampi King's Balance Vitthala temple street entrance near river 1856 photo.jpg' (corrected_with_verified_image)
+
+66. [Tier 3] exp-fort-kochi-heritage-circuit: 'Fort Kochi Colonial Synagogue & Chinese Fishing Nets Trail'
+   OLD: 'la maison de vasco de gama (cochin, inde) (13745048684).jpg'
+   NEW: 'File:Maison coloniale (Cochin, Inde) (13745043134).jpg' (corrected_with_verified_image)
+
+67. [Tier 3] exp-le-corbusier-architectural-promenade: 'Le Corbusier Modernist Promenade & Rock Garden Sculptural Trail'
+   OLD: 'stacja kolejowa tarnów-mościce.pawlo68.jpg'
+   NEW: 'File:A view of Open hand monument part of Chandigarh Capitol Complex, World Heritage Site.jpg' (corrected_with_verified_image)
+

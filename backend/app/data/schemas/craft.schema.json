@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Craft",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "state",
+    "craft_category",
+    "techniques",
+    "gi_status",
+    "verification_status"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "slug": { "type": "string" },
+    "state": { "type": "string" },
+    "city": { "type": ["string", "null"] },
+    "craft_category": { "type": "string" },
+    "materials": { "type": ["array", "string", "null"] },
+    "techniques": { "type": "string" },
+    "historical_context": { "type": ["string", "null"] },
+    "gi_status": {
+      "type": "string",
+      "enum": ["REGISTERED", "APPLIED", "NOT_REGISTERED", "UNKNOWN"]
+    },
+    "gi_registration_reference": { "type": ["string", "null"] },
+    "image_url": { "type": ["string", "null"] },
+    "image_attribution": { "type": ["string", "null"] },
+    "license": { "type": ["string", "null"] },
+    "source_url": { "type": ["string", "null"] },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "PARTIALLY_VERIFIED", "UNVERIFIED", "NEEDS_REVIEW"]
+    }
+  }
+}

@@ -27,8 +27,12 @@ export interface HeritagePlace {
   latitude: number;
   longitude: number;
   image_url: string;
+  image_attribution?: string;
+  license?: string;
   source_url: string;
   verification_status: string;
+  entry_fee?: string;
+  opening_hours?: string;
 }
 
 export interface Festival {
@@ -46,6 +50,8 @@ export interface Festival {
   associated_place_ids: string[];
   related_tradition_ids: string[];
   image_url: string;
+  image_attribution?: string;
+  license?: string;
   source_url: string;
   verification_status: string;
 }
@@ -64,6 +70,8 @@ export interface ArtCraft {
   artisan_location: string;
   gi_status: boolean;
   image_url: string;
+  image_attribution?: string;
+  license?: string;
   source_url: string;
   verification_status: string;
 }
@@ -79,6 +87,8 @@ export interface PerformingArt {
   instruments: string[];
   cultural_significance: string;
   image_url: string;
+  image_attribution?: string;
+  license?: string;
   source_url: string;
   verification_status: string;
 }
@@ -96,8 +106,12 @@ export interface CulturalExperience {
   latitude: number;
   longitude: number;
   image_url: string;
+  image_attribution?: string;
+  license?: string;
   source_url: string;
   verification_status: string;
+  entry_fee?: string;
+  opening_hours?: string;
 }
 
 export interface CulturalStory {

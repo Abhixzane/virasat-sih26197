@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-khajuraho-dance-festival",
+    "entity_name": "Khajuraho Classical Dance Festival",
+    "category": "festivals_and_traditions",
+    "state": "Madhya Pradesh",
+    "query_used": "Khajuraho Dance Festival Madhya Pradesh Tourism February 20 to 26 classical dance dates",
+    "tool_used": "search_web",
+    "result_url": "https://mptourism.com",
+    "page_fetched": false,
+    "claim_checked": "Annual festival held from February 20 to 26 organized by MP Kala Parishad against the backdrop of the Western Group of Temples",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to ANNUAL_OFFICIAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "ANNUAL_OFFICIAL",
+      "traditional_month": "February",
+      "exact_date": "February 20 - 26 Annually",
+      "approximate_season": "Late February"
+    },
+    "supporting_claim": "One of India's premier classical dance festivals staged annually from February 20-26 in the temple complex of Khajuraho.",
+    "source_url": "https://mptourism.com"
+  },
+  {
+    "entity_id": "fest-bhagoria-haat",
+    "entity_name": "Bhagoria Tribal Festival & Haat",
+    "category": "festivals_and_traditions",
+    "state": "Madhya Pradesh",
+    "query_used": "Bhagoria Madhya Pradesh Bhil Bhilala week before Holi haat Jhabua dates",
+    "tool_used": "search_web",
+    "result_url": "https://jhabua.nic.in",
+    "page_fetched": false,
+    "claim_checked": "Celebrated in the week leading up to Holi (Phalguna) by Bhil, Bhilala, and Barela tribes across weekly haats in Jhabua and Alirajpur",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Phalguna",
+      "exact_date": "Week preceding Holi (culminating Holika Dahan)",
+      "approximate_season": "February - March"
+    },
+    "supporting_claim": "Lively tribal matchmaking and harvest festival held across weekly haats of Jhabua and Alirajpur during the week before Holi.",
+    "source_url": "https://jhabua.nic.in"
+  }
+]

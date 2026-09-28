@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-surajkund-crafts-mela",
+    "entity_name": "Surajkund International Crafts Mela",
+    "category": "festivals_and_traditions",
+    "state": "Haryana",
+    "query_used": "Surajkund Crafts Mela Haryana Tourism February 1 to 16 Faridabad dates",
+    "tool_used": "search_web",
+    "result_url": "https://haryanatourism.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Annual crafts fair held in first fortnight of February (approx Feb 1-16) organized by Haryana Tourism at Surajkund, Faridabad",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to ANNUAL_OFFICIAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "ANNUAL_OFFICIAL",
+      "traditional_month": "February",
+      "exact_date": "First Fortnight of February (Annual)",
+      "approximate_season": "Early February"
+    },
+    "supporting_claim": "World's largest crafts fair held annually in early February at Surajkund, Faridabad showcasing rural Indian handicrafts and cultural troupes.",
+    "source_url": "https://haryanatourism.gov.in"
+  },
+  {
+    "entity_id": "fest-kullu-dussehra",
+    "entity_name": "Kullu International Dussehra",
+    "category": "festivals_and_traditions",
+    "state": "Himachal Pradesh",
+    "query_used": "Kullu Dussehra starts on Vijayadashami Lord Raghunath Dhalpur 7 days dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Kullu_Dussehra",
+    "page_fetched": false,
+    "claim_checked": "Unique 7-day international festival beginning on Vijayadashami (Ashwin Shukla Dashami) at Dhalpur Maidan worshipping Lord Raghunath with local hill devtas",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Ashwin",
+      "exact_date": "Starts Vijayadashami (7 days observance)",
+      "approximate_season": "October"
+    },
+    "supporting_claim": "Unique 7-day Dussehra that begins on Vijayadashami in Kullu with the chariot procession of presiding deity Lord Raghunath.",
+    "source_url": "https://en.wikipedia.org/wiki/Kullu_Dussehra"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-island-tourism-festival",
+    "entity_name": "Island Tourism Festival, Port Blair",
+    "category": "festivals_and_traditions",
+    "state": "Andaman and Nicobar Islands",
+    "query_used": "Island Tourism Festival Port Blair Andaman January annual dates",
+    "tool_used": "search_web",
+    "result_url": "https://www.andaman.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Annual 10-day cultural festival organized by Andaman Administration in January at ITF Ground, Port Blair",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to ANNUAL_OFFICIAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "ANNUAL_OFFICIAL",
+      "traditional_month": "January",
+      "exact_date": "First Half of January (10 days)",
+      "approximate_season": "January"
+    },
+    "supporting_claim": "Annual 10-day cultural festival organized by Andaman administration in January at ITF Ground Port Blair.",
+    "source_url": "https://www.andaman.gov.in"
+  },
+  {
+    "entity_id": "fest-subhash-mela-andaman",
+    "entity_name": "Subhash Mela (Netaji Commemoration)",
+    "category": "festivals_and_traditions",
+    "state": "Andaman and Nicobar Islands",
+    "query_used": "Subhash Mela Havelock or Neil Island Andaman January 23 Netaji dates",
+    "tool_used": "search_web",
+    "result_url": "https://gktoday.in",
+    "page_fetched": false,
+    "claim_checked": "Held annually starting January 23 on Havelock Island (Swaraj Dweep) commemorating Netaji Subhas Chandra Bose birth anniversary",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to ANNUAL_OFFICIAL",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "ANNUAL_OFFICIAL",
+      "traditional_month": "January",
+      "exact_date": "January 23 - 29 Annually",
+      "approximate_season": "Late January"
+    },
+    "supporting_claim": "Annual week-long cultural fair starting January 23 on Havelock Island honoring Netaji Subhas Chandra Bose.",
+    "source_url": "https://gktoday.in"
+  }
+]

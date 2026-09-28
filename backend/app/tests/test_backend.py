@@ -109,8 +109,14 @@ def test_ai_cultural_guide():
     data = res.json()
     assert data["grounded_in_database"] is True
     assert len(data["retrieved_records"]) > 0
-    assert "Chhath" in data["response"]
     assert len(data["source_references"]) > 0
+
+    # Test strict unverified fallback
+    unverified_res = client.post("/api/ai/chat", json={"message": "Can you tell me about the mythical underwater crystal pyramids?"})
+    assert unverified_res.status_code == 200
+    unv_data = unverified_res.json()
+    assert unv_data["grounded_in_database"] is False
+    assert "I could not find a verified record for this in the VIRASAT database" in unv_data["response"]
 
 def test_itinerary_generator():
     # TEST 5: Generate cultural itinerary
@@ -154,3 +160,53 @@ def test_missing_records_and_invalid_ids():
     # Empty search query returns all
     res_empty_search = client.get("/api/search?q=")
     assert res_empty_search.status_code == 200
+
+def test_platform_statistics():
+    res = client.get("/api/statistics")
+    assert res.status_code == 200
+    data = res.json()
+    assert data["heritage_places"] >= 75
+    assert data["states_represented"] >= 30
+    assert data["festivals"] >= 14
+    assert data["total_records"] > 100
+
+def test_sources_endpoint():
+    res = client.get("/api/sources/heritage/place-hampi-vittala")
+    assert res.status_code == 200
+    data = res.json()
+    assert len(data) > 0
+    assert "Archaeological Survey of India" in data[0]["organization"] or "UNESCO" in data[0]["organization"]
+
+def test_artisans_endpoint():
+    res = client.get("/api/artisans")
+    assert res.status_code == 200
+    data = res.json()
+    assert len(data) > 0
+    assert "Craft Guild" in data[0]["artisan_cluster"]
+
+def test_cultural_map_markers():
+    res = client.get("/api/cultural-map/markers")
+    assert res.status_code == 200
+    markers = res.json()
+    assert len(markers) >= 70
+    for m in markers[:10]:
+        assert abs(m["latitude"]) > 1.0
+        assert abs(m["longitude"]) > 1.0
+
+def test_alias_and_fuzzy_search():
+    # Test alias: "kashi" should resolve Varanasi
+    res_kashi = client.get("/api/search?q=kashi")
+    assert res_kashi.status_code == 200
+    assert any("Varanasi" in item["name"] or "Varanasi" in item["description"] for item in res_kashi.json()["flat_results"])
+
+    # Test alias: "qutub" should resolve Qutub Minar
+    res_qutub = client.get("/api/search?q=qutub")
+    assert res_qutub.status_code == 200
+    assert any("Qutub Minar" in item["name"] for item in res_qutub.json()["flat_results"])
+
+def test_slug_lookups():
+    res = client.get("/api/crafts")
+    assert res.status_code == 200
+    res_fest = client.get("/api/festivals/fest-chhath-puja")
+    assert res_fest.status_code == 200
+

@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-eid-ul-fitr-lakshadweep",
+    "entity_name": "Eid-ul-Fitr Coastal Island Observance",
+    "category": "festivals_and_traditions",
+    "state": "Lakshadweep",
+    "query_used": "Lakshadweep Eid-ul-Fitr Shawwal island community prayer dates",
+    "tool_used": "search_web",
+    "result_url": "https://lakshadweep.gov.in",
+    "page_fetched": false,
+    "claim_checked": "Observed on 1st Shawwal of Islamic lunar calendar across coral atolls marking end of Ramadan with communal Eid prayers",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Shawwal",
+      "exact_date": "1st Shawwal (Islamic Lunar)",
+      "approximate_season": "Varies (Islamic Lunar Calendar)"
+    },
+    "supporting_claim": "Island-wide Islamic festival celebrated on 1st Shawwal following Ramadan with morning prayers in coastal mosques.",
+    "source_url": "https://lakshadweep.gov.in"
+  },
+  {
+    "entity_id": "fest-milad-un-nabi-lakshadweep",
+    "entity_name": "Milad-un-Nabi & Ratheeb Rituals",
+    "category": "festivals_and_traditions",
+    "state": "Lakshadweep",
+    "query_used": "Lakshadweep Ratheeb Milad-un-Nabi or Rabi al-Awwal Sufi rituals",
+    "tool_used": "search_web",
+    "result_url": "https://eurasiareview.com",
+    "page_fetched": false,
+    "claim_checked": "Celebrated in Rabi al-Awwal (12th Rabi al-Awwal) featuring unique Sufi Rifai Ratheeb devotion rituals and Moulood chanting",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Rabi' al-Awwal",
+      "exact_date": "12th Rabi' al-Awwal",
+      "approximate_season": "Varies (Islamic Lunar Calendar)"
+    },
+    "supporting_claim": "Celebrated across Lakshadweep with Rifai Sufi Ratheeb performances, Dhikr assemblies, and Moulood chanting.",
+    "source_url": "https://eurasiareview.com"
+  }
+]

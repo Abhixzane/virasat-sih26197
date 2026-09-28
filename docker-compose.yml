@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: virasat-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: virasat
+      POSTGRES_USER: virasat_user
+      POSTGRES_PASSWORD: virasat_secure_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U virasat_user -d virasat"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - virasat-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: virasat-backend
+    restart: unless-stopped
+    environment:
+      - DATABASE_URL=postgresql://virasat_user:virasat_secure_pass@db:5432/virasat
+      - AI_PROVIDER=gemini
+      - AI_MODEL=gemini-2.5-flash
+      - AI_API_KEY=${AI_API_KEY:-}
+      - CORS_ORIGINS=http://localhost:3000,http://localhost:80,http://localhost:5173
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - virasat-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: virasat-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - virasat-network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  virasat-network:
+    driver: bridge

@@ -37,7 +37,8 @@ class AIProvider:
         prompt: str,
         system_instruction: str,
         retrieved_records: List[Dict[str, Any]],
-        language: str = "en"
+        language: str = "en",
+        user_query: str = ""
     ) -> str:
         # 1. If LLM Client is configured and available
         if self.client and self.api_key:
@@ -56,22 +57,28 @@ class AIProvider:
                 logger.warning(f"Error calling LLM provider: {e}. Falling back to database synthesis.")
 
         # 2. Factual Database Synthesis Fallback
-        return self._synthesize_grounded_fallback(retrieved_records, language)
+        return self._synthesize_grounded_fallback(retrieved_records, language, user_query)
 
-    def _synthesize_grounded_fallback(self, records: List[Dict[str, Any]], language: str = "en") -> str:
+    def _synthesize_grounded_fallback(
+        self,
+        records: List[Dict[str, Any]],
+        language: str = "en",
+        query: str = ""
+    ) -> str:
         if not records:
             if language == "hi":
                 return (
+                    "I could not find a verified record for this in the VIRASAT database. "
                     "क्षमा करें, विरासत डेटाबेस में इस खोज के लिए वर्तमान में कोई सत्यापित रिकॉर्ड उपलब्ध नहीं है। "
                     "ऐतिहासिक प्रामाणिकता बनाए रखने के लिए, मैं अप्रमाणित जानकारी नहीं देता।"
                 )
             elif language == "hinglish":
                 return (
-                    "Sorry, VIRASAT database me currently is query ke liye koi verified records available nahi hain. "
+                    "I could not find a verified record for this in the VIRASAT database. "
                     "Historical authenticity maintain karne ke liye, bina verified sources ke assumptions nahi banaye ja sakte."
                 )
             return (
-                "The VIRASAT cultural database does not currently contain verified records for this inquiry. "
+                "I could not find a verified record for this in the VIRASAT database. "
                 "To maintain strict historical and archaeological integrity, unverified assertions are not generated."
             )
 
@@ -82,15 +89,23 @@ class AIProvider:
         desc = primary.get("description") or primary.get("narrative", "")
         significance = primary.get("cultural_significance") or primary.get("historical_significance", "")
         period = primary.get("historical_period") or primary.get("origin") or primary.get("month_or_season", "")
+        arch_style = primary.get("architectural_style", "")
+
+        q_lower = query.lower()
+        is_arch_query = any(w in q_lower for w in ["architectural", "architecture", "style", "design"])
 
         lines = []
         if language == "hi":
             lines.append(f"### {rname} ({rtype} — {state})\n")
+            if is_arch_query and arch_style:
+                lines.append(f"**वास्तुशिल्प शैली (Architectural Style):**\n{arch_style}\n")
             lines.append(f"**अवलोकन:** {desc}\n")
             if significance:
                 lines.append(f"**सांस्कृतिक व ऐतिहासिक महत्व:** {significance}\n")
             if period:
                 lines.append(f"**ऐतिहासिक पृष्ठभूमि / काल:** {period}\n")
+            if arch_style and not is_arch_query:
+                lines.append(f"**वास्तुशिल्प शैली:** {arch_style}\n")
             if len(records) > 1:
                 lines.append("\n**संबंधित सांस्कृतिक विरासत (Connected Heritage):**")
                 for r in records[1:4]:
@@ -99,11 +114,15 @@ class AIProvider:
                     lines.append(f"- **{rn}** ({rt}, {r.get('state', '')})")
         elif language == "hinglish":
             lines.append(f"### {rname} ({rtype} — {state})\n")
+            if is_arch_query and arch_style:
+                lines.append(f"**Architectural Style:**\n{arch_style}\n")
             lines.append(f"**Overview:** {desc}\n")
             if significance:
                 lines.append(f"**Cultural Significance:** {significance}\n")
             if period:
                 lines.append(f"**Historical Timeline / Context:** {period}\n")
+            if arch_style and not is_arch_query:
+                lines.append(f"**Architectural Style:** {arch_style}\n")
             if len(records) > 1:
                 lines.append("\n**Connected Cultural Heritage:**")
                 for r in records[1:4]:
@@ -111,12 +130,25 @@ class AIProvider:
                     rt = r.get("_entity_type", "").title()
                     lines.append(f"- **{rn}** ({rt}, {r.get('state', '')})")
         else:
-            lines.append(f"### {rname} ({rtype} — {state})\n")
-            lines.append(f"**Overview & Context:**\n{desc}\n")
-            if significance:
-                lines.append(f"**Cultural & Historical Significance:**\n{significance}\n")
-            if period:
-                lines.append(f"**Period / Seasonal Context:** {period}\n")
+            if is_arch_query and arch_style:
+                lines.append(f"### {rname} — Architectural Style\n")
+                lines.append(f"**Architectural Style:**\n{arch_style}\n")
+                lines.append(f"**Historical Context & Significance:**")
+                if period:
+                    lines.append(f"- **Historical Period:** {period}")
+                if significance:
+                    lines.append(f"- **Significance:** {significance}")
+                if desc:
+                    lines.append(f"- **Overview:** {desc}\n")
+            else:
+                lines.append(f"### {rname} ({rtype} — {state})\n")
+                lines.append(f"**Overview & Context:**\n{desc}\n")
+                if significance:
+                    lines.append(f"**Cultural & Historical Significance:**\n{significance}\n")
+                if period:
+                    lines.append(f"**Period / Seasonal Context:**\n{period}\n")
+                if arch_style:
+                    lines.append(f"**Architectural Style:**\n{arch_style}\n")
 
             if len(records) > 1:
                 lines.append("\n**Connected Cultural Intelligence (Related Records):**")

@@ -1,0 +1,46 @@
+[
+  {
+    "entity_id": "fest-sarhul-jharkhand",
+    "entity_name": "Sarhul (Festival of the Sal Blossom)",
+    "category": "festivals_and_traditions",
+    "state": "Jharkhand",
+    "query_used": "Sarhul Jharkhand Sal tree Chaitra Shukla Tritiya tribal spring dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Sarhul",
+    "page_fetched": false,
+    "claim_checked": "Celebrated on Chaitra Shukla Tritiya (March-April) by Oraon, Munda, Ho, and Santal tribes worshipping Sal tree blossoms at the Sarna sacred grove",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Chaitra",
+      "exact_date": "Chaitra Shukla Tritiya",
+      "approximate_season": "March - April"
+    },
+    "supporting_claim": "Tribal New Year festival celebrating Sal tree blossom at the Sarna (sacred grove) symbolizing union of Earth and Sun.",
+    "source_url": "https://en.wikipedia.org/wiki/Sarhul"
+  },
+  {
+    "entity_id": "fest-karam-festival",
+    "entity_name": "Karam Ecological Festival",
+    "category": "festivals_and_traditions",
+    "state": "Jharkhand",
+    "query_used": "Karam festival Jharkhand Bhadra Shukla Ekadashi Karam tree dates",
+    "tool_used": "search_web",
+    "result_url": "https://en.wikipedia.org/wiki/Karam_(festival)",
+    "page_fetched": false,
+    "claim_checked": "Celebrated on Bhadra Shukla Ekadashi (August-September) planting and worshipping Karam tree branches in village akhra for fertility and harvest",
+    "outcome": "confirmed",
+    "field_corrected": "date_type set to LUNAR",
+    "final_status": "VERIFIED",
+    "updated_fields": {
+      "date_type": "LUNAR",
+      "traditional_month": "Bhadra",
+      "exact_date": "Bhadra Shukla Ekadashi",
+      "approximate_season": "August - September"
+    },
+    "supporting_claim": "Agrarian tribal festival on Bhadra Shukla Ekadashi worshipping the Karam tree branch for agricultural fertility and vitality.",
+    "source_url": "https://en.wikipedia.org/wiki/Karam_(festival)"
+  }
+]

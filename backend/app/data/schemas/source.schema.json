@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Source",
+  "type": "object",
+  "required": [
+    "id",
+    "organization",
+    "source_title",
+    "source_url"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "organization": { "type": "string" },
+    "source_title": { "type": "string" },
+    "source_url": { "type": "string" },
+    "source_type": { "type": ["string", "null"] },
+    "publication_date": { "type": ["string", "null"] },
+    "accessed_at": { "type": ["string", "null"] },
+    "reliability_notes": { "type": ["string", "null"] }
+  }
+}

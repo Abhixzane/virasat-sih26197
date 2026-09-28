@@ -50,8 +50,17 @@ frontend/dist-ssr/
 *.pem
 *.key
 
+# Database & runtime data
+*.db
+*.sqlite
+*.sqlite3
+virasat.db
+backend/virasat.db
+backend/data/*.db
+
 # IDEs
 .idea/
 .vscode/
 *.swp
 *.swo
+

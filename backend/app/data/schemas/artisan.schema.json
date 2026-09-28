@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Artisan",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "craft_id",
+    "verification_status"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "craft_id": { "type": "string" },
+    "location": { "type": ["string", "null"] },
+    "artisan_cluster": { "type": ["string", "null"] },
+    "biography": { "type": ["string", "null"] },
+    "source_reference": { "type": ["string", "null"] },
+    "contact_visibility": {
+      "type": "string",
+      "enum": ["PUBLIC", "NONE"]
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "PARTIALLY_VERIFIED", "UNVERIFIED", "NEEDS_REVIEW"]
+    }
+  }
+}
