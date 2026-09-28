@@ -17,5 +17,24 @@
         "Festivals"
       ]
     }
+  },
+  "usr_g_g_YWJoaWJoYXZzaW": {
+    "id": "usr_g_g_YWJoaWJoYXZzaW",
+    "name": "Abhibhav Sinha",
+    "email": "abhibhavsinha82@gmail.com",
+    "picture": "https://api.dicebear.com/7.x/initials/svg?seed=Abhibhav%20Sinha&backgroundColor=e05a2b",
+    "provider": "google",
+    "created_at": "2026-09-28T20:48:39.109998Z",
+    "last_login": "2026-09-28T20:48:39.109998Z",
+    "saved_itineraries": [],
+    "saved_places": [],
+    "preferences": {
+      "preferred_language": "en",
+      "cultural_interests": [
+        "Heritage Monuments",
+        "Living Crafts",
+        "Festivals"
+      ]
+    }
   }
 }

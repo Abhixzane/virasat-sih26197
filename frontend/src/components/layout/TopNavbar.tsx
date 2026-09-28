@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
   Compass, Landmark, Sparkles, Map, Search, Menu, X,
   Palette, Calendar, MapPin, Home as HomeIcon, User as UserIcon,
-  LogOut, Bookmark, ChevronDown, Check, ShieldCheck, Heart
+  LogOut, Bookmark, ChevronDown, Check, ShieldCheck, Heart, Bell
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { AuthModal } from '../auth/AuthModal';
@@ -151,6 +151,18 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({ onOpenSearch }) => {
             >
               <span className="text-stone-500 text-xs font-normal truncate">Search destinations, festivals, crafts...</span>
               <Search className="w-3.5 h-3.5 text-stone-400 group-hover:text-stone-600 transition-colors shrink-0 ml-2" />
+            </button>
+
+            {/* Interactive Web Audio Chime (JavaScript Synth) */}
+            <button
+              type="button"
+              onClick={() => {
+                (window as any).VirasatJS?.playChime(528);
+              }}
+              className="virasat-ripple p-2 rounded-full text-amber-700 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 transition-all cursor-pointer hidden md:flex items-center justify-center shadow-2xs group"
+              title="Play Traditional Temple Bell Chime (Pure Web Audio JavaScript)"
+            >
+              <Bell className="w-3.5 h-3.5 group-hover:scale-110 transition-transform text-[#E05A2B]" />
             </button>
 
             {/* Authentication Button & Profile Dropdown */}
